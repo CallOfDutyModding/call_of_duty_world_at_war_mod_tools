@@ -1,0 +1,23 @@
+iwmap 4
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"target" "auto1"
+"targetname" "exterior_goal"
+"origin" "-24.0 0.0 0.0"
+"angles" "0 360 0"
+"classname" "script_struct"
+}
+// entity 2
+{
+"height" "64"
+"radius" "36"
+"targetname" "auto1"
+"origin" "24.0 0.0 0.0"
+"angles" "0 360 0"
+"classname" "script_struct"
+}
+// entity 3

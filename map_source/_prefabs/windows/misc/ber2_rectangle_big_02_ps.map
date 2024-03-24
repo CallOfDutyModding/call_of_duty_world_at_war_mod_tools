@@ -1,0 +1,87 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents nonColliding;
+ ( 39 -16 -42 ) ( -13 -16 -42 ) ( -13 4 -42 ) okinawa_floor_concrete_spotted 128 128 -1100 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 20 14 -48 ) ( -44 14 -48 ) ( -44 2 -48 ) okinawa_floor_concrete_spotted 128 128 -1100 -896 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -38 13 -42 ) ( -44 13 -48 ) ( 20 13 -48 ) okinawa_floor_concrete_spotted 128 128 -1100 688 0 0 lightmap_gray 16384 16384 -1068 664 0 0
+ ( -47 2 -48 ) ( -47 14 -48 ) ( -41 14 -42 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 42 3 -42 ) ( 42 15 -42 ) ( 48 15 -48 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -31 -7 74 ) ( -41 -7 74 ) ( -41 -7 106 ) okinawa_floor_concrete_spotted 128 128 830 736 0 0 lightmap_gray 16384 16384 -1537 472 0 0
+}
+// brush 1
+{
+  contents nonColliding;
+ ( 39 -7 -39 ) ( 39 6 -39 ) ( 42 8 -42 ) caulk 64 64 -1070 -838 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -38 6 -39 ) ( -38 -7 -39 ) ( -41 -7 -42 ) caulk 64 64 -1070 -838 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 39 8 -42 ) ( -13 8 -42 ) ( -13 -4 -42 ) caulk 64 64 -972 -860 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -38 5 -39 ) ( -38 7 -42 ) ( 14 7 -42 ) okinawa_floor_concrete_spotted 128 128 -1100 688 0 0 lightmap_gray 16384 16384 -1068 664 0 0
+ ( 51 -6 -39 ) ( -51 -6 -39 ) ( -51 6 -39 ) okinawa_floor_concrete_spotted 128 128 -1100 -860 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -51 -7 -39 ) ( 51 -7 -39 ) ( 54 -7 -42 ) okinawa_floor_concrete_spotted 128 128 830 736 0 0 lightmap_gray 16384 16384 -1537 472 0 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( -41 7 71 ) ( -41 9 74 ) ( -41 -3 74 ) caulk 64 64 859 688 0 0 lightmap_gray 16384 16384 861 664 0 0
+ ( 42 -3 71 ) ( 42 -3 74 ) ( 42 9 74 ) caulk 64 64 859 688 0 0 lightmap_gray 16384 16384 861 664 0 0
+ ( 39 7 74 ) ( 39 -5 74 ) ( -13 -5 74 ) caulk 64 64 -972 -859 0 0 lightmap_gray 16384 16384 -1068 -861 0 0
+ ( 14 5 71 ) ( 14 7 74 ) ( -38 7 74 ) okinawa_floor_concrete_spotted 128 128 -1100 688 0 0 lightmap_gray 16384 16384 -1068 664 0 0
+ ( -54 -7 71 ) ( 54 -7 71 ) ( 54 5 71 ) okinawa_floor_concrete_spotted 128 128 -1100 -859 0 0 lightmap_gray 16384 16384 -1068 -861 0 0
+ ( 54 -7 71 ) ( -54 -7 71 ) ( -54 -7 74 ) okinawa_floor_concrete_spotted 128 128 830 664 0 0 lightmap_gray 16384 16384 -1537 472 0 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( 42 14 74 ) ( 42 2 74 ) ( 48 2 80 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -47 14 80 ) ( -47 2 80 ) ( -41 2 74 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 20 13 80 ) ( -44 13 80 ) ( -38 13 74 ) okinawa_floor_concrete_spotted 128 128 -1100 688 0 0 lightmap_gray 16384 16384 -1068 664 0 0
+ ( -44 2 80 ) ( -44 14 80 ) ( 20 14 80 ) okinawa_floor_concrete_spotted 128 128 830 664 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -13 -16 74 ) ( 39 -16 74 ) ( 39 4 74 ) okinawa_floor_concrete_spotted 128 128 -1100 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -31 -7 74 ) ( -41 -7 74 ) ( -41 -7 106 ) okinawa_floor_concrete_spotted 128 128 830 664 0 0 lightmap_gray 16384 16384 -1537 472 0 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 39 -7 74 ) ( 39 -7 -63 ) ( 39 5 -63 ) okinawa_floor_concrete_spotted 128 128 860 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 42 7 -18 ) ( 42 7 98 ) ( 39 5 98 ) okinawa_floor_concrete_spotted 128 128 -1072 664 0 0 lightmap_gray 16384 16384 -1040 664 0 0
+ ( 42 5 -42 ) ( 42 -5 -42 ) ( 42 -5 74 ) caulk 64 64 860 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 39 6 74 ) ( 42 8 74 ) ( 42 -4 74 ) caulk 64 64 -944 -860 0 0 lightmap_gray 16384 16384 -1040 -862 0 0
+ ( 42 -7 -42 ) ( 42 3 -42 ) ( 39 1 -39 ) caulk 64 64 -944 -860 0 0 lightmap_gray 16384 16384 -1040 -862 0 0
+ ( 39 -7 -63 ) ( 39 -7 74 ) ( 42 -7 74 ) okinawa_floor_concrete_spotted 128 128 818 664 0 0 lightmap_gray 16384 16384 -1509 472 0 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 48 14 -24 ) ( 48 2 -24 ) ( 48 2 104 ) okinawa_floor_concrete_spotted 128 128 830 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 48 13 104 ) ( 42 13 98 ) ( 42 13 -18 ) okinawa_floor_concrete_spotted 128 128 -1072 664 0 0 lightmap_gray 16384 16384 -1040 664 0 0
+ ( 42 -3 74 ) ( 42 -3 -18 ) ( 42 17 -18 ) okinawa_floor_concrete_spotted 128 128 862 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 42 2 74 ) ( 42 14 74 ) ( 48 14 80 ) caulk 64 64 -944 -862 0 0 lightmap_gray 16384 16384 -1040 -862 0 0
+ ( 47 15 -47 ) ( 41 15 -41 ) ( 41 3 -41 ) caulk 64 64 -944 -862 0 0 lightmap_gray 16384 16384 -1040 -862 0 0
+ ( -3 -7 74 ) ( -13 -7 74 ) ( -13 -7 106 ) okinawa_floor_concrete_spotted 128 128 818 664 0 0 lightmap_gray 16384 16384 -1509 472 0 0
+}
+// brush 6
+{
+  contents nonColliding;
+ ( -47 14 -48 ) ( -47 2 -48 ) ( -41 2 -42 ) caulk 64 64 -975 -862 0 0 lightmap_gray 16384 16384 -1071 -862 0 0
+ ( -41 13 -18 ) ( -41 13 98 ) ( -47 13 104 ) okinawa_floor_concrete_spotted 128 128 -1103 664 0 0 lightmap_gray 16384 16384 -1071 664 0 0
+ ( -41 -3 -42 ) ( -41 -3 50 ) ( -41 17 50 ) okinawa_floor_concrete_spotted 128 128 862 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -47 14 -24 ) ( -47 14 104 ) ( -47 2 104 ) okinawa_floor_concrete_spotted 128 128 862 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -47 14 80 ) ( -41 14 74 ) ( -41 2 74 ) caulk 64 64 -975 -862 0 0 lightmap_gray 16384 16384 -1071 -862 0 0
+ ( -34 -7 74 ) ( -44 -7 74 ) ( -44 -7 106 ) okinawa_floor_concrete_spotted 128 128 843 664 0 0 lightmap_gray 16384 16384 -1540 472 0 0
+}
+// brush 7
+{
+  contents nonColliding;
+ ( -38 -8 -39 ) ( -38 5 -39 ) ( -41 7 -42 ) caulk 64 64 -975 -859 0 0 lightmap_gray 16384 16384 -1071 -861 0 0
+ ( -41 -5 74 ) ( -41 7 74 ) ( -38 5 74 ) caulk 64 64 -975 -859 0 0 lightmap_gray 16384 16384 -1071 -861 0 0
+ ( -41 9 50 ) ( -41 -3 50 ) ( -41 -3 -66 ) caulk 64 64 859 664 0 0 lightmap_gray 16384 16384 861 664 0 0
+ ( -38 5 98 ) ( -41 7 98 ) ( -41 7 -18 ) okinawa_floor_concrete_spotted 128 128 -1103 664 0 0 lightmap_gray 16384 16384 -1071 664 0 0
+ ( -38 -8 -63 ) ( -38 -8 74 ) ( -38 4 74 ) okinawa_floor_concrete_spotted 128 128 859 664 0 0 lightmap_gray 16384 16384 861 664 0 0
+ ( -38 -7 74 ) ( -38 -7 -63 ) ( -41 -7 -66 ) okinawa_floor_concrete_spotted 128 128 843 664 0 0 lightmap_gray 16384 16384 -1540 472 0 0
+}
+}

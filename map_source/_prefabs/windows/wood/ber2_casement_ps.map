@@ -1,0 +1,1060 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 36 30.882263 t 0 -0 -64.9375 -55.8125
+	v 3.3039551 36 58.894165 t 0 -184.0002 -64.9375 -57.625
+   )
+   (
+	v -3.425293 33 33.78009 t 33.940929 -0 -65.125 -56
+	v 2.5275879 33 55.996399 t 33.940929 -184.0002 -65.125 -57.4375
+   )
+  }
+ }
+// brush 1
+{
+  contents nonColliding;
+ ( 7.5 -7 30.75 ) ( 8.25 -7 31 ) ( 8.25 -6 31 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 21675.99 16384 -1435.0853 -954 0 0
+ ( 2.75 -6 45.75 ) ( 2.75 -7 45.75 ) ( 2.25 -7 45.25 ) caulk 64 64 0 0 0 0 lightmap_gray 21732.143 16384 -1429.6799 -954 0 0
+ ( 7.5 -7 30.75 ) ( 2.25 -7 45.25 ) ( 2.75 -7 45.5 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16388.902 16377.842 -1097.2319 871.521 -24.509483 -0.00043232847
+ ( 2.75 -7 45.75 ) ( 2.75 -6 45.75 ) ( 8.25 -6 31 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.08 16384 -1482.2423 -958 -90 0
+ ( 8.25 -6 31 ) ( 2.75 -6 45.5 ) ( 2.25 -6 45.25 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16385.783 16386.623 -1096.77 872.17657 -24.507687 -0.00080901996
+ ( 2.25 -6 45.25 ) ( 2.25 -7 45.25 ) ( 7.5 -7 30.75 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.063 16384 -1481.334 -958 -90 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( 7.5 35 30.75 ) ( 8.25 35 31 ) ( 8.25 36 31 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 21675.99 16384 -1435.0853 -996 0 0
+ ( 2.75 36 45.75 ) ( 2.75 35 45.75 ) ( 2.25 35 45.25 ) caulk 64 64 0 0 0 0 lightmap_gray 21732.143 16384 -1429.6799 -996 0 0
+ ( 7.5 35 30.75 ) ( 2.25 35 45.25 ) ( 2.75 35 45.5 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16388.699 16377.842 -1097.2231 871.51685 -24.509483 -0.00042233753
+ ( 2.75 35 45.75 ) ( 2.75 36 45.75 ) ( 8.25 36 31 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.08 16384 -1482.2423 -1000 -90 0
+ ( 8.25 36 31 ) ( 2.75 36 45.5 ) ( 2.25 36 45.25 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16385.783 16386.623 -1096.77 872.17633 -24.507687 -0.00080901996
+ ( 2.25 36 45.25 ) ( 2.25 35 45.25 ) ( 7.5 35 30.75 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.063 16384 -1481.334 -1000 -90 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( 7.5 -3 30.75 ) ( 8.25 -3 31 ) ( 8.25 -2 31 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 21675.99 16384 -1435.0853 -958 0 0
+ ( 2.75 -2 45.75 ) ( 2.75 -3 45.75 ) ( 2.25 -3 45.25 ) caulk 64 64 0 0 0 0 lightmap_gray 21732.143 16384 -1429.6799 -958 0 0
+ ( 7.5 -3 30.75 ) ( 2.25 -3 45.25 ) ( 2.75 -3 45.5 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16388.699 16377.842 -1097.2231 871.51685 -24.509483 -0.00042233753
+ ( 2.75 -3 45.75 ) ( 2.75 -2 45.75 ) ( 8.25 -2 31 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.08 16384 -1482.2423 -962 -90 0
+ ( 8.25 -2 31 ) ( 2.75 -2 45.5 ) ( 2.25 -2 45.25 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16385.783 16386.623 -1096.77 872.17633 -24.507687 -0.00080901996
+ ( 2.25 -2 45.25 ) ( 2.25 -3 45.25 ) ( 7.5 -3 30.75 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.063 16384 -1481.334 -962 -90 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 7.5 -45 30.75 ) ( 8.25 -45 31 ) ( 8.25 -44 31 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 21675.99 16384 -1435.0853 -916 0 0
+ ( 2.75 -44 45.75 ) ( 2.75 -45 45.75 ) ( 2.25 -45 45.25 ) caulk 64 64 0 0 0 0 lightmap_gray 21732.143 16384 -1429.6799 -916 0 0
+ ( 7.5 -45 30.75 ) ( 2.25 -45 45.25 ) ( 2.75 -45 45.5 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16388.902 16377.842 -1097.2319 871.521 -24.509483 -0.00043232847
+ ( 2.75 -45 45.75 ) ( 2.75 -44 45.75 ) ( 8.25 -44 31 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.08 16384 -1482.2423 -920 -90 0
+ ( 8.25 -44 31 ) ( 2.75 -44 45.5 ) ( 2.25 -44 45.25 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16385.783 16386.623 -1096.77 872.17657 -24.507687 -0.00080901996
+ ( 2.25 -44 45.25 ) ( 2.25 -45 45.25 ) ( 7.5 -45 30.75 ) berlin_floors_wood_hardwood2 128 128 992 872 0 0 lightmap_gray 21703.063 16384 -1481.334 -920 -90 0
+}
+// brush 5
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -1.3039551 -45 30.105835 t 0 -0 68.25 -55.8125
+	v -4.2017822 -45 30.882263 t 0 -24.000324 68.0625 -55.8125
+   )
+   (
+	v 6.2017822 -45 58.117737 t 232.00038 -0 68.25 -57.625
+	v 3.3039551 -45 58.894165 t 232.00038 -24.000324 68.0625 -57.625
+   )
+  }
+ }
+// brush 6
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 3.3039551 -3 58.894165 t 0 -0 68.0625 65.25
+	v 3.3039551 36 58.894165 t 0 -312 68.0625 62.8125
+   )
+   (
+	v 6.2017822 -3 58.117737 t 24.000324 -0 68.25 65.25
+	v 6.2017822 36 58.117737 t 24.000324 -312 68.25 62.8125
+   )
+  }
+ }
+// brush 7
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 3.3039551 -45 58.894165 t 0 -0 68.0625 65.25
+	v 3.3039551 -6 58.894165 t 0 -312 68.0625 62.8125
+   )
+   (
+	v 6.2017822 -45 58.117737 t 24.000324 -0 68.25 65.25
+	v 6.2017822 -6 58.117737 t 24.000324 -312 68.25 62.8125
+   )
+  }
+ }
+// brush 8
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -0.52758789 -9 33.003601 t 0 -0 -63 -57.9375
+	v -1.3039551 -6 30.105835 t -33.940929 0 -62.8125 -57.75
+   )
+   (
+	v -0.52758789 -42 33.003601 t 0 -312 -65.0625 -57.9375
+	v -1.3039551 -45 30.105835 t -33.940929 -312 -65.25 -57.75
+   )
+  }
+ }
+// brush 9
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -0.52758789 33 33.003601 t 0 -0 -63 -57.9375
+	v -1.3039551 36 30.105835 t -33.940929 0 -62.8125 -57.75
+   )
+   (
+	v -0.52758789 0 33.003601 t 0 -312 -65.0625 -57.9375
+	v -1.3039551 -3 30.105835 t -33.940929 -312 -65.25 -57.75
+   )
+  }
+ }
+// brush 10
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 6.2017822 36 58.117737 t 0 -0 -62.8125 -57.875
+	v 5.425293 33 55.21991 t -33.941444 0 -63 -57.6875
+   )
+   (
+	v 6.2017822 -3 58.117737 t 0 -264 -65.25 -57.875
+	v 5.425293 0 55.21991 t -33.941437 -264 -65.0625 -57.6875
+   )
+  }
+ }
+// brush 11
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 6.2017822 -6 58.117737 t 0 -0 -62.8125 -57.875
+	v 5.425293 -9 55.21991 t -33.941444 0 -63 -57.6875
+   )
+   (
+	v 6.2017822 -45 58.117737 t 0 -264 -65.25 -57.875
+	v 5.425293 -42 55.21991 t -33.941437 -264 -65.0625 -57.6875
+   )
+  }
+ }
+// brush 12
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 5.425293 0 55.21991 t 0 -0 -64.9375 -57.4375
+	v -0.52758789 0 33.003601 t 0 -232.00038 -64.9375 -56
+   )
+   (
+	v 6.2017822 -3 58.117737 t 33.940929 -0 -65.125 -57.625
+	v -1.3039551 -3 30.105835 t 33.940929 -232.00038 -65.125 -55.8125
+   )
+  }
+ }
+// brush 13
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 6.2017822 36 58.117737 t 0 -0 -64.9375 -57.625
+	v -1.3039551 36 30.105835 t 0 -184.0002 -64.9375 -55.8125
+   )
+   (
+	v 5.425293 33 55.21991 t 33.940929 -0 -65.125 -57.4375
+	v -0.52758789 33 33.003601 t 33.940929 -184.0002 -65.125 -56
+   )
+  }
+ }
+// brush 14
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 3.1923828 42 54.571045 t 0 -0 -64.9375 -57.4375
+	v -13.071167 42 38.307617 t 0 -232.00008 -64.9375 -56
+   )
+   (
+	v 5.3137207 39 56.692383 t 33.940777 -0 -65.125 -57.625
+	v -15.192383 39 36.186279 t 33.940777 -232.00008 -65.125 -55.8125
+   )
+  }
+ }
+// brush 15
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 5.425293 -42 55.21991 t 0 -0 -64.9375 -57.4375
+	v -0.52758789 -42 33.003601 t 0 -232.00038 -64.9375 -56
+   )
+   (
+	v 6.2017822 -45 58.117737 t 33.940929 -0 -65.125 -57.625
+	v -1.3039551 -45 30.105835 t 33.940929 -232.00038 -65.125 -55.8125
+   )
+  }
+ }
+// brush 16
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 6.2017822 -6 58.117737 t 0 -0 -64.9375 -57.625
+	v -1.3039551 -6 30.105835 t 0 -184.0002 -64.9375 -55.8125
+   )
+   (
+	v 5.425293 -9 55.21991 t 33.940929 -0 -65.125 -57.4375
+	v -0.52758789 -9 33.003601 t 33.940929 -184.0002 -65.125 -56
+   )
+  }
+ }
+// brush 17
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -3.425293 0 33.78009 t 0 -0 68.0625 65.0625
+	v -3.425293 33 33.78009 t 0 -264 68.0625 63
+   )
+   (
+	v -0.52758789 0 33.003601 t 23.999506 -0 68.25 65.0625
+	v -0.52758789 33 33.003601 t 23.999506 -264 68.25 63
+   )
+  }
+ }
+// brush 18
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -3.425293 -42 33.78009 t 0 -0 68.0625 65.0625
+	v -3.425293 -9 33.78009 t 0 -264 68.0625 63
+   )
+   (
+	v -0.52758789 -42 33.003601 t 23.999506 -0 68.25 65.0625
+	v -0.52758789 -9 33.003601 t 23.999506 -264 68.25 63
+   )
+  }
+ }
+// brush 19
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 2.5275879 33 55.996399 t 0 -0 68.0625 63
+	v 2.5275879 0 55.996399 t 0 -264 68.0625 65.0625
+   )
+   (
+	v 5.425293 33 55.21991 t 23.999506 -0 68.25 63
+	v 5.425293 0 55.21991 t 23.999506 -264 68.25 65.0625
+   )
+  }
+ }
+// brush 20
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 2.5275879 -9 55.996399 t 0 -0 68.0625 63
+	v 2.5275879 -42 55.996399 t 0 -264 68.0625 65.0625
+   )
+   (
+	v 5.425293 -9 55.21991 t 23.999506 -0 68.25 63
+	v 5.425293 -42 55.21991 t 23.999506 -264 68.25 65.0625
+   )
+  }
+ }
+// brush 21
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 36 30.882263 t 0 -0 68.0625 62.8125
+	v -4.2017822 -3 30.882263 t 0 -312 68.0625 65.25
+   )
+   (
+	v -1.3039551 36 30.105835 t 24.000324 -0 68.25 62.8125
+	v -1.3039551 -3 30.105835 t 24.000324 -312 68.25 65.25
+   )
+  }
+ }
+// brush 22
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 -6 30.882263 t 0 -0 68.0625 62.8125
+	v -4.2017822 -45 30.882263 t 0 -312 68.0625 65.25
+   )
+   (
+	v -1.3039551 -6 30.105835 t 24.000324 -0 68.25 62.8125
+	v -1.3039551 -45 30.105835 t 24.000324 -312 68.25 65.25
+   )
+  }
+ }
+// brush 23
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -3.425293 0 33.78009 t 0 -0 68.0625 -56
+	v -0.52758789 0 33.003601 t -23.999504 0 68.25 -56
+   )
+   (
+	v 2.5275879 0 55.996399 t 0 -184.0002 68.0625 -57.4375
+	v 5.425293 0 55.21991 t -23.999508 -184.0002 68.25 -57.4375
+   )
+  }
+ }
+// brush 24
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 -6 30.882263 t 0 -0 68.0625 -55.8125
+	v -1.3039551 -6 30.105835 t -24.000322 0 68.25 -55.8125
+   )
+   (
+	v 3.3039551 -6 58.894165 t 0 -232.00038 68.0625 -57.625
+	v 6.2017822 -6 58.117737 t -24.000328 -232.00038 68.25 -57.625
+   )
+  }
+ }
+// brush 25
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -15.192383 42 40.428955 t 0 -0 68.0625 -56
+	v -13.071167 42 38.307617 t -23.999508 0 68.25 -56
+   )
+   (
+	v 1.071167 42 56.692383 t 0 -184.00037 68.0625 -57.4375
+	v 3.1923828 42 54.571045 t -23.999514 -184.00037 68.25 -57.4375
+   )
+  }
+ }
+// brush 26
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 36 30.882263 t 0 -0 68.0625 -55.8125
+	v -1.3039551 36 30.105835 t -24.000322 0 68.25 -55.8125
+   )
+   (
+	v 3.3039551 36 58.894165 t 0 -232.00038 68.0625 -57.625
+	v 6.2017822 36 58.117737 t -24.000328 -232.00038 68.25 -57.625
+   )
+  }
+ }
+// brush 27
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -0.52758789 -9 33.003601 t 0 -0 68.25 -56
+	v -3.425293 -9 33.78009 t -23.999504 0 68.0625 -56
+   )
+   (
+	v 5.425293 -9 55.21991 t 0 -184.0002 68.25 -57.4375
+	v 2.5275879 -9 55.996399 t -23.999508 -184.0002 68.0625 -57.4375
+   )
+  }
+ }
+// brush 28
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -1.3039551 -3 30.105835 t 0 -0 68.25 -55.8125
+	v -4.2017822 -3 30.882263 t -24.000322 0 68.0625 -55.8125
+   )
+   (
+	v 6.2017822 -3 58.117737 t 0 -232.00038 68.25 -57.625
+	v 3.3039551 -3 58.894165 t -24.000328 -232.00038 68.0625 -57.625
+   )
+  }
+ }
+// brush 29
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -0.52758789 33 33.003601 t 0 -0 68.25 -56
+	v -3.425293 33 33.78009 t -23.999504 0 68.0625 -56
+   )
+   (
+	v 5.425293 33 55.21991 t 0 -184.0002 68.25 -57.4375
+	v 2.5275879 33 55.996399 t -23.999508 -184.0002 68.0625 -57.4375
+   )
+  }
+ }
+// brush 30
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -3.425293 -42 33.78009 t 0 -0 68.0625 -56
+	v -0.52758789 -42 33.003601 t -23.999504 0 68.25 -56
+   )
+   (
+	v 2.5275879 -42 55.996399 t 0 -184.0002 68.0625 -57.4375
+	v 5.425293 -42 55.21991 t -23.999508 -184.0002 68.25 -57.4375
+   )
+  }
+ }
+// brush 31
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 -6 30.882263 t 0 -0 -62.8125 -57.75
+	v -3.425293 -9 33.78009 t -33.941444 0 -63 -57.9375
+   )
+   (
+	v -4.2017822 -45 30.882263 t 0 -264 -65.25 -57.75
+	v -3.425293 -42 33.78009 t -33.941437 -264 -65.0625 -57.9375
+   )
+  }
+ }
+// brush 32
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 36 30.882263 t 0 -0 -62.8125 -57.75
+	v -3.425293 33 33.78009 t -33.941444 0 -63 -57.9375
+   )
+   (
+	v -4.2017822 -3 30.882263 t 0 -264 -65.25 -57.75
+	v -3.425293 0 33.78009 t -33.941437 -264 -65.0625 -57.9375
+   )
+  }
+ }
+// brush 33
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 2.5275879 33 55.996399 t 0 -0 -63 -57.6875
+	v 3.3039551 36 58.894165 t -33.940929 0 -62.8125 -57.875
+   )
+   (
+	v 2.5275879 0 55.996399 t 0 -312 -65.0625 -57.6875
+	v 3.3039551 -3 58.894165 t -33.940929 -312 -65.25 -57.875
+   )
+  }
+ }
+// brush 34
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 2.5275879 -9 55.996399 t 0 -0 -63 -57.6875
+	v 3.3039551 -6 58.894165 t -33.940929 0 -62.8125 -57.875
+   )
+   (
+	v 2.5275879 -42 55.996399 t 0 -312 -65.0625 -57.6875
+	v 3.3039551 -45 58.894165 t -33.940929 -312 -65.25 -57.875
+   )
+  }
+ }
+// brush 35
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -3.425293 0 33.78009 t 0 -0 -64.9375 -56
+	v 2.5275879 0 55.996399 t 0 -232.00038 -64.9375 -57.4375
+   )
+   (
+	v -4.2017822 -3 30.882263 t 33.940929 -0 -65.125 -55.8125
+	v 3.3039551 -3 58.894165 t 33.940929 -232.00038 -65.125 -57.625
+   )
+  }
+ }
+// brush 36
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -4.2017822 -6 30.882263 t 0 -0 -64.9375 -55.8125
+	v 3.3039551 -6 58.894165 t 0 -184.0002 -64.9375 -57.625
+   )
+   (
+	v -3.425293 -9 33.78009 t 33.940929 -0 -65.125 -56
+	v 2.5275879 -9 55.996399 t 33.940929 -184.0002 -65.125 -57.4375
+   )
+  }
+ }
+// brush 37
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -3.425293 -42 33.78009 t 0 -0 -64.9375 -56
+	v 2.5275879 -42 55.996399 t 0 -232.00038 -64.9375 -57.4375
+   )
+   (
+	v -4.2017822 -45 30.882263 t 33.940929 -0 -65.125 -55.8125
+	v 3.3039551 -45 58.894165 t 33.940929 -232.00038 -65.125 -57.625
+   )
+  }
+ }
+// brush 38
+{
+  contents nonColliding;
+ ( 7 33 30 ) ( 3 33 30 ) ( 3 27 30 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1085 -1036 0 0
+ ( 3 22 59 ) ( 3 28 59 ) ( 7 28 59 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1085 -1036 0 0
+ ( 3 -6 59 ) ( 7 -6 59 ) ( 7 -6 -13 ) berlin_floors_wood_hardwood2 128 128 1312 -872 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 9 22 59 ) ( 9 28 59 ) ( 9 28 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 1036 863 0 0
+ ( 7 -3 56 ) ( 3 -3 56 ) ( 3 -3 -16 ) berlin_floors_wood_hardwood2 128 128 1312 -872 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 4 28 59 ) ( 4 22 59 ) ( 4 22 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 1036 863 0 0
+}
+// brush 39
+{
+  contents nonColliding;
+ ( 9 75 30 ) ( 5 75 30 ) ( 5 69 30 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1085 -1078 0 0
+ ( 5 64 59 ) ( 5 70 59 ) ( 9 70 59 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1085 -1078 0 0
+ ( 3 36 63 ) ( 7 36 63 ) ( 7 36 -9 ) berlin_floors_wood_hardwood2 128 128 1312 -872 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 9 64 59 ) ( 9 70 59 ) ( 9 70 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 1078 863 0 0
+ ( 7 39 56 ) ( 3 39 56 ) ( 3 39 -16 ) berlin_floors_wood_hardwood2 128 128 1312 -872 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 4 70 59 ) ( 4 64 59 ) ( 4 64 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 1078 863 0 0
+}
+// brush 40
+{
+  contents nonColliding;
+ ( 3 -47 28 ) ( 11 -47 28 ) ( 11 -45 30 ) berlin_floors_wood_hardwood2 128 128 1312 992 180 0 lightmap_gray 16384 16384 -1085 -994 0 0
+ ( 11 -47 61 ) ( 3 -47 61 ) ( 3 -45 59 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 -994 0 0
+ ( 11 -47 28 ) ( 3 -47 28 ) ( 3 -47 61 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 11 -20 59 ) ( 11 -14 59 ) ( 11 -14 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 994 863 0 0
+ ( 7 -45 56 ) ( 3 -45 56 ) ( 3 -45 -16 ) berlin_floors_wood_hardwood2 128 128 1312 -872 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 3 -14 59 ) ( 3 -20 59 ) ( 3 -20 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 994 863 0 0
+}
+// brush 41
+{
+  contents nonColliding;
+ ( 7 78 36.5 ) ( 7 77 36.5 ) ( 7.5 77 37 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 16384 16384 -1083 -1038 0 0
+ ( -3.5 77 48 ) ( -3.5 78 48 ) ( -3 78 48.5 ) caulk 64 64 -8 0 0 0 lightmap_gray 16384 16384 -1083 -1038 0 0
+ ( 0.5 77 48.5 ) ( 1 77 48.5 ) ( 1 77 47 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16384 16384 -1083 866.5 0 0
+ ( 5.5 78 40 ) ( 5.5 77 40 ) ( -3 77 48.5 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 16384 16384 -1087.5 -1042 0 0
+ ( 1 78 48.5 ) ( 0.5 78 48.5 ) ( 0.5 78 47 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16384 16384 -1083 866.5 0 0
+ ( -3.5 78 48 ) ( -3.5 77 48 ) ( 5 77 39.5 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 16384 16384 -1087.5 -1042 0 0
+}
+// brush 42
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 3.1923828 39 58.813721 t 0 -0 68.0625 65.25
+	v 3.1923828 78 58.813721 t 0 -312 68.0625 62.8125
+   )
+   (
+	v 5.3137207 39 56.692383 t 24.000198 -0 68.25 65.25
+	v 5.3137207 78 56.692383 t 24.000198 -312 68.25 62.8125
+   )
+  }
+ }
+// brush 43
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 5.3137207 78 56.692383 t 0 -0 -62.8125 -57.875
+	v 3.1923828 75 54.571045 t -33.941265 0 -63 -57.6875
+   )
+   (
+	v 5.3137207 39 56.692383 t 0 -264 -65.25 -57.875
+	v 3.1923828 42 54.571045 t -33.941265 -264 -65.0625 -57.6875
+   )
+  }
+ }
+// brush 44
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -13.071167 75 38.307617 t 0 -0 -63 -57.9375
+	v -15.192383 78 36.186279 t -33.940777 0 -62.8125 -57.75
+   )
+   (
+	v -13.071167 42 38.307617 t 0 -312 -65.0625 -57.9375
+	v -15.192383 39 36.186279 t -33.940781 -312 -65.25 -57.75
+   )
+  }
+ }
+// brush 45
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 5.3137207 78 56.692383 t 0 -0 -64.9375 -57.625
+	v -15.192383 78 36.186279 t 0 -184.00037 -64.9375 -55.8125
+   )
+   (
+	v 3.1923828 75 54.571045 t 33.940777 -0 -65.125 -57.4375
+	v -13.071167 75 38.307617 t 33.940777 -184.00037 -65.125 -56
+   )
+  }
+ }
+// brush 46
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -15.192383 42 40.428955 t 0 -0 68.0625 65.0625
+	v -15.192383 75 40.428955 t 0 -264 68.0625 63
+   )
+   (
+	v -13.071167 42 38.307617 t 23.999508 -0 68.25 65.0625
+	v -13.071167 75 38.307617 t 23.999508 -264 68.25 63
+   )
+  }
+ }
+// brush 47
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 1.071167 75 56.692383 t 0 -0 68.0625 63
+	v 1.071167 42 56.692383 t 0 -264 68.0625 65.0625
+   )
+   (
+	v 3.1923828 75 54.571045 t 23.999508 -0 68.25 63
+	v 3.1923828 42 54.571045 t 23.999508 -264 68.25 65.0625
+   )
+  }
+ }
+// brush 48
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -17.313721 78 38.307617 t 0 -0 68.0625 62.8125
+	v -17.313721 39 38.307617 t 0 -312 68.0625 65.25
+   )
+   (
+	v -15.192383 78 36.186279 t 24.000198 -0 68.25 62.8125
+	v -15.192383 39 36.186279 t 24.000198 -312 68.25 65.25
+   )
+  }
+ }
+// brush 49
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -17.313721 78 38.307617 t 0 -0 68.0625 -55.8125
+	v -15.192383 78 36.186279 t -24.000198 0 68.25 -55.8125
+   )
+   (
+	v 3.1923828 78 58.813721 t 0 -232.00008 68.0625 -57.625
+	v 5.3137207 78 56.692383 t -24.000198 -232.00008 68.25 -57.625
+   )
+  }
+ }
+// brush 50
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -15.192383 39 36.186279 t 0 -0 68.25 -55.8125
+	v -17.313721 39 38.307617 t -24.000198 0 68.0625 -55.8125
+   )
+   (
+	v 5.3137207 39 56.692383 t 0 -232.00008 68.25 -57.625
+	v 3.1923828 39 58.813721 t -24.000198 -232.00008 68.0625 -57.625
+   )
+  }
+ }
+// brush 51
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -13.071167 75 38.307617 t 0 -0 68.25 -56
+	v -15.192383 75 40.428955 t -23.999508 0 68.0625 -56
+   )
+   (
+	v 3.1923828 75 54.571045 t 0 -184.00037 68.25 -57.4375
+	v 1.071167 75 56.692383 t -23.999514 -184.00037 68.0625 -57.4375
+   )
+  }
+ }
+// brush 52
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 1.071167 75 56.692383 t 0 -0 -63 -57.6875
+	v 3.1923828 78 58.813721 t -33.940777 0 -62.8125 -57.875
+   )
+   (
+	v 1.071167 42 56.692383 t 0 -312 -65.0625 -57.6875
+	v 3.1923828 39 58.813721 t -33.940781 -312 -65.25 -57.875
+   )
+  }
+ }
+// brush 53
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -17.313721 78 38.307617 t 0 -0 -62.8125 -57.75
+	v -15.192383 75 40.428955 t -33.941265 0 -63 -57.9375
+   )
+   (
+	v -17.313721 39 38.307617 t 0 -264 -65.25 -57.75
+	v -15.192383 42 40.428955 t -33.941265 -264 -65.0625 -57.9375
+   )
+  }
+ }
+// brush 54
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -15.192383 42 40.428955 t 0 -0 -64.9375 -56
+	v 1.071167 42 56.692383 t 0 -232.00008 -64.9375 -57.4375
+   )
+   (
+	v -17.313721 39 38.307617 t 33.940777 -0 -65.125 -55.8125
+	v 3.1923828 39 58.813721 t 33.940777 -232.00008 -65.125 -57.625
+   )
+  }
+ }
+// brush 55
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_floors_wood_hardwood2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -17.313721 78 38.307617 t 0 -0 -64.9375 -55.8125
+	v 3.1923828 78 58.813721 t 0 -184.00037 -64.9375 -57.625
+   )
+   (
+	v -15.192383 75 40.428955 t 33.940777 -0 -65.125 -56
+	v 1.071167 75 56.692383 t 33.940777 -184.00037 -65.125 -57.4375
+   )
+  }
+ }
+// brush 56
+{
+  contents nonColliding;
+ ( 11 78 59 ) ( 3 78 59 ) ( 3 -45 59 ) berlin_floors_wood_hardwood2 128 128 1312 994 180 0 lightmap_gray 16384 16384 -1085 -1035 0 0
+ ( 3 21 61 ) ( 3 27 61 ) ( 7 27 61 ) caulk 64 -64 125 1035 -180 0 lightmap_gray 16384 16384 -1085 -1035 0 0
+ ( 11 -45 59 ) ( 3 -45 59 ) ( 3 -47 61 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 860 0 0
+ ( 11 21 62 ) ( 11 27 62 ) ( 11 27 -10 ) berlin_floors_wood_hardwood2 128 128 872 -992 -90 0 lightmap_gray 16384 16384 1035 860 0 0
+ ( 3 78 59 ) ( 11 78 59 ) ( 11 80 61 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 860 0 0
+ ( 3 27 62 ) ( 3 21 62 ) ( 3 21 -10 ) berlin_floors_wood_hardwood2 128 128 872 -992 -90 0 lightmap_gray 16384 16384 1035 860 0 0
+}
+// brush 57
+{
+  contents nonColliding;
+ ( 11 80 28 ) ( 3 80 28 ) ( 3 78 30 ) berlin_floors_wood_hardwood2 128 128 1312 992 -180 0 lightmap_gray 16384 16384 -1085 -1120 0 0
+ ( 3 80 61 ) ( 11 80 61 ) ( 11 78 59 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 -1120 0 0
+ ( 3 78 59 ) ( 7 78 59 ) ( 7 78 -13 ) berlin_floors_wood_hardwood2 128 128 1312 -872 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 11 106 59 ) ( 11 112 59 ) ( 11 112 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 1120 863 0 0
+ ( 3 80 28 ) ( 11 80 28 ) ( 11 80 61 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 863 0 0
+ ( 3 112 59 ) ( 3 106 59 ) ( 3 106 -13 ) berlin_floors_wood_hardwood2 128 128 -992 -872 180 0 lightmap_gray 16384 16384 1120 863 0 0
+}
+// brush 58
+{
+  contents nonColliding;
+ ( 14 -49 61 ) ( 14 82 61 ) ( -6 82 61 ) berlin_trim_concrete_spoted 128 37.504002 -2 143.88 90 0 lightmap_gray 16384 16384 -1092 -1035 0 0
+ ( 16 82 64 ) ( 16 -49 64 ) ( -4 -49 64 ) berlin_trim_concrete_spoted 128 37.504002 0 145.88 90 0 lightmap_gray 16384 16384 -1092 -1035 0 0
+ ( -4 -49 64 ) ( 0 -49 64 ) ( 0 -49 -8 ) berlin_trim_concrete_spoted 153.60001 38.400002 0 67.5 0 0 lightmap_gray 16384 16384 -1092 858 0 0
+ ( 16 -49 64 ) ( 16 82 64 ) ( 14 82 61 ) berlin_trim_concrete_spoted 153.60001 38.400002 0 67.5 0 0 lightmap_gray 16384 16384 1035 859 0 0
+ ( 0 82 64 ) ( -4 82 64 ) ( -4 82 -8 ) berlin_trim_concrete_spoted 153.60001 38.400002 0 67.5 0 0 lightmap_gray 16384 16384 -1092 858 0 0
+ ( -4 82 64 ) ( -4 -49 64 ) ( -6 -49 61 ) berlin_trim_concrete_spoted 153.60001 38.400002 0 67.5 0 0 lightmap_gray 16384 16384 1212 819 0 0
+}
+// brush 59
+{
+  contents nonColliding;
+ ( 7 33 28 ) ( 3 33 28 ) ( 3 27 28 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 -1035 0 0
+ ( 3 78 30 ) ( 11 78 30 ) ( 11 -45 30 ) berlin_floors_wood_hardwood2 128 128 1312 994 180 0 lightmap_gray 16384 16384 -1085 -1035 0 0
+ ( 3 -45 30 ) ( 11 -45 30 ) ( 11 -47 28 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 892 0 0
+ ( 11 21 30 ) ( 11 27 30 ) ( 11 27 -42 ) berlin_floors_wood_hardwood2 128 128 872 -992 -90 0 lightmap_gray 16384 16384 1035 892 0 0
+ ( 11 78 30 ) ( 3 78 30 ) ( 3 80 28 ) caulk 64 -64 125 -860 180 0 lightmap_gray 16384 16384 -1085 892 0 0
+ ( 3 27 30 ) ( 3 21 30 ) ( 3 21 -42 ) berlin_floors_wood_hardwood2 128 128 872 -992 -90 0 lightmap_gray 16384 16384 1035 892 0 0
+}
+// brush 60
+{
+  contents nonColliding;
+ ( -8 80 24 ) ( -8 -47 24 ) ( 16 -47 24 ) berlin_trim_concrete_spoted 128 40.959999 1 155.88 90 0 lightmap_gray 16384 16384 -1090 -960 180 0
+ ( 14 80 28 ) ( 14 -47 28 ) ( -4 -47 28 ) berlin_trim_concrete_spoted 128 37.504002 -2 141.38 90 0 lightmap_gray 16384 16384 -1090 -960 180 0
+ ( 2 82 28 ) ( -2 82 28 ) ( -2 82 -44 ) berlin_trim_concrete_spoted 128 33.279999 0 43 0 0 lightmap_gray 16384 -16384 -1090 -894 180 0
+ ( -8 -47 24 ) ( -8 80 24 ) ( -8 80 26 ) berlin_trim_concrete_spoted 128 33.279999 90 43 0 0 lightmap_gray 16384 -16384 960 -894 -180 0
+ ( -2 -49 28 ) ( 2 -49 28 ) ( 2 -49 -44 ) berlin_trim_concrete_spoted 128 -33.279999 147 -43 180 0 lightmap_gray 16384 -16384 -1090 -894 180 0
+ ( 14 -47 28 ) ( 14 80 28 ) ( 16 80 24 ) berlin_trim_concrete_spoted 128 33.279999 1 43 0 0 lightmap_gray 16384 -16384 960 -894 180 0
+ ( -8 -47 26 ) ( -8 80 26 ) ( -4 80 28 ) berlin_trim_concrete_spoted 128 33.544598 0 126.03182 90 0 lightmap_gray 16384 16384 -1090 -960 -180 0
+}
+// brush 61
+{
+  contents nonColliding;
+ ( 7 40 36.5 ) ( 7 39 36.5 ) ( 7.5 39 37 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 16384 16384 -1083 -1000 0 0
+ ( -3.5 39 48 ) ( -3.5 40 48 ) ( -3 40 48.5 ) caulk 64 64 -8 0 0 0 lightmap_gray 16384 16384 -1083 -1000 0 0
+ ( 0.5 39 48.5 ) ( 1 39 48.5 ) ( 1 39 47 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16384 16384 -1083 866.5 0 0
+ ( 5.5 40 40 ) ( 5.5 39 40 ) ( -3 39 48.5 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 16384 16384 -1087.5 -1004 0 0
+ ( 1 40 48.5 ) ( 0.5 40 48.5 ) ( 0.5 40 47 ) berlin_floors_wood_hardwood2 128 128 -1312 872 0 0 lightmap_gray 16384 16384 -1083 866.5 0 0
+ ( -3.5 40 48 ) ( -3.5 39 48 ) ( 5 39 39.5 ) berlin_floors_wood_hardwood2 128 128 -1312 -992 0 0 lightmap_gray 16384 16384 -1087.5 -1004 0 0
+}
+}

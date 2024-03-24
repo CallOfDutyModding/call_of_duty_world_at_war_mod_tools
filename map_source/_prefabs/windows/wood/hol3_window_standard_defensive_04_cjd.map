@@ -1,0 +1,256 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"_color" "0.5 0.5 .62 1"
+"ambient" ".15"
+"sundiffusecolor" "0.75 0.82 0.85"
+"diffusefraction" ".5"
+"classname" "worldspawn"
+"sundirection" "-130  40 0"
+"suncolor" "0.9 0.95 1"
+"sunlight" "1.15"
+// brush 0
+{
+  contents detail;
+ ( -56 -8 1 ) ( -56 0 1 ) ( -60 0 -4 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 -96 0 0 0
+ ( -56 0 65 ) ( -56 -8 65 ) ( -60 -8 72 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 -96 0 0 0
+ ( -60 -8 72 ) ( 0 -8 72 ) ( 0 -8 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 72 ) ( -60 0 72 ) ( -60 0 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -60 0 72 ) ( -60 -12 72 ) ( -60 -12 0 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 0 1 ) ( -56 -8 1 ) ( -56 -8 65 ) holland_window_glass_grimy02 48 -72 -42 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 0 0 72 ) ( 0 -12 72 ) ( -60 -12 72 ) caulk 64 64 333 238.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -8 65 ) ( -56 -8 65 ) ( -60 -8 72 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 0 65 ) ( -4 0 65 ) ( 0 0 72 ) holland_window_glass_grimy02 60 -76 0 -4 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 0 65 ) ( -4 -8 65 ) ( 0 -8 72 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -8 65 ) ( -56 0 65 ) ( -60 0 72 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -54 4 65 ) ( -39 4 65 ) ( -54 36 65 ) holland_window_glass_grimy02 60 -76 0 -4 -180 0 lightmap_gray 16384 16384 96 0 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( -4 0 1 ) ( -4 -8 1 ) ( 0 -8 -4 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 -96 0 0 0
+ ( -4 -8 65 ) ( -4 0 65 ) ( 0 0 72 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 -96 0 0 0
+ ( -60 -8 72 ) ( 0 -8 72 ) ( 0 -8 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -12 72 ) ( 0 0 72 ) ( 0 0 0 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 72 ) ( -60 0 72 ) ( -60 0 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -8 1 ) ( -4 0 1 ) ( -4 0 65 ) holland_window_glass_grimy02 48 -72 -42 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( -60 0 -4 ) ( -60 -12 -4 ) ( 0 -12 -4 ) caulk 64 64 333 238.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -8 1 ) ( -4 -8 1 ) ( 0 -8 -4 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 0 1 ) ( -56 0 1 ) ( -60 0 -4 ) holland_window_glass_grimy02 60 -76 0 -4 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -8 1 ) ( -4 0 1 ) ( 0 0 -4 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 0 1 ) ( -56 -8 1 ) ( -60 -8 -4 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -40 4 1 ) ( -55 4 1 ) ( -55 36 1 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 96 0 0 0
+}
+// brush 4
+{
+  contents detail;
+ ( -4 -6 1 ) ( -4 -2 1 ) ( -7 -2 4 ) caulk 64 64 333 238.05193 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 0 65 ) ( -4 -8 65 ) ( -7 -8 63 ) caulk 64 64 333 238.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -2 1 ) ( -4 -6 1 ) ( -4 -6 65 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -7 0 63 ) ( -7 -8 63 ) ( -7 -8 4 ) holland_window_glass_grimy02 48 -72 -41 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -6 0 ) ( -4 -6 4 ) ( 28 -6 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 96 0 0 0
+ ( -4 -2 6 ) ( -4 -2 0 ) ( 28 -2 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 96 0 0 0
+}
+// brush 5
+{
+  contents detail;
+ ( 0 0 65 ) ( 0 -12 65 ) ( -60 -12 65 ) caulk 64 64 333 238.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -2 65 ) ( -4 -2 65 ) ( 0 -2 72 ) holland_window_glass_grimy02 60 -76 0 -4 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -7 -2 63 ) ( -7 -7 63 ) ( -4 -7 65 ) caulk 64 64 96 0 0 0 lightmap_gray 16384 16384 96 0 0 0
+ ( -53 -10 63 ) ( -53 -2 63 ) ( -56 -2 65 ) caulk 64 64 96 0 0 0 lightmap_gray 16384 16384 96 0 0 0
+ ( -7 -7 63 ) ( -7 -2 63 ) ( -53 -2 63 ) holland_window_glass_grimy02 60 76 0 61 -180 0 lightmap_gray 16384 16384 96 0 0 0
+ ( -4 -6 0 ) ( -4 -6 4 ) ( 28 -6 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 96 0 0 0
+}
+// brush 6
+{
+  contents detail;
+ ( -56 -2 1 ) ( -56 -6 1 ) ( -53 -6 4 ) caulk 64 64 333 238.05194 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -53 -1 63 ) ( -53 -7 63 ) ( -56 -7 65 ) caulk 64 64 333 238.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -6 1 ) ( -56 -2 1 ) ( -56 -2 65 ) caulk 64 64 333 142.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -53 -8 63 ) ( -53 0 63 ) ( -53 0 4 ) holland_window_glass_grimy02 48 -72 -41 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -6 0 ) ( -4 -6 4 ) ( 28 -6 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 96 0 0 0
+ ( -4 -2 6 ) ( -4 -2 0 ) ( 28 -2 0 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 96 0 0 0
+}
+// brush 7
+{
+  contents detail;
+ ( -60 0 1 ) ( -60 -12 1 ) ( 0 -12 1 ) caulk 64 64 333 238.05191 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -6 1 ) ( -56 -6 1 ) ( -53 -6 4 ) holland_window_glass_grimy02 60 -76 0 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -2 1 ) ( -4 -2 1 ) ( -7 -2 4 ) holland_window_glass_grimy02 60 -76 0 -4 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -2 1 ) ( -4 -6 1 ) ( -7 -6 4 ) caulk 64 64 96 0 0 0 lightmap_gray 16384 16384 96 0 0 0
+ ( -56 -6 1 ) ( -56 -2 1 ) ( -53 -2 4 ) caulk 64 64 96 0 0 0 lightmap_gray 16384 16384 96 0 0 0
+ ( -7 -2 4 ) ( -7 -6 4 ) ( -53 -6 4 ) holland_window_glass_grimy02 60 -76 6 -9 180 0 lightmap_gray 16384 16384 96 0 0 0
+}
+// brush 8
+{
+  contents nonColliding;
+ ( -7 -5 23 ) ( -7 -4 24 ) ( -7 -3 24 ) caulk 64 -64 127 -8 90 0 lightmap_gray 16384 -16384 127 -8 90 0
+ ( -53 -4 24 ) ( -53 -5 23 ) ( -53 -4 23 ) caulk 64 -64 127 -8 90 0 lightmap_gray 16384 -16384 127 -8 90 0
+ ( 13.5 -4.5 23.5 ) ( -47 -4.5 23.5 ) ( -47 -4 24 ) holland_window_glass_grimy02 60 -76 6 -9 180 0 lightmap_gray 16384 16384 -8 16 90 0
+ ( -47 -3.5 23.5 ) ( 13.5 -3.5 23.5 ) ( 13.5 -4 24 ) holland_window_glass_grimy02 60 -76 6 -9 180 0 lightmap_gray 16384 16384 -8 16 90 0
+ ( 12.5 -3.5 23.5 ) ( -48 -3.5 23.5 ) ( -48 -4 23 ) holland_window_glass_grimy02 60 -76 6 -9 180 0 lightmap_gray 16384 16384 -8 16 90 0
+ ( -48 -4.5 23.5 ) ( 12.5 -4.5 23.5 ) ( 12.5 -4 23 ) holland_window_glass_grimy02 48 76 87 20 90 0 lightmap_gray 16384 16384 -8 16 90 0
+}
+// brush 9
+{
+  contents nonColliding;
+ ( -30 -5 3.5 ) ( -29 -4 3.5 ) ( -29 -3 3.5 ) caulk 64 64 74 16 0 0 lightmap_gray 16384 16384 74 8 0 0
+ ( -29 -4 63 ) ( -30 -5 63 ) ( -30 -4 63 ) caulk 64 64 74 16 0 0 lightmap_gray 16384 16384 74 8 0 0
+ ( -29.5 -4.5 -1.5 ) ( -29.5 -4.5 59 ) ( -29 -4 59 ) holland_window_glass_grimy02 48 76 87 1 0 0 lightmap_gray 16384 16384 -8 5 0 0
+ ( -29.5 -3.5 59 ) ( -29.5 -3.5 -1.5 ) ( -29 -4 -1.5 ) holland_window_glass_grimy02 48 76 87 1 0 0 lightmap_gray 16384 16384 -8 5 0 0
+ ( -29.5 -3.5 -1.5 ) ( -29.5 -3.5 59 ) ( -30 -4 59 ) holland_window_glass_grimy02 48 -76 94 -1 180 0 lightmap_gray 16384 16384 -8 5 0 0
+ ( -29.5 -4.5 59 ) ( -29.5 -4.5 -1.5 ) ( -30 -4 -1.5 ) holland_window_glass_grimy02 48 -76 96 -1 180 0 lightmap_gray 16384 16384 -8 5 0 0
+}
+// brush 10
+{
+  contents nonColliding;
+ ( -7 -5 41 ) ( -7 -4 42 ) ( -7 -3 42 ) caulk 64 -64 321 -296 90 0 lightmap_gray 16384 -16384 145 -8 90 0
+ ( -53 -4 42 ) ( -53 -5 41 ) ( -53 -4 41 ) caulk 64 -64 321 -296 90 0 lightmap_gray 16384 -16384 145 -8 90 0
+ ( 12.5 -4.5 41.5 ) ( -48 -4.5 41.5 ) ( -48 -4 42 ) holland_window_glass_grimy02 48 -76 -74 -12 180 0 lightmap_gray 16384 16384 -8 16 90 0
+ ( -48 -3.5 41.5 ) ( 12.5 -3.5 41.5 ) ( 12.5 -4 42 ) holland_window_glass_grimy02 48 -76 6 -12 180 0 lightmap_gray 16384 16384 -8 16 90 0
+ ( 12.5 -3.5 41.5 ) ( -48 -3.5 41.5 ) ( -48 -4 41 ) holland_window_glass_grimy02 48 76 6 5 -180 0 lightmap_gray 16384 16384 -8 16 90 0
+ ( -48 -4.5 41.5 ) ( 12.5 -4.5 41.5 ) ( 12.5 -4 41 ) holland_window_glass_grimy02 48 76 -74 3 180 0 lightmap_gray 16384 16384 -8 16 90 0
+}
+// brush 11
+{
+  contents detail;
+ ( -56 -1 39.5 ) ( -56 -9 39.5 ) ( -3 -7.5 42 ) holland_floors_wood_barn_sno 128 -127.87605 35.564262 -1.7044746 91.851234 6.4412641e-005 lightmap_gray 16361.547 16384 -0.96260935 0 0 0
+ ( -56 -9 43 ) ( -56 -1 43 ) ( -3 0.5 45.5 ) holland_floors_wood_barn_sno 128 127.875 52.362793 1.6278335 -89.652901 -2.4133653e-005 lightmap_gray 16361.549 16384 -1.1196156 0 0 0
+ ( -56 -9 39.5 ) ( -56 -9 43 ) ( -3 -7.5 45.5 ) holland_floors_wood_barn_sno 128 128 0 0 -88 0 lightmap_gray 16384 16384.033 1.266762 -22.564135 3 0
+ ( -3 -7.5 45.5 ) ( -3 0.5 45.5 ) ( -3 0.5 42 ) caulk 63.912922 64 334.96439 142.05191 90 0 lightmap_gray 16384 16361.553 0 -22.390182 0 0
+ ( -56 -1 43 ) ( -56 -1 39.5 ) ( -3 0.5 42 ) holland_floors_wood_barn_sno 128 128 0 0 -88 0 lightmap_gray 16384 16384.033 1.2667729 -22.564133 3 0
+ ( -56 -1 43 ) ( -56 -9 43 ) ( -56 -9 39.5 ) holland_floors_wood_barn_sno 128 128 0 0 -88 0 lightmap_gray 16384 16361.543 0 -19.668737 0 0
+}
+// brush 12
+{
+  contents detail;
+ ( -4 -8.5 20 ) ( -4 -0.5 20 ) ( -56 -1 20 ) holland_floors_wood_barn_sno 128 -127.87602 157.56427 -60.704468 91.851173 6.5054694e-005 lightmap_gray 16361.547 16384 -0.96260899 0 0 0
+ ( -4 -0.5 23.5 ) ( -4 -8.5 23.5 ) ( -56 -9 23.5 ) holland_floors_wood_barn_sno 128 127.875 174.36279 -57.372166 -89.652786 -2.3838662e-005 lightmap_gray 16361.549 16384 -1.1196159 0 0 0
+ ( -4 -6.5 23.5 ) ( -4 -6.5 20 ) ( -56 -7 20 ) holland_floors_wood_barn_sno 128 128 141.4881 -58.319733 -88 0 lightmap_gray 16384 16384.064 0.24550976 -3.0908461 3 0
+ ( -4 -8.5 23.5 ) ( -4 -0.5 23.5 ) ( -4 -0.5 20 ) caulk 63.913067 64 437.46506 83.05191 90 0 lightmap_gray 16384 16361.565 0 -2.890151 0 0
+ ( -4 -0.5 20 ) ( -4 -0.5 23.5 ) ( -56 -1 23.5 ) holland_floors_wood_barn_sno 128 128 141.48807 -58.319736 -88 0 lightmap_gray 16384 16384.064 0.24551278 -3.0908403 3 0
+ ( -56 -1 23.5 ) ( -56 -9 23.5 ) ( -56 -9 20 ) holland_floors_wood_barn_sno 128 128 141.4884 -58.319462 -88 0 lightmap_gray 16384 16361.549 0 -0.16872442 0 0
+}
+}
+// entity 1
+{
+"modelscale" ".75"
+"angles" "1.68886e-006 270 -173.2"
+"origin" "-37.2 -5.0 35.5"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 2
+{
+"modelscale" ".75"
+"angles" "9.81474e-006 270 15.4"
+"origin" "-24.0 -5.0 27.1"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 3
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-45.0 -5.0 23.0"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 4
+{
+"modelscale" ".75"
+"angles" "-0 90 0"
+"origin" "-16.0 -6.0 23.0"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 5
+{
+"modelscale" ".75"
+"angles" "1.81872e-006 90 147"
+"origin" "-20.3 -6.0 59.8"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 6
+{
+"modelscale" ".75"
+"angles" "4.60401e-006 90 101.4"
+"origin" "-11.8 -6.0 56.3"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 7
+{
+"modelscale" ".75"
+"angles" "9.97107e-006 270 3.80002"
+"origin" "-43.5 -5.0 51.1"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 8
+{
+"modelscale" ".75"
+"angles" "1.6453e-006 270 173.6"
+"origin" "-24.3 -5.0 52.5"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 9
+{
+"modelscale" ".75"
+"angles" "-0 350.6 0"
+"origin" "-47.0 -5.0 44.0"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 10
+{
+"modelscale" ".75"
+"angles" "22.2955 177.78 3.76224"
+"origin" "-48.6 -4.2 56.2"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 11
+{
+"classname" "misc_model"
+"model" "static_holland_sandbag_snowy"
+"origin" "-38.3 -9.6 44.3"
+"angles" "338.59 182.918 -7.95208"
+"modelscale" ".75"
+}
+// entity 12
+{
+"modelscale" ".75"
+"angles" "1.88779e-006 270 170.4"
+"origin" "-35.1 -7.0 10.4"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 13
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-16.0 -5.0 3.0"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}
+// entity 14
+{
+"modelscale" ".75"
+"angles" "7.1332e-006 270 121.8"
+"origin" "-44.6 -7.0 10.6"
+"model" "static_holland_sandbag_snowy"
+"classname" "misc_model"
+}

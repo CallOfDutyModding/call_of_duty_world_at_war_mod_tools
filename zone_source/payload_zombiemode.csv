@@ -1,0 +1,134 @@
+include,flamethrower
+
+// strings
+localize,zombie
+
+// viewmodel arms
+xmodel,viewmodel_usa_marine_arms
+xmodel,viewmodel_usa_marine_player
+
+// zombie anims
+xanim,ai_zombie_attack_forward_v1
+xanim,ai_zombie_attack_forward_v2
+xanim,ai_zombie_attack_v1
+xanim,ai_zombie_attack_v2
+xanim,ai_zombie_crawl_death_v1
+xanim,ai_zombie_crawl_death_v2
+xanim,ai_zombie_crawl_v1
+xanim,ai_zombie_death_v1
+xanim,ai_zombie_death_v2
+xanim,ai_zombie_door_pound_v1
+xanim,ai_zombie_door_pound_v2
+xanim,ai_zombie_door_tear_v1
+xanim,ai_zombie_idle_v1
+xanim,ai_zombie_idle_v1_delta
+xanim,ai_zombie_shot_arm_left
+xanim,ai_zombie_shot_arm_right
+xanim,ai_zombie_shot_leg_left_2_crawl
+xanim,ai_zombie_shot_leg_right_2_crawl
+xanim,ai_zombie_sprint_v1
+xanim,ai_zombie_sprint_v2
+xanim,ai_zombie_walk_fast_v1
+xanim,ai_zombie_walk_fast_v2
+xanim,ai_zombie_walk_fast_v3
+xanim,ai_zombie_walk_v1
+xanim,ai_zombie_walk_v2
+xanim,ai_zombie_walk_v3
+xanim,ai_zombie_walk_v4
+xanim,ai_zombie_door_tear_v2
+xanim,ai_zombie_walk_fast_v1
+xanim,ai_zombie_walk_fast_v2
+xanim,ai_zombie_walk_fast_v3
+xanim,ai_zombie_sprint_v1
+xanim,ai_zombie_sprint_v2
+xanim,ai_zombie_crawl
+xanim,ai_zombie_crawl_v1
+xanim,ai_zombie_crawl_death_v1
+xanim,ai_zombie_crawl_death_v2	
+xanim,ai_zombie_crawl_sprint
+xanim,ai_zombie_idle_crawl
+xanim,ai_zombie_idle_crawl_base
+xanim,ai_zombie_idle_crawl_delta
+xanim,ai_zombie_attack_crawl
+xanim,ai_zombie_attack_crawl_lunge
+
+// tear anims
+xanim,ai_zombie_door_tear_v1
+xanim,ai_zombie_door_tear_v2
+xanim,ai_zombie_door_tear_high
+xanim,ai_zombie_door_tear_left
+xanim,ai_zombie_door_tear_right
+xanim,ai_zombie_door_tear_low
+
+// pound door animations
+xanim,ai_zombie_door_pound_v1
+xanim,ai_zombie_door_pound_v2
+
+// after gib shot anims
+xanim,ai_zombie_shot_arm_left
+xanim,ai_zombie_shot_arm_right
+xanim,ai_zombie_shot_leg_left_2_crawl
+xanim,ai_zombie_shot_leg_right_2_crawl
+
+// melee anims
+xanim,ai_zombie_attack_forward_v1
+xanim,ai_zombie_attack_forward_v2
+xanim,ai_zombie_attack_v1
+xanim,ai_zombie_attack_v2
+
+// idle
+xanim,ai_zombie_idle_v1
+xanim,ai_zombie_idle_base
+
+// traverse
+xanim,ai_zombie_traverse_v1
+xanim,ai_zombie_traverse_v2
+xanim,ai_zombie_traverse_crawl_v1
+		
+rawfile,maps/payload_zombiemode.gsc
+rawfile,maps/payload_zombiemode_utility.gsc
+rawfile,maps/payload_zombiemode_spawner.gsc
+
+rawfile,vision/zombie.vision
+
+// materials 
+material,zombie_intro
+material,nazi_intro
+material,hud_chalk_1
+material,hud_chalk_2
+material,hud_chalk_3
+material,hud_chalk_4
+material,hud_chalk_5
+
+// leaderboard materials
+material,scorebar_zom_1
+material,scorebar_zom_2
+material,scorebar_zom_3
+material,scorebar_zom_4
+material,scorebar_zom_long_1
+material,scorebar_zom_long_2
+material,scorebar_zom_long_3
+material,scorebar_zom_long_4
+
+// fog at edge of level
+fx,env/smoke/fx_fog_zombie_amb
+fx,env/light/fx_ray_sun_sm_short
+
+// neckstump
+xmodel,char_ger_honorgd_zomb_behead
+
+// head gib stuff
+fx,misc/fx_zombie_bloodsplat
+fx,misc/fx_zombie_bloodspurt
+
+// eye piece
+xmodel,char_ger_zombieeye
+
+// SRS 9/2/2008: for playing fx that we need to stop
+xmodel,tag_origin
+
+// FX for the eyes
+fx,misc/fx_zombie_eye_single
+
+// FX for player being a zombie
+fx,misc/fx_zombie_grain_cloud

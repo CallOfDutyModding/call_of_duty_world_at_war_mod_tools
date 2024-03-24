@@ -1,0 +1,18 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"model" "veh_t34_mp_dpm_main"
+"targetname" "destructible"
+"destructibledef" "vehicle_rus_t34_mp_ddef"
+"spawnflags" "1"
+"script_gameobjectname" "vehicle"
+"vehicletype" "t34_mp"
+"origin" "0.0 0.0 0.0"
+"classname" "script_vehicle"
+}

@@ -1,0 +1,235 @@
+ignore,code_post_gfx
+ignore,common
+
+// for zombie specific assets,
+include,zombiemode
+include,zombiemode_dogs
+
+// for coop players,
+mptype,nazi_zombie_heroes
+
+// for puddle effects,
+include,water
+
+impactfx,nazi_zombie_sumpf
+
+rawfile,clientscripts/nazi_zombie_sumpf.csc
+rawfile,clientscripts/nazi_zombie_sumpf_amb.csc
+rawfile,clientscripts/nazi_zombie_sumpf_fx.csc
+rawfile,clientscripts/_zombie_mode.csc
+rawfile,clientscripts/createfx/nazi_zombie_sumpf_fx.csc
+rawfile,maps/createfx/nazi_zombie_sumpf_fx.gsc
+rawfile,maps/nazi_zombie_sumpf_fx.gsc
+rawfile,maps/nazi_zombie_sumpf.gsc
+rawfile,maps/nazi_zombie_sumpf_perks.gsc
+rawfile,maps/nazi_zombie_sumpf_zone_management.gsc
+rawfile,maps/nazi_zombie_sumpf_magic_box.gsc
+rawfile,maps/nazi_zombie_sumpf_trap_pendulum.gsc
+//rawfile,maps/nazi_zombie_sumpf_trap_propeller.gsc
+//rawfile,maps/nazi_zombie_sumpf_trap_barrel.gsc
+//rawfile,maps/nazi_zombie_sumpf_trap_electric.gsc
+rawfile,maps/nazi_zombie_sumpf_bouncing_betties.gsc
+rawfile,maps/nazi_zombie_sumpf_zipline.gsc
+rawfile,maps/nazi_zombie_sumpf_bridge.gsc,,
+//rawfile,maps/nazi_zombie_sumpf_ammo_box.gsc,,
+rawfile,maps/nazi_zombie_sumpf_blockers.gsc,,
+rawfile,maps/nazi_zombie_sumpf_trap_perk_electric.gsc,,
+rawfile,maps/createart/nazi_zombie_sumpf_art.gsc,,
+rawfile,maps/_zombiemode_weapons_sumpf.gsc
+rawfile,vision/zombie_sumpf.vision,,
+rawfile,vision/zombie_sumpf_dogs.vision,,
+rawfile,rumble/explosion_generic,,
+rawfile,rumble/explosion_generic_l.rmb,,
+rawfile,rumble/explosion_generic_h.rmb,,
+col_map_sp,maps/nazi_zombie_sumpf.d3dbsp,,
+
+sound,common,nazi_zombie_sumpf,all_sp
+sound,generic,nazi_zombie_sumpf,all_sp
+sound,voiceovers,nazi_zombie_sumpf,all_sp
+sound,requests,nazi_zombie_sumpf,all_sp
+sound,character,nazi_zombie_sumpf,all_sp
+sound,projectiles,nazi_zombie_sumpf,all_sp
+sound,nazi_zombie_sumpf,nazi_zombie_sumpf,all_sp
+sound,physics,nazi_zombie_sumpf,all_sp
+sound,destructibles,nazi_zombie_sumpf,all_sp
+// dlc2 vox and shared csv,,,
+//sound,dlc2_vox,nazi_zombie_sumpf,all_sp
+//sound,dlc2_share,nazi_zombie_sumpf,all_sp
+// for all weapon sounds,,,
+sound,weapons,audio_test_tuey,all_sp
+
+xmodel,viewmodel_usa_marine_arms,,
+xmodel,viewmodel_usa_marine_player,,
+
+xanim,ch_dazed_d_death,,
+xanim,ch_dazed_c_death,,
+xanim,ch_dazed_b_death
+xanim,ch_dazed_a_death
+xanim,ch_dazed_d
+xanim,ch_dazed_c
+xanim,ch_dazed_b
+xanim,ch_dazed_a
+
+fx,env/dirt/fx_dust_ceiling_impact_lg_mdbrown
+fx,maps/zombie/fx_zombie_debris_removal
+fx,destructibles/fx_dest_fire_vert
+//fx,maps/mak/fx_fire_fuel_spill
+fx,weapon/bouncing_betty/fx_explosion_betty_generic
+fx,weapon/bouncing_betty/fx_betty_trail
+//fx,maps/zombie/fx_zombie_chopper_trp_blur
+
+//xmodel,skybox_zombie
+xmodel,zombie_teddybear
+
+// ESM - added for sumpf vending machines,
+xmodel,zombie_vending_jugg_on_price
+xmodel,zombie_vending_doubletap_price
+xmodel,zombie_vending_revive_on_price
+xmodel,zombie_vending_sleight_on_price
+
+// ESM - trap cagelights,
+xmodel,zombie_zapper_cagelight_red
+xmodel,zombie_zapper_cagelight_green
+fx,env/electrical/fx_elec_wire_spark_burst
+
+// WEAPONS,
+// cut weapons,
+//weapon,sp/colt_dirty_harry
+//weapon,sp/doublebarrel
+//weapon,sp/fg42_bipod
+//weapon,sp/mg42_bipod
+//weapon,sp/m1garand_gl
+//weapon,sp/mk2_frag
+//weapon,sp/walther
+//weapon,sp/30cal_bipod
+//weapon,sp/fg42_bipod_crouch
+//weapon,sp/fg42_bipod_stand
+//weapon,sp/fg42_bipod_prone
+//weapon,sp/mg42_bipod_crouch
+//weapon,sp/mg42_bipod_stand
+//weapon,sp/mg42_bipod_prone
+//weapon,sp/type99_lmg_bipod_crouch
+//weapon,sp/type99_lmg_bipod_stand
+//weapon,sp/type99_lmg_bipod_prone
+//weapon,sp/30cal_bipod_crouch
+//weapon,sp/30cal_bipod_stand
+//weapon,sp/30cal_bipod_prone
+
+// grenades,
+weapon,sp/stielhandgranate
+//weapon,sp/fraggrenade
+
+// weapons,
+weapon,sp/zombie_30cal
+weapon,sp/zombie_bar
+weapon,sp/colt
+weapon,sp/zombie_colt
+weapon,sp/zombie_doublebarrel
+weapon,sp/zombie_doublebarrel_sawed
+weapon,sp/zombie_fg42
+weapon,sp/zombie_gewehr43
+//weapon,sp/kar98k
+//weapon,sp/kar98k_scoped_zombie
+weapon,sp/zombie_m1carbine
+weapon,sp/zombie_m1garand
+weapon,sp/m2_flamethrower_zombie
+weapon,sp/m1garand_gl_zombie
+weapon,sp/m7_launcher_zombie
+weapon,sp/zombie_mg42
+weapon,sp/molotov
+weapon,sp/zombie_mp40
+weapon,sp/napalmblob
+weapon,sp/napalmbloblight
+weapon,sp/panzerschrek_zombie
+weapon,sp/zombie_ppsh
+weapon,sp/ptrs41_zombie
+weapon,sp/ray_gun
+weapon,sp/zombie_shotgun
+//weapon,sp/springfield
+weapon,sp/zombie_stg44
+weapon,sp/sw_357
+weapon,sp/tesla_gun
+weapon,sp/zombie_thompson
+weapon,sp/zombie_type99_rifle
+//weapon,sp/type99_rifle_scoped_zombie
+weapon,sp/zombie_type100_smg
+
+// footstep,
+fx,bio/player/fx_footstep_dust
+fx,bio/player/fx_footstep_water
+fx,bio/player/fx_footstep_sand
+fx,bio/player/fx_footstep_mud
+
+// ambient effects,
+fx,maps/mp_maps/fx_mp_fire_small_detail
+fx,maps/mp_maps/fx_mp_fire_small
+fx,maps/mp_maps/fx_mp_fire_medium
+fx,maps/mp_maps/fx_mp_fire_large
+fx,maps/mp_maps/fx_mp_light_glow_lantern
+fx,maps/mp_maps/fx_mp_smoke_ambiance_indoor
+fx,maps/mp_maps/fx_mp_smoke_ambiance_indoor_misty
+fx,"maps/mp_maps/fx_mp_smoke_ambiance_indoor_sm	"
+fx,env/smoke/fx_fog_low_floor_sm
+fx,"maps/mp_maps/fx_mp_smoke_column_tall	"
+fx,"maps/mp_maps/fx_mp_smoke_column_short	"
+fx,"maps/mp_maps/fx_mp_fog_rolling_thick_large_area	"
+fx,maps/mp_maps/fx_mp_fog_rolling_thick_small_area
+fx,maps/mp_maps/fx_mp_flies_carcass
+fx,maps/mp_maps/fx_mp_insect_swarm
+fx,maps/mp_maps/fx_mp_insects_lantern
+fx,maps/mp_maps/fx_mp_firefly_ambient
+fx,maps/mp_maps/fx_mp_firefly_swarm
+fx,maps/mp_maps/fx_mp_maggots
+fx,maps/mp_maps/fx_mp_falling_leaves_elm
+fx,env/light/fx_light_god_rays_dust_motes
+fx,env/light/fx_ray_ceiling_amber_dim_sm  
+fx,bio/animals/fx_bats_circling 
+fx,maps/mp_maps/fx_bats_ambient 
+fx,maps/mp_maps/fx_mp_fire_torch
+fx,bio/insects/fx_insects_dragonflies_ambient
+fx,maps/mp_maps/fx_mp_ray_moon_xsm_near
+fx,maps/zombie/fx_meteor_ambient
+fx,maps/zombie/fx_meteor_flash
+fx,maps/zombie/fx_meteor_flash_spawn 
+fx,maps/zombie/fx_meteor_hotspot
+
+// electric trap fx,
+fx,env/electrical/fx_elec_wire_spark_burst
+fx,misc/fx_zombie_electric_trap_loc
+fx,misc/fx_zombie_electric_trap
+fx,misc/fx_zombie_zapper_light_green
+fx,misc/fx_zombie_zapper_light_red
+
+// hanging light fx,
+fx,env/light/fx_glow_hanginglamp
+
+
+// dogs,
+fx,maps/zombie/fx_zombie_dog_eyes
+fx,maps/zombie/fx_zombie_dog_explosion
+fx,maps/zombie/fx_zombie_dog_fire_trail
+fx,maps/zombie/fx_zombie_dog_ash_trail
+fx,maps/zombie/fx_zombie_dog_breath
+//fx,maps/zombie/fx_zombie_chopper_trp
+//fx,maps/zombie/fx_zombie_fire_trp
+fx,maps/zombie/fx_zombie_log_trp
+fx,maps/zombie/fx_zombie_dog_gate_start
+fx,maps/zombie/fx_zombie_dog_gate_looping
+fx,maps/zombie/fx_zombie_dog_gate_end
+
+// magic box,
+fx,maps/zombie/fx_zombie_lght_marker
+fx,maps/zombie/fx_zombie_lght_marker_flare
+
+// Perks-a-cola effects,
+fx,misc/fx_zombie_perk_lottery
+fx,misc/fx_zombie_cola_on
+fx,misc/fx_zombie_cola_dtap_on
+fx,misc/fx_zombie_cola_jugg_on
+fx,misc/fx_zombie_cola_revive_on
+fx,misc/fx_zombie_perk_lottery_4
+
+// electrical trap,
+fx,env/electrical/fx_elec_player_md
+fx,env/electrical/fx_elec_player_sm
+fx,env/electrical/fx_elec_player_torso

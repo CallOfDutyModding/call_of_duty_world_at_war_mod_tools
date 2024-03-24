@@ -1,0 +1,71 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"modelscale" ".75"
+"no_collmap" "1"
+"skyboxmodel" "skybox_oki3"
+"classname" "worldspawn"
+"northyaw" "90"
+"ambient" "0.15"
+"_color" "0.411765 0.34902 0.439216"
+"diffusefraction" "0.35"
+"sundiffusecolor" "0.3647 0.3686 0.3725"
+"suncolor" "1 0.839 0.643"
+"sundirection" "-155 -182 0"
+"sunlight" "1.25"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"contrastgain" "0.15"
+// brush 0
+{
+  contents detail;
+ ( -58 0.25 108 ) ( -24 0.25 108 ) ( -24 0.25 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -24 0.75 108 ) ( -58 0.75 108 ) ( -58 0.75 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -28.5 0.25 58 ) ( -28.5 0.25 65 ) ( -28.5 -31.75 65 ) caulk 64 -64 -1436.25 395 180 0 lightmap_gray 16384 -16384 -1436.25 395 180 0
+ ( -1.5 0.25 67.5 ) ( -1.5 0.25 60.5 ) ( -1.5 -31.75 67.5 ) caulk 64 -64 -1436.25 395 -180 0 lightmap_gray 16384 -16384 -1436.25 395 -180 0
+ ( -26 21.25 69.5 ) ( -19 21.25 69.5 ) ( -26 -10.75 69.5 ) caulk 64 64 -1436.25 -782 -90 0 lightmap_gray 16384 16384 -1436.25 -782 -90 0
+ ( -19.5 0.25 1.5 ) ( -22.5 0.25 1.5 ) ( -19.5 -31.75 1.5 ) caulk 64 64 -1436.25 -782 -90 0 lightmap_gray 16384 16384 -1436.25 -782 -90 0
+}
+// brush 1
+{
+  contents detail;
+ ( -30 0 71 ) ( -30 1 71 ) ( 0 1 71 ) okinawa_wall_shuri_build_fro_door 58 -71.00325 -754 284.01306 180 0 lightmap_gray 16384 16384 -1420 -782 -90 0
+ ( -58 0 108 ) ( -24 0 108 ) ( -24 0 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -24 1 108 ) ( -58 1 108 ) ( -58 1 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -30 1 71 ) ( -30 0 71 ) ( -28 0 69 ) caulk 64 64 -1436 -782 -90 0 lightmap_gray 16384 16384 -1436 -782 -90 0
+ ( 0 0 71 ) ( 0 1 71 ) ( -2 1 69 ) caulk 64 64 -1436 -782 -90 0 lightmap_gray 16384 16384 -1436 -782 -90 0
+ ( -19 21 69.5 ) ( -26 21 69.5 ) ( -26 -11 69.5 ) okinawa_wall_shuri_build_fro_door 58 -71.00325 -753.99731 284.01306 180 0 lightmap_gray 16384 16384 -1436 -782 -90 0
+}
+// brush 2
+{
+  contents detail;
+ ( -2 1 2 ) ( -2 0 2 ) ( 0 0 0 ) okinawa_wall_shuri_build_fro_door 58 71.00325 -753.9892 -355.01624 180 0 lightmap_gray 16384 16384 -1420 -782 -90 0
+ ( -2 0 69 ) ( -2 1 69 ) ( 0 1 71 ) okinawa_wall_shuri_build_fro_door 58 -71.00325 -753.98975 284.01306 180 0 lightmap_gray 16384 16384 -1420 -782 -90 0
+ ( -58 0 108 ) ( -24 0 108 ) ( -24 0 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( 0 0 107 ) ( 0 2 107 ) ( 0 2 -39 ) okinawa_wall_shuri_build_fro_door 58.002876 -71 -753.99371 355 180 0 lightmap_gray 16384 -16384 -1420 394 180 0
+ ( -24 1 108 ) ( -58 1 108 ) ( -58 1 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -1.5 1 68.5 ) ( -1.5 0 68.5 ) ( -1.5 0 1.5 ) okinawa_wall_shuri_build_fro_door 57.99646 -71 -753.93597 355 180 0 lightmap_gray 16384 -16384 -1436 395 180 0
+}
+// brush 3
+{
+  contents detail;
+ ( 0 0 0 ) ( 0 1 0 ) ( -30 1 0 ) okinawa_wall_shuri_build_fro_door 58 71.00325 -754 -355.01624 180 0 lightmap_gray 16384 16384 -1420 -782 -90 0
+ ( -58 0 108 ) ( -24 0 108 ) ( -24 0 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -24 1 108 ) ( -58 1 108 ) ( -58 1 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -30 0 0 ) ( -30 1 0 ) ( -28 1 2 ) caulk 64 64 -1436 -782 -90 0 lightmap_gray 16384 16384 -1436 -782 -90 0
+ ( 0 1 0 ) ( 0 0 0 ) ( -2 0 2 ) caulk 64 64 -1436 -782 -90 0 lightmap_gray 16384 16384 -1436 -782 -90 0
+ ( -23 0 1.5 ) ( -20 0 1.5 ) ( -20 -32 1.5 ) okinawa_wall_shuri_build_fro_door 58 -71.00325 -753.96191 284.01306 180 0 lightmap_gray 16384 16384 -1436 -782 -90 0
+}
+// brush 4
+{
+  contents detail;
+ ( -28 0 2 ) ( -28 1 2 ) ( -30 1 0 ) okinawa_wall_shuri_build_fro_door 58.002876 71.00325 -754.03241 -355.01624 180 0 lightmap_gray 16384 16384 -1420 -782 -90 0
+ ( -28 1 69 ) ( -28 0 69 ) ( -30 0 71 ) okinawa_wall_shuri_build_fro_door 58.002876 -71.00325 -754.03296 284.01306 180 0 lightmap_gray 16384 16384 -1420 -782 -90 0
+ ( -58 0 108 ) ( -24 0 108 ) ( -24 0 -38 ) okinawa_wall_shuri_build_fro_door 58 -71 -754 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -28 1 71 ) ( -30 1 71 ) ( -30 1 0 ) okinawa_wall_shuri_build_fro_door 58.002876 -71 -754.03296 355 180 0 lightmap_gray 16384 16384 782 -394 0 0
+ ( -30 -1 71 ) ( -30 11 71 ) ( -30 -1 103 ) okinawa_wall_shuri_build_fro_door 58 -71 -754.01306 355 -180 0 lightmap_gray 16384 -16384 -1436 395 180 0
+ ( -28.5 0 68 ) ( -28.5 1 68 ) ( -28.5 1 1 ) okinawa_wall_shuri_build_fro_door 57.99646 71 -811.95178 -355 0 0 lightmap_gray 16384 -16384 -1436 395 180 0
+}
+}

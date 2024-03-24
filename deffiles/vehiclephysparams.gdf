@@ -1,0 +1,24 @@
+#name "vehiclephysparams"
+#dll "all" "configstringconvert"
+#source_dir "vehiclephysparams/"
+#target_dir "vehiclephysparams/"
+#file_ext "*"
+#version 1
+
+// This tells the configstring converter what the file type identifier should be
+string "VEHICLEPHYSPARAMS" configstringFileType
+
+
+float 0 0 100 tempFloat
+
+vcontainer
+{
+	floatedit(tempFloat, 0.05, 1)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(150)
+		}
+	]
+}

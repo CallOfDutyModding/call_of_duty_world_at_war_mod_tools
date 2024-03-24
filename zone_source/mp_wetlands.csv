@@ -1,0 +1,30 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_wetlands.d3dbsp
+rawfile,maps/mp/mp_wetlands.gsc
+//uncomment these when you actually have them to load
+//rawfile,maps/mp/mp_wetlands_fx.gsc
+//rawfile,maps/mp/mp_wetlands_amb.gsc
+//rawfile,maps/mp/createfx/mp_wetlands_fx.gsc
+
+//uncomment these when you actually have some
+material,compass_map_mp_wetlands
+material,compass_overlay_map_wetlands
+
+include,mptypes_german
+
+include,water
+
+rawfile,vision/mp_wetlands.vision
+
+xmodel,skybox_see1
+
+//uncomment these when you get them set-up
+//rawfile,clientscripts/mp/mp_wetlands.csc
+//rawfile,clientscripts/mp/mp_wetlands_amb.csc
+//rawfile,clientscripts/mp/mp_wetlands_fx.csc
+//rawfile,clientscripts/mp/createfx/mp_wetlands_fx.csc
+
+sound,gemp_battlechatter,mp_wetlands,all_mp
+sound,rump_battlechatter,mp_wetlands,all_mp
+sound,multiplayer,mp_wetlands,all_mp

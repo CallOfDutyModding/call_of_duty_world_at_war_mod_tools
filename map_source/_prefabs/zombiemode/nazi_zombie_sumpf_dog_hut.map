@@ -1,0 +1,2401 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"radiosityscale" "1.5"
+"sunradiosity" "1.2"
+"skyboxmodel" "skybox_pel2"
+"_color" "0.792157 0.901961 0.901961"
+"ambient" "0.25"
+"sundiffusecolor" "0.835294 0.890196 0.901961"
+"diffusefraction" "0.20"
+"classname" "worldspawn"
+"sundirection" "-30 -340 0"
+"suncolor" "0.878431 0.878431 0.772549"
+"sunlight" "1.0"
+}
+// entity 1
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto13"
+"origin" "8977.0 -280.4 -705.5"
+"angles" "0 0 0"
+}
+// entity 2
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "1"
+"angles" "0 0 0"
+"origin" "8984.8 -280.0 -694.5"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto13"
+}
+// entity 3
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto14"
+"origin" "8889.0 -64.4 -713.5"
+"angles" "0 0 0"
+}
+// entity 4
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto15"
+"origin" "8737.0 -736.4 -708.0"
+"angles" "0 0 0"
+}
+// entity 5
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "2"
+"angles" "0 0 0"
+"origin" "8744.8 -736.0 -708.0"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto15"
+}
+// entity 6
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto16"
+"origin" "8905.0 -960.4 -684.0"
+"angles" "0 0 0"
+}
+// entity 7
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "3"
+"angles" "0 0 0"
+"origin" "8912.8 -960.0 -684.0"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto16"
+}
+// entity 8
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto17"
+"origin" "8553.0 -280.4 -716.0"
+"angles" "0 0 0"
+}
+// entity 9
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "4"
+"angles" "0 0 0"
+"origin" "8560.8 -280.0 -716.0"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto17"
+}
+// entity 10
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto18"
+"origin" "8425.0 -152.4 -716.0"
+"angles" "0 0 0"
+}
+// entity 11
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "5"
+"angles" "0 0 0"
+"origin" "8432.8 -152.0 -716.0"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto18"
+}
+// entity 12
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto19"
+"origin" "8209.0 -408.4 -716.0"
+"angles" "0 0 0"
+}
+// entity 13
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "6"
+"angles" "0 0 0"
+"origin" "8216.8 -408.0 -716.0"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto19"
+}
+// entity 14
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto20"
+"origin" "8289.0 -704.4 -716.0"
+"angles" "0 0 0"
+}
+// entity 15
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "7"
+"angles" "0 0 0"
+"origin" "8296.8 -704.0 -708.0"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto20"
+}
+// entity 16
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto21"
+"origin" "8377.0 -1192.4 -716.0"
+"angles" "0 0 0"
+}
+// entity 17
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "8"
+"angles" "0 0 0"
+"origin" "8384.8 -1192.0 -716.0"
+"spawnflags" "3"
+"targetname" "sw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto21"
+}
+// entity 18
+{
+"classname" "script_struct"
+"targetname" "auto22"
+"origin" "10969.0 -320.4 -716.0"
+"angles" "0 0 0"
+}
+// entity 19
+{
+"target" "auto22"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10976.8 -320.0 -716.0"
+"angles" "0 0 0"
+"export" "9"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 20
+{
+"classname" "script_struct"
+"targetname" "auto24"
+"origin" "11153.0 -664.4 -725.0"
+"angles" "0 0 0"
+}
+// entity 21
+{
+"target" "auto24"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11160.8 -664.0 -725.0"
+"angles" "0 0 0"
+"export" "11"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 22
+{
+"classname" "script_struct"
+"targetname" "auto25"
+"origin" "11409.0 -888.4 -748.0"
+"angles" "0 0 0"
+}
+// entity 23
+{
+"target" "auto25"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11416.8 -888.0 -748.0"
+"angles" "0 0 0"
+"export" "12"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 24
+{
+"classname" "script_struct"
+"targetname" "auto28"
+"origin" "11873.0 -1072.4 -692.0"
+"angles" "0 0 0"
+}
+// entity 25
+{
+"target" "auto28"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11880.8 -1072.0 -692.0"
+"angles" "0 0 0"
+"export" "15"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 26
+{
+"classname" "script_struct"
+"targetname" "auto29"
+"origin" "11489.0 -1240.4 -692.0"
+"angles" "0 0 0"
+}
+// entity 27
+{
+"target" "auto29"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11496.8 -1240.0 -692.0"
+"angles" "0 0 0"
+"export" "16"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 28
+{
+"classname" "script_struct"
+"targetname" "auto30"
+"origin" "11801.0 -1368.4 -692.0"
+"angles" "0 0 0"
+}
+// entity 29
+{
+"target" "auto30"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11808.8 -1368.0 -692.0"
+"angles" "0 0 0"
+"export" "17"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 30
+{
+"classname" "script_struct"
+"targetname" "auto31"
+"origin" "11217.0 -1136.4 -692.0"
+"angles" "0 0 0"
+}
+// entity 31
+{
+"target" "auto31"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11224.8 -1136.0 -692.0"
+"angles" "0 0 0"
+"export" "18"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 32
+{
+"classname" "script_struct"
+"targetname" "auto32"
+"origin" "10825.0 -80.4 -684.0"
+"angles" "0 0 0"
+}
+// entity 33
+{
+"target" "auto32"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10832.8 -80.0 -684.0"
+"angles" "0 0 0"
+"export" "19"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 34
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto33"
+"origin" "11081.0 1599.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 35
+{
+"target" "auto33"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11088.8 1600.0 -708.0"
+"angles" "0 0 0"
+"export" "20"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 36
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto34"
+"origin" "10857.0 1671.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 37
+{
+"target" "auto34"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10864.8 1672.0 -708.0"
+"angles" "0 0 0"
+"export" "21"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 38
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto35"
+"origin" "10665.0 1847.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 39
+{
+"target" "auto35"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10672.8 1848.0 -708.0"
+"angles" "0 0 0"
+"export" "22"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 40
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto36"
+"origin" "10553.0 2095.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 41
+{
+"target" "auto36"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10560.8 2096.0 -708.0"
+"angles" "0 0 0"
+"export" "23"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 42
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto38"
+"origin" "10825.0 2231.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 43
+{
+"target" "auto38"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10832.8 2232.0 -708.0"
+"angles" "0 0 0"
+"export" "25"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 44
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto39"
+"origin" "10713.0 2351.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 45
+{
+"target" "auto39"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10720.8 2352.0 -708.0"
+"angles" "0 0 0"
+"export" "26"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 46
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto40"
+"origin" "11177.0 2319.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 47
+{
+"target" "auto40"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11184.8 2320.0 -708.0"
+"angles" "0 0 0"
+"export" "27"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 48
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto41"
+"origin" "11513.0 2319.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 49
+{
+"target" "auto41"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11520.8 2320.0 -708.0"
+"angles" "0 0 0"
+"export" "28"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 50
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto42"
+"origin" "11657.0 2023.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 51
+{
+"target" "auto42"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11664.8 2024.0 -708.0"
+"angles" "0 0 0"
+"export" "29"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 52
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto43"
+"origin" "11081.0 2943.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 53
+{
+"target" "auto43"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11088.8 2944.0 -708.0"
+"angles" "0 0 0"
+"export" "30"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 54
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto44"
+"origin" "10761.0 3183.6 -670.0"
+"angles" "0 0 0"
+}
+// entity 55
+{
+"target" "auto44"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10768.8 3184.0 -670.0"
+"angles" "0 0 0"
+"export" "31"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 56
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto45"
+"origin" "10737.0 2847.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 57
+{
+"target" "auto45"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10744.8 2848.0 -708.0"
+"angles" "0 0 0"
+"export" "32"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 58
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto47"
+"origin" "10537.0 2399.6 -708.0"
+"angles" "0 0 0"
+}
+// entity 59
+{
+"target" "auto47"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "10544.8 2400.0 -708.0"
+"angles" "0 0 0"
+"export" "34"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 60
+{
+"classname" "script_struct"
+"targetname" "auto49"
+"origin" "9761.0 1311.6 -669.0"
+"angles" "0 0 0"
+}
+// entity 61
+{
+"target" "auto49"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9768.8 1312.0 -669.0"
+"angles" "0 0 0"
+"export" "36"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 62
+{
+"classname" "script_struct"
+"targetname" "auto50"
+"origin" "9905.0 1319.6 -653.0"
+"angles" "0 0 0"
+}
+// entity 63
+{
+"target" "auto50"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9912.8 1320.0 -653.0"
+"angles" "0 0 0"
+"export" "37"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 64
+{
+"classname" "script_struct"
+"targetname" "auto51"
+"origin" "9633.0 1143.6 -676.0"
+"angles" "0 0 0"
+}
+// entity 65
+{
+"target" "auto51"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9640.8 1144.0 -676.0"
+"angles" "0 0 0"
+"export" "38"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 66
+{
+"classname" "script_struct"
+"targetname" "auto53"
+"origin" "9681.0 959.6 -668.0"
+"angles" "0 0 0"
+}
+// entity 67
+{
+"target" "auto53"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9688.8 960.0 -668.0"
+"angles" "0 0 0"
+"export" "40"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 68
+{
+"classname" "script_struct"
+"targetname" "auto54"
+"origin" "10305.0 671.6 -524.0"
+"angles" "0 0 0"
+}
+// entity 69
+{
+"target" "auto54"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "zombie_spawner_dog_init"
+"spawnflags" "3"
+"origin" "10312.8 672.0 -524.0"
+"angles" "0 0 0"
+"export" "41"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 70
+{
+"classname" "script_struct"
+"targetname" "auto55"
+"origin" "9993.0 599.6 -524.0"
+"angles" "0 0 0"
+}
+// entity 71
+{
+"target" "auto55"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "zombie_spawner_dog_init"
+"spawnflags" "3"
+"origin" "10000.8 600.0 -524.0"
+"angles" "0 0 0"
+"export" "42"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 72
+{
+"classname" "script_struct"
+"targetname" "auto56"
+"origin" "9761.0 663.6 -524.0"
+"angles" "0 0 0"
+}
+// entity 73
+{
+"target" "auto56"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "zombie_spawner_dog_init"
+"spawnflags" "3"
+"origin" "9768.8 664.0 -524.0"
+"angles" "0 0 0"
+"export" "43"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 74
+{
+"classname" "script_struct"
+"targetname" "auto57"
+"origin" "9817.0 351.6 -524.0"
+"angles" "0 0 0"
+}
+// entity 75
+{
+"target" "auto57"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "zombie_spawner_dog_init"
+"spawnflags" "3"
+"origin" "9824.8 352.0 -524.0"
+"angles" "0 0 0"
+"export" "44"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 76
+{
+"classname" "script_struct"
+"targetname" "auto58"
+"origin" "10449.0 351.6 -524.0"
+"angles" "0 0 0"
+}
+// entity 77
+{
+"target" "auto58"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "zombie_spawner_dog_init"
+"spawnflags" "3"
+"origin" "10456.8 352.0 -524.0"
+"angles" "0 0 0"
+"export" "45"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 78
+{
+"classname" "script_struct"
+"targetname" "auto59"
+"origin" "10585.0 639.6 -524.0"
+"angles" "0 0 0"
+}
+// entity 79
+{
+"target" "auto59"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "zombie_spawner_dog_init"
+"spawnflags" "3"
+"origin" "10592.8 640.0 -524.0"
+"angles" "0 0 0"
+"export" "46"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 80
+{
+"classname" "script_struct"
+"targetname" "auto5"
+"origin" "8961.0 1559.6 -649.5"
+"angles" "0 0 0"
+}
+// entity 81
+{
+"target" "auto5"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8976.8 1560.0 -638.5"
+"angles" "0 0 0"
+"export" "47"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 82
+{
+"classname" "script_struct"
+"targetname" "auto6"
+"origin" "9345.0 1247.6 -649.5"
+"angles" "0 0 0"
+}
+// entity 83
+{
+"target" "auto6"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "9360.8 1248.0 -638.5"
+"angles" "0 0 0"
+"export" "48"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 84
+{
+"classname" "script_struct"
+"targetname" "auto7"
+"origin" "11531.7 -437.6 -719.5"
+"angles" "0 322.2 0"
+}
+// entity 85
+{
+"target" "auto7"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "11538.1 -442.0 -708.5"
+"angles" "0 322.2 0"
+"export" "49"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 86
+{
+"classname" "script_struct"
+"targetname" "auto8"
+"origin" "8617.0 1903.6 -673.5"
+"angles" "0 315 0"
+}
+// entity 87
+{
+"target" "auto8"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8632.8 1888.0 -654.5"
+"angles" "0 315 0"
+"export" "50"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 88
+{
+"classname" "script_struct"
+"targetname" "auto9"
+"origin" "8497.0 2599.6 -705.5"
+"angles" "0 0 0"
+}
+// entity 89
+{
+"target" "auto9"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8504.8 2600.0 -694.5"
+"angles" "0 0 0"
+"export" "51"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 90
+{
+"classname" "script_struct"
+"targetname" "auto10"
+"origin" "8313.0 2543.6 -689.5"
+"angles" "0 0 0"
+}
+// entity 91
+{
+"target" "auto10"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8320.8 2544.0 -678.5"
+"angles" "0 0 0"
+"export" "52"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 92
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto11"
+"origin" "8649.0 2503.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 93
+{
+"target" "auto11"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8656.8 2504.0 -702.5"
+"angles" "0 0 0"
+"export" "53"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 94
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto61"
+"origin" "9169.0 2671.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 95
+{
+"target" "auto61"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "9176.8 2672.0 -702.5"
+"angles" "0 0 0"
+"export" "55"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 96
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto63"
+"origin" "8924.0 2960.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 97
+{
+"target" "auto63"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8931.8 2961.0 -702.5"
+"angles" "0 0 0"
+"export" "57"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 98
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto64"
+"origin" "8849.0 2655.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 99
+{
+"target" "auto64"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8856.8 2656.0 -702.5"
+"angles" "0 0 0"
+"export" "58"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 100
+{
+"target" "auto14"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "sw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8896.8 -64.0 -702.5"
+"angles" "0 0 0"
+"export" "59"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 101
+{
+"classname" "script_struct"
+"targetname" "auto65"
+"origin" "10161.0 1383.6 -525.0"
+"angles" "0 0 0"
+}
+// entity 102
+{
+"target" "auto65"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10168.8 1384.0 -525.0"
+"angles" "0 0 0"
+"export" "60"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 103
+{
+"classname" "script_struct"
+"targetname" "auto66"
+"origin" "10150.5 1281.5 -525.0"
+"angles" "0 330 0"
+}
+// entity 104
+{
+"target" "auto66"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10157.4 1278.0 -525.0"
+"angles" "0 330 0"
+"export" "61"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 105
+{
+"classname" "script_struct"
+"targetname" "auto67"
+"origin" "10705.0 1032.6 -525.0"
+"angles" "0 90 0"
+}
+// entity 106
+{
+"target" "auto67"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10704.8 1033.0 -525.0"
+"angles" "0 90 0"
+"export" "62"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 107
+{
+"classname" "script_struct"
+"targetname" "auto68"
+"origin" "10587.0 891.6 -525.0"
+"angles" "0 180 0"
+}
+// entity 108
+{
+"target" "auto68"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10586.8 892.0 -525.0"
+"angles" "0 180 0"
+"export" "63"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 109
+{
+"classname" "script_struct"
+"targetname" "auto69"
+"origin" "10201.0 920.6 -525.0"
+"angles" "0 45 0"
+}
+// entity 110
+{
+"target" "auto69"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10200.8 921.0 -525.0"
+"angles" "0 45 0"
+"export" "64"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 111
+{
+"classname" "script_struct"
+"targetname" "auto70"
+"origin" "10606.0 1283.6 -525.0"
+"angles" "0 225 0"
+}
+// entity 112
+{
+"target" "auto70"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10605.8 1284.0 -525.0"
+"angles" "0 225 0"
+"export" "65"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 113
+{
+"classname" "script_struct"
+"targetname" "auto71"
+"origin" "9836.0 271.6 -653.0"
+"angles" "0 180 0"
+}
+// entity 114
+{
+"target" "auto71"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9824.8 272.0 -653.0"
+"angles" "0 180 0"
+"export" "66"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 115
+{
+"classname" "script_struct"
+"targetname" "auto72"
+"origin" "9829.0 447.6 -653.0"
+"angles" "0 270 0"
+}
+// entity 116
+{
+"target" "auto72"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9829.8 431.0 -653.0"
+"angles" "0 270 0"
+"export" "67"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 117
+{
+"classname" "script_struct"
+"targetname" "auto73"
+"origin" "10097.0 480.6 -653.0"
+"angles" "0 179.8 0"
+}
+// entity 118
+{
+"target" "auto73"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10075.8 480.1 -653.0"
+"angles" "0 179.8 0"
+"export" "68"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 119
+{
+"classname" "script_struct"
+"targetname" "auto74"
+"origin" "9750.8 660.6 -653.0"
+"angles" "0 1.59989 0"
+}
+// entity 120
+{
+"target" "auto74"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9771.9 661.7 -653.0"
+"angles" "0 1.59989 0"
+"export" "69"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 121
+{
+"classname" "script_struct"
+"targetname" "auto76"
+"origin" "10233.7 279.2 -653.0"
+"angles" "0 58.9999 0"
+}
+// entity 122
+{
+"target" "auto76"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10244.1 297.7 -653.0"
+"angles" "0 58.9999 0"
+"export" "71"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 123
+{
+"classname" "script_struct"
+"targetname" "auto77"
+"origin" "10606.5 494.8 -653.0"
+"angles" "0 230.8 0"
+}
+// entity 124
+{
+"target" "auto77"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10593.5 478.1 -653.0"
+"angles" "0 230.8 0"
+"export" "72"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 125
+{
+"classname" "script_struct"
+"targetname" "auto78"
+"origin" "10277.7 502.3 -653.0"
+"angles" "0 266.4 0"
+}
+// entity 126
+{
+"target" "auto78"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10276.8 481.2 -653.0"
+"angles" "0 266.4 0"
+"export" "73"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 127
+{
+"classname" "script_struct"
+"targetname" "auto80"
+"origin" "10554.9 734.7 -653.0"
+"angles" "0 181.6 0"
+}
+// entity 128
+{
+"target" "auto80"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10533.8 733.7 -653.0"
+"angles" "0 181.6 0"
+"export" "75"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 129
+{
+"classname" "script_struct"
+"targetname" "auto81"
+"origin" "10675.9 920.7 -653.0"
+"angles" "0 181.6 0"
+}
+// entity 130
+{
+"target" "auto81"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10654.8 919.7 -653.0"
+"angles" "0 181.6 0"
+"export" "76"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 131
+{
+"classname" "script_struct"
+"targetname" "auto82"
+"origin" "10494.1 1184.3 -653.0"
+"angles" "0 215.8 0"
+}
+// entity 132
+{
+"target" "auto82"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10477.2 1171.6 -653.0"
+"angles" "0 215.8 0"
+"export" "77"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 133
+{
+"classname" "script_struct"
+"targetname" "auto83"
+"origin" "10124.7 1309.6 -653.0"
+"angles" "0 307 0"
+}
+// entity 134
+{
+"target" "auto83"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10137.7 1292.9 -653.0"
+"angles" "0 307 0"
+"export" "78"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 135
+{
+"classname" "script_struct"
+"targetname" "auto84"
+"origin" "10137.0 1078.1 -653.0"
+"angles" "0 90.2 0"
+}
+// entity 136
+{
+"target" "auto84"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10136.6 1099.3 -653.0"
+"angles" "0 90.2 0"
+"export" "79"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 137
+{
+"classname" "script_struct"
+"targetname" "auto85"
+"origin" "8473.1 3039.8 -660.5"
+"angles" "0 37 0"
+}
+// entity 138
+{
+"target" "auto85"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8479.1 3044.8 -649.5"
+"angles" "0 37 0"
+"export" "80"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 139
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto86"
+"origin" "8413.7 2848.3 -660.5"
+"angles" "0 314.2 0"
+}
+// entity 140
+{
+"target" "auto86"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8419.4 2843.0 -649.5"
+"angles" "0 314.2 0"
+"export" "81"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 141
+{
+"classname" "script_struct"
+"targetname" "auto87"
+"origin" "8353.5 3069.5 -660.5"
+"angles" "0 227.2 0"
+}
+// entity 142
+{
+"target" "auto87"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8348.6 3063.6 -649.5"
+"angles" "0 227.2 0"
+"export" "82"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 143
+{
+"classname" "script_struct"
+"targetname" "auto88"
+"origin" "8216.0 3300.1 -665.5"
+"angles" "0 38.6 0"
+}
+// entity 144
+{
+"target" "auto88"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8221.7 3305.2 -654.5"
+"angles" "0 38.6 0"
+"export" "83"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 145
+{
+"classname" "script_struct"
+"targetname" "auto89"
+"origin" "8116.0 3499.1 -665.5"
+"angles" "0 38.6 0"
+}
+// entity 146
+{
+"target" "auto89"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8121.7 3504.2 -654.5"
+"angles" "0 38.6 0"
+"export" "84"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 147
+{
+"classname" "script_struct"
+"targetname" "auto90"
+"origin" "8274.7 3660.1 -665.5"
+"angles" "0 222.8 0"
+}
+// entity 148
+{
+"target" "auto90"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8269.4 3654.6 -654.5"
+"angles" "0 222.8 0"
+"export" "85"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 149
+{
+"classname" "script_struct"
+"targetname" "auto91"
+"origin" "8427.3 3589.5 -665.5"
+"angles" "0 269.8 0"
+}
+// entity 150
+{
+"target" "auto91"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8427.7 3581.9 -654.5"
+"angles" "0 269.8 0"
+"export" "86"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 151
+{
+"classname" "script_struct"
+"targetname" "auto92"
+"origin" "8718.2 3340.5 -665.5"
+"angles" "0 226.8 0"
+}
+// entity 152
+{
+"target" "auto92"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8713.3 3334.7 -654.5"
+"angles" "0 226.8 0"
+"export" "87"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 153
+{
+"classname" "script_struct"
+"targetname" "auto93"
+"origin" "8544.3 3391.6 -665.5"
+"angles" "0 135.8 0"
+}
+// entity 154
+{
+"target" "auto93"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "8538.5 3396.6 -654.5"
+"angles" "0 135.8 0"
+"export" "88"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 155
+{
+"classname" "script_struct"
+"targetname" "auto94"
+"origin" "11161.6 3356.3 -657.0"
+"angles" "0 313.6 0"
+}
+// entity 156
+{
+"target" "auto94"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11167.3 3350.9 -657.0"
+"angles" "0 313.6 0"
+"export" "89"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 157
+{
+"classname" "script_struct"
+"targetname" "auto95"
+"origin" "11403.3 3084.9 -657.0"
+"angles" "0 138 0"
+}
+// entity 158
+{
+"target" "auto95"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11397.2 3089.8 -657.0"
+"angles" "0 138 0"
+"export" "90"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 159
+{
+"classname" "script_struct"
+"targetname" "auto96"
+"origin" "11240.9 3493.8 -657.0"
+"angles" "0 351 0"
+}
+// entity 160
+{
+"target" "auto96"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11248.7 3493.0 -649.5"
+"angles" "0 351 0"
+"export" "91"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 161
+{
+"classname" "script_struct"
+"targetname" "auto97"
+"origin" "11474.9 3715.3 -657.0"
+"angles" "0 315.2 0"
+}
+// entity 162
+{
+"target" "auto97"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11480.7 3710.1 -653.0"
+"angles" "0 315.2 0"
+"export" "92"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 163
+{
+"classname" "script_struct"
+"targetname" "auto98"
+"origin" "11652.6 3462.5 -657.0"
+"angles" "0 194.8 0"
+}
+// entity 164
+{
+"target" "auto98"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11645.2 3460.2 -651.5"
+"angles" "0 194.8 0"
+"export" "93"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 165
+{
+"classname" "script_struct"
+"targetname" "auto99"
+"origin" "11413.1 3439.0 -657.0"
+"angles" "0 216 0"
+}
+// entity 166
+{
+"target" "auto99"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11407.1 3434.2 -653.0"
+"angles" "0 216 0"
+"export" "94"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 167
+{
+"classname" "script_struct"
+"targetname" "auto100"
+"origin" "11641.6 3072.5 -657.0"
+"angles" "0 134.2 0"
+}
+// entity 168
+{
+"target" "auto100"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11636.0 3077.7 -651.5"
+"angles" "0 134.2 0"
+"export" "95"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 169
+{
+"classname" "script_struct"
+"targetname" "auto101"
+"origin" "11627.3 3327.9 -653.0"
+"angles" "0 44 0"
+}
+// entity 170
+{
+"target" "auto101"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "ne_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "11632.5 3333.5 -653.0"
+"angles" "0 44 0"
+"export" "96"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 171
+{
+"classname" "script_struct"
+"targetname" "auto102"
+"origin" "12149.6 -1033.3 -639.0"
+"angles" "0 331.4 0"
+}
+// entity 172
+{
+"target" "auto102"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "12156.7 -1036.7 -639.0"
+"angles" "0 331.4 0"
+"export" "97"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 173
+{
+"classname" "script_struct"
+"targetname" "auto103"
+"origin" "12303.7 -1566.1 -639.0"
+"angles" "0 81 0"
+}
+// entity 174
+{
+"target" "auto103"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "12304.5 -1560.2 -639.0"
+"angles" "0 81 0"
+"export" "98"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 175
+{
+"classname" "script_struct"
+"targetname" "auto104"
+"origin" "12277.6 -1427.3 -639.0"
+"angles" "0 18.2 0"
+}
+// entity 176
+{
+"target" "auto104"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "12285.0 -1426.4 -639.0"
+"angles" "0 18.2 0"
+"export" "99"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 177
+{
+"classname" "script_struct"
+"targetname" "auto105"
+"origin" "12603.0 -1525.9 -639.0"
+"angles" "0 68 0"
+}
+// entity 178
+{
+"target" "auto105"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "12605.6 -1520.3 -639.0"
+"angles" "0 68 0"
+"export" "100"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 179
+{
+"classname" "script_struct"
+"targetname" "auto106"
+"origin" "12706.1 -1165.6 -639.0"
+"angles" "0 256.4 0"
+}
+// entity 180
+{
+"target" "auto106"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "12704.7 -1175.5 -639.0"
+"angles" "0 256.4 0"
+"export" "101"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 181
+{
+"classname" "script_struct"
+"targetname" "auto107"
+"origin" "12362.7 -1036.0 -639.0"
+"angles" "0 271.4 0"
+}
+// entity 182
+{
+"target" "auto107"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "12363.4 -1046.0 -639.0"
+"angles" "0 271.4 0"
+"export" "102"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 183
+{
+"classname" "script_struct"
+"targetname" "auto108"
+"origin" "12482.9 -1284.3 -639.0"
+"angles" "0 190.6 0"
+}
+// entity 184
+{
+"target" "auto108"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "se_perk_hut_dog_spawners"
+"spawnflags" "3"
+"origin" "12475.1 -1288.3 -639.0"
+"angles" "0 190.6 0"
+"export" "103"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 185
+{
+"classname" "script_struct"
+"targetname" "auto109"
+"origin" "8018.0 -1303.4 -670.0"
+"angles" "0 132.8 0"
+}
+// entity 186
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "104"
+"angles" "0 132.8 0"
+"origin" "8012.4 -1298.0 -670.0"
+"spawnflags" "3"
+"targetname" "sw_perk_hut_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto109"
+}
+// entity 187
+{
+"classname" "script_struct"
+"targetname" "auto110"
+"origin" "7625.2 -892.4 -670.0"
+"angles" "0 318.2 0"
+}
+// entity 188
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "105"
+"angles" "0 318.2 0"
+"origin" "7631.3 -897.3 -670.0"
+"spawnflags" "3"
+"targetname" "sw_perk_hut_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto110"
+}
+// entity 189
+{
+"classname" "script_struct"
+"targetname" "auto111"
+"origin" "7271.0 -1246.9 -670.0"
+"angles" "0 358.4 0"
+}
+// entity 190
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "106"
+"angles" "0 358.4 0"
+"origin" "7278.8 -1246.7 -670.0"
+"spawnflags" "3"
+"targetname" "sw_perk_hut_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto111"
+}
+// entity 191
+{
+"classname" "script_struct"
+"targetname" "auto112"
+"origin" "7458.6 -1183.7 -670.0"
+"angles" "0 41.8 0"
+}
+// entity 192
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "107"
+"angles" "0 41.8 0"
+"origin" "7464.2 -1178.2 -670.0"
+"spawnflags" "3"
+"targetname" "sw_perk_hut_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto112"
+}
+// entity 193
+{
+"classname" "script_struct"
+"targetname" "auto113"
+"origin" "7553.0 -1511.9 -670.0"
+"angles" "0 4.19998 0"
+}
+// entity 194
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "108"
+"angles" "0 4.19998 0"
+"origin" "7560.8 -1510.9 -670.0"
+"spawnflags" "3"
+"targetname" "sw_perk_hut_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto113"
+}
+// entity 195
+{
+"classname" "script_struct"
+"targetname" "auto114"
+"origin" "7921.7 -1395.1 -670.0"
+"angles" "0 192.8 0"
+}
+// entity 196
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "109"
+"angles" "0 192.8 0"
+"origin" "7914.1 -1397.3 -670.0"
+"spawnflags" "3"
+"targetname" "sw_perk_hut_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto114"
+}
+// entity 197
+{
+"classname" "script_struct"
+"targetname" "auto115"
+"origin" "7641.7 -1162.1 -670.0"
+"angles" "0 192.8 0"
+}
+// entity 198
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "110"
+"angles" "0 192.8 0"
+"origin" "7634.1 -1164.3 -670.0"
+"spawnflags" "3"
+"targetname" "sw_perk_hut_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto115"
+}
+// entity 199
+{
+"classname" "script_struct"
+"targetname" "auto118"
+"origin" "8266.0 2232.6 -673.5"
+"angles" "0 315 0"
+}
+// entity 200
+{
+"target" "auto118"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8281.8 2217.0 -654.5"
+"angles" "0 315 0"
+"export" "112"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 201
+{
+"classname" "script_struct"
+"targetname" "auto120"
+"origin" "8839.9 1749.2 -665.5"
+"angles" "0 352.8 0"
+}
+// entity 202
+{
+"target" "auto120"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "8861.9 1746.5 -646.5"
+"angles" "0 352.8 0"
+"export" "114"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 203
+{
+"classname" "script_struct"
+"targetname" "auto121"
+"origin" "9137.0 1423.6 -649.5"
+"angles" "0 0 0"
+}
+// entity 204
+{
+"target" "auto121"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "nw_magic_box_dog_spawners"
+"spawnflags" "3"
+"origin" "9152.8 1424.0 -638.5"
+"angles" "0 0 0"
+"export" "115"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 205
+{
+"classname" "script_struct"
+"targetname" "auto125"
+"origin" "9915.4 589.0 -653.0"
+"angles" "0 91.6 0"
+}
+// entity 206
+{
+"target" "auto125"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9914.3 610.2 -653.0"
+"angles" "0 91.6 0"
+"export" "118"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 207
+{
+"classname" "script_struct"
+"targetname" "auto128"
+"origin" "9930.3 827.2 -645.0"
+"angles" "0 271.6 0"
+}
+// entity 208
+{
+"target" "auto128"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "9931.5 806.0 -645.0"
+"angles" "0 271.6 0"
+"export" "120"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 209
+{
+"classname" "script_struct"
+"targetname" "auto129"
+"origin" "10149.9 688.7 -645.0"
+"angles" "0 181.6 0"
+}
+// entity 210
+{
+"target" "auto129"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10128.8 687.5 -645.0"
+"angles" "0 181.6 0"
+"export" "121"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 211
+{
+"classname" "script_struct"
+"targetname" "auto130"
+"origin" "10333.9 712.7 -645.0"
+"angles" "0 181.6 0"
+}
+// entity 212
+{
+"target" "auto130"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10312.8 711.5 -645.0"
+"angles" "0 181.6 0"
+"export" "122"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 213
+{
+"classname" "script_struct"
+"targetname" "auto132"
+"origin" "10365.9 896.7 -645.0"
+"angles" "0 181.6 0"
+}
+// entity 214
+{
+"target" "auto132"
+"script_string" "zombie_chaser"
+"script_noteworthy" "zombie_dog_spawner"
+"script_forcespawn" "1"
+"targetname" "center_stairs_blocker_dog_spawn"
+"spawnflags" "3"
+"origin" "10344.8 895.5 -645.0"
+"angles" "0 181.6 0"
+"export" "124"
+"model" "zombie_wolf"
+"classname" "actor_zombie_dog"
+}
+// entity 215
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto133"
+"origin" "9193.0 2287.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 216
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto135"
+"origin" "9201.0 2479.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 217
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto136"
+"origin" "8705.0 2287.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 218
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto137"
+"origin" "8577.0 2175.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 219
+{
+"script_noteworthy" "in_water"
+"classname" "script_struct"
+"targetname" "auto140"
+"origin" "8721.0 2847.6 -713.5"
+"angles" "0 0 0"
+}
+// entity 220
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "126"
+"angles" "0 0 0"
+"origin" "9208.8 2480.0 -702.5"
+"spawnflags" "3"
+"targetname" "nw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto135"
+}
+// entity 221
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "127"
+"angles" "0 0 0"
+"origin" "8712.8 2288.0 -702.5"
+"spawnflags" "3"
+"targetname" "nw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto136"
+}
+// entity 222
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "128"
+"angles" "0 0 0"
+"origin" "8584.8 2176.0 -702.5"
+"spawnflags" "3"
+"targetname" "nw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto137"
+}
+// entity 223
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "131"
+"angles" "0 0 0"
+"origin" "8728.8 2848.0 -702.5"
+"spawnflags" "3"
+"targetname" "nw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto140"
+}
+// entity 224
+{
+"classname" "actor_zombie_dog"
+"model" "zombie_wolf"
+"export" "132"
+"angles" "0 0 0"
+"origin" "9200.8 2288.0 -702.5"
+"spawnflags" "3"
+"targetname" "nw_magic_box_dog_spawners"
+"script_forcespawn" "1"
+"script_noteworthy" "zombie_dog_spawner"
+"script_string" "zombie_chaser"
+"target" "auto133"
+}

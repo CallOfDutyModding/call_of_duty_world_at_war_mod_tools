@@ -1,0 +1,16 @@
+ignore,code_post_gfx,,
+ignore,common,,
+col_map_sp,maps/module_floodspawner.d3dbsp,,
+gfx_map,maps/module_floodspawner.d3dbsp,,
+sound,common,module_floodspawner,all_sp
+sound,generic,module_floodspawner,all_sp
+sound,voiceovers,module_floodspawner,all_sp
+sound,requests,module_floodspawner,all_sp
+rawfile,maps/module_floodspawner.gsc,,
+rawfile,maps/firingrange_share.gsc
+weapon,sp/Stielhandgranate,,
+weapon,sp/m1garand,,
+weapon,sp/thompson,,
+
+include,default_weapons
+

@@ -1,0 +1,14 @@
+ignore,code_post_gfx_mp,,
+ignore,common_mp,,
+col_map_mp,maps/mp/mp_st_joost.d3dbsp,,
+rawfile,maps/mp/mp_st_joost.gsc,,
+weapon,mp/frag_grenade_mp,,
+menufile,ui_mp/scriptmenus/ingame_controls.menu,,
+menufile,ui_mp/scriptmenus/ingame_options.menu,,
+sound,common,mp_st_joost,all_mp
+sound,generic,mp_st_joost,all_mp
+sound,voiceovers,mp_st_joost,all_mp
+sound,multiplayer,mp_st_joost,all_mp
+sound,projectile,mp_st_joost,all_mp
+sound,weapons,mp_st_joost,all_mp
+sound,character,mp_st_joost,all_mp

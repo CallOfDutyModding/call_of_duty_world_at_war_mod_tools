@@ -1,0 +1,8 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/intro_pac.d3dbsp
+rawfile,maps/intro_pac.gsc
+sound,common,intro_pac,all_sp
+sound,generic,intro_pac,all_sp
+sound,voiceovers,intro_pac,all_sp
+sound,requests,intro_pac,all_sp

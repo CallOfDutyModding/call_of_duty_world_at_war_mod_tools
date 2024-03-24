@@ -1,0 +1,56 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_oki2"
+"ambient" "0"
+"classname" "worldspawn"
+"diffusefraction" "0.09"
+"northyaw" "90"
+"suncolor" "0.1607 0.1647 0.1411"
+"sundiffusecolor" "0.4941 0.5019 0.4470"
+"sundirection" "-105 -50 0"
+"sunlight" ".65"
+"_color" "0.3254 0.4745 0.3921"
+"radiosityscale" "1"
+"sunradiosity" "1"
+"contrastgain" "0.15"
+"bouncefraction" ".3"
+// brush 0
+{
+ ( -30 34 -46 ) ( -42 34 -46 ) ( -42 -38 -46 ) mantle_on 64 64 -2 6 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -42 -38 0 ) ( -42 34 0 ) ( -30 34 0 ) mantle_on 64 64 -2 6 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -44 -26 0 ) ( -32 -26 0 ) ( -32 -26 -46 ) mantle_on 64 64 -2 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -30 -38 0 ) ( -30 34 0 ) ( -30 34 -46 ) mantle_on 64 64 -6 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -30 36 0 ) ( -42 36 0 ) ( -42 36 -46 ) mantle_on 64 64 -2 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -38 34 0 ) ( -38 -38 0 ) ( -38 -38 -46 ) mantle_on 64 64 -6 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ ( 32 34 -46 ) ( 20 34 -46 ) ( 20 -38 -46 ) mantle_on 64 64 60 6 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 -38 0 ) ( 20 34 0 ) ( 32 34 0 ) mantle_on 64 64 60 6 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 -34 0 ) ( 32 -34 0 ) ( 32 -34 -46 ) mantle_on 64 64 60 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 38 -38 0 ) ( 38 34 0 ) ( 38 34 -46 ) mantle_on 64 64 -6 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -26 0 ) ( 20 -26 0 ) ( 20 -26 -46 ) mantle_on 64 64 60 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -30 32 0 ) ( -30 -40 0 ) ( -30 -40 -46 ) mantle_on 64 64 -6 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+ ( 52 38 -46 ) ( 40 38 -46 ) ( 40 -34 -46 ) mantle_on 64 64 80 2 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 42 -38 0 ) ( 42 34 0 ) ( 54 34 0 ) mantle_on 64 64 80 2 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 34 -26 0 ) ( 46 -26 0 ) ( 46 -26 -46 ) mantle_on 64 64 80 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 46 -34 0 ) ( 46 38 0 ) ( 46 38 -46 ) mantle_on 64 64 -2 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 52 36 0 ) ( 40 36 0 ) ( 40 36 -46 ) mantle_on 64 64 80 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 38 38 0 ) ( 38 -34 0 ) ( 38 -34 -46 ) mantle_on 64 64 -2 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+ ( 32 108 -46 ) ( 20 108 -46 ) ( 20 36 -46 ) mantle_on 64 64 60 -68 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 36 0 ) ( 20 108 0 ) ( 32 108 0 ) mantle_on 64 64 60 -68 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 36 0 ) ( 32 36 0 ) ( 32 36 -46 ) mantle_on 64 64 60 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 38 36 0 ) ( 38 108 0 ) ( 38 108 -46 ) mantle_on 64 64 68 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 44 0 ) ( 20 44 0 ) ( 20 44 -46 ) mantle_on 64 64 60 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -30 106 0 ) ( -30 34 0 ) ( -30 34 -46 ) mantle_on 64 64 68 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

@@ -1,0 +1,207 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_ber1"
+"_color" ".6 .55.5"
+"sundirection" "-45 185 0"
+"spawnflags" "512"
+"intensity" "100"
+"suncolor" "0.294118 0.286275 0.392157"
+"ambient" ".5"
+"sunlight" "2"
+"classname" "worldspawn"
+// brush 0
+{
+  contents detail;
+ ( 652 -126 82 ) ( 652 -128 80 ) ( 644 -128 80 ) caulk 128 -128 726 1172 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -22 82 ) ( 644 -20 80 ) ( 652 -20 80 ) caulk 128 -128 726 1172 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 652 -126 82 ) ( 652 -22 82 ) ( 652 -20 80 ) okinawa_floor_wood_faded_boards 128 -128 981 778.5 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -128 80 ) ( 652 -128 80 ) ( 652 -20 80 ) okinawa_floor_wood_faded_boards 128 128 981 -246.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -128 80 ) ( 644 -20 80 ) ( 644 -22 82 ) okinawa_floor_wood_faded_boards 128 -128 981 778.5 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -22 82 ) ( 652 -22 82 ) ( 652 -126 82 ) okinawa_floor_wood_faded_boards 128 128 981 -246.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 644 -22 82 ) ( 652 -22 82 ) ( 652 -20 80 ) okinawa_floor_wood_faded_boards 128 128 -6 -547 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -22 150 ) ( 644 -20 152 ) ( 652 -20 152 ) okinawa_floor_wood_faded_boards 128 128 -6 -547 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -22 82 ) ( 644 -22 150 ) ( 652 -22 150 ) okinawa_floor_wood_faded_boards 128 -128 782 46.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 652 -20 80 ) ( 652 -22 82 ) ( 652 -22 150 ) okinawa_floor_wood_faded_boards 128 -128 782 -378.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 652 -20 80 ) ( 652 -20 152 ) ( 644 -20 152 ) okinawa_floor_wood_faded_boards 128 -128 782 46.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -20 152 ) ( 644 -22 150 ) ( 644 -22 82 ) okinawa_floor_wood_faded_boards 128 -128 782 -378.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( 648 -126 82 ) ( 648 -124 84 ) ( 650 -124 84 ) caulk 128 -128 560 -52 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -22 82 ) ( 650 -24 84 ) ( 648 -24 84 ) caulk 128 -128 560 -52 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -22 82 ) ( 648 -24 84 ) ( 648 -124 84 ) okinawa_floor_wood_faded_boards 128 128 -401 1026 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -124 84 ) ( 648 -24 84 ) ( 650 -24 84 ) okinawa_floor_wood_faded_boards 128 -128 684 671 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -126 82 ) ( 650 -124 84 ) ( 650 -24 84 ) okinawa_floor_wood_faded_boards 128 128 -401 1026 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -126 82 ) ( 650 -22 82 ) ( 648 -22 82 ) caulk 128 -128 684 671 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( 648 -124 148 ) ( 648 -126 150 ) ( 650 -126 150 ) caulk 128 -128 494 -52 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -24 148 ) ( 650 -22 150 ) ( 648 -22 150 ) caulk 128 -128 494 -52 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -24 148 ) ( 648 -22 150 ) ( 648 -126 150 ) okinawa_floor_wood_faded_boards 128 128 494 475 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -126 150 ) ( 648 -22 150 ) ( 650 -22 150 ) caulk 128 -128 684 671 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -124 148 ) ( 650 -126 150 ) ( 650 -22 150 ) okinawa_floor_wood_faded_boards 128 128 -401 960 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -124 148 ) ( 650 -24 148 ) ( 648 -24 148 ) okinawa_floor_wood_faded_boards 128 -128 684 671 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+  contents detail;
+ ( 652 -128 152 ) ( 652 -126 150 ) ( 644 -126 150 ) caulk 128 -128 796 1172 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -20 152 ) ( 644 -22 150 ) ( 652 -22 150 ) caulk 128 -128 796 1172 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 652 -128 152 ) ( 652 -20 152 ) ( 652 -22 150 ) okinawa_floor_wood_faded_boards 128 -128 981 848.5 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -126 150 ) ( 652 -126 150 ) ( 652 -22 150 ) okinawa_floor_wood_faded_boards 128 128 981 -246.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -126 150 ) ( 644 -22 150 ) ( 644 -20 152 ) okinawa_floor_wood_faded_boards 128 -128 981 848.5 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -20 152 ) ( 652 -20 152 ) ( 652 -128 152 ) okinawa_floor_wood_faded_boards 128 128 981 -246.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+  contents detail;
+ ( 650 -126 82 ) ( 650 -124 84 ) ( 648 -124 84 ) caulk 128 128 -5 -721 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -124 148 ) ( 650 -124 148 ) ( 650 -126 150 ) caulk 128 128 -5 -721 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -126 82 ) ( 648 -126 150 ) ( 650 -126 150 ) caulk 128 -128 -5 -270 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -124 84 ) ( 650 -126 82 ) ( 650 -126 150 ) okinawa_floor_wood_faded_boards 128 -128 889 -102 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -124 84 ) ( 650 -124 148 ) ( 648 -124 148 ) okinawa_floor_wood_faded_boards 128 -128 -196 -461 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -124 148 ) ( 648 -126 150 ) ( 648 -126 82 ) okinawa_floor_wood_faded_boards 128 -128 889 -102 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+  contents detail;
+ ( 652 -128 80 ) ( 652 -126 82 ) ( 644 -126 82 ) okinawa_floor_wood_faded_boards 128 128 -6 -654 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -126 150 ) ( 652 -126 150 ) ( 652 -128 152 ) okinawa_floor_wood_faded_boards 128 128 -6 -654 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -128 80 ) ( 644 -128 152 ) ( 652 -128 152 ) okinawa_floor_wood_faded_boards 128 -128 782 46.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 652 -126 82 ) ( 652 -128 80 ) ( 652 -128 152 ) okinawa_floor_wood_faded_boards 128 -128 782 -271.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 652 -126 82 ) ( 652 -126 150 ) ( 644 -126 150 ) okinawa_floor_wood_faded_boards 128 -128 782 46.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 644 -126 150 ) ( 644 -128 152 ) ( 644 -128 80 ) okinawa_floor_wood_faded_boards 128 -128 782 -271.5 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 7
+{
+  contents detail;
+ ( 647 -100 84 ) ( 649 -100 84 ) ( 649 -98 84 ) caulk 64 64 1 -2 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 647 -98 148 ) ( 649 -98 148 ) ( 649 -100 148 ) caulk 64 64 1 -2 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -101 148 ) ( 648 -101 84 ) ( 647 -100 84 ) okinawa_floor_wood_faded_boards 128 128 0 2 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 649 -100 148 ) ( 649 -100 84 ) ( 648 -101 84 ) okinawa_floor_wood_faded_boards 128 128 0 2 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 649 -100 84 ) ( 649 -100 148 ) ( 648 -99 148 ) okinawa_floor_wood_faded_boards 128 128 0 2 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 647 -100 148 ) ( 647 -100 84 ) ( 648 -99 84 ) okinawa_floor_wood_faded_boards 128 128 0 2 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 8
+{
+  contents detail;
+ ( 649 -74.5 84 ) ( 647 -74.5 84 ) ( 647 -76.5 84 ) caulk 64 64 -1295 -176.5 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 649 -76.5 148 ) ( 647 -76.5 148 ) ( 647 -74.5 148 ) caulk 64 64 -1295 -176.5 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -73.5 148 ) ( 648 -73.5 84 ) ( 649 -74.5 84 ) okinawa_floor_wood_faded_boards 128 -128 0 -176.5 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 647 -74.5 148 ) ( 647 -74.5 84 ) ( 648 -73.5 84 ) okinawa_floor_wood_faded_boards 128 -128 0 -176.5 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 647 -74.5 84 ) ( 647 -74.5 148 ) ( 648 -75.5 148 ) okinawa_floor_wood_faded_boards 128 -128 0 -176.5 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 649 -74.5 148 ) ( 649 -74.5 84 ) ( 648 -75.5 84 ) okinawa_floor_wood_faded_boards 128 -128 0 -176.5 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 9
+{
+  contents detail;
+ ( 648 -24 117 ) ( 648 -24 115 ) ( 650 -24 115 ) caulk 64 64 2 -1 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -124 117 ) ( 650 -124 115 ) ( 648 -124 115 ) caulk 64 64 2 -1 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 647 -120 116 ) ( 647 -21 116 ) ( 648 -21 117 ) okinawa_floor_wood_faded_boards 128 128 2 2 90 0 lightmap_gray 16384 16384 0 -2 0 0
+ ( 648 -120 115 ) ( 648 -21 115 ) ( 647 -21 116 ) okinawa_floor_wood_faded_boards 128 128 2 3.75 90 0 lightmap_gray 16384 16384 0 -2 0 0
+ ( 648 -24 115 ) ( 648 -123 115 ) ( 649 -123 116 ) okinawa_floor_wood_faded_boards 128 128 -2 1 -90 0 lightmap_gray 16384 16384 0 -2 0 0
+ ( 649 -24 116 ) ( 649 -123 116 ) ( 648 -123 117 ) okinawa_floor_wood_faded_boards 128 128 -2 -2 -90 0 lightmap_gray 16384 16384 0 -2 0 0
+}
+// brush 10
+{
+  contents detail;
+ ( 649 -49 84 ) ( 647 -49 84 ) ( 647 -51 84 ) caulk 64 64 -1295 -151 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 649 -51 148 ) ( 647 -51 148 ) ( 647 -49 148 ) caulk 64 64 -1295 -151 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -48 148 ) ( 648 -48 84 ) ( 649 -49 84 ) okinawa_floor_wood_faded_boards 128 -128 0 -151 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 647 -49 148 ) ( 647 -49 84 ) ( 648 -48 84 ) okinawa_floor_wood_faded_boards 128 -128 0 -151 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 647 -49 84 ) ( 647 -49 148 ) ( 648 -50 148 ) okinawa_floor_wood_faded_boards 128 -128 0 -151 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 649 -49 148 ) ( 649 -49 84 ) ( 648 -50 84 ) okinawa_floor_wood_faded_boards 128 -128 0 -151 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 11
+{
+ ( 646 -124 116 ) ( 648 -124 116 ) ( 648 -100 116 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -100 148 ) ( 648 -100 148 ) ( 648 -124 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -124 116 ) ( 646 -124 148 ) ( 648 -124 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 648 -100 116 ) ( 648 -124 116 ) ( 648 -124 148 ) berlin_window_boarded_windows_burnt 64 128 -2 -101 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -100 116 ) ( 648 -100 148 ) ( 646 -100 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -100 148 ) ( 646 -124 148 ) ( 646 -124 116 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 12
+{
+ ( 646 -124 84 ) ( 648 -124 84 ) ( 648 -100 84 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -100 116 ) ( 648 -100 116 ) ( 648 -124 116 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -124 84 ) ( 646 -124 116 ) ( 648 -124 116 ) caulk 64 64 0 32 0 0 lightmap_gray 16384 16384 -1 32 0 0
+ ( 648 -100 84 ) ( 648 -124 84 ) ( 648 -124 116 ) berlin_window_boarded_windows_burnt 64 128 -2 -34 0 0 lightmap_gray 16384 16384 0 32 0 0
+ ( 648 -100 84 ) ( 648 -100 116 ) ( 646 -100 116 ) caulk 64 64 0 32 0 0 lightmap_gray 16384 16384 -1 32 0 0
+ ( 646 -100 116 ) ( 646 -124 116 ) ( 646 -124 84 ) caulk 64 64 0 32 0 0 lightmap_gray 16384 16384 0 32 0 0
+}
+// brush 13
+{
+ ( 648 -74 116 ) ( 648 -100 116 ) ( 646 -100 116 ) caulk 64 -64 0 198.5 0 0 lightmap_gray 16384 -16384 -1 198.5 0 0
+ ( 646 -74 84 ) ( 646 -100 84 ) ( 648 -100 84 ) caulk 64 -64 0 198.5 0 0 lightmap_gray 16384 -16384 -1 198.5 0 0
+ ( 646 -74 84 ) ( 648 -74 84 ) ( 648 -74 116 ) caulk 64 -64 0 -232 0 0 lightmap_gray 16384 -16384 -1 -232 0 0
+ ( 648 -100 116 ) ( 648 -74 116 ) ( 648 -74 84 ) berlin_window_boarded_windows_burnt 64 128 232.5 166 -180 0 lightmap_gray 16384 16384 198.5 232 180 0
+ ( 646 -100 116 ) ( 648 -100 116 ) ( 648 -100 84 ) caulk 64 -64 0 -232 0 0 lightmap_gray 16384 -16384 -1 -232 0 0
+ ( 646 -100 84 ) ( 646 -74 84 ) ( 646 -74 116 ) caulk 64 64 198.5 232 -180 0 lightmap_gray 16384 16384 198.5 232 -180 0
+}
+// brush 14
+{
+ ( 646 -100 116 ) ( 648 -100 116 ) ( 648 -74 116 ) caulk 64 64 0 -24 0 0 lightmap_gray 16384 16384 -1 -24 0 0
+ ( 646 -74 148 ) ( 648 -74 148 ) ( 648 -100 148 ) caulk 64 64 0 -24 0 0 lightmap_gray 16384 16384 -1 -24 0 0
+ ( 646 -100 116 ) ( 646 -100 148 ) ( 648 -100 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 648 -74 116 ) ( 648 -100 116 ) ( 648 -100 148 ) berlin_window_boarded_windows_burnt 64 128 58 -101 0 0 lightmap_gray 16384 16384 24 0 0 0
+ ( 648 -74 116 ) ( 648 -74 148 ) ( 646 -74 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -74 148 ) ( 646 -100 148 ) ( 646 -100 116 ) caulk 64 64 24 0 0 0 lightmap_gray 16384 16384 24 0 0 0
+}
+// brush 15
+{
+ ( 646 -74 116 ) ( 648 -74 116 ) ( 648 -48 116 ) caulk 64 64 0 -49.5 0 0 lightmap_gray 16384 16384 -1 -49.5 0 0
+ ( 646 -48 148 ) ( 648 -48 148 ) ( 648 -74 148 ) caulk 64 64 0 -49.5 0 0 lightmap_gray 16384 16384 -1 -49.5 0 0
+ ( 646 -74 116 ) ( 646 -74 148 ) ( 648 -74 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 648 -48 116 ) ( 648 -74 116 ) ( 648 -74 148 ) berlin_window_boarded_windows_burnt 64 128 112.5 -193 0 0 lightmap_gray 16384 16384 49.5 0 0 0
+ ( 648 -48 116 ) ( 648 -48 148 ) ( 646 -48 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -48 148 ) ( 646 -74 148 ) ( 646 -74 116 ) caulk 64 64 49.5 0 0 0 lightmap_gray 16384 16384 49.5 0 0 0
+}
+// brush 16
+{
+ ( 646 -48 116 ) ( 648 -48 116 ) ( 648 -24 116 ) caulk 64 64 0 -73.5 0 0 lightmap_gray 16384 16384 -1 -73.5 0 0
+ ( 646 -24 148 ) ( 648 -24 148 ) ( 648 -48 148 ) caulk 64 64 0 -73.5 0 0 lightmap_gray 16384 16384 -1 -73.5 0 0
+ ( 646 -48 116 ) ( 646 -48 148 ) ( 648 -48 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 648 -24 116 ) ( 648 -48 116 ) ( 648 -48 148 ) berlin_window_boarded_windows_burnt 64 128 173.5 -66 0 0 lightmap_gray 16384 16384 73.5 0 0 0
+ ( 648 -24 116 ) ( 648 -24 148 ) ( 646 -24 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1 0 0 0
+ ( 646 -24 148 ) ( 646 -48 148 ) ( 646 -48 116 ) caulk 64 64 73.5 0 0 0 lightmap_gray 16384 16384 73.5 0 0 0
+}
+// brush 17
+{
+ ( 648 -24 116 ) ( 648 -48 116 ) ( 646 -48 116 ) caulk 64 -64 0 148 0 0 lightmap_gray 16384 -16384 -1 148 0 0
+ ( 646 -24 84 ) ( 646 -48 84 ) ( 648 -48 84 ) caulk 64 -64 0 148 0 0 lightmap_gray 16384 -16384 -1 148 0 0
+ ( 646 -24 84 ) ( 648 -24 84 ) ( 648 -24 116 ) caulk 64 -64 0 -232 0 0 lightmap_gray 16384 -16384 -1 -232 0 0
+ ( 648 -48 116 ) ( 648 -24 116 ) ( 648 -24 84 ) berlin_window_boarded_windows_burnt 64 128 182 131 180 0 lightmap_gray 16384 16384 148 232 180 0
+ ( 646 -48 116 ) ( 648 -48 116 ) ( 648 -48 84 ) caulk 64 -64 0 -232 0 0 lightmap_gray 16384 -16384 -1 -232 0 0
+ ( 646 -48 84 ) ( 646 -24 84 ) ( 646 -24 116 ) caulk 64 64 148 232 180 0 lightmap_gray 16384 16384 148 232 180 0
+}
+// brush 18
+{
+ ( 648 -48 116 ) ( 648 -74 116 ) ( 646 -74 116 ) caulk 64 -64 0 173 0 0 lightmap_gray 16384 -16384 -1 173 0 0
+ ( 646 -48 84 ) ( 646 -74 84 ) ( 648 -74 84 ) caulk 64 -64 0 173 0 0 lightmap_gray 16384 -16384 -1 173 0 0
+ ( 646 -48 84 ) ( 648 -48 84 ) ( 648 -48 116 ) caulk 64 -64 0 -232 0 0 lightmap_gray 16384 -16384 -1 -232 0 0
+ ( 648 -74 116 ) ( 648 -48 116 ) ( 648 -48 84 ) berlin_window_boarded_windows_burnt 64 128 171 131 -180 0 lightmap_gray 16384 16384 173 232 -180 0
+ ( 646 -74 116 ) ( 648 -74 116 ) ( 648 -74 84 ) caulk 64 -64 0 -232 0 0 lightmap_gray 16384 -16384 -1 -232 0 0
+ ( 646 -74 84 ) ( 646 -48 84 ) ( 646 -48 116 ) caulk 64 64 173 232 180 0 lightmap_gray 16384 16384 173 232 180 0
+}
+// brush 19
+{
+  contents detail;
+ ( 648 -24 84 ) ( 650 -24 84 ) ( 650 -22 82 ) caulk 128 128 -5 -620 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -24 148 ) ( 648 -22 150 ) ( 650 -22 150 ) caulk 128 128 -5 -620 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -24 84 ) ( 648 -24 148 ) ( 650 -24 148 ) okinawa_floor_wood_faded_boards 128 -128 -196 -461 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -22 82 ) ( 650 -24 84 ) ( 650 -24 148 ) okinawa_floor_wood_faded_boards 128 -128 789 -101 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 650 -22 82 ) ( 650 -22 150 ) ( 648 -22 150 ) caulk 128 -128 -5 -270 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 648 -22 150 ) ( 648 -24 148 ) ( 648 -24 84 ) okinawa_floor_wood_faded_boards 128 -128 -196 -101 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

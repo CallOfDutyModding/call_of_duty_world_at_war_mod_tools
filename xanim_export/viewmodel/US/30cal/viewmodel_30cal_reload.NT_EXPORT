@@ -1,0 +1,14 @@
+NUMKEYS 11
+
+ 
+FRAME 1124 "gr_30cal_start_plr"
+FRAME 1127 "gr_30cal_charge_plr"
+FRAME 1185 "gr_30cal_open_plr"
+FRAME 1216 "gr_30cal_belt_raise_plr"
+FRAME 1225 "gr_30cal_belt_contact_plr"
+FRAME 1235 "gr_30cal_belt_press_plr"
+FRAME 1252 "gr_30cal_lid_bonk_plr"
+FRAME 1254 "gr_30cal_close_plr"
+FRAME 1273 "gr_30cal_tap_plr"
+FRAME 1293 "gr_30cal_ammo_toss_plr"
+FRAME 1326 "gr_30cal_charge_release_plr"

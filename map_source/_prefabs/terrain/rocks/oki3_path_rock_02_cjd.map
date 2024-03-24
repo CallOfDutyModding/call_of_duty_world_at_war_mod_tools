@@ -1,0 +1,31 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_oki3"
+"classname" "worldspawn"
+"northyaw" "90"
+"ambient" "0.15"
+"_color" "0.411765 0.34902 0.439216"
+"diffusefraction" "0.35"
+"sundiffusecolor" "0.3647 0.3686 0.3725"
+"suncolor" "0.9843 0.6980 0.6313"
+"sundirection" "-155 -182 0"
+"sunlight" "1.25"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"contrastgain" "0.15"
+// brush 0
+{
+  contents nonColliding;
+ ( 12.5 4 1 ) ( 10 -4 1 ) ( -4.5 -6 1 ) okinawa_terrain_tile_shuri_stonepath 128 128 -636.5 -2710 0 0 lightmap_gray 16384 16384 -614.5 -2714.5 0 0
+ ( -0.5 -7 -1 ) ( -0.5 -7 1 ) ( 12 -4.5 1 ) okinawa_terrain_tile_shuri_stonepath 125.61109 127.90039 -624.81329 -2715.7656 -11.527857 -0.0076883212 lightmap_gray 16384 16384 -614.5 -192 0 0
+ ( 12 -4.5 -1 ) ( 12 -4.5 1 ) ( 12.5 4 1 ) okinawa_terrain_tile_shuri_stonepath 128.00102 127.77992 -649.76819 -2705.3989 -86.639679 -0.00020912464 lightmap_gray 16384 16384 2714.5 -192 0 0
+ ( -0.5 -7 1 ) ( -0.5 -7 -1 ) ( -12.5 1.5 -1 ) okinawa_terrain_tile_shuri_stonepath 128 128 -636.5 -191 0 0 lightmap_gray 16384 16384 -608.5 -192 0 0
+ ( 10 -4 -1 ) ( 12.5 4 -1 ) ( 2 10.5 -1 ) okinawa_terrain_tile_shuri_stonepath 128 128 -636.5 -2710 0 0 lightmap_gray 16384 16384 -614.5 -2708.5 0 0
+ ( -12.5 1.5 1 ) ( -12.5 1.5 -1 ) ( -11 8 -1 ) okinawa_terrain_tile_shuri_stonepath 127.83572 -124.88197 -621.88031 2643.7666 77.327599 -0.011111152 lightmap_gray 16384 16384 2708.5 -191 0 0
+ ( 2 10 -1 ) ( 2 10 1 ) ( -11 8 1 ) okinawa_terrain_tile_shuri_stonepath 126.54596 -127.97643 -629.1192 2698.822 8.8482399 -0.0035578164 lightmap_gray 16384 16384 -614.5 -191 0 0
+ ( 2 10 1 ) ( 2 10 -1 ) ( 12.5 4 -1 ) okinawa_terrain_tile_shuri_stonepath 115.51567 -123.14233 -574.86755 2595.5984 -33.34935 0.13017778 lightmap_gray 16384 16384 -614.5 -191 0 0
+}
+}

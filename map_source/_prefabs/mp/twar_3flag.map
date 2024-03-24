@@ -1,0 +1,60 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"origin" "-256.0 0.0 0.0"
+"model" "_prefabs/mp/twar_flag_a.map"
+"classname" "misc_prefab"
+}
+// entity 2
+{
+"origin" "0.0 0.0 0.0"
+"model" "_prefabs/mp/twar_flag_b.map"
+"classname" "misc_prefab"
+}
+// entity 3
+{
+"origin" "256.0 0.0 0.0"
+"model" "_prefabs/mp/twar_flag_c.map"
+"classname" "misc_prefab"
+}
+// entity 4
+{
+"script_gameobjectname" "twar"
+"twar_axis_dependants" "flag3;flag2;"
+"twar_owner_home" "allies"
+"twar_owner" "allies"
+"script_linkto" "flag2"
+"script_linkname" "flag1"
+"targetname" "twar_flag_descriptor"
+"origin" "-256.0 0.0 88.0"
+"classname" "script_origin"
+}
+// entity 5
+{
+"script_gameobjectname" "twar"
+"twar_allies_dependants" "flag1;"
+"twar_axis_dependants" "flag3;"
+"script_linkto" "flag1 flag3"
+"script_linkname" "flag2"
+"targetname" "twar_flag_descriptor"
+"origin" "0.0 0.0 88.0"
+"classname" "script_origin"
+}
+// entity 6
+{
+"script_gameobjectname" "twar"
+"twar_owner_home" "axis"
+"twar_owner" "axis"
+"twar_allies_dependants" "flag1;flag2;"
+"script_linkto" "flag2"
+"script_linkname" "flag3"
+"targetname" "twar_flag_descriptor"
+"origin" "256.0 0.0 88.0"
+"classname" "script_origin"
+}

@@ -1,0 +1,69 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_hol3"
+"_color" "0.5 0.5 .62 1"
+"ambient" ".2"
+"sundiffusecolor" "0.75 0.82 0.85"
+"diffusefraction" ".2"
+"classname" "worldspawn"
+"sundirection" "-40 60 0"
+"suncolor" "0.9 0.95 1"
+"sunlight" "1.5"
+}
+// entity 1
+{
+"classname" "func_group"
+// brush 0
+{
+  contents detail;
+ ( -1 -11 -59 ) ( -1 -11 -187 ) ( -1 -19 -187 ) seelow_wall_wood_old02 128 -128 -2237 -3623 180 0 lightmap_gray 16384 -16384 -3963 2422 90 0
+ ( -6 -18 -187 ) ( -6 -10 -187 ) ( -6 -10 -59 ) seelow_wall_wood_old02 128 -128 -2237 -3623 180 0 lightmap_gray 16384 -16384 -3963 2422 90 0
+ ( 40 -3 -59 ) ( 40 -3 69 ) ( 56 -3 69 ) seelow_wall_wood_old02 128 128 214 3219 0 0 lightmap_gray 16384 16384 -3963 -171 90 0
+ ( 37 -18 55 ) ( 37 -10 55 ) ( 53 -10 55 ) caulk 128 128 214 -2801 0 0 lightmap_gray 16384 16384 2422 -171 90 0
+ ( 46 0 -63 ) ( 46 0 -191 ) ( 62 0 -191 ) seelow_wall_wood_old02 128 128 214 3219 0 0 lightmap_gray 16384 16384 -3963 -171 90 0
+ ( 39 -10 5 ) ( 39 -18 5 ) ( 55 -18 5 ) caulk 128 128 214 -2801 0 0 lightmap_gray 16384 16384 2422 -171 90 0
+}
+// brush 1
+{
+  contents detail;
+ ( 14 -11 55 ) ( -114 -11 55 ) ( -114 -19 55 ) seelow_wall_wood_old02 128 128 -2356 3317 -90 0 lightmap_gray 16384 16384 -3890 -2422 0 0
+ ( -114 -18 60 ) ( -114 -10 60 ) ( 14 -10 60 ) seelow_wall_wood_old02 128 128 -2356 3317 -90 0 lightmap_gray 16384 16384 -3890 -2422 0 0
+ ( -98 -3 14 ) ( 30 -3 14 ) ( 30 -3 -2 ) seelow_wall_wood_old02 128 128 41 3317 -90 0 lightmap_gray 16384 16384 -3890 -225 0 0
+ ( 0 -18 17 ) ( 0 -10 17 ) ( 0 -10 1 ) seelow_wall_wood_old02 128 128 41 -2630 -90 0 lightmap_gray 16384 16384 2422 -225 0 0
+ ( 10 0 8 ) ( -118 0 8 ) ( -118 0 -8 ) seelow_wall_wood_old02 128 128 41 3317 -90 0 lightmap_gray 16384 16384 -3890 -225 0 0
+ ( -132 -10 17 ) ( -132 -18 17 ) ( -132 -18 1 ) seelow_wall_wood_old02 128 128 41 -2630 -90 0 lightmap_gray 16384 16384 2422 -225 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( 14 -10 5 ) ( -114 -10 5 ) ( -114 -18 5 ) caulk 64 64 -3442 -2537 0 0 lightmap_gray 16384 16384 -3890 -2422 0 0
+ ( -114 -18 55 ) ( -114 -10 55 ) ( 14 -10 55 ) caulk 64 64 -3442 -2537 0 0 lightmap_gray 16384 16384 -3890 -2422 0 0
+ ( -98 -2 9 ) ( 30 -2 9 ) ( 30 -2 -7 ) seelow_wall_wood_old02 128 128 -12 3410 -90 0 lightmap_gray 16384 16384 -3890 -220 0 0
+ ( -6 -18 12 ) ( -6 -10 12 ) ( -6 -10 -4 ) caulk 64 64 2505 -140 0 0 lightmap_gray 16384 16384 2422 -220 0 0
+ ( 10 -1 4 ) ( -118 -1 4 ) ( -118 -1 -12 ) seelow_wall_wood_old02 128 128 -12 3410 -90 0 lightmap_gray 16384 16384 -3890 -220 0 0
+ ( -126 -10 12 ) ( -126 -18 12 ) ( -126 -18 -4 ) caulk 64 64 2505 -140 0 0 lightmap_gray 16384 16384 2422 -220 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( 14 -11 0 ) ( -114 -11 0 ) ( -114 -19 0 ) seelow_wall_wood_old02 128 128 -2287 3268 -90 0 lightmap_gray 16384 16384 -3890 -2422 0 0
+ ( -114 -18 5 ) ( -114 -10 5 ) ( 14 -10 5 ) seelow_wall_wood_old02 128 128 -2287 3268 -90 0 lightmap_gray 16384 16384 -3890 -2422 0 0
+ ( -98 -3 -41 ) ( 30 -3 -41 ) ( 30 -3 -57 ) seelow_wall_wood_old02 128 128 165 3268 -90 0 lightmap_gray 16384 16384 -3890 -170 0 0
+ ( 0 -18 -38 ) ( 0 -10 -38 ) ( 0 -10 -54 ) seelow_wall_wood_old02 128 128 165 -2679 -90 0 lightmap_gray 16384 16384 2422 -170 0 0
+ ( 10 0 -47 ) ( -118 0 -47 ) ( -118 0 -63 ) seelow_wall_wood_old02 128 128 165 3268 -90 0 lightmap_gray 16384 16384 -3890 -170 0 0
+ ( -132 -10 -38 ) ( -132 -18 -38 ) ( -132 -18 -54 ) seelow_wall_wood_old02 128 128 165 -2679 -90 0 lightmap_gray 16384 16384 2422 -170 0 0
+}
+// brush 4
+{
+  contents detail;
+ ( -126 -11 -59 ) ( -126 -11 -187 ) ( -126 -19 -187 ) seelow_wall_wood_old02 128 -128 -2287 -3501 180 0 lightmap_gray 16384 -16384 -3963 2422 90 0
+ ( -131 -18 -187 ) ( -131 -10 -187 ) ( -131 -10 -59 ) seelow_wall_wood_old02 128 -128 -2287 -3501 180 0 lightmap_gray 16384 -16384 -3963 2422 90 0
+ ( -85 -3 -59 ) ( -85 -3 69 ) ( -69 -3 69 ) seelow_wall_wood_old02 128 128 39 3341 0 0 lightmap_gray 16384 16384 -3963 -296 90 0
+ ( -88 -18 55 ) ( -88 -10 55 ) ( -72 -10 55 ) caulk 128 128 39 -2679 0 0 lightmap_gray 16384 16384 2422 -296 90 0
+ ( -79 0 -63 ) ( -79 0 -191 ) ( -63 0 -191 ) seelow_wall_wood_old02 128 128 39 3341 0 0 lightmap_gray 16384 16384 -3963 -296 90 0
+ ( -86 -10 5 ) ( -86 -18 5 ) ( -70 -18 5 ) caulk 128 128 39 -2679 0 0 lightmap_gray 16384 16384 2422 -296 90 0
+}
+}

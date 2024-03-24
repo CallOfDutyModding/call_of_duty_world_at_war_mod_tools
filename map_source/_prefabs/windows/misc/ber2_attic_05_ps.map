@@ -1,0 +1,95 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_decals_windows_dirty1
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -35.5 35 14 t 137.07265 0 0 -0
+	v -35.5 35 88 t 137.07265 -752.73401 0 -3.7583122
+   )
+   (
+	v -35.5 -6.5 14 t 929.42456 0 2.6173124 -0
+	v -35.5 -6.5 88 t 929.42456 -752.73401 2.6173124 -3.7583122
+   )
+  }
+ }
+// brush 1
+{
+  contents nonColliding;
+ ( 56 49.5 88 ) ( -34 49.5 88 ) ( -34 -21 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 49.5 88 ) ( 72 -21 88 ) ( 72 16 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -35.5 16 148 ) ( -35.5 -21 88 ) ( -35.5 49.5 88 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -35.5 14 148 ) ( 56 14 148 ) ( 56 -21 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 14 148 ) ( -35.5 14 148 ) ( -35.5 49.5 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( -22 50 14 ) ( -36 50 14 ) ( -36 36 14 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -36 36 88 ) ( -36 50 88 ) ( -22 50 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 35 88 ) ( -6 35 88 ) ( -6 35 14 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 37 88 ) ( 72 51 88 ) ( 72 51 14 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -22 49.5 88 ) ( -36 49.5 88 ) ( -36 49.5 14 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -35.5 50 88 ) ( -35.5 36 88 ) ( -35.5 36 14 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( -22 -7 14 ) ( -36 -7 14 ) ( -36 -21 14 ) caulk 64 64 0 57 0 0 lightmap_gray 16384 16384 0 57 0 0
+ ( -36 -21 88 ) ( -36 -7 88 ) ( -22 -7 88 ) caulk 64 64 0 57 0 0 lightmap_gray 16384 16384 0 57 0 0
+ ( -36 -21 88 ) ( -22 -21 88 ) ( -22 -21 14 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -20 88 ) ( 72 -6 88 ) ( 72 -6 14 ) caulk 64 64 -57 0 0 0 lightmap_gray 16384 16384 -57 0 0 0
+ ( -6 -6.5 88 ) ( -20 -6.5 88 ) ( -20 -6.5 14 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -35.5 -7 88 ) ( -35.5 -21 88 ) ( -35.5 -21 14 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 -57 0 0 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( -22 50 0 ) ( -36 50 0 ) ( -36 36 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -41.5 36 14 ) ( -41.5 50 14 ) ( -27.5 50 14 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -36 -21 93.5 ) ( -22 -21 93.5 ) ( -22 -21 19.5 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 37 88 ) ( 72 51 88 ) ( 72 51 14 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -22 49.5 88 ) ( -36 49.5 88 ) ( -36 49.5 14 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -35.5 50 88 ) ( -35.5 36 88 ) ( -35.5 36 14 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 56 54.5 90 ) ( -35.5 54.5 90 ) ( -35.5 49.5 88 ) berlin_roofs_brick_slate3_wet 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -19.5 14 157.5 ) ( 72 14 157.5 ) ( 72 14 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 49.5 88 ) ( -35.5 49.5 88 ) ( -35.5 14 148 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 16.5 158 ) ( 72 41.5 158 ) ( 72 41.5 91.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 14 157.5 ) ( -35.5 14 157.5 ) ( -35.5 54.5 90 ) berlin_roofs_brick_slate3_wet 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -35.5 41.5 158 ) ( -35.5 16.5 158 ) ( -35.5 16.5 91.5 ) berlin_roofs_brick_slate3_wet 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+  contents nonColliding;
+ ( -35.5 -26 90 ) ( 56 -26 90 ) ( 56 -21 88 ) berlin_roofs_brick_slate3_wet 128 128 0 0 0 0 lightmap_gray 16384 16384 -20.5 28 180 0
+ ( 72 14 157.5 ) ( -19.5 14 157.5 ) ( -19.5 14 148 ) caulk 64 -64 -20.5 0 -180 0 lightmap_gray 16384 -16384 -20.5 0 -180 0
+ ( -35.5 -21 88 ) ( 56 -21 88 ) ( 56 14 148 ) caulk 64 -64 -20.5 0 180 0 lightmap_gray 16384 -16384 -20.5 0 180 0
+ ( -35.5 11.5 158 ) ( -35.5 -13.5 158 ) ( -35.5 -13.5 91.5 ) berlin_roofs_brick_slate3_wet 128 128 0 0 0 0 lightmap_gray 16384 -16384 -28 0 180 0
+ ( 56 -26 90 ) ( -35.5 -26 90 ) ( -35.5 14 157.5 ) berlin_roofs_brick_slate3_wet 128 128 0 0 0 0 lightmap_gray 16384 -16384 -20.5 0 180 0
+ ( 72 -13.5 158 ) ( 72 11.5 158 ) ( 72 11.5 91.5 ) caulk 64 -64 -28 0 180 0 lightmap_gray 16384 -16384 -28 0 180 0
+}
+// brush 7
+{
+  contents nonColliding;
+ ( -19 16 148 ) ( -23 16 148 ) ( -23 12 148 ) caulk 64 64 5 0 0 0 lightmap_gray 16384 16384 5 0 0 0
+ ( -26 12 225 ) ( -26 16 225 ) ( -22 16 225 ) caulk 64 64 5 0 0 0 lightmap_gray 16384 16384 5 0 0 0
+ ( -26 11 148 ) ( -22 11 148 ) ( -22 11 88 ) berlin_ceilings_metal 128 128 0 0 0 0 lightmap_gray 16384 16384 5 0 0 0
+ ( -20 12 148 ) ( -20 16 148 ) ( -20 16 88 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -22 17 148 ) ( -26 17 148 ) ( -26 17 88 ) berlin_ceilings_metal 128 128 0 0 0 0 lightmap_gray 16384 16384 5 0 0 0
+ ( -26 16 148 ) ( -26 12 148 ) ( -26 12 88 ) berlin_ceilings_metal 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

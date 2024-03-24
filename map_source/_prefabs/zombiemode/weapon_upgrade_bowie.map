@@ -1,0 +1,80 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"origin" "-404 1216 -640"
+"spawnflags" "1024"
+"waterdirection " "80"
+"classname" "worldspawn"
+"northyaw" "225"
+"skyboxmodel" "skybox_pel1"
+"sundirection" "-40.5026 38.2786 0"
+"suncolor" "1 0.9254 0.8627"
+"sunlight" "1"
+"sundiffusecolor" "0.255 0.34078 0.427451"
+"diffusefraction" "0.175"
+"_color" "0.245 0.231 0.2135"
+"ambient" "0.15"
+"sunradiosity" "1.3"
+"radiosityscale" ".75"
+"contrastgain" ".8"
+}
+// entity 1
+{
+"script_noteworthy" "knife_bowie"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"targetname" "bowie_upgrade"
+"target" "knife_bowie"
+"classname" "trigger_use"
+// brush 0
+{
+ ( 24 0 -7 ) ( -24 0 -7 ) ( -24 -4 -7 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -25 -4 3 ) ( -25 0 3 ) ( 23 0 3 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 -3 1 ) ( 24 -3 1 ) ( 24 -3 -3 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+ ( 28 -4 1 ) ( 28 0 1 ) ( 28 0 -3 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+ ( 24 0 1 ) ( -24 0 1 ) ( -24 0 -3 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+ ( -25 0 1 ) ( -25 -4 1 ) ( -25 -4 -3 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+}
+}
+// entity 2
+{
+"origin" "0 0 0"
+"angles" "0 0 0"
+"targetname" "knife_bowie_chalk"
+"classname" "script_brushmodel"
+// brush 0
+ {
+  curve
+  {
+   bowie_knife_chalk
+   lightmap_gray
+   3 3 16 8
+   (
+	v -17.000011 -8 9 t 0 -1024 -1.5 -0.5625
+	v -17.000011 -8 -1.250001 t 0 -512 -1.5 0.07812506
+	v -17.000011 -8 -11.500001 t 0 -0 -1.5 0.71875
+   )
+   (
+	v 2.4999981 -8 9 t 512 -1024 0.3125 -0.5625
+	v 2.4999981 -8 -1.250001 t 512 -512 0.3125 0.07812506
+	v 2.4999981 -8 -11.500001 t 512 -0 0.3125 0.71875
+   )
+   (
+	v 22.000008 -8 9 t 1024 -1024 2.125 -0.5625
+	v 22.000008 -8 -1.250001 t 1024 -512 2.125 0.07812506
+	v 22.000008 -8 -11.500001 t 1024 -0 2.125 0.71875
+   )
+  }
+ }
+}
+// entity 3
+{
+"classname" "script_model"
+"model" "viewmodel_knife_bowie"
+"origin" "-8.0 -7.5 0.0"
+"targetname" "knife_bowie"
+"angles" "0 0 0"
+"target" "knife_bowie_chalk"
+}

@@ -1,0 +1,46 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 16 5.5 0 ) ( -15 5.5 0 ) ( -15 -5.5 0 ) case512grey2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -15 -5.5 37.5 ) ( -15 5.5 37.5 ) ( 16 5.5 37.5 ) case512grey2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -15 -7 35.5 ) ( 16 -7 35.5 ) ( 16 -7 1 ) case512grey2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 7 -5.5 35.5 ) ( 7 5.5 35.5 ) ( 7 5.5 1 ) case512grey2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 7 35.5 ) ( -15 7 35.5 ) ( -15 7 1 ) case512grey2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -7 5.5 35.5 ) ( -7 -5.5 35.5 ) ( -7 -5.5 1 ) case512grey2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"targetname" "auto1"
+"origin" "0.0 0.0 32.0"
+"script_burst_max" "3"
+"script_noteworthy" "sample_turret"
+"classname" "misc_turret"
+"bottomarc" "90"
+"toparc" "90"
+"rightarc" "90"
+"leftarc" "90"
+"weaponinfo" "zombie_bullet_crouch"
+"model" "weapon_jap_mg_type92_notripod"
+}
+// entity 2
+{
+"script_noteworthy" "auto_turret_trigger"
+"targetname" "auto_turret_trigger"
+"target" "auto1"
+"classname" "trigger_use"
+// brush 0
+{
+ ( -17.5 4.5 38.5 ) ( -21.5 4.5 38.5 ) ( -21.5 0.5 38.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -21.5 0.5 54.5 ) ( -21.5 4.5 54.5 ) ( -17.5 4.5 54.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -21.5 -7.5 54.5 ) ( -17.5 -7.5 54.5 ) ( -17.5 -7.5 38.5 ) trigger 64 64 0 -32 0 0 lightmap_gray 16384 16384 0 -32 0 0
+ ( -17.5 0.5 54.5 ) ( -17.5 4.5 54.5 ) ( -17.5 4.5 38.5 ) trigger 64 64 0 -32 0 0 lightmap_gray 16384 16384 0 -32 0 0
+ ( -17.5 8.5 54.5 ) ( -21.5 8.5 54.5 ) ( -21.5 8.5 38.5 ) trigger 64 64 0 -32 0 0 lightmap_gray 16384 16384 0 -32 0 0
+ ( -25.5 4.5 54.5 ) ( -25.5 0.5 54.5 ) ( -25.5 0.5 38.5 ) trigger 64 64 0 -32 0 0 lightmap_gray 16384 16384 0 -32 0 0
+}
+}

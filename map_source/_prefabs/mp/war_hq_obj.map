@@ -1,0 +1,58 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"targetname" "auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 37 14.5 0 ) ( -35 14.5 0 ) ( -35 -19.5 0 ) clip 64 64 -1 -2.75 180 0 lightmap_gray 16384 16384 -1 -2.75 180 0
+ ( 37 -19.5 36.5 ) ( -35 -19.5 36.5 ) ( -35 14.5 36.5 ) clip 64 64 -1 -2.75 180 0 lightmap_gray 16384 16384 -1 -2.75 180 0
+ ( 37 14.5 36.5 ) ( -35 14.5 36.5 ) ( -35 14.5 0 ) clip 64 -64 -1 0 -180 0 lightmap_gray 16383.988 -16384 -1 0 -180 0
+ ( -35 14.5 0 ) ( -35 14.5 36.5 ) ( -35 -19.5 36.5 ) clip 64 -64 2.7510514 0 180 0 lightmap_gray 16383.986 -16384 2.7510691 0 180 0
+ ( 37 -19.5 0 ) ( -35 -19.5 0 ) ( -35 -19.5 36.5 ) clip 64 -64 -1 0 -180 0 lightmap_gray 16383.99 -16384 -1 0 -180 0
+ ( 37 -19.5 0 ) ( 37 -19.5 36.5 ) ( 37 14.5 36.5 ) clip 64 -64 2.75 0 180 0 lightmap_gray 16383.977 -16384 2.75 0 -180 0
+}
+}
+// entity 2
+{
+"targetname" "auto1"
+"script_gameobjectname" "hq"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 15 8.5 32 ) ( 11 -3 32 ) ( 26 -8 32 ) clip 64 64 -7.8086848 -21.336044 -108.70007 0 lightmap_gray 16384 16384.039 -7.8086848 -21.336128 -108.70007 0
+ ( 30 3.5 45 ) ( 26 -8 45 ) ( 11 -3 45 ) clip 64 64 -7.8085909 -21.336142 -108.70002 0 lightmap_gray 16384 16384.072 -7.8085909 -21.336103 -108.70002 0
+ ( 15 8.5 45 ) ( 11 -3 45 ) ( 11 -3 32 ) clip 60.620419 -64 -3.7625711 0 180 0 lightmap_gray 15519.07 -16384 -3.7626371 0 180 0
+ ( 26 -8 32 ) ( 11 -3 32 ) ( 11 -3 45 ) clip 60.620308 64 20.46986 0 0 0 lightmap_gray 15519.074 16384 20.46987 0 0 0
+ ( 30 3.5 32 ) ( 26 -8 32 ) ( 26 -8 45 ) clip 60.620384 -64 1.3663023 0 -180 0 lightmap_gray 15519.057 -16384 1.366298 0 -180 0
+ ( 30 3.5 45 ) ( 15 8.5 45 ) ( 15 8.5 32 ) clip 60.620083 64 24.317699 0 0 0 lightmap_gray 15519.015 16384 24.318115 0 0 0
+}
+}
+// entity 3
+{
+"classname" "script_model"
+"model" "radio_japanese"
+"angles" "0 340.6 0"
+"origin" "20.5 0.0 36.5"
+"targetname" "hq_hardpoint"
+"script_gameobjectname" "hq"
+"target" "auto1"
+"spawnflags" "4"
+}
+// entity 4
+{
+"angles" "0 360 15"
+"classname" "script_model"
+"model" "war_hq_obj"
+"origin" "-25.0 2.5 37.5"
+"script_gameobjectname" "hq"
+"targetname" "auto1"
+"spawnflags" "4"
+}

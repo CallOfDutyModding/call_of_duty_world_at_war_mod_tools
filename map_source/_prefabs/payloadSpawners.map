@@ -1,0 +1,171 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 72 192 96 ) ( -64 192 96 ) ( -64 -120 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 -448 -328 0 0
+ ( -64 -120 104 ) ( -64 192 104 ) ( 72 192 104 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.986 16384 -448 -328 0 0
+ ( -64 -256 104 ) ( 72 -256 104 ) ( 72 -256 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.969 -448 32 0 0
+ ( 64 -120 104 ) ( 64 192 104 ) ( 64 192 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.967 328 32 0 0
+ ( 72 192 104 ) ( -64 192 104 ) ( -64 192 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.969 -448 32 0 0
+ ( -64 192 104 ) ( -64 -120 104 ) ( -64 -120 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384.051 328 32 0 0
+}
+// brush 1
+{
+ ( -56 192 8 ) ( -64 192 8 ) ( -64 -120 8 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384.193 16384 -576.00598 -328 0 0
+ ( -64 -120 96 ) ( -64 192 96 ) ( -56 192 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.879 16384 -575.9967 -328 0 0
+ ( -64 -256 88 ) ( -56 -256 88 ) ( -56 -256 24 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.768 16384 -575.99261 0 0 0
+ ( -56 -248 96 ) ( -56 64 96 ) ( -56 64 32 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 328 0 0 0
+ ( -56 192 96 ) ( -64 192 96 ) ( -64 192 32 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384.141 16384 -576.0047 0 0 0
+ ( -64 192 96 ) ( -64 -120 96 ) ( -64 -120 32 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 328 0 0 0
+}
+// brush 2
+{
+ ( 64 -248 8 ) ( -56 -248 8 ) ( -56 -256 8 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384.262 -447.99811 112 0 0
+ ( -56 -256 96 ) ( -56 -248 96 ) ( 64 -248 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384.385 -448 111.99824 0 0
+ ( -56 -256 128 ) ( 64 -256 128 ) ( 64 -256 120 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384.031 -448 0 0 0
+ ( 56 -264 136 ) ( 56 -256 136 ) ( 56 -256 128 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384.246 16384 -112 0 0 0
+ ( 64 -248 136 ) ( -56 -248 136 ) ( -56 -248 128 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.994 -448 0 0 0
+ ( -56 -248 136 ) ( -56 -256 136 ) ( -56 -256 128 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.867 16384 -112 0 0 0
+}
+// brush 3
+{
+ ( 64 192 8 ) ( -56 192 8 ) ( -56 184 8 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.992 16384.051 -448 -328 0 0
+ ( -56 184 96 ) ( -56 192 96 ) ( 64 192 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384.045 -448 -328 0 0
+ ( -56 184 128 ) ( 64 184 128 ) ( 64 184 120 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384.031 -448 0 0 0
+ ( 56 184 136 ) ( 56 192 136 ) ( 56 192 128 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384.125 16383.936 328 0 0 0
+ ( 48 192 136 ) ( -72 192 136 ) ( -72 192 128 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.994 -448 0 0 0
+ ( -56 192 136 ) ( -56 184 136 ) ( -56 184 128 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.896 16383.984 328 0 0 0
+}
+// brush 4
+{
+ ( 64 192 8 ) ( 56 192 8 ) ( 56 -120 8 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.938 16384 -455.99805 -328 0 0
+ ( 56 -120 96 ) ( 56 192 96 ) ( 64 192 96 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384.02 16384 -456 -328 0 0
+ ( 56 -256 88 ) ( 64 -256 88 ) ( 64 -256 24 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 -456 0 0 0
+ ( 64 -120 128 ) ( 64 192 128 ) ( 64 192 64 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 328 0 0 0
+ ( 64 192 96 ) ( 56 192 96 ) ( 56 192 32 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16383.84 16384 -455.99579 0 0 0
+ ( 56 64 64 ) ( 56 -248 64 ) ( 56 -248 0 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 328 0 0 0
+}
+// brush 5
+{
+ ( 72 192 0 ) ( -64 192 0 ) ( -64 -120 0 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 -448 -328 0 0
+ ( -72 -128 8 ) ( -72 184 8 ) ( 64 184 8 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16384 -448 -328 0 0
+ ( -64 -256 8 ) ( 72 -256 8 ) ( 72 -256 0 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.943 -448 128 0 0
+ ( 64 -120 8 ) ( 64 192 8 ) ( 64 192 0 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.938 328 128 0 0
+ ( 72 192 8 ) ( -64 192 8 ) ( -64 192 0 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.93 -448 128 0 0
+ ( -64 192 8 ) ( -64 -120 8 ) ( -64 -120 0 ) clip_nosight 64 64 0 0 0 0 lightmap_gray 16384 16383.924 328 128 0 0
+}
+}
+// entity 1
+{
+"count" "999999999999999999"
+"spawnflags" "1"
+"script_noteworthy" "bazooka"
+"targetname" "referenceSpawners"
+"target" "auto22"
+"origin" "0.0 -40.0 16.0"
+"angles" "0 90 0"
+"export" "10"
+"model" "char_ger_wrmcht_fullbody1"
+"classname" "actor_axis_ger_ber_wehr_reg_panzerschrek"
+}
+// entity 2
+{
+"count" "999999999999999999"
+"spawnflags" "1"
+"script_noteworthy" "portable"
+"targetname" "referenceSpawners"
+"target" "auto21"
+"origin" "0.0 24.0 16.0"
+"angles" "0 90 0"
+"export" "11"
+"model" "char_ger_wrmcht_fullbody1"
+"classname" "actor_axis_ger_ber_wehr_reg_mg42portable"
+}
+// entity 3
+{
+"count" "999999999999999999"
+"spawnflags" "1"
+"script_noteworthy" "flame"
+"targetname" "referenceSpawners"
+"target" "auto20"
+"origin" "0.0 88.0 16.0"
+"angles" "0 90 0"
+"export" "12"
+"model" "char_ger_wrmcht_fullbody1"
+"classname" "actor_axis_ger_ber_wehr_reg_flamethrower"
+}
+// entity 4
+{
+"count" "999999999999999999"
+"spawnflags" "1"
+"script_noteworthy" "rifle"
+"targetname" "referenceSpawners"
+"target" "auto19"
+"origin" "0.0 152.0 16.0"
+"angles" "0 90 0"
+"export" "14"
+"model" "char_ger_wrmcht_fullbody1"
+"classname" "actor_axis_ger_ber_wehr_reg_kar98k"
+}
+// entity 5
+{
+"targetname" "auto19"
+"origin" "0.0 152.0 16.0"
+"classname" "script_origin"
+}
+// entity 6
+{
+"targetname" "auto20"
+"origin" "0.0 88.0 16.0"
+"classname" "script_origin"
+}
+// entity 7
+{
+"targetname" "auto21"
+"origin" "0.0 24.0 16.0"
+"classname" "script_origin"
+}
+// entity 8
+{
+"targetname" "auto22"
+"origin" "0.0 -40.0 16.0"
+"classname" "script_origin"
+}
+// entity 9
+{
+"classname" "script_origin"
+"origin" "0.0 -104.0 16.0"
+"targetname" "auto23"
+}
+// entity 10
+{
+"targetname" "referenceSpawners"
+"count" "999999999999999999"
+"origin" "0.0 -104.0 16.0"
+"spawnflags" "1"
+"target" "auto23"
+"script_noteworthy" "smg"
+"angles" "0 90 0"
+"export" "15"
+"model" "char_ger_wrmcht_fullbody1"
+"classname" "actor_axis_ger_ber_wehr_reg_mp40"
+}
+// entity 11
+{
+"dmg" "50"
+"spawnflags" "12"
+"classname" "trigger_hurt"
+// brush 0
+{
+ ( 64 256 -64 ) ( -64 256 -64 ) ( -64 -256 -64 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -256 128 ) ( -64 256 128 ) ( 64 256 128 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -256 72 ) ( 64 -256 72 ) ( 64 -256 -32 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 -256 72 ) ( 64 256 72 ) ( 64 256 -32 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 256 72 ) ( -64 256 72 ) ( -64 256 -32 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 256 72 ) ( -64 -256 72 ) ( -64 -256 -32 ) kill 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

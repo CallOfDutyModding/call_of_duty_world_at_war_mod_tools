@@ -1,0 +1,11 @@
+name,file,platform,sequence,vol_min,vol_max,dist_min,dist_max,limit_count,limit_type,entity_limit_count,entity_limit_type,bus,volume_min_falloff_curve,volumefalloffcurve,reverb_send,dist_reverb_max,reverb_min_falloff_curve,reverb_falloff_curve,pitch_min,pitch_max,randomize_type,spatialized,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,chainaliasname,startdelay,speakermap,lfe percentage,center percentage,envelop_min,envelop_max,envelop percentage,occlusion_level,occlusion_wet_dry,real_delay,distance_lpf,move_type,move_time,min_priority,max_priority,min_priority_threshold,max_priority_threshold,,isbig
+
+# Announcer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dp_vox,voiceovers\zombie\ANN\ANN_DoublePoints.wav,,,1,1,50,2500,8,reject,1,reject,voice,,curve2,,,,,1.2,1.2,,2d,,,,master,,,,,,1000,wpn_all,,,,,,,,,,,,100,100,0.25,1
+insta_vox,voiceovers\zombie\ANN\ANN_InstaKill.wav,,,1,1,50,2500,8,reject,1,reject,voice,,curve2,,,,,1.2,1.2,,2d,,,,master,,,,,,1000,wpn_all,,,,,,,,,,,,100,100,0.25,1
+ma_vox,voiceovers\zombie\ANN\ANN_MaxAmmo.wav,,,1,1,50,2500,8,reject,1,reject,voice,,curve2,,,,,1.2,1.2,,2d,,,,master,,,,,,1000,wpn_all,,,,,,,,,,,,100,100,0.25,1
+nuke_vox,voiceovers\zombie\ANN\ANN_Nuke.wav,,,1,1,50,2500,8,reject,1,reject,voice,,curve2,,,,,1.2,1.2,,2d,,,,master,,,,,,2000,wpn_all,,,,,,,,,,,,100,100,0.25,1
+ann_vox_killstreak,null.wav,,,0,0,50,2500,8,reject,1,reject,voice,,curve2,,,,,1,1,,2d,,,,master,,,,,,,wpn_all,,,,,,,,,,,,10,25,0.25,1
+ann_vox_levelstart,voiceovers\zombie\ANN\ANN_special_levelstart_00.wav,,,1,1,50,2500,8,reject,1,reject,voice,,curve2,,,,,1,1,,2d,,,,master,,,,,,1000,wpn_all,,,,,,,,,,,,10,25,0.25,1
+ann_vox_levelstart_b,voiceovers\zombie\ANN\ANN_special_levelstart_01.wav,,,1,1,50,2500,8,reject,1,reject,voice,,curve2,,,,,1,1,,2d,,,,master,,,,,,1000,wpn_all,,,,,,,,,,,,10,25,0.25,1
+ann_vox_magicbox,voiceovers\zombie\ANN\ANN_special_magicbox_full.wav,,,1,1,50,2500,8,reject,1,reject,voice,,curve2,,,,,1,1,,2d,,,,master,,,,,,1000,wpn_all,,,,,,,,,,,,10,25,0.25,1

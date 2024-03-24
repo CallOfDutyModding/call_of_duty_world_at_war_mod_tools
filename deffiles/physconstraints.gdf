@@ -1,0 +1,805 @@
+#name "physconstraints"
+#dll "all" "configstringconvert"
+#source_dir "physconstraints/"
+#target_dir "physconstraints/"
+#file_ext "*"
+#version 1
+
+// This tells the configstring converter what the file type identifier should be
+string "PHYSCONSTRAINTS" configstringFileType
+
+// only fake_shake is listed in c1 because it will not work with other constraints
+enum { "none", "point", "hinge", "joint", "actuator", "fake_shake", "launch" } c1_type
+string c1_bone1_name
+string c1_bone2_name
+int 0 0 1000 c1_timeout
+float 0 -10000 10000 c1_offsetX
+float 0 -10000 10000 c1_offsetY
+float 0 -10000 10000 c1_offsetZ
+int -10000 -10000 10000 c1_min_health
+int 10000 -10000 10000 c1_max_health
+float 2 0 10000 c1_damp
+float 10 0 10000 c1_power
+float 0.5 0 10000 c1_shakescalex
+float 0.5 0 10000 c1_shakescaley
+float 1 0 10000 c1_shakescalez
+int 0 -180 180 c1_min_angle
+int 0 -180 180 c1_max_angle
+float 0 -360 360 c1_yaw
+float 0 -360 360 c1_pitch
+float 0 0 1000 c1_spin_scale
+
+
+enum { "none", "point", "hinge", "joint", "actuator" } c2_type
+string c2_bone1_name
+string c2_bone2_name
+int 0 0 1000 c2_timeout
+float 0 -10000 10000 c2_offsetX
+float 0 -10000 10000 c2_offsetY
+float 0 -10000 10000 c2_offsetZ
+int -10000 -10000 10000 c2_min_health
+int 10000 -10000 10000 c2_max_health
+float 0 0 10000 c2_damp
+float 0 0 10000 c2_power
+int 0 -180 180 c2_min_angle
+int 0 -180 180 c2_max_angle
+
+
+enum { "none", "point", "hinge", "joint", "actuator" } c3_type
+string c3_bone1_name
+string c3_bone2_name
+int 0 0 1000 c3_timeout
+float 0 -10000 10000 c3_offsetX
+float 0 -10000 10000 c3_offsetY
+float 0 -10000 10000 c3_offsetZ
+int -10000 -10000 10000 c3_min_health
+int 10000 -10000 10000 c3_max_health
+float 0 0 10000 c3_damp
+float 0 0 10000 c3_power
+int 0 -180 180 c3_min_angle
+int 0 -180 180 c3_max_angle
+
+
+enum { "none", "point", "hinge", "joint", "actuator" } c4_type
+string c4_bone1_name
+string c4_bone2_name
+int 0 0 1000 c4_timeout
+float 0 -10000 10000 c4_offsetX
+float 0 -10000 10000 c4_offsetY
+float 0 -10000 10000 c4_offsetZ
+int -10000 -10000 10000 c4_min_health
+int 10000 -10000 10000 c4_max_health
+float 0 0 10000 c4_damp
+float 0 0 10000 c4_power
+int 0 -180 180 c4_min_angle
+int 0 -180 180 c4_max_angle
+
+
+vcontainer
+{
+	vcontainer
+	{
+	
+		scrollbox(c1_type)
+		[
+			exec
+			{
+				label("Type")
+				width(200)
+				labelwidth(50)
+			}
+		]
+	
+		edit(c1_bone1_name)
+		[
+			exec
+			{
+				label("Bone 1")
+				width(400)
+				visible( c1_type == "point" || c1_type == "hinge" || c1_type == "actuator" )
+			}
+		]
+		edit(c1_bone2_name)
+		[
+			exec
+			{
+				label("Bone 2")
+				width(400)
+				visible( c1_type == "point" || c1_type == "hinge" || c1_type == "actuator" )
+			}
+		]
+		
+		hcontainer
+		{
+			floatedit(c1_offsetX, 0.5, 1.0)
+			[
+				exec
+				{
+					label("X")
+					width(200)
+					tooltip("Local X offset.")
+				}
+			]		
+			floatedit(c1_offsetY, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Y")
+					width(200)
+					tooltip("Local Y offset.")
+				}
+			]	
+			floatedit(c1_offsetZ, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Z")
+					width(200)
+					tooltip("Local Z offset.")
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( c1_type == "point" )
+			}
+		]		
+		
+		spinedit(c1_timeout, 1, 2)
+		[
+			exec
+			{
+				label("Timeout")
+				tooltip("Constraint timeout in seconds.")
+				visible( c1_type == "point" || c1_type == "hinge" || c1_type == "actuator" )
+			}
+		]
+		
+		floatedit(c1_damp, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Dampening")
+				width(200)
+				tooltip("Dampening.")
+				visible( c1_type == "hinge" || c1_type == "fake_shake" )
+			}
+		]
+		
+		floatedit(c1_power, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Power")
+				width(200)
+				tooltip("Actuator power.")
+				visible( c1_type == "actuator" )
+			}
+		]
+		floatedit(c1_power, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Spring Strength")
+				width(200)
+				visible( c1_type == "fake_shake" )
+			}
+		]
+		hcontainer
+		{
+			floatedit(c1_shakescalex, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Force Scale x")
+					width(200)
+					tooltip("Spring force scale around the x-axis")
+				}
+			]		
+			floatedit(c1_shakescaley, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Force Scale y")
+					width(200)
+					tooltip("Spring force scale around the y-axis")
+				}
+			]
+			floatedit(c1_shakescalez, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Force Scale z")
+					width(200)
+					tooltip("Spring force scale around the z-axis")
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( c1_type == "fake_shake" )
+			}
+		]
+		
+		hcontainer
+		{
+			floatedit(c1_power, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Launch Force")
+					width(200)
+				}
+			]
+			floatedit(c1_spin_scale, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Spin Scale")
+					width(200)
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( c1_type == "launch" )
+			}
+		]
+		
+		hcontainer
+		{
+			floatedit(c1_yaw, 2.0, 10.0)
+			[
+				exec
+				{
+					label("Launch Yaw")
+					width(200)
+				}
+			]
+			floatedit(c1_pitch, 2.0, 10.0)
+			[
+				exec
+				{
+					label("Launch Pitch")
+					width(200)
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( c1_type == "launch" )
+			}
+		]
+			
+		hcontainer
+		{
+			spinedit(c1_min_angle, 1, 5)
+			[
+				exec
+				{
+					label("Min angle")
+					tooltip("Min angle for the hinge constraint.")
+					visible( c1_type == "hinge" )
+				}
+			]		
+			spinedit(c1_max_angle, 1, 2)
+			[
+				exec
+				{
+					label("Max angle")
+					tooltip("Max angle for the hinge constraint.")
+					visible( c1_type == "hinge" )
+				}
+			]	
+		}
+				
+		hcontainer
+		{
+			spinedit(c1_min_health, 1, 10)
+			[
+				exec
+				{
+					label("Min health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+			spinedit(c1_max_health, 1, 10)
+			[
+				exec
+				{
+					label("Max health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+		}
+		[
+			exec
+			{
+				visible( c1_type == "point" || c1_type == "hinge" || c1_type == "actuator" )			
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("constraint 1")
+		}
+	]	
+	vcontainer
+	{
+	
+		scrollbox(c2_type)
+		[
+			exec
+			{
+				label("Type")
+				width(200)
+				labelwidth(50)
+			}
+		]
+	
+		edit(c2_bone1_name)
+		[
+			exec
+			{
+				label("Bone 1")
+				width(400)
+				visible( c2_type == "point" || c2_type == "hinge" || c2_type == "actuator" )
+			}
+		]
+		edit(c2_bone2_name)
+		[
+			exec
+			{
+				label("Bone 2")
+				width(400)
+				visible( c2_type == "point" || c2_type == "hinge" || c2_type == "actuator" )
+			}
+		]
+		
+		hcontainer
+		{
+			floatedit(c2_offsetX, 0.5, 1.0)
+			[
+				exec
+				{
+					label("X")
+					width(200)
+					tooltip("Local X offset.")
+				}
+			]		
+			floatedit(c2_offsetY, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Y")
+					width(200)
+					tooltip("Local Y offset.")
+				}
+			]	
+			floatedit(c2_offsetZ, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Z")
+					width(200)
+					tooltip("Local Z offset.")
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( c2_type == "point" )
+			}
+		]		
+		
+		
+		spinedit(c2_timeout, 1, 2)
+		[
+			exec
+			{
+				label("Timeout")
+				tooltip("Constraint timeout in seconds.")
+				visible( c2_type == "point" || c2_type == "hinge" || c2_type == "actuator" )
+			}
+		]		
+		
+		floatedit(c2_damp, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Dampening")
+				width(200)
+				tooltip("Dampening.")
+				visible( c2_type == "hinge" )
+			}
+		]
+		
+		floatedit(c2_power, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Power")
+				width(200)
+				tooltip("Actuator power.")
+				visible( c2_type == "actuator" )
+			}
+		]
+		
+			
+		hcontainer
+		{
+			spinedit(c2_min_angle, 1, 5)
+			[
+				exec
+				{
+					label("Min angle")
+					tooltip("Min angle for the hinge constraint.")
+					visible( c2_type == "hinge" )
+				}
+			]		
+			spinedit(c2_max_angle, 1, 2)
+			[
+				exec
+				{
+					label("Max angle")
+					tooltip("Max angle for the hinge constraint.")
+					visible( c2_type == "hinge" )
+				}
+			]	
+		}
+		
+		hcontainer
+		{
+			spinedit(c2_min_health, 1, 10)
+			[
+				exec
+				{
+					label("Min health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+			spinedit(c2_max_health, 1, 10)
+			[
+				exec
+				{
+					label("Max health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+		}
+		[
+			exec
+			{
+				visible( c2_type == "point" || c2_type == "hinge" || c2_type == "actuator" )			
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("constraint 2")
+		}
+	]	
+	
+	vcontainer
+	{
+	
+		scrollbox(c3_type)
+		[
+			exec
+			{
+				label("Type")
+				width(200)
+				labelwidth(50)
+			}
+		]
+	
+		edit(c3_bone1_name)
+		[
+			exec
+			{
+				label("Bone 1")
+				width(400)
+				visible( c3_type == "point" || c3_type == "hinge" || c3_type == "actuator" )
+			}
+		]
+		edit(c3_bone2_name)
+		[
+			exec
+			{
+				label("Bone 2")
+				width(400)
+				visible( c3_type == "point" || c3_type == "hinge" || c3_type == "actuator" )
+			}
+		]
+		
+		hcontainer
+		{
+			floatedit(c3_offsetX, 0.5, 1.0)
+			[
+				exec
+				{
+					label("X")
+					width(200)
+					tooltip("Local X offset.")
+				}
+			]		
+			floatedit(c3_offsetY, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Y")
+					width(200)
+					tooltip("Local Y offset.")
+				}
+			]	
+			floatedit(c3_offsetZ, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Z")
+					width(200)
+					tooltip("Local Z offset.")
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( c3_type == "point" )
+			}
+		]		
+		
+		
+		spinedit(c3_timeout, 1, 2)
+		[
+			exec
+			{
+				label("Timeout")
+				tooltip("Constraint timeout in seconds.")
+				visible( c3_type == "point" || c3_type == "hinge" || c3_type == "actuator" )
+			}
+		]		
+		
+		floatedit(c3_damp, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Dampening")
+				width(200)
+				tooltip("Dampening.")
+				visible( c3_type == "hinge" )
+			}
+		]
+		
+		floatedit(c3_power, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Power")
+				width(200)
+				tooltip("Actuator power.")
+				visible( c3_type == "actuator" )
+			}
+		]
+			
+		hcontainer
+		{
+			spinedit(c3_min_angle, 1, 5)
+			[
+				exec
+				{
+					label("Min angle")
+					tooltip("Min angle for the hinge constraint.")
+					visible( c3_type == "hinge" )
+				}
+			]		
+			spinedit(c3_max_angle, 1, 2)
+			[
+				exec
+				{
+					label("Max angle")
+					tooltip("Max angle for the hinge constraint.")
+					visible( c3_type == "hinge" )
+				}
+			]	
+		}
+		
+		hcontainer
+		{
+			spinedit(c3_min_health, 1, 10)
+			[
+				exec
+				{
+					label("Min health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+			spinedit(c3_max_health, 1, 10)
+			[
+				exec
+				{
+					label("Max health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+		}
+		[
+			exec
+			{
+				visible( c3_type == "point" || c3_type == "hinge" || c3_type == "actuator" )			
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("constraint 3")
+		}
+	]	
+	
+	vcontainer
+	{
+	
+		scrollbox(c4_type)
+		[
+			exec
+			{
+				label("Type")
+				width(200)
+				labelwidth(50)
+			}
+		]
+	
+		edit(c4_bone1_name)
+		[
+			exec
+			{
+				label("Bone 1")
+				width(400)
+				visible( c4_type == "point" || c4_type == "hinge" || c4_type == "actuator" )
+			}
+		]
+		edit(c4_bone2_name)
+		[
+			exec
+			{
+				label("Bone 2")
+				width(400)
+				visible( c4_type == "point" || c4_type == "hinge" || c4_type == "actuator" )
+			}
+		]
+		
+		hcontainer
+		{
+			floatedit(c4_offsetX, 0.5, 1.0)
+			[
+				exec
+				{
+					label("X")
+					width(200)
+					tooltip("Local X offset.")
+				}
+			]		
+			floatedit(c4_offsetY, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Y")
+					width(200)
+					tooltip("Local Y offset.")
+				}
+			]	
+			floatedit(c4_offsetZ, 0.5, 1.0)
+			[
+				exec
+				{
+					label("Z")
+					width(200)
+					tooltip("Local Z offset.")
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( c4_type == "point" )
+			}
+		]		
+		
+		
+		spinedit(c4_timeout, 1, 2)
+		[
+			exec
+			{
+				label("Timeout")
+				tooltip("Constraint timeout in seconds.")
+				visible( c4_type == "point" || c4_type == "hinge" || c4_type == "actuator" )
+			}
+		]		
+		
+		floatedit(c4_damp, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Dampening")
+				width(200)
+				tooltip("Dampening.")
+				visible( c4_type == "hinge" )
+			}
+		]
+		
+		floatedit(c4_power, 0.5, 1.0)
+		[
+			exec
+			{
+				label("Power")
+				width(200)
+				tooltip("Actuator power.")
+				visible( c4_type == "actuator" )
+			}
+		]
+			
+		hcontainer
+		{
+			spinedit(c4_min_angle, 1, 5)
+			[
+				exec
+				{
+					label("Min angle")
+					tooltip("Min angle for the hinge constraint.")
+					visible( c4_type == "hinge" )
+				}
+			]		
+			spinedit(c4_max_angle, 1, 2)
+			[
+				exec
+				{
+					label("Max angle")
+					tooltip("Max angle for the hinge constraint.")
+					visible( c4_type == "hinge" )
+				}
+			]	
+		}
+		
+		
+		hcontainer
+		{
+			spinedit(c4_min_health, 1, 10)
+			[
+				exec
+				{
+					label("Min health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+			spinedit(c4_max_health, 1, 10)
+			[
+				exec
+				{
+					label("Max health")
+					tooltip("The constraint is activated if the health falls between the min/max values. Greater than min, less or equal than max.")
+				}
+			]		
+		}
+		[
+			exec
+			{
+				visible( c4_type == "point" || c4_type == "hinge" || c4_type == "actuator" )			
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("constraint 4")
+		}
+	]	
+	
+}

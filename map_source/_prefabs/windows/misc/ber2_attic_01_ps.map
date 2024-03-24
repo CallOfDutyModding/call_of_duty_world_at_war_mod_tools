@@ -1,0 +1,14 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "prefab_berlin_windowsill"
+"origin" "7.0 14.0 6.0"
+"angles" "0 90 0"
+}

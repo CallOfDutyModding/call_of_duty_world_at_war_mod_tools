@@ -1,0 +1,13 @@
+#include "refblend.template"
+#include "sort.template"
+#include "clamp.template"
+tessSize( @tessSize@ );
+#include "textureAtlas.template"
+
+hasEditorMaterial( @hasEditorMaterial@ );
+
+allocLightmap( "@materialType@" == "CGFX" || "@materialType@" == "CGFXmodel" || "@materialType@" == "world phong" || "@materialType@" == "model phong" || "@materialType@" == "model cloth" || "@materialType@" == "impact mark" );
+forModel( "@materialType@" == "CGFXmodel" || "@materialType@" == "model phong" || "@materialType@" == "model ambient" || "@materialType@" == "model unlit" || "@materialType@" == "model cloth" );
+forWorld( "@materialType@" == "CGFX" || "@materialType@" == "world phong" || "@materialType@" == "world unlit" || "@materialType@" == "tools" || "@materialType@" == "sky" || "@materialType@" == "water" || "@materialType@" == "custom" || "@materialType@" == "impact mark" || "@materialType@" == "distortion" );
+
+#include "statebits.template"

@@ -1,0 +1,20 @@
+// NOTE: If you add a comment, put a space after the double forward slash or you will get issues
+ignore,code_post_gfx
+ignore,common
+// map specific files
+col_map_sp,maps/barebones.d3dbsp
+gfx_map,maps/barebones.d3dbsp
+rawfile,maps/barebones.gsc
+rawfile,maps/barebones_amb.gsc
+rawfile,maps/barebones_anim.gsc
+rawfile,maps/barebones_fx.gsc
+// Weapons
+weapon,sp/m1garand
+weapon,sp/colt
+weapon,sp/fraggrenade
+weapon,sp/m8_white_smoke
+// Viewarms
+xmodel,viewmodel_usa_marine_arms
+xmodel,viewmodel_usa_marine_player
+// 3rd person model
+include,common_player_us

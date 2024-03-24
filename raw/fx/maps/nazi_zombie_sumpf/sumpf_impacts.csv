@@ -1,0 +1,50 @@
+# This file maps impact types to effects
+"# It can be overridden in part by just specifying some effects in a CSV file in the ""fx"" folder that has a later name alphabetically"
+"# It has the simple syntax that the first column is the impact type, the second is the surface type, and the thrid is the effect name"
+"# The impact type is one of: bullet_small_normal, bullet_small_exit, bullet_large_normal, bullet_large_exit, grenade_bounce, and grenade_explode"
+"# The surface type is one of the valid surface impact types for the surfaceparm shader command, or ""default"".  Default is only used if the code cannot figure out the correct surface type"
+"# The effect name should be a relative path starting after the ""fx"" folder in the game tree.  It should not include the "".efx"" extension."
+"# The effect name may be left blank, in which case no effect is played for this impact."
+"# If any impact effect has no row entry in any file, the game will not load any maps.  The console lists which surface types had no entries."
+"# These effects usually should not specify sounds, since a corresponding sound alias will be played at the same time as the effect"
+"# For bullet hits, two effects are played, either or both of which may be blank:"
+"# The ""normal"" effect is played at the impact point facing the surface normal.  This should usually be used for decals."
+"# The ""exit"" effect is played at the exit point when buller penetration is on."
+
+"# flesh_head_nonfatal, flesh_body_fatal, flesh_head_nonfatal, and flesh_head_fatal specify specific effects to play when bullets injure flesh"
+# these are used ONLY FOR BULLETS
+"# If not specified, or if left blank, these will inherit whatever is in 'flesh' for the impacttype"
+
+# These tank_shell effects are for the tesla gun.
+
+tank_shell,default,maps/zombie/fx_tesla_impact_default
+tank_shell,brick,maps/zombie/fx_tesla_impact_default
+tank_shell,bark,maps/zombie/fx_tesla_impact_wood
+tank_shell,carpet,maps/zombie/fx_tesla_impact_default
+tank_shell,cloth,maps/zombie/fx_tesla_impact_default
+tank_shell,concrete,maps/zombie/fx_tesla_impact_default
+tank_shell,dirt,maps/zombie/fx_tesla_impact_default
+tank_shell,flesh,
+tank_shell,foliage,maps/zombie/fx_tesla_impact_default
+tank_shell,glass,impacts/large_glass
+tank_shell,grass,maps/zombie/fx_tesla_impact_default
+tank_shell,gravel,maps/zombie/fx_tesla_impact_default
+tank_shell,ice,impacts/small_snowhit
+tank_shell,metal,maps/zombie/fx_tesla_impact_default
+tank_shell,mud,maps/zombie/fx_tesla_impact_default
+tank_shell,paper,maps/zombie/fx_tesla_impact_default
+tank_shell,plaster,maps/zombie/fx_tesla_impact_default
+tank_shell,rock,maps/zombie/fx_tesla_impact_default
+tank_shell,sand,maps/zombie/fx_tesla_impact_default
+tank_shell,snow,maps/zombie/fx_tesla_impact_default
+tank_shell,water,maps/zombie/fx_tesla_impact_water
+tank_shell,wood,maps/zombie/fx_tesla_impact_wood
+tank_shell,asphalt,maps/zombie/fx_tesla_impact_default
+tank_shell,ceramic,maps/zombie/fx_tesla_impact_default
+tank_shell,plastic,maps/zombie/fx_tesla_impact_default
+tank_shell,rubber,impacts/default_hit
+tank_shell,cushion,impacts/fx_cushion_hit
+tank_shell,fruit,impacts/default_hit
+tank_shell,paintedmetal,maps/zombie/fx_tesla_impact_default
+tank_shell,player,maps/zombie/fx_tesla_impact_default
+tank_shell,tallgrass,maps/zombie/fx_tesla_impact_default

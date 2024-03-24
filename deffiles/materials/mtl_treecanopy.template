@@ -1,0 +1,75 @@
+#include "clamp.template"
+#include "textureAtlas.template"
+#include "statebits.template"
+
+allocLightmap( 0 );
+tessSize( @tessSize@ );
+hasEditorMaterial( @hasEditorMaterial@ );
+refBlend( "Blend" );
+sort( 14 ); // just before dynamic water
+forModel( 1 );
+forWorld( 0 );
+
+#if "@blendFunc@" == "Add"
+	#error "additive not allowed on ambient materials"
+#endif
+
+#if "@blendFunc@" == "Replace"
+	techniqueSet( "treecanopy" );
+#elif "@blendFunc@" == "Blend"
+	techniqueSet( "treecanopy" );
+#else
+	#error "blendFunc '@blendFunc@' with alphaTest '@alphaTest@' not supported for ambient materials"
+#endif
+
+#if "$normalMap$" == "" || "$normalMap$" == "$identityNormalMap"
+	#define NORMAL_MAP_TILE 	"tile both"
+	#define NORMAL_MAP_FILTER	"nomip nearest"
+	#define NORMAL_MAP_IMAGE 	"$identityNormalMap"
+	#define NORMAL_MAP_NOPICMIP	1
+#else
+	#define NORMAL_MAP_TILE		"@tileNormal@"
+	#define NORMAL_MAP_FILTER	"@filterNormal@"
+	#define NORMAL_MAP_IMAGE	"$normalMap$"
+	#define NORMAL_MAP_NOPICMIP	@nopicmipNormal@
+#endif
+
+#if "@formatNormal@" == "<auto compression>"
+	#if TARGET_PLATFORM == "xenon"
+		#define NORMAL_MAP_FORMAT	"DXN"
+	#else
+		#define NORMAL_MAP_FORMAT	"DXT5"
+	#endif
+#else
+	#define NORMAL_MAP_FORMAT	"@formatNormal@"
+#endif
+
+textureTable
+{
+	#if "$colorMap$" == ""
+		#error "colorMap may not be blank in tree canopy materials"
+	#endif
+
+	"colorMap" = streamable map( "@tileColor@", "@filterColor@", "$colorMap$", @nopicmipColor@ ) "@formatColor@" : "colorMap";
+	"normalMap" = streamable normalMap( NORMAL_MAP_TILE, NORMAL_MAP_FILTER, NORMAL_MAP_IMAGE, NORMAL_MAP_NOPICMIP ) NORMAL_MAP_FORMAT : "normalMap";
+#if "$specColorMap$" != ""
+	"specularMap" = streamable map( "@tileSpecular@", "@filterSpecular@", "$specColorMap$", @nopicmipSpecular@ ) "@formatSpecular@" : "specularMap";
+#else
+	"specularMap" = streamable map( "@tileSpecular@", "@filterSpecular@", "$white", @nopicmipSpecular@ ) "@formatSpecular@" : "specularMap";
+#endif
+}
+
+
+constantTable
+{
+	"colorTint" = float4( @,colorTint@ );
+	
+	"treeCanopyMinimumSway" = float1( @treeCanopyMinimumSway@ );
+	"treeCanopyScaleRotationAngles" = float1( @treeCanopyScaleRotationAngles@ );
+	"treeCanopyAmbientOcclusion" = float1( @treeCanopyAmbientOcclusion@ );
+	"treeCanopyScatterColor" = float4( @,treeCanopyScatterColor@ );
+	"treeCanopyLightingAmount" = float1( @treeCanopyLightingAmount@ );
+}
+
+
+refImage( "$colorMap$" );

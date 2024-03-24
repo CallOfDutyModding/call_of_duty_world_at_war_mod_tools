@@ -1,0 +1,13 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_lightest.d3dbsp
+rawfile,maps/mp/mp_lightest.gsc
+sound,common,mp_lightest,all_mp
+sound,generic,mp_lightest,all_mp
+sound,voiceovers,mp_lightest,all_mp
+sound,multiplayer,mp_lightest,all_mp
+
+
+xmodel,skybox_hol3
+include,mptypes_pacific
+

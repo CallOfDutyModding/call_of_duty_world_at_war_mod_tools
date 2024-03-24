@@ -1,0 +1,9 @@
+fx,bio/player/fx_player_water_waist_ripple
+fx,bio/player/fx_player_water_knee_ripple
+fx,bio/player/fx_footstep_water
+
+fx,impacts/fx_water_hit_sm
+fx,impacts/fx_water_hit_md
+fx,impacts/fx_water_hit_lg
+fx,impacts/fx_water_object_ripple
+fx,bio/player/fx_water_hit_player_bubbles

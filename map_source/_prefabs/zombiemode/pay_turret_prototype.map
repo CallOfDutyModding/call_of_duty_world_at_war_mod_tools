@@ -1,0 +1,36 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"targetname" "auto1"
+"origin" "0.0 0.0 0.0"
+"script_burst_max" "3"
+"script_noteworthy" "sample_turret"
+"classname" "misc_turret"
+"bottomarc" "90"
+"toparc" "90"
+"rightarc" "90"
+"leftarc" "90"
+"weaponinfo" "zombie_bullet_crouch"
+"model" "weapon_jap_mg_type92_notripod"
+}
+// entity 2
+{
+"target" "auto1"
+"targetname" "pay_turret"
+"classname" "trigger_use"
+// brush 0
+{
+ ( -17.5 4.5 6.5 ) ( -21.5 4.5 6.5 ) ( -21.5 0.5 6.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -21.5 0.5 22.5 ) ( -21.5 4.5 22.5 ) ( -17.5 4.5 22.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -21.5 -7.5 22.5 ) ( -17.5 -7.5 22.5 ) ( -17.5 -7.5 6.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -17.5 0.5 22.5 ) ( -17.5 4.5 22.5 ) ( -17.5 4.5 6.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -17.5 8.5 22.5 ) ( -21.5 8.5 22.5 ) ( -21.5 8.5 6.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -25.5 4.5 22.5 ) ( -25.5 0.5 22.5 ) ( -25.5 0.5 6.5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

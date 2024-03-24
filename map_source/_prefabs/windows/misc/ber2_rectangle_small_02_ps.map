@@ -1,0 +1,87 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents nonColliding;
+ ( 38 -16 30 ) ( -14 -16 30 ) ( -14 4 30 ) peleliu_wall_concrete_grimey 128 128 -1100 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 20 14 24 ) ( -44 14 24 ) ( -44 2 24 ) peleliu_wall_concrete_grimey 128 128 -1100 -896 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -38 13 30 ) ( -44 13 24 ) ( 20 13 24 ) peleliu_wall_concrete_grimey 128 128 -1100 616 0 0 lightmap_gray 16384 16384 -1068 592 0 0
+ ( -60 2 24 ) ( -60 14 24 ) ( -54 14 30 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 54 3 30 ) ( 54 15 30 ) ( 60 15 24 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -31 -9 146 ) ( -41 -9 146 ) ( -41 -9 178 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1537 400 0 0
+}
+// brush 1
+{
+  contents nonColliding;
+ ( 51 -7 33 ) ( 51 6 33 ) ( 54 8 30 ) caulk 64 64 -1070 -838 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -51 6 33 ) ( -51 -7 33 ) ( -54 -7 30 ) caulk 64 64 -1070 -838 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 38 8 30 ) ( -14 8 30 ) ( -14 -4 30 ) caulk 64 64 -972 -860 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -38 6 33 ) ( -38 8 30 ) ( 14 8 30 ) peleliu_wall_concrete_grimey 128 128 -1100 616 0 0 lightmap_gray 16384 16384 -1068 592 0 0
+ ( 51 -4 33 ) ( -51 -4 33 ) ( -51 6 33 ) peleliu_wall_concrete_grimey 128 128 -1100 -860 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -51 -4 33 ) ( 51 -4 33 ) ( 54 -6 30 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1537 400 0 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( -54 6 71 ) ( -54 8 74 ) ( -54 -4 74 ) caulk 64 64 860 688 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 54 -4 71 ) ( 54 -4 74 ) ( 54 8 74 ) caulk 64 64 860 688 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 38 8 74 ) ( 38 -4 74 ) ( -14 -4 74 ) caulk 64 64 -972 -860 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 14 6 71 ) ( 14 8 74 ) ( -38 8 74 ) peleliu_wall_concrete_grimey 128 128 -1100 688 0 0 lightmap_gray 16384 16384 -1068 664 0 0
+ ( -54 -4 71 ) ( 54 -4 71 ) ( 54 6 71 ) peleliu_wall_concrete_grimey 128 128 -1100 -860 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 54 -4 71 ) ( -54 -4 71 ) ( -54 -6 74 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1537 472 0 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( 54 14 74 ) ( 54 2 74 ) ( 60 2 80 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -60 14 80 ) ( -60 2 80 ) ( -54 2 74 ) caulk 64 64 -972 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 20 13 80 ) ( -44 13 80 ) ( -38 13 74 ) peleliu_wall_concrete_grimey 128 128 -1100 688 0 0 lightmap_gray 16384 16384 -1068 664 0 0
+ ( -44 2 80 ) ( -44 14 80 ) ( 20 14 80 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -14 -16 74 ) ( 38 -16 74 ) ( 38 4 74 ) peleliu_wall_concrete_grimey 128 128 -1100 -862 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -31 -9 74 ) ( -41 -9 74 ) ( -41 -9 106 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1537 472 0 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 51 -4 74 ) ( 51 -4 33 ) ( 51 6 33 ) peleliu_wall_concrete_grimey 128 128 860 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 54 8 -18 ) ( 54 8 98 ) ( 51 6 98 ) peleliu_wall_concrete_grimey 128 128 -1060 664 0 0 lightmap_gray 16384 16384 -1028 664 0 0
+ ( 54 3 30 ) ( 54 -7 30 ) ( 54 -7 146 ) caulk 64 64 860 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 51 6 74 ) ( 54 8 74 ) ( 54 -4 74 ) caulk 64 64 -932 -860 0 0 lightmap_gray 16384 16384 -1028 -862 0 0
+ ( 54 -7 30 ) ( 54 3 30 ) ( 51 1 33 ) caulk 64 64 -932 -860 0 0 lightmap_gray 16384 16384 -1028 -862 0 0
+ ( 51 -4 33 ) ( 51 -4 74 ) ( 54 -6 74 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1497 472 0 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 60 14 -24 ) ( 60 2 -24 ) ( 60 2 104 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 60 13 104 ) ( 54 13 98 ) ( 54 13 -18 ) peleliu_wall_concrete_grimey 128 128 -1060 664 0 0 lightmap_gray 16384 16384 -1028 664 0 0
+ ( 54 -5 146 ) ( 54 -5 54 ) ( 54 15 54 ) peleliu_wall_concrete_grimey 128 128 862 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 54 2 74 ) ( 54 14 74 ) ( 60 14 80 ) caulk 64 64 -932 -862 0 0 lightmap_gray 16384 16384 -1028 -862 0 0
+ ( 59 15 25 ) ( 53 15 31 ) ( 53 3 31 ) caulk 64 64 -932 -862 0 0 lightmap_gray 16384 16384 -1028 -862 0 0
+ ( 9 -9 74 ) ( -1 -9 74 ) ( -1 -9 106 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1497 472 0 0
+}
+// brush 6
+{
+  contents nonColliding;
+ ( -60 14 24 ) ( -60 2 24 ) ( -54 2 30 ) caulk 64 64 -988 -862 0 0 lightmap_gray 16384 16384 -1084 -862 0 0
+ ( -54 13 -18 ) ( -54 13 98 ) ( -60 13 104 ) peleliu_wall_concrete_grimey 128 128 -1116 664 0 0 lightmap_gray 16384 16384 -1084 664 0 0
+ ( -54 -5 30 ) ( -54 -5 122 ) ( -54 15 122 ) peleliu_wall_concrete_grimey 128 128 862 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -60 14 -24 ) ( -60 14 104 ) ( -60 2 104 ) peleliu_wall_concrete_grimey 128 128 862 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -60 14 80 ) ( -54 14 74 ) ( -54 2 74 ) caulk 64 64 -988 -862 0 0 lightmap_gray 16384 16384 -1084 -862 0 0
+ ( -47 -9 74 ) ( -57 -9 74 ) ( -57 -9 106 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1553 472 0 0
+}
+// brush 7
+{
+  contents nonColliding;
+ ( -51 -7 33 ) ( -51 6 33 ) ( -54 8 30 ) caulk 64 64 -988 -860 0 0 lightmap_gray 16384 16384 -1084 -862 0 0
+ ( -54 -4 74 ) ( -54 8 74 ) ( -51 6 74 ) caulk 64 64 -988 -860 0 0 lightmap_gray 16384 16384 -1084 -862 0 0
+ ( -54 8 122 ) ( -54 -4 122 ) ( -54 -4 6 ) caulk 64 64 860 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -51 6 98 ) ( -54 8 98 ) ( -54 8 -18 ) peleliu_wall_concrete_grimey 128 128 -1116 664 0 0 lightmap_gray 16384 16384 -1084 664 0 0
+ ( -51 -4 33 ) ( -51 -4 74 ) ( -51 6 74 ) peleliu_wall_concrete_grimey 128 128 860 664 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -51 -4 74 ) ( -51 -4 33 ) ( -54 -6 30 ) peleliu_wall_concrete_grimey 128 128 830 664 0 0 lightmap_gray 16384 16384 -1553 472 0 0
+}
+}

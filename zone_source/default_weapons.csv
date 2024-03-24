@@ -1,0 +1,7 @@
+weapon,sp/defaultweapon
+weapon,sp/default_vehicle_weapon
+weapon,sp/fraggrenade
+weapon,sp/m8_white_smoke
+weapon,sp/m1garand
+weapon,sp/thompson
+weapon,sp/colt		// Needed since our current version of laststand NEEDS the colt.

@@ -1,0 +1,15 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/module_dog.d3dbsp
+sound,common,module_dog,all_sp
+sound,generic,module_dog,all_sp
+sound,voiceovers,module_dog,all_sp
+sound,requests,module_dog,all_sp
+
+rawfile,maps/module_dog.gsc
+
+include,default_weapons
+include,dog_ai
+xmodel,viewmodel_usa_player
+
+xmodel,viewmodel_usa_marine_arms

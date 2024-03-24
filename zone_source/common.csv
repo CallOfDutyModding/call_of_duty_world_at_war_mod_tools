@@ -1,0 +1,146 @@
+// Ignore section,
+ignore,code_post_gfx
+ignore,common_ignore
+include,cod4_common
+include,common_anims
+include,common_animscripts
+include,common_animtrees
+include,common_localize
+include,common_materials
+include,common_mg42
+include,common_scripts
+include,common_clientscripts
+include,common_vehicles
+include,common_vision
+include,common_player
+include,common_online
+include,flamethrower_configs,,
+
+include_xenon,common_splitscreen,,
+include_ps3,common_splitscreen,,
+
+// Sound,,,
+sound,common,,all_sp
+sound,generic,,all_sp
+sound,requests,,all_sp
+sound,voiceovers,,all_sp
+
+// String Table,,,
+stringtable,maps/_collectible_items.csv,,
+stringtable,mp/zombiemode.csv,,
+
+// Misc,,,
+rawfile,info/ai_lochit_dmgtable,,
+rawfile,info/bullet_penetration_sp
+rawfile,aim_assist/view_input_0.graph
+rawfile,aim_assist/view_input_1.graph
+rawfile,aim_assist/view_input_2.graph
+rawfile,aim_assist/view_input_3.graph
+rawfile,video/cin_levels.txt
+
+//techset,effect_add_eyeoffset
+
+// Weapons,
+weapon,sp/defaultweapon
+weapon,sp/default_vehicle_weapon
+//weapon,sp/fraggrenade 			// MikeD: Moved to default_weapons.csv (include default_weapons.csv to your level if you want them.)
+//weapon,sp/m8_white_smoke			// MikeD: Moved to defautlt_weapons.csv (include this if you want them.)
+weapon,sp/colt 						// MikeD: Used for _laststand. (TEMP) Eventually this will be map specific.
+weapon,sp/colt_dirty_harry 			// Austin: Replacement pistol used for _laststand. Activated with Dirty Harry cheat.
+weapon,sp/syrette					// Austin: Used for reviving co-op teammates
+
+
+// used to reset stats
+rawfile,mp/stats_init.cfg
+rawfile,mp/prestige_reset.cfg
+rawfile,mp/playerstats_reset.cfg
+rawfile,mp/playerstats_prestige_reset.cfg
+rawfile,mp/class_assault.cfg
+rawfile,mp/class_specops.cfg
+rawfile,mp/class_heavygunner.cfg
+rawfile,mp/class_demolitions.cfg
+rawfile,mp/class_sniper.cfg
+rawfile,mp/weapon_perk_challenge_reset.cfg
+
+
+// Menus,
+menufile,ui/hud.txt
+menufile,ui/ingame.txt
+menufile,ui/hud_splitscreen.txt
+
+// FX,
+impactfx,void
+fx,impacts/flesh_hit_noblood			// MikeD: Used for gibs
+fx,impacts/flesh_hit_body_nonfatal_hero	// jiko: blood effect played on hero characters
+fx,weapon/bullet/fx_flesh_gib_fatal_01	// MikeD: Used for gibs
+fx,impacts/flesh_hit_knife_noblood	// BarryW: Used for knife
+fx,impacts/flesh_hit_knife	// BarryW: Used for knife
+fx,impacts/flesh_hit_neck_fatal // CCheng: death neck grab blood spurt
+fx,impacts/flesh_body_impact01	// BarryW: Used for fatal kill
+fx,impacts/flesh_body_impact02	// BarryW: Used for fatal kill
+fx,impacts/flesh_body_impact03	// BarryW: Used for fatal kill
+fx,impacts/flesh_head_impact01	// BarryW: Used for fatal kill
+fx,impacts/flesh_head_impact02	// BarryW: Used for fatal kill
+fx,impacts/flesh_head_impact03	// BarryW: Used for fatal kill
+
+
+fx,impacts/flesh_hit_pball_grn		// Austin: paintball cheat
+fx,impacts/flesh_hit_pball_orange	// Austin: paintball cheat
+
+fx,trail/fx_trail_blood_streak			// MikeD: Used for gibs
+//fx,misc/fx_fire_manager1				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it)
+//fx,misc/fx_fire_manager2				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it)
+//fx,misc/fx_fire_manager3				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it)
+//fx,misc/fx_fire_manager4				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it),
+//fx,misc/fx_fire_manager5				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it),
+//fx,misc/fx_fire_manager6				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it),
+//fx,misc/fx_fire_manager7				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it),
+//fx,misc/fx_fire_manager8				// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it),
+//fx,misc/fx_fire_fthrow_vert_short		// MikeD: Move to flamethrower.csv (included flamethrower.csv to your level if you want it),
+
+//fx,destructibles/fx_dest_trail_smoke_fire_sm,
+//fx,destructibles/fx_dest_fire_trail_sm,
+//fx,destructibles/fx_dest_fire_trail_med,
+
+//fx,bio/player/fx_footstep_dust_lft		// MikeD: This has been moved to footsteps_dust.csv, which for now is included in this csv
+//fx,bio/player/fx_footstep_dust_rt			// MikeD: This has been moved to footsteps_dust.csv, which for now is included in this csv
+//fx,bio/player/fx_footstep_mud_lft			// MikeD: Move to footsteps_mud.csv (included footsteps_mud.csv to your level if you want it),
+//fx,bio/player/fx_footstep_mud_rt			// MikeD: Move to footsteps_mud.csv (included footsteps_mud.csv to your level if you want it),
+//fx,bio/player/fx_footstep_snow_lft		// MikeD: Move to footsteps_snow.csv (included footsteps_snow.csv to your level if you want it),
+//fx,bio/player/fx_footstep_snow_rt			// MikeD: Move to footsteps_snow.csv (included footsteps_snow.csv to your level if you want it)
+//fx,bio/player/fx_footstep_sand_lft		// MikeD: Move to footsteps_sand.csv (included footsteps_sand.csv to your level if you want it)
+//fx,bio/player/fx_footstep_sand_rt			// MikeD: Move to footsteps_sand.csv (included footsteps_sand.csv to your level if you want it)
+fx,temp_effects/fx_tmp_tank_tred_test
+fx,temp_effects/fx_tmp_jeep_tred_test
+fx,misc/grain_test							// Needed for _cheat.gsc
+
+//fx,treadfx/tread_dust_default
+
+//fx,bio/player/fx_player_water_waist_ripple	// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,bio/player/fx_player_water_knee_ripple		// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,bio/player/fx_footstep_water				// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,impacts/fx_water_hit_sm					// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,impacts/fx_water_hit_md					// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,impacts/fx_water_hit_lg					// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,impacts/fx_water_object_ripple				// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,vehicle/water/fx_wake_lvt_churn			// MikeD: Move to water.csv (included water.csv to your level if you want it)
+//fx,bio/player/fx_water_hit_player_bubbles		// MikeD: Move to water.csv (included water.csv to your level if you want it)
+
+// Models,
+xmodel,fx_axis_createfx
+xmodel,fx
+xmodel,defaultvehicle
+xmodel,defaultactor
+xmodel,tag_origin
+xmodel,tag_origin_animate
+//xmodel,test_box
+//xmodel,test_cylinder
+xmodel,grenade_bag
+
+xmodel,test_sphere_silver
+
+// Shock
+rawfile,shock/death.shock
+rawfile,shock/explosion.shock
+rawfile,shock/tank_mantle.shock
+rawfile,shock/level_end.shock

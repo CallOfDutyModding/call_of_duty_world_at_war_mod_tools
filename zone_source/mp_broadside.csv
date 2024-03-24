@@ -1,0 +1,28 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_broadside.d3dbsp
+rawfile,maps/mp/mp_broadside.gsc
+//uncomment these when you actually have them to load,
+//rawfile,maps/mp/mp_broadside_fx.gsc
+//rawfile,maps/mp/mp_broadside_amb.gsc
+//rawfile,maps/mp/createfx/mp_broadside_fx.gsc
+
+//uncomment these when you actually have some,
+//material,compass_map_mp_broadside
+//material,compass_overlay_map_broadside
+
+include,mptypes_german
+
+rawfile,vision/mp_broadside.vision
+
+include,water
+
+xmodel,skybox_ber1
+
+//uncomment these when you get them set-up,
+//rawfile,clientscripts/mp/mp_broadside.csc
+//rawfile,clientscripts/mp/mp_broadside_amb.csc
+//rawfile,clientscripts/mp/mp_broadside_fx.csc
+//rawfile,clientscripts/mp/createfx/mp_broadside_fx.csc
+
+

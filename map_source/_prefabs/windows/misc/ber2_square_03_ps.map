@@ -1,0 +1,87 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents nonColliding;
+ ( -25 23 44 ) ( -21 23 48 ) ( -21 15 48 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 87 15 44 ) ( 83 15 48 ) ( 83 23 48 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 17 31 50 ) ( -43 31 50 ) ( -49 27 44 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 1 15 44 ) ( -43 15 44 ) ( -43 15 48 ) berlin_trim_concrete_spoted 128 -32 -371 74 180 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 8221 23 44 ) ( 8189 23 44 ) ( 8189 15 44 ) caulk 64 64 -696 216 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 45 31 50 ) ( 105 31 50 ) ( 105 15 50 ) berlin_trim_concrete_spoted 128 -32 -384 1292 180 0 lightmap_gray 16384 16384 461 -1115 0 0
+}
+// brush 1
+{
+  contents nonColliding;
+ ( 14 31 53 ) ( 14 21 53 ) ( -40 21 53 ) berlin_trim_concrete_spoted 128 -32 -371 1266 180 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -45 19 50 ) ( -45 21 53 ) ( 23 21 53 ) berlin_trim_concrete_spoted 128 -32 -371 103 180 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 47 19 50 ) ( 125 19 50 ) ( 125 21 50 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 23 31 50 ) ( 23 31 53 ) ( -45 31 53 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 78 21 53 ) ( 78 31 53 ) ( 81 31 50 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -16 31 53 ) ( -16 21 53 ) ( -19 19 50 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( -16 21 53 ) ( -16 31 53 ) ( -19 31 50 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -16 31 107 ) ( -16 21 107 ) ( -19 19 110 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -16 31 -152 ) ( -16 31 -84 ) ( -19 31 -84 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( -19 19 -142 ) ( -19 17 -142 ) ( -19 17 -220 ) caulk 64 64 1115 48 0 0 lightmap_gray 16384 16384 1115 48 0 0
+ ( -16 21 -84 ) ( -16 21 -152 ) ( -19 19 -152 ) berlin_trim_concrete_spoted 128 32 80 -395 -90 0 lightmap_gray 16384 16384 461 48 0 0
+ ( -16 31 53 ) ( -16 21 53 ) ( -16 21 171 ) berlin_trim_concrete_spoted 128 32 102 -1074 -90 0 lightmap_gray 16384 16384 1115 48 0 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( -21 23 48 ) ( -25 23 44 ) ( -25 15 44 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -20 15 111 ) ( -24 15 115 ) ( -24 27 115 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -19 31 50 ) ( -19 31 174 ) ( -25 27 180 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( -19 31 110 ) ( -19 31 -14 ) ( -19 15 -14 ) berlin_trim_concrete_spoted 128 32 102 -1069 -90 0 lightmap_gray 16384 16384 1115 48 0 0
+ ( -25 15 -95 ) ( -25 15 -94.5 ) ( -21 15 -94.5 ) berlin_trim_concrete_spoted 128 32 82 -388 -90 0 lightmap_gray 16384 16384 461 48 0 0
+ ( -25 27 252 ) ( -25 27 324 ) ( -25 15 324 ) caulk 64 64 1115 48 0 0 lightmap_gray 16384 16384 1115 48 0 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 78 21 53 ) ( 78 31 53 ) ( 78 31 171 ) berlin_trim_concrete_spoted 128 32 102 -1074 -90 0 lightmap_gray 16384 16384 1115 48 0 0
+ ( 81 19 -152 ) ( 78 21 -152 ) ( 78 21 -84 ) berlin_trim_concrete_spoted 128 32 109 -364 -90 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 81 17 -156 ) ( 81 17 -78 ) ( 81 19 -78 ) caulk 64 64 1115 48 0 0 lightmap_gray 16384 16384 1115 48 0 0
+ ( 81 31 -84 ) ( 78 31 -84 ) ( 78 31 -152 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 78 21 107 ) ( 78 31 107 ) ( 81 31 110 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 78 31 53 ) ( 78 21 53 ) ( 81 19 50 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 82 27 111 ) ( 86 27 115 ) ( 86 15 115 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 87 15 -220 ) ( 87 15 -148 ) ( 87 27 -148 ) caulk 64 64 -216 624 0 0 lightmap_gray 16384 16384 1115 48 0 0
+ ( 81 31 174 ) ( 81 31 50 ) ( 87 27 44 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 81 31 50 ) ( 81 31 174 ) ( 81 15 174 ) berlin_trim_concrete_spoted 128 32 102 -1069 -90 0 lightmap_gray 16384 16384 1115 48 0 0
+ ( 83 15 -107 ) ( 83 15 -106.5 ) ( 87 15 -106.5 ) berlin_trim_concrete_spoted 128 -32 80 -410 -90 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 83 15 48 ) ( 87 15 44 ) ( 87 23 44 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+}
+// brush 6
+{
+  contents nonColliding;
+ ( -40 31 107 ) ( -40 21 107 ) ( 14 21 107 ) berlin_trim_concrete_spoted 128 -32 -371 1266 180 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 2 19 110 ) ( 2 21 107 ) ( -66 21 107 ) berlin_trim_concrete_spoted 128 32 -383 121 -180 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 14 17 110 ) ( -64 17 110 ) ( -64 19 110 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -66 31 110 ) ( -66 31 107 ) ( 2 31 107 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( -16 21 107 ) ( -16 31 107 ) ( -19 31 110 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 78 31 107 ) ( 78 21 107 ) ( 81 19 110 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+}
+// brush 7
+{
+  contents nonColliding;
+ ( 17 31 110 ) ( -43 31 110 ) ( -43 15 110 ) berlin_trim_concrete_spoted 128 -32 -384 1292 180 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( 8221 19 116 ) ( 8189 19 116 ) ( 8189 27 116 ) caulk 64 64 -696 216 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -43 31 110 ) ( 17 31 110 ) ( 23 27 116 ) caulk 64 64 461 48 0 0 lightmap_gray 16384 16384 461 48 0 0
+ ( -91 15 -24 ) ( 421 15 -24 ) ( 421 15 -104 ) berlin_trim_concrete_spoted 128 32 -383 118 180 0 lightmap_gray 16384 16384 461 48 0 0
+ ( 87 27 116 ) ( 83 27 112 ) ( 83 19 112 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+ ( -25 19 116 ) ( -21 19 112 ) ( -21 27 112 ) caulk 64 64 461 -1115 0 0 lightmap_gray 16384 16384 461 -1115 0 0
+}
+}

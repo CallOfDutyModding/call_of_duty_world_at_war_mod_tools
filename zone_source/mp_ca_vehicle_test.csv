@@ -1,0 +1,22 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_ca_vehicle_test.d3dbsp
+sound,common,mp_ca_vehicle_test,all_mp
+sound,generic,mp_ca_vehicle_test,all_mp
+sound,voiceovers,mp_ca_vehicle_test,all_mp
+sound,vehicles,mp_ca_vehicle_test,all_mp
+sound,multiplayer,mp_ca_vehicle_test,all_mp
+rawfile,maps/mp/mp_ca_vehicle_test.gsc
+rawfile,clientscripts/mp/mp_ca_vehicle_test.csc
+rawfile,vision/default.vision
+
+xmodel,skybox_ber1
+weapon,mp/sherman_turret_mp
+weapon,mp/lvt4_gunner_mp
+include,water
+include,mptypes_pacific
+include,vehicles_drivable_mp
+
+
+// Damage Husks (temp)
+xmodel,veh_t34_destroyed_mp

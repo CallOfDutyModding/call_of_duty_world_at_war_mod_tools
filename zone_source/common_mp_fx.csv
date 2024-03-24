@@ -1,0 +1,99 @@
+// put weapon-related FX into the common_mp_weapons.csv,
+
+impactfx,mp_maps
+xmodel,fx
+// fx,distortion/distortion_tank_muzzleflash
+// fx,breakables/exp_wall_cinderblock_96
+// fx,treadfx/tread_dust_brown
+// fx,fire/tank_fire_engine
+// fx,fire/tank_fire_turret_small
+// fx,misc/insects_carcass_flies
+
+// fx,misc/ui_pickup_available
+// fx,misc/ui_pickup_unavailable
+
+fx,misc/ui_flagbase_orange
+fx,misc/ui_flagbase_blue
+fx,misc/ui_flagbase_red
+fx,misc/ui_flagbase_gold
+fx,misc/ui_flagbase_silver
+
+// fx,misc/light_c4_blink
+// fx,misc/claymore_laser
+
+// fx,props/crateexp_dust
+// fx,props/barrel_fire
+// fx,props/barrelexp
+// fx,props/crateexp_ammo
+// fx,props/glow_latern
+// fx,smoke/battlefield_smokebank_s
+// fx,smoke/damaged_vehicle_smoke
+// fx,smoke/thin_black_smoke_m
+// fx,smoke/thin_light_smoke_l
+// fx,smoke/thin_light_smoke_m
+// fx,explosions/artilleryexp_dirt_brown
+// fx,explosions/small_vehicle_explosion
+// fx,explosions/tanker_explosion
+// fx,explosions/wall_explosion_pm_a
+xmodel,aircraft_bomb
+xmodel,tag_origin
+
+// sb and sab explosion,
+fx,maps/mp_maps/fx_mp_exp_bomb
+
+// impacts effects,
+fx,impacts/flesh_hit_noblood
+fx,impacts/flesh_hit_knife_mp
+fx,impacts/flesh_hit_knife_noblood
+fx,impacts/flesh_hit_body_fatal_exit_mp
+fx,impacts/flesh_hit_head_fatal_exit_mp
+fx,impacts/flesh_hit_body_nonfatal_mp
+fx,impacts/flesh_hit_body_fatal_lg_exit_mp
+fx,impacts/flesh_hit_head_fatal_lg_exit_mp
+fx,impacts/flesh_hit_splat_mp
+
+// For drivable vehicles?,
+// fx,dust/dust_vehicle_tires
+
+// For squad perks,
+fx,env/light/fx_ray_grnd_loc_marker_grn_mp
+fx,env/light/fx_ray_grnd_loc_marker_red_mp
+fx,env/light/fx_ray_grnd_loc_marker_ylw_mp
+
+// using this for airstrikes,
+//fx,weapon/artillery/fx_artillery_strike_american_mp
+fx,weapon/artillery/fx_artillery_strike_dirt_mp
+
+//this is for the flare,
+fx,misc/fx_flare_sky_white_10sec
+
+// gibs,
+fx,weapon/bullet/fx_flesh_gib_fatal_01_mp
+fx,trail/fx_trail_blood_streak_mp
+
+// bouncing betty,
+fx,weapon/bouncing_betty/fx_betty_trail
+// fx,weapon/bouncing_betty/fx_b_betty_glint
+
+// flamethrower fire manager,
+fx,misc/fx_fire_manager1_2sec
+fx,misc/fx_fire_manager2_2sec
+fx,misc/fx_fire_manager3_2sec
+
+// artillery,
+fx,Weapon/Rocket/fx_LCI_rocket_geotrail
+
+// footsteps for the dogs,
+fx,bio/player/fx_footstep_fire
+fx,bio/player/fx_footstep_mud
+fx,bio/player/fx_footstep_sand
+fx,bio/player/fx_footstep_dust
+fx,bio/player/fx_footstep_water
+
+// destructible vehicle effects,
+fx,destructibles/fx_dest_fire_car_fade_40
+fx,destructibles/fx_dest_fire_car_fade_25
+fx,destructibles/fx_dest_fire_lg
+fx,destructibles/fx_dest_fire_med
+fx,destructibles/fx_dest_fire_sm
+fx,env/smoke/fx_smoke_sm_blk_20_fade

@@ -1,0 +1,37 @@
+// for hardpoint game mode, include vehicles
+include,common_mp_vehicles
+
+// location selector weapon?
+// weapon,mp/location_selector_mp
+
+xmodel,prop_flag_neutral
+xmodel,prop_flag_american
+xmodel,prop_flag_japanese
+xmodel,prop_flag_russian
+xmodel,prop_flag_german
+xmodel,prop_flag_neutral_carry
+xmodel,prop_flag_american_carry
+xmodel,prop_flag_japanese_carry
+xmodel,prop_flag_russian_carry
+xmodel,prop_flag_german_carry
+
+// slamraam is the SD target model
+// xmodel,vehicle_slamraam_launcher
+// xmodel,vehicle_slamraam_missiles
+// xmodel,vehicle_slamraam_base
+
+material,hud_momentum
+material,hud_momentum_bonus
+material,hud_momentum_bonus_detail
+material,hud_momentum_blitzkrieg
+material,hud_momentum_notification_bonus
+material,hud_momentum_notification_blitzkrieg
+material,progress_bar_fg_small
+material,progress_bar_bg_small
+
+// bomb
+// xmodel,mil_tntbomb_mp
+// xmodel,prop_suitcase_bomb
+xmodel,weapon_explosives
+weapon,mp/briefcase_bomb_mp
+weapon,mp/briefcase_bomb_defuse_mp

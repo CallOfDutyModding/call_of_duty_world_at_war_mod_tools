@@ -1,0 +1,185 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"radiosityscale" "1.5"
+"sunradiosity" "1.2"
+"skyboxmodel" "skybox_pel2"
+"_color" "0.792157 0.901961 0.901961"
+"ambient" "0.25"
+"sundiffusecolor" "0.835294 0.890196 0.901961"
+"diffusefraction" "0.20"
+"classname" "worldspawn"
+"sundirection" "-30 -340 0"
+"suncolor" "0.878431 0.878431 0.772549"
+"sunlight" "1.0"
+}
+// entity 1
+{
+"target" "auto1"
+"targetname" "player_respawn_point"
+"origin" "8496.0 2760.0 -672.0"
+"classname" "script_struct"
+}
+// entity 2
+{
+"script_int" "1"
+"targetname" "auto1"
+"origin" "8632.0 2728.0 -672.0"
+"classname" "script_struct"
+}
+// entity 3
+{
+"script_int" "2"
+"script_noteworthy" "player_2"
+"targetname" "auto1"
+"origin" "8600.0 2688.0 -672.0"
+"classname" "script_struct"
+}
+// entity 4
+{
+"script_int" "3"
+"script_noteworthy" "player_3"
+"targetname" "auto1"
+"origin" "8544.0 2656.0 -672.0"
+"classname" "script_struct"
+}
+// entity 5
+{
+"script_int" "4"
+"targetname" "auto1"
+"origin" "8496.0 2632.0 -672.0"
+"classname" "script_struct"
+}
+// entity 6
+{
+"angles" "0 90 0"
+"target" "auto2"
+"targetname" "player_respawn_point"
+"origin" "8044.0 -948.0 -672.0"
+"classname" "script_struct"
+}
+// entity 7
+{
+"script_int" "1"
+"angles" "0 90 0"
+"targetname" "auto2"
+"origin" "8076.0 -812.0 -672.0"
+"classname" "script_struct"
+}
+// entity 8
+{
+"script_int" "2"
+"angles" "0 90 0"
+"script_noteworthy" "player_2"
+"targetname" "auto2"
+"origin" "8116.0 -844.0 -672.0"
+"classname" "script_struct"
+}
+// entity 9
+{
+"script_int" "3"
+"angles" "0 90 0"
+"script_noteworthy" "player_3"
+"targetname" "auto2"
+"origin" "8148.0 -900.0 -672.0"
+"classname" "script_struct"
+}
+// entity 10
+{
+"script_int" "4"
+"angles" "0 90 0"
+"script_noteworthy" "player_4"
+"targetname" "auto2"
+"origin" "8172.0 -948.0 -672.0"
+"classname" "script_struct"
+}
+// entity 11
+{
+"angles" "0 200 0"
+"target" "auto3"
+"targetname" "player_respawn_point"
+"origin" "11985.8 -890.9 -672.0"
+"classname" "script_struct"
+}
+// entity 12
+{
+"script_int" "1"
+"angles" "0 200 0"
+"script_noteworthy" "player_1"
+"targetname" "auto3"
+"origin" "11825.0 -894.3 -672.0"
+"classname" "script_struct"
+}
+// entity 13
+{
+"script_int" "2"
+"angles" "0 200 0"
+"script_noteworthy" "player_2"
+"targetname" "auto3"
+"origin" "11863.4 -849.8 -672.0"
+"classname" "script_struct"
+}
+// entity 14
+{
+"script_int" "3"
+"angles" "0 200 0"
+"script_noteworthy" "player_3"
+"targetname" "auto3"
+"origin" "11905.1 -809.6 -672.0"
+"classname" "script_struct"
+}
+// entity 15
+{
+"script_int" "4"
+"angles" "0 200 0"
+"script_noteworthy" "player_4"
+"targetname" "auto3"
+"origin" "11963.0 -757.6 -672.0"
+"classname" "script_struct"
+}
+// entity 16
+{
+"angles" "0 277 0"
+"target" "auto4"
+"targetname" "player_respawn_point"
+"origin" "11180.8 3172.9 -656.0"
+"classname" "script_struct"
+}
+// entity 17
+{
+"script_int" "1"
+"angles" "0 277 0"
+"script_noteworthy" "player_1"
+"targetname" "auto4"
+"origin" "11148.0 3015.4 -656.0"
+"classname" "script_struct"
+}
+// entity 18
+{
+"script_int" "2"
+"angles" "0 277 0"
+"script_noteworthy" "player_2"
+"targetname" "auto4"
+"origin" "11113.2 3062.8 -656.0"
+"classname" "script_struct"
+}
+// entity 19
+{
+"script_int" "3"
+"angles" "0 277 0"
+"script_noteworthy" "player_3"
+"targetname" "auto4"
+"origin" "11083.5 3112.5 -656.0"
+"classname" "script_struct"
+}
+// entity 20
+{
+"script_int" "4"
+"angles" "0 277 0"
+"script_noteworthy" "player_4"
+"targetname" "auto4"
+"origin" "11045.8 3180.6 -656.0"
+"classname" "script_struct"
+}

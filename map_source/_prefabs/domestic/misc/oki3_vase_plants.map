@@ -1,0 +1,73 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_oki3"
+"classname" "worldspawn"
+"northyaw" "90"
+"ambient" "0.15"
+"_color" "0.411765 0.34902 0.439216"
+"diffusefraction" "0.35"
+"sundiffusecolor" "0.3647 0.3686 0.3725"
+"suncolor" "1 0.839 0.643"
+"sundirection" "-155 -182 0"
+"sunlight" "1.25"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"contrastgain" "0.15"
+// brush 0
+{
+  contents weaponClip;
+ ( -6.5 -6.5 6 ) ( -6.5 5.5 6 ) ( 6 5.5 6 ) okinawa_terrain_mud_bumpyclay_noscorch 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3.5 -5.5 6 ) ( 3.5 -5.5 5.5 ) ( 0 -6.5 5.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 -3 5.5 ) ( 6 -3 6 ) ( 7 0 6 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 7 6 ) ( 0 7 5.5 ) ( 3.5 6 5.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -6.5 0 5.5 ) ( -6.5 0 6 ) ( -5.5 -3 6 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -6 9.5 5.5 ) ( -1.5 9.5 5.5 ) ( -1.5 41.5 5.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -6 3.5 6 ) ( -6 3.5 5.5 ) ( -3.5 6 5.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3.5 6 6 ) ( 3.5 6 5.5 ) ( 6 3.5 5.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 6 -3 6 ) ( 6 -3 5.5 ) ( 3.5 -5.5 5.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3.5 -5.5 5.5 ) ( -3.5 -5.5 6 ) ( 0 -6.5 6 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3.5 -5.5 6 ) ( -3.5 -5.5 5.5 ) ( -5.5 -3 5.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 7 0 5.5 ) ( 7 0 6 ) ( 6 3.5 6 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 7 5.5 ) ( 0 7 6 ) ( -3.5 6 6 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -6 3.5 5.5 ) ( -6 3.5 6 ) ( -6.5 0 6 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"spawnflags" "2048"
+"classname" "misc_model"
+"model" "static_okinawa_palacepot"
+"origin" "0.0 0.0 0.0"
+"angles" "358.343 270.098 -1.53935"
+"modelscale" "0.600000"
+}
+// entity 2
+{
+"origin" "4.1 -0.3 4.8"
+"spawnflags" "2048"
+"classname" "misc_model"
+"model" "foliage_pacific_palms09"
+"angles" "359.652 36.7389 2.35075"
+"modelscale" ".15"
+}
+// entity 3
+{
+"origin" "-3.1 4.1 2.8"
+"spawnflags" "2048"
+"classname" "misc_model"
+"model" "foliage_pacific_bamboo01"
+"angles" "1.66819 42.9743 4.41198"
+"modelscale" ".26"
+}
+// entity 4
+{
+"origin" "-1.1 1.5 3.4"
+"spawnflags" "2048"
+"classname" "misc_model"
+"model" "foliage_grass_tuft_tallnarrow"
+"angles" "358.891 217.193 -5.19613"
+"modelscale" ".6"
+}

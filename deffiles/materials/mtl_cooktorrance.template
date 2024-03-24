@@ -1,0 +1,78 @@
+#if "@formatNormal@" == "<auto compression>"
+	#if TARGET_PLATFORM == "xenon"
+		#define NORMAL_MAP_FORMAT	"DXN"
+	#else
+		#define NORMAL_MAP_FORMAT	"DXT5"
+	#endif
+#else
+	#define NORMAL_MAP_FORMAT	"@formatNormal@"
+#endif
+
+#if "$specColorMap$" != ""
+	#define SPEC_COLOR_IMAGE	"$specColorMap$"
+#else
+	#define SPEC_COLOR_IMAGE	"$white"
+#endif
+#if "$cosinePowerMap$" != ""
+	#define COSINE_POWER_IMAGE	"$cosinePowerMap$"
+#else
+	#error "Cooktorrance needs a cosine power map"
+#endif
+
+#if "@formatSpecular@" == "<auto compression>"
+	#define SPECULAR_FORMAT		"DXT5"
+#else
+	#define SPECULAR_FORMAT		"@formatSpecular@"
+#endif
+
+#define COSINE_POWER_SCALE	1
+
+#include "commonsetup.template"
+
+#if @noReceiveDynamicShadow@
+	techniqueSet( "cooktorrance" );
+#else
+	techniqueSet( "cooktorrance_sm" );
+#endif
+
+textureTable
+{
+	#if "$colorMap$" == ""
+		#error "colorMap may not be blank in cook-torrance materials"
+	#endif
+	"colorMap" = streamable map( "@tileColor@", "@filterColor@", "$colorMap$", @nopicmipColor@ ) "@formatColor@" : "colorMap";
+
+	"detailMap" = normalMap( "tile both", "@filterDetail@", "$detailMap$", @nopicmipDetail@ ) NORMAL_MAP_FORMAT : "normalMap";
+
+	#if "$normalMap$" == "" || "$normalMap$" == "$identityNormalMap"
+		"normalMap" = map( "tile both", "nomip nearest", "$identityNormalMap", true ) "<auto compression>" : "normalMap";
+	#else
+		"normalMap" = streamable normalMap( "@tileNormal@", "@filterNormal@", "$normalMap$", @nopicmipNormal@ ) NORMAL_MAP_FORMAT : "normalMap";
+	#endif
+
+	"specularMap" = streamable composite
+	(
+		map( "@tileSpecular@", "@filterSpecular@", SPEC_COLOR_IMAGE, @nopicmipSpecular@ ).r,
+		map( "@tileSpecular@", "@filterSpecular@", SPEC_COLOR_IMAGE, @nopicmipSpecular@ ).g,
+		map( "@tileSpecular@", "@filterSpecular@", SPEC_COLOR_IMAGE, @nopicmipSpecular@ ).b,
+		map( "@tileSpecular@", "@filterSpecular@", COSINE_POWER_IMAGE, @nopicmipSpecular@ ) * COSINE_POWER_SCALE
+	) SPECULAR_FORMAT : "specularMap";
+}
+
+
+constantTable
+{
+	"detailScale" = float4( @detailScaleX@ * imageWidth( "$colorMap$" ) / imageWidth( "$detailMap$" ), @detailScaleY@ * imageHeight( "$colorMap$" ) / imageHeight( "$detailMap$" ), @detailScaleHeight@, 0 );
+
+	#if  @envMapMin@ > @envMapMax@
+		#error "Minimum reflectance greater than maximum reflectance"
+	#endif
+	#define SUN_INTENSITY 2.5
+	"envMapParms" = float4( @envMapMin@ * 4, (@envMapMax@ - @envMapMin@) * 4, @envMapExponent@ * -1.7, SUN_INTENSITY * 0.25 );
+
+	"colorTint" = float4( @,colorTint@ );
+}
+
+allocReflectionProbe();
+
+refImage( "$colorMap$" );

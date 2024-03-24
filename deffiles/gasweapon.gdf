@@ -1,0 +1,4176 @@
+#name "gasweapon"
+#dll "all" "weapon"
+#target_dir "weapons/sp/" // target location 1 (single-player)
+#target_dir "weapons/mp/" // target location 2 (multi-player)
+#target_dir "xmodel/"
+#target_dir ""
+#target_dir "xanim/"
+#file_ext "*"
+#version 45
+
+// This tells the configstring converter what the file type identifier should be
+enum { "WEAPONFILE" } configstringFileType
+
+// This uses the config string convert's multi-target folder
+// mechanism to make the weapon either a single-player weapon
+// or a multi-player weapon.
+// The first character is used to specify which target folder to go in
+enum { "1: Single-Player", "2: Multi-Player" } targetFolder
+
+enum { "gas" } weaponType
+enum { "gas" } weaponClass
+enum { "primary", "offhand", "item", "altmode" } inventoryType
+float 3000 0 1000000 maxSteeringAccel
+
+string displayName
+string AIOverlayDescription
+string modeName
+enum { "gas", "none" } playerAnimType
+string gunModel
+string handModel
+int 1 0 1 isHandModelOverridable
+int 0 0 1 aimDownSight
+
+string flameTableFirstPerson
+string flameTableThirdPerson
+int 100 1 1000 rechamberBoltTime
+
+string idleAnim
+string emptyIdleAnim
+string fireAnim
+string lastShotAnim
+string meleeAnim
+string reloadAnim
+string raiseAnim
+string dropAnim
+string firstRaiseAnim
+string altRaiseAnim
+string altDropAnim
+string quickRaiseAnim
+string quickDropAnim
+string emptyRaiseAnim
+string emptyDropAnim
+string sprintInAnim
+string sprintLoopAnim
+string sprintOutAnim
+string nightVisionWearAnim
+string nightVisionRemoveAnim
+string adsFireAnim
+string adsLastShotAnim
+string adsUpAnim
+string adsDownAnim
+string meleeChargeAnim
+
+string knifeModel
+string worldKnifeModel
+
+float 1 0 5 moveSpeedScale
+float 1 0 5 adsMoveSpeedScale
+float 1 0 5 sprintDurationScale
+
+int 10 0 1000 damage
+float 5000.0 0.0 10000.0 damageDuration
+float 1000.0 0.0 10000.0 damageInterval
+int 0 0 1000 meleeDamage
+
+float 0.1 0 10.0 fireDelay
+float 0.1 0.0 10.0 fireTime
+float 0.7 0.0 10.0 meleeTime
+float 0.0 0.0 10.0 meleeChargeTime
+float 0.25 0.05 10.0 meleeDelay
+float 0.0 0.0 10.0 meleeChargeDelay
+float 2.0 0.0 10.0 reloadTime
+float 0 0.0 10.0 reloadAddTime
+float 0.5 0.0 10.0 dropTime
+float 0.5 0.0 10.0 raiseTime
+float 0.5 0.0 10.0 altDropTime
+float 0.5 0.0 10.0 altRaiseTime
+float 0.5 0.0 10.0 quickDropTime
+float 0.5 0.0 10.0 quickRaiseTime
+float 0.5 0.0 10.0 firstRaiseTime
+float 0.5 0.0 10.0 emptyDropTime
+float 0.5 0.0 10.0 emptyRaiseTime
+float 0.5 0.0 10.0 sprintInTime
+float 0.5 0.0 10.0 sprintLoopTime
+float 0.5 0.0 10.0 sprintOutTime
+float 0.5 0.0 10.0 nightVisionWearTime
+float 0.5 0.0 10.0 nightVisionRemoveTime
+
+int 0 0 1 clipOnly
+
+float 0 0 1 hipReticleSidePos
+
+int 25 0 150 adsIdleAmount
+int 80 0 150 hipIdleAmount
+float 1.0 0 100 hipIdleSpeed
+float 1.0 0 100 adsIdleSpeed
+float 0.5 0 1 idleCrouchFactor
+float 0.15 0 1 idleProneFactor
+
+float 0 0 10 adsSpread
+float 0 -30 30 adsAimPitch
+float 0.3 0 10 adsTransInTime
+float 0.6 0 10 adsTransOutTime
+float 0.1 0 5 adsTransBlendTime
+float 0.6 0 5 adsReloadTransTime
+float 1 0 1 adsCrosshairInFrac
+float 0.2 0 1 adsCrosshairOutFrac
+float 65 1 160 adsZoomFov
+float 0.5 0 1 adsZoomInFrac
+float 0.1 0 1 adsZoomOutFrac
+float 1.0 0 10 adsBobFactor
+float 0 0 100 adsViewBobMult
+float 0 0 90 adsViewErrorMin
+float 0 0 90 adsViewErrorMax
+
+int 30 0 80 gunMaxPitch
+int 30 0 80 gunMaxYaw
+float -30 -100 100 adsGunKickPitchMin
+float -20 -100 100 adsGunKickPitchMax
+float -17 -100 100 adsGunKickYawMin
+float 17 -100 100 adsGunKickYawMax
+float 250 0 1000 adsGunKickAccel
+float 1000 0 10000 adsGunKickSpeedMax
+float 10 0 100 adsGunKickSpeedDecay
+float 1 0 100 adsGunKickStaticDecay
+float 20 -200 200 adsViewKickPitchMin
+float 95 -200 200 adsViewKickPitchMax
+float -10 -200 200 adsViewKickYawMin
+float 30 -200 200 adsViewKickYawMax
+float 2000 10 10000 adsViewKickCenterSpeed
+//float 0.25 0 45 adsViewScatterMin
+//float 0.5 0 45 adsViewScatterMax
+float -5 -100 100 hipGunKickPitchMin
+float -3 -100 100 hipGunKickPitchMax
+float -15 -100 100 hipGunKickYawMin
+float 15 -100 100 hipGunKickYawMax
+float 250 0 1000 hipGunKickAccel
+float 500 0 10000 hipGunKickSpeedMax
+float 15 0 100 hipGunKickSpeedDecay
+float 1 0 100 hipGunKickStaticDecay
+float 20 -200 200 hipViewKickPitchMin
+float 40 -200 200 hipViewKickPitchMax
+float -15 -200 200 hipViewKickYawMin
+float 15 -200 200 hipViewKickYawMax
+float 2000 10 10000 hipViewKickCenterSpeed
+//float 0 0 45 hipViewScatterMin
+//float 0 0 45 hipViewScatterMax
+
+float 30 0 180 swayMaxAngle
+float 6 1 50 swayLerpSpeed
+float 0.1 -2 2 swayPitchScale
+float 0.1 -2 2 swayYawScale
+float 0.1 -2 2 swayHorizScale
+float 0.1 -2 2 swayVertScale
+float 5 0 20 swayShellShockScale
+
+float 30 0 180 adsSwayMaxAngle
+float 6 1 50 adsSwayLerpSpeed
+float 0.1 -2 2 adsSwayPitchScale
+float 0.1 -2 2 adsSwayYawScale
+float 0.1 -2 2 adsSwayHorizScale
+float 0.1 -2 2 adsSwayVertScale
+// info for filling in the gitem_t for the weapon
+string worldModel
+string worldClipModel
+string hudIcon
+string modeIcon
+
+int 0 0 1 unlimitedAmmo
+string ammoName
+enum { "4:1", "1:1", "2:1" } hudIconRatio
+enum { "4:1", "1:1", "2:1" } modeIconRatio
+enum { "4:1", "1:1", "2:1" } killIconRatio
+int 100 0 2147483647 maxAmmo
+int 0 0 2147483647 startAmmo
+string clipName
+int 10 0 2147483647 clipSize
+
+string dpadIcon
+enum { "4:1", "1:1", "2:1" } dpadIconRatio
+
+int 0 0 1 overheatWeapon
+int 0 0 1 coolWhileFiring
+float 1.0 0.1 100.0 overheatRate
+float 30.0 0.1 100.0 cooldownRate
+float 25.0 0.0 99.0 overheatEndVal
+
+
+int 0 0 2147483647 dropAmmoMin
+int 0 0 2147483647 dropAmmoMax
+
+// client-side info
+string viewFlashEffect
+string worldFlashEffect
+string shellEjectEffect
+string lastShotEjectEffect
+string worldClipDropEffect
+string projTrailEffect
+string projExplosionEffect
+
+string pickupSound
+string pickupSoundPlayer
+string ammoPickupSound
+string ammoPickupSoundPlayer
+string fireSound
+string fireSoundPlayer
+string lastShotSound
+string lastShotSoundPlayer
+string emptyFireSound
+string emptyFireSoundPlayer
+string meleeSwipeSound
+string meleeSwipeSoundPlayer
+string meleeHitSound
+string meleeMissSound
+string rechamberSound
+string rechamberSoundPlayer
+string reloadSound
+string reloadSoundPlayer
+string reloadEmptySound
+string reloadEmptySoundPlayer
+string reloadStartSound
+string reloadStartSoundPlayer
+string reloadEndSound
+string reloadEndSoundPlayer
+string altSwitchSound
+string altSwitchSoundPlayer
+string raiseSound
+string raiseSoundPlayer
+string firstRaiseSound
+string firstRaiseSoundPlayer
+string putawaySound
+string putawaySoundPlayer
+string nightVisionWearSound
+string nightVisionWearSoundPlayer
+string nightVisionRemoveSound
+string nightVisionRemoveSoundPlayer
+string flameOffLoopSound
+string flameOffLoopSoundPlayer
+string flameIgniteSound
+string flameIgniteSoundPlayer
+string flameOnLoopSound
+string flameOnLoopSoundPlayer
+string flameCooldownSound
+string flameCooldownSoundPlayer
+string noteTrackSoundA
+string noteTrackSoundB
+string noteTrackSoundC
+string noteTrackSoundD
+
+string reticleCenter
+string reticleSide
+int 32 1 480 reticleCenterSize
+int 16 1 480 reticleSideSize
+int	4 0 480 reticleMinOfs
+float 0 0 10000 enemyCrosshairRange
+int 1 0 1 crosshairColorChange
+
+// additional weapon info
+string altWeapon
+
+//int 1 0 1 twoHanded
+int 0 0 1 semiAuto
+int 0 0 1 boltAction
+int 1 0 1 wideListIcon
+int 0 0 1 adsFire
+int 0 0 1 cancelAutoHolsterWhenEmpty
+int 0 0 1 blocksProne
+
+string killIcon
+int 1 0 1 wideKillIcon
+int 1 0 1 flipKillIcon
+
+int 0 0 1 noPartialReload
+int 0 0 999 reloadAmmoAdd
+
+float 1600 0 50000 autoAimRange
+float 50000 0 50000 slowdownAimRange
+float 50000 0 50000 slowdownAimRangeAds
+float 50000 0 50000 lockonAimRange
+float 50000 0 50000 lockonAimRangeAds
+
+// AI ranges
+float 720 1 100000 fightDist
+float 1400 1 100000 maxDist
+string aiVsAiAccuracyGraph
+string aiVsPlayerAccuracyGraph
+
+
+// settings for view model position movement
+float 0 -300 300 sprintOfsF
+float 0 -300 300 sprintOfsR
+float 0 -300 300 sprintOfsU
+float 0 -300 300 sprintRotP
+float 0 -300 300 sprintRotY
+float 0 -300 300 sprintRotR
+float 1 0 10 sprintBobH
+float 1 0 10 sprintBobV
+float 1 0.01 10 sprintScale
+float 0 -300 300 standMoveF
+float 1 -300 300 standMoveR
+float -1.5 -300 300 standMoveU
+float 0 -300 300 standRotP
+float 0 -300 300 standRotY
+float 0 -300 300 standRotR
+float 0 -300 300 duckedSprintOfsF
+float 0 -300 300 duckedSprintOfsR
+float 0 -300 300 duckedSprintOfsU
+float 0 -300 300 duckedSprintRotP
+float 0 -300 300 duckedSprintRotY
+float 0 -300 300 duckedSprintRotR
+float 1 0 10 duckedSprintBobH
+float 1 0 10 duckedSprintBobV
+float 1 0.01 10 duckedSprintScale
+float -2 -300 300 duckedOfsF
+float 2 -300 300 duckedOfsR
+float -0.2 -300 300 duckedOfsU
+float 0 -300 300 duckedMoveF
+float 1 -300 300 duckedMoveR
+float -1.5 -300 300 duckedMoveU
+float 0 -300 300 duckedRotP
+float 0 -300 300 duckedRotY
+float 0 -300 300 duckedRotR
+float -6 -300 300 proneOfsF
+float 3.5 -300 300 proneOfsR
+float 0.8 -300 300 proneOfsU
+float 0 -300 300 proneMoveF
+float 1 -300 300 proneMoveR
+float -1.5 -300 300 proneMoveU
+float 0 -300 300 proneRotP
+float 0 -300 300 proneRotY
+float 0 -300 300 proneRotR
+float 4 0 300 posMoveRate
+float 10 0 300 posProneMoveRate
+float 110 0 3000 standMoveMinSpeed
+float 60 0 3000 duckedMoveMinSpeed
+float 0 0 3000 proneMoveMinSpeed
+float 5 0 300 posRotRate
+float 10 0 300 posProneRotRate
+float 110 0 1000 standRotMinSpeed
+float 60 0 1000 duckedRotMinSpeed
+float 0 0 1000 proneRotMinSpeed
+
+float 0.5 0.0 1.0 parallelDefaultBounce
+float 0.5 0.0 1.0 parallelBarkBounce
+float 0.5 0.0 1.0 parallelBrickBounce
+float 0.5 0.0 1.0 parallelCarpetBounce
+float 0.5 0.0 1.0 parallelClothBounce
+float 0.5 0.0 1.0 parallelConcreteBounce
+float 0.5 0.0 1.0 parallelDirtBounce
+float 0.5 0.0 1.0 parallelFleshBounce
+float 0.5 0.0 1.0 parallelFoliageBounce
+float 0.5 0.0 1.0 parallelGlassBounce
+float 0.5 0.0 1.0 parallelGrassBounce
+float 0.5 0.0 1.0 parallelGravelBounce
+float 0.5 0.0 1.0 parallelIceBounce
+float 0.5 0.0 1.0 parallelMetalBounce
+float 0.5 0.0 1.0 parallelMudBounce
+float 0.5 0.0 1.0 parallelPaperBounce
+float 0.5 0.0 1.0 parallelPlasterBounce
+float 0.5 0.0 1.0 parallelRockBounce
+float 0.5 0.0 1.0 parallelSandBounce
+float 0.5 0.0 1.0 parallelSnowBounce
+float 0.5 0.0 1.0 parallelWaterBounce
+float 0.5 0.0 1.0 parallelWoodBounce
+float 0.5 0.0 1.0 parallelAsphaltBounce
+float 0.5 0.0 1.0 parallelCeramicBounce
+float 0.5 0.0 1.0 parallelPlasticBounce
+float 0.5 0.0 1.0 parallelRubberBounce
+float 0.5 0.0 1.0 parallelCushionBounce
+float 0.5 0.0 1.0 parallelFruitBounce
+float 0.5 0.0 1.0 parallelPaintedMetalBounce
+
+float 0.5 0.0 1.0 perpendicularDefaultBounce
+float 0.5 0.0 1.0 perpendicularBarkBounce
+float 0.5 0.0 1.0 perpendicularBrickBounce
+float 0.5 0.0 1.0 perpendicularCarpetBounce
+float 0.5 0.0 1.0 perpendicularClothBounce
+float 0.5 0.0 1.0 perpendicularConcreteBounce
+float 0.5 0.0 1.0 perpendicularDirtBounce
+float 0.5 0.0 1.0 perpendicularFleshBounce
+float 0.5 0.0 1.0 perpendicularFoliageBounce
+float 0.5 0.0 1.0 perpendicularGlassBounce
+float 0.5 0.0 1.0 perpendicularGrassBounce
+float 0.5 0.0 1.0 perpendicularGravelBounce
+float 0.5 0.0 1.0 perpendicularIceBounce
+float 0.5 0.0 1.0 perpendicularMetalBounce
+float 0.5 0.0 1.0 perpendicularMudBounce
+float 0.5 0.0 1.0 perpendicularPaperBounce
+float 0.5 0.0 1.0 perpendicularPlasterBounce
+float 0.5 0.0 1.0 perpendicularRockBounce
+float 0.5 0.0 1.0 perpendicularSandBounce
+float 0.5 0.0 1.0 perpendicularSnowBounce
+float 0.5 0.0 1.0 perpendicularWaterBounce
+float 0.5 0.0 1.0 perpendicularWoodBounce
+float 0.5 0.0 1.0 perpendicularAsphaltBounce
+float 0.5 0.0 1.0 perpendicularCeramicBounce
+float 0.5 0.0 1.0 perpendicularPlasticBounce
+float 0.5 0.0 1.0 perpendicularRubberBounce
+float 0.5 0.0 1.0 perpendicularCushionBounce
+float 0.5 0.0 1.0 perpendicularFruitBounce
+float 0.5 0.0 1.0 perpendicularPaintedMetalBounce
+
+
+keyenum("rumble.gdf") fireRumble
+keyenum("rumble.gdf") meleeImpactRumble
+
+float 0 0 100 adsDofStart
+float 0 0 100 adsDofEnd
+float 0 0 100 hipDofStart
+float 0 0 100 hipDofEnd
+
+vcontainer
+{
+	scrollbox(targetFolder)
+	[
+		exec
+		{
+			label("Target Folder")
+			tooltip("Select platform-gametype this weapon will be used in.")
+			width(270)
+		}
+	]
+	
+	edit(displayName)
+	[
+		exec
+		{
+			label("Display Name")
+			tooltip("Localization alias for weapon name displayed on HUD in game.")
+			width(500)
+		}
+	]
+	
+	edit(modeName)
+	[
+		exec
+		{
+			label("Mode Name")
+			tooltip("Localization alias for selective fire mode text displayed on HUD in game.")
+			width(500)
+		}
+	]
+
+   	scrollbox(playerAnimType)
+	[
+		exec
+		{
+			label("Player Anim Type")
+			tooltip("Select an Player Anim Type - specifies \"playerAnimType\" in playeranim.script")
+			width(300)
+		}
+	]
+	
+	edit(altWeapon)
+	[
+		exec
+		{
+			label("Alt Weapon Name")
+			tooltip("Weapon to switch to when this weapon's selective fire mode is switched in the game.")
+			width(500)
+		}
+	]
+	
+
+	edit(AIOverlayDescription)
+	[
+		exec
+		{
+			label("AI Description")
+			tooltip("Localization alias for text shown when crosshair is placed over a friendly. Eg. Rifleman, Submachine Gunner, etc.")
+			width(500)
+		}
+	]
+    
+	scrollbox(inventoryType)
+	[
+		exec
+		{
+			label("Inventory")
+			tooltip("Select what sort of inventory this weapon is.")
+		}
+	]
+
+   	scrollbox(weaponType)
+	[
+		exec
+		{
+			label("Type")
+			tooltip("Select a weapon type.")
+			width(300)
+		}
+	]
+	
+   	scrollbox(weaponClass)
+	[
+		exec
+		{
+			label("Class")
+			tooltip("Select an appropriate class for this weapon.")
+			width(300)
+		}
+	]
+	
+	hcontainer
+	{
+		checkbox(semiAuto)
+		[
+			exec
+			{
+				label("Semi Auto")
+				tooltip("Turn this on for any weapon that requires the trigger to be pulled for each bullet fired, including bolt-action weapons.")
+				righttext()
+			}
+		]
+		
+		checkbox(boltAction)
+		[
+			exec
+			{
+				label("Bolt Action")
+				tooltip("Turn this on for bolt-action weapons only. Animation control.")
+				righttext()
+			}
+		]
+	}
+	
+	hcontainer
+	{
+		checkbox(noPartialReload)
+		[
+			exec
+			{
+				label("No Partial Reload")
+				tooltip("When noPartialReload is set for a weapon, it can not be reloaded unless reloadAmmoAdd amount of ammo can be put into the gun. If reloadAmmoAdd is 0, it's treated as the weapon's clip size.")
+				righttext()
+			}
+		]
+		checkbox(aimDownSight)
+		[
+			exec
+			{
+				label("ADS")
+				tooltip("Must be turned on for proper viewmodel appearance of a weapon that can be Aimed Down the Sight (ADS).")
+				righttext()
+			}
+		]
+	}
+
+	hcontainer
+	{
+		checkbox(blocksProne)
+		[
+			exec
+			{
+				label("Cannot Go Prone")
+				tooltip("The player cannot go prone when they have this weapon equiped.")
+				righttext()
+			}
+		]
+	}
+	
+	hcontainer
+	{
+		floatedit(enemyCrosshairRange, 1, 100)
+		[
+			exec
+			{
+				label("Enemy Crosshair Range")
+				tooltip("The range in world units at which an enemy will change your crosshair color. (1 world unit = 1 inch)")
+				width(280)
+				labelwidth(180)
+			}
+		]
+		checkbox(crosshairColorChange)
+		[
+			exec
+			{
+				label("Crosshair Color Change")
+				tooltip("Change crosshair color if pointing at friendly or enemy")
+				width(200)
+				labelwidth(200)
+				righttext()
+			}
+		]		
+	}
+	
+	hcontainer
+	{	
+		floatedit(moveSpeedScale, 0.1, 1)
+		[
+			exec
+			{
+				label("Move Speed Scale")
+				tooltip("When using this weapon, player movement speed is multiplied by this amount.")
+				width(280)
+				labelwidth(180)
+			}
+		]
+
+		floatedit(adsMoveSpeedScale, 0.1, 1)
+		[
+			exec
+			{
+				label("ADS Move Speed Scale")
+				tooltip("When using this weapon and in ADS, player movement speed is multiplied by this amount.")
+				labelwidth(180)
+			}
+		]
+	}
+
+	floatedit(sprintDurationScale, 0.1, 5)
+	[
+		exec
+		{
+			label("Sprint Duration Scale")
+			tooltip("When sprinting with this weapon, sprint duration is multiplied by this amount.")
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	
+	hcontainer
+	{
+		spinedit(gunMaxPitch, 1, 10)
+		[
+			exec
+			{
+				label("Max Gun Pitch")
+				tooltip("Maximum allowed vertical ascent of the viewmodel due to recoil (degrees).")
+				width(280)
+				labelwidth(180)
+			}
+		]
+		
+		spinedit(gunMaxYaw, 1, 10)
+		[
+			exec
+			{
+				label("Max Gun Yaw")
+				tooltip("Maximum allowed horizontal travel of the viewmodel due to recoil (degrees).")
+				width(280)
+				labelwidth(180)
+			}
+		]
+	}
+	
+	
+	////////////////////////////////////////
+	// Flamethrower Details
+	////////////////////////////////////////
+	vcontainer
+	{
+		edit(flameTableFirstPerson)
+		[
+			exec
+			{
+				label("1st Person Flame Table")
+				width(500)
+			}
+		]
+		edit(flameTableThirdPerson)
+		[
+			exec
+			{
+				label("3rd Person Flame Table")
+				width(500)
+			}
+		]
+		spinedit(rechamberBoltTime, 1, 100)
+		[
+			exec
+			{
+				label("MuzzleEffect Time")
+				tooltip("Time to wait in-between spawning a new MuzzleEffect")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Flamethrower")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Aim Assist
+	////////////////////////////////////////
+	vcontainer
+	{
+		floatedit(autoAimRange, 1, 100)
+		[
+			exec
+			{
+				label("Auto Aim Range")
+				tooltip("(Console only.) The range in world units up to which entering ADS will lock-on to enemies. (1 world unit = 1 inch)")
+			}
+		]
+		
+		hcontainer
+		{
+			floatedit(slowdownAimRange, 1, 100)
+			[
+				exec
+				{
+					label("Slowdown Range")
+					tooltip("(Console only.) The range in world units which the crosshair will slowdown over a target. (1 world unit = 1 inch)")
+				}
+			]
+			
+			floatedit(slowdownAimRangeAds, 1, 100)
+			[
+				exec
+				{
+					label("Slowdown Range ADS")
+					tooltip("(Console only.) The range in world units which the crosshair will slowdown over a target in ADS. (1 world unit = 1 inch)")
+					width(260)
+					labelwidth(160)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(lockonAimRange, 1, 100)
+			[
+				exec
+				{
+					label("Lock-On Range")
+					tooltip("(Console only.) The range in world units up to which the view will lock onto a target. (1 world unit = 1 inch)")
+				}
+			]
+			
+			floatedit(lockonAimRangeAds, 1, 100)
+			[
+				exec
+				{
+					label("Lock-On Range ADS")
+					tooltip("(Console only.) The range in world units up to which the view will lock onto a target in ADS. (1 world unit = 1 inch)")
+					width(260)
+					labelwidth(160)
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Aim Assist (Console only)")
+		}
+	]
+	
+	
+	////////////////////////////////////////
+	// Ammunition
+	////////////////////////////////////////
+	vcontainer
+	{
+		checkbox(unlimitedAmmo)
+		[
+			exec
+			{
+				label("Unlimited Ammo")
+				tooltip("This weapon does not use ammo")
+			}
+		]
+	
+		edit(ammoName)
+		[
+			exec
+			{
+				label("Ammo Name")
+				tooltip("Allows different weapons to share the same ammo pool.")
+				width(500)
+			}
+		]
+		
+		edit(clipName)
+		[
+			exec
+			{
+				label("Clip Name")
+				tooltip("Allows different weapons to share clips. Used for weapons that have a selective fire option, and would therefore need to use the same type of clip.")
+				width(500)
+			}
+		]
+		
+		hcontainer
+		{
+			spinedit(maxAmmo, 10, 20)
+			[
+				exec
+				{
+					label("Max Ammo")
+					tooltip("Max ammo the player can collect for this weapon. No effect on AI.")
+				}
+			]
+		
+			spinedit(startAmmo, 1, 10)
+			[
+				exec
+				{
+					label("Start Ammo")
+					tooltip("How much ammo the player gets when starting with this weapon. One clip/magazine from this amount will be already in the weapon. No effect on AI.")
+				}
+			]
+
+			spinedit(clipSize, 1, 10)
+			[
+				exec
+				{
+					label("Clip Size")
+					tooltip("Specifies how many bullets per clip/magazine.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			spinedit(dropAmmoMin, 1, 10)
+			[
+				exec
+				{
+					label("Drop Min")
+					tooltip("When dropped by AI/player/hand-placed in editor, contains at least this much ammo. Not limited to real-life clip/magazine size.")
+				}
+			]
+			
+			spinedit(dropAmmoMax, 1, 10)
+			[
+				exec
+				{
+					label("Drop Max")
+					tooltip("When dropped by AI/player/hand-placed in editor, contains no more than this much ammo. Not limited to real-life clip/magazine size.")
+				}
+			]
+			checkbox(clipOnly)
+			[
+				exec
+				{
+					label("Clip Only")
+					tooltip("Used for weapons that use clips only")
+					righttext()
+				}
+			]			
+		}
+		
+		hcontainer
+		{
+			spinedit(reloadAmmoAdd, 1, 10)		
+			[
+				exec
+				{
+					label("Reload Ammo Add")
+					tooltip("For weapons with Segmented Reload turned on. Amount to add when reloading with some amount of bullets still remaining in the weapon.")
+				}
+			]
+		}
+
+		checkbox(cancelAutoHolsterWhenEmpty)
+		[
+			exec
+			{
+				label("Do Not Auto-Holster When Empty")
+				tooltip("When weapons are empty, they are normally auto-swapped to the next usable weapon in the player's inventory.  This disables that.")
+				width(300)
+				labelwidth(280)
+				righttext()
+			}
+		]
+	}
+	
+	
+	[
+		exec
+		{
+			groupBox("Ammunition")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Overheating
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			checkbox(overheatWeapon)
+			[
+				exec
+				{
+					label("Overheating Weapon")
+					tootip("This weapon can overheat")
+					width(300)
+					labelwidth(280)
+					righttext()
+				}
+			]
+			checkbox(coolWhileFiring)
+			[
+				exec
+				{
+					label("Cool While Firing")
+					tootip("This weapon's heat decreases, even when it is being fired")
+					width(300)
+					labelwidth(280)
+					righttext()
+				}
+			]
+		}
+		
+		floatedit(overheatRate, 1.0, 10.0)
+		[
+			exec
+			{
+				label("Overheating Rate")
+				tooltip("Percent of heat added per shot for this weapon")
+			}
+		]
+		
+		floatedit(cooldownRate, 1.0, 10.0)
+		[
+			exec
+			{
+				label("Cooldown Rate")
+				tooltip("Percent of heat that is bled off per second for this weapon")
+			}
+		]
+		
+		floatedit(overheatEndVal, 1.0, 10.0)
+		[
+			exec
+			{
+				label("Overheating Ends At")
+				tooltip("Percent of heat at which, if this weapon is overheating, it is able to fire again")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Overheating")
+		}
+	]
+
+	////////////////////////////////////////
+	// Damage
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			vcontainer
+			{
+				spinedit(damage, 1, 10)
+				[
+					exec
+					{
+						label("Damage")
+						tooltip("Damage per projectile")
+					}
+				]
+				
+				floatedit(damageDuration, 1, 10)
+				[
+					exec
+					{
+						label("Damage Duration")
+						tooltip("Duration that flame damage will be applied in ms")
+					}
+				]
+				
+				floatedit(damageInterval, 1, 10)
+				[
+					exec
+					{
+						lable("Damage Interval")
+						tooltip("Frequency for degraded damage in ms")
+					}
+				]
+			}
+			
+			spinedit(meleeDamage, 1, 10)
+			[
+				exec
+				{
+					label("Melee")
+					tooltip("Damage per melee hit.")
+				}
+			]
+		}
+		
+	}
+	[
+		exec
+		{
+			groupBox("Damage")
+		}
+	]
+	
+
+	////////////////////////////////////////
+	// State Timers
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(fireTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Fire")
+					tooltip("Rate of fire in seconds per round. Maximum possible rate is 0.05 seconds per round, or 1200 rounds per minute.")
+				}
+			]
+			
+			floatedit(fireDelay, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Fire Delay")
+					tooltip("Delay in seconds between pressing the fire button and the weapon actually firing.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(meleeTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Melee")
+					tooltip("Rate of fire in seconds per melee attack.")
+				}
+			]
+			
+			floatedit(meleeDelay, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Melee Delay")
+					tooltip("Delay in seconds between pressing the fire button and the melee attack actually happening.")
+				}
+			]
+		}
+
+		hcontainer
+		{
+			floatedit(meleeChargeTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Melee Charge")
+					tooltip("Rate of fire in seconds per melee charge attack.")
+				}
+			]
+			
+			floatedit(meleeChargeDelay, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Melee Charge Delay")
+					tooltip("Delay in seconds between pressing the fire button and the melee charge attack actually happening.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(reloadTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Reload")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+
+		hcontainer
+		{
+			floatedit(reloadAddTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Reload Add")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(dropTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Drop")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+			
+			floatedit(raiseTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Raise")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+
+			floatedit(firstRaiseTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("First Raise")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(altDropTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Alt Drop")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+			
+			floatedit(altRaiseTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Alt Raise")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(quickDropTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Quick Drop")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+			
+			floatedit(quickRaiseTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Quick Raise")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+
+		hcontainer
+		{
+			floatedit(emptyDropTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Empty Drop")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+			
+			floatedit(emptyRaiseTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Empty Raise")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+			
+		hcontainer
+		{
+			floatedit(sprintInTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Sprint In")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+
+			floatedit(sprintLoopTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Sprint Loop")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+
+			floatedit(sprintOutTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Sprint Out")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+
+		hcontainer
+		{
+			floatedit(nightVisionWearTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Nightvision Wear")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+
+			floatedit(nightVisionRemoveTime, 0.05, 0.2)
+			[
+				exec
+				{
+					label("Nightvision Remove")
+					tooltip("How long this weapon state will last. The viewmodel animations will get scaled to match the times set.")
+				}
+			]
+		}
+
+	}
+	[
+		exec
+		{
+			groupBox("State Timers")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Sprint Movement Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(sprintOfsF, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Forward")
+					tooltip("When the player changes to this stance, the viewmodel will slide forward by this amount. (-ive for backward)")
+				}
+			]
+			
+			floatedit(sprintOfsR, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Right")
+					tooltip("When the player changes to this stance, the viewmodel will translate horizontally by this amount. (+/- for left/right respectively)")
+				}
+			]
+			
+			floatedit(sprintOfsU, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Up")
+					tooltip("When the player changes to this stance, the viewmodel will translate vertically by this amount. (+/- for up/down respectively)")
+				}
+			]
+		}
+	
+		hcontainer
+		{
+			floatedit(sprintRotP, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Pitch")
+					tooltip("Viewmodel will pitch by this amount if the player is moving in this stance. (+/- for down/up respectively)")
+				}
+			]
+		
+			floatedit(sprintRotY, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Yaw")
+					tooltip("Viewmodel will yaw by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(sprintRotR, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Roll")
+					tooltip("Viewmodel will roll by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(sprintBobH, 0.1, 1)
+			[
+				exec
+				{
+					label("Horiz Bob")
+					tooltip("A multiplier applied to the standard horizontal bob for weapons when sprinting domain 0-10")
+				}
+			]
+
+			floatedit(sprintBobV, 0.1, 1)
+			[
+				exec
+				{
+					label("Vert Bob")
+					tooltip("A multiplier applied to the standard vertical bob for weapons when sprinting domain 0-10")
+				}
+			]
+			floatedit(sprintScale, 0.01, 1)
+			[
+				exec
+				{
+					label("MoveSpeed Scale")
+					tooltip("A multiplier applied to xy movement of the viewmodel during sprint higher is faster")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Sprint Movement Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Stand Movement Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(standMoveF, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Forward")
+					tooltip("Viewmodel will translate forward/backward by this amount if the player is moving in this stance. (+/- for forward/backward respectively)")
+				}
+			]
+
+			floatedit(standMoveR, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Right")
+					tooltip("Viewmodel will translate horizontally by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(standMoveU, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Up")
+					tooltip("Viewmodel will translate vertically by this amount if the player is moving in this stance. (+/- for up/down respectively)")
+				}
+			]		
+		}
+		
+		hcontainer
+		{
+			floatedit(standRotP, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Pitch")
+					tooltip("Viewmodel will pitch by this amount if the player is moving in this stance. (+/- for down/up respectively)")
+				}
+			]
+		
+			floatedit(standRotY, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Yaw")
+					tooltip("Viewmodel will yaw by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(standRotR, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Roll")
+					tooltip("Viewmodel will roll by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(standMoveMinSpeed, 1, 10)
+			[
+				exec
+				{
+					label("Move Min Speed")
+					tooltip("Not used.")
+				}
+			]
+		
+			floatedit(posMoveRate, 0.1, 1)
+			[
+				exec
+				{
+					label("Pos Move Rate")
+					tooltip("Controls speed of viewmodel translation while moving in stand and crouch, transitions between stand and crouch, and crouch into prone.")
+				}
+			]
+		}
+	
+		hcontainer
+		{
+			floatedit(standRotMinSpeed, 1, 10)
+			[
+				exec
+				{
+					label("Rot Min Speed")
+					tooltip("Not used.")
+				}
+			]
+		
+			floatedit(posRotRate, 0.1, 1)
+			[
+				exec
+				{
+					label("Pos Rot Rate")
+					tooltip("Rotational speed of viewmodel in standing and crouching. If this is set in the prone section, a value should be entered here so that the viewmodel is able to rotate back to normal in crouch and stand.")
+				}
+			]		
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Stand Movement Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Crouch Sprinting Movement Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(duckedSprintOfsF, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Forward")
+					tooltip("Viewmodel will translate forward/backward by this amount if the player is moving in this stance. (+/- for forward/backward respectively)")
+				}
+			]
+
+			floatedit(duckedSprintOfsR, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Right")
+					tooltip("Viewmodel will translate horizontally by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(duckedSprintOfsU, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Up")
+					tooltip("Viewmodel will translate vertically by this amount if the player is moving in this stance. (+/- for up/down respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(duckedSprintRotP, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Pitch")
+					tooltip("Viewmodel will pitch by this amount if the player is moving in this stance. (+/- for down/up respectively)")
+				}
+			]
+		
+			floatedit(duckedSprintRotY, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Yaw")
+					tooltip("Viewmodel will yaw by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(duckedSprintRotR, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Roll")
+					tooltip("Viewmodel will roll by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(duckedSprintBobH, 0.1, 1)
+			[
+				exec
+				{
+					label("Horiz Bob")
+					tooltip("A multiplier applied to the standard horizontal bob for weapons when crouch sprinting domain 0-10")
+				}
+			]
+
+			floatedit(duckedSprintBobV, 0.1, 1)
+			[
+				exec
+				{
+					label("Vert Bob")
+					tooltip("A multiplier applied to the standard vertical bob for weapons when crouch sprinting domain 0-10")
+				}
+			]
+			floatedit(duckedSprintScale, 0.01, 1)
+			[
+				exec
+				{
+					label("MoveSpeed Scale")
+					tooltip("A multiplier applied to xy movement of the viewmodel during crouched sprint higher is faster")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Crouch Sprinting Movement Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Crouch Movement Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(duckedMoveF, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Forward")
+					tooltip("Viewmodel will translate forward/backward by this amount if the player is moving in this stance. (+/- for forward/backward respectively)")
+				}
+			]
+
+			floatedit(duckedMoveR, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Right")
+					tooltip("Viewmodel will translate horizontally by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(duckedMoveU, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Up")
+					tooltip("Viewmodel will translate vertically by this amount if the player is moving in this stance. (+/- for up/down respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(duckedRotP, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Pitch")
+					tooltip("Viewmodel will pitch by this amount if the player is moving in this stance. (+/- for down/up respectively)")
+				}
+			]
+		
+			floatedit(duckedRotY, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Yaw")
+					tooltip("Viewmodel will yaw by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(duckedRotR, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Roll")
+					tooltip("Viewmodel will roll by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(duckedOfsF, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Forward")
+					tooltip("When the player changes to this stance, the viewmodel will slide forward by this amount. (-ive for backward)")
+				}
+			]
+			
+			floatedit(duckedOfsR, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Right")
+					tooltip("When the player changes to this stance, the viewmodel will translate horizontally by this amount. (+/- for left/right respectively)")
+				}
+			]
+			
+			floatedit(duckedOfsU, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Up")
+					tooltip("When the player changes to this stance, the viewmodel will translate vertically by this amount. (+/- for up/down respectively)")
+				}
+			]
+		}
+		
+		floatedit(duckedMoveMinSpeed, 1, 10)
+		[
+			exec
+			{
+				label("Move Min Speed")
+				tooltip("Not used.")
+			}
+		]
+		
+		floatedit(duckedRotMinSpeed, 1, 10)
+		[
+			exec
+			{
+				label("Rot Min Speed")
+				tooltip("Not used.")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Crouch Movement Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Prone Movement Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(proneMoveF, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Forward")
+					tooltip("Viewmodel will translate forward/backward by this amount if the player is moving in this stance. (+/- for forward/backward respectively)")
+				}
+			]
+
+			floatedit(proneMoveR, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Right")
+					tooltip("Viewmodel will translate horizontally by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(proneMoveU, 0.1, 1)
+			[
+				exec
+				{
+					label("Move Up")
+					tooltip("Viewmodel will translate vertically by this amount if the player is moving in this stance. (+/- for up/down respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(proneRotP, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Pitch")
+					tooltip("Viewmodel will pitch by this amount if the player is moving in this stance. (+/- for down/up respectively)")
+				}
+			]
+			
+			floatedit(proneRotY, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Yaw")
+					tooltip("Viewmodel will yaw by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		
+			floatedit(proneRotR, 0.1, 1)
+			[
+				exec
+				{
+					label("Rot Roll")
+					tooltip("Viewmodel will roll by this amount if the player is moving in this stance. (+/- for left/right respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(proneOfsF, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Forward")
+					tooltip("When the player changes to this stance, the viewmodel will slide forward by this amount. (-ive for backward)")
+				}
+			]
+			
+			floatedit(proneOfsR, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Right")
+					tooltip("When the player changes to this stance, the viewmodel will translate horizontally by this amount. (+/- for left/right respectively)")
+				}
+			]
+			
+			floatedit(proneOfsU, 0.1, 1)
+			[
+				exec
+				{
+					label("Offset Up")
+					tooltip("When the player changes to this stance, the viewmodel will translate vertically by this amount. (+/- for up/down respectively)")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(proneMoveMinSpeed, 1, 10)
+			[
+				exec
+				{
+					label("Move Min Speed")
+					tooltip("Not used.")
+				}
+			]
+		
+			floatedit(posProneMoveRate, 0.1, 1)
+			[
+				exec
+				{
+					label("Pos Move Rate")
+					tooltip("Controls the speed of viewmodel translation while moving in this stance and changing to crouched.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(proneRotMinSpeed, 1, 10)
+			[
+				exec
+				{
+					label("Rot Min Speed")
+					tooltip("Not used.")
+				}
+			]
+		
+			floatedit(posProneRotRate, 0.1, 1)
+			[
+				exec
+				{
+					label("Pos Rot Rate")
+					tooltip("Controls the speed of viewmodel rotation while moving in this stance.")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Prone Movement Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Idle Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			spinedit(hipIdleAmount, 1, 10)
+			[
+				exec
+				{
+					label("Hip Amount")
+					tooltip("Strength of viewmodel wavering motion when in hipfire position.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipIdleSpeed, 0.1, 1.0)
+			[
+				exec
+				{
+					label("Hip Speed")
+					tooltip("How fast the viewmodel wavers in hipfire position within Hip Amount.")
+				}
+			]
+				
+			floatedit(adsIdleSpeed, 0.1, 1.0)
+			[
+				exec
+				{
+					label("ADS Speed")
+					tooltip("How fast the viewmodel wavers in ADS within ADS Amount.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(idleCrouchFactor, 0.01, 0.1)
+			[
+				exec
+				{
+					label("Crouch Factor")
+					tooltip("Hip/ADS Amount multiplier for reducing viewmodel wavering when in this stance.")
+				}
+			]
+			
+			floatedit(idleProneFactor, 0.01, 0.1)
+			[
+				exec
+				{
+					label("Prone Factor")
+					tooltip("Hip/ADS Amount multiplier for reducing viewmodel wavering when in this stance.")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Idle Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// ADS Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(adsSpread, 0.1, 1)
+			[
+				exec
+				{
+					label("Spread")
+					tooltip("Size of bullet spread cone when firing in ADS mode. Bullets will project randomly within the confines of the cone.")
+				}
+			]
+			
+			floatedit(adsAimPitch, 0.1, 1)
+			[
+				exec
+				{
+					label("Aim Pitch")
+					tooltip("Adjusts the pitch of the viewmodel in ADS. Defaults to 0, -6 is perfectly centered.")
+				}
+			]
+		}
+				
+		hcontainer
+		{
+			floatedit(adsTransInTime, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Trans In Time")
+					tooltip("Time it will take to switch from hipfire to ADS.")
+				}
+			]
+			
+			floatedit(adsTransOutTime, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Trans Out Time")
+					tooltip("Time it will take to switch from ADS to hipfire.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+		//	floatedit(adsTransBlendTime, 0.01, 0.1)
+		//	[
+		//	exec
+		//	{
+		//		label("Trans Blend Time")
+		//		tooltip("Not used in CoD2.")
+		//	}
+		//	]
+			
+			floatedit(adsReloadTransTime, 0.01, 0.1)
+			[
+				exec
+				{
+					label("Reload Trans Time")
+					tooltip("Time it takes once you start the reload to re-enter ADS. (ie: It allows you to finish up reloading while you enter ADS.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(adsCrosshairInFrac, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Crosshair In Frac")
+					tooltip("Fraction of the hipfire-to-ADS transition time over which the crosshair disappears.")
+				}
+			]
+			
+			floatedit(adsCrosshairOutFrac, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Crosshair Out Frac")
+					tooltip("Fraction of the ADS-to-hipfire transition time over which the crosshair appears.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(adsZoomFov, 1, 5)
+			[
+				exec
+				{
+					label("Zoom FOV")
+					tooltip("Field of view when in ADS.")
+				}
+			]
+			
+			floatedit(adsZoomInFrac, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Zoom In Frac")
+					tooltip("Fraction of the hipfire-to-ADS transition time over which the FOV zoom-in effect happens.")
+				}
+			]
+			
+			floatedit(adsZoomOutFrac, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Zoom Out Frac")
+					tooltip("Fraction of the ADS-to-hipfire transition time over which the FOV zoom-out effect happens.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(adsBobFactor, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Bob Factor")
+					tooltip("Strength of viewmodel bobbing due to player movement when using this weapon.")
+				}
+			]
+			
+			floatedit(adsViewBobMult, 0.1, 1)
+			[
+				exec
+				{
+					label("View Bob Mult")
+					tooltip("Bob Factor multiplier for view bobbing due to player movement when using this weapon in ADS.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(adsViewErrorMin, 0.1, 1)
+			[
+				exec
+				{
+					label("Min View Error")
+					tooltip("Min View Error.")
+				}
+			]
+			
+			floatedit(adsViewErrorMax, 0.1, 1)
+			[
+				exec
+				{
+					label("Max View Error")
+					tooltip("Max View Error.")
+				}
+			]	
+		}
+	}
+	[
+		exec
+		{
+			groupBox("ADS Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Gun Kick
+	////////////////////////////////////////
+	vcontainer
+	{
+		
+		hcontainer
+		{
+			floatedit(hipGunKickPitchMin, 1, 5)
+			[
+				exec
+				{
+					label("Hip Pitch Min")
+					tooltip("Hipfire viewmodel control. +/- sign means 'kick down/up'. Larger absolute numbers increase viewmodel climb/descent. From -100 to 100. Actual viewmodel angle will not exceed Max Gun Pitch.")
+				}
+			]
+			
+			floatedit(adsGunKickPitchMin, 1, 5)
+			[
+				exec
+				{
+					label("ADS Pitch Min")
+					tooltip("ADS viewmodel control. +/- sign means 'kick down/up'. Larger absolute numbers increase viewmodel climb/descent. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipGunKickPitchMax, 1, 5)
+			[
+				exec
+				{
+					label("Hip Pitch Max")
+					tooltip("Hipfire viewmodel control. +/- sign means 'kick down/up'. Larger absolute numbers increase viewmodel climb/descent. From -100 to 100. Actual viewmodel angle will not exceed Max Gun Pitch.")
+				}
+			]
+			
+			floatedit(adsGunKickPitchMax, 1, 5)
+			[
+				exec
+				{
+					label("ADS Pitch Max")
+					tooltip("ADS viewmodel control. +/- sign means 'kick down/up'. Larger absolute numbers increase viewmodel climb/descent. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipGunKickYawMin, 1, 5)
+			[
+				exec
+				{
+					label("Hip Yaw Min")
+					tooltip("Hipfire viewmodel control. +/- sign means 'kick left/right'. Larger absolute numbers increase viewmodel yawing. From -100 to 100. Actual viewmodel angle will not exceed Max Gun Yaw.")
+				}
+			]
+			
+			floatedit(adsGunKickYawMin, 1, 5)
+			[
+				exec
+				{
+					label("ADS Yaw Min")
+					tooltip("ADS viewmodel control. +/- sign means 'kick left/right'. Larger absolute numbers increase viewmodel yawing. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipGunKickYawMax, 1, 5)
+			[
+				exec
+				{
+					label("Hip Yaw Max")
+					tooltip("Hipfire viewmodel control. +/- sign means 'kick left/right'. Larger absolute numbers increase viewmodel yawing. From -100 to 100. Actual viewmodel angle will not exceed Max Gun Yaw.")
+				}
+			]
+			
+			floatedit(adsGunKickYawMax, 1, 5)
+			[
+				exec
+				{
+					label("ADS Yaw Max")
+					tooltip("ADS viewmodel control. +/- sign means 'kick left/right'. Larger absolute numbers increase viewmodel yawing. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipGunKickAccel, 1, 10)
+			[
+				exec
+				{
+					label("Hip Accel")
+					tooltip("Rate at which viewmodel attempts to recenter in hipfire. Directly opposes yaws and pitch accumulation.")
+				}
+			]
+
+			floatedit(adsGunKickAccel, 1, 10)
+			[
+				exec
+				{
+					label("ADS Accel")
+					tooltip("Rate at which viewmodel attempts to recenter in ADS. Directly opposes yaws and pitch accumulation.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipGunKickSpeedMax, 1, 10)
+			[
+				exec
+				{
+					label("Hip Speed Max")
+					tooltip("Maximum deflection speed reached by the viewmodel in hipfire.")
+					
+				}
+			]
+			
+			floatedit(adsGunKickSpeedMax, 1, 10)
+			[
+				exec
+				{
+					label("ADS Speed Max")
+					tooltip("Maximum deflection speed reached by the viewmodel in ADS.")
+				}
+			]
+		}
+
+		hcontainer
+		{
+			floatedit(hipGunKickSpeedDecay, 0.1, 1)
+			[
+				exec
+				{
+					label("Hip Speed Decay")
+					tooltip("Strength of decay on viewmodel deflection speed in hipfire.")
+				}
+			]
+			
+			floatedit(adsGunKickSpeedDecay, 0.1, 1)
+			[
+				exec
+				{
+					label("ADS Speed Decay")
+					tooltip("Strength of decay on viewmodel deflection speed in ADS.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipGunKickStaticDecay, 0.1, 1)
+			[
+				exec
+				{
+					label("Hip Static Decay")
+					tooltip("Strength of decay on viewmodel recentering once it has stopped deflecting.")
+				}
+			]
+			
+			floatedit(adsGunKickStaticDecay, 0.1, 1)
+			[
+				exec
+				{
+					label("ADS Static Decay")
+					tooltip("Strength of decay on viewmodel recentering once it has stopped deflecting.")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Gun Kick Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// View Kick
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(hipViewKickPitchMin, 1, 10)
+			[
+				exec
+				{
+					label("Hip Pitch Min")
+					tooltip("Hipfire view kick control. -/+ sign means 'kick down/up'. Larger absolute numbers increase view kick climb/descent. From -100 to 100.")
+				}
+			]
+			
+			floatedit(adsViewKickPitchMin, 1, 10)
+			[
+				exec
+				{
+					label("ADS Pitch Min")
+					tooltip("ADS view kick control. -/+ sign means 'kick down/up'. Larger absolute numbers increase view kick climb/descent. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipViewKickPitchMax, 1, 10)
+			[
+				exec
+				{
+					label("Hip Pitch Max")
+					tooltip("Hipfire view kick control. -/+ sign means 'kick down/up'. Larger absolute numbers increase view kick climb/descent. From -100 to 100.")
+				}
+			]
+			
+			floatedit(adsViewKickPitchMax, 1, 10)
+			[
+				exec
+				{
+					label("ADS Pitch Max")
+					tooltip("ADS view kick control. -/+ sign means 'kick down/up'. Larger absolute numbers increase view kick climb/descent. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipViewKickYawMin, 1, 10)
+			[
+				exec
+				{
+					label("Hip Yaw Min")
+					tooltip("Hipfire view kick control. -/+ sign means 'kick right/left'. Larger absolute numbers increase view kick yaw. From -100 to 100.")
+				}
+			]
+			
+			floatedit(adsViewKickYawMin, 1, 10)
+			[
+				exec
+				{
+					label("ADS Yaw Min")
+					tooltip("ADS view kick control. -/+ sign means 'kick right/left'. Larger absolute numbers increase view kick yaw. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipViewKickYawMax, 1, 10)
+			[
+				exec
+				{
+					label("Hip Yaw Max")
+					tooltip("Hipfire view kick control. -/+ sign means 'kick right/left'. Larger absolute numbers increase view kick yaw. From -100 to 100.")
+				}
+			]
+			
+			floatedit(adsViewKickYawMax, 1, 10)
+			[
+				exec
+				{
+					label("ADS Yaw Max")
+					tooltip("ADS view kick control. -/+ sign means 'kick right/left'. Larger absolute numbers increase view kick yaw. From -100 to 100.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipViewKickCenterSpeed, 10, 100)
+			[
+				exec
+				{
+					label("Hip Center Speed")
+					tooltip("Speed with which the view continuously attempts to recenter in hipfire.")
+				}
+			]
+			
+			floatedit(adsViewKickCenterSpeed, 10, 100)
+			[
+				exec
+				{
+					label("ADS Center Speed")
+					tooltip("Speed with which the view continuously attempts to recenter in ADS.")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("View Kick Settings")
+		}
+	]	
+	
+	////////////////////////////////////////
+	// Sway settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(swayMaxAngle, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Max Angle")
+					tooltip("Max angle change that will be applied to the hipfire viewmodel sway.")
+				}
+			]		
+			floatedit(adsSwayMaxAngle, 0.05, 0.1)
+			[
+				exec
+				{
+					label("ADS Max Angle")
+					tooltip("Max angle change that will be applied to the ADS viewmodel sway.")
+				}
+			]		
+		}
+		
+		hcontainer
+		{
+			floatedit(swayLerpSpeed, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Lerp Speed")
+					tooltip("Speed at which the sway will lerp in hipfire.")
+				}
+			]		
+			floatedit(adsSwayLerpSpeed, 0.05, 0.1)
+			[
+				exec
+				{
+					label("ADS Lerp Speed")
+					tooltip("Speed at which the sway will lerp in ADS.")
+				}
+			]		
+		}
+		
+		hcontainer
+		{
+			floatedit(swayPitchScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Pitch Scale")
+					tooltip("Amount of pitch change in the viewmodel to apply to the sway pitch in hipfire.")
+				}
+			]		
+			floatedit(adsSwayPitchScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("ADS Pitch Scale")
+					tooltip("Amount of pitch change in the viewmodel to apply to the sway pitch in ADS.")
+				}
+			]		
+		}
+		
+		hcontainer
+		{
+			floatedit(swayYawScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Yaw Scale")
+					tooltip("Amount of yaw change in the viewmodel to apply to the sway yaw in hipfire.")
+				}
+			]		
+			floatedit(adsSwayYawScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("ADS Yaw Scale")
+					tooltip("Amount of yaw change in the viewmodel to apply to the sway yaw in ADS.")
+				}
+			]		
+		}
+		
+		hcontainer
+		{
+			floatedit(swayHorizScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Horiz Scale")
+					tooltip("Amount of yaw change in the viewmodel to apply to the sway horizontal offset in hipfire.")
+				}
+			]		
+			floatedit(adsSwayHorizScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("ADS Horiz Scale")
+					tooltip("Amount of yaw change in the viewmodel to apply to the sway horizontal offset in ADS.")
+				}
+			]		
+		}
+		
+		hcontainer
+		{
+			floatedit(swayVertScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("Vert Scale")
+					tooltip("Amount of pitch change in the view model to apply to the sway vertical offset in hipfire.")
+				}
+			]		
+			floatedit(adsSwayVertScale, 0.05, 0.1)
+			[
+				exec
+				{
+					label("ADS Vert Scale")
+					tooltip("Amount of pitch change in the view model to apply to the sway vertical offset in ADS.")
+				}
+			]		
+		}
+		
+		floatedit(swayShellShockScale, 0.05, 0.1)
+		[
+			exec
+			{
+				label("Shell Shock Scale")
+				tooltip("This scale gets applied to the weapon sway while you're in shell shock.")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Sway Settings")
+		}
+	]
+		
+	////////////////////////////////////////
+	// AI Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{  
+			floatedit(fightDist, 1, 100)
+			[
+				exec
+				{
+					label("Fight Distance")
+					tooltip("Aggro radius. AI using this weapon try to fight enemies detected in this radius. Center of this circle constantly traces along AI's path up to maxdist.")
+				}
+			]
+			
+			floatedit(maxDist, 1, 100)
+			[
+				exec
+				{
+					label("Max Distance")
+					tooltip("Effective range radius. AI must get to this distance before opening fire on their target with this weapon.")
+				}
+			]
+		}
+	
+		fileedit(aiVsAiAccuracyGraph)
+		[
+			exec
+			{
+				label("AI Vs. AI Accuracy")
+				tooltip("Graph file for in-game editing of the non-linear accuracy curve used by the AI for this weapon against another AI.")
+				reldir("share/raw/accuracy/aivsai/")
+				width(500)
+			}
+		]
+
+		fileedit(aiVsPlayerAccuracyGraph)
+		[
+			exec
+			{
+				label("AI Vs. Player Accuracy")
+				tooltip("Graph file for in-game editing of the non-linear accuracy curve used by the AI for this weapon against the player.")
+				reldir("share/raw/accuracy/aivsplayer/")
+				width(500)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("AI Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Reticle Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		fileedit(reticleCenter)
+		[
+			exec
+			{
+				label("Center Reticle")
+				tooltip("Center Reticle.")
+				reldir("pc/main/")
+				width(500)
+			}
+		]
+		
+		fileedit(reticleSide)
+		[
+			exec
+			{
+				label("Side Reticle")
+				tooltip("Side Reticle.")
+				reldir("pc/main/")
+				width(500)
+			}
+		]
+		
+		hcontainer
+		{
+			spinedit(reticleCenterSize, 1, 2)
+			[
+				exec
+				{
+					label("Center Size")
+					tooltip("Center Size.")
+				}
+			]
+			
+			spinedit(reticleSideSize, 1, 2)
+			[
+				exec
+				{
+					label("Side Size")
+					tooltip("Side Size.")
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(hipReticleSidePos, 0.1, 0.2)
+			[
+				exec
+				{
+					label("Side Position")
+					tooltip("Side Position.")
+				}
+			]
+			
+			spinedit(reticleMinOfs, 1, 2)		
+			[
+				exec
+				{
+					label("Min Offset")
+					tooltip("Min Offset.")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Reticle Settings")
+		}
+	]
+	
+	////////////////////////////////////////
+	// XModels
+	////////////////////////////////////////
+	vcontainer
+	{
+		fileedit(gunModel)
+		[
+			exec
+			{
+				label("View Gun")
+				reldir("pc/main/xmodel/")
+				width(500)
+			}
+		]
+		
+		fileedit(handModel)
+		[
+			exec
+			{
+				label("Default view Hand")
+				reldir("pc/main/xmodel/")
+				width(500)
+			}
+		]
+		
+		fileedit(worldModel)
+		[
+			exec
+			{
+				label("World Gun")
+				reldir("pc/main/xmodel/")
+				width(500)
+			}
+		]
+		checkbox(isHandModelOverridable)
+		[
+			exec
+			{
+				label("Update Hand Model From Script")
+				tooltip("If checked then the hand model can be updated from script")
+			}
+		]
+
+		fileedit(worldClipModel)
+		[
+			exec
+			{
+				label("World Clip Model")
+				reldir("pc/main/xmodel/")
+				width(500)
+			}
+		]
+
+		fileedit(knifeModel)
+		[
+			exec
+			{
+				label("Knife Model")
+				reldir("share/main/xmodel/")
+				width(500)
+			}
+		]
+		
+		fileedit(worldKnifeModel)
+		[
+			exec
+			{
+				label("World Knife Model")
+				reldir("share/main/xmodel/")
+				width(500)
+			}
+		]	
+	}
+	[
+		exec
+		{
+			groupBox("XModels")
+		}
+	]
+
+
+	////////////////////////////////////////
+	// XAnims
+	////////////////////////////////////////
+	vcontainer
+	{
+		fileedit(idleAnim)
+		[
+			exec
+			{
+				label("Idle")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(emptyIdleAnim)
+		[
+			exec
+			{
+				label("Empty Idle")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(fireAnim)
+		[
+			exec
+			{
+				label("Fire")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(lastShotAnim)
+		[
+			exec
+			{
+				label("Last Shot")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+				
+		fileedit(meleeAnim)
+		[
+			exec
+			{
+				label("Melee")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+
+		fileedit(meleeChargeAnim)
+		[
+			exec
+			{
+				label("Melee Charge")
+				reldir("share/main/xanim/")
+				width(500)
+				tooltip("The anim played for a melee charge (use for bayonet weapons)")
+			}
+		]
+		
+		fileedit(reloadAnim)
+		[
+			exec
+			{
+				label("Reload")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(raiseAnim)
+		[
+			exec
+			{
+				label("Raise")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(dropAnim)
+		[
+			exec
+			{
+				label("Drop")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(firstRaiseAnim)
+		[
+			exec
+			{
+				label("First Raise")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+
+		fileedit(altRaiseAnim)
+		[
+			exec
+			{
+				label("Alt Raise")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(altDropAnim)
+		[
+			exec
+			{
+				label("Alt Drop")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(quickRaiseAnim)
+		[
+			exec
+			{
+				label("Quick Raise")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(quickDropAnim)
+		[
+			exec
+			{
+				label("Quick Drop")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+
+		fileedit(emptyRaiseAnim)
+		[
+			exec
+			{
+				label("Empty Raise")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(emptyDropAnim)
+		[
+			exec
+			{
+				label("Empty Drop")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(sprintInAnim)
+		[
+			exec
+			{
+				label("Sprint In")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(sprintLoopAnim)
+		[
+			exec
+			{
+				label("Sprint Loop")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(sprintOutAnim)
+		[
+			exec
+			{
+				label("Sprint Out")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+
+		fileedit(nightVisionWearAnim)
+		[
+			exec
+			{
+				label("Nightvision Wear")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+
+		fileedit(nightVisionRemoveAnim)
+		[
+			exec
+			{
+				label("Nightvision Remove")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(adsFireAnim)
+		[
+			exec
+			{
+				label("ADS Fire")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(adsLastShotAnim)
+		[
+			exec
+			{
+				label("ADS Last Shot")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+				
+		fileedit(adsUpAnim)
+		[
+			exec
+			{
+				label("ADS Up")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+		
+		fileedit(adsDownAnim)
+		[
+			exec
+			{
+				label("ADS Down")
+				reldir("share/main/xanim/")
+				width(500)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("XAnims")
+		}
+	]
+
+	////////////////////////////////////////
+	// Particle Effects
+	////////////////////////////////////////
+	vcontainer
+	{
+		fileedit(viewFlashEffect)
+		[
+			exec
+			{
+				label("View Flash")
+				reldir("share/raw/")
+				width(500)
+			}
+		]
+		
+		fileedit(worldFlashEffect)
+		[
+			exec
+			{
+				label("World Flash")
+				reldir("share/raw/")
+				width(500)
+			}
+		]
+		
+		fileedit(shellEjectEffect)
+		[
+			exec
+			{
+				label("Shell Eject")
+				reldir("share/raw/")
+				width(500)
+			}
+		]
+		fileedit(lastShotEjectEffect)
+		[
+			exec
+			{
+				label("Last Shot Eject")
+				reldir("share/raw/")
+				width(500)
+			}
+		]
+
+		fileedit(worldClipDropEffect)
+		[
+			exec
+			{
+				label("World Clip Drop Effect")
+				reldir("share/raw/")
+				width(500)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Effects")
+		}
+	]
+
+	////////////////////////////////////////
+	// Sounds
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			edit(pickupSound)
+			[
+				exec
+				{
+					label("Pickup")
+					width(400)
+				}
+			]
+
+			edit(pickupSoundPlayer)
+			[
+				exec
+				{
+					label("Pickup (Player)")
+					width(400)
+				}
+			]
+		}
+			
+		hcontainer
+		{
+			edit(ammoPickupSound)
+			[
+				exec
+				{
+					label("Ammo Pickup")
+					width(400)
+				}
+			]
+			
+			edit(ammoPickupSoundPlayer)
+			[
+				exec
+				{
+					label("Ammo Pickup (Player)")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(fireSound)
+			[
+				exec
+				{
+					label("Fire")
+					width(400)
+				}
+			]
+			
+			edit(fireSoundPlayer)
+			[
+				exec
+				{
+					label("Fire (Player)")
+					tooltip("Fire sound used by player. If not defined, player will play normal 'Fire' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(lastShotSound)
+			[
+				exec
+				{
+					label("Last Shot")
+					width(400)
+				}
+			]
+			
+			edit(lastShotSoundPlayer)
+			[
+				exec
+				{
+					label("Last Shot (Player)")
+					tooltip("Last Shot sound used by player. If not defined, player will play normal 'Last Shot' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(emptyFireSound)
+			[
+				exec
+				{
+					label("Empty Fire")
+					width(400)
+				}
+			]
+			
+			edit(emptyFireSoundPlayer)
+			[
+				exec
+				{
+					label("Empty Fire (Player)")
+					tooltip("Empty Fire sound used by player. If not defined, player will play normal 'Empty Fire' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+
+		hcontainer
+		{
+			edit(meleeSwipeSound)
+			[
+				exec
+				{
+					label("Melee Swipe")
+					width(400)
+				}
+			]
+			edit(meleeSwipeSoundPlayer)
+			[
+				exec
+				{
+					label("Melee Swipe (Player)")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(rechamberSound)
+			[
+				exec
+				{
+					label("Rechamber")
+					width(400)
+				}
+			]
+			
+			edit(rechamberSoundPlayer)
+			[
+				exec
+				{
+					label("Rechamber (Player)")
+					tooltip("Rechamber sound used by player. If not defined, player will play normal 'Rechamber' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+
+		hcontainer
+		{
+			edit(reloadSound)
+			[
+				exec
+				{
+					label("Reload")
+					width(400)
+				}
+			]
+			
+			edit(reloadSoundPlayer)
+			[
+				exec
+				{
+					label("Reload (Player)")
+					tooltip("Reload sound used by player. If not defined, player will play normal 'Reload' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(reloadEmptySound)
+			[
+				exec
+				{
+					label("Reload Empty")
+					width(400)
+				}
+			]
+			
+			edit(reloadEmptySoundPlayer)
+			[
+				exec
+				{
+					label("Reload Empty (Player)")
+					tooltip("Reload Empty sound used by player. If not defined, player will play normal 'Reload Empty' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(reloadStartSound)
+			[
+				exec
+				{
+					label("Reload Start")
+					width(400)
+				}
+			]
+			
+			edit(reloadStartSoundPlayer)
+			[
+				exec
+				{
+					label("Reload Start (Player)")
+					tooltip("Reload Start sound used by player. If not defined, player will play normal 'Reload Start' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(reloadEndSound)
+			[
+				exec
+				{
+					label("Reload End")
+					width(400)
+				}
+			]
+			
+			edit(reloadEndSoundPlayer)
+			[
+				exec
+				{
+					label("Reload End (Player)")
+					tooltip("Reload End sound used by player. If not defined, player will play normal 'Reload End' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(altSwitchSound)
+			[
+				exec
+				{
+					label("Alt Switch")
+					width(400)
+				}
+			]
+			edit(altSwitchSoundPlayer)
+			[
+				exec
+				{
+					label("Alt Switch (Player)")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(raiseSound)
+			[
+				exec
+				{
+					label("Raise")
+					width(400)
+				}
+			]
+			edit(raiseSoundPlayer)
+			[
+				exec
+				{
+					label("Raise (Player)")
+					width(400)
+				}
+			]
+		}
+
+		hcontainer
+		{
+			edit(firstRaiseSound)
+			[
+				exec
+				{
+					label("First Raise")
+					width(400)
+				}
+			]
+			edit(firstRaiseSoundPlayer)
+			[
+				exec
+				{
+					label("First Raise (Player)")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(putawaySound)
+			[
+				exec
+				{
+					label("Put Away")
+					width(400)
+				}
+			]
+			edit(putawaySoundPlayer)
+			[
+				exec
+				{
+					label("Put Away (Player)")
+					width(400)
+				}
+			]
+		}
+
+		hcontainer
+		{
+			edit(nightVisionWearSound)
+			[
+				exec
+				{
+					label("NightVis Wear")
+					width(400)
+				}
+			]
+			edit(nightVisionWearSoundPlayer)
+			[
+				exec
+				{
+					label("NightVis Wear (Player)")
+					width(400)
+				}
+			]
+		}
+
+		hcontainer
+		{
+			edit(nightVisionRemoveSound)
+			[
+				exec
+				{
+					label("NightVis Remove")
+					width(400)
+				}
+			]
+			edit(nightVisionRemoveSoundPlayer)
+			[
+				exec
+				{
+					label("NightVis Remove (Player)")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(flameOffLoopSound)
+			[
+				exec
+				{
+					label("Flame Off Loop")
+					width(400)
+				}
+			]
+			edit(flameOffLoopSoundPlayer)
+			[
+				exec
+				{
+					label("Flame Off Loop (Player)")
+					tooltip("Flame Off Loop sound used by player. If not defined, player will play normal 'Flame Off Loop' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(flameIgniteSound)
+			[
+				exec
+				{
+					label("Flame Ignite")
+					width(400)
+				}
+			]
+			edit(flameIgniteSoundPlayer)
+			[
+				exec
+				{
+					label("Flame Ignite (Player)")
+					tooltip("Flame Ignite sound used by player. If not defined, player will play normal 'Flame Ignite' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(flameOnLoopSound)
+			[
+				exec
+				{
+					label("Flame On Loop")
+					width(400)
+				}
+			]
+			edit(flameOnLoopSoundPlayer)
+			[
+				exec
+				{
+					label("Flame On Loop (Player)")
+					tooltip("Flame On Loop sound used by player. If not defined, player will play normal 'Flame On Loop' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			edit(flameCooldownSound)
+			[
+				exec
+				{
+					label("Flame Cooldown")
+					width(400)
+				}
+			]
+			edit(flameCooldownSoundPlayer)
+			[
+				exec
+				{
+					label("Flame Cooldown (Player)")
+					tooltip("Flame Cooldown sound used by player. If not defined, player will play normal 'Flame Cooldown' that is used by the AI.")
+					width(400)
+				}
+			]
+		}
+		
+		edit(noteTrackSoundA)
+		[
+			exec
+			{
+				label("Note Track A")
+				width(500)
+			}
+		]
+		edit(noteTrackSoundB)
+		[
+			exec
+			{
+				label("Note Track B")
+				width(500)
+			}
+		]
+		edit(noteTrackSoundC)
+		[
+			exec
+			{
+				label("Note Track C")
+				width(500)
+			}
+		]
+		edit(noteTrackSoundD)
+		[
+			exec
+			{
+				label("Note Track D")
+				width(500)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Sound")
+		}
+	]
+
+	////////////////////////////////////////
+	// Rumbles
+	////////////////////////////////////////
+	vcontainer
+	{
+		scrollbox(fireRumble)
+		[
+			exec
+			{
+				width(500)
+			}
+		]
+
+		scrollbox(meleeImpactRumble)
+		[
+			exec
+			{
+				width(500)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Rumbles")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Icons
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			fileedit(hudIcon)
+			[
+				exec
+				{
+					label("Hud")
+					reldir("pc/main/")
+					width(500)
+				}
+			]
+			scrollbox(hudIconRatio)
+			[
+				exec
+				{
+					label(" Aspect:")
+					width(110)
+					labelwidth(60)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			fileedit(modeIcon)
+			[
+				exec
+				{
+					label("Mode")
+					reldir("pc/main/")
+					width(500)
+				}
+			]
+			scrollbox(modeIconRatio)
+			[
+				exec
+				{
+					label(" Aspect:")
+					width(110)
+					labelwidth(60)
+				}
+			]
+		}
+			
+		hcontainer
+		{
+			fileedit(killIcon)
+			[
+				exec
+				{
+					label("Kill")
+					reldir("pc/main/")
+					width(500)
+				}
+			]
+			scrollbox(killIconRatio)
+			[
+				exec
+				{
+					label(" Aspect:")
+					width(110)
+					labelwidth(60)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			fileedit(dpadIcon)
+			[
+				exec
+				{
+					label("DPad Icon")
+					reldir("pc/main/")
+					width(500)
+				}
+			]
+			scrollbox(dpadIconRatio)
+			[
+				exec
+				{
+					label(" Aspect:")
+					width(110)
+					labelwidth(60)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			checkbox(wideListIcon)
+			[
+				exec
+				{
+					label("Wide List Icon")
+					tooltip("Used for weapons that use wide HUD icons when drawing cursor hints and MP weapon selection. (Rifle vs. Grenade)")
+					righttext()
+				}
+			]
+			
+			checkbox(wideKillIcon)
+			[
+				exec
+				{
+					label("Wide Kill Icon")
+					tooltip("Used for weapons that have a wide kill icon in MP. (Rifle vs Grenade).")
+					righttext()
+				}
+			]
+	
+			checkbox(flipKillIcon)
+			[
+				exec
+				{
+					label("Flip Kill Icon")
+					tooltip("Used for weapons that need to have their kill icon horizontally flipped before displaying. (For MP obituaries).")
+					righttext()
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("2D Icons")
+		}
+	]
+	
+	////////////////////////////////////////
+	// Bounce factors
+	////////////////////////////////////////
+	hcontainer
+	{
+
+		vcontainer
+		{
+			floatedit(parallelDefaultBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("default")
+				}
+			]
+			floatedit(parallelBarkBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("bark")
+				}
+			]
+			floatedit(parallelBrickBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("brick")
+				}
+			]
+			floatedit(parallelCarpetBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("carpet")
+				}
+			]
+			floatedit(parallelClothBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("cloth")
+				}
+			]
+			floatedit(parallelConcreteBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("concrete")
+				}
+			]
+			floatedit(parallelDirtBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("dirt")
+				}
+			]
+			floatedit(parallelFleshBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("flesh")
+				}
+			]
+			floatedit(parallelFoliageBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("foliage")
+				}
+			]
+			floatedit(parallelGlassBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("glass")
+				}
+			]
+			floatedit(parallelGrassBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("grass")
+				}
+			]
+			floatedit(parallelGravelBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("gravel")
+				}
+			]
+			floatedit(parallelIceBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("ice")
+				}
+			]
+			floatedit(parallelMetalBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("metal")
+				}
+			]
+			floatedit(parallelMudBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("mud")
+				}
+			]
+			floatedit(parallelPaperBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("paper")
+				}
+			]
+			floatedit(parallelPlasterBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("plaster")
+				}
+			]
+			floatedit(parallelRockBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("rock")
+				}
+			]
+			floatedit(parallelSandBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("sand")
+				}
+			]
+			floatedit(parallelSnowBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("snow")
+				}
+			]
+			floatedit(parallelWaterBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("water")
+				}
+			]
+			floatedit(parallelWoodBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("wood")
+				}
+			]
+			floatedit(parallelAsphaltBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("asphalt")
+				}
+			]
+			floatedit(parallelCeramicBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("ceramic")
+				}
+			]
+			floatedit(parallelPlasticBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("plastic")
+				}
+			]
+			floatedit(parallelRubberBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("rubber")
+				}
+			]
+			floatedit(parallelCushionBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("cushion")
+				}
+			]
+			floatedit(parallelFruitBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("fruit")
+				}
+			]
+			floatedit(parallelPaintedMetalBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("painted metal")
+				}
+			]
+		}
+		[
+			exec
+			{
+				groupBox("Parallel Bounce Factors")
+			}
+		]
+		
+		vcontainer
+		{
+			floatedit(perpendicularDefaultBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("default")
+				}
+			]
+			floatedit(perpendicularBarkBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("bark")
+				}
+			]
+			floatedit(perpendicularBrickBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("brick")
+				}
+			]
+			floatedit(perpendicularCarpetBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("carpet")
+				}
+			]
+			floatedit(perpendicularClothBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("cloth")
+				}
+			]
+			floatedit(perpendicularConcreteBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("concrete")
+				}
+			]
+			floatedit(perpendicularDirtBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("dirt")
+				}
+			]
+			floatedit(perpendicularFleshBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("flesh")
+				}
+			]
+			floatedit(perpendicularFoliageBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("foliage")
+				}
+			]
+			floatedit(perpendicularGlassBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("glass")
+				}
+			]
+			floatedit(perpendicularGrassBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("grass")
+				}
+			]
+			floatedit(perpendicularGravelBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("gravel")
+				}
+			]
+			floatedit(perpendicularIceBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("ice")
+				}
+			]
+			floatedit(perpendicularMetalBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("metal")
+				}
+			]
+			floatedit(perpendicularMudBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("mud")
+				}
+			]
+			floatedit(perpendicularPaperBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("paper")
+				}
+			]
+			floatedit(perpendicularPlasterBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("plaster")
+				}
+			]
+			floatedit(perpendicularRockBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("rock")
+				}
+			]
+			floatedit(perpendicularSandBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("sand")
+				}
+			]
+			floatedit(perpendicularSnowBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("snow")
+				}
+			]
+			floatedit(perpendicularWaterBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("water")
+				}
+			]
+			floatedit(perpendicularWoodBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("wood")
+				}
+			]
+			floatedit(perpendicularAsphaltBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("asphalt")
+				}
+			]
+			floatedit(perpendicularCeramicBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("ceramic")
+				}
+			]
+			floatedit(perpendicularPlasticBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("plastic")
+				}
+			]
+			floatedit(perpendicularRubberBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("rubber")
+				}
+			]
+			floatedit(perpendicularCushionBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("cushion")
+				}
+			]
+			floatedit(perpendicularFruitBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("fruit")
+				}
+			]
+			floatedit(perpendicularPaintedMetalBounce, 0.01, 0.1)
+			[
+				exec
+				{
+					label("painted metal")
+				}
+			]
+		}
+		[
+			exec
+			{
+				groupBox("Perpendicular Bounce Factors")
+			}
+		]
+	}
+
+	////////////////////////////////////////
+	// Depth of Field Settings
+	////////////////////////////////////////
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(adsDofStart, 0.1, 0.5)
+			[
+				exec
+				{
+					label("ADS Start")
+				}
+			]
+			
+			floatedit(adsDofEnd, 0.1, 0.5)
+			[
+				exec
+				{
+					label("ADS End")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(hipDofStart, 0.1, 0.5)
+			[
+				exec
+				{
+					label("Hip Start")
+				}
+			]
+			
+			floatedit(hipDofEnd, 0.1, 0.5)
+			[
+				exec
+				{
+					label("Hip End")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Depth of Field Settings")
+		}
+	]
+}
+

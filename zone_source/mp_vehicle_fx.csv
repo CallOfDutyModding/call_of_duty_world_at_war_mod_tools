@@ -1,0 +1,25 @@
+// these effects are not used- can delete.BarryW
+fx,vehicle/vfire/fx_tank_sherman_smldr
+fx,vehicle/vfire/fx_vfire_med_12
+fx,vehicle/vfire/fx_vfire_sherman
+fx,explosions/large_vehicle_explosion
+
+// fx for damage vehicle states.BarryW
+fx,vehicle/vexplosion/fx_vexplode_ger_panzer4_mp
+fx,vehicle/vfire/fx_vdamage_ger_panzer4_mp01
+fx,vehicle/vfire/fx_vdamage_ger_panzer4_mp02
+fx,vehicle/vfire/fx_vdamage_ger_panzer4_mp03
+fx,vehicle/vfire/fx_vdamage_ger_panzer4_mp04
+fx,vehicle/vexplosion/fx_vexplode_rus_t34_mp
+fx,vehicle/vfire/fx_vdamage_rus_t34_mp01
+fx,vehicle/vfire/fx_vdamage_rus_t34_mp02
+fx,vehicle/vfire/fx_vdamage_rus_t34_mp03
+fx,vehicle/vfire/fx_vdamage_rus_t34_mp04
+
+// tread fx
+fx,vehicle/treadfx/fx_treadfx_dust
+fx,vehicle/treadfx/fx_treadfx_tiger_concrete
+fx,vehicle/treadfx/fx_treadfx_tiger_asphalt
+fx,vehicle/treadfx/fx_treadfx_tiger_dirt
+fx,vehicle/treadfx/fx_treadfx_tiger_grass
+fx,vehicle/treadfx/fx_treadfx_tiger_mud

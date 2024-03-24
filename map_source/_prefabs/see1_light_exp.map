@@ -1,0 +1,2563 @@
+iwmap 4
+"000_Global" flags  active
+"Light Grid Volumes" flags 
+"Lights" flags 
+"Script_Ents" flags 
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+ {
+  mesh
+  {
+layer "Lights"
+   hdrportal_lighten
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 1721 1916 -144 t 15488 1152 121.5 9
+	v 1721 1916 -272 t 15488 2176 121.5 17
+   )
+   (
+	v 1721 1776 -144 t 14080 1152 110.5 9
+	v 1721 1776 -272 t 14080 2176 110.5 17
+   )
+  }
+ }
+// brush 1
+ {
+  mesh
+  {
+layer "Lights"
+   hdrportal_darken_more
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 1717 1916 -272 t 15488 2176 121.5 17
+	v 1717 1916 -144 t 15488 1152 121.5 9
+   )
+   (
+	v 1717 1776 -272 t 14080 2176 110.5 17
+	v 1717 1776 -144 t 14080 1152 110.5 9
+   )
+  }
+ }
+// brush 2
+{
+layer "Light Grid Volumes"
+ ( 2732 7768 123 ) ( 2492 7768 123 ) ( 2492 7476 123 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 2480 7476 585 ) ( 2480 7768 585 ) ( 2720 7768 585 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 3013 7233 340 ) ( 3253 7233 340 ) ( 3253 7233 324 ) lightgrid_volume 64 64 0 8 0 0 lightmap_gray 16384 16384 0 8 0 0
+ ( 3253 7233 340 ) ( 3253 7525 340 ) ( 3253 7525 324 ) lightgrid_volume 64 64 0 8 0 0 lightmap_gray 16384 16384 0 8 0 0
+ ( 2720 7768 340 ) ( 2480 7768 340 ) ( 2480 7768 324 ) lightgrid_volume 64 64 0 8 0 0 lightmap_gray 16384 16384 0 8 0 0
+ ( 2480 7768 340 ) ( 2480 7476 340 ) ( 2480 7476 324 ) lightgrid_volume 64 64 0 8 0 0 lightmap_gray 16384 16384 0 8 0 0
+}
+// brush 3
+{
+layer "Light Grid Volumes"
+ ( 1528 -6880 -416 ) ( 1240 -6880 -416 ) ( 1240 -7216 -416 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16383.98 0 8.0082912 0 0
+ ( 1288 -7220 -336 ) ( 1288 -6884 -336 ) ( 1576 -6884 -336 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 8 0 0
+ ( 1190 -7210 3352 ) ( 1478 -7210 3352 ) ( 1478 -7210 -1520 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 96 0 0
+ ( 1464 -7222 3352 ) ( 1464 -6886 3352 ) ( 1464 -6886 -1520 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 -8 95.997803 0 0
+ ( 1464 -6868 3352 ) ( 1176 -6868 3352 ) ( 1176 -6868 -1520 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16384 16384 0 96 0 0
+ ( 1176 -6880 3352 ) ( 1176 -7216 3352 ) ( 1176 -7216 -1520 ) lightgrid_volume 64 64 0 0 0 0 lightmap_gray 16383.98 16384 -8.0082912 95.992249 0 0
+}
+}
+// entity 1
+{
+layer "Script_Ents"
+"targetname" "trigger_fog"
+"script_transition_time" "8"
+"script_color" "0.62 0.59 0.52"
+"script_base_height" "-450"
+"script_halfway_height" "600"
+"script_halfway_dist" "10000"
+"script_start_dist" "1500"
+"origin" "3736.0 -4024.0 -512.0"
+"height" "357.931549"
+"radius" "256"
+"classname" "trigger_radius"
+}
+// entity 2
+{
+"origin" "1660.0 -6944.0 -350.0"
+"classname" "reflection_probe"
+}
+// entity 3
+{
+"origin" "3084.0 -5820.0 -396.0"
+"classname" "reflection_probe"
+}
+// entity 4
+{
+"origin" "2856.0 -4700.0 -396.0"
+"classname" "reflection_probe"
+}
+// entity 5
+{
+"origin" "3020.0 -7059.0 -396.0"
+"classname" "reflection_probe"
+}
+// entity 6
+{
+layer "Script_Ents"
+"script_vision_time" "8"
+"script_vision" "see1_fire"
+"targetname" "trigger_fog"
+"script_transition_time" "8"
+"script_color" "0.6431 0.5882 0.5058"
+"script_base_height" "-650"
+"script_halfway_height" "340"
+"script_halfway_dist" "800"
+"script_start_dist" "240"
+"origin" "1968.0 -1480.0 -672.0"
+"height" "357.931549"
+"radius" "404.085999"
+"classname" "trigger_radius"
+}
+// entity 7
+{
+layer "Script_Ents"
+"classname" "trigger_radius"
+"radius" "256"
+"height" "357.931549"
+"origin" "3800.0 -3392.0 -616.0"
+"script_start_dist" "350"
+"script_halfway_dist" "1500"
+"script_halfway_height" "340"
+"script_base_height" "-650"
+"script_color" "0.6431 0.5882 0.5058"
+"script_transition_time" "8"
+"targetname" "trigger_fog"
+}
+// entity 8
+{
+layer "Script_Ents"
+"script_vision_time" "8"
+"script_vision" "see1_fire"
+"targetname" "trigger_fog"
+"script_transition_time" "8"
+"script_color" "0.6431 0.5882 0.5058"
+"script_base_height" "-650"
+"script_halfway_height" "340"
+"script_halfway_dist" "800"
+"script_start_dist" "240"
+"origin" "3152.0 1424.0 -208.0"
+"height" "357.931549"
+"radius" "156.551147"
+"classname" "trigger_radius"
+}
+// entity 9
+{
+layer "Script_Ents"
+"script_vision" "see1"
+"script_vision_time" "8"
+"classname" "trigger_radius"
+"radius" "256"
+"height" "357.931549"
+"origin" "2216.0 -2192.0 -680.0"
+"script_start_dist" "350"
+"script_halfway_dist" "1500"
+"script_halfway_height" "340"
+"script_base_height" "-650"
+"script_color" "0.6431 0.5882 0.5058"
+"script_transition_time" "8"
+"targetname" "trigger_fog"
+}
+// entity 10
+{
+layer "Script_Ents"
+"script_vision" "see1"
+"script_vision_time" "8"
+"classname" "trigger_radius"
+"radius" "256"
+"height" "357.931549"
+"origin" "3416.0 1040.0 -360.0"
+"script_start_dist" "350"
+"script_halfway_dist" "1500"
+"script_halfway_height" "340"
+"script_base_height" "-650"
+"script_color" "0.6431 0.5882 0.5058"
+"script_transition_time" "8"
+"targetname" "trigger_fog"
+}
+// entity 11
+{
+layer "Lights"
+"angles" "0 99.8 0"
+"origin" "2214.0 1841.8 -234.0"
+"model" "lantern_on"
+"classname" "misc_model"
+}
+// entity 12
+{
+layer "Lights"
+"spawnflags" "2"
+"fov_outer" "120"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto52"
+"origin" "2209.0 1842.0 -224.0"
+"def" "tungsten_lamp"
+"radius" "375"
+"_color" "1.000000 0.917647 0.725490"
+"intensity" "2"
+"classname" "light"
+}
+// entity 13
+{
+layer "Lights"
+"origin" "2042.0 1842.0 -236.0"
+"targetname" "Shiftyauto52"
+"classname" "info_null"
+}
+// entity 14
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "180"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto54"
+"origin" "2138.0 1840.0 -253.0"
+"def" "light_point_quadratic"
+"radius" "320"
+"_color" "1.000000 0.917647 0.725490"
+"intensity" "1"
+"classname" "light"
+}
+// entity 15
+{
+layer "Lights"
+"origin" "2169.5 1840.0 -225.0"
+"targetname" "Shiftyauto54"
+"classname" "info_null"
+}
+// entity 16
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "120"
+"fov_inner" "0"
+"exponent" "2"
+"target" "Shiftyauto55"
+"origin" "1621.0 1840.0 -183.0"
+"def" "light_point_quadratic"
+"radius" "312"
+"_color" "0.917647 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 17
+{
+layer "Lights"
+"origin" "1823.5 1864.0 -228.5"
+"targetname" "Shiftyauto55"
+"classname" "info_null"
+}
+// entity 18
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "120"
+"fov_inner" "90"
+"exponent" "1"
+"target" "Shiftyauto56"
+"origin" "1621.5 1840.0 -166.5"
+"def" "light_point_quadratic"
+"radius" "312"
+"_color" "0.917647 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 19
+{
+layer "Lights"
+"origin" "1879.0 1816.0 -181.5"
+"targetname" "Shiftyauto56"
+"classname" "info_null"
+}
+// entity 20
+{
+layer "Lights"
+"origin" "2112.0 1850.5 -192.0"
+"classname" "reflection_probe"
+}
+// entity 21
+{
+layer "Lights"
+"origin" "1276.0 174.5 -370.0"
+"classname" "reflection_probe"
+}
+// entity 22
+{
+layer "Lights"
+"origin" "2780.0 -2647.5 -628.0"
+"classname" "reflection_probe"
+}
+// entity 23
+{
+layer "Lights"
+"origin" "3446.0 -4215.5 -409.0"
+"classname" "reflection_probe"
+}
+// entity 24
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "180"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto68"
+"origin" "2214.0 1855.5 -225.0"
+"def" "tungsten_lamp"
+"radius" "250"
+"_color" "1.000000 0.917647 0.725490"
+"intensity" "2"
+"classname" "light"
+}
+// entity 25
+{
+layer "Lights"
+"origin" "2184.5 1887.0 -162.0"
+"targetname" "Shiftyauto68"
+"classname" "info_null"
+}
+// entity 26
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "120"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto69"
+"origin" "149.5 1352.0 -263.5"
+"def" "light_point_quadratic"
+"radius" "600"
+"_color" "0.984314 0.929412 0.819608"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 27
+{
+layer "Lights"
+"origin" "-41.0 1323.0 -320.5"
+"targetname" "Shiftyauto69"
+"classname" "info_null"
+}
+// entity 28
+{
+layer "Lights"
+"origin" "-40.0 1336.0 -264.0"
+"classname" "reflection_probe"
+}
+// entity 29
+{
+layer "Lights"
+"origin" "1200.0 1722.5 -248.0"
+"classname" "reflection_probe"
+}
+// entity 30
+{
+layer "Lights"
+"classname" "light"
+"intensity" "1"
+"_color" "1.000000 0.917647 0.725490"
+"radius" "256"
+"def" "tungsten_lamp"
+"origin" "2214.5 1841.5 -216.0"
+}
+// entity 31
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "180"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto70"
+"origin" "-62.5 1316.0 -321.5"
+"def" "light_point_quadratic"
+"radius" "325"
+"_color" "0.913725 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 32
+{
+layer "Lights"
+"origin" "-133.0 1321.0 -238.5"
+"targetname" "Shiftyauto70"
+"classname" "info_null"
+}
+// entity 33
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "180"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto71"
+"origin" "-61.5 1343.0 -321.5"
+"def" "light_point_quadratic"
+"radius" "325"
+"_color" "0.913725 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 34
+{
+layer "Lights"
+"origin" "-125.0 1436.0 -238.5"
+"targetname" "Shiftyauto71"
+"classname" "info_null"
+}
+// entity 35
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "180"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto72"
+"origin" "-61.5 1291.0 -321.5"
+"def" "light_point_quadratic"
+"radius" "325"
+"_color" "0.913725 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 36
+{
+layer "Lights"
+"origin" "-126.0 1233.0 -238.5"
+"targetname" "Shiftyauto72"
+"classname" "info_null"
+}
+// entity 37
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "180"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto73"
+"origin" "-110.5 1316.0 -235.5"
+"def" "light_point_quadratic"
+"radius" "325"
+"_color" "0.913725 0.956863 1"
+"intensity" ".6"
+"classname" "light"
+}
+// entity 38
+{
+layer "Lights"
+"origin" "-110.0 1321.0 -255.0"
+"targetname" "Shiftyauto73"
+"classname" "info_null"
+}
+// entity 39
+{
+layer "Lights"
+"origin" "-79.0 1337.5 -274.0"
+"def" "light_point_quadratic"
+"radius" "500"
+"_color" "0.913725 0.956863 1"
+"intensity" ".25"
+"classname" "light"
+}
+// entity 40
+{
+layer "Lights"
+"spawnflags" "0"
+"fov_outer" "180"
+"fov_inner" "0"
+"exponent" "1"
+"target" "Shiftyauto75"
+"origin" "2214.0 1826.0 -225.0"
+"def" "tungsten_lamp"
+"radius" "250"
+"_color" "1.000000 0.917647 0.725490"
+"intensity" "2"
+"classname" "light"
+}
+// entity 41
+{
+layer "Lights"
+"origin" "2126.0 1804.0 -216.0"
+"targetname" "Shiftyauto75"
+"classname" "info_null"
+}
+// entity 42
+{
+layer "Lights"
+"origin" "2794.9 6915.1 192.3"
+"classname" "reflection_probe"
+}
+// entity 43
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "1128.0 -624.0 -323.0"
+"fov_outer" "110"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto76"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "262"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 44
+{
+layer "Lights"
+"origin" "1359.5 -863.5 -572.0"
+"targetname" "Shiftyauto76"
+"classname" "info_null"
+}
+// entity 45
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "1676.0 -636.0 -332.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto77"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "262"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 46
+{
+layer "Lights"
+"origin" "1648.5 -807.5 -392.0"
+"targetname" "Shiftyauto77"
+"classname" "info_null"
+}
+// entity 47
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "1032.0 -128.0 -224.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto78"
+"spawnflags" "6"
+"def" "light_point_linear"
+"radius" "130"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 48
+{
+layer "Lights"
+"origin" "1199.5 -127.5 -508.0"
+"targetname" "Shiftyauto78"
+"classname" "info_null"
+}
+// entity 49
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "776.0 -176.5 -256.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto79"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "130"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 50
+{
+layer "Lights"
+"origin" "847.5 -63.5 -300.0"
+"targetname" "Shiftyauto79"
+"classname" "info_null"
+}
+// entity 51
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "2424.0 527.5 -191.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto80"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "280"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 52
+{
+layer "Lights"
+"origin" "2271.5 640.5 -508.0"
+"targetname" "Shiftyauto80"
+"classname" "info_null"
+}
+// entity 53
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "2664.0 1104.0 -80.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto81"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 54
+{
+layer "Lights"
+"origin" "2575.5 1232.5 -188.0"
+"targetname" "Shiftyauto81"
+"classname" "info_null"
+}
+// entity 55
+{
+layer "Lights"
+"lightpriority" "1"
+"overbrightshift" "0.100000"
+"targetname" "fire_flicker"
+"origin" "3096.0 736.0 -80.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto82"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 56
+{
+layer "Lights"
+"origin" "3231.5 784.5 -188.0"
+"targetname" "Shiftyauto82"
+"classname" "info_null"
+}
+// entity 57
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "2856.0 1712.0 96.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto83"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "350"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 58
+{
+layer "Lights"
+"origin" "3087.5 1520.5 -160.0"
+"targetname" "Shiftyauto83"
+"classname" "info_null"
+}
+// entity 59
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "1336.0 1856.0 -128.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto84"
+"spawnflags" "6"
+"def" "light_point_linear"
+"radius" "350"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 60
+{
+layer "Lights"
+"origin" "1231.5 2064.5 -236.0"
+"targetname" "Shiftyauto84"
+"classname" "info_null"
+}
+// entity 61
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "350"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "1336.0 1840.0 -140.0"
+}
+// entity 62
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "256"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "2856.0 1728.0 35.0"
+}
+// entity 63
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "2664.0 1088.0 -65.0"
+}
+// entity 64
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "3080.0 736.0 -154.0"
+}
+// entity 65
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "2440.0 527.5 -168.0"
+}
+// entity 66
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "1676.0 -620.0 -318.0"
+}
+// entity 67
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "1112.0 -624.0 -364.0"
+}
+// entity 68
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "1032.0 -144.0 -313.0"
+}
+// entity 69
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "776.0 -192.5 -320.0"
+}
+// entity 70
+{
+layer "Lights"
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "840.0 400.0 -192.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" ".5"
+"target" "Shiftyauto85"
+"spawnflags" "5"
+"def" "light_point_linear"
+"radius" "130"
+"_color" "1 0.5 0"
+"intensity" "4"
+"classname" "light"
+}
+// entity 71
+{
+layer "Lights"
+"origin" "911.5 512.5 -268.0"
+"targetname" "Shiftyauto85"
+"classname" "info_null"
+}
+// entity 72
+{
+layer "Lights"
+"classname" "light"
+"intensity" ".6"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "840.0 384.0 -243.0"
+}
+// entity 73
+{
+layer "Lights"
+"origin" "4010.9 6659.1 40.3"
+"classname" "reflection_probe"
+}
+// entity 74
+{
+layer "Lights"
+"origin" "4026.9 8443.1 296.3"
+"classname" "reflection_probe"
+}
+// entity 75
+{
+layer "Lights"
+"origin" "4954.9 8227.1 352.3"
+"classname" "reflection_probe"
+}
+// entity 76
+{
+layer "Lights"
+"origin" "1122.9 9227.1 328.3"
+"classname" "reflection_probe"
+}
+// entity 77
+{
+layer "Lights"
+"origin" "-701.1 11267.1 296.3"
+"classname" "reflection_probe"
+}
+// entity 78
+{
+layer "Lights"
+"origin" "-61.1 12795.1 248.3"
+"classname" "reflection_probe"
+}
+// entity 79
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto1"
+"origin" "3238.0 7404.0 344.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 80
+{
+layer "Lights"
+"origin" "2994.0 7180.0 188.0"
+"classname" "reflection_probe"
+}
+// entity 81
+{
+layer "Lights"
+"origin" "3058.0 7436.0 188.0"
+"classname" "reflection_probe"
+}
+// entity 82
+{
+layer "Lights"
+"origin" "2610.0 7564.0 188.0"
+"classname" "reflection_probe"
+}
+// entity 83
+{
+layer "Lights"
+"origin" "3114.0 7636.0 336.0"
+"classname" "reflection_probe"
+}
+// entity 84
+{
+layer "Lights"
+"origin" "3122.0 7636.0 188.0"
+"classname" "reflection_probe"
+}
+// entity 85
+{
+layer "Lights"
+"origin" "3202.0 7420.0 360.0"
+"targetname" "Shiftyauto1"
+"classname" "info_null"
+}
+// entity 86
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto4"
+"origin" "3238.0 7404.0 336.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 87
+{
+layer "Lights"
+"origin" "3202.0 7420.0 312.0"
+"targetname" "Shiftyauto4"
+"classname" "info_null"
+}
+// entity 88
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "110"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto13"
+"origin" "2890.0 7752.0 341.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "0.8"
+"classname" "light"
+}
+// entity 89
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "2872.0 7708.0 360.0"
+"targetname" "Shiftyauto13"
+"classname" "info_null"
+}
+// entity 90
+{
+layer "Lights"
+"fov_outer" "65"
+"fov_inner" "15"
+"exponent" "2"
+"target" "Shiftyauto15"
+"origin" "3238.0 7596.0 344.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 91
+{
+layer "Lights"
+"origin" "3198.0 7636.0 360.0"
+"targetname" "Shiftyauto15"
+"classname" "info_null"
+}
+// entity 92
+{
+layer "Lights"
+"fov_outer" "65"
+"fov_inner" "15"
+"exponent" "2"
+"target" "Shiftyauto17"
+"origin" "3238.0 7596.0 336.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 93
+{
+layer "Lights"
+"origin" "3198.0 7636.0 312.0"
+"targetname" "Shiftyauto17"
+"classname" "info_null"
+}
+// entity 94
+{
+layer "Lights"
+"angles" "0 270 0"
+"fov_outer" "110"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto23"
+"origin" "2629.5 7369.0 192.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 95
+{
+layer "Lights"
+"angles" "0 270 0"
+"origin" "2591.5 7413.0 208.0"
+"targetname" "Shiftyauto23"
+"classname" "info_null"
+}
+// entity 96
+{
+layer "Lights"
+"angles" "0 270 0"
+"fov_outer" "110"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto24"
+"origin" "2629.5 7369.0 184.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 97
+{
+layer "Lights"
+"angles" "0 270 0"
+"origin" "2591.5 7413.0 160.0"
+"targetname" "Shiftyauto24"
+"classname" "info_null"
+}
+// entity 98
+{
+layer "Lights"
+"fov_outer" "110"
+"exponent" "2"
+"target" "Shiftyauto25"
+"origin" "2810.0 7752.0 194.0"
+"def" "light_point_linear"
+"radius" "640"
+"_color" "0.921569 0.956863 1"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 99
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "2810.0 7720.0 208.0"
+"targetname" "Shiftyauto25"
+"classname" "info_null"
+}
+// entity 100
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "110"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto26"
+"origin" "2810.0 7752.0 186.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 101
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "2818.0 7692.0 168.0"
+"targetname" "Shiftyauto26"
+"classname" "info_null"
+}
+// entity 102
+{
+layer "Lights"
+"fov_outer" "85"
+"fov_inner" "20"
+"exponent" "3"
+"target" "Shiftyauto27"
+"origin" "3238.0 7404.0 200.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 103
+{
+layer "Lights"
+"fov_outer" "85"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto28"
+"origin" "3238.0 7404.0 192.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 104
+{
+layer "Lights"
+"origin" "3208.0 7442.0 168.0"
+"targetname" "Shiftyauto28"
+"classname" "info_null"
+}
+// entity 105
+{
+layer "Lights"
+"fov_outer" "90"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto29"
+"origin" "3238.0 7596.0 200.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 106
+{
+layer "Lights"
+"origin" "3198.0 7636.0 216.0"
+"targetname" "Shiftyauto29"
+"classname" "info_null"
+}
+// entity 107
+{
+layer "Lights"
+"fov_outer" "90"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto30"
+"origin" "3238.0 7596.0 192.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 108
+{
+layer "Lights"
+"origin" "3198.0 7636.0 168.0"
+"targetname" "Shiftyauto30"
+"classname" "info_null"
+}
+// entity 109
+{
+layer "Lights"
+"origin" "2790.0 7432.0 286.0"
+"def" "light_point_linear"
+"radius" "200"
+"_color" "0.921569 0.956863 1"
+"intensity" ".4"
+"classname" "light"
+}
+// entity 110
+{
+layer "Lights"
+"classname" "reflection_probe"
+"origin" "2890.0 7316.0 340.0"
+}
+// entity 111
+{
+layer "Lights"
+"classname" "info_null"
+"targetname" "Shiftyauto12"
+"origin" "2852.0 7312.0 314.0"
+"angles" "0 270 0"
+}
+// entity 112
+{
+layer "Lights"
+"classname" "info_null"
+"targetname" "Shiftyauto11"
+"origin" "2852.0 7312.0 362.0"
+"angles" "0 270 0"
+}
+// entity 113
+{
+layer "Lights"
+"classname" "info_null"
+"targetname" "Shiftyauto35"
+"origin" "2956.0 7312.0 482.0"
+"angles" "0 270 0"
+}
+// entity 114
+{
+layer "Lights"
+"classname" "light"
+"intensity" "1.5"
+"_color" "0.98 0.92 0.82"
+"radius" "275"
+"def" "light_point_linear"
+"origin" "2890.0 7268.0 338.0"
+"target" "Shiftyauto12"
+"exponent" "1"
+"fov_inner" "60"
+"fov_outer" "110"
+"angles" "0 270 0"
+}
+// entity 115
+{
+layer "Lights"
+"classname" "light"
+"intensity" "1.5"
+"_color" "0.925490 0.960784 1.000000"
+"radius" "275"
+"def" "light_point_linear"
+"origin" "2890.0 7268.0 346.0"
+"target" "Shiftyauto11"
+"exponent" "1"
+"fov_inner" "60"
+"fov_outer" "110"
+"angles" "0 270 0"
+}
+// entity 116
+{
+layer "Lights"
+"classname" "light"
+"intensity" "1.2"
+"_color" "0.925490 0.960784 1.000000"
+"radius" "450"
+"def" "light_point_linear"
+"origin" "2994.0 7268.0 466.0"
+"target" "Shiftyauto35"
+"exponent" "1"
+"fov_inner" "60"
+"fov_outer" "110"
+"angles" "0 270 0"
+}
+// entity 117
+{
+layer "Lights"
+"fov_outer" "65"
+"fov_inner" "15"
+"exponent" "2"
+"target" "Shiftyauto37"
+"origin" "3100.0 7256.0 344.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 118
+{
+layer "Lights"
+"origin" "3060.0 7296.0 360.0"
+"targetname" "Shiftyauto37"
+"classname" "info_null"
+}
+// entity 119
+{
+layer "Lights"
+"fov_outer" "65"
+"fov_inner" "15"
+"exponent" "2"
+"target" "Shiftyauto38"
+"origin" "3100.0 7256.0 336.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.2"
+"classname" "light"
+}
+// entity 120
+{
+layer "Lights"
+"origin" "3060.0 7296.0 312.0"
+"targetname" "Shiftyauto38"
+"classname" "info_null"
+}
+// entity 121
+{
+layer "Lights"
+"fov_outer" "110"
+"fov_inner" "45"
+"exponent" "3"
+"target" "Shiftyauto39"
+"origin" "3100.0 7256.0 192.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 122
+{
+layer "Lights"
+"origin" "3060.0 7296.0 226.0"
+"targetname" "Shiftyauto39"
+"classname" "info_null"
+}
+// entity 123
+{
+layer "Lights"
+"fov_outer" "90"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto40"
+"origin" "3100.0 7256.0 184.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 124
+{
+layer "Lights"
+"origin" "3060.0 7296.0 160.0"
+"targetname" "Shiftyauto40"
+"classname" "info_null"
+}
+// entity 125
+{
+layer "Lights"
+"fov_outer" "110"
+"fov_inner" "45"
+"exponent" "3"
+"target" "Shiftyauto41"
+"origin" "2890.0 7254.0 192.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 126
+{
+layer "Lights"
+"origin" "2890.0 7266.0 230.0"
+"targetname" "Shiftyauto41"
+"classname" "info_null"
+}
+// entity 127
+{
+layer "Lights"
+"fov_outer" "90"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto42"
+"origin" "2890.0 7254.0 184.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 128
+{
+layer "Lights"
+"origin" "2754.0 7328.0 166.0"
+"targetname" "Shiftyauto42"
+"classname" "info_null"
+}
+// entity 129
+{
+layer "Lights"
+"origin" "3018.0 7410.0 200.0"
+"def" "light_point_linear"
+"radius" "475"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 130
+{
+layer "Lights"
+"origin" "3098.0 7388.0 332.0"
+"def" "light_point_linear"
+"radius" "225"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 131
+{
+layer "Lights"
+"origin" "2630.0 7564.0 190.0"
+"def" "light_point_linear"
+"radius" "200"
+"_color" "0.921569 0.956863 1"
+"intensity" ".4"
+"classname" "light"
+}
+// entity 132
+{
+layer "Lights"
+"origin" "3204.0 7420.0 236.0"
+"targetname" "Shiftyauto27"
+"classname" "info_null"
+}
+// entity 133
+{
+layer "Lights"
+"fov_outer" "85"
+"fov_inner" "20"
+"exponent" "3"
+"target" "Shiftyauto88"
+"origin" "1448.0 -7010.0 -344.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 134
+{
+layer "Lights"
+"fov_outer" "85"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto89"
+"origin" "1448.0 -7010.0 -352.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 135
+{
+layer "Lights"
+"origin" "1418.0 -6972.0 -392.0"
+"targetname" "Shiftyauto89"
+"classname" "info_null"
+}
+// entity 136
+{
+layer "Lights"
+"origin" "1414.0 -6994.0 -324.0"
+"targetname" "Shiftyauto88"
+"classname" "info_null"
+}
+// entity 137
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "20"
+"exponent" "3"
+"target" "Shiftyauto90"
+"origin" "192.0 5048.0 30.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 138
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto91"
+"origin" "192.0 5048.0 22.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 139
+{
+layer "Lights"
+"origin" "162.0 5086.0 -10.0"
+"targetname" "Shiftyauto91"
+"classname" "info_null"
+}
+// entity 140
+{
+layer "Lights"
+"origin" "158.0 5064.0 66.0"
+"targetname" "Shiftyauto90"
+"classname" "info_null"
+}
+// entity 141
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "20"
+"exponent" "3"
+"target" "Shiftyauto92"
+"origin" "-121.5 5122.0 30.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 142
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto93"
+"origin" "-121.5 5122.0 22.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 143
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "-159.5 5092.0 -10.0"
+"targetname" "Shiftyauto93"
+"classname" "info_null"
+}
+// entity 144
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "-137.5 5088.0 66.0"
+"targetname" "Shiftyauto92"
+"classname" "info_null"
+}
+// entity 145
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "20"
+"exponent" "3"
+"target" "Shiftyauto94"
+"origin" "-267.5 5122.0 30.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 146
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto95"
+"origin" "-267.5 5122.0 22.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 147
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "-267.5 5094.0 -10.0"
+"targetname" "Shiftyauto95"
+"classname" "info_null"
+}
+// entity 148
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "-267.5 5094.0 66.0"
+"targetname" "Shiftyauto94"
+"classname" "info_null"
+}
+// entity 149
+{
+layer "Lights"
+"angles" "0 180 0"
+"fov_outer" "120"
+"fov_inner" "20"
+"exponent" "3"
+"target" "Shiftyauto96"
+"origin" "-422.0 4946.5 30.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 150
+{
+layer "Lights"
+"angles" "0 180 0"
+"fov_outer" "120"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto97"
+"origin" "-422.0 4946.5 22.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 151
+{
+layer "Lights"
+"angles" "0 180 0"
+"origin" "-394.0 4946.5 -10.0"
+"targetname" "Shiftyauto97"
+"classname" "info_null"
+}
+// entity 152
+{
+layer "Lights"
+"angles" "0 180 0"
+"origin" "-394.0 4946.5 66.0"
+"targetname" "Shiftyauto96"
+"classname" "info_null"
+}
+// entity 153
+{
+layer "Lights"
+"origin" "-192.0 4964.0 30.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 154
+{
+layer "Lights"
+"origin" "-176.0 4964.0 30.0"
+"classname" "reflection_probe"
+}
+// entity 155
+{
+layer "Lights"
+"origin" "1287.0 -6951.0 -350.0"
+"classname" "reflection_probe"
+}
+// entity 156
+{
+layer "Lights"
+"fov_outer" "85"
+"fov_inner" "20"
+"exponent" "3"
+"target" "Shiftyauto98"
+"origin" "5268.0 8248.0 484.0"
+"def" "light_point_linear"
+"radius" "375"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 157
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "45"
+"exponent" "2"
+"target" "Shiftyauto99"
+"origin" "5268.0 8248.0 476.0"
+"def" "light_point_linear"
+"radius" "525"
+"_color" "0.98 0.92 0.82"
+"intensity" "1"
+"classname" "light"
+}
+// entity 158
+{
+layer "Lights"
+"origin" "5222.0 8294.0 438.0"
+"targetname" "Shiftyauto99"
+"classname" "info_null"
+}
+// entity 159
+{
+layer "Lights"
+"origin" "5218.0 8272.0 506.0"
+"targetname" "Shiftyauto98"
+"classname" "info_null"
+}
+// entity 160
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto100"
+"origin" "5260.0 8060.0 394.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 161
+{
+layer "Lights"
+"origin" "5228.0 8094.0 410.0"
+"targetname" "Shiftyauto100"
+"classname" "info_null"
+}
+// entity 162
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto101"
+"origin" "5260.0 8060.0 386.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1"
+"classname" "light"
+}
+// entity 163
+{
+layer "Lights"
+"origin" "5228.0 8094.0 340.0"
+"targetname" "Shiftyauto101"
+"classname" "info_null"
+}
+// entity 164
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto102"
+"origin" "5260.0 8268.0 378.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 165
+{
+layer "Lights"
+"origin" "5226.0 8302.0 394.0"
+"targetname" "Shiftyauto102"
+"classname" "info_null"
+}
+// entity 166
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto103"
+"origin" "5260.0 8268.0 370.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1"
+"classname" "light"
+}
+// entity 167
+{
+layer "Lights"
+"origin" "5226.0 8302.0 324.0"
+"targetname" "Shiftyauto103"
+"classname" "info_null"
+}
+// entity 168
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto104"
+"origin" "5260.0 8368.0 386.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 169
+{
+layer "Lights"
+"origin" "5226.0 8402.0 408.0"
+"targetname" "Shiftyauto104"
+"classname" "info_null"
+}
+// entity 170
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto105"
+"origin" "5260.0 8368.0 378.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1"
+"classname" "light"
+}
+// entity 171
+{
+layer "Lights"
+"origin" "5226.0 8402.0 332.0"
+"targetname" "Shiftyauto105"
+"classname" "info_null"
+}
+// entity 172
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto106"
+"origin" "5002.0 8040.0 382.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 173
+{
+layer "Lights"
+"origin" "4970.0 8074.0 398.0"
+"targetname" "Shiftyauto106"
+"classname" "info_null"
+}
+// entity 174
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto107"
+"origin" "5002.0 8040.0 374.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1"
+"classname" "light"
+}
+// entity 175
+{
+layer "Lights"
+"origin" "4970.0 8074.0 328.0"
+"targetname" "Shiftyauto107"
+"classname" "info_null"
+}
+// entity 176
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto108"
+"origin" "4914.0 8040.0 382.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1"
+"classname" "light"
+}
+// entity 177
+{
+layer "Lights"
+"origin" "4882.0 8074.0 398.0"
+"targetname" "Shiftyauto108"
+"classname" "info_null"
+}
+// entity 178
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto109"
+"origin" "4914.0 8040.0 374.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1"
+"classname" "light"
+}
+// entity 179
+{
+layer "Lights"
+"origin" "4882.0 8074.0 328.0"
+"targetname" "Shiftyauto109"
+"classname" "info_null"
+}
+// entity 180
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto110"
+"origin" "4910.0 9096.0 378.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 181
+{
+layer "Lights"
+"origin" "4910.0 9064.0 400.0"
+"targetname" "Shiftyauto110"
+"classname" "info_null"
+}
+// entity 182
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto111"
+"origin" "4910.0 9096.0 370.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 183
+{
+layer "Lights"
+"origin" "4910.0 9064.0 336.0"
+"targetname" "Shiftyauto111"
+"classname" "info_null"
+}
+// entity 184
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto112"
+"origin" "5046.0 9098.0 370.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 185
+{
+layer "Lights"
+"origin" "5046.0 9066.0 392.0"
+"targetname" "Shiftyauto112"
+"classname" "info_null"
+}
+// entity 186
+{
+layer "Lights"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto113"
+"origin" "5046.0 9098.0 362.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 187
+{
+layer "Lights"
+"origin" "5046.0 9066.0 328.0"
+"targetname" "Shiftyauto113"
+"classname" "info_null"
+}
+// entity 188
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto114"
+"origin" "4800.0 8892.0 386.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 189
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4832.0 8892.0 408.0"
+"targetname" "Shiftyauto114"
+"classname" "info_null"
+}
+// entity 190
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto115"
+"origin" "4800.0 8892.0 378.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 191
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4832.0 8892.0 344.0"
+"targetname" "Shiftyauto115"
+"classname" "info_null"
+}
+// entity 192
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto116"
+"origin" "4800.0 8640.0 386.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 193
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4832.0 8640.0 408.0"
+"targetname" "Shiftyauto116"
+"classname" "info_null"
+}
+// entity 194
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto117"
+"origin" "4800.0 8640.0 378.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 195
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4832.0 8640.0 344.0"
+"targetname" "Shiftyauto117"
+"classname" "info_null"
+}
+// entity 196
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto118"
+"origin" "4800.0 8542.0 386.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 197
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4832.0 8542.0 408.0"
+"targetname" "Shiftyauto118"
+"classname" "info_null"
+}
+// entity 198
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto119"
+"origin" "4800.0 8542.0 378.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" "1"
+"classname" "light"
+}
+// entity 199
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4832.0 8542.0 344.0"
+"targetname" "Shiftyauto119"
+"classname" "info_null"
+}
+// entity 200
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto120"
+"origin" "4656.0 8406.0 358.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 201
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4688.0 8406.0 388.0"
+"targetname" "Shiftyauto120"
+"classname" "info_null"
+}
+// entity 202
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto121"
+"origin" "4656.0 8406.0 350.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 203
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4688.0 8406.0 324.0"
+"targetname" "Shiftyauto121"
+"classname" "info_null"
+}
+// entity 204
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto122"
+"origin" "4646.0 8228.0 358.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 205
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4678.0 8228.0 388.0"
+"targetname" "Shiftyauto122"
+"classname" "info_null"
+}
+// entity 206
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto123"
+"origin" "4646.0 8228.0 350.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 207
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4678.0 8228.0 324.0"
+"targetname" "Shiftyauto123"
+"classname" "info_null"
+}
+// entity 208
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto124"
+"origin" "4640.0 8228.0 524.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 209
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4672.0 8228.0 554.0"
+"targetname" "Shiftyauto124"
+"classname" "info_null"
+}
+// entity 210
+{
+layer "Lights"
+"angles" "0 90 0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "1"
+"target" "Shiftyauto125"
+"origin" "4640.0 8228.0 516.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".8"
+"classname" "light"
+}
+// entity 211
+{
+layer "Lights"
+"angles" "0 90 0"
+"origin" "4672.0 8228.0 490.0"
+"targetname" "Shiftyauto125"
+"classname" "info_null"
+}
+// entity 212
+{
+"script_start_dist" "240"
+"script_halfway_dist" "800"
+"script_halfway_height" "340"
+"script_base_height" "-650"
+"script_color" "0.6431 0.5882 0.5058"
+"script_transition_time" "10"
+"targetname" "trigger_fog"
+"script_vision" "see1_fire"
+"script_vision_time" "8"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( 1448 2248 -312 ) ( 952 2248 -312 ) ( 952 2096 -312 ) trigger 64 64 0 -15.995361 0 0 lightmap_gray 16384 16384 0 -16 0 0
+ ( 960 2096 0 ) ( 960 2248 0 ) ( 1456 2248 0 ) trigger 64 64 0 -16.001221 0 0 lightmap_gray 16384 16384.037 0 -15.994717 0 0
+ ( 1448 2048 -40 ) ( 1448 2048 -312 ) ( 928 2168 -312 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1448 2048 -312 ) ( 1448 2048 -40 ) ( 1464 2104 -40 ) trigger 64 64 16 0 0 0 lightmap_gray 16384.145 16384 15.982319 0 0 0
+ ( 944 2232 -40 ) ( 944 2232 -312 ) ( 1464 2104 -312 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 928 2168 -40 ) ( 928 2168 -312 ) ( 944 2232 -312 ) trigger 64 64 15.994629 0 0 0 lightmap_gray 16384.16 16384 15.978214 0 0 0
+}
+}
+// entity 213
+{
+"script_start_dist" "1500"
+"script_halfway_dist" "10000"
+"script_halfway_height" "600"
+"script_base_height" "54"
+"script_color" "0.62 0.59 0.52"
+"script_transition_time" "12"
+"targetname" "trigger_fog"
+"script_vision_time" "8"
+"script_vision" "see1"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( 1520 2536 -312 ) ( 1024 2536 -312 ) ( 1024 2384 -312 ) trigger 64 64 -8.0019531 16 0 0 lightmap_gray 16384 16383.99 72 -304.00201 0 0
+ ( 1032 2384 0 ) ( 1032 2536 0 ) ( 1528 2536 0 ) trigger 64 64 -8.0010986 15.998214 0 0 lightmap_gray 16384 16384 72 -304 0 0
+ ( 1520 2336 -40 ) ( 1520 2336 -312 ) ( 1000 2456 -312 ) trigger 64 64 -8 0 0 0 lightmap_gray 16384 16384 72 0 0 0
+ ( 1520 2336 -312 ) ( 1520 2336 -40 ) ( 1536 2392 -40 ) trigger 64 64 -16.009521 0 0 0 lightmap_gray 16384.178 16384 303.97937 0 0 0
+ ( 1016 2520 -40 ) ( 1016 2520 -312 ) ( 1536 2392 -312 ) trigger 64 64 -8 0 0 0 lightmap_gray 16384 16384 72 0 0 0
+ ( 1000 2456 -40 ) ( 1000 2456 -312 ) ( 1016 2520 -312 ) trigger 64 64 -15.996094 0 0 0 lightmap_gray 16383.984 16384 304.00238 0 0 0
+}
+}
+// entity 214
+{
+"lightpriority" "1"
+"targetname" "fire_flicker"
+"origin" "1261.0 -6909.0 -393.0"
+"fov_outer" "120"
+"fov_inner" "60"
+"exponent" "2"
+"target" "auto126"
+"spawnflags" "6"
+"def" "light_point_linear"
+"radius" "96"
+"_color" "1 0.5 0"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 215
+{
+"origin" "1207.5 -6988.5 -386.0"
+"targetname" "auto126"
+"classname" "info_null"
+}
+// entity 216
+{
+"classname" "light"
+"intensity" ".35"
+"_color" "1 0.5 0"
+"radius" "325"
+"def" "light_point_linear"
+"exponent" "2"
+"origin" "1275.0 -7020.0 -361.0"
+}
+// entity 217
+{
+"classname" "light"
+"intensity" "1"
+"_color" "1 0.5 0"
+"radius" "80"
+"def" "light_point_linear"
+"origin" "1261.0 -6888.0 -382.0"
+}
+// entity 218
+{
+"origin" "1476.0 -7220.0 -350.0"
+"classname" "reflection_probe"
+}
+// entity 219
+{
+"origin" "1391.0 -7129.0 -350.0"
+"classname" "reflection_probe"
+}
+// entity 220
+{
+"fov_outer" "85"
+"fov_inner" "20"
+"exponent" "3"
+"target" "auto127"
+"origin" "1287.0 -7186.0 -344.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 221
+{
+"fov_outer" "85"
+"fov_inner" "45"
+"exponent" "2"
+"target" "auto128"
+"origin" "1287.0 -7186.0 -352.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.98 0.92 0.82"
+"intensity" "1.5"
+"classname" "light"
+}
+// entity 222
+{
+"origin" "1257.0 -7148.0 -392.0"
+"targetname" "auto128"
+"classname" "info_null"
+}
+// entity 223
+{
+"origin" "1253.0 -7170.0 -324.0"
+"targetname" "auto127"
+"classname" "info_null"
+}
+// entity 224
+{
+"fov_outer" "160"
+"fov_inner" "20"
+"exponent" "3"
+"target" "auto129"
+"origin" "1431.0 -7009.0 -344.0"
+"def" "light_point_linear"
+"radius" "350"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "0.5"
+"classname" "light"
+}
+// entity 225
+{
+"origin" "1396.0 -7007.0 -344.0"
+"targetname" "auto129"
+"classname" "info_null"
+}
+// entity 226
+{
+"fov_outer" "160"
+"fov_inner" "20"
+"exponent" "3"
+"target" "auto130"
+"origin" "1288.0 -7170.0 -344.0"
+"def" "light_point_linear"
+"radius" "350"
+"_color" "0.925490 0.960784 1.000000"
+"intensity" "0.5"
+"classname" "light"
+}
+// entity 227
+{
+"origin" "1295.0 -7123.0 -345.0"
+"targetname" "auto130"
+"classname" "info_null"
+}
+// entity 228
+{
+"origin" "-320.0 5212.0 134.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 229
+{
+"origin" "-88.0 5212.0 134.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 230
+{
+"classname" "light"
+"intensity" ".3"
+"_color" "0.921569 0.956863 1"
+"radius" "275"
+"def" "light_point_linear"
+"origin" "168.0 5212.0 134.0"
+}
+// entity 231
+{
+"origin" "-320.0 5228.0 22.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 232
+{
+"origin" "-88.0 5228.0 22.0"
+"def" "light_point_linear"
+"radius" "275"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 233
+{
+"classname" "light"
+"intensity" ".3"
+"_color" "0.921569 0.956863 1"
+"radius" "275"
+"def" "light_point_linear"
+"origin" "168.0 5228.0 22.0"
+}
+// entity 234
+{
+"origin" "4926.0 8980.0 374.0"
+"def" "light_point_linear"
+"radius" "400"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 235
+{
+"origin" "4918.0 8764.0 374.0"
+"def" "light_point_linear"
+"radius" "400"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 236
+{
+"origin" "4918.0 8484.0 374.0"
+"def" "light_point_linear"
+"radius" "400"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 237
+{
+"origin" "4814.0 8276.0 374.0"
+"def" "light_point_linear"
+"radius" "400"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}
+// entity 238
+{
+"origin" "5030.0 8324.0 374.0"
+"def" "light_point_linear"
+"radius" "400"
+"_color" "0.921569 0.956863 1"
+"intensity" ".3"
+"classname" "light"
+}

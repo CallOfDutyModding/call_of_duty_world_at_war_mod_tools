@@ -1,0 +1,80 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"targetname" "southeast_outside_spawners"
+"treescatteramount" "0.8"
+"treescatterintensity" "0.8"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"spawnflags" "1024"
+"skyboxmodel" "skybox_pel2"
+"_color" "1.000000 1.000000 0.501961"
+"ambient" "0.15"
+"sundiffusecolor" "0.917647 0.945098 1"
+"diffusefraction" "0.25"
+"classname" "worldspawn"
+"sundirection" "-30 -340 0"
+"suncolor" "1 0.976471 0.882353"
+"sunlight" "1.3"
+}
+// entity 1
+{
+"script_noteworthy" "panzerschrek_zombie"
+"angles" "0 0 0"
+"target" "panzerschrek_zombie"
+"zombie_weapon_upgrade" "panzerschrek_zombie"
+"targetname" "weapon_upgrade"
+"origin" "0 0 0"
+"classname" "trigger_use"
+// brush 0
+{
+ ( -14 4 -8 ) ( -14 -4 -8 ) ( 41 -4 -8 ) trigger 64 64 404 1219.9969 90 0 lightmap_gray 16384 16384 404.00305 1220 90 0
+ ( 28 -4 11 ) ( -27 -4 11 ) ( -27 4 11 ) trigger 64 64 404 1220 90 0 lightmap_gray 16383.875 16384 403.99738 1220 90 0
+ ( 34 -4 6 ) ( 34 4 6 ) ( 34 4 -6 ) trigger 64 64 404 -642.00482 0 0 lightmap_gray 16384 16384.334 404.00433 -642.01202 0 0
+ ( 28 0 6 ) ( -27 0 6 ) ( -27 0 -6 ) trigger 64 -64 -1219.9973 642 180 0 lightmap_gray 16384 -16384.324 -1219.9973 642.01282 180 0
+ ( -37 4 4 ) ( -37 -4 4 ) ( -37 -4 -8 ) trigger 64 64 404 -642.00623 0 0 lightmap_gray 16384.5 16384 404.0141 -642 0 0
+ ( -40 -3 4 ) ( 15 -3 4 ) ( 15 -3 -8 ) trigger 64 -64 -1220.0242 642.01263 180 0 lightmap_gray 16384.385 -16384.063 -1220.0247 642.00482 180 0
+}
+}
+// entity 2
+{
+"target" "panzerschrek_zombie_chalk"
+"classname" "script_model"
+"origin" "0.0 0.0 0.0"
+"model" "weapon_ger_panzerschreck_at"
+"angles" "0 0 0"
+"targetname" "panzerschrek_zombie"
+}
+// entity 3
+{
+"targetname" "panzerschrek_zombie_chalk"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"classname" "script_brushmodel"
+// brush 0
+ {
+  curve
+  {
+   panzerschreck_chalk
+   lightmap_gray
+   3 3 16 8
+   (
+	v -49.499977 0 -11.000004 t 0 -0 -1.125 2.4375
+	v -49.499977 0 1.4999678 t 0 -512 -1.125 -0.12499329
+	v -49.499992 0 13.999937 t 0 -1024 -1.125 -2.6874862
+   )
+   (
+	v -1.2499828 0 -10.999974 t 512 -0 -0.093749866 2.4374938
+	v -1.2499847 0 1.5000038 t 512 -512 -0.09375 -0.12500024
+	v -1.2499866 0 13.999977 t 512 -1024 -0.093750149 -2.6874945
+   )
+   (
+	v 47.000023 0 -10.999931 t 1024 -0 0.9375 2.4374857
+	v 47 0 1.5000398 t 1024 -512 0.9375 -0.12500718
+	v 47 0 14.000012 t 1024 -1024 0.9375 -2.6875
+   )
+  }
+ }
+}

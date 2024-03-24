@@ -1,0 +1,151 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"radius" "140"
+"skyboxmodel" "skybox_ber1"
+"_color" "0.5 0.5 .62 1"
+"ambient" ".2"
+"sundiffusecolor" "0.75 0.82 0.85"
+"diffusefraction" ".2"
+"classname" "worldspawn"
+"sundirection" "-165 119 0"
+"suncolor" "1 0.929412 0.921569"
+"sunlight" "1.5"
+// brush 0
+{
+ ( 211.5 -3764.75 -407.5 ) ( 195.5 -3764.75 -407.5 ) ( 195.5 -3772.75 -407.5 ) nodraw_notsolid 64 64 211.37317 3768.7769 0 0 lightmap_gray 16384 16383.885 211.37317 3768.75 0 0
+ ( 203.5 -3772.75 -375.5 ) ( 203.5 -3764.75 -375.5 ) ( 219.5 -3764.75 -375.5 ) nodraw_notsolid 64 64 211.375 3768.6951 0 0 lightmap_gray 16384 16384.238 211.375 3768.75 0 0
+ ( 203.5 -3772.75 -351.5 ) ( 219.5 -3772.75 -351.5 ) ( 219.5 -3772.75 -367.5 ) nodraw_notsolid 64 64 211.375 511.5 0 0 lightmap_gray 16383.992 16384 211.375 511.5 0 0
+ ( 215.5 -3772.75 -351.5 ) ( 215.5 -3764.75 -351.5 ) ( 215.5 -3764.75 -367.5 ) nodraw_notsolid 64 64 -3768.6951 511.49628 0 0 lightmap_gray 16384.238 16384 -3768.75 511.49628 0 0
+ ( 219.5 -3764.75 -351.5 ) ( 203.5 -3764.75 -351.5 ) ( 203.5 -3764.75 -367.5 ) nodraw_notsolid 64 64 211.375 511.5 0 0 lightmap_gray 16383.992 16384 211.375 511.5 0 0
+ ( 207.5 -3764.75 -351.5 ) ( 207.5 -3772.75 -351.5 ) ( 207.5 -3772.75 -367.5 ) nodraw_notsolid 64 64 -3768.7769 511.49734 0 0 lightmap_gray 16383.885 16384 -3768.75 511.49734 0 0
+}
+// brush 1
+{
+ ( 243.5 -3764.75 -375.5 ) ( 179.5 -3764.75 -375.5 ) ( 179.5 -3772.75 -375.5 ) nodraw_notsolid 64 64 211.37646 3768.7769 0 0 lightmap_gray 16384 16383.885 211.37646 3768.75 0 0
+ ( 179.5 -3772.75 -367.5 ) ( 179.5 -3764.75 -367.5 ) ( 243.5 -3764.75 -367.5 ) nodraw_notsolid 64 64 211.3763 3768.6951 0 0 lightmap_gray 16384 16384.238 211.3763 3768.75 0 0
+ ( 179.5 -3772.75 -359.5 ) ( 243.5 -3772.75 -359.5 ) ( 243.5 -3772.75 -375.5 ) nodraw_notsolid 64 64 211.375 511.5 0 0 lightmap_gray 16384 16384.016 211.375 511.5 0 0
+ ( 227.5 -3772.75 -359.5 ) ( 227.5 -3764.75 -359.5 ) ( 227.5 -3764.75 -375.5 ) nodraw_notsolid 64 64 -3768.6951 511.50348 0 0 lightmap_gray 16384.238 16384 -3768.75 511.50348 0 0
+ ( 259.5 -3764.75 -359.5 ) ( 195.5 -3764.75 -359.5 ) ( 195.5 -3764.75 -375.5 ) nodraw_notsolid 64 64 211.375 511.5 0 0 lightmap_gray 16384 16384 211.375 511.5 0 0
+ ( 195.5 -3764.75 -359.5 ) ( 195.5 -3772.75 -359.5 ) ( 195.5 -3772.75 -375.5 ) nodraw_notsolid 64 64 -3768.7771 511.49738 0 0 lightmap_gray 16383.883 16384 -3768.75 511.49738 0 0
+}
+// brush 2
+{
+ ( 838 -2587.25 -366.5 ) ( 822 -2587.25 -366.5 ) ( 822 -2595.25 -366.5 ) nodraw_notsolid 64 64 837.87756 2591.28 0 0 lightmap_gray 16384 16383.811 837.87756 2591.25 0 0
+ ( 830 -2595.25 -334.5 ) ( 830 -2587.25 -334.5 ) ( 846 -2587.25 -334.5 ) nodraw_notsolid 64 64 837.88293 2591.28 0 0 lightmap_gray 16384 16383.811 837.88293 2591.25 0 0
+ ( 830 -2595.25 -310.5 ) ( 846 -2595.25 -310.5 ) ( 846 -2595.25 -326.5 ) nodraw_notsolid 64 64 837.875 470.5 0 0 lightmap_gray 16383.994 16384 837.875 470.5 0 0
+ ( 842 -2595.25 -310.5 ) ( 842 -2587.25 -310.5 ) ( 842 -2587.25 -326.5 ) nodraw_notsolid 64 64 -2591.28 470.49796 0 0 lightmap_gray 16383.811 16384 -2591.25 470.49796 0 0
+ ( 846 -2587.25 -310.5 ) ( 830 -2587.25 -310.5 ) ( 830 -2587.25 -326.5 ) nodraw_notsolid 64 64 837.875 470.5 0 0 lightmap_gray 16383.994 16384 837.875 470.5 0 0
+ ( 834 -2587.25 -310.5 ) ( 834 -2595.25 -310.5 ) ( 834 -2595.25 -326.5 ) nodraw_notsolid 64 64 -2591.28 470.49796 0 0 lightmap_gray 16383.811 16384 -2591.25 470.49796 0 0
+}
+// brush 3
+{
+ ( 870 -2587.25 -334.5 ) ( 806 -2587.25 -334.5 ) ( 806 -2595.25 -334.5 ) nodraw_notsolid 64 64 837.875 2591.28 0 0 lightmap_gray 16384 16383.811 837.875 2591.25 0 0
+ ( 806 -2595.25 -326.5 ) ( 806 -2587.25 -326.5 ) ( 870 -2587.25 -326.5 ) nodraw_notsolid 64 64 837.87988 2591.28 0 0 lightmap_gray 16384 16383.811 837.87988 2591.25 0 0
+ ( 806 -2595.25 -318.5 ) ( 870 -2595.25 -318.5 ) ( 870 -2595.25 -334.5 ) nodraw_notsolid 64 64 837.875 470.5 0 0 lightmap_gray 16384 16384 837.875 470.5 0 0
+ ( 854 -2595.25 -318.5 ) ( 854 -2587.25 -318.5 ) ( 854 -2587.25 -334.5 ) nodraw_notsolid 64 64 -2591.28 470.49304 0 0 lightmap_gray 16383.811 16384 -2591.25 470.49304 0 0
+ ( 886 -2587.25 -318.5 ) ( 822 -2587.25 -318.5 ) ( 822 -2587.25 -334.5 ) nodraw_notsolid 64 64 837.875 470.5 0 0 lightmap_gray 16384 16384 837.875 470.5 0 0
+ ( 822 -2587.25 -318.5 ) ( 822 -2595.25 -318.5 ) ( 822 -2595.25 -334.5 ) nodraw_notsolid 64 64 -2591.28 470.49304 0 0 lightmap_gray 16383.811 16384 -2591.25 470.49304 0 0
+}
+}
+// entity 1
+{
+"script_gameobjectname" "twar"
+"twar_axis_dependants" "flag5;flag4;"
+"twar_allies_dependants" "flag1;flag2;"
+"script_linkto" "flag2 flag4"
+"script_linkname" "flag3"
+"targetname" "twar_flag_descriptor"
+"origin" "819.5 -2596.0 -397.0"
+"classname" "script_origin"
+}
+// entity 2
+{
+"origin" "-68.0 -1817.5 -414.5"
+"model" "_prefabs/mp/twar_flag_e.map"
+"classname" "misc_prefab"
+}
+// entity 3
+{
+"origin" "1809.8 -1854.0 -431.0"
+"model" "_prefabs/mp/twar_flag_d.map"
+"classname" "misc_prefab"
+}
+// entity 4
+{
+"script_gameobjectname" "twar"
+"twar_owner" "axis"
+"targetname" "twar_flag_descriptor"
+"twar_axis_dependants" "flag5;"
+"origin" "1807.3 -1853.0 -344.0"
+"script_linkto" "flag3 flag5"
+"script_linkname" "flag4"
+"twar_allies_dependants" "flag1;flag2;flag3;"
+"classname" "script_origin"
+}
+// entity 5
+{
+"script_gameobjectname" "twar"
+"twar_owner_home" "axis"
+"classname" "script_origin"
+"twar_owner" "axis"
+"origin" "-65.0 -1814.0 -333.0"
+"script_linkname" "flag5"
+"script_linkto" "flag4"
+"twar_allies_dependants" "flag1;flag2;flag3;flag4;"
+"targetname" "twar_flag_descriptor"
+}
+// entity 6
+{
+"twar_axis_dependants" "flag5;flag4;flag3;flag2;"
+"twar_owner_home" "allies"
+"twar_owner" "allies"
+"script_linkto" "flag2"
+"script_linkname" "flag1"
+"targetname" "twar_flag_descriptor"
+"origin" "1996.8 -3970.3 -531.9"
+"classname" "script_origin"
+"script_gameobjectname" "twar"
+}
+// entity 7
+{
+"classname" "misc_prefab"
+"model" "_prefabs/mp/twar_flag_a.map"
+"origin" "2007.8 -3974.8 -531.6"
+}
+// entity 8
+{
+"script_gameobjectname" "twar"
+"twar_owner" "allies"
+"twar_allies_dependants" "flag1;"
+"twar_axis_dependants" "flag5;flag4;flag3;"
+"script_linkto" "flag1 flag3"
+"script_linkname" "flag2"
+"targetname" "twar_flag_descriptor"
+"origin" "203.5 -3774.5 -431.0"
+"classname" "script_origin"
+}
+// entity 9
+{
+"classname" "trigger_radius"
+"radius" "140"
+"height" "128"
+"targetname" "flag_primary_linked"
+"origin" "211.4 -3768.8 -511.5"
+"script_gameobjectname" "twar"
+"model" "prop_flag_neutral"
+"script_label" "_b"
+}
+// entity 10
+{
+"classname" "trigger_radius"
+"radius" "120"
+"height" "128"
+"targetname" "flag_primary_linked"
+"origin" "837.9 -2591.3 -486.5"
+"script_gameobjectname" "twar"
+"model" "prop_flag_neutral"
+"script_label" "_c"
+}

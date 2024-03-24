@@ -1,0 +1,45 @@
+#include "commonsetup.template"
+
+#if "@blendFunc@" == "Add"
+	#error "additive not allowed on ambient materials"
+#endif
+
+
+#if @scorchable@
+	#define SCORCH_SUFFIX "_sco"
+#else
+	#define SCORCH_SUFFIX ""
+#endif
+
+
+#if "@blendFunc@" == "Replace"
+	#if "@alphaTest@" == "Always"
+		techniqueSet( "ambient_r0c0" + SCORCH_SUFFIX );
+	#else
+		techniqueSet( "ambient_t0c0" + SCORCH_SUFFIX );
+	#endif
+#elif "@blendFunc@" == "Blend"
+	techniqueSet( "ambient_blend" + SCORCH_SUFFIX );
+#else
+	#error "blendFunc '@blendFunc@' with alphaTest '@alphaTest@' not supported for ambient materials"
+#endif
+
+
+textureTable
+{
+	#if "$colorMap$" == ""
+		#error "colorMap may not be blank in ambient materials"
+	#endif
+	"colorMap" = streamable map( "@tileColor@", "@filterColor@", "$colorMap$", @nopicmipColor@ ) "@formatColor@" : "colorMap";
+	"normalMap" = map( "tile both", "nomip nearest", "$identityNormalMap", true ) "<auto compression>" : "normalMap";
+}
+
+
+constantTable
+{
+	"colorTint" = float4( @,colorTint@ );
+	"dynamicFoliageSunDiffuseMinMax" = float2( @dynamicFoliageSunDiffuseMin@, @dynamicFoliageSunDiffuseMax@ );
+}
+
+
+refImage( "$colorMap$" );

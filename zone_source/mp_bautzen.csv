@@ -1,0 +1,10 @@
+ignore,code_post_gfx_mp,,
+ignore,common_mp,,
+col_map_mp,maps/mp/mp_bautzen.d3dbsp,,
+sound,common,mp_bautzen,all_mp
+sound,generic,mp_bautzen,all_mp
+sound,voiceovers,mp_bautzen,all_mp
+sound,multiplayer,mp_bautzen,all_mp
+sound,projectile,mp_bautzen,all_mp
+sound,weapons,mp_bautzen,all_mp
+sound,character,mp_bautzen,all_mp

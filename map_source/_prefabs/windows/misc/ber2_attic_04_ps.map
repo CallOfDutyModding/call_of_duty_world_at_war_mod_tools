@@ -1,0 +1,14 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"angles" "1.00179e-005 90 -1.91747e-006"
+"origin" "89.0 40.0 89.5"
+"model" "prefab_attic_window_lg"
+"classname" "misc_model"
+}

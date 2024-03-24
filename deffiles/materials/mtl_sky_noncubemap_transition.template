@@ -1,0 +1,38 @@
+forModel( 1 );
+forWorld( 0 );
+refBlend( "Opaque" );
+
+#include "sort.template"
+#include "clamp.template"
+
+tessSize( 0 );
+
+#include "textureAtlas.template"
+
+hasEditorMaterial( @hasEditorMaterial@ );
+allocLightmap( false );
+
+#include "statebits.template"
+
+techniqueSet( "sky_noncubemap_transition" );
+
+textureTable
+{
+	#if "$colorMap$" == ""
+		#error "colorMap may not be blank in sky materials"
+	#endif
+	"colorMap" = map( "@tileColor@", "@filterColor@", "$colorMap$", @nopicmipColor@ ) "@formatColor@" : "colorMap";
+
+	#if "$colorMap01$" == ""
+		#error "colorMap2 may not be blank in sky materials"
+	#endif
+	"colorMap01" = map( "@tileColor@", "@filterColor@", "$colorMap01$", @nopicmipColor@ ) "@formatColor@" : "colorMap01";
+}
+
+
+constantTable
+{
+	"uvScroll" = float2( @uScroll@, @vScroll@ );
+}
+
+refImage( "$colorMap$" );

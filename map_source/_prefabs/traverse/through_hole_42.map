@@ -1,0 +1,57 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( -8 -38 42 ) ( 4 -38 42 ) ( 4 36 42 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 0 0 0
+ ( 4 -38 60 ) ( -8 -38 60 ) ( -8 36 60 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 0 0 0
+ ( 4 -36 -16 ) ( -8 -36 -16 ) ( -8 -36 24 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 10 0 0
+ ( 4 36 -6 ) ( 4 -38 -6 ) ( 4 -38 34 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 0 10 0 0
+ ( -8 36 -16 ) ( 4 36 -16 ) ( 4 36 24 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 10 0 0
+ ( -4 -38 -10 ) ( -4 36 -10 ) ( -4 36 30 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 0 10 0 0
+}
+// brush 1
+{
+ ( -8 -58 0 ) ( 4 -58 0 ) ( 4 16 0 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 16 0 0
+ ( 4 -54 60 ) ( -8 -54 60 ) ( -8 20 60 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 16 0 0
+ ( 4 -52 -2 ) ( -8 -52 -2 ) ( -8 -52 38 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 10 0 0
+ ( 4 20 -6 ) ( 4 -54 -6 ) ( 4 -54 34 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -16 10 0 0
+ ( -8 -36 -18 ) ( 4 -36 -18 ) ( 4 -36 22 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 10 0 0
+ ( -4 -54 -10 ) ( -4 20 -10 ) ( -4 20 30 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -16 10 0 0
+}
+// brush 2
+{
+ ( -8 30 0 ) ( 4 30 0 ) ( 4 104 0 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 -72 0 0
+ ( 4 34 60 ) ( -8 34 60 ) ( -8 108 60 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 -72 0 0
+ ( 4 36 -16 ) ( -8 36 -16 ) ( -8 36 24 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 10 0 0
+ ( 4 108 -6 ) ( 4 34 -6 ) ( 4 34 34 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 72 10 0 0
+ ( -8 52 -4 ) ( 4 52 -4 ) ( 4 52 36 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 -4 10 0 0
+ ( -4 34 -10 ) ( -4 108 -10 ) ( -4 108 30 ) traverse 64 64 0 0 0 0 lightmap_gray 16384 16384 72 10 0 0
+}
+}
+// entity 1
+{
+"origin" "20.0 0.0 36.0"
+"targetname" "auto2108"
+"angles" "0 0 0"
+"classname" "node_negotiation_end"
+}
+// entity 2
+{
+"targetname" "traverse"
+"classname" "node_negotiation_begin"
+"angles" "0 0 0"
+"animscript" "through_hole_42"
+"origin" "-82.0 0.0 34.0"
+"target" "auto2108"
+}
+// entity 3
+{
+"_color" "0.000000 1.000000 0.250980"
+"targetname" "auto2108"
+"origin" "0.0 0.0 0.0"
+"classname" "script_struct"
+}

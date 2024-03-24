@@ -1,0 +1,14 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_vehicle_test.d3dbsp
+sound,common,mp_vehicle_test,all_mp
+sound,generic,mp_vehicle_test,all_mp
+sound,voiceovers,mp_vehicle_test,all_mp
+sound,multiplayer,mp_vehicle_test,all_mp
+rawfile,maps/mp/mp_vehicle_test.gsc,,
+rawfile,vision/default.vision,,
+
+include,mptypes_pacific
+
+xmodel,skybox_ber1
+weapon,mp/lvt4_gunner_mp

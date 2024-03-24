@@ -1,0 +1,11 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+include,water
+col_map_mp,maps/mp/mp_water_test.d3dbsp
+sound,common,mp_water_test,all_mp
+sound,generic,mp_water_test,all_mp
+sound,voiceovers,mp_water_test,all_mp
+sound,multiplayer,mp_water_test,all_mp
+rawfile,maps/mp/mp_water_test.gsc
+
+include,mptypes_pacific,,

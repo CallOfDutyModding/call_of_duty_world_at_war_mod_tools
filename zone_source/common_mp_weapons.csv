@@ -1,0 +1,217 @@
+impactfx,mp_maps
+weapon,mp/defaultweapon_mp
+
+
+// Flamethrower,
+include,flamethrower_mp
+weapon,mp/napalmblob_mp
+xmodel,char_usa_raider_gear_flametank
+
+// revive,
+weapon,mp/syrette_mp
+
+// hardpoint weapons,
+weapon,mp/radar_mp
+weapon,mp/artillery_mp
+weapon,mp/dogs_mp
+weapon,mp/dog_bite_mp
+weapon,mp/squadcommand_mp
+
+// Pistols,
+weapon,mp/colt_mp
+weapon,mp/nambu_mp
+weapon,mp/tokarev_mp
+weapon,mp/walther_mp
+weapon,mp/357magnum_mp
+
+// Bolt Rifles,
+// Kar98k,
+weapon,mp/kar98k_mp
+weapon,mp/kar98k_bayonet_mp
+weapon,mp/kar98k_gl_mp
+weapon,mp/kar98k_scoped_mp
+weapon,mp/gl_kar98k_mp
+
+// Mosing Rifle,
+weapon,mp/mosinrifle_mp
+weapon,mp/mosinrifle_bayonet_mp
+weapon,mp/mosinrifle_gl_mp
+weapon,mp/mosinrifle_scoped_mp
+weapon,mp/gl_mosinrifle_mp
+
+// Springfield,
+weapon,mp/springfield_mp
+weapon,mp/springfield_bayonet_mp
+weapon,mp/springfield_gl_mp
+weapon,mp/springfield_scoped_mp
+weapon,mp/gl_springfield_mp
+
+// Type 99,
+weapon,mp/type99rifle_mp
+weapon,mp/type99rifle_bayonet_mp
+weapon,mp/type99rifle_gl_mp
+weapon,mp/type99rifle_scoped_mp
+weapon,mp/gl_type99rifle_mp
+
+// PTRS,
+weapon,mp/ptrs41_mp
+
+// Rifles,
+
+// SVT,
+weapon,mp/svt40_mp
+weapon,mp/svt40_flash_mp
+weapon,mp/svt40_aperture_mp
+weapon,mp/svt40_telescopic_mp
+
+// Gewerh43,
+weapon,mp/gewehr43_mp
+weapon,mp/gewehr43_silenced_mp
+weapon,mp/gewehr43_aperture_mp
+weapon,mp/gewehr43_telescopic_mp
+weapon,mp/gewehr43_gl_mp
+weapon,mp/gl_gewehr43_mp
+
+// M1 Garand,
+weapon,mp/m1garand_mp
+weapon,mp/m1garand_flash_mp
+weapon,mp/m1garand_bayonet_mp
+weapon,mp/m1garand_scoped_mp
+weapon,mp/m1garand_gl_mp
+weapon,mp/gl_m1garand_mp
+
+// M1Carbine,
+weapon,mp/m1carbine_mp
+weapon,mp/m1carbine_flash_mp
+weapon,mp/m1carbine_aperture_mp
+weapon,mp/m1carbine_bayonet_mp
+weapon,mp/m1carbine_bigammo_mp
+
+// STG,
+weapon,mp/stg44_mp
+weapon,mp/stg44_flash_mp
+weapon,mp/stg44_aperture_mp
+weapon,mp/stg44_telescopic_mp
+// weapon,mp/stg44_gl_mp
+
+// SUBMACHINE GUN,
+// MP40,
+weapon,mp/mp40_mp
+weapon,mp/mp40_aperture_mp
+weapon,mp/mp40_bigammo_mp
+weapon,mp/mp40_silenced_mp
+
+// PPSH,
+weapon,mp/ppsh_mp
+weapon,mp/ppsh_aperture_mp
+weapon,mp/ppsh_bigammo_mp
+weapon,mp/ppsh_aperture_mp
+
+// THOMPSON,
+weapon,mp/thompson_mp
+weapon,mp/thompson_aperture_mp
+weapon,mp/thompson_bigammo_mp
+weapon,mp/thompson_silenced_mp
+
+// TYPE100 ,
+weapon,mp/type100smg_mp
+weapon,mp/type100smg_aperture_mp
+weapon,mp/type100smg_bigammo_mp
+weapon,mp/type100smg_silenced_mp
+
+// Shotguns,
+weapon,mp/doublebarreledshotgun_mp
+weapon,mp/doublebarreledshotgun_grip_mp
+weapon,mp/doublebarreledshotgun_sawoff_mp
+weapon,mp/shotgun_mp
+weapon,mp/shotgun_bayonet_mp
+weapon,mp/shotgun_grip_mp
+
+// LMGS,
+// Bar,
+weapon,mp/bar_mp
+weapon,mp/bar_bipod_mp
+weapon,mp/bar_bipod_stand_mp
+weapon,mp/bar_bipod_crouch_mp
+weapon,mp/bar_bipod_prone_mp
+
+// FG42,
+weapon,mp/fg42_mp
+weapon,mp/fg42_bipod_mp
+weapon,mp/fg42_telescopic_mp
+weapon,mp/fg42_bipod_stand_mp
+weapon,mp/fg42_bipod_crouch_mp
+weapon,mp/fg42_bipod_prone_mp
+
+// Type 99,
+weapon,mp/type99lmg_mp
+weapon,mp/type99lmg_bayonet_mp
+weapon,mp/type99lmg_bipod_mp
+weapon,mp/type99_lmg_bipod_stand_mp
+weapon,mp/type99_lmg_bipod_crouch_mp
+weapon,mp/type99_lmg_bipod_prone_mp
+
+// DP28,
+weapon,mp/dp28_mp
+weapon,mp/dp28_bipod_mp
+weapon,mp/dp28_bipod_stand_mp
+weapon,mp/dp28_bipod_crouch_mp
+weapon,mp/dp28_bipod_prone_mp
+
+// HMGS,
+// 30 Cal ,
+weapon,mp/30cal_mp
+weapon,mp/30cal_bipod_mp
+weapon,mp/30cal_bipod_stand_mp
+weapon,mp/30cal_bipod_crouch_mp
+weapon,mp/30cal_bipod_prone_mp
+
+// MG42,
+weapon,mp/mg42_mp
+weapon,mp/mg42_bipod_mp
+weapon,mp/mg42_bipod_stand_mp
+weapon,mp/mg42_bipod_crouch_mp
+weapon,mp/mg42_bipod_prone_mp
+
+// All mounted Xmodels,
+xmodel,mounted_usa_bar_bipod_lmg
+xmodel,mounted_ger_mg42_bipod_mg
+xmodel,mounted_rus_dp28_bipod_lmg
+xmodel,mounted_jap_type99_bipod_lmg
+xmodel,mounted_usa_30cal_bipod_lmg
+xmodel,mounted_ger_fg42_bipod_lmg
+
+// Grenades,
+weapon,mp/m8_white_smoke_mp
+weapon,mp/frag_grenade_mp
+weapon,mp/frag_grenade_short_mp
+// weapon,mp/mine_shoebox_mp
+weapon,mp/tabun_gas_mp
+weapon,mp/signal_flare_mp
+weapon,mp/sticky_grenade_mp
+weapon,mp/mine_bouncing_betty_mp
+
+// Perk Inventories,
+// weapon,mp/c4_mp
+weapon,mp/satchel_charge_mp
+weapon,mp/m2_flamethrower_mp
+weapon,mp/molotov_mp
+weapon,mp/bazooka_mp
+
+// special grenades,
+fx,weapon/grenade/fx_american_smoke_grenade_mp
+fx,weapon/grenade/fx_gas_grenade_22sec_mp
+
+// Cut British Weapons (for now),
+// weapon,mp/leeenfield_mp
+// weapon,mp/sten_mp
+// weapon,mp/bren_mp
+// weapon,mp/bren_bipod_stand_mp
+// weapon,mp/bren_bipod_crouch_mp
+// weapon,mp/bren_bipod_prone_mp
+
+// special attach model replacements,
+xmodel,weapon_mp_bazooka_attach
+
+weapon,mp/t34_mp_explosion_mp
+weapon,mp/panzer4_mp_explosion_mp

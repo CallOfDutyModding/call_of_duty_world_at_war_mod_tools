@@ -1,0 +1,83 @@
+// Ignores
+ignore,code_post_gfx,,
+ignore,common,,
+
+// DLC3 Stuff -- Leave This
+include,dlc3,,
+
+// Level BSP
+col_map_sp,maps/nazi_zombie_tutorial.d3dbsp
+
+// Client Scripts
+rawfile,clientscripts/nazi_zombie_tutorial.csc,,
+rawfile,clientscripts/nazi_zombie_tutorial_amb.csc,,
+rawfile,clientscripts/createfx/nazi_zombie_tutorial_fx.csc,,
+
+// Server Scripts
+rawfile,maps/nazi_zombie_tutorial.gsc,,
+rawfile,maps/createfx/nazi_zombie_tutorial_fx.gsc
+
+// Fog, Sky, and Vision,
+rawfile,maps/createart/nazi_zombie_tutorial_art.gsc
+// 	-- Keep This, But Can Change Values Inside File
+rawfile,vision/zombie_factory.vision
+
+// Sound
+sound,character,nazi_zombie_factory,all_sp
+
+// Loadscreen (Didn't Add One!)
+// material,loadscreen_nazi_zombie_tutorial
+
+// Pause Screen Map (Didn't Add One!)
+// material,menu_map_nazi_zombie_tutorial
+
+//Extra Added By Sniperbolt
+rawfile,maps/_mgturret.gsc
+
+//////////////////////////////////////////////////////////////////
+                           FX AREA
+/////////////////////////////////////////////////////////////////
+
+// Scripted Effects
+fx,env/dirt/fx_dust_ceiling_impact_lg_mdbrown
+fx,env/electrical/fx_elec_wire_spark_burst
+fx,misc/fx_zombie_couch_effect
+fx,destructibles/fx_dest_fire_vert
+fx,bio/player/fx_footstep_dust
+fx,bio/player/fx_footstep_water
+fx,bio/player/fx_footstep_sand
+fx,bio/player/fx_footstep_mud
+fx,env/weather/fx_snow_blizzard_intense
+
+// CreateFX Effects
+fx,maps/mp_maps/fx_mp_ray_moon_lg_1sd
+fx,maps/mp_maps/fx_mp_ray_fire_ribbon
+fx,maps/mp_maps/fx_mp_ray_fire_ribbon_med
+fx,maps/mp_maps/fx_mp_ray_moon_lg
+fx,maps/mp_maps/fx_mp_ray_moon_md
+fx,maps/mp_maps/fx_mp_ray_moon_sm
+
+fx,maps/mp_maps/fx_mp_light_glow_indoor_short_loop
+fx,maps/mp_maps/fx_mp_light_glow_outdoor_long_loop
+fx,maps/mp_maps/fx_mp_insects_lantern
+fx,maps/mp_maps/fx_mp_light_lamp
+fx,maps/mp_maps/fx_mp_fire_torch_noglow
+fx,maps/zombie/fx_zombie_moon_eclipse
+fx,maps/zombie/fx_zombie_clock_hand
+fx,maps/mp_maps/fx_mp_elec_broken_light_1shot
+fx,maps/mp_maps/fx_mp_light_lamp_no_eo
+
+// Stuff Added By Sniperbolt:
+weapon,sp/30cal
+xmodel,weapon_usa_30cal_lmg
+xmodel,weapon_usa_30cal_bipod_lmg
+xmodel,weapon_usa_30cal_lmg
+weapon,sp/30cal_bipod_crouch
+weapon,sp/30cal_bipod_stand
+weapon,sp/30cal_bipod_prone
+weapon,sp/30cal_bipod
+weapon,sp/50cal_turret_technical
+xmodel,mounted_usa_30cal_bipod_lmg
+xmodel,mounted_usa_30cal_lmg
+xmodel,viewmodel_usa_30cal_lmg
+xmodel,viewmodel_usa_30cal_bipod_lmg

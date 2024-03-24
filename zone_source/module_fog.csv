@@ -1,0 +1,11 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/module_fog.d3dbsp
+sound,common,module_fog,all_sp
+sound,generic,module_fog,all_sp
+sound,voiceovers,module_fog,all_sp
+sound,requests,module_fog,all_sp
+
+rawfile,maps/module_fog.gsc
+include,default_weapons
+

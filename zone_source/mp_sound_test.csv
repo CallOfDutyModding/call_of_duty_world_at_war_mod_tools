@@ -1,0 +1,10 @@
+ignore,code_post_gfx_mp,,
+ignore,common_mp,,
+col_map_mp,maps/mp/mp_sound_test.d3dbsp,,
+sound,common,mp_sound_test,all_mp
+sound,generic,mp_sound_test,all_mp
+sound,voiceovers,mp_sound_test,all_mp
+sound,usmp_battlechatter,mp_sound_test,all_mp
+rawfile,maps/mp/mp_sound_test.gsc,,
+
+include,mptypes_pacific,,

@@ -1,0 +1,62 @@
+#include "sort.template"
+#include "clamp.template"
+tessSize( @tessSize@ );
+#include "textureAtlas.template"
+
+hasEditorMaterial( @hasEditorMaterial@ );
+
+refBlend( "Opaque" );
+allocLightmap( 0 );
+forModel( 0 );
+forWorld( 1 );
+
+alphaTest( Always );
+blendFunc( Disable, One, Zero );
+separateAlphaBlendFunc( Disable, One, Zero );
+colorWrite( Enable, Enable, Enable, Disable );
+cull( None );
+depthTest( LessEqual );
+depthWrite( Enable );
+
+#include "polygonoffset.template"
+#include "stencil.template"
+
+techniqueSet( "water" );
+
+#if TARGET_PLATFORM == "xenon"
+	#define NORMAL_MAP_FORMAT	"DXN"
+#else
+	#define NORMAL_MAP_FORMAT	"DXT5"
+#endif
+
+textureTable
+{
+	"colorMap" = map( "tile both", "mip standard (2x bilinear)", "texture_assets\case\case64blue.tga", 0 ) "@formatColor@" : "colorMap";
+#if "$normalMap$" == ""
+	"normalMap" = map( "tile both", "nomip nearest", "$identityNormalMap", true ) "<auto compression>" : "normalMap";
+#else
+	"normalMap" = streamable normalMap( "tile both", "@filterNormal@", "$normalMap$", @nopicmipNormal@ ) NORMAL_MAP_FORMAT : "normalMap";
+#endif
+}
+
+
+constantTable
+{
+	"waterColor" = float4( @,waterColor@ );
+	"waterParams" = float4( @waterRoughness@, @waterRefract@, @waterFeather@, @waterOpacity@ );
+	"waterScroll0" = float4( @waterScrollX0@ / 64.0, @waterScrollY0@ / 64.0, 0.0, 0.0 );
+	"waterScroll1" = float4( @waterScrollX1@ / 64.0, @waterScrollY1@ / 64.0, 0.0, 0.0 );
+	"waterScroll2" = float4( @waterScrollX2@ / 64.0, @waterScrollY2@ / 64.0, 0.0, 0.0 );
+	"waterSkyColor" = float4( @,waterSkyColor@ );
+	"waterGroundColor" = float4( @,waterGroundColor@ );
+	"waterSunValues" = float4( @oceanSunBrightness@, @oceanSunSize@, 0.0, 0.0 );
+
+	#if  @envMapMin@ > @envMapMax@
+		#error "Minimum reflectance greater than maximum reflectance"
+	#endif
+	#define SUN_INTENSITY 2.5
+	"envMapParms" = float4( @envMapMin@, @envMapMax@ - @envMapMin@, @envMapExponent@ * -1.7, SUN_INTENSITY );
+}
+
+refImage( "texture_assets\case\case64blue.tga" );
+allocReflectionProbe();

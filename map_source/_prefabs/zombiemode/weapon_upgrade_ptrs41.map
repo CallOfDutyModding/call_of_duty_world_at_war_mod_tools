@@ -1,0 +1,80 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"targetname" "southeast_outside_spawners"
+"treescatteramount" "0.8"
+"treescatterintensity" "0.8"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"spawnflags" "1024"
+"skyboxmodel" "skybox_pel2"
+"_color" "1.000000 1.000000 0.501961"
+"ambient" "0.15"
+"sundiffusecolor" "0.917647 0.945098 1"
+"diffusefraction" "0.25"
+"classname" "worldspawn"
+"sundirection" "-30 -340 0"
+"suncolor" "1 0.976471 0.882353"
+"sunlight" "1.3"
+}
+// entity 1
+{
+"script_noteworthy" "ptrs41_zombie"
+"angles" "0 0 0"
+"target" "ptrs41_zombie"
+"zombie_weapon_upgrade" "ptrs41_zombie"
+"targetname" "weapon_upgrade"
+"origin" "0 0 0"
+"classname" "trigger_use"
+// brush 0
+{
+ ( -26 4 -7 ) ( -26 -4 -7 ) ( 29 -4 -7 ) trigger 64 64 404 1219.9969 90 0 lightmap_gray 16384 16384 404.00305 1220 90 0
+ ( 30 -4 8 ) ( -25 -4 8 ) ( -25 4 8 ) trigger 64 64 404 1220 90 0 lightmap_gray 16383.875 16384 403.99738 1220 90 0
+ ( 39 -4 6 ) ( 39 4 6 ) ( 39 4 -6 ) trigger 64 64 404 -642.00482 0 0 lightmap_gray 16384 16384.334 404.00433 -642.01202 0 0
+ ( 28 0 13 ) ( -27 0 13 ) ( -27 0 1 ) trigger 64 -64 -1219.9973 642 180 0 lightmap_gray 16384 -16384.324 -1219.9973 642.01282 180 0
+ ( -23 4 6 ) ( -23 -4 6 ) ( -23 -4 -6 ) trigger 64 64 404 -642.00623 0 0 lightmap_gray 16384.5 16384 404.0141 -642 0 0
+ ( -26 -3 6 ) ( 29 -3 6 ) ( 29 -3 -6 ) trigger 64 -64 -1220.0242 642.01263 180 0 lightmap_gray 16384.385 -16384.063 -1220.0247 642.00482 180 0
+}
+}
+// entity 2
+{
+"targetname" "ptrs41_zombie_chalk"
+"angles" "0 0 0"
+"origin" "0 0 0"
+"classname" "script_brushmodel"
+// brush 0
+ {
+  curve
+  {
+   ptrs_chalk
+   lightmap_gray
+   3 3 16 8
+   (
+	v 39.000015 0 11.000003 t 0 -1024 2.125 0
+	v 39.000015 0 1.500001 t 0 -512 2.125 0.125
+	v 39.000015 0 -7.999999 t 0 -0 2.125 0.25
+   )
+   (
+	v 7.5000038 0 11.000003 t 512 -1024 0.4375 0
+	v 7.5000038 0 1.500001 t 512 -512 0.4375 0.125
+	v 7.5000038 0 -7.999999 t 512 -0 0.4375 0.25
+   )
+   (
+	v -24.000002 0 11.000003 t 1024 -1024 -1.25 -0
+	v -24.000002 0 1.500001 t 1024 -512 -1.25 0.125
+	v -24.000002 0 -7.999999 t 1024 -0 -1.25 0.25
+   )
+  }
+ }
+}
+// entity 3
+{
+"targetname" "ptrs41_zombie"
+"angles" "6.39996 0 0"
+"model" "weapon_mp_ptrs41"
+"origin" "-0.0 0.0 0.9"
+"classname" "script_model"
+"target" "ptrs41_zombie_chalk"
+}

@@ -1,0 +1,24 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_atoll_style.d3dbsp
+rawfile,maps/mp/mp_atoll_style.gsc
+//uncomment these when you actually have them to load,
+//rawfile,maps/mp/mp_atoll_fx.gsc
+//rawfile,maps/mp/mp_atoll_amb.gsc
+//rawfile,maps/mp/createfx/mp_atoll_fx.gsc
+
+//uncomment these when you actually have some,
+//material,compass_map_mp_atoll
+//material,compass_overlay_map_airfield
+
+include,mptypes_pacific
+
+include,water
+
+xmodel,skybox_pel1
+
+//uncomment these when you get them set-up,
+//rawfile,clientscripts/mp_test/mp_atoll.csc
+//rawfile,clientscripts/mp_test/mp_atoll_amb.csc
+//rawfile,clientscripts/mp_test/mp_atoll_fx.csc
+//rawfile,clientscripts/mp_test/createfx/mp_atoll_fx.csc

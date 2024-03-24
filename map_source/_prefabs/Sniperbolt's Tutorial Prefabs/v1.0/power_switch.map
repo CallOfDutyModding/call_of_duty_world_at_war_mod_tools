@@ -1,0 +1,140 @@
+iwmap 4
+// entity 0
+{
+"spawnflags" "1024"
+"waterdirection " "80"
+"classname" "worldspawn"
+"northyaw" "225"
+"skyboxmodel" "skybox_pel1"
+"sundirection" "-40.5026 38.2786 0"
+"suncolor" "1 0.9254 0.8627"
+"sunlight" "1"
+"sundiffusecolor" "0.255 0.34078 0.427451"
+"diffusefraction" "0.175"
+"_color" "0.245 0.231 0.2135"
+"ambient" "0.15"
+"sunradiosity" "1.3"
+"radiosityscale" ".75"
+"contrastgain" ".8"
+}
+// entity 1
+// entity 2
+// entity 3
+// entity 4
+// entity 5
+// entity 6
+// entity 7
+// entity 8
+// entity 9
+// entity 10
+// entity 11
+// entity 12
+// entity 13
+// entity 14
+// entity 15
+// entity 16
+// entity 17
+// entity 18
+// entity 19
+// entity 20
+// entity 21
+// entity 22
+// entity 23
+// entity 24
+// entity 25
+// entity 26
+// entity 27
+// entity 28
+// entity 29
+// entity 30
+// entity 31
+// entity 32
+{
+"origin" "-1062.4 445.5 19.5"
+"angles" "0 180 0"
+"model" "zombie_power_lever"
+"classname" "misc_model"
+}
+// entity 33
+{
+"targetname" "use_power_switch"
+"classname" "trigger_use"
+// brush 0
+{
+ ( -1049.9821 457.08752 51.477928 ) ( -1041.9821 457.08752 51.477928 ) ( -1041.9821 473.08752 51.477928 ) trigger 32 -24 1109.9819 569.08752 -180 0 lightmap_gray 16384 16384.039 1073.9818 649.08746 -180 0
+ ( -1041.9821 473.08752 85.477928 ) ( -1041.9821 457.08752 85.477928 ) ( -1049.9821 457.08752 85.477928 ) trigger 32 -24 1109.9819 569.08752 -180 0 lightmap_gray 16384 16384 1073.9818 649.08661 -180 0
+ ( -1041.9821 473.08752 75.477928 ) ( -1049.9821 473.08752 75.477928 ) ( -1049.9821 473.08752 51.477928 ) trigger 32 -34 1109.9819 -16.522509 180 0 lightmap_gray 16384 -16384 1073.9822 -12.52276 180 0
+ ( -1077.9821 475.08752 75.477928 ) ( -1077.9821 459.08752 75.477928 ) ( -1077.9821 459.08752 51.477928 ) trigger 24 -34 -569.08862 -16.522182 180 0 lightmap_gray 16383.971 -16384 -649.08722 -12.521997 180 0
+ ( -1049.9821 449.08752 75.477928 ) ( -1041.9821 449.08752 75.477928 ) ( -1041.9821 449.08752 51.477928 ) trigger 32 -34 1109.9871 -16.521683 180 0 lightmap_gray 16383.924 -16384 1073.9819 -12.52184 180 0
+ ( -1045.9821 457.08752 75.477928 ) ( -1045.9821 473.08752 75.477928 ) ( -1045.9821 473.08752 51.477928 ) trigger 24 -34 -569.08759 -16.521847 180 0 lightmap_gray 16383.963 -16384 -649.08698 -12.522034 180 0
+}
+}
+// entity 34
+{
+"angles" "6.17716e-006 180 90"
+"targetname" "power_switch"
+"origin" "-1062.0 453.2 66.1"
+"model" "zombie_power_lever_handle"
+"classname" "script_model"
+}
+// entity 35
+{
+"targetname" "power_switch_fx"
+"origin" "-1062.0 456.0 64.0"
+"classname" "script_struct"
+}
+// entity 36
+// entity 37
+// entity 38
+// entity 39
+// entity 40
+// entity 41
+// entity 42
+// entity 43
+// entity 44
+// entity 45
+// entity 46
+// entity 47
+// entity 48
+// entity 49
+// entity 50
+// entity 51
+// entity 52
+// entity 53
+// entity 54
+// entity 55
+// entity 56
+// entity 57
+// entity 58
+// entity 59
+// entity 60
+// entity 61
+// entity 62
+// entity 63
+// entity 64
+// entity 65
+// entity 66
+// entity 67
+// entity 68
+// entity 69
+// entity 70
+// entity 71
+// entity 72
+// entity 73
+// entity 74
+// entity 75
+// entity 76
+// entity 77
+// entity 78
+// entity 79
+// entity 80
+// entity 81
+// entity 82
+// entity 83
+// entity 84
+// entity 85
+// entity 86
+// entity 87
+// entity 88
+// entity 89
+// entity 90

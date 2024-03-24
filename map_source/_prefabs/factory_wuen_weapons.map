@@ -1,0 +1,31 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"zombie_cost" "500"
+"targetname" "zombie_debris"
+"reflection_color_correction" "makin"
+"skyboxmodel" "skybox_nightfire"
+"sunisprimarylight" "1"
+"bouncefraction" "0.3"
+"contrastgain" "0.35"
+"_color" "0.639 0.85 0.941"
+"ambient" "0.2"
+"sundiffusecolor" "0.25 0.55 0.8"
+"diffusefraction" "0.2"
+"classname" "worldspawn"
+"sundirection" "-151.462 256.519 0"
+"suncolor" "0.64 0.85 1"
+"sunlight" "1.2"
+// brush 0
+{
+  contents nonColliding;
+ ( 16 32 0 ) ( -16 32 0 ) ( -16 -16 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -16 -16 1 ) ( -16 32 1 ) ( 16 32 1 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -16 -16 8 ) ( 16 -16 8 ) ( 16 -16 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 -16 8 ) ( 16 32 8 ) ( 16 32 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 16 8 ) ( -16 16 8 ) ( -16 16 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -16 32 8 ) ( -16 -16 8 ) ( -16 -16 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

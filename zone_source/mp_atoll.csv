@@ -1,0 +1,33 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_atoll.d3dbsp
+
+rawfile,maps/mp/mp_atoll.gsc
+
+
+rawfile,maps/mp/createart/mp_atoll_art.gsc
+
+rawfile,vision/mp_atoll.vision,,
+
+
+
+
+//uncomment these when you actually have some,
+material,compass_map_mp_atoll
+material,compass_overlay_map_atoll
+
+include,mptypes_pacific
+
+include,water
+
+xmodel,skybox_pel1
+weapon,mp/lvt4_gunner_mp
+
+//uncomment these when you get them set-up,
+//rawfile,clientscripts/mp/mp_atoll.csc
+//rawfile,clientscripts/mp/mp_atoll_amb.csc
+//rawfile,clientscripts/mp/mp_atoll_fx.csc
+//rawfile,clientscripts/mp/createfx/mp_atoll_fx.csc
+
+
+sound,vehicles,veh_mp,all_mp

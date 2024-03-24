@@ -1,0 +1,569 @@
+ignore,code_post_gfx
+ignore,common
+
+// Includes
+include,water
+include,common_banzai
+include,common_player_raider
+impactfx,mak
+
+// BSP
+col_map_sp,maps/mak.d3dbsp
+
+// Script
+rawfile,maps/mak.gsc
+rawfile,maps/mak_anim.gsc
+rawfile,maps/mak_amb.gsc
+rawfile,maps/mak_anim.gsc
+rawfile,maps/mak_fx.gsc
+rawfile,maps/mak_net.gsc
+rawfile,maps/mak_status.gsc
+rawfile,vision/mak.vision
+rawfile,animtrees/mak_models.atr
+rawfile,maps/_flare.gsc
+rawfile,maps/createfx/mak_fx.gsc
+rawfile,maps/createart/mak_art.gsc
+
+// Destructible
+include,destructible_type94truckcamo
+
+// Client Scripts
+rawfile,clientscripts/mak.csc
+rawfile,clientscripts/mak_amb.csc
+rawfile,clientscripts/mak_fx.csc
+rawfile,clientscripts/createfx/mak_fx.csc
+rawfile,clientscripts/mak_amb.csc
+
+// Rumble
+rawfile,rumble/explosion_generic
+rawfile,rumble/explosion_generic_l.rmb
+rawfile,rumble/explosion_generic_h.rmb
+
+// Shock
+rawfile,shock/mak_intro.shock
+rawfile,shock/mak_end.shock
+rawfile,shock/explosion.shock
+rawfile,shock/explosion_mak.shock
+// Strings
+localize,mak
+
+// Sound
+sound,common,mak,all_sp
+sound,generic,mak,all_sp
+sound,voiceovers,mak,all_sp
+sound,requests,mak,all_sp
+sound,character,mak,all_sp
+sound,weapons,mak,all_sp
+sound,projectiles,mak,all_sp
+sound,mak,mak,all_sp
+sound,us_battlechatter,mak,all_sp
+sound,ja_battlechatter,mak,all_sp
+sound,physics,mak,all_sp
+
+// Models
+xmodel,weapon_machinegun_tiger
+xmodel,weapon_jap_mg_type92_notripod
+xmodel,tag_origin
+xmodel,tag_origin_animate
+xmodel,anim_makin_radiotower_dest
+xmodel,anim_makin_ewok_tower
+xmodel,weapon_jap_katana_short
+xmodel,weapon_jap_katana_long
+xmodel,weapon_jap_beating_stick
+xmodel,static_makin_cigarette
+xmodel,viewmodel_usa_kbar_knife
+xmodel,viewmodel_usa_raider_player
+xmodel,viewmodel_hands_cloth_raider
+xmodel,clutter_makin_flashlight
+xmodel,clutter_peleliu_us_helmet
+xmodel,anim_makin_hutbeamcollapse
+xmodel,anim_peleliu_fly2shed
+xmodel,anim_intro_hut_explosion
+xmodel,exploding_barrel_test_d
+xmodel,weapon_satchel_charge
+xmodel,viewmodel_usa_raider_arms
+xmodel,viewmodel_usa_raider_player
+xmodel,lights_searchlight_guardtower_v2_off
+xmodel,static_type94_bed_door_obj
+xmodel,weapon_rus_zippo
+xmodel,radio_jap_bro
+
+// Weapons
+weapon,sp/thompson
+weapon,sp/type97_frag
+weapon,sp/m1garand
+weapon,sp/type99_lmg
+weapon,sp/type99_rifle_scoped
+weapon,sp/type100_smg
+weapon,sp/type99_lmg
+weapon,sp/m8_white_smoke
+weapon,sp/nambu
+weapon,sp/colt
+
+// FX Section
+
+// OLD FX
+fx,explosions/large_vehicle_explosion
+fx,env/electrical/fx_elec_short_oneshot
+
+
+// Event1 FX
+fx,maps/mak/fx_explosion_charge_med
+fx,maps/mak/fx_explosion_charge_large
+fx,maps/mak/fx_explosion_charge_xlarge
+fx,maps/mak/fx_explosion_charge_xlarge_main
+fx,maps/mak/fx_explosion_charge_med_corner
+fx,maps/mak/fx_cigarette_smoke
+fx,maps/mak/fx_cigarette_smoke_exhale_puff
+fx,maps/mak/fx_blood_spray
+fx,maps/mak/fx_blood_spurt
+fx,maps/mak/fx_blood_decal_floor
+fx,misc/fx_flashlight_beam
+fx,maps/mak/fx_spit_mist
+fx,maps/mak/fx_blood_spill_floor
+fx,maps/mak/fx_blood_spray_small
+fx,maps/mak/fx_cigarette_glow
+fx,maps/mak/fx_cigarette_glow_puff
+fx,maps/mak/fx_cigarette_glow_puff2
+fx,maps/mak/fx_cigarette_embers_puff
+fx,maps/mak/fx_collapse_dust_plume_4
+fx,maps/mak/fx_fire_hut_collapse_small
+fx,maps/mak/fx_water_wake_boat
+fx,maps/mak/fx_sys_element_smoke_tail_med_emitter
+fx,maps/mak/fx_blood_spray_explosion
+fx,maps/mak/fx_water_splash_falling_guy
+fx,maps/mak/fx_smoke_small
+fx,impacts/flesh_hit_head_fatal_exit
+fx,impacts/flesh_hit_splat
+
+
+// Event2 FX
+fx,maps/pel2/fx_birds_tree_panic
+
+// Event3 FX
+fx,misc/flare_start
+fx,misc/fx_flare_sky_white
+fx,misc/flare_end
+
+// Event4 FX
+fx,maps/mak/fx_fire_fuel_ground_emitter
+fx,maps/mak/fx_fire_fuel_spill
+
+// Event6 FX
+fx,maps/mak/fx_collapse_dust_plume_3
+fx,maps/mak/fx_explosion_charge_xlarge_2
+fx,maps/mak/fx_explosion_charge_xlarge_2_ending
+
+// Tower Collapse
+fx,maps/mak/fx_fire_ewok_collapse_group
+fx,maps/mak/fx_fire_ewok_splash_plume
+fx,maps/mak/fx_fire_ewok_smoke
+fx,maps/mak/fx_fire_ewok_medium
+fx,maps/mak/fx_fire_ewok_large
+fx,maps/mak/fx_fire_ewok_medium_pole
+
+fx,vehicle/treadfx/fx_treadfx_dust
+
+// Global FX
+fx,destructibles/fx_barrelExp
+fx,destructibles/fx_barrel_ignite
+fx,destructibles/fx_barrel_fire_top
+fx,destructibles/fx_dest_fire_trail_med
+
+// Footstep FX
+fx,bio/player/fx_footstep_dust
+fx,bio/player/fx_footstep_sand
+fx,bio/player/fx_footstep_mud
+fx,bio/player/fx_footstep_water
+
+// Ambient FX Section (Quinn)
+fx,bio/insects/fx_insects_lantern_1
+fx,bio/insects/fx_insects_lantern_2
+fx,maps/mak/fx_insects_swarm
+fx,env/fire/fx_fire_campfire_smolder
+fx,maps/mak/fx_smoke_chimney_med
+fx,env/smoke/fx_smoke_wood_chimney_lrg
+fx,misc/fx_spotlight_large 						// Do we need this still Quinn?
+fx,bio/animals/fx_bats_circling
+fx,bio/animals/fx_bats_circling_swarm
+fx,maps/mak/fx_ray_linear_large
+fx,maps/mak/fx_ray_linear_med
+fx,env/light/fx_glow_lampost_white_dim_static
+fx,env/light/fx_light_indoor_white_static
+fx,explosions/fx_dust_cloud_plume_1
+fx,maps/mak/fx_fog_rolling_thin
+fx,maps/mak/fx_fog_rolling_thin2
+fx,env/fire/fx_fire_barrel_med
+fx,env/fire/fx_fire_barrel_small
+fx,env/electrical/fx_elec_searchlight_burst
+fx,env/light/fx_glow_spotlight_white_dim_static
+fx,maps/mak/fx_fire_debris_small
+fx,maps/mak/fx_fire_debris_med
+fx,maps/mak/fx_fire_debris_large
+fx,maps/mak/fx_fire_debris_large_directional
+fx,maps/mak/fx_fire_debris_large_single
+fx,maps/mak/fx_light_glow_lantern_spot
+fx,maps/mak/fx_smoke_column
+fx,maps/mak/fx_fire_water_med
+fx,maps/mak/fx_fire_water_small
+fx,maps/mak/fx_fire_debris_med_line
+fx,maps/mak/fx_fire_debris_med_line2
+fx,maps/mak/fx_fire_debris_med_line3
+fx,maps/mak/fx_fire_debris_embers_patch
+fx,maps/mak/fx_fire_debris_embers_patch2
+fx,maps/mak/fx_fire_debris_ash_cloud
+fx,maps/mak/fx_smoke_column2
+fx,maps/mak/fx_explosion_barrel_small
+fx,maps/mak/fx_fire_hut_d_light
+fx,maps/mak/fx_ray_linear_large_moon
+fx,maps/mak/fx_ray_linear_large_moon2
+fx,maps/mak/fx_ray_linear_large_moon3
+fx,maps/mak/fx_ray_linear_large_moon4
+fx,maps/mak/fx_ray_linear_fire_small
+fx,maps/mak/fx_ray_linear_fire_medium
+fx,maps/mak/fx_smoke_ambiance_indoor
+fx,maps/mak/fx_water_splash_rocks
+fx,maps/mak/fx_water_wake_flow
+fx,maps/mak/fx_fire_camp_med
+fx,maps/mak/fx_water_wake_mist
+fx,maps/mak/fx_water_ripples_small
+fx,env/light/fx_lights_lantern_on
+fx,env/light/fx_dlight_candle_glow
+
+// Sumeet - new Truck effect
+fx,maps/mak/fx_truck_tower_collision
+
+// effects for headshot in outtro
+fx,impacts/flesh_head_impact03
+
+// Flame FX for AI
+fx,env/fire/fx_fire_player_sm
+fx,env/fire/fx_fire_player_md
+fx,env/fire/fx_fire_player_torso
+
+// Animations
+xanim,void_loop
+xanim,jump_across_100
+xanim,death_run_stumble
+xanim,v_type95_scoutcar_flatire_lb
+xanim,v_type95_scoutcar_flatire_lf
+xanim,v_type95_scoutcar_flatire_rb
+xanim,v_type95_scoutcar_flatire_rf
+
+// Patrol Anims
+xanim,patrol_bored_patrolwalk
+xanim,patrol_bored_patrolwalk_twitch
+xanim,patrol_bored_walk_2_bored
+xanim,patrol_bored_2_walk
+xanim,patrol_bored_2_walk_180turn
+
+xanim,patrol_bored_idle
+xanim,patrol_bored_idle_smoke
+xanim,patrol_bored_idle_cellphone
+xanim,patrol_bored_twitch_bug
+xanim,patrol_bored_twitch_checkphone
+xanim,patrol_bored_twitch_stretch
+
+xanim,patrol_bored_idle_smoke
+xanim,patrol_bored_twitch_checkphone
+xanim,patrol_bored_twitch_stretch
+xanim,patrol_bored_idle_cellphone
+
+// Intro Anims
+xanim,ch_makinraid_intro_interogator
+xanim,ch_makinraid_intro_interogator_dead
+xanim,ch_makinraid_intro_mitch
+xanim,ch_makinraid_intro_mitch_dead
+xanim,ch_makinraid_intro_officer_a
+xanim,ch_makinraid_intro_officer_b
+xanim,ch_makinraid_intro_officer_b_dead
+xanim,ch_makinraid_intro_roebuck
+xanim,ch_makinraid_intro_sullivan
+xanim,ch_makinraid_intro_pow1
+xanim,ch_makinraid_intro_pow2
+xanim,ch_makinraid_intro_pow3
+xanim,ch_makinraid_tied_pow1
+xanim,ch_makinraid_tied_pow2
+xanim,ch_makinraid_tied_pow3
+xanim,ch_makinraid_intro_japanese1
+xanim,ch_makinraid_intro_japanese2
+xanim,ch_makinraid_intro_redshirt1
+xanim,ch_makinraid_intro_redshirt2
+xanim,o_makin_animlight_introhut
+
+// Player Hands
+xanim,int_makinraid_intro
+xanim,int_makinraid_hatch
+xanim,int_makinraid_outro
+xanim,int_makinraid_outro_raft_jumpin
+
+// Event1 - Hut4 Pieces
+xanim,o_makin_mainhut_explosion
+
+// Event1 - Shed Grenader
+xanim,ch_makinraid_villageaction19_japanese
+xanim,ch_makinraid_villageaction19_american
+
+// Event1 - Pont Fight
+xanim,ch_makinraid_coy_pond_fight2_US
+xanim,ch_makinraid_coy_pond_fight2_Jap
+xanim,ch_makinraid_coy_pond_fight1_US_loop
+xanim,ch_makinraid_coy_pond_fight1_Jap_loop
+xanim,ch_makinraid_coy_pond_fight1_US_outro
+xanim,ch_makinraid_coy_pond_fight1_Jap_outro
+
+// Event1 - LMG Mowdown
+xanim,ch_makinraid_lmg_mowdown_guy1
+xanim,ch_makinraid_lmg_mowdown_guy2
+xanim,ch_makinraid_lmg_mowdown_guy3
+xanim,ch_makinraid_lmg_mowdown_guy4
+
+// Event1 - Ewok tower
+xanim,o_makin_ewok_tower
+
+// Event1 - 2vs1 Action
+xanim,ch_makinraid_2vs1_US_guy1
+xanim,ch_makinraid_2vs1_US_guy2
+xanim,ch_makinraid_2vs1_Jap
+
+// Event1 - Show Down
+xanim,ch_makinraid_showdown_guy1
+xanim,ch_makinraid_showdown_guy2
+
+// Event1 - Hut collapse on guy
+xanim,ch_makinraid_fire_hut
+xanim,ch_makinraid_fire_hut_dead
+xanim,o_makin_mainhut_beamcollapse
+
+// Event1 - Blown into Shed
+xanim,ch_makinraid_blown_into_shed
+xanim,o_makinraid_shed_impact
+
+// Event1 - Held Down
+xanim,ch_makinraid_held_down_head_shot_guy1
+xanim,ch_makinraid_held_down_head_shot_guy2
+xanim,ch_makinraid_held_down_head_shot_guy3
+xanim,ch_makinraid_held_down_head_shot_guy3_death
+
+// Event1 - Fire BeatDown
+xanim,ch_makinraid_fire_beatdown1_US
+xanim,ch_makinraid_fire_beatdown1_JAP
+xanim,ch_makinraid_fire_beatdown2_US
+xanim,ch_makinraid_fire_beatdown2_JAP
+
+// Event1 - Katana Ramp
+xanim,ch_makinraid_sword_attack_intro
+xanim,ch_makinraid_sword_attack_loop
+xanim,ch_makinraid_sword_attack_death
+
+// Event1 - Saving Private Ryan Door collapse
+xmodel,anim_makin_firehut_fall
+xanim,o_makin_firehut_fall
+
+// Sullivan Animations
+xanim,ch_makinraid_sullivan_3_route
+xanim,ai_sullivan_run
+
+// Roebuck Animations
+xanim,ai_roebuck_run
+
+// Jogs
+xanim,ch_makinraid_creepy_run_guy1
+xanim,ch_makinraid_creepy_run_guy2
+xanim,ch_makinraid_creepy_run_guy3
+xanim,ch_makinraid_creepy_run_guy4
+
+// Sumeet - Jog sprint for goat path
+xanim,ai_sprint_1cycle
+
+// Sumeet - Collectible animation
+xanim,death_pose_on_desk
+
+// Rescuer/Pow Run cycle
+xanim,ch_makinraid_rescue_medic1
+xanim,ch_makinraid_rescue_pow1
+xanim,ch_makinraid_rescue_medic2
+xanim,ch_makinraid_rescue_pow2
+xanim,ch_makinraid_rescue_medic1_castoff
+xanim,ch_makinraid_rescue_pow1_castoff
+xanim,ch_makinraid_rescue_medic2_castoff
+xanim,ch_makinraid_rescue_pow2_castoff
+xanim,ch_makinraid_rescue_medic1_castoff_idle
+xanim,ch_makinraid_rescue_pow1_castoff_idle
+xanim,ch_makinraid_rescue_medic2_castoff_idle
+xanim,ch_makinraid_rescue_pow2_castoff_idle
+
+// Using extra traverses
+xanim,ai_traverse_wallhop_down
+xanim,ai_traverse_wallhop_down_3
+
+// Traverses
+xanim,step_up_low_wall
+xanim,trench_jump_out
+xanim,ai_climb_platform_40
+
+// LMG Tarp Animations
+xanim,o_clothblinders_flap_intro
+xanim,o_clothblinders_flap_loop
+xanim,o_clothblinders_flap_outro
+
+// LMG Net Animations
+xanim,o_makin_LMG_canopy_intro
+xanim,o_makin_LMG_canopy_loop
+xanim,o_makin_LMG_canopy_outtro
+
+// Event2 Regroup
+xanim,ch_makinraid_beachregroup_guy1
+
+// Event2 BoatSquad Animations
+xanim,ch_makinraid_raft_combat_idle_guy1  
+xanim,ch_makinraid_raft_combat_idle_guy2
+xanim,ch_makinraid_raft_combat_idle_guy3
+xanim,ch_makinraid_raft_combat_idle_guy4
+xanim,ch_makinraid_raft_combat_guy1
+xanim,ch_makinraid_raft_combat_guy2
+xanim,ch_makinraid_raft_combat_guy3
+xanim,ch_makinraid_raft_combat_guy4
+xanim,ch_makinraid_raft_exit_guy1
+xanim,ch_makinraid_raft_exit_guy2
+xanim,ch_makinraid_raft_exit_guy3
+xanim,ch_makinraid_raft_exit_guy4
+
+// Balcony deaths
+xanim,ai_deathbalcony_b
+xanim,ai_deathbalcony_c
+
+// Event3 Feign Death Scene
+// xanim,ch_makinraid_feigning_death_roebuck
+xanim,ch_makinraid_feigning_death_roebuck_transition
+xanim,ch_makinraid_feigning_death_roebuck_a
+xanim,ch_makinraid_feigning_death_roebuck_b
+// xanim,ch_makinraid_feigning_death_sullivan
+xanim,ch_makinraid_feigning_death_sullivan_transition
+xanim,ch_makinraid_feigning_death_sullivan_a
+xanim,ch_makinraid_feigning_death_sullivan_b
+// xanim,ch_makinraid_feigning_death_redshirt
+xanim,ch_makinraid_feigning_death_redshirt_transition
+xanim,ch_makinraid_feigning_death_redshirt_a
+xanim,ch_makinraid_feigning_death_redshirt_b
+xanim,ch_makinraid_feigning_death_redshirt_dead
+// xanim,ch_makinraid_feigning_death_officer
+xanim,ch_makinraid_feigning_death_officer_a
+xanim,ch_makinraid_feigning_death_officer_b
+xanim,ch_makinraid_feigning_death_officer_play_dead
+xanim,ch_makinraid_feigning_death_officer_dead
+xanim,ch_makinraid_feigning_death_jap01_die
+xanim,ch_makinraid_feigning_death_jap02_die
+xanim,ch_makinraid_feigning_death_jap03_die
+xanim,ch_makinraid_feigning_death_jap04_die
+xanim,ch_makinraid_feigning_death_jap01_dead
+xanim,ch_makinraid_feigning_death_jap02_dead
+xanim,ch_makinraid_feigning_death_jap03_dead
+xanim,ch_makinraid_feigning_death_jap04_dead
+xanim,ch_makinraid_feigning_death_jap01_getup
+xanim,ch_makinraid_feigning_death_jap02_getup
+xanim,ch_makinraid_feigning_death_jap03_getup
+xanim,ch_makinraid_feigning_death_jap04_getup
+
+// Event4 Scene
+xanim,ch_makinraid_truck_tailgate_open_sullivan
+xanim,ch_makinraid_truck_get_it_done_a
+xanim,ch_makinraid_truck_get_it_done_b
+xanim,ch_makinraid_truck_get_it_done_c
+xanim,ch_makinraid_ignite_gas
+
+// Sumeet - truck 3rd person player animation
+xanim,p_makinraid_hatch
+xanim,p_bomb_stand_loop
+xanim,p_bomb_crouch_loop
+xanim,p_bomb_prone_loop	
+
+// Event4 Tower
+xanim,o_makin_radiotower_dest_intro
+xanim,o_makin_radiotower_dest_loop
+xanim,o_makin_radiotower_dest_outtro
+
+// Event4 Truck Anims
+xanim,ch_makinraid_truck_jumpin
+xanim,ch_makinraid_truck_jumpout_a
+xanim,ch_makinraid_truck_jumpout_b
+xanim,ch_makinraid_truck_jumpin_idle
+xanim,o_makin_gate_burstopen_left
+xanim,o_makin_gate_burstopen_right
+
+// For the Truck
+xanim,v_makinraid_truck_jumpin
+xanim,v_makinraid_truck_jumpout
+xanim,v_makinraid_hatch
+xanim,v_makinraid_hatch_loop_start
+xanim,v_makinraid_hatch_loop
+xanim,v_makinraid_hatch_barrel
+
+// Event5 Compound Portion
+xanim,ch_makinraid_inner_compound_sullivan_directions
+
+// Event5 Bunker Door
+xanim,ch_makinraid_bunkerdoor_japanese
+xanim,ch_makinraid_bunkerdoor_redshirt
+xanim,ch_makinraid_bunkerdoor_roebuck
+xanim,o_makinraid_bunkerdoor_open
+
+// Event5 Plant Charges
+xanim,ch_makinraid_set_bunker_charges_intro
+xanim,ch_makinraid_set_bunker_charges_loop
+xanim,ch_makinraid_set_bunker_charges_lookup
+xanim,ch_makinraid_set_bunker_charges_outro
+
+// Event6 
+xanim,ch_makinraid_exit_bunker_sullivan
+
+// Outtro
+xanim,ch_makinraid_outro_sullivan_start
+xanim,ch_makinraid_outro_sullivan_dragged
+xanim,ch_makinraid_outro_japanese
+xanim,ch_makinraid_outro_raft_jumpin_sullivan
+xanim,ch_makinraid_outro_raft_jumpin_sullivan_underfire
+xanim,ch_makinraid_outro_raft_jumpin_sullivan_reaction
+xanim,ch_makinraid_outro_raft_jumpin_sullivan_calm
+xanim,ch_makinraid_outro_raft_jumpin_guy1
+xanim,ch_makinraid_outro_raft_jumpin_guy1_underfire
+xanim,ch_makinraid_outro_raft_jumpin_guy1_reaction
+xanim,ch_makinraid_outro_raft_jumpin_guy1_calm
+xanim,ch_makinraid_outro_raft_jumpin_guy2
+xanim,ch_makinraid_outro_raft_jumpin_guy2_underfire
+xanim,ch_makinraid_outro_raft_jumpin_guy2_reaction
+xanim,ch_makinraid_outro_raft_jumpin_guy2_calm
+xanim,ch_makinraid_outro_raft_jumpin_guy3
+xanim,ch_makinraid_outro_raft_jumpin_guy3_underfire
+xanim,ch_makinraid_outro_raft_jumpin_guy3_reaction
+xanim,ch_makinraid_outro_raft_jumpin_guy3_calm
+xanim,ch_makinraid_outro_raft_jumpin_guy4
+xanim,ch_makinraid_outro_raft_jumpin_guy4_underfire
+xanim,ch_makinraid_outro_raft_jumpin_guy4_reaction
+xanim,ch_makinraid_outro_raft_jumpin_guy4_calm
+
+xanim,ch_makinraid_creepywalk_idle_center2
+xanim,ch_makinraid_creepywalk_stop_center2
+xanim,ch_makinraid_creepywalk_start_center2
+
+// Event2 snare trap
+xanim,ch_makinraid_strung_up
+xanim,patrol_bored_react_look_v1
+
+// xanim,ch_makinraid_outro_sullivan_stop
+// xanim,ch_makinraid_outro_redshirt1
+// xanim,ch_makinraid_outro_redshirt2
+
+// TESTING
+fx,env/light/fx_light_pby_exterior_dspot
+
+// Sumeet - Spotlight death effect from PBY
+fx,maps/mak/fx_light_searchlight_burst_md
+
+// Sumeet - Some death anims for outtro
+xanim,death_explosion_forward13
+fx,weapon/mortar/fx_mortar_exp_dirt_medium
+
+// Sumeet - New animations for sullivan and roebuck for outtro
+xanim,ch_makinraid_outro_raft_jumpin_sullivan_end
+xanim,ch_makinraid_outro_raft_jumpin_guy1_end

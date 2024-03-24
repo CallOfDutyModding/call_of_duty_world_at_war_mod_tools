@@ -1,0 +1,6239 @@
+#name "material"
+#dll "pc" "material"
+#dll "ps3" "material"
+#dll "xenon" "material_xenon"
+#dll "wii" "material_wii"
+#dll "all" "material_properties"
+#source_dir "material_source"
+#target_dir "materials/"
+#target_dir "images/"
+#target_dir "material_properties/"
+#file_ext "*"
+#version 103
+
+string "material.template" template
+
+enum
+{
+	"world phong",
+	"model phong",
+	"model ambient",
+	"world unlit",
+	"model unlit",
+	"unlit",
+	"2d",
+	"impact mark",
+	"effect",
+	"distortion",
+	"particle cloud",
+	"tools",
+	"sky",
+	"sky noncubemap",
+	"sky noncubemap transition",
+	"water",
+	"ocean",
+	"objective",
+	"tree canopy",
+	"dynamic foliage",
+	"cloud",
+	"custom",
+	"CGFX",
+	"CGFXmodel",
+	"projected decal",
+	"model cook-torrance",
+	"rope"
+} materialType
+
+enum
+{
+	"none",
+	"clothcharr",
+	"eyeball",
+	"clothwet"
+} materialFeatureType
+
+// Locale specifications.  Adding a new locale also requires adding a checkbox for it.
+// Locale specifications must match the locales in 'locale.txt' exactly, with spaces
+// replaced by '_' and with 'locale_' prefixed.
+int 0 0 1 locale_case
+int 0 0 1 locale_test
+int 0 0 1 locale_tools
+int 0 0 1 locale_decal
+
+int 0 0 1 locale_Training
+int 0 0 1 locale_Peleliu
+int 0 0 1 locale_Okinawa
+int 0 0 1 locale_Holland
+int 0 0 1 locale_Hamburg
+int 0 0 1 locale_Rhine
+int 0 0 1 locale_Berlin
+int 0 0 1 locale_Seelow
+
+// Usage specifications.  Adding a new usage only requires changing this list.
+enum
+{
+	"<not in editor>",
+	"case",
+	"tools",
+	"------------------------",
+	"door",
+	"floor",
+	"ceiling",
+	"roof",
+	"interior wall",
+	"interior trim",
+	"exterior wall",
+	"exterior trim",
+	"window",
+	"poster",
+	"sign",
+	"------------------------",
+	"core",
+	"damage",
+	"------------------------",
+	"trench",
+	"fence",
+	"background",
+	"foliage",
+	"ground",
+	"liquid",
+	"road",
+	"rock",
+	"sky",
+	"------------------------",
+	"barrel",
+	"crate"
+} usage
+
+enum {
+	"<error>",
+	"<none>",
+	"asphalt",
+	"brick",
+	"carpet",
+	"ceramic",
+	"cloth",
+	"concrete",
+	"dirt",
+	"flesh",
+	"foliage",
+	"glass",
+	"grass",
+	"gravel",
+	"ice",
+	"metal",
+	"mud",
+	"paper",
+	"plaster",
+	"plastic",
+	"rock",
+	"rubber",
+	"sand",
+	"snow",
+	"water",
+	"wood" | "bark",
+	"cushion",
+	"fruit",
+	"paintedmetal",
+	"tallgrass"
+} surfaceType
+
+string cgfx_filename
+string cgfxTemplate
+
+float 2.5 -1000000000.0 1000000000.0 cg00_x
+float 2.5 -1000000000.0 1000000000.0 cg00_y
+float 2.5 -1000000000.0 1000000000.0 cg00_z
+float 2.5 -1000000000.0 1000000000.0 cg00_w
+
+float 2.5 -1000000000.0 1000000000.0 cg01_x
+float 2.5 -1000000000.0 1000000000.0 cg01_y
+float 2.5 -1000000000.0 1000000000.0 cg01_z
+float 2.5 -1000000000.0 1000000000.0 cg01_w
+
+float 2.5 -1000000000.0 1000000000.0 cg02_x
+float 2.5 -1000000000.0 1000000000.0 cg02_y
+float 2.5 -1000000000.0 1000000000.0 cg02_z
+float 2.5 -1000000000.0 1000000000.0 cg02_w
+
+float 2.5 -1000000000.0 1000000000.0 cg03_x
+float 2.5 -1000000000.0 1000000000.0 cg03_y
+float 2.5 -1000000000.0 1000000000.0 cg03_z
+float 2.5 -1000000000.0 1000000000.0 cg03_w
+
+
+float 2.5 -1000000000.0 1000000000.0 cg04_x
+float 2.5 -1000000000.0 1000000000.0 cg04_y
+float 2.5 -1000000000.0 1000000000.0 cg04_z
+float 2.5 -1000000000.0 1000000000.0 cg04_w
+
+float 2.5 -1000000000.0 1000000000.0 cg05_x
+float 2.5 -1000000000.0 1000000000.0 cg05_y
+float 2.5 -1000000000.0 1000000000.0 cg05_z
+float 2.5 -1000000000.0 1000000000.0 cg05_w
+
+float 2.5 -1000000000.0 1000000000.0 cg06_x
+float 2.5 -1000000000.0 1000000000.0 cg06_y
+float 2.5 -1000000000.0 1000000000.0 cg06_z
+float 2.5 -1000000000.0 1000000000.0 cg06_w
+
+float 2.5 -1000000000.0 1000000000.0 cg07_x
+float 2.5 -1000000000.0 1000000000.0 cg07_y
+float 2.5 -1000000000.0 1000000000.0 cg07_z
+float 2.5 -1000000000.0 1000000000.0 cg07_w
+
+
+float 2.5 -1000000000.0 1000000000.0 cg08_x
+float 2.5 -1000000000.0 1000000000.0 cg08_y
+float 2.5 -1000000000.0 1000000000.0 cg08_z
+float 2.5 -1000000000.0 1000000000.0 cg08_w
+
+float 2.5 -1000000000.0 1000000000.0 cg09_x
+float 2.5 -1000000000.0 1000000000.0 cg09_y
+float 2.5 -1000000000.0 1000000000.0 cg09_z
+float 2.5 -1000000000.0 1000000000.0 cg09_w
+
+float 2.5 -1000000000.0 1000000000.0 cg10_x
+float 2.5 -1000000000.0 1000000000.0 cg10_y
+float 2.5 -1000000000.0 1000000000.0 cg10_z
+float 2.5 -1000000000.0 1000000000.0 cg10_w
+
+float 2.5 -1000000000.0 1000000000.0 cg11_x
+float 2.5 -1000000000.0 1000000000.0 cg11_y
+float 2.5 -1000000000.0 1000000000.0 cg11_z
+float 2.5 -1000000000.0 1000000000.0 cg11_w
+
+float 2.5 -1000000000.0 1000000000.0 cg12_x
+float 2.5 -1000000000.0 1000000000.0 cg12_y
+float 2.5 -1000000000.0 1000000000.0 cg12_z
+float 2.5 -1000000000.0 1000000000.0 cg12_w
+
+
+float 2.5 -1000000000.0 1000000000.0 cg13_x
+float 2.5 -1000000000.0 1000000000.0 cg13_y
+float 2.5 -1000000000.0 1000000000.0 cg13_z
+float 2.5 -1000000000.0 1000000000.0 cg13_w
+
+
+float 2.5 -1000000000.0 1000000000.0 cg14_x
+float 2.5 -1000000000.0 1000000000.0 cg14_y
+float 2.5 -1000000000.0 1000000000.0 cg14_z
+float 2.5 -1000000000.0 1000000000.0 cg14_w
+
+float 2.5 -1000000000.0 1000000000.0 cg15_x
+float 2.5 -1000000000.0 1000000000.0 cg15_y
+float 2.5 -1000000000.0 1000000000.0 cg15_z
+float 2.5 -1000000000.0 1000000000.0 cg15_w
+
+float 2.5 -1000000000.0 1000000000.0 cg16_x
+float 2.5 -1000000000.0 1000000000.0 cg16_y
+float 2.5 -1000000000.0 1000000000.0 cg16_z
+float 2.5 -1000000000.0 1000000000.0 cg16_w
+
+float 2.5 -1000000000.0 1000000000.0 cg17_x
+float 2.5 -1000000000.0 1000000000.0 cg17_y
+float 2.5 -1000000000.0 1000000000.0 cg17_z
+float 2.5 -1000000000.0 1000000000.0 cg17_w
+
+float 2.5 -1000000000.0 1000000000.0 cg18_x
+float 2.5 -1000000000.0 1000000000.0 cg18_y
+float 2.5 -1000000000.0 1000000000.0 cg18_z
+float 2.5 -1000000000.0 1000000000.0 cg18_w
+
+float 2.5 -1000000000.0 1000000000.0 cg19_x
+float 2.5 -1000000000.0 1000000000.0 cg19_y
+float 2.5 -1000000000.0 1000000000.0 cg19_z
+float 2.5 -1000000000.0 1000000000.0 cg19_w
+
+float 2.5 -1000000000.0 1000000000.0 cg20_x
+float 2.5 -1000000000.0 1000000000.0 cg20_y
+float 2.5 -1000000000.0 1000000000.0 cg20_z
+float 2.5 -1000000000.0 1000000000.0 cg20_w
+
+float 2.5 -1000000000.0 1000000000.0 cg21_x
+float 2.5 -1000000000.0 1000000000.0 cg21_y
+float 2.5 -1000000000.0 1000000000.0 cg21_z
+float 2.5 -1000000000.0 1000000000.0 cg21_w
+
+float 2.5 -1000000000.0 1000000000.0 cg22_x
+float 2.5 -1000000000.0 1000000000.0 cg22_y
+float 2.5 -1000000000.0 1000000000.0 cg22_z
+float 2.5 -1000000000.0 1000000000.0 cg22_w
+
+float 2.5 -1000000000.0 1000000000.0 cg23_x
+float 2.5 -1000000000.0 1000000000.0 cg23_y
+float 2.5 -1000000000.0 1000000000.0 cg23_z
+float 2.5 -1000000000.0 1000000000.0 cg23_w
+
+float 2.5 -1000000000.0 1000000000.0 cg24_x
+float 2.5 -1000000000.0 1000000000.0 cg24_y
+float 2.5 -1000000000.0 1000000000.0 cg24_z
+float 2.5 -1000000000.0 1000000000.0 cg24_w
+
+float 2.5 -1000000000.0 1000000000.0 cg25_x
+float 2.5 -1000000000.0 1000000000.0 cg25_y
+float 2.5 -1000000000.0 1000000000.0 cg25_z
+float 2.5 -1000000000.0 1000000000.0 cg25_w
+
+float 2.5 -1000000000.0 1000000000.0 cg26_x
+float 2.5 -1000000000.0 1000000000.0 cg26_y
+float 2.5 -1000000000.0 1000000000.0 cg26_z
+float 2.5 -1000000000.0 1000000000.0 cg26_w
+
+float 2.5 -1000000000.0 1000000000.0 cg27_x
+float 2.5 -1000000000.0 1000000000.0 cg27_y
+float 2.5 -1000000000.0 1000000000.0 cg27_z
+float 2.5 -1000000000.0 1000000000.0 cg27_w
+
+float 2.5 -1000000000.0 1000000000.0 cg28_x
+float 2.5 -1000000000.0 1000000000.0 cg28_y
+float 2.5 -1000000000.0 1000000000.0 cg28_z
+float 2.5 -1000000000.0 1000000000.0 cg28_w
+
+float 2.5 -1000000000.0 1000000000.0 cg29_x
+float 2.5 -1000000000.0 1000000000.0 cg29_y
+float 2.5 -1000000000.0 1000000000.0 cg29_z
+float 2.5 -1000000000.0 1000000000.0 cg29_w
+
+float 2.5 -1000000000.0 1000000000.0 cg30_x
+float 2.5 -1000000000.0 1000000000.0 cg30_y
+float 2.5 -1000000000.0 1000000000.0 cg30_z
+float 2.5 -1000000000.0 1000000000.0 cg30_w
+
+float 2.5 -1000000000.0 1000000000.0 cg31_x
+float 2.5 -1000000000.0 1000000000.0 cg31_y
+float 2.5 -1000000000.0 1000000000.0 cg31_z
+float 2.5 -1000000000.0 1000000000.0 cg31_w
+
+string colorLabel00
+string colorLabel01
+string colorLabel02
+string colorLabel03
+string colorLabel04
+string colorLabel05
+string colorLabel06
+string colorLabel07
+string colorLabel08
+string colorLabel09
+string colorLabel10
+string colorLabel11
+string colorLabel12
+string colorLabel13
+string colorLabel14
+string colorLabel15
+
+string varLabel00
+string varLabel01
+string varLabel02
+string varLabel03
+string varLabel04
+string varLabel05
+string varLabel06
+string varLabel07
+string varLabel08
+string varLabel09
+string varLabel10
+string varLabel11
+string varLabel12
+string varLabel13
+string varLabel14
+string varLabel15
+string varLabel16
+string varLabel17
+string varLabel18
+string varLabel19
+string varLabel20
+string varLabel21
+string varLabel22
+string varLabel23
+string varLabel24
+string varLabel25
+string varLabel26
+string varLabel27
+string varLabel28
+string varLabel29
+string varLabel30
+string varLabel31
+
+
+
+string colorMap00
+string colorMap01
+string colorMap02
+string colorMap03
+string colorMap04
+string colorMap05
+string colorMap06
+string colorMap07
+string colorMap08
+string colorMap09
+string colorMap10
+string colorMap11
+string colorMap12
+string colorMap13
+string colorMap14
+string colorMap15
+
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile00
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile01
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile02
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile03
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile04
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile05
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile06
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile07
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile08
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile09
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile10
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile11
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile12
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile13
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile14
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } texTile15
+
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor00
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor01
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor02
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor03
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor04
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor05
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor06
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor07
+
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor08
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor09
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor10
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor11
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor12
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor13
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear",
+  	"mip (1x bilinear)",
+	"mip (1x trilinear)"
+	} filterColor14
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear" } filterColor15
+
+
+
+
+int 0 0 1 missileClip
+int 0 0 1 bulletClip
+int 0 0 1 playerClip
+int 0 0 1 aiClip
+int 0 0 1 vehicleClip
+int 0 0 1 itemClip
+int 0 0 1 canShootClip
+int 0 0 1 aiSightClip
+
+int 0 0 1 noFallDamage
+int 0 0 1 noSteps
+int 0 0 1 noImpact
+int 0 0 1 noMarks
+int 0 0 1 noPenetrate
+int 0 0 1 noDrop
+int 0 0 1 slick
+int 0 0 1 ladder
+int 0 0 1 mantleOn
+int 0 0 1 mantleOver
+int 0 0 1 mount
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat00
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat01
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat02
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat03
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat04
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat05
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat06
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat07
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat08
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat09
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat10
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat11
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat12
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat13
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat14
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } textureFormat15
+
+
+
+
+
+int 0 0 1 wetnessInvert
+
+int 0 0 1 noLightmap
+int 0 0 1 noDynamicLight
+int 0 0 1 noCastShadow
+int 0 0 1 onlyCastShadow
+int 0 0 1 noReceiveDynamicShadow
+int 0 0 1 noDraw
+int 0 0 1 noFog
+int 0 0 1 drawToggle
+int 0 0 1 sky
+int 0 0 1 radialNormals
+
+int 0 0 1 nonColliding
+int 0 0 1 nonSolid
+int 0 0 1 transparent
+int 0 0 1 detail
+int 0 0 1 structural
+int 0 0 1 portal
+int 0 0 1 lightPortal
+int 0 0 1 origin
+int 0 0 1 physicsGeom
+int 0 0 1 hdrPortal
+int 0 0 1 hasEditorMaterial
+
+int 0 0 1 zFeather
+int 40 0 1024 zFeatherDepth
+
+int 0 -1024 1024 eyeOffsetDepth
+
+int 0 0 1 outdoorOnly
+int 0 0 1 notInBoats
+int 0 0 1 falloff
+float 35.0 0.0 90.0 falloffBeginAngle
+float 65.0 0.0 90.0 falloffEndAngle
+
+int 0 0 1 useSpotLight
+
+int 0 0 1 distFalloff
+float 200.0 0.0 10000.0 distFalloffBeginDistance
+float 10.0 0.0 10000.0 distFalloffEndDistance
+color 1 1 1 1 falloffBeginColor
+color 0.5 0.5 0.5 0.5 falloffEndColor
+
+int 0 0 1 texScroll
+int 0 0 1 subLayerScroll
+
+float 8 0.125 64 detailScaleX
+float 8 0.125 64 detailScaleY
+float 1 0 10 detailScaleHeight
+
+float 0.2 0.0 1.0 envMapMin
+float 1.0 0.0 3.0 envMapMax
+float 2.5 0.05 20.0 envMapExponent
+
+float 0.0 -10.0 10.0 uScroll
+float 0.0 -10.0 10.0 vScroll
+
+float 0.0 -10.0 10.0 uScroll00
+float 0.0 -10.0 10.0 vScroll00
+
+float 0.0 -10.0 10.0 uScroll01
+float 0.0 -10.0 10.0 vScroll01
+
+
+int 0 0 1 useLegacyNormalEncoding
+
+color 1 1 1 1 cloudLightColor
+color 0.5 0.5 0.5 0.5 cloudDarkColor
+color 1.0 0.75 0.5 1.0 cloudLiningColor
+float 16.0 1.0 64.0 cloudLiningSize
+
+enum {
+	"<default>*",
+	"distortion",
+	"opaque water",
+	"boat hull",
+	"opaque ambient",
+	"opaque",
+	"sky",
+	"skybox - sun / moon",
+	"skybox - clouds",
+	"skybox - horizon",
+	"decal - bottom 1",
+	"decal - bottom 2",
+	"decal - bottom 3",
+	"decal - static decal",
+	"decal - middle 1",
+	"decal - middle 2",
+	"decal - middle 3",
+	"dynamic water",
+	"after dynamic water",
+	"decal - weapon impact",
+	"decal - top 1",
+	"decal - top 2",
+	"decal - top 3",
+	"multiplicative",
+	"banner / curtain",
+	"hair",
+	"underwater",
+	"transparent water",
+	"corona",
+	"window inside",
+	"window outside",
+	"before effects - bottom",
+	"before effects - middle",
+	"before effects - top",
+	"blend / additive",
+	"effect - auto sort",
+	"after effects - bottom",
+	"after effects - middle",
+	"after effects - top",
+	"viewmodel effect"
+} sort
+
+string customTemplate
+string customString
+
+color 1 1 1 1 colorTint
+string colorMap
+string detailMap
+string normalMap
+string specColorMap
+string cosinePowerMap
+int 100 10 100 specColorStrength
+int 100 10 100 cosinePowerStrength
+
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } tileColor
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } tileNormal
+enum { "tile both*", "tile horizontal", "tile vertical", "no tile" } tileSpecular
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear" } filterColor
+	
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear" } filterColorDetail
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear" } filterDetail
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear" } filterNormal
+
+enum { 	"mip standard (2x bilinear)*" | "<auto filter>*" | "bilinear" | "trilinear" | "anisotropic",
+	"mip expensive (4x bilinear)",
+	"mip more expensive (2x trilinear)",
+	"mip most expensive (4x trilinear)",
+	"nomip nearest" | "nearest",
+	"nomip bilinear" | "linear" } filterSpecular
+
+int 0 0 1 nopicmipColor
+int 0 0 1 nopicmipColorDetail
+int 0 0 1 nopicmipDetail
+int 0 0 1 nopicmipNormal
+int 0 0 1 nopicmipSpecular
+
+int 0 0 1 noStreamColor
+
+float 0 0 65536 tessSize
+int 1 1 64 textureAtlasRowCount
+int 1 1 64 textureAtlasColumnCount
+float 0.5 0 1000 distortionScaleX
+float 0.5 0 1000 distortionScaleY
+enum {
+	"scales distortion strength*",
+	"tints distorted pixel color"
+} distortionColorBehavior
+
+float -1.98 -100 100 waterScrollX0
+float  1.32 -100 100 waterScrollY0
+float  4.44 -100 100 waterScrollX1
+float -5.18 -100 100 waterScrollY1
+float  3.44 -100 100 waterScrollX2
+float  3.18 -100 100 waterScrollY2
+
+// Generic water parameters
+color 0.19 0.3 0.15 0 waterColor
+float 0.05 0 1 waterFeather
+float 0 0 1 waterOpacity
+float 0.1 0 10 waterRoughness
+float 30 0 200 waterRefract
+color 0.63 0.77 0.77 0 waterSkyColor
+color 0.26 0.27 0.11 0 waterGroundColor
+float 10.0 0 100 oceanSunBrightness
+float 0.0125 0 1 oceanSunSize
+
+// Ocean-specific parameters.
+float 1.0 0 1 oceanFoamIntensity 
+float 2.0 0 8 oceanFoamOverbright
+float 8.0 1 256 oceanFoamRepeat
+float 32.0 1 256 oceanBumpRepeat
+float 100 1 1000 oceanShoreFeather
+float 0.95 0 1 oceanShoreEdgeness
+float 0.85 0 1 oceanShoreBrightness
+float 5.0 0 10 oceanReflectFuzzyness
+
+int 0 0 1 scorchable
+int 0 0 1 marksDirectionFade
+
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } formatColor
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } formatColorDetail
+enum { "<auto compression>*", "Uncompressed", "Alpha Only", "DXT1", "DXT3", "DXT5" } formatDetail
+enum { "<auto compression>*", "Uncompressed", "DXT3", "DXT5" } formatSpecular
+enum { "<auto compression>*", "Uncompressed", "DXT1", "DXT3", "DXT5" } formatSpecularDetail
+enum { "<auto compression>*", "Uncompressed" } formatNormal
+
+enum { "Replace*", "Blend", "Add", "Multiply", "Screen Add", "Custom" } blendFunc
+enum { "Add*", "Subtract", "RevSubtract", "Min", "Max", "Disable" } customBlendOpRgb
+enum { "Add*", "Subtract", "RevSubtract", "Min", "Max", "Disable" } customBlendOpAlpha
+enum { "One*", "Zero", "SrcColor", "InvSrcColor", "SrcAlpha", "InvSrcAlpha", "DestAlpha", "InvDestAlpha", "DestColor", "InvDestColor" } srcCustomBlendFunc
+enum { "One*", "Zero", "SrcColor", "InvSrcColor", "SrcAlpha", "InvSrcAlpha", "DestAlpha", "InvDestAlpha", "DestColor", "InvDestColor" } destCustomBlendFunc
+enum { "One*", "Zero", "SrcColor", "InvSrcColor", "SrcAlpha", "InvSrcAlpha", "DestAlpha", "InvDestAlpha", "DestColor", "InvDestColor" } srcCustomBlendFuncAlpha
+enum { "One*", "Zero", "SrcColor", "InvSrcColor", "SrcAlpha", "InvSrcAlpha", "DestAlpha", "InvDestAlpha", "DestColor", "InvDestColor" } destCustomBlendFuncAlpha
+
+enum { "Always*", "GE128" } alphaTest
+enum { "LessEqual*", "Less", "Equal", "Always", "Disable" } depthTest
+enum { "<auto>*", "On", "Off" } depthWrite
+enum { "Back*", "Front", "None" } cullFace
+enum { "None*", "Static Decal", "Weapon Impact" } polygonOffset
+
+enum { "<none>*", "PC / Xenon" } showAdvancedOptions
+
+enum { "Enable", "Disable" } colorWriteRed
+enum { "Enable", "Disable" } colorWriteGreen
+enum { "Enable", "Disable" } colorWriteBlue
+enum { "Enable", "Disable" } colorWriteAlpha
+
+enum { "Keep", "Zero", "Replace", "IncrSat", "DecrSat", "Invert", "Incr", "Decr" } stencilOpFail1
+enum { "Keep", "Zero", "Replace", "IncrSat", "DecrSat", "Invert", "Incr", "Decr" } stencilOpZFail1
+enum { "Keep", "Zero", "Replace", "IncrSat", "DecrSat", "Invert", "Incr", "Decr" } stencilOpPass1
+enum { "Keep", "Zero", "Replace", "IncrSat", "DecrSat", "Invert", "Incr", "Decr" } stencilOpFail2
+enum { "Keep", "Zero", "Replace", "IncrSat", "DecrSat", "Invert", "Incr", "Decr" } stencilOpZFail2
+enum { "Keep", "Zero", "Replace", "IncrSat", "DecrSat", "Invert", "Incr", "Decr" } stencilOpPass2
+
+enum { "Always", "Never", "Less", "Equal", "LessEqual", "Greater", "NotEqual", "GreaterEqual" } stencilFunc1
+enum { "Always", "Never", "Less", "Equal", "LessEqual", "Greater", "NotEqual", "GreaterEqual" } stencilFunc2
+
+enum { "Disable", "One-sided", "Two-sided" } stencil
+
+enum { "ambient", "phong" } dynamicFoliageLightMethod
+float 1 0 1 dynamicFoliageFlexibility
+float 0 0 100 dynamicFoliageSunDiffuseMin
+float 1 0 100 dynamicFoliageSunDiffuseMax
+float 0 0 1 treeCanopyMinimumSway
+float 0.1 0 1 treeCanopyScaleRotationAngles
+float 0.5 0 1 treeCanopyAmbientOcclusion
+float 0.5 0 1 treeCanopyLightingAmount
+color 0.7 0.83 0.36 0 treeCanopyScatterColor
+
+// MP weapon detail maps
+int 0 0 1 isMPWeapon
+
+string colorDetailMap
+float 8 0.125 64 colorDetailScaleX
+float 8 0.125 64 colorDetailScaleY
+
+string specDetailMap
+float 8 0.125 64 specDetailScaleX
+float 8 0.125 64 specDetailScaleY
+int 100 10 100 specDetailStrength
+
+vcontainer
+{
+	hcontainer
+	{
+		scrollbox( materialType )
+		[
+			exec
+			{
+				tooltip("see wiki page for explanation of material types!")
+				width( 255 )
+				labelwidth( 100 )
+			}
+		]
+		scrollbox( sort )
+		[
+			exec
+			{
+				tooltip("see wiki page for explanation of sort settings!")
+				width( 230 )
+				labelwidth( 55 )
+				unsorted()
+			}
+		]
+	}
+	hcontainer
+	{
+		scrollbox( surfaceType )
+		[
+			exec
+			{
+				tooltip( "Sets the bullet collision particle for your material." )
+				width( 255 )
+				labelwidth( 100 )
+			}
+		]
+		scrollbox( usage )
+		[
+			exec
+			{
+				tooltip("Sets what filters show this material in Radiant")
+				width( 230 )
+				labelwidth( 55 )
+				unsorted()
+			}
+		]
+	}
+	vcontainer
+	{
+		hcontainer
+		{
+			checkbox( locale_case )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "case" )
+				}
+			]
+			checkbox( locale_test )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "test" )
+				}
+			]
+			checkbox( locale_tools )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "tools" )
+				}
+			]
+			checkbox( locale_decal )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "decal" )
+				}
+			]
+		}
+		hcontainer
+		{
+			checkbox( locale_Training )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Training" )
+				}
+			]
+			checkbox( locale_Peleliu )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Peleliu" )
+				}
+			]
+			checkbox( locale_Okinawa )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Okinawa" )
+				}
+			]
+		}
+		hcontainer
+		{
+			checkbox( locale_Holland )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Holland" )
+				}
+			]
+			checkbox( locale_Hamburg )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Hamburg" )
+				}
+			]
+			checkbox( locale_Rhine )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Rhine" )
+				}
+			]
+		}
+		hcontainer
+		{
+			checkbox( locale_Berlin )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Berlin" )
+				}
+			]
+			checkbox( locale_Seelow )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Seelow" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType != "2d" && materialType != "particle cloud" && materialType != "objective" )
+			groupBox( "Locales (select all appropriate for world materials)" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			scrollbox( blendFunc )
+			[
+				exec
+				{
+					tooltip("Transparancy settings, Replace is for most materials, Blend is for standard transparency like glass, multiply is used for grime decals, the rest are mostly for fx")
+					unsorted()
+					width( 215 )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( cullFace )
+			[
+				exec
+				{
+					tooltip("Back will only draw outside faces, Front will only draw inside faces, None will draw both.")
+					width( 215 )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( polygonOffset )
+			[
+				exec
+				{
+					tooltip("Only adjust this for decals.")
+					width( 265 )
+					labelwidth( 100 )
+				}
+			]
+		}
+		hcontainer
+		{
+			scrollbox( customBlendOpRgb )
+			[
+				exec
+				{
+					width( 215 )
+					label( "blendOp" )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( srcCustomBlendFunc )
+			[
+				exec
+				{
+					width( 215 )
+					label( "srcBlend" )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( destCustomBlendFunc )
+			[
+				exec
+				{
+					width( 215 )
+					label( "destBlend" )
+					labelwidth( 100 )
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( blendFunc == "Custom" )
+			}
+		]
+		hcontainer
+		{
+			scrollbox( customBlendOpAlpha )
+			[
+				exec
+				{
+					width( 215 )
+					label( "separateAlpha" )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( srcCustomBlendFuncAlpha )
+			[
+				exec
+				{
+					width( 215 )
+					label( "srcBlend" )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( destCustomBlendFuncAlpha )
+			[
+				exec
+				{
+					width( 215 )
+					label( "destBlend" )
+					labelwidth( 100 )
+				}
+			]
+		}
+		[
+			exec
+			{
+				visible( blendFunc == "Custom" )
+			}
+		]
+		hcontainer
+		{
+			scrollbox( alphaTest )
+			[
+				exec
+				{
+					tooltip("GE128 = punchout alpha, black and white.  Always = everything else")
+					width( 215 )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( depthTest )
+			[
+				exec
+				{
+					tooltip("adjusts the rendering order of the material.")
+					width( 215 )
+					labelwidth( 100 )
+				}
+			]
+			scrollbox( depthWrite )
+			[
+				exec
+				{
+					tooltip("turns z buffer info on or off, leave on default unless you know what you are doing!")
+					width( 175 )
+					labelwidth( 100 )
+				}
+			]
+			floatedit( tessSize, 32, 256 )
+			[
+				exec
+				{
+					width( 125 )
+					labelwidth( 65 )
+					visible( materialType == "world phong" || materialType == "custom" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType != "sky" )
+			groupBox( "Framebuffer operations" )
+		}
+	]
+	vcontainer
+	{
+		edit( customTemplate )
+		[
+			exec
+			{
+				width( 450 )
+				label( "Template" )
+				labelwidth( 100 )
+			}
+		]
+		edit( customString )
+		[
+			exec
+			{
+				width( 450 )
+				label( "String" )
+				labelwidth( 100 )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( materialType == "custom" )
+			groupBox( "Custom Settings" )
+		}
+	]
+	vcontainer
+	{
+		spinedit( textureAtlasRowCount, 1, 5 )
+		[
+			exec
+			{
+				width( 150 )
+				labelwidth( 100 )
+				label( "Row Count" )
+			}
+		]
+		spinedit( textureAtlasColumnCount, 1, 5 )
+		[
+			exec
+			{
+				width( 150 )
+				labelwidth( 100 )
+				label( "Column Count" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Texture Atlas Settings" )
+			visible( materialType == "effect" || materialType == "distortion" || materialType == "custom" )
+		}
+	]
+	hcontainer
+	{
+		vcontainer
+		{
+			floatedit( distortionScaleX, 1, 10 )
+			[
+				exec
+				{
+					width( 150 )
+					labelwidth( 100 )
+					label( "Scale X" )
+				}
+			]
+			floatedit( distortionScaleY, 1, 10 )
+			[
+				exec
+				{
+					width( 150 )
+					labelwidth( 100 )
+					label( "Scale Y" )
+				}
+			]
+		}
+		scrollbox( distortionColorBehavior )
+		[
+			exec
+			{
+				width( 300 )
+				labelwidth( 100 )
+				label( "Vertex Color..." )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Distortion Settings" )
+			visible( materialType == "distortion" || materialType == "custom" )
+		}
+	]
+	vcontainer
+	{
+		checkbox( falloff )
+		[
+			exec
+			{
+				righttext()
+				height( 15 )
+				label( "Enable" )
+			}
+		]
+		floatedit( falloffBeginAngle, 0, 90 )
+		[
+			exec
+			{
+				visible( falloff == 1 )
+				width( 370 )
+				labelwidth( 310 )
+				label( "Opaque Angle (0 is head-on, 90 is side-on)" )
+			}
+		]
+		floatedit( falloffEndAngle, 0, 90 )
+		[
+			exec
+			{
+				visible( falloff == 1 )
+				width( 370 )
+				labelwidth( 310 )
+				label( "Invisible Angle (0 is head-on, 90 is side-on)" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "God Ray Falloff" )
+			visible( materialType == "effect" || materialType == "model unlit" || materialType == "world unlit" || materialType == "custom" )
+		}
+	]
+	vcontainer
+	{
+		checkbox( distFalloff )
+		[
+			exec
+			{
+				righttext()
+				height( 15 )
+				label( "Enable" )
+			}
+		]
+		floatedit( distFalloffBeginDistance, 0, 10000 )
+		[
+			exec
+			{
+				visible( distFalloff == 1 )
+				width( 370 )
+				labelwidth( 310 )
+				label( "Opaque Distance" )
+			}
+		]
+		floatedit( distFalloffEndDistance, 0, 10000 )
+		[
+			exec
+			{
+				visible( distFalloff == 1 )
+				width( 370 )
+				labelwidth( 310 )
+				label( "Invisible Distance" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Distance (hdrPortal) Falloff" )
+			visible( materialType == "world unlit" || materialType == "custom" )
+			visible( hdrPortal == 1 )
+		}
+	]
+	vcontainer
+	{
+		colorpicker( falloffBeginColor )
+		[
+			exec
+			{
+				width( 370 )
+				labelwidth( 310 )
+				label( "Opaque Color" )
+			}
+		]
+		colorpicker( falloffEndColor )
+		[
+			exec
+			{
+				width( 370 )
+				labelwidth( 310 )
+				label( "Transparent Color" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Falloff Colors" )
+			visible( (falloff == 1 || distFalloff == 1) && (materialType == "effect" || materialType == "model unlit" || materialType == "world unlit" || materialType == "custom") )
+		}
+	]
+	vcontainer
+	{
+		checkbox( zFeather )
+		[
+			exec
+			{
+				righttext()
+				height( 15 )
+				label( "Enable" )
+			}
+		]
+		spinedit( zFeatherDepth, 1, 10 )
+		[
+			exec
+			{
+				width( 150 )
+				labelwidth( 100 )
+				label( "Depth" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Z Feathering" )
+			visible( materialType == "effect" || materialType == "custom" )
+		}
+	]
+	vcontainer
+	{
+		spinedit( eyeOffsetDepth, 1, 10 )
+		[
+			exec
+			{
+				width( 150 )
+				labelwidth( 100 )
+				label( "Depth" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Eye Offset" )
+			visible( materialType == "effect" || materialType == "model unlit" || materialType == "world unlit" || materialType == "custom" )
+		}
+	]
+	vcontainer
+	{
+		checkbox( outdoorOnly )
+		[
+			exec
+			{
+				righttext()
+				height( 15 )
+				label( "Outdoor Only" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( ((materialType == "effect" || materialType == "model unlit" || materialType == "world unlit") && zFeather == 1) || materialType == "particle cloud" )
+		}
+	]
+	vcontainer
+	{
+		checkbox( notInBoats )
+		[
+			exec
+			{
+				righttext()
+				height( 15 )
+				label( "Not in boats" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( materialType == "effect" || materialType == "distortion" || materialType == "model unlit" || materialType == "world unlit" || materialType == "particle cloud" )
+		}
+	]
+	vcontainer
+	{
+		checkbox( useSpotLight )
+		[
+			exec
+			{
+				righttext()
+				height( 15 )
+				label( "Use spot light" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( materialType == "effect" || materialType == "particle cloud" )
+		}
+	]
+	fxvcontainer
+	{
+   		hcontainer
+		{
+			fxfileedit( cgfx_filename )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 40 )
+     					label( "FX" )
+				}
+			]
+		        fxeditc( cgfxTemplate )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 80 )
+     					label( "Template" )
+				}
+			]
+		}
+
+
+
+      		hcontainer
+		{
+  			fxeditb( varLabel00 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V0" )
+				}
+			]
+
+
+			fxfloatedit( cg00_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+					label( "X" )
+  					width( 100 )
+				}
+			]
+			fxfloatedit( cg00_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg00_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg00_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+	        hcontainer
+		{
+  			fxeditb( varLabel01 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V1" )
+				}
+			]
+
+
+			fxfloatedit( cg01_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg01_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg01_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg01_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+		hcontainer
+		{
+  			fxeditb( varLabel02 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V2" )
+				}
+			]
+
+
+			fxfloatedit( cg02_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg02_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg02_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg02_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+	        hcontainer
+		{
+		        fxeditb( varLabel03 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V3" )
+				}
+			]
+
+  			fxfloatedit( cg03_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg03_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg03_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg03_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+		hcontainer
+		{
+   			fxeditb( varLabel04 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V4" )
+				}
+			]
+
+			fxfloatedit( cg04_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg04_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg04_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg04_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+	        hcontainer
+		{
+   			fxeditb( varLabel05 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V5" )
+				}
+			]
+
+			fxfloatedit( cg05_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg05_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg05_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg05_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+		hcontainer
+		{
+   			fxeditb( varLabel06 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V6" )
+				}
+			]
+
+			fxfloatedit( cg06_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg06_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg06_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg06_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+    		hcontainer
+		{
+   			fxeditb( varLabel07 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V7" )
+				}
+			]
+
+			fxfloatedit( cg07_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg07_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg07_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg07_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+		hcontainer
+		{
+   			fxeditb( varLabel08 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V8" )
+				}
+			]
+
+			fxfloatedit( cg08_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg08_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg08_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg08_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+  	       	hcontainer
+		{
+   			fxeditb( varLabel09 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V9" )
+				}
+			]
+
+			fxfloatedit( cg09_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg09_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg09_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg09_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+  		hcontainer
+		{
+   			fxeditb( varLabel10 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V10" )
+				}
+			]
+
+			fxfloatedit( cg10_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg10_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg10_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg10_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+   		hcontainer
+		{
+   			fxeditb( varLabel11 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V11" )
+				}
+			]
+
+			fxfloatedit( cg11_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg11_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg11_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg11_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+   		hcontainer
+		{
+   			fxeditb( varLabel12 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V12" )
+				}
+			]
+
+			fxfloatedit( cg12_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg12_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg12_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg12_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+   		hcontainer
+		{
+   			fxeditb( varLabel13 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V13" )
+				}
+			]
+
+			fxfloatedit( cg13_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg13_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg13_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg13_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+  		 hcontainer
+		{
+   			fxeditb( varLabel14 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V14" )
+				}
+			]
+
+			fxfloatedit( cg14_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg14_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg14_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg14_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+   		hcontainer
+		{
+   			fxeditb( varLabel15 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V15" )
+				}
+			]
+
+			fxfloatedit( cg15_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg15_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg15_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg15_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+  		hcontainer
+		{
+   			fxeditb( varLabel16 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V16" )
+				}
+			]
+
+			fxfloatedit( cg16_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg16_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg16_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg16_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+  		hcontainer
+		{
+   			fxeditb( varLabel17 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V17" )
+				}
+			]
+
+			fxfloatedit( cg17_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg17_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg17_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg17_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel18 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V18" )
+				}
+			]
+
+			fxfloatedit( cg18_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg18_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg18_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg18_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel19 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V19" )
+				}
+			]
+
+			fxfloatedit( cg19_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg19_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg19_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg19_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel20 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V20" )
+				}
+			]
+
+			fxfloatedit( cg20_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg20_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg20_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg20_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel21 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V21" )
+				}
+			]
+
+			fxfloatedit( cg21_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg21_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg21_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg21_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel22 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V22" )
+				}
+			]
+
+			fxfloatedit( cg22_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg22_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg22_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg22_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel23 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V23" )
+				}
+			]
+
+			fxfloatedit( cg23_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg23_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg23_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg23_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel24 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V24" )
+				}
+			]
+
+			fxfloatedit( cg24_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg24_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg24_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg24_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel25 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V25" )
+				}
+			]
+
+			fxfloatedit( cg25_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg25_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg25_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg25_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel26 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V26" )
+				}
+			]
+
+			fxfloatedit( cg26_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg26_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg26_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg26_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel27 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V27" )
+				}
+			]
+
+			fxfloatedit( cg27_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg27_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg27_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg27_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel28 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V28" )
+				}
+			]
+
+			fxfloatedit( cg28_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg28_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg28_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg28_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel29 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V29" )
+				}
+			]
+
+			fxfloatedit( cg29_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg29_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg29_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg29_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel30 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V30" )
+				}
+			]
+
+			fxfloatedit( cg30_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg30_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg30_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg30_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+  		hcontainer
+		{
+   			fxeditb( varLabel31 )
+			[
+				exec
+				{
+					width( 250 )
+					labelwidth( 40 )
+     					label( "V31" )
+				}
+			]
+
+			fxfloatedit( cg31_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					labelwidth(20)
+				       	label( "X" )
+				       	width( 100 )
+				}
+			]
+			fxfloatedit( cg31_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Y" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+			fxfloatedit( cg31_z, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Z" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		        fxfloatedit( cg31_w, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "W" )
+					labelwidth( 20 )
+					width( 100 )
+				}
+			]
+		}
+
+
+
+
+  	        hcontainer
+		{
+			fxedit( colorLabel00 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T0" )
+				}
+			]
+		        fileedit( colorMap00 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+		    	scrollbox( texTile00 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor00 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+		        scrollbox( textureFormat00 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 		       	fxedit( colorLabel01 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T1" )
+				}
+			]
+
+			fileedit( colorMap01 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+ 			scrollbox( texTile01 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor01 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat01 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel02 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T2" )
+				}
+			]
+
+			fileedit( colorMap02 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+			scrollbox( texTile02 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor02 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat02 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel03 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T3" )
+				}
+			]
+
+			fileedit( colorMap03 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+ 			scrollbox( texTile03 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor03 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat03 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel04 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T4" )
+				}
+			]
+
+			fileedit( colorMap04 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile04 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor04 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat04 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel05 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T5" )
+				}
+			]
+
+			fileedit( colorMap05 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile05 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor05 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat05 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel06 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T6" )
+				}
+			]
+
+			fileedit( colorMap06 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   		       	scrollbox( texTile06 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor06 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat06 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel07 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T7" )
+				}
+			]
+
+			fileedit( colorMap07 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile07 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor07 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat07 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+		}
+
+
+	        hcontainer
+		{
+ 			fxedit( colorLabel08 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T8" )
+				}
+			]
+
+			fileedit( colorMap08 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile08 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor08 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat08 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel09 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T9" )
+				}
+			]
+
+			fileedit( colorMap09 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile09 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor09 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat09 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel10 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T10" )
+				}
+			]
+
+			fileedit( colorMap10 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile10 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor10 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat10 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel11 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T11" )
+				}
+			]
+
+			fileedit( colorMap11 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile11 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor11 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat11 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+		}
+
+
+	        hcontainer
+		{
+ 			fxedit( colorLabel12 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T12" )
+				}
+			]
+
+			fileedit( colorMap12 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+				}
+			]
+   			scrollbox( texTile12 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor12 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat12 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel13 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T13" )
+				}
+			]
+
+			fileedit( colorMap13 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+
+				}
+			]
+   			scrollbox( texTile13 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor13 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat13 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel14 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T14" )
+				}
+			]
+
+			fileedit( colorMap14 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+
+				}
+			]
+   			scrollbox( texTile14 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor14 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat14 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+
+		}
+	        hcontainer
+		{
+ 			fxedit( colorLabel15 )
+			[
+				exec
+				{
+					width( 251 )
+					labelwidth( 40 )
+     					label( "T15" )
+				}
+			]
+
+			fileedit( colorMap15 )
+			[
+				exec
+				{
+					width( 400 )
+					labelwidth( 0 )
+
+				}
+			]
+			scrollbox( texTile15 )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 100 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor15 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+        		scrollbox( textureFormat15 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 0 )
+					tooltip( "Changes the compression method for the texture")
+				}
+			]
+		}
+
+
+
+	}
+	[
+		exec
+		{
+    			visible( materialType == "CGFX" || materialType == "CGFXmodel" )
+			groupBox( "CGFX Infomation" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit( treeCanopyMinimumSway, 0.01, 0.05 )
+			[
+				exec
+				{	
+					label( "Minimum sway" )
+					tooltip("Minimum sway specifies the least sway fraction, Random value between 1 and (1-minimum sway is added per leaf).") 
+					labelwidth( 150 )
+					width( 230 )
+				}
+			]
+			floatedit( treeCanopyScaleRotationAngles, 0.01, 0.05 )
+			[
+				exec
+				{	
+					label( "Scale rotation angles" )
+					tooltip("Think of this value as the inverse distance from pivot to leaf. Closer the leaves to the pivot, higher this value.") 
+					labelwidth( 150 )
+					width( 230 )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( treeCanopyAmbientOcclusion, 0.01, 0.05 )
+			[
+				exec
+				{	
+					label( "Ambient Occlusion" )
+					tooltip("Amount of AO applied (0 means no AO, 1 means full AO).") 
+					labelwidth( 150 )
+					width( 230 )
+				}
+			]
+			floatedit( treeCanopyLightingAmount, 0.01, 0.05 )
+			[
+				exec
+				{	
+					label( "Lighting Amount" )
+					tooltip("Amount of lighting applied (0 means ambient lighting, 1 means harsh lighting).") 
+					labelwidth( 150 )
+					width( 230 )
+				}
+			]
+		}
+		hcontainer
+		{
+			colorpicker( treeCanopyScatterColor )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Sub-surface scatter" )
+					tooltip( "Color of the light coming through the leaves." )
+				}
+			]		
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType == "tree canopy" )
+			groupBox( "Tree Canopy Material" )
+		}
+	]
+
+	vcontainer
+	{
+		checkbox( isMPWeapon )
+		[
+			exec
+			{
+				tooltip("Provides support for more detail textures, for MP weapon models only.")
+				labelwidth( 200 )
+				righttext()
+				label( "Enable" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Multiplayer Weapon Material" )
+			visible( materialType == "model phong" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			fileedit( colorMap )
+			[
+				exec
+				{
+					width( 450 )
+					labelwidth( 0 )
+				}
+			]
+			colorpicker( colorTint )
+			[
+				exec
+				{
+					tooltip( "for world materials, instead of vertex coloring." )
+					labelwidth( 40 )
+					label( "Tint" )
+					visible( materialType != "2d" && materialType != "distortion" && materialType != "particle cloud" && materialType != "sky" && materialType != "water" && materialType != "objective" )
+				}
+			]
+		}
+		hcontainer
+		{
+			scrollbox( tileColor )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 115 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor )
+			[
+				exec
+				{
+					unsorted()
+					width( 250 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+			scrollbox( formatColor )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+			checkbox( nopicmipColor )
+			[
+				exec
+				{
+					tooltip("Ignores mip maps, image will always be high rez. Prevents the game from reducing this image's resolution when trying to save texture memory.")
+					righttext()
+					labelwidth( 65 )
+					label( "nopicmip" )
+				}
+			]
+			checkbox( noStreamColor )
+			[
+				exec
+				{
+					righttext()
+					labelwidth( 75 )
+					label( "no stream" )
+					visible( materialType == "world unlit" || materialType == "model unlit" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox( "Color map" )
+			visible( materialType != "water" )
+		}
+	]
+	
+	
+	vcontainer
+	{
+		fileedit( colorDetailMap )
+		[
+			exec
+			{
+				width( 450 )
+				labelwidth( 0 )
+			}
+		]
+		hcontainer
+		{
+			floatedit( colorDetailScaleX, 1, 4 )
+			[
+				exec
+				{
+					tooltip("A higher number makes the detail map tile more often relative to the texture it's on.")
+					label( "x scale" )
+					labelwidth( 55 )
+					width( 115 )
+				}
+			]
+			floatedit( colorDetailScaleY, 1, 4 )
+			[
+				exec
+				{
+					tooltip("A higher number makes the detail map tile more often relative to the texture it's on.")
+					label( "y scale" )
+					labelwidth( 55 )
+					width( 115 )
+				}
+			]
+			scrollbox( filterColorDetail )
+			[
+				exec
+				{
+					unsorted()
+					width( 250 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+			scrollbox( formatColorDetail )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+			checkbox( nopicmipColorDetail )
+			[
+				exec
+				{
+					tooltip("ignores mip maps, image will always be high rez. Prevents the game from reducing this image's resolution when trying to save texture memory.")
+					righttext()
+					labelwidth( 65 )
+					label( "nopicmip" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox( "Color detail map" )
+			visible( materialType == "model phong" && ( isMPWeapon==1 || materialFeatureType == "clothwet" ) )
+		}
+	]
+	
+
+	vcontainer
+	{
+		hcontainer
+		{
+			fileedit( colorMap01 )
+			[
+				exec
+				{
+					width( 450 )
+					labelwidth( 0 )
+				}
+			]
+			colorpicker( colorTint )
+			[
+				exec
+				{
+					tooltip( "for world materials, instead of vertex coloring." )
+					labelwidth( 40 )
+					label( "Tint" )
+					visible( materialType != "2d" && materialType != "distortion" && materialType != "particle cloud" && materialType != "sky" && materialType != "water" && materialType != "objective" )
+				}
+			]
+		}
+		hcontainer
+		{
+			scrollbox( tileColor )
+			[
+				exec
+				{
+					visible( materialType != "sky" && materialType != "water" )
+					width( 115 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterColor )
+			[
+				exec
+				{
+					unsorted()
+					width( 250 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+			scrollbox( formatColor )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+			checkbox( nopicmipColor )
+			[
+				exec
+				{
+					tooltip("Ignores mip maps, image will always be high rez. Prevents the game from reducing this image's resolution when trying to save texture memory.")
+					righttext()
+					labelwidth( 65 )
+					label( "nopicmip" )
+				}
+			]
+			checkbox( noStreamColor )
+			[
+				exec
+				{
+					righttext()
+					labelwidth( 75 )
+					label( "no stream" )
+					visible( materialType == "world unlit" || materialType == "model unlit" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox( "Color map 2" )
+			visible( materialType == "sky noncubemap transition" )
+		}
+	]
+
+	vcontainer
+	{
+		fileedit( normalMap )
+		[
+			exec
+			{
+				width( 450 )
+				labelwidth( 0 )
+			}
+		]
+		hcontainer
+		{
+			scrollbox( tileNormal )
+			[
+				exec
+				{
+					width( 115 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterNormal )
+			[
+				exec
+				{
+					unsorted()
+					width( 250 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+			scrollbox( formatNormal )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+			checkbox( nopicmipNormal )
+			[
+				exec
+				{
+					tooltip("ignores mip maps, image will always be high rez. Prevents the game from reducing this image's resolution when trying to save texture memory.")
+					righttext()
+					labelwidth( 65 )
+					label( "nopicmip" )
+				}
+			]
+			checkbox( useLegacyNormalEncoding )
+			[
+				exec
+				{
+					righttext()
+					labelwidth( 110 )
+					label( "legacy encoding" )
+                                        tooltip( "Keeps backwards compatibility with a buggy version of the normal map compression.  New textures should always switch this off." )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType != "2d" && materialType != "unlit" && materialType != "world unlit" && materialType != "model unlit" && materialType != "effect" && materialType != "distortion" && materialType != "tools" && materialType != "sky" && materialType != "sky noncubemap" && materialType != "sky noncubemap transition" && materialType != "particle cloud" && materialType != "objective" && materialType != "model ambient" && materialType != "dynamic foliage" && materialType != "cloud" )
+			groupBox( "Normal map" )
+		}
+	]
+
+	vcontainer
+	{
+		fileedit( detailMap )
+		[
+			exec
+			{
+				width( 450 )
+				labelwidth( 0 )
+			}
+		]
+		hcontainer
+		{
+			floatedit( detailScaleX, 1, 4 )
+			[
+				exec
+				{
+					tooltip("A higher number makes the detail map tile more often relative to the texture it's on.")
+					label( "x scale" )
+					labelwidth( 55 )
+					width( 115 )
+				}
+			]
+			floatedit( detailScaleY, 1, 4 )
+			[
+				exec
+				{
+					tooltip("A higher number makes the detail map tile more often relative to the texture it's on.")
+					label( "y scale" )
+					labelwidth( 55 )
+					width( 115 )
+				}
+			]
+			floatedit( detailScaleHeight, 1, 4 )
+			[
+				exec
+				{
+					tooltip("A higher number makes the detail map more bumpy. (1.0 is default)")
+					label( "height scale" )
+					labelwidth( 85 )
+					width( 145 )
+				}
+			]
+			scrollbox( filterDetail )
+			[
+				exec
+				{
+					unsorted()
+					width( 250 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+			scrollbox( formatDetail )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+			checkbox( nopicmipDetail )
+			[
+				exec
+				{
+					tooltip("ignores mip maps, image will always be high rez. Prevents the game from reducing this image's resolution when trying to save texture memory.")
+					righttext()
+					labelwidth( 65 )
+					label( "nopicmip" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox( "Detail normal map" )
+			visible( materialType == "world phong" || materialType == "model phong" || materialType == "model cook-torrance" || materialType == "custom" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit( waterScrollX0, 0.1, 0.2 )
+			[
+				exec
+				{
+					unsorted()
+					width( 200 )
+					labelwidth( 120 )
+					label( "Water 0 Scroll X" )
+				}
+			]
+			floatedit( waterScrollX1, 0.1, 0.2 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 120 )
+					label( "Water 1 Scroll X" )
+				}
+			]
+			floatedit( waterScrollX2, 0.1, 0.2 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 120 )
+					label( "Water 2 Scroll X" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( waterScrollY0, 0.1, 0.2 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 120 )
+					label( "Water 0 Scroll Y" )
+				}
+			]
+			floatedit( waterScrollY1, 0.1, 0.2 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 120 )
+					label( "Water 1 Scroll Y" )
+				}
+			]
+			floatedit( waterScrollY2, 0.1, 0.2 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 120 )
+					label( "Water 2 Scroll Y" )
+				}
+			]
+		}
+		hcontainer
+		{
+			colorpicker( waterColor )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Color" )
+					tooltip( "Base color of the water itself" )
+				}
+			]
+			floatedit( waterFeather, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 100 )
+					labelwidth( 50 )
+					label( "Feather" )
+					tooltip( "How the water fades off around the edges" )
+				}
+			]
+			floatedit( waterOpacity, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 100 )
+					labelwidth( 50 )
+					label( "Opacity" )
+					tooltip( "How cloudy the water is" )
+				}
+			]
+			floatedit( waterRoughness, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 100 )
+					labelwidth( 50 )
+					label( "Roughness" )
+					tooltip( "Roughness of the water surface's bump map" )
+				}
+			]
+			floatedit( waterRefract, 1, 5 )
+			[
+				exec
+				{
+					width( 100 )
+					labelwidth( 50 )
+					label( "Refraction" )
+					tooltip( "Amount of refraction distortion to apply" )
+				}
+			]
+		}
+		hcontainer
+		{
+			colorpicker( waterSkyColor )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Sky Reflection Color" )
+					tooltip( "Average sky color of the surrounding world" )
+				}
+			]
+			colorpicker( waterGroundColor )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Ground Reflection Color" )
+					tooltip( "Average ground color of the surrounding world" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanSunBrightness, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Sun Brightness" )
+					tooltip( "Brightness of the sun reflection" )
+				}
+			]
+			floatedit( oceanSunSize, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Sun Size" )
+					tooltip( "Size of the sun reflection" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType == "water" || materialType == "ocean" )
+			groupBox( "Water map" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit( oceanFoamIntensity, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Foam Intensity" )
+					tooltip( "Alpha value for the foam floating on top of the water, (i.e. wave crests)" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanFoamOverbright, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Foam Overbright" )
+					tooltip( "Allows the foam to go super-white when there's a lot of it - useful for getting like whitecaps and stuff" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanFoamRepeat, 1, 16 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Foam Repeat" )
+					tooltip( "UV mapping for the foam texture - how often it repeats across the world" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanBumpRepeat, 1, 16 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Bump Repeat" )
+					tooltip( "UV mapping for the bump map - how often it repeats across the world" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanShoreFeather, 1, 10 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Shore Feather" )
+					tooltip( "Distance from the shore that the foam starts to appear at" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanShoreEdgeness, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Shore Edgeness" )
+					tooltip( "Controls the Z-feather at the very edge of the water" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanShoreBrightness, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Shore Brightness" )
+					tooltip( "Intensity of the foam around the shoreline" )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( oceanReflectFuzzyness, 0.01, 0.05 )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Reflection Fuzzyness" )
+					tooltip( "Fuzzyness of the sky reflection" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType == "ocean" )
+			groupBox( "Ocean parameters" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			fileedit( specColorMap )
+			[
+				exec
+				{
+					width( 450 )
+					labelwidth( 0 )
+				}
+			]
+		}
+		hcontainer
+		{
+			scrollbox( tileSpecular )
+			[
+				exec
+				{
+					width( 115 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterSpecular )
+			[
+				exec
+				{
+					unsorted()
+					width( 250 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+			scrollbox( formatSpecular )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+			checkbox( nopicmipSpecular )
+			[
+				exec
+				{
+					tooltip("Ignores mip maps, image will always be high rez. Prevents the game from reducing this image's resolution when trying to save texture memory.")
+					righttext()
+					labelwidth( 65 )
+					label( "nopicmip" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType != "2d" && materialType != "unlit" && materialType != "world unlit" && materialType != "model unlit" && materialType != "effect" && materialType != "distortion" && materialType != "tools" && materialType != "sky" && materialType != "sky noncubemap" && materialType != "sky noncubemap transition" && materialType != "water" && materialType != "particle cloud" && materialType != "objective" && materialType != "model ambient" && materialType != "dynamic foliage" && materialType != "cloud" && materialType != "ocean" )
+			groupBox( "Specular color map" )
+		}
+	]
+	
+	vcontainer
+	{
+		hcontainer
+		{
+			fileedit( specDetailMap )
+			[
+				exec
+				{
+					width( 450 )
+					labelwidth( 0 )
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit( specDetailScaleX, 1, 4 )
+			[
+				exec
+				{
+					tooltip("A higher number makes the detail map tile more often relative to the texture it's on.")
+					label( "x scale" )
+					labelwidth( 55 )
+					width( 115 )
+				}
+			]
+			floatedit( specDetailScaleY, 1, 4 )
+			[
+				exec
+				{
+					tooltip("A higher number makes the detail map tile more often relative to the texture it's on.")
+					label( "y scale" )
+					labelwidth( 55 )
+					width( 115 )
+				}
+			]
+			scrollbox( formatSpecularDetail )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType == "model phong" && ( isMPWeapon==1 || materialFeatureType == "clothwet" ) )
+			groupBox( "Specular color detail map" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			fileedit( cosinePowerMap )
+			[
+				exec
+				{
+					width( 450 )
+					labelwidth( 0 )
+				}
+			]
+		}
+		hcontainer
+		{
+			scrollbox( tileSpecular )
+			[
+				exec
+				{
+					width( 115 )
+					labelwidth( 0 )
+					tooltip( "Wraps the image so it repeats at the edges, or clamps it so it stops at the edges" )
+				}
+			]
+			scrollbox( filterSpecular )
+			[
+				exec
+				{
+					unsorted()
+					width( 250 )
+					labelwidth( 0 )
+					tooltip( "Makes the image clearer when viewed from an angle, at some cost of rendering time")
+				}
+			]
+			scrollbox( formatSpecular )
+			[
+				exec
+				{
+					width( 165 )
+					labelwidth( 0 )
+				}
+			]
+			checkbox( nopicmipSpecular )
+			[
+				exec
+				{
+					tooltip("Ignores mip maps, image will always be high rez. Prevents the game from reducing this image's resolution when trying to save texture memory.")
+					righttext()
+					labelwidth( 65 )
+					label( "nopicmip" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType != "2d" && materialType != "unlit" && materialType != "world unlit" && materialType != "model unlit" && materialType != "effect" && materialType != "distortion" && materialType != "tools" && materialType != "sky" && materialType != "sky noncubemap" && materialType != "sky noncubemap transition" && materialType != "water" && materialType != "particle cloud" && materialType != "objective" && materialType != "model ambient" && materialType != "dynamic foliage" && materialType != "cloud" && materialType != "ocean" && materialType != "tree canopy"  )
+			groupBox( "Cosine power map" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit( envMapMin, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Minimum" )
+					tooltip( "Amount of reflection looking directly at a surface." )
+					labelwidth( 80 )
+					width( 140 )
+				}
+			]
+
+			floatedit( envMapMax, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Maximum" )
+					tooltip( "Amount of reflection at full glancing angle." )
+					labelwidth( 80 )
+					width( 140 )
+				}
+			]
+		
+			floatedit( envMapExponent, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "Exponent" )
+					tooltip( "Controls how quickly specular strength goes from 'Minimum' to 'Maximum' as the angle approaches glancing.  Larger values keep the strength near Minimum for longer." )
+					labelwidth( 80 )
+					width( 140 )
+				}
+			]			
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType == "world phong" || materialType == "model phong" || materialType == "custom" || materialType == "water" || materialType == "ocean" )
+			groupBox( "Env Mapping" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			colorpicker( cloudLightColor )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Light Color" )
+					tooltip( "Lighting on the side facing towards the sun." )
+				}
+			]
+
+			colorpicker( cloudDarkColor )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Dark Color" )
+					tooltip( "Lighting on the side facing away from the sun." )
+				}
+			]		
+		}
+		hcontainer
+		{
+			colorpicker( cloudLiningColor )
+			[
+				exec
+				{
+					width( 200 )
+					labelwidth( 150 )
+					label( "Silver Lining Color" )
+					tooltip( "Color of the silver lining." )
+				}
+			]		
+
+			floatedit( cloudLiningSize, 0.05, 0.20 )
+			[
+				exec
+				{
+					label( "Silver Lining Size" )
+					tooltip( "Size of the silver lining. Larger values give a smaller size." )
+					labelwidth( 120 )
+					width( 180 )
+				}
+			]			
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType == "cloud" )
+			groupBox( "Clouds" )
+		}
+	]
+
+	vcontainer
+	{
+		checkbox( hasEditorMaterial )
+		[
+			exec
+			{
+				label( "Use '<materialname>_editor' as material in Radiant" )
+				righttext()
+				height( 15 )
+				labelwidth( 400 )
+			}
+		]
+	}	
+	[
+		exec
+		{
+			groupBox( "Custom Radiant Material" )
+			width( 400 )
+		}
+	]
+
+	hcontainer
+	{
+		vcontainer
+		{
+			checkbox( missileClip )
+			[
+				exec
+				{
+					tooltip( "Makes missiles collide with this material.  Setting this flag lets nothing whose flag isn't set collide with the material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( bulletClip )
+			[
+				exec
+				{
+					tooltip( "Makes bullets collide with this material.  Setting this flag lets nothing whose flag isn't set collide with the material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( playerClip )
+			[
+				exec
+				{
+					tooltip( "Makes the player collide with this material.  Setting this flag lets nothing whose flag isn't set collide with the material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( aiClip )
+			[
+				exec
+				{
+					tooltip( "Makes AI collide with this material.  Setting this flag lets nothing whose flag isn't set collide with the material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( vehicleClip )
+			[
+				exec
+				{
+					tooltip( "Makes vehicles collide with this material.  Setting this flag lets nothing whose flag isn't set collide with the material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( itemClip )
+			[
+				exec
+				{
+					tooltip( "Makes items and guns collide with this material.  Setting this flag lets nothing whose flag isn't set collide with the material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( canShootClip )
+			[
+				exec
+				{
+					tooltip( "AI can't shoot through this material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( aiSightClip )
+			[
+				exec
+				{
+					tooltip( "AI can't see through this material.  Setting this flag lets nothing whose flag isn't set collide with the material." )
+					righttext()
+					height( 15 )
+				}
+			]
+		}
+		vcontainer
+		{
+			checkbox( noFallDamage )
+			[
+				exec
+				{
+					tooltip( "Landing on this prevents damage, regardless of the height fallen." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noSteps )
+			[
+				exec
+				{
+					tooltip( "Suppresses footstep and landing sounds for this surface." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noImpact )
+			[
+				exec
+				{
+					tooltip( "No impact mark will be made if the mark is centered on this surface.  This surface may receive a mark centered on a nearby surface, unless 'noMarks' is also set." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noMarks )
+			[
+				exec
+				{
+					tooltip( "This surface won't ever receive an impact mark.  Neighboring surfaces may still receive a mark when this surface is hit, unless 'noImpact' is also set." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noPenetrate )
+			[
+				exec
+				{
+					tooltip( "This surface will block bullet penetration." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noDrop )
+			[
+				exec
+				{
+					tooltip( "A character that dies in this brush won't drop any items, and any items that enter this brush will be removed." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( slick )
+			[
+				exec
+				{
+					tooltip( "Player movement has lower friction on this surface." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( ladder )
+			[
+				exec
+				{
+					tooltip( "Player can climb this surface like a ladder." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( mantleOn )
+			[
+				exec
+				{
+					tooltip( "Player can climb onto this brush." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( mantleOver )
+			[
+				exec
+				{
+					tooltip( "Player can climb over this brush." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( mount )
+			[
+				exec
+				{
+					tooltip( "Player can climb over this brush." )
+					righttext()
+					height( 15 )
+				}
+			]
+		}
+		vcontainer
+		{
+			checkbox( noLightmap )
+			[
+				exec
+				{
+					tooltip( "Don't allocate a lightmap for this material, usually because it is a light source." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noDynamicLight )
+			[
+				exec
+				{
+					tooltip( "Prevent being lit by dynamic lights, usually because the material is a light source." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noCastShadow )
+			[
+				exec
+				{
+					tooltip( "Prevents ever casting shadows.  It may still receive shadows." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( onlyCastShadow )
+			[
+				exec
+				{
+					tooltip( "Causes the material to cast shadows only.  The material itself will not render." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noReceiveDynamicShadow )
+			[
+				exec
+				{
+					label( "noRcvDynShadow" )
+					tooltip( "Prevents receiving dynamic shadows.  It may still cast dynamic shadows and receive precalculated shadows." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noDraw )
+			[
+				exec
+				{
+					tooltip( "Will be visible only in the editor." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( noFog )
+			[
+				exec
+				{
+					tooltip( "Always draws as if there were no fog." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( drawToggle )
+			[
+				exec
+				{
+					tooltip( "Hides all faces that aren't also 'drawToggle' in the editor if draw toggle is enabled." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( sky )
+			[
+				exec
+				{
+					tooltip( "This is a sky material." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( radialNormals )
+			[
+				exec
+				{
+					tooltip( "When used on a model without 'noRadialNormals' checked, surfaces with this material will have their normals auto-generated away from the model's origin." )
+					righttext()
+					height( 15 )
+				}
+			]
+		}
+		vcontainer
+		{
+			checkbox( nonColliding )
+			[
+				exec
+				{
+					tooltip( "No collision data is ever stored in the BSP, saving memory and CPU in the game." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( nonSolid )
+			[
+				exec
+				{
+					tooltip( "Nothing collides with this surface, but it still generates collision data.  Use 'nonColliding' if possible." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( transparent )
+			[
+				exec
+				{
+					tooltip( "This material isn't a boundary for portals, and geometry on the other side of it won't get deleted." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( detail )
+			[
+				exec
+				{
+					tooltip( "This material will never split the BSP in the map compiler.  This is usually set in the editor instead." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( structural )
+			[
+				exec
+				{
+					tooltip( "This material will split the BSP in the map compiler by default.  This can be overridden in the editor." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( portal )
+			[
+				exec
+				{
+					tooltip( "This material is a runtime portal.  The edges of brush faces using this material will cull geometry." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( lightPortal )
+			[
+				exec
+				{
+					tooltip( "This material starts a new region of influence for a primary light.  It doesn't split the BSP." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( origin )
+			[
+				exec
+				{
+					tooltip( "If a brush model entity has a brush with this material, the entity's origin is the center of that brush instead of the world origin." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( physicsGeom )
+			[
+				exec
+				{
+					tooltip( "Used in physics collision maps." )
+					righttext()
+					height( 15 )
+				}
+			]
+			checkbox( hdrPortal )
+			[
+				exec
+				{
+					tooltip( "Imitates the HDR effect of eyes adjusting to significantly brighter or darker geometry on the other side of this portal." )
+					righttext()
+					height( 15 )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType != "2d" && materialType != "particle cloud" && materialType != "objective" )
+			groupBox( "Special surface properties (extremely rarely needed)" )
+		}
+	]
+	checkbox( texScroll )
+	[
+		exec
+		{
+			visible( materialType == "model phong" && blendFunc != "Add" )
+			righttext()
+			height( 15 )
+			label( "Texture Scroll" )
+		}
+	]
+	vcontainer
+	{
+		scrollbox( showAdvancedOptions )
+		[
+			exec
+			{
+				label( "Show Platform..." )
+			}
+		]
+		vcontainer
+		{
+			hcontainer
+			{
+				scrollbox( colorWriteRed )
+				[
+					exec
+					{
+						label( "Color Write - Red" )
+					}
+				]
+				scrollbox( colorWriteGreen )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Green" )
+					}
+				]
+				scrollbox( colorWriteBlue )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Blue" )
+					}
+				]
+				scrollbox( colorWriteAlpha )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Alpha" )
+					}
+				]
+			}
+			scrollbox( stencil )
+			[
+				exec
+				{
+					label( "Stencil" )
+				}
+			]
+			hcontainer
+			{
+				scrollbox( stencilFunc1 )
+				[
+					exec
+					{
+						label( "Front - Function" )
+					}
+				]
+				scrollbox( stencilOpFail1 )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Fail" )
+					}
+				]
+				scrollbox( stencilOpZFail1 )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Z-fail" )
+					}
+				]
+				scrollbox( stencilOpPass1 )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Pass" )
+					}
+				]
+			}
+			[
+				exec
+				{
+					visible( stencil != "Disable" )
+				}
+			]
+			hcontainer
+			{
+				scrollbox( stencilFunc2 )
+				[
+					exec
+					{
+						label( "Back - Function" )
+					}
+				]
+				scrollbox( stencilOpFail2 )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Fail" )
+					}
+				]
+				scrollbox( stencilOpZFail2 )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Z-fail" )
+					}
+				]
+				scrollbox( stencilOpPass2 )
+				[
+					exec
+					{
+						width( 150 )
+						labelwidth( 50 )
+						label( "Pass" )
+					}
+				]
+			}
+			[
+				exec
+				{
+					visible( stencil == "Two-sided" )
+				}
+			]
+		}
+		[
+			exec
+			{
+				tooltip("??? code function?.")
+				visible( showAdvancedOptions == "PC / Xenon" )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "Advanced Options" )
+		}
+	]
+	
+	vcontainer
+	{
+		scrollbox( dynamicFoliageLightMethod )
+		[
+			exec
+			{	
+				label( "lightMethod" )
+				tooltip("dynamicFoliageLightingMethod tooptip") 
+				width( 215 )
+				labelwidth( 100 )
+				unsorted()
+				visible( materialType == "turn this on later" )
+			}
+		]
+		
+		floatedit( dynamicFoliageFlexibility, 0.01, 0.05 )
+		[
+			exec
+			{	
+				label( "flexibility" )
+				tooltip("1 is default, 0 makes it really stiff that it won't sway in the wind, nor get pushed around.") 
+				labelwidth( 80 )
+				width( 140 )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( materialType == "dynamic foliage" )
+			groupBox( "Dynamic Foliage Material" )
+		}
+	]
+
+	vcontainer
+	{
+		floatedit( dynamicFoliageSunDiffuseMin, 0.01, 0.05 )
+		[
+			exec
+			{	
+				label( "sunDiffuseMin" )
+				tooltip("minimum amount of sunlight received, default is 0") 
+				labelwidth( 120 )
+				width( 180 )
+			}
+		]
+		floatedit( dynamicFoliageSunDiffuseMax, 0.01, 0.05 )
+		[
+			exec
+			{	
+				label( "sunDiffuseMax" )
+				tooltip("maximum amount of sunlight received, default is 1") 
+				labelwidth( 120 )
+				width( 180 )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( materialType == "dynamic foliage" || materialType == "model phong" || materialType == "model ambient" )
+			groupBox( "Foliage Sunlight Adjustment" )
+		}
+	]
+
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit( uScroll, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "uScroll" )
+					tooltip( "Texture scroll speed in u direction. 1.0 means the entire texture will scroll by in 1 sec." )
+					labelwidth( 80 )
+					width( 140 )
+				}
+			]
+
+			floatedit( vScroll, 0.01, 0.05 )
+			[
+				exec
+				{
+					label( "vScroll" )
+					tooltip( "Texture scroll speed in v direction. 1.0 means the entire texture will scroll by in 1 sec." )
+					labelwidth( 80 )
+					width( 140 )
+				}
+			]		
+		}
+	}
+	[
+		exec
+		{
+			visible( materialType == "sky noncubemap" || materialType == "sky noncubemap transition"  )
+			groupBox( "sky noncubemap" )
+		}
+	]
+	
+	
+	hcontainer
+	{
+		checkbox( scorchable )
+		[
+			exec
+			{
+				tooltip( "works on world geometry, static models, and destructible models" )
+				righttext()
+				height( 15 )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( materialType == "world phong" || materialType == "model phong" || materialType == "model ambient" || materialType == "dynamic foliage" )
+		}
+	]
+	
+	
+	hcontainer
+	{
+		checkbox( marksDirectionFade )
+		[
+			exec
+			{
+				tooltip( "for flamethrower decals. They fade out as they face away from the decal hit normal" )
+				righttext()
+				height( 15 )
+				labelwidth( 200 )
+			}
+		]
+	}
+	[
+		exec
+		{
+			visible( materialType == "impact mark" && blendFunc == "Blend" )
+			width( 200 )
+		}
+	]
+	
+	
+	hcontainer
+	{
+		scrollbox( materialFeatureType )
+		[
+			exec
+			{
+				tooltip("see wiki page for explanation of material types!")
+				visible( materialType == "model phong" )
+				width( 255 )
+				labelwidth( 150 )
+			}
+		]
+	}
+	
+	
+	
+	
+	vcontainer
+	{
+		vcontainer
+		{
+			hcontainer
+			{
+				fileedit( colorMap00 )
+				[
+					exec
+					{
+						width( 600 )
+						labelwidth( 150 )
+						label( "Charring Mask Map" )
+					}
+				]
+				floatedit( cg00_x, 0.01, 0.05 )
+				[
+					exec
+					{
+						tooltip("")
+						label( "Scale" )
+						labelwidth( 55 )
+						width( 115 )
+					}
+				]
+			}
+			
+			hcontainer
+			{
+				fileedit( colorMap01 )
+				[
+					exec
+					{
+						width( 600 )
+						labelwidth( 150 )
+						label( "Charred Color Map" )
+					}
+				]
+				floatedit( cg00_y, 0.01, 0.05 )
+				[
+					exec
+					{
+						tooltip("")
+						label( "Scale" )
+						labelwidth( 55 )
+						width( 115 )
+					}
+				]
+			}
+			
+			fileedit( colorMap02 )
+			[
+				exec
+				{
+					width( 600 )
+					labelwidth( 150 )
+					label( "Charred Normal Map" )
+					visible( subLayerScroll == 0 )
+				}
+			]
+			
+			hcontainer
+			{
+				fxfloatedit( cg01_x, 0.01, 0.05 )
+				[
+					exec
+					{
+						labelwidth(20)
+						label( "R" )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg01_y, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "G" )
+						labelwidth( 20 )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg01_z, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "B" )
+						labelwidth( 20 )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg01_w, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "Brightness" )
+						labelwidth( 100 )
+						width( 200 )
+					}
+				]
+			}
+			[
+				exec
+				{
+					groupBox( "Ember Edge Color" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox( "cloth charr set up" )
+			visible( materialType == "model phong" && materialFeatureType == "clothcharr" )
+		}
+	]
+
+	vcontainer
+	{
+		vcontainer
+		{
+			hcontainer
+			{
+				fxfloatedit( cg00_x, 0.01, 0.05 )
+				[
+					exec
+					{
+						labelwidth(20)
+						label( "R" )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg00_y, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "G" )
+						labelwidth( 20 )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg00_z, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "B" )
+						labelwidth( 20 )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg00_w, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "A" )
+						labelwidth( 20 )
+						width( 200 )
+					}
+				]
+			}
+			[
+				exec
+				{
+					groupBox( "Wet Color" )
+				}
+			]
+		
+			floatedit( cg01_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					tooltip("")
+					label( "Wetness" )
+					labelwidth( 150 )
+					width( 210 )
+				}
+			]
+
+			fileedit( colorMap00 )
+			[
+				exec
+		 		{
+					width( 600 )
+					labelwidth( 150 )
+					label( "Wetness Map" )
+				}
+			]
+
+			checkbox( wetnessInvert )
+			[
+				exec
+				{
+					righttext()
+					height( 15 )
+					label( "Invert Wetness Map" )
+				}
+			]
+
+			fileedit( colorMap01 )
+			[
+				exec
+		 		{
+					width( 600 )
+					labelwidth( 150 )
+					label( "Wet Cosine Power Map" )
+				}
+			]
+
+			floatedit( cg01_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					tooltip("")
+					label( "Wet Specularity" )
+					labelwidth( 150 )
+					width( 210 )
+				}
+			]
+
+			vcontainer
+			{
+				hcontainer
+				{
+					floatedit( cg01_z, 0.01, 0.05 )
+					[
+						exec
+						{
+							tooltip("")
+							label( "Minimum" )
+							labelwidth( 150 )
+							width( 210 )
+						}
+					]
+					floatedit( cg01_w, 0.01, 0.05 )
+					[
+						exec
+						{
+							tooltip("")
+							label( "Maximum" )
+							labelwidth( 150 )
+							width( 210 )
+						}
+					]
+					floatedit( cg02_x, 0.01, 0.05 )
+					[
+						exec
+						{
+							tooltip("")
+							label( "Exponent" )
+							labelwidth( 150 )
+							width( 210 )
+						}
+					]
+				}
+			}
+			[
+				exec
+				{
+					visible( materialType == "model phong" && materialFeatureType == "clothwet" )
+					groupBox( "Env Mapping" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox( "clothwet set up" )
+			visible( materialType == "model phong" && materialFeatureType == "clothwet" )
+		}
+	]
+
+
+	vcontainer
+	{
+		vcontainer
+		{
+			floatedit( cg00_x, 0.01, 0.05 )
+			[
+				exec
+				{
+					tooltip("")
+					label( "Gloss Scale" )
+					labelwidth( 150 )
+					width( 210 )
+				}
+			]
+			floatedit( cg00_y, 0.01, 0.05 )
+			[
+				exec
+				{
+					tooltip("")
+					label( "Eye Scale" )
+					labelwidth( 150 )
+					width( 210 )
+				}
+			]
+
+			hcontainer
+			{
+				fxfloatedit( cg01_x, 0.01, 0.05 )
+				[
+					exec
+					{
+						labelwidth(20)
+						label( "X" )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg01_y, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "Y" )
+						labelwidth( 20 )
+						width( 100 )
+					}
+				]
+				fxfloatedit( cg01_z, 0.01, 0.05 )
+				[
+					exec
+					{
+						label( "Z" )
+						labelwidth( 20 )
+						width( 100 )
+					}
+				]
+			}
+			[
+				exec
+				{
+					groupBox( "Eye Center" )
+				}
+			]
+
+			fileedit( colorMap00 )
+			[
+				exec
+		 		{
+					width( 600 )
+					labelwidth( 150 )
+					label( "Gloss Map" )
+				}
+			]
+			fileedit( colorMap01 )
+			[
+				exec
+		 		{
+					width( 600 )
+					labelwidth( 150 )
+					label( "Sphere Map" )
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox( "hair set up" )
+			visible( materialType == "model phong" && materialFeatureType == "eyeball" )
+		}
+	]
+
+
+	vcontainer
+	{
+		checkbox( subLayerScroll )
+		[
+			exec
+			{
+				righttext()
+				height( 15 )
+				label( "enable" )
+			}
+		]
+		
+		vcontainer
+		{
+			vcontainer
+			{
+
+				hcontainer
+				{
+					fileedit( colorMap05 )
+					[
+						exec
+						{
+							width( 450 )
+							labelwidth( 100 )
+							label( "multiply layer" )
+						}
+					]
+
+					floatedit( uScroll01, 0.01, 0.05 )
+					[
+						exec
+						{
+							label( "uScroll" )
+							tooltip( "Texture scroll speed in u direction. 1.0 means the entire texture will scroll by in 1 sec." )
+							labelwidth( 50 )
+							width( 110 )
+						}
+					]
+
+					floatedit( vScroll01, 0.01, 0.05 )
+					[
+						exec
+						{
+							label( "vScroll" )
+							tooltip( "Texture scroll speed in v direction. 1.0 means the entire texture will scroll by in 1 sec." )
+							labelwidth( 50 )
+							width( 110 )
+						}
+					]		
+				}
+
+			
+				hcontainer
+				{
+					fileedit( colorMap04 )
+					[
+						exec
+						{
+							width( 450 )
+							labelwidth( 100 )
+							label( "base layer" )
+						}
+					]
+
+					floatedit( uScroll00, 0.01, 0.05 )
+					[
+						exec
+						{
+							label( "uScroll" )
+							tooltip( "Texture scroll speed in u direction. 1.0 means the entire texture will scroll by in 1 sec." )
+							labelwidth( 50 )
+							width( 110 )
+						}
+					]
+
+					floatedit( vScroll00, 0.01, 0.05 )
+					[
+						exec
+						{
+							label( "vScroll" )
+							tooltip( "Texture scroll speed in v direction. 1.0 means the entire texture will scroll by in 1 sec." )
+							labelwidth( 50 )
+							width( 110 )
+						}
+					]		
+				}
+
+			}
+			
+		}
+		[
+			exec
+			{
+				visible( (materialType == "world phong" || materialType == "model phong") && subLayerScroll == 1)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox( "sub layer scroll" )
+			visible( materialType == "world phong" || materialType == "model phong")
+		}
+	]
+	
+}

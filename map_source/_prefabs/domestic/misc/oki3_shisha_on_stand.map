@@ -1,0 +1,444 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_oki3"
+"classname" "worldspawn"
+"northyaw" "90"
+"ambient" "0.15"
+"_color" "0.411765 0.34902 0.439216"
+"diffusefraction" "0.35"
+"sundiffusecolor" "0.3647 0.3686 0.3725"
+"suncolor" "0.9843 0.6980 0.6313"
+"sundirection" "-155 -182 0"
+"sunlight" "1.25"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"contrastgain" "0.15"
+// brush 0
+{
+  contents detail;
+ ( 32 -10 3 ) ( 32 54 3 ) ( -32 54 3 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 4 0 -90 0
+ ( -32 12 4 ) ( 32 12 4 ) ( 32 -52 4 ) okinawa_wall_shuri_outerwall 128 128 -12 -2 0 0 lightmap_gray 16384 16384 4 0 -90 0
+ ( -32 28 0 ) ( -32 28 4 ) ( -29 25 4 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 -16384 4 4 180 0
+ ( -32 25 -428 ) ( 32 25 -428 ) ( 32 25 -484 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 -4 0 0
+ ( 31 28 4 ) ( 31 28 0 ) ( 28 25 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 -16384 4 4 -180 0
+ ( 31 28 0 ) ( 31 28 4 ) ( -32 28 4 ) okinawa_wall_shuri_outerwall 128 128 0 0 0 0 lightmap_gray 16384 16384 0 -4 0 0
+}
+// brush 1
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_terrain_stone_aged02_noscorch
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 28 -3 t 960 372 -2 0.5
+	v 31 28 -3 t 1464 372 1.9375 0.5
+   )
+   (
+	v -32 28 3 t 960 324 -2 0.125
+	v 31 28 3 t 1464 324 1.9375 0.125
+   )
+  }
+ }
+// brush 2
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_terrain_stone_aged02_noscorch
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 28 -3 t 1508 372 1.75 0.5
+	v -32 28 3 t 1508 324 1.75 0.125
+   )
+   (
+	v -32 -32 -3 t 1028 372 -2 0.5
+	v -32 -32 3 t 1028 324 -2 0.125
+   )
+  }
+ }
+// brush 3
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_terrain_stone_aged02_noscorch
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 31 28 3 t 1440 324 1.75 0.125
+	v 31 28 -3 t 1440 372 1.75 0.5
+   )
+   (
+	v 31 -32 3 t 960 324 -2 0.125
+	v 31 -32 -3 t 960 372 -2 0.5
+   )
+  }
+ }
+// brush 4
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_terrain_stone_aged02_noscorch
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 31 -32 -3 t 1472 372 1.9375 0.5
+	v -32 -32 -3 t 968 372 -2 0.5
+   )
+   (
+	v 31 -32 3 t 1472 324 1.9375 0.125
+	v -32 -32 3 t 968 324 -2 0.125
+   )
+  }
+ }
+// brush 5
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_terrain_stone_aged02_noscorch
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -29 -29 4 t -168 320 -1.625 2
+	v -29 25 4 t -168 -112 -1.625 -1.375
+   )
+   (
+	v 28 -29 4 t 288 320 1.9375 2
+	v 28 25 4 t 288 -112 1.9375 -1.375
+   )
+  }
+ }
+// brush 6
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 28 4 t -160 -208 -2 2
+	v 31 28 4 t 344 -208 -2 -1.9375
+   )
+   (
+	v -29 25 4 t -136 -184 -1.8125 1.8125
+	v 28 25 4 t 320 -184 -1.8125 -1.75
+   )
+  }
+ }
+// brush 7
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 28 -29 4 t 320 248 1.8125 1.8125
+	v 28 25 4 t 320 -184 1.8125 -1.5625
+   )
+   (
+	v 31 -32 4 t 344 272 2 2
+	v 31 28 4 t 344 -208 2 -1.75
+   )
+  }
+ }
+// brush 8
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 31 28 4 t 224 -32 1.75 0
+	v 31 28 3 t 224 -24 1.75 0.0625
+   )
+   (
+	v 31 -32 4 t -256 -32 -2 0
+	v 31 -32 3 t -256 -24 -2 0.0625
+   )
+  }
+ }
+// brush 9
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 31 28 3 t 248 -24 1.9375 0.0625
+	v 31 28 4 t 248 -32 1.9375 0
+   )
+   (
+	v -32 28 3 t -256 -24 -2 0.0625
+	v -32 28 4 t -256 -32 -2 0
+   )
+  }
+ }
+// brush 10
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 28 -3 t -256 24 1.9375 0.25
+	v -32 28 -4 t -256 32 1.9375 0.1875
+   )
+   (
+	v 31 28 -3 t 248 24 -2 0.25
+	v 31 28 -4 t 248 32 -2 0.1875
+   )
+  }
+ }
+// brush 11
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 31 -32 -3 t -256 24 -2 0.25
+	v 31 28 -3 t 224 24 1.75 0.25
+   )
+   (
+	v 31 -32 -4 t -256 32 -2 0.1875
+	v 31 28 -4 t 224 32 1.75 0.1875
+   )
+  }
+ }
+// brush 12
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -29 -29 4 t -136 248 1.8125 1.8125
+	v 28 -29 4 t 320 248 1.8125 -1.75
+   )
+   (
+	v -32 -32 4 t -160 272 2 2
+	v 31 -32 4 t 344 272 2 -1.9375
+   )
+  }
+ }
+// brush 13
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 31 -32 4 t 248 -32 1.9375 0
+	v 31 -32 3 t 248 -24 1.9375 0.0625
+   )
+   (
+	v -32 -32 4 t -256 -32 -2 0
+	v -32 -32 3 t -256 -24 -2 0.0625
+   )
+  }
+ }
+// brush 14
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 -32 -4 t -256 32 1.9375 0.1875
+	v -32 -32 -3 t -256 24 1.9375 0.25
+   )
+   (
+	v 31 -32 -4 t 248 32 -2 0.1875
+	v 31 -32 -3 t 248 24 -2 0.25
+   )
+  }
+ }
+// brush 15
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 28 3 t 224 -24 1.75 0.0625
+	v -32 28 4 t 224 -32 1.75 0
+   )
+   (
+	v -32 -32 3 t -256 -24 -2 0.0625
+	v -32 -32 4 t -256 -32 -2 0
+   )
+  }
+ }
+// brush 16
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 -32 4 t -160 272 -2 2
+	v -32 28 4 t -160 -208 -2 -1.75
+   )
+   (
+	v -29 -29 4 t -136 248 -1.8125 1.8125
+	v -29 25 4 t -136 -184 -1.8125 -1.5625
+   )
+  }
+ }
+// brush 17
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 28 -3 t 224 24 1.75 0.25
+	v -32 -32 -3 t -256 24 -2 0.25
+   )
+   (
+	v -32 28 -4 t 224 32 1.75 0.1875
+	v -32 -32 -4 t -256 32 -2 0.1875
+   )
+  }
+ }
+// brush 18
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 28 25 -4 t 320 -184 -1.8125 1.8125
+	v 31 28 -4 t 344 -208 -2 2
+   )
+   (
+	v -29 25 -4 t -136 -184 -1.8125 -1.75
+	v -32 28 -4 t -160 -208 -2 -1.9375
+   )
+  }
+ }
+// brush 19
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -32 -32 -4 t -160 272 2 2
+	v -29 -29 -4 t -136 248 1.8125 1.8125
+   )
+   (
+	v -32 28 -4 t -160 -208 2 -1.75
+	v -29 25 -4 t -136 -184 1.8125 -1.5625
+   )
+  }
+ }
+// brush 20
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 31 -32 -4 t 344 272 2 2
+	v 28 -29 -4 t 320 248 1.8125 1.8125
+   )
+   (
+	v -32 -32 -4 t -160 272 2 -1.9375
+	v -29 -29 -4 t -136 248 1.8125 -1.75
+   )
+  }
+ }
+// brush 21
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 28 -29 -4 t 320 248 -1.8125 1.8125
+	v 31 -32 -4 t 344 272 -2 2
+   )
+   (
+	v 28 25 -4 t 320 -184 -1.8125 -1.5625
+	v 31 28 -4 t 344 -208 -2 -1.75
+   )
+  }
+ }
+// brush 22
+{
+ ( 32 29 -102.5 ) ( -32 29 -102.5 ) ( -32 -35 -102.5 ) clip_player 64 64 4152 -29 0 0 lightmap_gray 16384 16384 31 -29 0 0
+ ( -33 -35 4 ) ( -33 29 4 ) ( 31 29 4 ) clip_player 64 64 4152 -29 0 0 lightmap_gray 16384 16384 31 -29 0 0
+ ( -32.5 -32.5 4 ) ( 31.5 -32.5 4 ) ( 31.5 -32.5 -60 ) clip_player 64 64 4152 60 0 0 lightmap_gray 16384 16384 31 60 0 0
+ ( 31.5 -35 4 ) ( 31.5 29 4 ) ( 31.5 29 -60 ) clip_player 64 64 4150 60 0 0 lightmap_gray 16384 16384 29 60 0 0
+ ( 31 28.5 4 ) ( -33 28.5 4 ) ( -33 28.5 -60 ) clip_player 64 64 4152 60 0 0 lightmap_gray 16384 16384 31 60 0 0
+ ( -32.5 29 4 ) ( -32.5 -35 4 ) ( -32.5 -35 -60 ) clip_player 64 64 4150 60 0 0 lightmap_gray 16384 16384 29 60 0 0
+}
+}
+// entity 1
+{
+"modelscale" "1.000000"
+"classname" "misc_model"
+"model" "static_okinawa_shiisaa"
+"origin" "0.0 1.0 32.0"
+}

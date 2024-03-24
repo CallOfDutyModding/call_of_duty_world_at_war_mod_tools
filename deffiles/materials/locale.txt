@@ -1,0 +1,28 @@
+// Each line is a separate locale.
+// Blank lines are allowed.
+// Locales may have spaces in their names.
+// Leading and trailing spaces on a line get ignored.
+// The order is the order in which things appear in Radiant.
+// <separator> is used to add a separator line in Radiant.
+
+case
+test
+tools
+decal
+
+<separator>
+
+Training
+Peleliu
+Okinawa
+
+<separator>
+
+Holland
+Hamburg
+Rhine
+
+<separator>
+
+Berlin
+Seelow

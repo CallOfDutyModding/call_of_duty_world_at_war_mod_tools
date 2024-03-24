@@ -1,0 +1,1346 @@
+#name "flametable"
+#dll "all" "weapon"
+#target_dir "weapons/sp/" // target location 1 (single-player)
+#target_dir "weapons/mp/" // target location 2 (multi-player)
+#target_dir "xmodel/"
+#target_dir ""
+#target_dir "xanim/"
+#file_ext "*"
+#version 48
+
+// This tells the configstring converter what the file type identifier should be
+enum { "FLAMETABLEFILE" } configstringFileType
+
+// This uses the config string convert's multi-target folder
+// mechanism to make the weapon either a single-player weapon
+// or a multi-player weapon.
+// The first character is used to specify which target folder to go in
+enum { "1: Single-Player", "2: Multi-Player" } targetFolder
+
+string name
+
+string fire
+string smoke
+string heat
+string drips
+string streamFuel
+string streamFlames
+string streamFuel2
+string streamFlames2
+
+string flameOffLoopSound
+string flameIgniteSound
+string flameOnLoopSound
+string flameCooldownSound
+
+float 200 -10000 10000 flameVar_streamChunkGravityStart 
+float -240 -10000 10000 flameVar_streamChunkGravityEnd 
+float 100 1 500 flameVar_streamChunkMaxSize 
+float 3 1 10 flameVar_streamChunkStartSize 
+float 60 1 500 flameVar_streamChunkEndSize
+float 0.3 0 1 flameVar_streamChunkStartSizeRand 
+float 0.7 0 1 flameVar_streamChunkEndSizeRand 
+float 1 0.1 10 flameVar_streamChunkDistScalar 
+float 0.2 0.02 1 flameVar_streamChunkDistSwayScale 
+float 90 1 1000 flameVar_streamChunkDistSwayVelMax 
+float 800 10 2000 flameVar_streamChunkSpeed 
+float 0.4 0 20 flameVar_streamChunkDecel 
+float 0.75 0 1 flameVar_streamChunkVelocityAddScale 
+float 2.4 0.02 10 flameVar_streamChunkDuration 
+float 150 0.0 500 flameVar_streamChunkDurationScaleMaxVel 
+float 0.4 0 1 flameVar_streamChunkDurationVelScalar 
+float 0 -5 5 flameVar_streamChunkSizeSpeedScale 
+float -2 -5 5 flameVar_streamChunkSizeAgeScale 
+float 0.1 0.01 5 flameVar_streamChunkSpawnFireIntervalStart 
+float 0.8 0.01 5 flameVar_streamChunkSpawnFireIntervalEnd 
+float 0 0 1 flameVar_streamChunkSpawnFireMinLifeFrac 
+float 0.9 0.1 1 flameVar_streamChunkSpawnFireMaxLifeFrac 
+float 0.8 0 1 flameVar_streamChunkFireMinLifeFrac 
+float 0 0 1 flameVar_streamChunkFireMinLifeFracStart 
+float 0.2 0 1 flameVar_streamChunkFireMinLifeFracEnd 
+float 0 0 1 flameVar_streamChunkDripsMinLifeFrac 
+float 0 0 1 flameVar_streamChunkDripsMinLifeFracStart 
+float 1 0 1 flameVar_streamChunkDripsMinLifeFracEnd
+float 180 0 180 flameVar_streamChunkRotationRange
+float 4.13224 0.1 50 flameVar_streamSizeRandSinWave
+float 7.23244 0.1 50 flameVar_streamSizeRandCosWave
+float 0.025 0.01 1 flameVar_streamDripsChunkInterval
+float 0.0 0.0 1.0 flameVar_streamDripsChunkMinFrac
+float 0.8 0 1 flameVar_streamDripsChunkRandFrac
+float 0.025 0.01 1 flameVar_streamSmokeChunkInterval
+float 0 0 1 flameVar_streamSmokeChunkMinFrac
+float 0.8 0 1 flameVar_streamSmokeChunkRandFrac
+float 0.2 0 3 flameVar_streamChunkCullDistSizeFrac
+float 0.2 0 1 flameVar_streamChunkCullMinLife
+float 0.8 0 1 flameVar_streamChunkCullMaxLife
+float 1 0.1 50 flameVar_streamFuelSizeStart
+float 3 0.1 50 flameVar_streamFuelSizeEnd
+float 96 0.01 512 flameVar_streamFuelLength
+float 16 1 200 flameVar_streamFuelNumSegments
+float 1 0.1 5 flameVar_streamFuelAnimLoopTime
+float 1 0.1 50 flameVar_streamFlameSizeStart
+float 3 0.1 50 flameVar_streamFlameSizeEnd
+float 96 0.01 512 flameVar_streamFlameLength
+float 16 1 128 flameVar_streamFlameNumSegments
+float 1 0.1 5 flameVar_streamFlameAnimLoopTime
+
+float 750 0 1000 flameVar_streamPrimaryLightRadius
+float 120 0 1000 flameVar_streamPrimaryLightRadiusFlutter
+float 0.7 0 1 flameVar_streamPrimaryLightR
+float 0.4 0 1 flameVar_streamPrimaryLightG
+float 0 0 1 flameVar_streamPrimaryLightB
+float 0.1 0 1 flameVar_streamPrimaryLightFlutterR
+float 0.1 0 1 flameVar_streamPrimaryLightFlutterG
+float 0.1 0 1 flameVar_streamPrimaryLightFlutterB
+
+float 0.8 0.1 3 flameVar_fireLife
+float 0.6 0 3 flameVar_fireLifeRand
+float 0.75 0 1 flameVar_fireSpeedScale
+float 0.5 0 1 flameVar_fireSpeedScaleRand
+float 60 -200 200 flameVar_fireVelocityAddZ
+float -20 -200 200 flameVar_fireVelocityAddZRand
+float 0.3 0 1 flameVar_fireVelocityAddSideways
+float -200 -500 0 flameVar_fireGravity
+float -300 -500 0 flameVar_fireGravityEnd
+float 60 0 200 flameVar_fireMaxRotVel
+float 4 0 10 flameVar_fireFriction
+float 15 0 100 flameVar_fireEndSizeAdd
+float 1 0.1 20 flameVar_fireStartSizeScale
+float 1 0 20 flameVar_fireEndSizeScale
+
+float 5 0.1 10 flameVar_dripsLife
+float 0.6 0 3 flameVar_dripsLifeRand
+float 0.75 0 1 flameVar_dripsSpeedScale
+float 0.5 0 1 flameVar_dripsSpeedScaleRand
+float 60 -200 200 flameVar_dripsVelocityAddZ
+float -20 -200 200 flameVar_dripsVelocityAddZRand
+float 0.3 0 1 flameVar_dripsVelocityAddSideways
+float 200 -1000 1000 flameVar_dripsGravity
+float 200 -1000 1000 flameVar_dripsGravityEnd
+float 60 0 200 flameVar_dripsMaxRotVel
+float 4 0 10 flameVar_dripsFriction
+float 0 0 100 flameVar_dripsEndSizeAdd
+float 0.1 0.1 20 flameVar_dripsStartSizeScale
+float 0 0 20 flameVar_dripsEndSizeScale
+
+float 2.5 0.1 5 flameVar_smokeLife
+float 1 0.1 5 flameVar_smokeLifeRand
+float 0.35 0 1 flameVar_smokeSpeedScale
+float 10 0 100 flameVar_smokeVelocityAddZ
+float -80 -500 0 flameVar_smokeGravity
+float -100 -500 0 flameVar_smokeGravityEnd
+float 20 0 180 flameVar_smokeMaxRotation
+float 20 0 200 flameVar_smokeMaxRotVel
+float 4 0 10 flameVar_smokeFriction
+float 80 0 200 flameVar_smokeEndSizeAdd
+float 20 0 200 flameVar_smokeStartSizeAdd
+float 0.7 0 3 flameVar_smokeOriginSizeOfsZScale
+float 4 -30 100 flameVar_smokeOriginOfsZ
+float 0.5 0 1 flameVar_smokeFadein
+float 0.5 0 1 flameVar_smokeFadeout
+float 0.2 0 1 flameVar_smokeMaxAlpha
+float 0.5 0 1 flameVar_smokeBrightness
+float 72 0 300 flameVar_smokeOriginOffset
+
+float 0.6 0 1 flameVar_collisionSpeedScale
+float 0.5 0 1 flameVar_collisionVolumeScale
+
+vcontainer
+{
+	scrollbox(targetFolder)
+	[
+		exec
+		{
+			label("Target Folder")
+			tooltip("Select platform-gametype this weapon will be used in.")
+			width(270)
+		}
+	]
+	
+	edit(name)
+	[
+		exec
+		{
+			label("Table Name")
+			width(400)
+		}
+	]
+	vcontainer
+	{
+		edit(fire)
+		[
+			exec
+			{
+				label("Fire Material")
+				width(400)
+			}
+		]
+		edit(smoke)
+		[
+			exec
+			{
+				label("Smoke Material")
+				width(400)
+			}
+		]
+		edit(heat)
+		[
+			exec
+			{
+				label("Heat Material")
+				width(400)
+			}
+		]
+		edit(drips)
+		[
+			exec
+			{
+				label("Drip Material")
+				width(400)
+			}
+		]
+		edit(streamFuel)
+		[
+			exec
+			{
+				label("StreamFuel Material")
+				width(400)
+			}
+		]
+		edit(streamFuel2)
+		[
+			exec
+			{
+				label("StreamFuel2 Material")
+				width(400)
+			}
+		]
+		edit(streamFlames)
+		[
+			exec
+			{
+				label("StreamFlame Material")
+				width(400)
+			}
+		]
+		edit(streamFlames2)
+		[
+			exec
+			{
+				label("StreamFlame2 Material")
+				width(400)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Materials")
+		}
+	]
+	
+	vcontainer
+	{
+		edit(flameOffLoopSound)
+		[
+			exec
+			{
+				label("Flame Off Loop")
+				width(400)
+			}
+		]
+		
+		edit(flameIgniteSound)
+		[
+			exec
+			{
+				label("Flame Ignite")
+				width(400)
+			}
+		]
+		
+		edit(flameOnLoopSound)
+		[
+			exec
+			{
+				label("Flame On Loop")
+				width(400)
+			}
+		]
+		
+		edit(flameCooldownSound)
+		[
+			exec
+			{
+				label("Flame Cooldown")
+				width(400)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Sounds")
+		}
+	]
+	
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(flameVar_streamChunkGravityStart, 1, 110)
+			[
+				exec
+				{
+					label("Gravity Start")
+					tooltip("Stream Gravity at Start")
+				}
+			]
+			floatedit(flameVar_streamChunkGravityEnd, 1, 110)
+			[
+				exec
+				{
+					label("Gravity End")
+					tooltip("Stream Gravity at End")
+				}
+			]
+		}
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkStartSize, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Size Start")
+						tooltip("Starting size of each stream chunk")
+					}
+				]
+				floatedit(flameVar_streamChunkEndSize, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Size End")
+						tooltip("Goal ending size of each stream chunk")
+					}
+				]
+			}
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkStartSizeRand, 1, 110)
+				[
+					exec
+					{
+						label("Random Size Start")
+						tooltip("Maximum percentage of start size to reduce each chunk by randomly")
+					}
+				]
+				floatedit(flameVar_streamChunkEndSizeRand, 1, 110)
+				[
+					exec
+					{
+						label("Random Size End")
+						tooltip("Maximum percentage of end size to reduce each chunk by randomly")
+					}
+				]
+			}
+			floatedit(flameVar_streamChunkMaxSize, 1, 110)
+			[
+				exec
+				{
+					label("Chunk Size Max")
+					tooltip("Maximum size any stream chunk can be")
+				}
+			]
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkSizeSpeedScale, 1, 110)
+				[
+					exec
+					{
+						label("Size from Speed")
+						tooltip("Controls the rate at which size increases based on current speed")
+					}
+				]
+				floatedit(flameVar_streamChunkSizeAgeScale, 1, 110)
+				[
+					exec
+					{
+						label("Size from Age")
+						tooltip("Controls the rate at which size increases based on current age")
+					}
+				]
+			}
+		}
+		vcontainer
+		{
+			floatedit(flameVar_streamChunkDistScalar, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Spacing")
+						tooltip("Controls the chunk spacing.. lower values cause more overlapping, with decreased performance")
+					}
+				]
+				floatedit(flameVar_streamChunkDistSwayScale, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Spacing Turn Scale")
+						tooltip("Sets the maximum distance scaling based on angular motion")
+					}
+				]
+				floatedit(flameVar_streamChunkDistSwayVelMax, 1, 110)
+				[
+					exec
+					{
+						label("Max Chunk Spacing Scale")
+						tooltip("Sets the maximum sway rate, at which the full dist scaling is applied")
+					}
+				]
+		}
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkSpeed, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Speed")
+						tooltip("Speed of chunks when they leave the nozzle")
+					}
+				]
+				floatedit(flameVar_streamChunkDecel, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Decel")
+						tooltip("Fraction of current speed to reduce per second")
+					}
+				]
+			}
+			
+			floatedit(flameVar_streamChunkVelocityAddScale, 1, 110)
+			[
+				exec
+				{
+					label("Chunk Speed from Player")
+					tooltip("Fraction of movement speed to add to the firing velocity")
+				}
+			]
+		}
+		
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkDuration, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Duration")
+						tooltip("Lifetime of each chunk in seconds")
+					}
+				]
+				floatedit(flameVar_streamChunkDurationScaleMaxVel, 1, 110)
+				[
+					exec
+					{
+						label("Max Vel Scale")
+						tooltip("Velocity at which to apply full duration scaling")
+					}
+				]
+			}
+			floatedit(flameVar_streamChunkDurationVelScalar, 1, 110)
+				[
+					exec
+					{
+						label("Max Dur Scale")
+						tooltip("Maximum movement duration scalar")
+					}
+				]		
+		}
+		
+		vcontainer
+		{	
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkSpawnFireIntervalStart, 1, 110)
+				[
+					exec
+					{
+						label("Start Fire Spawn Interval")
+						tooltip("Interval between spawning flames from chunks at start of chunk life")
+					}
+				]
+				floatedit(flameVar_streamChunkSpawnFireIntervalEnd, 1, 110)
+				[
+					exec
+					{
+						label("End Fire Spawn Interval")
+						tooltip("Interval between spawning flames from chunks at end of chunk life")
+					}
+				]
+			}
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkSpawnFireMinLifeFrac, 1, 110)
+				[
+					exec
+					{
+						label("Life Frac to Start Fire Spawns")
+						tooltip("Don't spawn fire before this life frac")
+					}
+				]
+				floatedit(flameVar_streamChunkSpawnFireMaxLifeFrac, 1, 110)
+				[
+					exec
+					{
+						label("Life Frac to Stop Fire Spawns")
+						tooltip("Don't spawn fire after this life frac")
+					}
+				]
+			}
+		}
+		
+		vcontainer
+		{
+			floatedit(flameVar_streamChunkFireMinLifeFrac, 1, 110)
+			[
+				exec
+				{
+					label("Min Flame Age")
+					tooltip("Make sure all flames spawned by chunks are at least this old when spawned")
+				}
+			]
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkFireMinLifeFracStart, 1, 110)
+				[
+					exec
+					{
+						label("Min Flame Life Start")
+						tooltip("Starting point for adjusting min flame life")
+					}
+				]
+				floatedit(flameVar_streamChunkFireMinLifeFracEnd, 1, 110)
+				[
+					exec
+					{
+						label("Min Flame Life End")
+						tooltip("End point for adjusting min flame life")
+					}
+				]
+			}
+		}
+		
+		vcontainer
+		{
+			floatedit(flameVar_streamChunkDripsMinLifeFrac, 1, 110)
+			[
+				exec
+				{
+					label("Min Drip Age")
+					tooltip("Make sure all drips spawned by chunks are at least this old when spawned")
+				}
+			]
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkDripsMinLifeFracStart, 1, 110)
+				[
+					exec
+					{
+						label("Min Drip Life Start")
+						tooltip("Starting point for adjusting min drip life")
+					}
+				]
+				floatedit(flameVar_streamChunkDripsMinLifeFracEnd, 1, 110)
+				[
+					exec
+					{
+						label("Min Flame Drip End")
+						tooltip("End point for adjusting min drip life")
+					}
+				]
+			}
+		}
+		
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkRotationRange, 1, 110)
+				[
+					exec
+					{
+						label("Chunk Rotation Range")
+						tooltip("Maximum rotation (roll) of chunks")
+					}
+				]
+				floatedit(flameVar_streamSizeRandSinWave, 1, 110)
+				[
+					exec
+					{
+						label("Sin Thickness variety")
+						tooltip("Stream thickness fluctuation frequency (SINE)")
+					}
+				]
+			}
+			floatedit(flameVar_streamSizeRandCosWave, 1, 110)
+			[
+				exec
+				{
+					label("Cos Thickness variety")
+					tooltip("Stream thickness fluctuation frequency (COSINE)")
+				}
+			]
+		}
+		
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamDripsChunkInterval, 1, 110)
+				[
+					exec
+					{
+						label("Drip Chunk Interval")
+						tooltip("Interval between spawning a chunk that will (in it's lifetime) randomly spawn a Drips particle")
+					}
+				]
+				floatedit(flameVar_streamDripsChunkMinFrac, 1, 110)
+				[
+					exec
+					{
+						label("Min Drip Spawn Frac")
+						tooltip("Minimum life fraction to spawn a Drips particle at")
+					}
+				]
+			}
+			floatedit(flameVar_streamDripsChunkRandFrac, 1, 110)
+			[
+				exec
+				{
+					label("Drip Random Factor")
+					tooltip("Random fraction of life frac to add to the minimum fraction when deciding on Drips spawn time")
+				}
+			]
+		}
+		
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamSmokeChunkInterval, 1, 110)
+				[
+					exec
+					{
+						label("Smoke Chunk Interval")
+						tooltip("Interval between spawning a chunk that will (in it's lifetime) randomly spawn a Smoke particle")
+					}
+				]
+				floatedit(flameVar_streamSmokeChunkMinFrac, 1, 110)
+				[
+					exec
+					{
+						label("Min Smoke Spawn Frac")
+						tooltip("Minimum life fraction to spawn a Smoke particle at")
+					}
+				]
+			}
+			floatedit(flameVar_streamSmokeChunkRandFrac, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Random Factor")
+					tooltip("Random fraction of life frac to add to the minimum fraction when deciding on Smoke spawn time")
+				}
+			]
+		}
+		
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamChunkCullMinLife, 1, 110)
+				[
+					exec
+					{
+						label("Min Cull Age")
+						tooltip("Don't cull chunks younger than this age")
+					}
+				]
+				floatedit(flameVar_streamChunkCullMaxLife, 1, 110)
+				[
+					exec
+					{
+						label("Max Cull Age")
+						tooltip("Don't cull chunks older than this age")
+					}
+				]
+			}
+			floatedit(flameVar_streamChunkCullDistSizeFrac, 1, 110)
+			[
+				exec
+				{
+					label("Cull Percent")
+					tooltip("Cull chunks within this percentage of our size")
+				}
+			]
+		}
+		
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamFuelSizeStart, 1, 110)
+				[
+					exec
+					{
+						label("Fuel Start Size")
+						tooltip("Stream fuel size at start")
+					}
+				]
+				floatedit(flameVar_streamFuelSizeEnd, 1, 110)
+				[
+					exec
+					{
+						label("Fuel End Size")
+						tooltip("Stream fuel size at end")
+					}
+				]
+			}
+			hcontainer
+			{
+				floatedit(flameVar_streamFuelLength, 1, 110)
+				[
+					exec
+					{
+						label("Fuel Length")
+						tooltip("Stream fuel length")
+					}
+				]
+				floatedit(flameVar_streamFuelNumSegments, 1, 110)
+				[
+					exec
+					{
+						label("Num Fuel Segments")
+						tooltip("Number of stream fuel segments")
+					}
+				]
+			}
+			floatedit(flameVar_streamFuelAnimLoopTime, 1, 110)
+			[
+				exec
+				{
+					label("Fuel Loop Time")
+					tooltip("Animation cycle time for animated fuel sprites")
+				}
+			]
+		}
+
+		vcontainer
+		{
+			hcontainer
+			{
+				floatedit(flameVar_streamFlameSizeStart, 1, 110)
+				[
+					exec
+					{
+						label("Flame Size Start")
+						tooltip("Stream flame size at start")
+					}
+				]
+				floatedit(flameVar_streamFlameSizeEnd, 1, 110)
+				[
+					exec
+					{
+						label("Flame Size End")
+						tooltip("Stream flame size at end")
+					}
+				]
+			}
+			hcontainer
+			{
+				floatedit(flameVar_streamFlameLength, 1, 110)
+				[
+					exec
+					{
+						label("Flame Length")
+						tooltip("Stream flame length")
+					}
+				]
+				floatedit(flameVar_streamFlameNumSegments, 1, 110)
+				[
+					exec
+					{
+						label("Flame Segments")
+						tooltip("Number of stream flame segments")
+					}
+				]
+			}
+			floatedit(flameVar_streamFlameAnimLoopTime, 1, 110)
+			[
+				exec
+				{
+					label("Flame Loop Time")
+					tooltip("Animation cycle time for animated flame sprites")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Stream Variables")
+		}
+	]
+	
+	vcontainer
+	{
+		floatedit(flameVar_streamPrimaryLightRadius, 1, 110)
+		[
+			exec
+			{
+				label("Primary Light Radius")
+				tooltip("Primary flamethrower light source radius")
+			}
+		]
+		floatedit(flameVar_streamPrimaryLightRadiusFlutter, 1, 110)
+		[
+			exec
+			{
+				label("Primary Light Flutter Radius")
+				tooltip("Primary flamethrower light source radius modulation")
+			}
+		]
+		floatedit(flameVar_streamPrimaryLightR, 1, 110)
+		[
+			exec
+			{
+				label("Primary Light Red")
+				tooltip("Primary flamethrower light source color R")
+			}
+		]
+		floatedit(flameVar_streamPrimaryLightG, 1, 110)
+		[
+			exec
+			{
+				label("Primary Light Green")
+				tooltip("Primary flamethrower light source color G")
+			}
+		]
+		floatedit(flameVar_streamPrimaryLightB, 1, 110)
+		[
+			exec
+			{
+				label("Primary Light Blue")
+				tooltip("Primary flamethrower light source color B")
+			}
+		]
+		floatedit(flameVar_streamPrimaryLightFlutterR, 1, 110)
+		[
+			exec
+			{
+				label("Primary Flutter Red")
+				tooltip("Primary flamethrower light source color modulation R")
+			}
+		]
+		floatedit(flameVar_streamPrimaryLightFlutterG, 1, 110)
+		[
+			exec
+			{
+				label("Primary Flutter Green")
+				tooltip("Primary flamethrower light source color modulation G")
+			}
+		]
+		floatedit(flameVar_streamPrimaryLightFlutterB, 1, 110)
+		[
+			exec
+			{
+				label("Primary Flutter Blue")
+				tooltip("Primary flamethrower light source color modulation B")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Light Variables")
+		}
+	]
+	
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(flameVar_fireLife, 1, 110)
+			[
+				exec
+				{
+					label("Fire Lifetime")
+					tooltip("Life duration of flames")
+				}
+			]
+			floatedit(flameVar_fireLifeRand, 1, 110)
+			[
+				exec
+				{
+					label("Fire Life Rand")
+					tooltip("Random additive applied to life duration")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(flameVar_fireSpeedScale, 1, 110)
+			[
+				exec
+				{
+					label("Fire Speed Scale")
+					tooltip("Fraction of chunk speed that is applied to starting velocity of flames")
+				}
+			]
+			floatedit(flameVar_fireSpeedScaleRand, 1, 110)
+			[
+				exec
+				{
+					label("Fire Speed Scale Rand")
+					tooltip("Randomize speed scale by this fraction")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(flameVar_fireVelocityAddZ, 1, 110)
+			[
+				exec
+				{
+					label("Fire Z Vel")
+					tooltip("Upwards velocity applied to flame velocity")
+				}
+			]
+			floatedit(flameVar_fireVelocityAddZRand, 1, 110)
+			[
+				exec
+				{
+					label("Fire Z Vel Rand")
+					tooltip("Random additive applied to upwards velocity")
+				}
+			]
+		}
+		floatedit(flameVar_fireVelocityAddSideways, 1, 110)
+		[
+			exec
+			{
+				label("Fire Side Vel")
+				tooltip("Random sideways velocity as fraction of forward velocity")
+			}
+		]
+		hcontainer
+		{
+			floatedit(flameVar_fireGravity, 1, 110)
+			[
+				exec
+				{
+					label("Fire Gravity")
+					tooltip("Fire gravity at start of life")
+				}
+			]
+			floatedit(flameVar_fireGravityEnd, 1, 110)
+			[
+				exec
+				{
+					label("Fire Gravity Rand")
+					tooltip("Fire gravity at end of life")
+				}
+			]
+		}
+		floatedit(flameVar_fireMaxRotVel, 1, 110)
+		[
+			exec
+			{
+				label("Fire Max RotVel")
+				tooltip("Maximum rotational velocity of flame")
+			}
+		]
+		floatedit(flameVar_fireFriction, 1, 110)
+		[
+			exec
+			{
+				label("Fire Friction")
+				tooltip("Fraction of starting velocity to decelerate per second")
+			}
+		]
+		floatedit(flameVar_fireEndSizeAdd, 1, 110)
+		[
+			exec
+			{
+				label("Fire End Size")
+				tooltip("Add this to the size of the chunk, to give the end size of the flame")
+			}
+		]
+		hcontainer
+		{
+			floatedit(flameVar_fireStartSizeScale, 1, 110)
+			[
+				exec
+				{
+					label("Fire Start Scale")
+					tooltip("Multiply this by the size of the chunk, to give the start size of the flame")
+				}
+			]
+			floatedit(flameVar_fireEndSizeScale, 1, 110)
+			[
+				exec
+				{
+					label("Fire End Scale")
+					tooltip("Multiply this by the size of the chunk, to give the end size of the flame")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Fire Variables")
+		}
+	]
+	
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(flameVar_dripsLife, 1, 110)
+			[
+				exec
+				{
+					label("Drips Lifetime")
+					tooltip("Life duration of drips")
+				}
+			]
+			floatedit(flameVar_dripsLifeRand, 1, 110)
+			[
+				exec
+				{
+					label("Drips Life Rand")
+					tooltip("Random additive applied to life duration")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(flameVar_dripsSpeedScale, 1, 110)
+			[
+				exec
+				{
+					label("Drips Speed Scale")
+					tooltip("Fraction of chunk speed that is applied to starting velocity of drips")
+				}
+			]
+			floatedit(flameVar_dripsSpeedScaleRand, 1, 110)
+			[
+				exec
+				{
+					label("Drips Speed Scale Rand")
+					tooltip("Randomize speed scale by this fraction")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(flameVar_dripsVelocityAddZ, 1, 110)
+			[
+				exec
+				{
+					label("Drips Z Vel")
+					tooltip("Upwards velocity applied to drips velocity")
+				}
+			]
+			floatedit(flameVar_dripsVelocityAddZRand, 1, 110)
+			[
+				exec
+				{
+					label("Drips Z Vel Rand")
+					tooltip("Random additive applied to upwards velocity")
+				}
+			]
+		}
+		floatedit(flameVar_dripsVelocityAddSideways, 1, 110)
+		[
+			exec
+			{
+				label("Drips Side Vel")
+				tooltip("Random sideways velocity as fraction of forward velocity")
+			}
+		]
+		hcontainer
+		{
+			floatedit(flameVar_dripsGravity, 1, 110)
+			[
+				exec
+				{
+					label("Drips Gravity")
+					tooltip("Drips gravity at start of life")
+				}
+			]
+			floatedit(flameVar_dripsGravityEnd, 1, 110)
+			[
+				exec
+				{
+					label("Drips Gravity Rand")
+					tooltip("Drips gravity at end of life")
+				}
+			]
+		}
+		floatedit(flameVar_dripsMaxRotVel, 1, 110)
+		[
+			exec
+			{
+				label("Drips Max RotVel")
+				tooltip("Maximum rotational velocity of drips")
+			}
+		]
+		floatedit(flameVar_dripsFriction, 1, 110)
+		[
+			exec
+			{
+				label("Drips Friction")
+				tooltip("Fraction of starting velocity to decelerate per second")
+			}
+		]
+		floatedit(flameVar_dripsEndSizeAdd, 1, 110)
+		[
+			exec
+			{
+				label("Drips End Size")
+				tooltip("Add this to the size of the chunk, to give the end size of the drips")
+			}
+		]
+		hcontainer
+		{
+			floatedit(flameVar_dripsStartSizeScale, 1, 110)
+			[
+				exec
+				{
+					label("Drips Start Scale")
+					tooltip("Multiply this by the size of the chunk, to give the start size of the drips")
+				}
+			]
+			floatedit(flameVar_dripsEndSizeScale, 1, 110)
+			[
+				exec
+				{
+					label("Drips End Scale")
+					tooltip("Multiply this by the size of the chunk, to give the end size of the flame")
+				}
+			]
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Drip Variables")
+		}
+	]
+	
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(flameVar_smokeLife, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Lifetime")
+					tooltip("Life duration of smoke")
+				}
+			]
+			floatedit(flameVar_smokeLifeRand, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Life Rand")
+					tooltip("Random additive applied to life duration")
+				}
+			]
+		}
+		floatedit(flameVar_smokeSpeedScale, 1, 110)
+		[
+			exec
+			{
+				label("Smoke Speed Scale")
+				tooltip("Fraction of chunk speed that is applied to starting velocity of smoke")
+			}
+		]
+		floatedit(flameVar_smokeVelocityAddZ, 1, 110)
+		[
+			exec
+			{
+				label("Smoke Z Vel")
+				tooltip("Upwards velocity applied to drips velocity")
+			}
+		]
+		hcontainer
+		{
+			floatedit(flameVar_smokeGravity, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Gravity")
+					tooltip("Smoke gravity at start of life")
+				}
+			]
+			floatedit(flameVar_smokeGravityEnd, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Gravity Rand")
+					tooltip("Smoke gravity at end of life")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(flameVar_smokeMaxRotation, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Max Rot")
+					tooltip("Maximum rotation (ROLL) of smoke")
+				}
+			]
+			floatedit(flameVar_smokeMaxRotVel, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Max RotVel")
+					tooltip("Maximum rotational velocity of smoke")
+				}
+			]
+		}
+		floatedit(flameVar_smokeFriction, 1, 110)
+		[
+			exec
+			{
+				label("Smoke Friction")
+				tooltip("Fraction of starting velocity to decelerate per second")
+			}
+		]
+		hcontainer
+		{
+			floatedit(flameVar_smokeStartSizeAdd, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Start Size")
+					tooltip("Add this to the size of the chunk, to give the start size of the smoke")
+				}
+			]
+			floatedit(flameVar_smokeEndSizeAdd, 1, 110)
+			[
+				exec
+				{
+					label("Smoke End Size")
+					tooltip("Add this to the size of the chunk, to give the end size of the smoke")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(flameVar_smokeOriginSizeOfsZScale, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Size Z Ofs")
+					tooltip("Fraction of size to add to the Z origin of the smoke")
+				}
+			]
+			floatedit(flameVar_smokeOriginOfsZ, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Z Ofs")
+					tooltip("Absolute value to add to the starting Z origin")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(flameVar_smokeFadein, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Fadein")
+					tooltip("Fraction of life to spend fading the smoke in")
+				}
+			]
+			floatedit(flameVar_smokeFadeout, 1, 110)
+			[
+				exec
+				{
+					label("Smoke Fadeout")
+					tooltip("Fraction of life to spend fading the smoke out")
+				}
+			]
+		}
+		floatedit(flameVar_smokeMaxAlpha, 1, 110)
+		[
+			exec
+			{
+				label("Max Smoke Alpha")
+				tooltip("Maximum alpha for smoke")
+			}
+		]
+		floatedit(flameVar_smokeBrightness, 1, 110)
+		[
+			exec
+			{
+				label("Smoke Brightness")
+				tooltip("Brightness value of smoke. 1.0 = untouched")
+			}
+		]
+		floatedit(flameVar_smokeOriginOffset, 1, 110)
+		[
+			exec
+			{
+				label("Smoke Spawn Ofs")
+				tooltip("Offset multiplier to shift smoke create location")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Smoke Variables")
+		}
+	]
+		
+	vcontainer
+	{
+		floatedit(flameVar_collisionSpeedScale, 1, 110)
+		[
+			exec
+			{
+				label("Coll Speed Scale")
+				tooltip("Reduce speed by this scale when colliding with solid objects")
+			}
+		]
+		floatedit(flameVar_collisionVolumeScale, 1, 110)
+		[
+			exec
+			{
+				label("Coll Vol Scale")
+				tooltip("Value used to scale the volume/size of the flame chunks used for character collision")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Collision Variables")
+		}
+	]
+}

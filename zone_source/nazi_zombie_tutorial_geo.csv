@@ -1,0 +1,11 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/nazi_zombie_tutorial_geo.d3dbsp
+rawfile,maps/nazi_zombie_tutorial_geo.gsc
+rawfile,maps/nazi_zombie_tutorial_geo_anim.gsc
+rawfile,maps/nazi_zombie_tutorial_geo_amb.gsc
+rawfile,maps/nazi_zombie_tutorial_geo_fx.gsc
+sound,common,nazi_zombie_tutorial_geo,all_sp
+sound,generic,nazi_zombie_tutorial_geo,all_sp
+sound,voiceovers,nazi_zombie_tutorial_geo,all_sp
+sound,requests,nazi_zombie_tutorial_geo,all_sp

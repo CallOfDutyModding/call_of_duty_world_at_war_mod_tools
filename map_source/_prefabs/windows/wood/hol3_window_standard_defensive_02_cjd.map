@@ -1,0 +1,207 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"_color" "0.5 0.5 .62 1"
+"ambient" ".15"
+"sundiffusecolor" "0.75 0.82 0.85"
+"diffusefraction" ".5"
+"classname" "worldspawn"
+"sundirection" "-130  40 0"
+"suncolor" "0.9 0.95 1"
+"sunlight" "1.15"
+// brush 0
+{
+  contents detail;
+ ( -4 2 38 ) ( -56 2 38 ) ( -56 -13 38 ) holland_wall_wood_fence 128 128 142 -364 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -13 42 ) ( -56 2 42 ) ( -4 2 42 ) holland_wall_wood_fence 128 128 142 -364 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -13 44 ) ( -4 -13 44 ) ( -4 -13 38 ) holland_wall_wood_fence 128 128 204 -364 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -13 44 ) ( -4 2 44 ) ( -4 2 38 ) holland_wall_wood_fence 128 128 204 46 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 2 44 ) ( -56 2 44 ) ( -56 2 38 ) holland_wall_wood_fence 128 128 204 -364 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 2 44 ) ( -56 -13 44 ) ( -56 -13 38 ) holland_wall_wood_fence 128 128 204 46 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "misc_prefab"
+"model" "_prefabs/windows/wood/hol3_window_standard_01_cjd.map"
+"origin" "0.0 -12.0 0.0"
+"angles" "-0 2.50448e-006 0"
+}
+// entity 2
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-44.0 -5.0 11.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 3
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-21.0 -5.0 11.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 4
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-45.0 -5.0 5.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 5
+{
+"modelscale" ".75"
+"angles" "-0 90 0"
+"origin" "-21.0 -6.0 5.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 6
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-35.0 -7.0 1.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 7
+{
+"modelscale" ".75"
+"angles" "-0 90 0"
+"origin" "-44.0 -6.0 0.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 8
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-20.0 -5.0 0.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 9
+{
+"modelscale" ".75"
+"angles" "360 270 90"
+"origin" "-4.0 -5.0 8.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 10
+{
+"modelscale" ".75"
+"angles" "9.93928e-006 270 -174"
+"origin" "-14.4 -5.0 24.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 11
+{
+"modelscale" ".75"
+"angles" "-0 90 0"
+"origin" "-16.0 -6.0 53.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 12
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-27.0 -5.0 49.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 13
+{
+"modelscale" ".75"
+"angles" "-0 90 0"
+"origin" "-15.0 -6.0 47.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 14
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-39.0 -5.0 47.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 15
+{
+"modelscale" ".75"
+"angles" "-0 90 0"
+"origin" "-25.0 -4.0 43.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 16
+{
+"modelscale" ".75"
+"angles" "-0 270 0"
+"origin" "-16.0 -5.0 42.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 17
+{
+"modelscale" ".75"
+"angles" "-0 90 0"
+"origin" "-40.0 -6.0 42.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 18
+{
+"modelscale" ".75"
+"angles" "1.00179e-005 90 90"
+"origin" "-56.0 -6.0 50.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 19
+{
+"modelscale" ".75"
+"angles" "1.00114e-005 270 179.4"
+"origin" "-33.0 -5.0 22.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 20
+{
+"modelscale" ".75"
+"angles" "9.77994e-006 270 16"
+"origin" "-45.0 -5.0 19.1"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 21
+{
+"modelscale" ".75"
+"angles" "9.76528e-006 270 5.8"
+"origin" "-40.6 -5.0 53.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 22
+{
+"modelscale" ".75"
+"angles" "9.93928e-006 90 -174"
+"origin" "-46.6 -6.0 66.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}
+// entity 23
+{
+"modelscale" ".75"
+"angles" "1.00114e-005 90 179.4"
+"origin" "-28.0 -6.0 64.0"
+"model" "static_holland_sandbag"
+"classname" "misc_model"
+}

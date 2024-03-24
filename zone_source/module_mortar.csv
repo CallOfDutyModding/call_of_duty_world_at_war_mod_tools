@@ -1,0 +1,12 @@
+ignore,code_post_gfx,,
+ignore,common,,
+col_map_sp,maps/module_mortar.d3dbsp,,
+sound,common,module_mortar,all_sp
+sound,generic,module_mortar,all_sp
+sound,voiceovers,module_mortar,all_sp
+sound,requests,module_mortar,all_sp
+sound,weapons,module_mortar,all_sp
+rawfile,maps/module_mortar.gsc,,
+fx,explosions/fx_mortarexp_dirt,,
+
+include,default_weapons,,

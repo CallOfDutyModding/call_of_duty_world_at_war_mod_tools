@@ -1,0 +1,200 @@
+iwfx 2
+
+{
+	name "0_smoke_shadow";
+	editorFlags looping useRandColor useRandAlpha useRandScale useRandVel0 absVel1;
+	flags spawnRelative spawnOffsetNone runRelToSpawn;
+	spawnRange 0 3000;
+	fadeInRange 0 0;
+	fadeOutRange 0 0;
+	spawnFrustumCullRadius 4000;
+	spawnLooping 400 0;
+	spawnOneShot 1 0;
+	spawnDelayMsec 0 0;
+	lifeSpanMsec 18000 1000;
+	spawnOrgX 0 100;
+	spawnOrgY -60 120;
+	spawnOrgZ -20 40;
+	spawnOffsetRadius 1 0;
+	spawnOffsetHeight 1 0;
+	spawnAnglePitch 0 180;
+	spawnAngleYaw 90 0;
+	spawnAngleRoll 90 0;
+	angleVelPitch -10 23;
+	angleVelYaw 0 0;
+	angleVelRoll 0 0;
+	initialRot 0 0;
+	gravity 0 0;
+	elasticity 1 0;
+	windinfluence 0;
+	atlasBehavior startFixed;
+	atlasIndex 0;
+	atlasFps 0;
+	atlasLoopCount 9;
+	atlasColIndexBits 0;
+	atlasRowIndexBits 0;
+	atlasEntryCount 0;
+	velGraph0X 0
+	{
+		{
+			0 0.155502
+			1 0.5
+		}
+		{
+			0 0.0215311
+			1 0.5
+		}
+	};
+	velGraph0Y 15
+	{
+		{
+			0 0.222488
+			1 0.5
+		}
+		{
+			0 -0.212919
+			1 -0.5
+		}
+	};
+	velGraph0Z -80
+	{
+		{
+			0 0.375598
+			0.924419 0.5
+			1 0.0167464
+		}
+		{
+			0 0.5
+			0.927326 0.5
+			1 0.0119617
+		}
+	};
+	velGraph1X 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Z 0
+	{
+		{
+			0 0
+			1 0.007177
+		}
+		{
+			0 0.5
+			1 0.0837321
+		}
+	};
+	rotGraph 10
+	{
+		{
+			0 -0.5
+			1 -0.5
+		}
+		{
+			0 0.5
+			1 0.5
+		}
+	};
+	sizeGraph0 0
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	sizeGraph1 0
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	scaleGraph 15
+	{
+		{
+			0 0.948052
+			0.929412 1
+			1 0.61039
+		}
+		{
+			0 0.642857
+			0.905882 0.701299
+			1 0.136364
+		}
+	};
+	colorGraph 1
+	{
+		{
+			0 0.113725 0.113725 0.113725
+			1 0 0 0
+		}
+		{
+			0 0.113725 0.113725 0.121569
+			1 0.337255 0.321569 0.329412
+		}
+	};
+	alphaGraph 1
+	{
+		{
+			0 0
+			0.0261628 0.555024
+			0.127907 0.784689
+			0.351744 0.861244
+			0.543605 0.727273
+			0.880814 0.076555
+			1 0
+		}
+		{
+			0 0
+			0.0261628 0.688995
+			0.139535 0.937799
+			0.331395 1
+			0.572674 0.885167
+			0.892442 0.143541
+			1 0
+		}
+	};
+	lightingFrac 0;
+	collOffset 0 0 0;
+	collRadius 0;
+	fxOnImpact "";
+	fxOnDeath "";
+	sortOrder 5;
+	efPriority 45;
+	emission "";
+	emitDist 1 0;
+	emitDistVariance 0 0;
+	trailSplitDist 0;
+	trailScrollTime 0;
+	trailRepeatDist 0;
+	model
+	{
+		"fx_smoke_shadow"
+	};
+}

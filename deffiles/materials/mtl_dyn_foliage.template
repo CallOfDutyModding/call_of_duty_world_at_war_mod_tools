@@ -1,0 +1,82 @@
+//
+// default images
+//
+#define COLOR_SUFFIX	"c0"
+
+
+#include "refblend.template"
+#include "sort.template"
+#include "clamp.template"
+tessSize( @tessSize@ );
+#include "textureAtlas.template"
+
+hasEditorMaterial( @hasEditorMaterial@ );
+
+allocLightmap( 1 );
+forModel( 1 );
+forWorld( 0 );
+
+#include "statebits.template"
+
+#if @texScroll@
+	#define TEX_SCROLL_SUFFIX "_scroll"
+#else
+	#define TEX_SCROLL_SUFFIX ""
+#endif
+
+
+#if @noReceiveDynamicShadow@
+	#define NAME_PREFIX "l"
+#else
+	#define NAME_PREFIX "l_sm"
+#endif
+
+#define DYN_FOLIAGE_SUFFIX "_dfoliage"
+
+#if @scorchable@
+	#define SCORCH_SUFFIX "_sco"
+#else
+	#define SCORCH_SUFFIX ""
+#endif
+
+
+#if "@blendFunc@" == "Add"
+	#if TEX_SCROLL_SUFFIX != ""
+		#error "tex scroll not allowed on additive phong materials"
+	#endif
+	techniqueSet( NAME_PREFIX + DYN_FOLIAGE_SUFFIX + SCORCH_SUFFIX + "_a0c0" );
+#elif "@blendFunc@" == "Replace"
+	#if "@alphaTest@" == "Always"
+		techniqueSet( NAME_PREFIX + DYN_FOLIAGE_SUFFIX + SCORCH_SUFFIX + TEX_SCROLL_SUFFIX + "_r0" + COLOR_SUFFIX );
+	#else
+		techniqueSet( NAME_PREFIX + DYN_FOLIAGE_SUFFIX + SCORCH_SUFFIX + TEX_SCROLL_SUFFIX + "_t0" + COLOR_SUFFIX );
+	#endif
+#elif "@blendFunc@" == "Blend"
+	techniqueSet( NAME_PREFIX + DYN_FOLIAGE_SUFFIX + SCORCH_SUFFIX + TEX_SCROLL_SUFFIX + "_b0" + COLOR_SUFFIX );
+#else
+	#error "blendFunc '@blendFunc@' with alphaTest '@alphaTest@' not supported for phong materials"
+#endif
+
+
+textureTable
+{
+	#if "$colorMap$" == ""
+		#error "colorMap may not be blank in phong materials"
+	#endif
+	"colorMap" = streamable map( "@tileColor@", "@filterColor@", "$colorMap$", @nopicmipColor@ ) "@formatColor@" : "colorMap";
+	
+	"normalMap" = map( "tile both", "nomip nearest", "$identityNormalMap", true ) "<auto compression>" : "normalMap";
+}
+
+
+constantTable
+{
+	"colorTint" = float4( @,colorTint@ );
+	
+	"dynamicFoliageFlexibility" = float1( @dynamicFoliageFlexibility@ );
+	"dynamicFoliageSunDiffuseMinMax" = float2( @dynamicFoliageSunDiffuseMin@, @dynamicFoliageSunDiffuseMax@ );
+}
+
+allocReflectionProbe();
+
+refImage( "$colorMap$" );

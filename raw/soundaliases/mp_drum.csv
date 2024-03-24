@@ -1,0 +1,51 @@
+name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,dist_reverb_max,bus,priority,spatialized,type,probability,loop,masterslave,loadspec,reverb_falloff_curve,subtitle,compression,randomize_type,secondaryaliasname,chainaliasname,volumefalloffcurve,probability,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,occlusion_level,min_priority,max_priority,min_priority_threshold,max_priority_threshold
+
+
+# Ambient SFX - Static,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+steam_leak_high,,SFX\Levels\mp_drum\steam_leak_high.wav,0.18,0.18,,,5,450,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+steam_leak_low,,SFX\Levels\mp_drum\steam_leak_low.wav,0.14,0.14,,,5,550,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+steam_leak_high_a,,SFX\Levels\mp_drum\steam_leak_high.wav,0.19,0.19,0.9,0.9,5,450,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+steam_leak_low_a,,SFX\Levels\mp_drum\steam_leak_low.wav,0.15,0.15,0.9,0.9,5,550,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+steam_grating,,SFX\Levels\mp_drum\steam_grating.wav,0.65,0.65,,,15,560,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+
+paper_fire,,SFX\Levels\mp_drum\fires\paper_fire_00.wav,0.3,0.3,,,5,350,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,0.3,20,90,0.25,1
+small_fire,,SFX\Levels\mp_drum\fires\dyn_fire_00.wav,0.4,0.4,,,15,525,,ambience,,3d,,,looping,,all_mp,,,,,small_fire_a,,curve1,,,,,,,,,,,0.3,20,90,0.25,1
+small_fire_a,,SFX\Levels\mp_drum\fires\fires_01.wav,0.4,0.4,,,50,550,,ambience,,3d,,,looping,,all_mp,,,,,,,curve2,,,,,,,,,,,0.1,20,90,0.25,1
+small_fire_2,,SFX\Levels\mp_drum\fires\hut_fire_00.wav,0.4,0.4,,,15,540,,ambience,,3d,,,looping,,all_mp,,,,,small_fire_2a,,curve1,,,,,,,,,,,0.1,20,90,0.25,1
+small_fire_2a,,SFX\Levels\mp_drum\fires\fire_ember_bg.wav,0.5,0.5,,,5,320,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,0.1,20,90,0.25,1
+small_fire_3,,SFX\Levels\mp_drum\fires\dyn_fire_00.wav,0.4,0.4,,,15,525,,ambience,,3d,,,looping,,all_mp,,,,,paper_fire,,curve1,,,,,,,,,,,,20,90,0.25,1
+small_fire_4,,SFX\Levels\mp_drum\fires\hut_fire_00.wav,0.4,0.4,,,15,540,,ambience,,3d,,,looping,,all_mp,,,,,small_fire_3,,curve1,,,,,,,,,,,,20,90,0.25,1
+
+vehicle_fire_high,,SFX\Levels\mp_drum\vehicle_fire_high.wav,0.4,0.4,,,1500,2400,,ambience,,3d,,,looping,,all_mp,,,,,,,curve2,,,,,,,,,,,0.1,20,90,0.25,1
+vehicle_fire_higher,,SFX\Levels\mp_drum\vehicle_fire_higher.wav,0.35,0.35,,,40,1450,,ambience,,3d,,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,0.1,20,90,0.25,1
+vehicle_fire_low,,SFX\Levels\mp_drum\vehicle_fire_low.wav,0.75,0.75,,,3500,6500,,ambience,,3d,,,looping,,all_mp,,,,,vehicle_fire_high,,curve3,,,,,,,,,,,0.3,20,90,0.25,1
+vehicle_fire_high_a,,SFX\Levels\mp_drum\vehicle_fire_high.wav,0.4,0.4,0.95,0.95,20,1800,,ambience,,3d,,,looping,,all_mp,,,,,vehicle_fire_higher,,curve1,,,,,,,,,,,0.1,20,90,0.25,1
+vehicle_fire_low_a,,SFX\Levels\mp_drum\vehicle_fire_low,0.45,0.45,1.35,1.35,250,1950,,ambience,,3d,,,looping,,all_mp,,,,,vehicle_fire_higher,,curve2,,,,,,,,,,,0.1,20,90,0.25,1
+
+amb_calm_ocean_L,,sfx\levels\mp_drum\amb_calm_ocean_L.wav,0.7,0.7,,,30000,30000,,ambience,,3d,streamed,,looping,,all_mp,,,,,,,curve3,,,,,,,,,,,,20,90,0.25,1
+amb_calm_ocean_R,,sfx\levels\mp_drum\amb_calm_ocean_R.wav,0.75,0.75,,,30000,30000,,ambience,,3d,streamed,,looping,,all_mp,,,,,,,curve3,,,,,,,,,,,,20,90,0.25,1
+
+amb_calm_surf_L,,sfx\amb\pacific\ocean\calm_surf_l.wav,0.8,0.8,,,3500,5500,,ambience,,3d,streamed,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+amb_calm_surf_R,,sfx\amb\pacific\ocean\calm_surf_r.wav,0.8,0.8,,,3500,5500,,ambience,,3d,streamed,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+amb_calm_choppy_surf_L,,sfx\amb\pacific\ocean\calm_choppy_surf_l.wav,0.4,0.4,,,2000,3500,,ambience,,3d,streamed,,looping,,all_mp,,,,,,,curve1,,,,,,,,,,,,20,90,0.25,1
+
+
+# Ambient SFX - Spawned,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+elec_sparks,,SFX\Levels\mp_drum\sparks_##,0.4,0.7,0.95,1.1,5,400,,ambience,,3d,,,,,all_mp,,,,,,,curve1,,,,,,,,,,,0.3,20,90,0.25,1,,,,,,,,
+amb_seagull,,SFX/amb/animals/seagull_##,0.25,0.6,0.9,1.1,250,1700,2000,ambience,,3d,,,,,all_mp,,,,,,,curve3,,,,,,,,,,,0.3,20,50,0.25,1,,,,,,,,
+drips_ground,,SFX\Amb\drips\ground_##,0.05,0.1,0.9,1.1,150,500,1000,ambience,,3d,,,,,all_mp,curve3,,,,,,curve3,,,,,,,,,,,0.3,20,60,0.25,1,,,,,,,,
+drips_room,,SFX\Amb\drips\room_##,0.05,0.1,0.9,1.1,150,500,1000,ambience,,3d,,,,,all_mp,curve3,,,,,,curve3,,,,,,,,,,,0.3,20,60,0.25,1,,,,,,,,
+drips_pipe,,SFX\Amb\drips\pipe_##,0.1,0.3,0.9,1.1,150,500,1000,ambience,,3d,,,,,all_mp,curve3,,,,,,curve3,,,,,,,,,,,0.3,20,60,0.25,1,,,,,,,,
+amb_crickets,,SFX/Amb/animals/crickets_##,0.1,0.3,0.9,1.2,50,700,800,ambience,,3d,,,,,all_mp,curve3,,,,,,,,,,,,,,,,,0.3,20,60,0.25,1,,,,,,,,
+#ship_scrapes,,sfx\amb\scrape_##,0.5,0.7,0.45,0.65,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#ship_stresses,,sfx\amb\stress_##,0.5,0.7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#ship_creaks,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#ship_groans,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+smoke_bounce_paintedmetal,,SFX/Weapon/Gren/smk_bounce/wood_##,0.65,0.85,0.9,1.05,500,1300,,projectile,,3d,,,,,all_sp all_mp,,,,,,,,,,,,,,,,,,,80,95,0.25,1,,,,,,,,
+grenade_bounce_paintedmetal,,SFX/weapon/gren/gen_gren/Fire_##,0.65,0.85,0.9,1.05,500,1300,,projectile,,3d,,,,,all_sp all_mp,,,,,,,,,,,,,,,,,,,80,95,0.25,1,,,,,,,,
+sticky_gren_bounce_paintedmetal,,SFX\Weapon\gren\sticky_gren_splat.wav,0.65,0.85,0.9,1.05,500,1300,,projectile,,3d,,,,,all_sp all_mp,,,,,,,,,,,,,,,,,,,80,95,0.25,1,,,,,,,,
+mortar_impact_water,,SFX/Weapon/projectile/Mortar/w_impact_##,0.75,0.85,0.9,1.1,400,4000,,hvy_wpn,,3d,,,,,all_sp all_mp,,,,,mortar_water,,,,,,,0.5,0.25,,,,,,80,90,0.25,1
+mortar_water,,SFX/Weapon/projectile/Mortar/w_splash_##,0.95,1,0.9,1.1,400,4000,,hvy_wpn,,3d,,,,,all_sp all_mp,,,,,mortar_water_dist,,,,,,,,,,,,,,80,90,0.25,1
+mortar_water_dist,,SFX/Destruction/water_explo_dist_##,0.8,0.9,0.9,1.1,3000,12000,,hvy_wpn,,3d,,,,,all_sp all_mp,,,,,sub_thump_rpg,,,,,,,,,,,,,,80,90,0.25,1

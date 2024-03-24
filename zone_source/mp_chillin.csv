@@ -1,0 +1,10 @@
+ignore,code_post_gfx_mp,,
+ignore,common_mp,,
+col_map_mp,maps/mp/mp_chillin.d3dbsp,,
+sound,common,mp_chillin,all_mp
+sound,generic,mp_chillin,all_mp
+sound,voiceovers,mp_chillin,all_mp
+sound,multiplayer,mp_chillin,all_mp
+sound,projectile,mp_chillin,all_mp
+sound,weapons,mp_chillin,all_mp
+sound,character,mp_chillin,all_mp

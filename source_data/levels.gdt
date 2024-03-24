@@ -1,0 +1,17 @@
+
+{
+	"sp_unit_test" ( "level.gdf" )
+	{
+		"bspName" "sp_unit_test"
+		"defeatBackdrop" "defeat"
+		"levelBriefing" "loadscreen_ber1"
+		"victoryBackdrop" "victory"
+	}
+	"mp_unit_test" ( "level.gdf" )
+	{
+		"bspName" "mp/mp_unit_test"
+		"defeatBackdrop" "defeat"
+		"levelBriefing" "$default"
+		"victoryBackdrop" "victory"
+	}
+}

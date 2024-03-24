@@ -1,0 +1,8 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+ui_map,maps/mp_makin.csv
+
+rawfile,clientscripts/mp/mp_makin.csc
+rawfile,clientscripts/mp/mp_makin_amb.csc
+rawfile,clientscripts/mp/mp_makin_fx.csc
+rawfile,clientscripts/mp/createfx/mp_makin_fx.csc

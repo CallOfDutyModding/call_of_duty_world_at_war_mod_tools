@@ -1,0 +1,13 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/module_t34.d3dbsp
+sound,common,module_t34,all_sp
+sound,generic,module_t34,all_sp
+sound,voiceovers,module_t34,all_sp
+sound,requests,module_t34,all_sp
+
+include,default_weapons
+weapon,sp/t34_Turret
+rawfile,maps/module_t34.gsc
+xmodel,weapon_machinegun_tiger
+weapon,sp/allied_coaxial_mg

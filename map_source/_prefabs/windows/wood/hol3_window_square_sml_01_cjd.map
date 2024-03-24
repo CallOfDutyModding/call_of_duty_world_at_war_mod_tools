@@ -1,0 +1,74 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"_color" "0.5 0.5 .62 1"
+"ambient" ".15"
+"sundiffusecolor" "0.75 0.82 0.85"
+"diffusefraction" ".5"
+"classname" "worldspawn"
+"sundirection" "-130  40 0"
+"suncolor" "0.9 0.95 1"
+"sunlight" "1.15"
+// brush 0
+{
+  contents detail;
+ ( -154 -351 98 ) ( -154 22 98 ) ( -154 22 -33 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -6 11 98 ) ( -199 11 98 ) ( -199 11 -33 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -42 5 55.5 ) ( -58 5 55.5 ) ( -42 5 87.5 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -156 -9 98 ) ( -156 3 98 ) ( -156 -9 130 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1302.75 16 12 ) ( 1302.75 4 12 ) ( 1334.75 4 12 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1301.75 4 62 ) ( 1301.75 16 62 ) ( 1333.75 4 62 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( -39 8.5 59 ) ( -232 8.5 59 ) ( -232 8.5 -72 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 73 7.5 62.5 ) ( 57 7.5 62.5 ) ( 73 7.5 94.5 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -180 -6.5 107 ) ( -180 5.5 107 ) ( -180 -6.5 139 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1382.75 10.5 37 ) ( 1382.75 -1.5 37 ) ( 1414.75 -1.5 37 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1416.75 2.5 38 ) ( 1416.75 14.5 38 ) ( 1448.75 2.5 38 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -130 15 68 ) ( -130 15 88 ) ( -130 47 88 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( -126 4 66 ) ( -126 12 66 ) ( -130 12 62 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -184 12 66 ) ( -184 4 66 ) ( -180 4 62 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1300.75 16 62 ) ( 1300.75 4 62 ) ( 1332.75 4 62 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -126 12 66 ) ( -126 4 66 ) ( -184 4 66 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -88 12 -22 ) ( -88 12 -42 ) ( -56 12 -42 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 4 -34 ) ( -96 4 -18 ) ( -64 4 -18 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( -180 0 12 ) ( -180 12 12 ) ( -192 12 12 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -180 12 62 ) ( -180 4 62 ) ( -184 4 66 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -184 12 -4 ) ( -184 0 -4 ) ( -184 0 -36 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -180 4 62 ) ( -180 12 62 ) ( -180 12 12 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 12 20 ) ( -80 12 0 ) ( -48 12 0 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 4 8 ) ( -80 4 24 ) ( -48 4 24 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+  contents detail;
+ ( -122 -352 105 ) ( -122 21 105 ) ( -122 21 -26 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -188 -8 105 ) ( -188 4 105 ) ( -188 -8 137 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1260.75 20 8 ) ( 1260.75 12 8 ) ( 1292.75 12 8 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1300.75 4 12 ) ( 1300.75 16 12 ) ( 1332.75 4 12 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -88 12 28 ) ( -88 12 8 ) ( -56 12 8 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -96 0 16 ) ( -96 0 32 ) ( -64 0 32 ) holland_wall_wood_red 128 128 0 0 -180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+  contents detail;
+ ( -126 0 12 ) ( -126 12 12 ) ( -138 12 12 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -130 4 62 ) ( -130 12 62 ) ( -126 12 66 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -130 12 62 ) ( -130 4 62 ) ( -130 4 12 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -126 0 0 ) ( -126 12 0 ) ( -126 12 -32 ) caulk 64 -64 1504 -7 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -130 12 20 ) ( -130 12 0 ) ( -98 12 0 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -130 4 8 ) ( -130 4 24 ) ( -98 4 24 ) holland_wall_wood_red 128 128 0 0 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

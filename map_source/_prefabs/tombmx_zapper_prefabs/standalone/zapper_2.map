@@ -1,0 +1,195 @@
+iwmap 4
+"000_Global" flags expanded  active
+"000_Global/Clips" flags 
+"000_Global/triggers" flags 
+"The Map" flags 
+// entity 0
+{
+"_color" "0.521569 0.623529 0.627451"
+"sunradiosity" "1.2"
+"contrastgain" "0.25"
+"skyboxmodel" "skybox_ber2"
+"sunlight" "1.2"
+"sundirection" "210 349 0"
+"sundiffusecolor" "0.3215 0.4823 0.5058"
+"suncolor" "0.7647 0.8431 0.8313"
+"diffusefraction" "0.25"
+"ambient" "0.15"
+"classname" "worldspawn"
+// brush 0
+ {
+  mesh
+  {
+   decal_grunge_scorched_wall
+   lightmap_gray
+   2 2 16 8
+   (
+	v 98.916718 -64 129.25 t 2309.3337 3584 18.04167 28
+	v 100.7117 -63.230774 129.05769 t 2323.6936 3577.8462 18.153856 27.951923
+   )
+   (
+	v 103.75 -64 129.25 t 2348 3584 18.34375 28
+	v 100.97415 -63.206879 129.05171 t 2325.7932 3577.655 18.170259 27.95043
+   )
+  }
+ }
+// brush 1
+ {
+  mesh
+  {
+  toolFlags splitGeo;
+   decal_grunge_scorched_wall
+   lightmap_gray
+   2 2 16 8
+   (
+	v 118.25 -56 125.25 t 0 -0 19.25 -7.5
+	v 118.25 -56 127.25 t 0 -1024 19.25 -7.625
+   )
+   (
+	v 117.58337 -56 125.25 t 1024 -0 19.208336 -7.5
+	v 117.58337 -56 127.25 t 1024 -1024 19.208336 -7.625
+   )
+  }
+ }
+}
+// entity 1
+{
+"origin" "80.3 -60.0 125.3"
+"angles" "360 180 -180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 2
+{
+"origin" "116.3 -60.0 125.3"
+"angles" "360 180 -180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 3
+{
+"origin" "144.3 -60.0 125.3"
+"angles" "360 180 -180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 4
+{
+"origin" "180.3 -60.0 125.3"
+"angles" "360 180 -180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 5
+{
+layer "000_Global/triggers"
+"target" "zapper2"
+"script_linkto" "11"
+"targetname" "wuen_electric_trap"
+"classname" "trigger_use"
+// brush 0
+{
+layer "000_Global/triggers"
+ ( -2.25 9.75 60.25 ) ( -2.25 -22.25 60.25 ) ( 29.75 -22.25 60.25 ) trigger 2.75 -16.5 214.5 429.75 0 2.2998218e-005 lightmap_gray 16384.334 16384.01 -93.25 84.75 90 0
+ ( 28.75 -29.75 76.75 ) ( -3.25 -29.75 76.75 ) ( -3.25 2.25 76.75 ) trigger 2.75 -16.5 214.5 429.75 0 0 lightmap_gray 16383.895 16384.277 -93.25 84.75 90 0
+ ( 13.75 -29.75 11.75 ) ( 13.75 2.25 11.75 ) ( 13.75 2.25 3.75 ) trigger 16.5 16.5 -429.75 5.75 0 0 lightmap_gray 16383.926 16384 -93.25 -3.75 0 0
+ ( -5.75 -17.25 2.75 ) ( -37.75 -17.25 2.75 ) ( -37.75 -17.25 -5.25 ) trigger 2.75 16.5 214.5 5.75 0 0 lightmap_gray 16384 -16384 -84.75 3.75 -180 0
+ ( 11 4.5 12.75 ) ( 11 -27.5 12.75 ) ( 11 -27.5 4.75 ) trigger 16.5 16.5 -429.75 5.75 0 0 lightmap_gray 16384.27 16384 -93.25 -3.75 0 0
+ ( -0.25 -33.75 11.25 ) ( 31.75 -33.75 11.25 ) ( 31.75 -33.75 3.25 ) trigger 2.75 16.5 214.5 5.75 0 0 lightmap_gray 16383.969 -16384 -84.75 3.75 -180 0
+}
+}
+// entity 6
+{
+"targetname" "zapper_light_wuen"
+"origin" "0.2 -43.5 113.7"
+"angles" "90 179.55 -0.447953"
+"model" "zombie_zapper_cagelight"
+"classname" "script_model"
+}
+// entity 7
+{
+"targetname" "zapper2"
+"script_linkname" "11"
+"angles" "0 2.50448e-006 -180"
+"origin" "3.9 -15.5 67.6"
+"model" "zombie_zapper_handle"
+"classname" "script_model"
+}
+// entity 8
+{
+"origin" "8.6 -25.9 58.8"
+"angles" "0 2.50448e-006 0"
+"model" "zombie_sumpf_power_switch"
+"classname" "misc_model"
+}
+// entity 9
+{
+"type" "patchCapped"
+"classname" "func_group"
+// brush 0
+ {
+  curve
+  {
+  toolFlags splitGeo;
+   okinawa_wall_concrete_grimy
+   lightmap_gray
+   3 3 16 8
+   (
+	v 3.25 -32.025024 65.975006 t 1544 3328.2002 12.0625 -3.7953129
+	v 3.25 -32.025024 63.975006 t 1544 3328.2002 12.0625 -3.6703129
+	v 5.25 -32.025024 63.975006 t 1560 3328.2002 12.1875 -3.6703129
+   )
+   (
+	v 3.25 -32.025024 67.975006 t 1544 3328.2002 12.0625 -3.9203129
+	v 5.25 -32.025024 65.975006 t 1560 3328.2002 12.1875 -3.7953129
+	v 7.25 -32.025024 63.975006 t 1576 3328.2002 12.3125 -3.6703129
+   )
+   (
+	v 5.25 -32.025024 67.975006 t 1560 3328.2002 12.1875 -3.9203129
+	v 7.25 -32.025024 67.975006 t 1576 3328.2002 12.3125 -3.9203129
+	v 7.25 -32.025024 65.975006 t 1576 3328.2002 12.3125 -3.7953129
+   )
+  }
+ }
+}
+// entity 10
+{
+layer "000_Global/triggers"
+"targetname" "zapper_damage_wuen"
+"classname" "trigger_multiple"
+"spawnflags" "7"
+// brush 0
+{
+layer "000_Global/triggers"
+ ( 218.25 -174 5.25 ) ( 152.25 -174 5.25 ) ( 152.25 -178 5.25 ) trigger_damage 64 64 280.23172 371.625 0 0 lightmap_gray 16384 16387.719 280.24435 372.04388 0 0
+ ( 152.25 -178 125.25 ) ( 152.25 -174 125.25 ) ( 218.25 -174 125.25 ) trigger_damage 64 64 280.36038 371.56244 0 0 lightmap_gray 16384.072 16383.039 280.23911 371.9888 0 -5.4345535e-005
+ ( -234.75 -64 151.25 ) ( -168.75 -64 151.25 ) ( -168.75 -64 39.25 ) trigger_damage 64 64 280.24619 -31.25 0 0 lightmap_gray 16384 16384 280.25 -31.25 0 0
+ ( 194.25 -232 147.25 ) ( 194.25 -228 147.25 ) ( 194.25 -228 35.25 ) trigger_damage 64.002571 64 -371.97617 -31.267431 0 0 lightmap_gray 16381.979 16384 -371.9808 -31.267431 0 0
+ ( 399.25 -56 150.25 ) ( 333.25 -56 150.25 ) ( 333.25 -56 38.25 ) trigger_damage 64 64 280.24289 -31.25 0 0 lightmap_gray 16384.238 16384 280.25 -31.25 0 0
+ ( 66.25 -317 150.25 ) ( 66.25 -321 150.25 ) ( 66.25 -321 38.25 ) trigger_damage 64 64 -372.05463 -31.24419 0 0 lightmap_gray 16384 16384 -372 -31.24419 0 0
+}
+}
+// entity 11
+{
+"classname" "script_struct"
+"origin" "80.3 -60.0 5.3"
+"targetname" "zapper2"
+}
+// entity 12
+{
+"classname" "script_struct"
+"origin" "116.3 -60.0 5.3"
+"targetname" "zapper2"
+}
+// entity 13
+{
+"classname" "script_struct"
+"origin" "144.3 -60.0 5.3"
+"targetname" "zapper2"
+}
+// entity 14
+{
+"classname" "script_struct"
+"origin" "180.3 -60.0 5.3"
+"targetname" "zapper2"
+}

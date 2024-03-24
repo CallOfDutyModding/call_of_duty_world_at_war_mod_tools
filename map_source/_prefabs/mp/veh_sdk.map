@@ -1,0 +1,16 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"spawnflags" "1"
+"script_gameobjectname" "vehicle"
+"vehicletype" "sdk222_mp"
+"model" "vehicle_ger_wheeled_sdk222_mp"
+"origin" "0.0 0.0 0.0"
+"classname" "script_vehicle"
+}

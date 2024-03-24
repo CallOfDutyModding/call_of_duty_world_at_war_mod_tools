@@ -1,0 +1,13 @@
+// these assets are for the hardpoint game mode,
+
+rawfile,vehicles/defaultvehicle_mp
+rawfile,animtrees/vehicles.atr
+
+// mp vehicle turrets,
+weapon,mp/panzer4_turret_mp
+weapon,mp/panzer4_gunner_mp
+weapon,mp/panzer4_gunner_front_mp
+weapon,mp/t34_turret_mp
+weapon,mp/t34_gunner_mp
+weapon,mp/t34_gunner_front_mp
+

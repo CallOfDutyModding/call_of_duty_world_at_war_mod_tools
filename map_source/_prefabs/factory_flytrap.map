@@ -1,0 +1,363 @@
+iwmap 4
+"000_Global" flags  active
+"000_Global/Special Items" flags 
+"000_Global/Special Items/Easter" flags 
+"The Map" flags 
+// entity 0
+{
+"reflection_color_correction" "default"
+"specularcolorscale" "30"
+"sunradiosity" "1.2"
+"origin" "0 0 0"
+"spawnflags" "512"
+"skyboxmodel" "skybox_zombie_factory"
+"sunisprimarylight" "1"
+"_color" "0.2 0.45 1"
+"ambient" "0.20"
+"sundiffusecolor" "0.75 0.75 0.75"
+"diffusefraction" "0.3"
+"classname" "worldspawn"
+"sundirection" "-146.5 311.8 0"
+"suncolor" "0.59 0.79 1"
+"sunlight" "1.2"
+// brush 0
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 15 0 ) ( 182 15 0 ) ( 182 -17 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.971 16383.641 -74 1904.96 0 0
+ ( 182 -17 315 ) ( 182 15 315 ) ( 214 15 315 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.254 16383.891 -73.997726 1904.9783 0 0
+ ( 182 -17 352 ) ( 214 -17 352 ) ( 214 -17 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.828 16384 -74 32 0 0
+ ( 214 -17 352 ) ( 214 15 352 ) ( 214 15 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.268 16384 -1905.0258 32 0 0
+ ( 214 15 352 ) ( 182 15 352 ) ( 182 15 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.252 16384 -74 32 0 0
+ ( 182 15 352 ) ( 182 -17 352 ) ( 182 -17 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.111 16384 -1905.0096 32 0 0
+}
+// brush 1
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 14 -183 0 ) ( -18 -183 0 ) ( -18 -215 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384 16384.723 -274 2103.0835 0 0
+ ( -18 -215 352 ) ( 14 -215 352 ) ( 14 -215 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.322 16384 -274 32 0 0
+ ( 14 -215 352 ) ( 14 -183 352 ) ( 14 -183 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.109 16384 -2103.0098 32 0 0
+ ( 14 -183 352 ) ( -18 -183 352 ) ( -18 -183 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.639 16384 -274 32 0 0
+ ( -18 -183 352 ) ( -18 -215 352 ) ( -18 -215 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.963 16384 -2102.9934 32 0 0
+ ( 118 -114.25 315 ) ( 114 -114.25 315 ) ( 114 -82.25 315 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( -180 16 0 ) ( -212 16 0 ) ( -212 -16 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.967 16383.875 -468 1903.9828 0 0
+ ( -212 -16 352 ) ( -180 -16 352 ) ( -180 -16 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.906 16384 -468 32 0 0
+ ( -180 -16 352 ) ( -180 16 352 ) ( -180 16 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( -180 16 352 ) ( -212 16 352 ) ( -212 16 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.967 16384 -468 32 0 0
+ ( -212 16 352 ) ( -212 -16 352 ) ( -212 -16 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.25 16384 -1904.0273 32 0 0
+ ( 118 -114.25 315 ) ( 114 -114.25 315 ) ( 114 -82.25 315 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents weaponClip;
+ ( -152.25 130 0 ) ( -153 129.25 0 ) ( -150.75 127 0 ) caulk 64 64 -2 -3 0 0 lightmap_gray 16385.004 16384.178 133.625 -72.600395 45.399609 3.7879574e-005
+ ( -150.75 127 73 ) ( -153 129.25 73 ) ( -152.25 130 73 ) caulk 64 64 -2 -3 0 0 lightmap_gray 16385.004 16384.178 133.625 -72.600395 45.399609 3.7879574e-005
+ ( -152.75 128 72 ) ( -152 128.75 72 ) ( -152 128.75 46 ) berlin_ceilings_metal2 128 128 3 0 0 0 lightmap_gray 11666.643 16384 233.18964 20 0 0
+ ( -150 127.75 72 ) ( -152.25 130 72 ) ( -152.25 130 46 ) berlin_ceilings_metal2 128 128 3 0 0 0 lightmap_gray 11665.916 -16384 56.787277 -20 -180 0
+ ( -152.25 130 72 ) ( -153 129.25 72 ) ( -153 129.25 46 ) berlin_ceilings_metal2 127.99812 128 3.001853 0 0 0 lightmap_gray 11666.184 16384 235.29211 20 0 0
+ ( -153 129.25 26 ) ( -150.75 127 26 ) ( -150.75 127 0 ) berlin_ceilings_metal2 128 128 3 0 0 0 lightmap_gray 11666.234 -16384 57.490532 -20 180 0
+}
+// brush 4
+{
+  contents weaponClip;
+ ( -146.25 124 0 ) ( -147 123.25 0 ) ( -144.75 121 0 ) caulk 64 64 4 3 0 0 lightmap_gray 16385.127 16384.482 133.56927 -64.112083 45.396454 -2.5810328e-005
+ ( -144.75 121 73 ) ( -147 123.25 73 ) ( -146.25 124 73 ) caulk 64 64 4 3 0 0 lightmap_gray 16385.127 16384.482 133.56927 -64.112083 45.396454 -2.5810328e-005
+ ( -144.75 121 72 ) ( -144 121.75 72 ) ( -144 121.75 46 ) berlin_ceilings_metal2 128 128 -3 0 0 0 lightmap_gray 11666.488 16384 227.18822 20 0 0
+ ( -144 121.75 72 ) ( -146.25 124 72 ) ( -146.25 124 46 ) berlin_ceilings_metal2 128 128 -3 0 0 0 lightmap_gray 11665.914 -16384 62.787247 -20 180 0
+ ( -145.25 123 72 ) ( -146 122.25 72 ) ( -146 122.25 46 ) berlin_ceilings_metal2 127.99825 128 -2.9982626 0 0 0 lightmap_gray 11666.343 16384 229.29353 20 0 0
+ ( -147 123.25 26 ) ( -144.75 121 26 ) ( -144.75 121 0 ) berlin_ceilings_metal2 128 128 -3 0 0 0 lightmap_gray 11666.358 -16384 63.492516 -20 180 0
+}
+// brush 5
+{
+  contents weaponClip;
+ ( -50 -215 352 ) ( -18 -215 352 ) ( -18 -215 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16384.334 16384 -306 32 0 0
+ ( -18 -184 298 ) ( -18 -216 298 ) ( -18 -216 314 ) okinawa_wall_concrete_grimy 240 -315 18 0 180 0 lightmap_gray 16384.109 16384 -2103.0098 32 0 0
+ ( -18 -183 352 ) ( -50 -183 352 ) ( -50 -183 0 ) okinawa_wall_concrete_grimy 240 -315 50 0 180 0 lightmap_gray 16383.641 16384 -306 32 0 0
+ ( 86 -114.25 315 ) ( 82 -114.25 315 ) ( 82 -82.25 315 ) okinawa_wall_concrete_grimy 239.99854 -315 50 0 180 0 lightmap_gray 16384 16384 -32 0 0 0
+ ( -18 -216 298 ) ( -18 -184 298 ) ( -50 -184 314 ) okinawa_wall_concrete_grimy 240 -315 50 0 180 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+  contents weaponClip;
+ ( 46 -183 352 ) ( 14 -183 352 ) ( 14 -183 0 ) okinawa_wall_concrete_grimy 240 315 46 0 0 0 lightmap_gray 16384.322 -16384 -302 -32 180 0
+ ( 14 -216 298 ) ( 14 -184 298 ) ( 14 -184 314 ) okinawa_wall_concrete_grimy 240 315 -380 0 0 0 lightmap_gray 16384.373 -16384 -1705.0405 -32 180 0
+ ( 14 -215 352 ) ( 46 -215 352 ) ( 46 -215 0 ) okinawa_wall_concrete_grimy -240 314.99982 -18 0 0 0 lightmap_gray 16383.619 -16384 -302 -32 180 0
+ ( -90 -283.75 315 ) ( -86 -283.75 315 ) ( -86 -315.75 315 ) okinawa_wall_concrete_grimy 239.9968 -315 46 398 0 0 lightmap_gray 16384 16383.982 -28 -398 -180 0
+ ( 14 -184 298 ) ( 14 -216 298 ) ( 44 -216 314 ) okinawa_wall_concrete_grimy 240 -315 46 398 0 0 lightmap_gray 16384 16384 4 -398 180 0
+}
+// brush 7
+{
+  contents weaponClip;
+ ( -159.5 -140.5 0 ) ( -137 -163.5 0 ) ( -114 -140.5 0 ) okinawa_wall_concrete_grimy 240 -315 13.213737 2.7344658 135 0 lightmap_gray 16384 16384.873 -269.21429 2100.3677 -45 0
+ ( -159.5 -140.5 315 ) ( -137 -163.5 315 ) ( -137 -163.5 0 ) okinawa_wall_concrete_grimy 169.70583 315 -140.75117 0 0 0 lightmap_gray 11585.465 -16384 -40.268585 -32 180 0
+ ( -114 -140.5 0 ) ( -137 -163.5 0 ) ( -137 -163.5 315 ) okinawa_wall_concrete_grimy 169.7059 -315 -2.4890115 0 180 0 lightmap_gray 11585.38 16384 -1471.8429 32 0 0
+ ( -137 -118 0 ) ( -114 -140.5 0 ) ( -114 -140.5 315 ) okinawa_wall_concrete_grimy 169.70589 315 -118.12388 0 0 0 lightmap_gray 11584.974 -16384 -62.895092 -32 180 0
+ ( -137 -118 315 ) ( -159.5 -140.5 315 ) ( -159.5 -140.5 0 ) okinawa_wall_concrete_grimy 169.70598 -315 20.138308 0 180 0 lightmap_gray 11585.15 16384 -1494.4446 32 0 0
+ ( -137 -118 315 ) ( -114 -140.5 315 ) ( -137 -163.5 315 ) okinawa_wall_concrete_grimy 239.99806 -315 13.214636 2.7333536 135 0 lightmap_gray 16384.031 16384 4.7859321 -2.732796 -45 0
+}
+// brush 8
+{
+  contents weaponClip;
+ ( -183.5 -116.5 315 ) ( -159.5 -140.5 315 ) ( -159.5 -140.5 298 ) okinawa_wall_concrete_grimy 169.70595 315 -140.75125 0 0 0 lightmap_gray 11585.474 -16384 -62.895332 -32 180 0
+ ( -159.5 -140.5 298 ) ( -159.5 -140.5 315 ) ( -137 -118 315 ) okinawa_wall_concrete_grimy 169.70567 -315 20.138512 0 -180 0 lightmap_gray 11585.287 16384 -1494.4606 32 0 0
+ ( -137 -118 298 ) ( -137 -118 315 ) ( -161 -94 315 ) okinawa_wall_concrete_grimy 169.70587 315 -95.496376 0 0 0 lightmap_gray 11585.009 -16384 -85.523163 -32 180 0
+ ( -161 -94 315 ) ( -137 -118 315 ) ( -159.5 -140.5 315 ) okinawa_wall_concrete_grimy 239.99663 -315 45.213978 2.7322247 135 0 lightmap_gray 16383.982 16384 -27.213518 -2.7333553 -45 0
+ ( -183.5 -116.5 315 ) ( -159.5 -140.5 298 ) ( -137 -118 298 ) okinawa_wall_concrete_grimy 240 -315 45.213917 2.7340553 135 0 lightmap_gray 16383.99 16384.029 4.7863531 -2.7336979 -45 0
+}
+// brush 9
+{
+  contents weaponClip;
+ ( -114 -140.5 298 ) ( -91.5 -163.5 315 ) ( -114 -140.5 315 ) okinawa_wall_concrete_grimy 169.7059 -315 163.37878 0 180 0 lightmap_gray 11585.487 16384 -344.39847 32 0 0
+ ( -114 -140.5 315 ) ( -137 -163.5 315 ) ( -137 -163.5 298 ) okinawa_wall_concrete_grimy 169.70538 315 -253.48451 0 0 0 lightmap_gray 11585.334 -16384.033 -1220.8441 -32 180 0
+ ( -137 -163.5 315 ) ( -114.5 -186 315 ) ( -137 -163.5 298 ) okinawa_wall_concrete_grimy 169.70575 315 -140.75121 0 0 0 lightmap_gray 11584.984 16384 -367.02609 32 0 0
+ ( -114.5 -186 315 ) ( -137 -163.5 315 ) ( -114 -140.5 315 ) okinawa_wall_concrete_grimy 239.99588 -315 50.786175 395.26935 -45 2.2606218e-005 lightmap_gray 16384.33 16384.111 -32.788521 -395.26352 135 6.0141905e-005
+ ( -91.5 -163.5 315 ) ( -114 -140.5 298 ) ( -137 -163.5 298 ) okinawa_wall_concrete_grimy 240 -315 50.786049 395.26596 -45 0 lightmap_gray 16384 16383.973 -0.78616875 -395.26636 135 0
+}
+// brush 10
+{
+  contents weaponClip;
+ ( -157.5 139 0 ) ( -134.5 116 0 ) ( -112 139 0 ) okinawa_wall_concrete_grimy 240 315 18.87011 -392.34946 45 0 lightmap_gray 16383.99 -16384.928 -274.87115 -1710.7605 -135 0
+ ( -134.5 116 0 ) ( -134.5 116 315 ) ( -112 139 315 ) okinawa_wall_concrete_grimy 169.70551 315 138.74884 0 0 0 lightmap_gray 11585.464 -16384 -319.76859 -32 180 0
+ ( -134.5 116 315 ) ( -134.5 116 0 ) ( -157.5 139 0 ) okinawa_wall_concrete_grimy 169.70557 -315 -281.98871 0 180 0 lightmap_gray 11585.432 16384 -1192.349 32 0 0
+ ( -157.5 139 315 ) ( -157.5 139 0 ) ( -134.5 161.5 0 ) okinawa_wall_concrete_grimy 169.70599 -315 153.37616 0 180 0 lightmap_gray 11584.982 16384 -334.3952 32 0 0
+ ( -112 139 0 ) ( -112 139 315 ) ( -134.5 161.5 315 ) okinawa_wall_concrete_grimy 169.70578 -315 -259.36151 0 180 0 lightmap_gray 11585.28 16384 -1214.959 32 0 0
+ ( -134.5 116 315 ) ( -157.5 139 315 ) ( -134.5 161.5 315 ) okinawa_wall_concrete_grimy 239.99821 315 18.872118 -392.35019 45 0 lightmap_gray 16384.084 -16384.061 -0.87003011 392.35028 -135 0
+}
+// brush 11
+{
+  contents weaponClip;
+ ( -157.5 139 315 ) ( -180 116 315 ) ( -157.5 139 298 ) okinawa_wall_concrete_grimy 169.70584 -315 -116.12148 0 180 0 lightmap_gray 11585.473 16384 -64.898453 32 0 0
+ ( -134.5 116 298 ) ( -134.5 116 315 ) ( -157.5 139 315 ) okinawa_wall_concrete_grimy 169.70511 315 26.015667 0 0 0 lightmap_gray 11585.583 -16384 -1500.3651 -32 180 -3.5370762e-005
+ ( -134.5 116 298 ) ( -157 93.5 315 ) ( -134.5 116 315 ) okinawa_wall_concrete_grimy 169.70581 315 138.74883 0 0 0 lightmap_gray 11584.896 16384 -87.522369 32 0 0
+ ( -157.5 139 315 ) ( -134.5 116 315 ) ( -157 93.5 315 ) okinawa_wall_concrete_grimy 239.9957 315 45.136623 -5.6536665 -135 2.896853e-005 lightmap_gray 16384.363 -16384.146 -27.109722 5.6471276 45 5.9963342e-005
+ ( -134.5 116 298 ) ( -157.5 139 298 ) ( -180 116 315 ) okinawa_wall_concrete_grimy 240 315 45.129829 -5.650598 -135 0 lightmap_gray 16384 -16384 4.8697171 5.6499023 45 0
+}
+// brush 12
+{
+  contents weaponClip;
+ ( -112 139 298 ) ( -112 139 315 ) ( -88 163 315 ) okinawa_wall_concrete_grimy 169.70587 315 138.75 0 0 0 lightmap_gray 11585.483 -16384 -342.39508 -32 180 0
+ ( -134.5 161.5 315 ) ( -112 139 315 ) ( -112 139 298 ) okinawa_wall_concrete_grimy 169.70581 -315 -259.36139 0 -180 0 lightmap_gray 11585.279 16384 -1214.9563 32 0 0
+ ( -110.5 185.5 315 ) ( -134.5 161.5 315 ) ( -134.5 161.5 298 ) okinawa_wall_concrete_grimy 169.70575 315 184.00414 0 0 0 lightmap_gray 11584.993 -16384 -365.02194 -32 180 0
+ ( -112 139 315 ) ( -134.5 161.5 315 ) ( -110.5 185.5 315 ) okinawa_wall_concrete_grimy 239.99704 315 50.870056 -392.34814 45 0 lightmap_gray 16384.01 -16383.979 -32.870167 392.34918 -135 0
+ ( -134.5 161.5 298 ) ( -112 139 298 ) ( -88 163 315 ) okinawa_wall_concrete_grimy 240 315 50.870304 -392.34943 45 0 lightmap_gray 16383.986 -16383.99 -0.87008262 392.3494 -135 0
+}
+// brush 13
+{
+  contents weaponClip;
+ ( -212 48 352 ) ( -212 16 352 ) ( -212 16 0 ) okinawa_wall_concrete_grimy 240 315 16 0 0 0 lightmap_gray 16384.375 -16384 -304 -32 180 0
+ ( -181 16 298 ) ( -213 16 298 ) ( -213 16 314 ) okinawa_wall_concrete_grimy 240 -315 15 0 -180 0 lightmap_gray 16383.953 16384 -2099.991 32 0 0
+ ( -180 16 352 ) ( -180 48 352 ) ( -180 48 0 ) okinawa_wall_concrete_grimy 240 315 48 0 0 0 lightmap_gray 16383.541 -16384 -304 -32 180 0
+ ( -111.25 -88 315 ) ( -111.25 -84 315 ) ( -79.25 -84 315 ) okinawa_wall_concrete_grimy 240 -315 48 3 90 0 lightmap_gray 16384 16384 -30 -3 -90 0
+ ( -213 16 298 ) ( -181 16 298 ) ( -181 48 314 ) okinawa_wall_concrete_grimy 240 -315 48 3 90 0 lightmap_gray 16384 16383.979 2 -3 -90 0
+}
+// brush 14
+{
+  contents weaponClip;
+ ( -180 -48 352 ) ( -180 -16 352 ) ( -180 -16 0 ) okinawa_wall_concrete_grimy 240 -315 48 0 180 0 lightmap_gray 16384.359 16384 -304 32 0 0
+ ( -213 -16 298 ) ( -181 -16 298 ) ( -181 -16 314 ) okinawa_wall_concrete_grimy 240 315 -377 0 0 0 lightmap_gray 16384.41 -16384.061 -1708.0441 -32 180 0
+ ( -212 -16 352 ) ( -212 -48 352 ) ( -212 -48 0 ) okinawa_wall_concrete_grimy 240 315 16 0 0 0 lightmap_gray 16383.625 16384 -304 32 0 0
+ ( -280.75 88 315 ) ( -280.75 84 315 ) ( -312.75 84 315 ) okinawa_wall_concrete_grimy 239.99687 -315 48 395 -90 -1.0634802e-005 lightmap_gray 16383.988 16384 -30 -395 90 0
+ ( -181 -16 298 ) ( -213 -16 298 ) ( -213 -46 314 ) okinawa_wall_concrete_grimy 240 -315 48 395 -90 0 lightmap_gray 16384 16384.033 2 -395 90 0
+}
+// brush 15
+{
+  contents weaponClip;
+ ( 214 -16 0 ) ( 214 16 0 ) ( 182 16 0 ) okinawa_wall_concrete_grimy 240 315 20 0 0 0 lightmap_gray 16383.969 -16383.875 -470 -1903.9843 180 0
+ ( 214 -16 0 ) ( 182 -16 0 ) ( 182 -16 316 ) okinawa_wall_concrete_grimy 240 315 20 0 0 0 lightmap_gray 16383.84 -16384 -470 -32 180 0
+ ( 182 16 316 ) ( 182 -16 316 ) ( 182 -16 0 ) okinawa_wall_concrete_grimy 240 -315 18 0 180 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( 214 16 316 ) ( 182 16 316 ) ( 182 16 0 ) okinawa_wall_concrete_grimy 240 315 20 0 0 0 lightmap_gray 16383.977 -16384 -470 -32 180 0
+ ( 214 16 0 ) ( 214 -16 0 ) ( 214 -16 316 ) okinawa_wall_concrete_grimy 240 -315 18 0 180 0 lightmap_gray 16384.25 16384 -1904.0273 32 0 0
+ ( 182 -16 316 ) ( 182 16 316 ) ( 214 16 316 ) okinawa_wall_concrete_grimy 240 315 20 0 0 0 lightmap_gray 16384 -16384 -2 0 -180 0
+}
+// brush 16
+{
+  contents weaponClip;
+ ( 182 -16 316 ) ( 182 -48 316 ) ( 182 -16 298 ) okinawa_wall_concrete_grimy 240 -315 48 0 180 0 lightmap_gray 16384.344 16384 -304 32 0 0
+ ( 214 -16 298 ) ( 214 -16 316 ) ( 182 -16 316 ) okinawa_wall_concrete_grimy 240 -315 -379 0 180 0 lightmap_gray 16384.42 16384.125 -1706.0454 32 0 0
+ ( 214 -16 298 ) ( 214 -48 316 ) ( 214 -16 316 ) okinawa_wall_concrete_grimy 240 315 16 0 0 0 lightmap_gray 16383.625 16384 -304 32 0 0
+ ( 182 -16 316 ) ( 214 -16 316 ) ( 214 -48 316 ) okinawa_wall_concrete_grimy 239.99686 315 48 -397 -90 0 lightmap_gray 16383.988 -16384 -30 397 90 0
+ ( 182 -48 316 ) ( 214 -48 316 ) ( 214 -16 298 ) okinawa_wall_concrete_grimy 240 315 48 -397 -90 0 lightmap_gray 16384 -16384.078 2 397 90 0
+}
+// brush 17
+{
+  contents weaponClip;
+ ( 214 16 298 ) ( 214 16 316 ) ( 214 50 316 ) okinawa_wall_concrete_grimy 240 315 16 0 0 0 lightmap_gray 16384.375 -16384 -304 -32 180 0
+ ( 214 16 298 ) ( 182 16 298 ) ( 182 16 316 ) okinawa_wall_concrete_grimy 240 315 17 0 0 0 lightmap_gray 16384.02 -16384 -2102 -32 180 0
+ ( 182 50 316 ) ( 182 16 316 ) ( 182 16 298 ) okinawa_wall_concrete_grimy 240 315 48 0 0 0 lightmap_gray 16383.541 -16384 -304 -32 180 0
+ ( 214 16 316 ) ( 182 16 316 ) ( 182 50 316 ) okinawa_wall_concrete_grimy 240 315 48 -1 90 0 lightmap_gray 16383.941 -16384 -30 1 -90 0
+ ( 214 50 316 ) ( 182 50 316 ) ( 182 16 298 ) okinawa_wall_concrete_grimy 240 315 48 -1 90 0 lightmap_gray 16384 -16383.986 2 1 -90 0
+}
+// brush 18
+{
+  contents weaponClip;
+ ( 116 -140 316 ) ( 94 -164 316 ) ( 116 -140 298 ) okinawa_wall_concrete_grimy 169.70587 -315 163.37878 0 180 0 lightmap_gray 11585.475 16384 -344.39835 32 0 0
+ ( 116 -140 298 ) ( 140 -164 298 ) ( 140 -164 316 ) okinawa_wall_concrete_grimy 169.70537 315 -253.48453 0 0 0 lightmap_gray 11585.326 -16384.029 -1220.8431 -32 180 0
+ ( 140 -164 298 ) ( 116 -186 316 ) ( 140 -164 316 ) okinawa_wall_concrete_grimy 169.7056 315 -140.7513 0 0 0 lightmap_gray 11584.931 16384 -367.02463 32 0 0
+ ( 116 -140 316 ) ( 140 -164 316 ) ( 116 -186 316 ) okinawa_wall_concrete_grimy 239.99509 315 49.371117 -396.68423 -135 3.2623502e-005 lightmap_gray 16384.293 -16384.137 -31.373728 396.67816 45 5.6118708e-005
+ ( 94 -164 316 ) ( 116 -186 316 ) ( 140 -164 298 ) okinawa_wall_concrete_grimy 240 315 49.370884 -396.68118 -135 0 lightmap_gray 16384.043 -16384.016 0.62805343 396.6813 45 0
+}
+// brush 19
+{
+  contents weaponClip;
+ ( 162 -140 0 ) ( 140 -118 0 ) ( 116 -140 0 ) okinawa_wall_concrete_grimy 240 315 14.628704 -1.3209269 45 0 lightmap_gray 16384.123 -16385.076 -270.63123 -2101.8047 -135 0
+ ( 162 -140 0 ) ( 140 -164 0 ) ( 140 -164 316 ) okinawa_wall_concrete_grimy 169.70573 315 -140.75116 0 0 0 lightmap_gray 11585.459 -16384 -40.268482 -32 180 0
+ ( 116 -140 316 ) ( 140 -164 316 ) ( 140 -164 0 ) okinawa_wall_concrete_grimy 169.70578 -315 -2.4888883 0 180 0 lightmap_gray 11585.318 16384 -1471.8358 32 0 0
+ ( 140 -118 316 ) ( 116 -140 316 ) ( 116 -140 0 ) okinawa_wall_concrete_grimy 169.70587 -315 -120.12389 0 180 0 lightmap_gray 11585 16384 -60.895508 32 0 0
+ ( 140 -118 0 ) ( 162 -140 0 ) ( 162 -140 316 ) okinawa_wall_concrete_grimy 169.70602 -315 20.138273 0 180 0 lightmap_gray 11585.15 16384 -1494.4446 32 0 0
+ ( 140 -164 316 ) ( 116 -140 316 ) ( 140 -118 316 ) okinawa_wall_concrete_grimy 239.99797 315 14.628795 -1.3195168 45 0 lightmap_gray 16384.064 -16383.994 3.3716564 1.3183515 -135 0
+}
+// brush 20
+{
+  contents weaponClip;
+ ( 162 -140 298 ) ( 162 -140 316 ) ( 186 -116 316 ) okinawa_wall_concrete_grimy 169.70596 315 -140.75125 0 0 0 lightmap_gray 11585.485 -16384 -62.895519 -32 180 0
+ ( 140 -118 298 ) ( 140 -118 316 ) ( 162 -140 316 ) okinawa_wall_concrete_grimy 169.70564 -315 20.138542 0 180 0 lightmap_gray 11585.271 16384 -1494.4592 32 0 0
+ ( 164 -94 316 ) ( 140 -118 316 ) ( 140 -118 298 ) okinawa_wall_concrete_grimy 169.70589 315 -95.496368 0 0 0 lightmap_gray 11585.003 -16384 -85.523071 -32 180 0
+ ( 162 -140 316 ) ( 140 -118 316 ) ( 164 -94 316 ) okinawa_wall_concrete_grimy 239.9968 315 46.628242 -1.3184693 45 0 lightmap_gray 16383.982 -16384.055 -28.627701 1.3195552 -135 0
+ ( 186 -116 316 ) ( 164 -94 316 ) ( 140 -118 298 ) okinawa_wall_concrete_grimy 240 315 46.628006 -1.3206996 45 0 lightmap_gray 16383.971 -16384.102 3.3724525 1.3202652 -135 0
+}
+// brush 21
+{
+  contents weaponClip;
+ ( 160 140 298 ) ( 182 116 316 ) ( 160 140 316 ) okinawa_wall_concrete_grimy 169.70584 -315 -116.12118 0 180 0 lightmap_gray 11585.473 16384 -64.898453 32 0 0
+ ( 160 140 316 ) ( 136 116 316 ) ( 136 116 298 ) okinawa_wall_concrete_grimy 169.70509 315 26.015665 0 0 0 lightmap_gray 11585.345 -16384 -1500.3434 -32 180 1.5258463e-005
+ ( 136 116 316 ) ( 160 94 316 ) ( 136 116 298 ) okinawa_wall_concrete_grimy 169.7059 315 138.74876 0 0 0 lightmap_gray 11584.898 16384 -87.522392 32 0 0
+ ( 160 94 316 ) ( 136 116 316 ) ( 160 140 316 ) okinawa_wall_concrete_grimy 239.99608 -315 46.551422 4.2395711 -45 2.9329485e-005 lightmap_gray 16384.404 16384.139 -28.523825 -4.2327709 135 5.8383739e-005
+ ( 182 116 316 ) ( 160 140 298 ) ( 136 116 298 ) okinawa_wall_concrete_grimy 240 -315 46.544014 4.2362328 -45 0 lightmap_gray 16384 16384 3.4560046 -4.2354665 135 0
+}
+// brush 22
+{
+  contents weaponClip;
+ ( 114 140 0 ) ( 136 116 0 ) ( 160 140 0 ) okinawa_wall_concrete_grimy 240 -315 17.45587 393.76358 135 0 lightmap_gray 16384.029 16384.875 -273.45596 1709.3401 -45 0
+ ( 114 140 316 ) ( 136 116 316 ) ( 136 116 0 ) okinawa_wall_concrete_grimy 169.70551 315 138.74884 0 0 0 lightmap_gray 11585.462 -16384 -319.76855 -32 180 0
+ ( 160 140 0 ) ( 136 116 0 ) ( 136 116 316 ) okinawa_wall_concrete_grimy 169.70555 -315 -281.98871 0 180 0 lightmap_gray 11585.322 16384 -1192.3368 32 0 0
+ ( 160 140 0 ) ( 160 140 316 ) ( 136 162 316 ) okinawa_wall_concrete_grimy 169.70576 315 155.37613 0 0 0 lightmap_gray 11585.002 -16384 -336.39554 -32 180 0
+ ( 136 162 316 ) ( 114 140 316 ) ( 114 140 0 ) okinawa_wall_concrete_grimy 169.70578 -315 -259.36151 0 180 0 lightmap_gray 11585.331 16384 -1214.965 32 0 0
+ ( 136 162 316 ) ( 160 140 316 ) ( 136 116 316 ) okinawa_wall_concrete_grimy 239.99899 -315 17.458618 393.76495 135 0 lightmap_gray 16384.107 16384.105 0.54397225 -393.76535 -45 0
+}
+// brush 23
+{
+  contents weaponClip;
+ ( 90 164 316 ) ( 114 140 316 ) ( 114 140 298 ) okinawa_wall_concrete_grimy 169.70589 315 138.75 0 0 0 lightmap_gray 11585.472 -16384 -342.39511 -32 180 0
+ ( 114 140 298 ) ( 114 140 316 ) ( 136 162 316 ) okinawa_wall_concrete_grimy 169.70573 -315 -259.36121 0 180 0 lightmap_gray 11585.236 16384 -1214.9493 32 0 0
+ ( 136 162 298 ) ( 136 162 316 ) ( 112 186 316 ) okinawa_wall_concrete_grimy 169.70595 315 184.00421 0 0 0 lightmap_gray 11585.007 -16384 -365.02219 -32 180 0
+ ( 112 186 316 ) ( 136 162 316 ) ( 114 140 316 ) okinawa_wall_concrete_grimy 239.99771 -315 49.456093 393.763 135 0 lightmap_gray 16384.051 16384.035 -31.456238 -393.76471 -45 0
+ ( 90 164 316 ) ( 114 140 298 ) ( 136 162 298 ) okinawa_wall_concrete_grimy 240 -315 49.455742 393.76306 135 0 lightmap_gray 16384 16384.207 0.54395968 -393.76608 -45 0
+}
+// brush 24
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -14 -23 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -149 -153 0 ) ( -149 -153 352 ) ( 2 -304 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904.0023 32 0 0
+ ( 2 -216 0 ) ( 2 -216 352 ) ( 216 -216 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 32 0 0
+ ( 152 -153 -12 ) ( 152 -153 340 ) ( 303 -2 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904.0018 32 0 0
+ ( 2 -167 340 ) ( 2 -167 -12 ) ( 216 -167 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 32 0 0
+}
+// brush 25
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -14 -23 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -149 -153 0 ) ( -149 -153 352 ) ( 2 -304 352 ) peleliu_wall_concrete_cracked 128 128 0 0 0 0 lightmap_gray 16384 16384 -1904.0023 32 0 0
+ ( -84.25 -152.25 352 ) ( -84.25 -152.25 0 ) ( 66.75 -303.25 352 ) peleliu_wall_concrete_cracked 128 128 0 0 0 0 lightmap_gray 16384 16384 -1904.0015 32 0 0
+ ( -128 -167 340 ) ( -135 -167 340 ) ( -135 -167 372 ) peleliu_wall_concrete_cracked 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -163 -141 340 ) ( -163 -132 340 ) ( -163 -141 372 ) peleliu_wall_concrete_cracked 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 26
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -75 -109 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -149 148 0 ) ( -149 148 352 ) ( -300 -3 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16383.918 16384 -1903.9922 32 0 0
+ ( -212 -2 0 ) ( -212 -2 352 ) ( -212 -215 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16383.99 16384 -1904.0028 32 0 0
+ ( -149 -153 0 ) ( -149 -153 352 ) ( 2 -304 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904.0023 32 0 0
+ ( -163 -2 340 ) ( -163 -2 -12 ) ( -163 -215 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16383.92 16384 -1904 32 0 0
+}
+// brush 27
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -77 -155 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -39 162 -12 ) ( -39 162 340 ) ( -252 162 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 32 0 0
+ ( -149 148 0 ) ( -149 148 352 ) ( -300 -3 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16383.918 16384 -1903.9922 32 0 0
+ ( -148.25 83.25 340 ) ( -148.25 83.25 -12 ) ( -299.25 -67.75 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16383.904 16384 -1903.993 32 0 0
+ ( -163 -141 340 ) ( -163 -132 340 ) ( -163 -141 372 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 28
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -14 -23 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( 152 148 -12 ) ( 152 148 340 ) ( 1 299 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( 2 211 0 ) ( 2 211 352 ) ( -211 211 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 32 0 0
+ ( -149 148 0 ) ( -149 148 352 ) ( -300 -3 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16383.918 16384 -1903.9922 32 0 0
+ ( 2 162 340 ) ( 2 162 -12 ) ( -211 162 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 32 0 0
+}
+// brush 29
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -10 94 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( 215 -2 0 ) ( 215 -2 352 ) ( 215 212 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( 152 148 -12 ) ( 152 148 340 ) ( 1 299 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( 28.5 162 -12 ) ( 28.5 162 340 ) ( -184.5 162 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 32 0 0
+ ( 151.25 83.25 352 ) ( 151.25 83.25 0 ) ( 0.25 234.25 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+}
+// brush 30
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -14 -23 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( 215 -2 0 ) ( 215 -2 352 ) ( 215 212 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( 152 -153 -12 ) ( 152 -153 340 ) ( 303 -2 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904.0018 32 0 0
+ ( 87.25 -152.25 352 ) ( 87.25 -152.25 0 ) ( 238.25 -1.25 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16383.986 16384 -1904.0021 32 0 0
+ ( 138 -167 340 ) ( 72.5 -167 340 ) ( 72.5 -167 372 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 31
+{
+layer "000_Global/Special Items/Easter"
+  contents weaponClip;
+ ( 214 211 340 ) ( 214 -216 340 ) ( -211 -216 340 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( -211 -211 315 ) ( 214 -211 315 ) ( 214 216 315 ) okinawa_wall_concrete_grimy -240 314.99982 -10 94 0 0 lightmap_gray 16384 16384 -475 1904 0 0
+ ( 215 -2 0 ) ( 215 -2 352 ) ( 215 212 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( 147.5 87 0 ) ( 147.5 87 352 ) ( -3.5 238 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+ ( 149 -90.5 0 ) ( 149 -90.5 352 ) ( 300 60.5 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904.0018 32 0 0
+ ( 166 -2 352 ) ( 166 -2 0 ) ( 166 212 352 ) okinawa_wall_concrete_grimy -240 314.99982 -10 -60 0 0 lightmap_gray 16384 16384 -1904 32 0 0
+}
+}
+// entity 1
+{
+layer "000_Global/Special Items/Easter"
+"targetname" "trig_ee_flytrap"
+"classname" "trigger_damage"
+// brush 0
+{
+layer "000_Global/Special Items/Easter"
+ ( -149.25 126.75 74 ) ( -152.25 123.75 74 ) ( -148.75 120.25 74 ) trigger 63.99707 63.983227 -455.07687 1763.2039 45 -0.00024353611 lightmap_gray 16383.359 16386.498 -455.06412 1764.1763 45 -5.0500526e-005
+ ( -148.75 120.25 88 ) ( -152.25 123.75 88 ) ( -149.25 126.75 88 ) trigger 64 63.995033 -455.01138 1763.7711 45 -6.3707477e-005 lightmap_gray 16382.709 16378.916 -454.94058 1763.2861 45 1.2449642e-005
+ ( -144.75 116.25 92 ) ( -141.75 119.25 92 ) ( -141.75 119.25 66 ) trigger 45.238033 64 -1702.5414 32 0 0 lightmap_gray 11587.043 16384 -1703.4794 32 0 0
+ ( -145.75 127.25 92 ) ( -149.25 130.75 92 ) ( -149.25 130.75 66 ) trigger 45.25 -64 11.114813 -32 180 0 lightmap_gray 11586.191 -16384 11.174979 -32 -180 0
+ ( -149.25 134.75 92 ) ( -152.25 131.75 92 ) ( -152.25 131.75 66 ) trigger 45.262165 64 -1707.0349 32 0 0 lightmap_gray 11585.213 16384 -1706.7393 32 0 0
+ ( -152.25 127.75 92 ) ( -148.75 124.25 92 ) ( -148.75 124.25 66 ) trigger 45.259602 -64 13.918278 -32 180 0 lightmap_gray 11584.738 -16384 13.993391 -32 180 0
+}
+}
+// entity 2
+{
+"origin" "-146.5 126.4 68.0"
+"model" "zombie_teleporter_control_panel"
+"classname" "misc_model"
+"angles" "0 315 0"
+}

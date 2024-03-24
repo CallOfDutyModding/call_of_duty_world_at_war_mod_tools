@@ -1,0 +1,17 @@
+ignore,code_post_gfx,,
+ignore,common,,
+col_map_sp,maps/module_molotov.d3dbsp,,
+sound,common,module_molotov,all_sp
+sound,generic,module_molotov,all_sp
+sound,voiceovers,module_molotov,all_sp
+sound,requests,module_molotov,all_sp
+sound,weapons,module_molotov,all_sp
+
+rawfile,maps/module_molotov.gsc,,
+
+weapon,sp/m2_flamethrower,,
+weapon,sp/napalmblob,,
+weapon,sp/napalmbloblight,,
+
+include,flamethrower,,
+include,default_weapons,,

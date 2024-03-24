@@ -1,0 +1,50 @@
+
+#if "@cgfxTemplate@" == "m_char_cloth_cod3"
+	#define COLOR_MAP "$colorMap03$"
+#elif "@cgfxTemplate@" == "m_char_eyes"
+	#define COLOR_MAP "$colorMap00$"
+#elif "@cgfxTemplate@" == "m_char_face_arms"
+	#define COLOR_MAP "$colorMap01$"
+#elif "@cgfxTemplate@" == "m_char_helmet"
+	#define COLOR_MAP "$colorMap02$"
+#elif "@cgfxTemplate@" == "m_generic"
+	#define COLOR_MAP "$colorMap02$"
+#elif "@cgfxTemplate@" == "m_generic" || "@cgfxTemplate@" == "m_generic_trans" 
+	#define COLOR_MAP "$colorMap02$"
+#elif "@cgfxTemplate@" == "m_microfacet"
+	#define COLOR_MAP "$colorMap02$"
+#elif "@cgfxTemplate@" == "m_metal_garand" || "@cgfxTemplate@" == "m_wood_garand" 
+	#define COLOR_MAP "$colorMap02$"
+#elif "@cgfxTemplate@" == "m_microfacet_detail"
+	#define COLOR_MAP "$colorMap03$"
+#elif "@cgfxTemplate@" == "w_footprint_displacement"
+	#define COLOR_MAP "$colorMap02$"
+#else
+	#error "Unknown '@materialType@' type '@cgfxTemplate@'."
+#endif
+
+
+#include "commonsetup.template"
+
+#define NAME_PREFIX "l_sm"
+
+#if "@blendFunc@" == "Add"
+	techniqueSet( NAME_PREFIX + "_a0c0" );
+#elif "@blendFunc@" == "Replace"
+	#if "@alphaTest@" == "Always"
+		techniqueSet( NAME_PREFIX + "_r0c0" );
+	#else
+		techniqueSet( NAME_PREFIX + "_t0c0" );
+	#endif
+#elif "@blendFunc@" == "Blend"
+	techniqueSet( NAME_PREFIX + "_b0c0" );
+#else
+	#error "blendFunc '@blendFunc@' not supported for Wii phong materials"
+#endif
+
+textureTable
+{
+	"colorMap" = map( "@tileColor@", "@filterColor@", COLOR_MAP, @nopicmipColor@ ) "@formatColor@" : "colorMap";
+}
+
+refImage( COLOR_MAP );

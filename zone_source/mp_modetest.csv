@@ -1,0 +1,13 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_modetest.d3dbsp
+sound,common,mp_modetest,all_mp
+sound,generic,mp_modetest,all_mp
+sound,voiceovers,mp_modetest,all_mp
+sound,multiplayer,mp_modetest,all_mp
+rawfile,maps/mp/mp_modetest.gsc
+rawfile,vision/default.vision
+
+xmodel,skybox_ber1
+include,water
+include,mptypes_pacific

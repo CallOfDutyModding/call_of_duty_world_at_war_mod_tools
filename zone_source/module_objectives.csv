@@ -1,0 +1,10 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/module_objectives.d3dbsp
+sound,common,module_objectives,all_sp
+sound,generic,module_objectives,all_sp
+sound,voiceovers,module_objectives,all_sp
+sound,requests,module_objectives,all_sp
+
+rawfile,maps/module_objectives.gsc
+include,default_weapons

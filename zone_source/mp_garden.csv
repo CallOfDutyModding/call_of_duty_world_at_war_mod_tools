@@ -1,0 +1,9 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_garden.d3dbsp
+rawfile,maps/mp/mp_garden.gsc
+rawfile,maps/mp/mp_garden_fx.gsc
+sound,common,mp_garden,all_mp
+sound,generic,mp_garden,all_mp
+sound,voiceovers,mp_garden,all_mp
+sound,multiplayer,mp_garden,all_mp

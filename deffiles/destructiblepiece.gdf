@@ -1,0 +1,524 @@
+#name "destructiblepiece"
+#dll "all" "configstringconvert"
+#source_dir "destructiblepiece/"
+#target_dir "destructiblepiece/"
+#file_ext "*"
+#version 5
+
+// This tells the configstring converter what the file type identifier should be
+string "DESTRUCTIBLEPIECE" configstringFileType
+
+string model
+float 0 -1000000 100 breakHealth
+int 0 0 1 explosiveDamageOnly
+string breakEffect
+string breakSound
+string loopSound
+string breakNotify
+string spawnModel1
+string spawnModel2
+
+string modelD1
+float 0 -1000000 100 breakHealthD1
+int 0 0 1 explosiveDamageOnlyD1
+string breakEffectD1
+string breakSoundD1
+string loopSoundD1
+string breakNotifyD1
+string spawnModel1D1
+string spawnModel2D1
+
+string modelD2
+float 0 -1000000 100 breakHealthD2
+int 0 0 1 explosiveDamageOnlyD2
+string breakEffectD2
+string breakSoundD2
+string loopSoundD2
+string breakNotifyD2
+string spawnModel1D2
+string spawnModel2D2
+
+string modelD3
+float 0 -1000000 100 breakHealthD3
+int 0 0 1 explosiveDamageOnlyD3
+string breakEffectD3
+string breakSoundD3
+string loopSoundD3
+string breakNotifyD3
+string spawnModel1D3
+string spawnModel2D3
+
+string modelD4
+float 0 -1000000 100 breakHealthD4
+int 0 0 1 explosiveDamageOnlyD4
+string breakEffectD4
+string breakSoundD4
+string loopSoundD4
+string breakNotifyD4
+string spawnModel1D4
+string spawnModel2D4
+
+
+vcontainer
+{
+	vcontainer
+	{
+		fileedit(model)
+		[
+			exec
+			{
+				label("Model")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			floatedit(breakHealth, .1, .2)
+			[
+				exec
+				{
+					label("Break Health %")
+					tooltip("Piece will fall off into physics after health is below this percentage if physPreset is specified, else it will disapper/swap in damage model")	
+				}
+			]
+			checkbox(explosiveDamageOnly)
+			[
+				exec
+				{
+					label("Explosives Only")
+					tooltip("Only explosive damage can be done to this model.")
+				}
+			]
+		}
+		fileedit(breakEffect)
+		[
+			exec
+			{
+				label("Base Break Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when health gets to 0")	
+			}
+		]
+		edit(breakSound)
+		[
+			exec
+			{
+				label("Base Break Sound")
+				width(600)
+				tooltip("Sound to play when health gets to 0")	
+			}
+		]
+		edit(loopSound)
+		[
+			exec
+			{
+				label("Loop Sound")
+				width(600)
+				tooltip("Loop sound to play when this model is showing")	
+			}
+		]
+		edit(breakNotify)
+		[
+			exec
+			{
+				label("Base Break Notify")
+				width(600)
+			}
+		]
+		fileedit(spawnModel1)
+		[
+			exec
+			{
+				label("Spawn Model 1")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		fileedit(spawnModel2)
+		[
+			exec
+			{
+				label("Spawn Model 2")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Base Model Properties")
+		}
+	]
+	
+	
+	vcontainer
+	{
+		fileedit(modelD1)
+		[
+			exec
+			{
+				label("Model")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			floatedit(breakHealthD1, .1, .2)
+			[
+				exec
+				{
+					label("Break Health %")
+					tooltip("Piece will fall off into physics after health is below this percentage if physPreset is specified, else it will disapper/swap in damage model")	
+				}
+			]
+			checkbox(explosiveDamageOnlyD1)
+			[
+				exec
+				{
+					label("Explosives Only")
+					tooltip("Only explosive damage can be done to this model.")
+				}
+			]
+		}
+		fileedit(breakEffectD1)
+		[
+			exec
+			{
+				label("Break Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when health gets to 0")	
+			}
+		]
+		edit(breakSoundD1)
+		[
+			exec
+			{
+				label("Break Sound")
+				width(600)
+				tooltip("Sound to play when health gets to 0")	
+			}
+		]
+		edit(loopSoundD1)
+		[
+			exec
+			{
+				label("Loop Sound")
+				width(600)
+				tooltip("Loop sound to play when this model is showing")	
+			}
+		]
+		edit(breakNotifyD1)
+		[
+			exec
+			{
+				label("Break Notify")
+				width(600)
+			}
+		]
+		fileedit(spawnModel1D1)
+		[
+			exec
+			{
+				label("Spawn Model 1")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		fileedit(spawnModel2D1)
+		[
+			exec
+			{
+				label("Spawn Model 2")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Damage Model 1 Properties")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(modelD2)
+		[
+			exec
+			{
+				label("Model")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			floatedit(breakHealthD2, .1, .2)
+			[
+				exec
+				{
+					label("Break Health %")
+					tooltip("Piece will fall off into physics after health is below this percentage if physPreset is specified, else it will disapper/swap in damage model")	
+				}
+			]
+			checkbox(explosiveDamageOnlyD2)
+			[
+				exec
+				{
+					label("Explosives Only")
+					tooltip("Only explosive damage can be done to this model.")
+				}
+			]
+		}
+		fileedit(breakEffectD2)
+		[
+			exec
+			{
+				label("Break Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when health gets to 0")	
+			}
+		]
+		edit(breakSoundD2)
+		[
+			exec
+			{
+				label("Break Sound")
+				width(600)
+				tooltip("Sound to play when health gets to 0")	
+			}
+		]
+		edit(loopSoundD2)
+		[
+			exec
+			{
+				label("Loop Sound")
+				width(600)
+				tooltip("Loop sound to play when this model is showing")	
+			}
+		]
+		edit(breakNotifyD2)
+		[
+			exec
+			{
+				label("Break Notify")
+				width(600)
+			}
+		]
+		fileedit(spawnModel1D2)
+		[
+			exec
+			{
+				label("Spawn Model 1")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		fileedit(spawnModel2D2)
+		[
+			exec
+			{
+				label("Spawn Model 2")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Damage Model 2 Properties")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(modelD3)
+		[
+			exec
+			{
+				label("Model")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			floatedit(breakHealthD3, .1, .2)
+			[
+				exec
+				{
+					label("Break Health %")
+					tooltip("Piece will fall off into physics after health is below this percentage if physPreset is specified, else it will disapper/swap in damage model")	
+				}
+			]
+			checkbox(explosiveDamageOnlyD3)
+			[
+				exec
+				{
+					label("Explosives Only")
+					tooltip("Only explosive damage can be done to this model.")
+				}
+			]
+		}
+		fileedit(breakEffectD3)
+		[
+			exec
+			{
+				label("Break Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when health gets to 0")	
+			}
+		]
+		edit(breakSoundD3)
+		[
+			exec
+			{
+				label("Break Sound")
+				width(600)
+				tooltip("Sound to play when health gets to 0")	
+			}
+		]
+		edit(loopSoundD3)
+		[
+			exec
+			{
+				label("Loop Sound")
+				width(600)
+				tooltip("Loop sound to play when this model is showing")	
+			}
+		]
+		edit(breakNotifyD3)
+		[
+			exec
+			{
+				label("Break Notify")
+				width(600)
+			}
+		]
+		fileedit(spawnModel1D3)
+		[
+			exec
+			{
+				label("Spawn Model 1")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		fileedit(spawnModel2D3)
+		[
+			exec
+			{
+				label("Spawn Model 2")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Damage Model 3 Properties")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(modelD4)
+		[
+			exec
+			{
+				label("Model")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			floatedit(breakHealthD4, .1, .2)
+			[
+				exec
+				{
+					label("Break Health %")
+					tooltip("Piece will fall off into physics after health is below this percentage if physPreset is specified, else it will disapper/swap in damage model")	
+				}
+			]
+			checkbox(explosiveDamageOnlyD4)
+			[
+				exec
+				{
+					label("Explosives Only")
+					tooltip("Only explosive damage can be done to this model.")
+				}
+			]
+		}
+		fileedit(breakEffectD4)
+		[
+			exec
+			{
+				label("Break Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when health gets to 0")	
+			}
+		]
+		edit(breakSoundD4)
+		[
+			exec
+			{
+				label("Break Sound")
+				width(600)
+				tooltip("Sound to play when health gets to 0")	
+			}
+		]
+		edit(loopSoundD4)
+		[
+			exec
+			{
+				label("Loop Sound")
+				width(600)
+				tooltip("Loop sound to play when this model is showing")	
+			}
+		]
+		edit(breakNotifyD4)
+		[
+			exec
+			{
+				label("Break Notify")
+				width(600)
+			}
+		]
+		fileedit(spawnModel1D4)
+		[
+			exec
+			{
+				label("Spawn Model 1")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+		fileedit(spawnModel2D4)
+		[
+			exec
+			{
+				label("Spawn Model 2")
+				reldir("pc/main/xmodel/")
+				width(600)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Damage Model 4 Properties")
+		}
+	]
+}

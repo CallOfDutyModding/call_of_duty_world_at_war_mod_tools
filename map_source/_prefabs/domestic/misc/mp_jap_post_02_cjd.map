@@ -1,0 +1,371 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_oki3"
+"classname" "worldspawn"
+"northyaw" "90"
+"ambient" "0.15"
+"_color" "0.411765 0.34902 0.439216"
+"diffusefraction" "0.35"
+"sundiffusecolor" "0.3647 0.3686 0.3725"
+"suncolor" "0.9843 0.6980 0.6313"
+"sundirection" "-155 -182 0"
+"sunlight" "1.25"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"contrastgain" "0.15"
+// brush 0
+{
+  contents detail;
+ ( -16 -16 144 ) ( -16 16 144 ) ( 16 16 144 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -16 144 ) ( -12 -8 144 ) ( -12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 8 144 ) ( -8 12 144 ) ( -12 8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 12 144 ) ( 12 8 144 ) ( 8 12 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -8 144 ) ( 4 -16 144 ) ( 12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 12 140 ) ( 12 12 140 ) ( -8 44 140 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 12 144 ) ( -12 12 140 ) ( -12 44 140 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 12 140 ) ( 8 12 144 ) ( 12 44 140 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -12 140 ) ( 12 -8 144 ) ( 44 -12 140 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 8 144 ) ( 12 12 140 ) ( 44 12 140 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( -20 -12 144 ) ( 12 -12 144 ) ( 12 -12 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -12 144 ) ( 12 20 144 ) ( 12 20 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 12 144 ) ( -12 12 144 ) ( -12 12 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 12 144 ) ( -12 -20 144 ) ( -12 -20 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -16 144 ) ( -12 -8 144 ) ( -12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 8 144 ) ( -8 12 144 ) ( -12 8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 12 144 ) ( 12 8 144 ) ( 8 12 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -8 144 ) ( 4 -16 144 ) ( 12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -24 96 ) ( 12 8 96 ) ( 44 8 96 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 8 40 ) ( 12 -16 40 ) ( 44 8 40 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( 16 16 0 ) ( -16 16 0 ) ( -16 -16 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -20 -12 144 ) ( 12 -12 144 ) ( 12 -12 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -12 144 ) ( 12 20 144 ) ( 12 20 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 12 144 ) ( -12 12 144 ) ( -12 12 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 12 144 ) ( -12 -20 144 ) ( -12 -20 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -16 144 ) ( -12 -8 144 ) ( -12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 8 144 ) ( -8 12 144 ) ( -12 8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 12 144 ) ( 12 8 144 ) ( 8 12 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -8 144 ) ( 4 -16 144 ) ( 12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -16 40 ) ( 12 8 40 ) ( 44 8 40 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( -20 -12 144 ) ( 12 -12 144 ) ( 12 -12 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -12 144 ) ( 12 20 144 ) ( 12 20 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 12 144 ) ( -12 12 144 ) ( -12 12 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 12 144 ) ( -12 -20 144 ) ( -12 -20 0 ) berlin_wall_rock_squared_blocks 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -16 144 ) ( -12 -8 144 ) ( -12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 8 144 ) ( -8 12 144 ) ( -12 8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 12 144 ) ( 12 8 144 ) ( 8 12 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 -8 144 ) ( 4 -16 144 ) ( 12 -8 176 ) okinawa_terrain_stone_aged02 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 12 140 ) ( -8 12 140 ) ( -8 44 140 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 8 96 ) ( 12 -24 96 ) ( 44 8 96 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"classname" "func_group"
+// brush 0
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   4 4 0 8
+   (
+	v -8 -12 0 c 255 255 255 0 t 0 -0 -0.5 -0
+	v -8 -12 40 c 255 255 255 0 t 0 -320 -0.5 -2.5 f 1
+	v -8 -12 96 c 255 255 255 110 t 0 -768 -0.5 -6 f 1
+	v -8 -12 140 c 255 255 255 0 t 0 -1120 -0.75 -8.75 f 1
+   )
+   (
+	v 8 -12 0 c 255 255 255 0 t 128 -0 0.5 0
+	v 8 -12 40 t 128 -320 0.5 -2.5 f 1
+	v 8 -12 96 c 255 255 255 110 t 128 -768 0.5 -6 f 1
+	v 8 -12 140 c 255 255 255 0 t 128 -1120 -0.75 -8.75 f 1
+   )
+   (
+	v 12 -8 0 t 173.25484 -0 -0.5 0 f 1
+	v 12 -8 40 t 173.25484 -320 -0.5 -2.5
+	v 12 -8 96 c 255 255 255 110 t 173.25484 -768 -0.5 -6
+	v 12 -8 140 c 255 255 255 0 t 173.25484 -1120 -0.5 -8.75
+   )
+   (
+	v 12 8 0 t 301.25482 -0 0.5 0 f 1
+	v 12 8 40 c 255 255 255 0 t 301.25482 -320 0.5 -2.5
+	v 12 8 96 c 255 255 255 0 t 301.25482 -768 0.5 -6
+	v 12 8 140 c 255 255 255 0 t 301.25482 -1120 0.5 -8.75
+   )
+  }
+ }
+// brush 1
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   5 4 0 8
+   (
+	v -12 -8 140 c 255 255 255 0 t 0 -0 -0.5 -8.75 f 1
+	v -12 -8 96 c 255 255 255 110 t 0 -352 -0.5 -6 f 1
+	v -12 -8 40 c 255 255 255 0 t 0 -800 -0.5 -2.5
+	v -12 -8 0 c 255 255 255 0 t 0 -1120 -0.5 -0
+   )
+   (
+	v -12 8 140 t 128 -0 0.5 -8.75
+	v -12 8 96 c 255 255 255 0 t 128 -352 0.5 -6
+	v -12 8 40 t 128 -800 0.5 -2.5 f 1
+	v -12 8 0 t 128 -1120 0.5 0 f 1
+   )
+   (
+	v -8 12 140 t 173.25484 -0 -0.5 -8.75 f 1
+	v -8 12 96 c 255 255 255 0 t 173.25484 -352 -0.5 -6 f 1
+	v -8 12 40 t 173.25484 -800 -0.5 -2.5
+	v -8 12 0 t 173.25484 -1120 -0.5 0
+   )
+   (
+	v 8 12 140 c 255 255 255 0 t 301.25482 -0 0.75 -8.75 f 1
+	v 8 12 96 t 301.25482 -352 0.5 -6 f 1
+	v 8 12 40 c 255 255 255 0 t 301.25482 -800 0.75 -2.5
+	v 8 12 0 t 301.25482 -1120 0.75 0
+   )
+   (
+	v 12 8 140 c 255 255 255 0 t 346.50964 -0 0.5 -8.75 f 1
+	v 12 8 96 c 255 255 255 0 t 346.50964 -352 0.5 -6 f 1
+	v 12 8 40 c 255 255 255 0 t 346.50964 -800 0.5 -2.5
+	v 12 8 0 t 346.50964 -1120 0.5 0
+   )
+  }
+ }
+// brush 2
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v -8 -12 96 c 255 255 255 110 t -96 -768 -0.75 -6
+	v -12 -8 96 c 255 255 255 110 t -64 -768 -0.5 -6
+   )
+   (
+	v -8 -12 140 c 255 255 255 0 t -96 -1120 -0.75 -8.75
+	v -12 -8 140 c 255 255 255 0 t -64 -1120 -0.5 -8.75
+   )
+  }
+ }
+// brush 3
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v -8 -12 40 c 255 255 255 0 t -96 -320 -0.75 -2.5
+	v -12 -8 40 c 255 255 255 0 t -64 -320 -0.5 -2.5
+   )
+   (
+	v -8 -12 96 c 255 255 255 110 t -96 -768 -0.75 -6
+	v -12 -8 96 c 255 255 255 110 t -64 -768 -0.5 -6
+   )
+  }
+ }
+// brush 4
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v -12 -8 0 c 255 255 255 0 t -64 -0 -0.5 -0
+	v -12 -8 40 c 255 255 255 0 t -64 -320 -0.5 -2.5
+   )
+   (
+	v -8 -12 0 c 255 255 255 0 t -96 -0 -0.75 -0
+	v -8 -12 40 c 255 255 255 0 t -96 -320 -0.75 -2.5
+   )
+  }
+ }
+// brush 5
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v -8 8 144 t -64 -64 -0.5 -0.5
+	v 8 8 144 c 255 255 255 0 t 64 -64 0.5 -0.5
+   )
+   (
+	v -8 -8 144 c 255 255 255 0 t -64 64 -0.5 0.5
+	v 8 -8 144 c 255 255 255 0 t 64 64 0.5 0.5
+   )
+  }
+ }
+// brush 6
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   3 2 0 8
+   (
+	v -8 8 144 t -64 -64 -0.5 -0.5
+	v -8 -8 144 c 255 255 255 0 t -64 64 -0.5 0.5
+   )
+   (
+	v -10 10 142 t -80 -80 -0.625 -0.625
+	v -10 -10 142 c 255 255 255 0 t -80 80 -0.625 0.625
+   )
+   (
+	v -12 8 140 t -96 -64 -0.75 -0.5
+	v -12 -8 140 c 255 255 255 0 t -96 64 -0.75 0.5
+   )
+  }
+ }
+// brush 7
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v -8 -12 140 c 255 255 255 0 t -96 -1120 -0.75 -8.75
+	v -12 -8 140 c 255 255 255 0 t -64 -1120 -0.5 -8.75
+   )
+   (
+	v -10 -10 142 c 255 255 255 0 t -80 -1136 -0.625 -8.875
+	v -12 -8 140 c 255 255 255 0 t -64 -1120 -0.5 -8.75
+   )
+  }
+ }
+// brush 8
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   3 2 0 8
+   (
+	v -8 -8 144 c 255 255 255 0 t -64 64 -0.5 0.5
+	v 8 -8 144 c 255 255 255 0 t 64 64 0.5 0.5
+   )
+   (
+	v -10 -10 142 c 255 255 255 0 t -80 80 -0.625 0.625
+	v 10 -10 142 c 255 255 255 0 t 80 80 0.625 0.625
+   )
+   (
+	v -8 -12 140 c 255 255 255 0 t -64 96 -0.5 0.75
+	v 8 -12 140 c 255 255 255 0 t 64 96 0.5 0.75
+   )
+  }
+ }
+// brush 9
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v 12 -8 140 c 255 255 255 0 t -64 -1120 -0.5 -8.75
+	v 8 -12 140 c 255 255 255 0 t -96 -1120 -0.75 -8.75
+   )
+   (
+	v 10 -10 142 c 255 255 255 0 t -80 -1136 -0.625 -8.875
+	v 8 -12 140 c 255 255 255 0 t -96 -1120 -0.75 -8.75
+   )
+  }
+ }
+// brush 10
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   3 2 0 8
+   (
+	v 8 -8 144 c 255 255 255 0 t 64 64 0.5 0.5
+	v 8 8 144 c 255 255 255 0 t 64 -64 0.5 -0.5
+   )
+   (
+	v 10 -10 142 c 255 255 255 0 t 80 80 0.625 0.625
+	v 10 10 142 c 255 255 255 0 t 80 -80 0.625 -0.625
+   )
+   (
+	v 12 -8 140 c 255 255 255 0 t 96 64 0.75 0.5
+	v 12 8 140 c 255 255 255 0 t 96 -64 0.75 -0.5
+   )
+  }
+ }
+// brush 11
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v 10 10 142 c 255 255 255 0 t 80 -1136 0.625 -8.875
+	v 8 12 140 c 255 255 255 0 t 96 -1120 0.75 -8.75
+   )
+   (
+	v 12 8 140 c 255 255 255 0 t 64 -1120 0.5 -8.75
+	v 8 12 140 c 255 255 255 0 t 96 -1120 0.75 -8.75
+   )
+  }
+ }
+// brush 12
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   3 2 0 8
+   (
+	v 8 8 144 c 255 255 255 0 t 64 -64 0.5 -0.5
+	v -8 8 144 t -64 -64 -0.5 -0.5
+   )
+   (
+	v 10 10 142 c 255 255 255 0 t 80 -80 0.625 -0.625
+	v -10 10 142 t -80 -80 -0.625 -0.625
+   )
+   (
+	v 8 12 140 c 255 255 255 0 t 64 -96 0.5 -0.75
+	v -8 12 140 t -64 -96 -0.5 -0.75
+   )
+  }
+ }
+// brush 13
+ {
+  mesh
+  {
+   okinawa_terrain_rock_mossy01_blend
+   lightmap_gray
+   2 2 0 8
+   (
+	v -8 12 140 t 96 -1120 0.75 -8.75
+	v -10 10 142 t 80 -1136 0.625 -8.875
+   )
+   (
+	v -12 8 140 t 64 -1120 0.5 -8.75
+	v -10 10 142 t 80 -1136 0.625 -8.875
+   )
+  }
+ }
+}

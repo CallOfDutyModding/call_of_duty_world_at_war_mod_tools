@@ -1,0 +1,4510 @@
+#name "destructibledef"
+#dll "all" "configstringconvert"
+#source_dir "destructibledef/"
+#target_dir "destructibledef/"
+#file_ext "*"
+#version 5
+
+// This tells the configstring converter what the file type identifier should be
+string "DESTRUCTIBLEDEF" configstringFileType
+
+string radiantModel
+string pristineModel
+
+int 0 0 1 clientOnly
+
+string piece0
+int	500 0 100000 piece0Health
+string piece0AttachBone
+
+string piece1
+int	 200 0 100000 piece1Health
+string piece1AttachBone
+
+string piece2
+int	 200 0 100000 piece2Health
+string piece2AttachBone
+
+string piece3
+int	 200 0 100000 piece3Health
+string piece3AttachBone
+
+string piece4
+int	 200 0 100000 piece4Health
+string piece4AttachBone
+
+string piece5
+int	 200 0 100000 piece5Health
+string piece5AttachBone
+
+string piece6
+int	 200 0 100000 piece6Health
+string piece6AttachBone
+
+string piece7
+int	 200 0 100000 piece7Health
+string piece7AttachBone
+
+string piece8
+int	 200 0 100000 piece8Health
+string piece8AttachBone
+
+string piece9
+int	 200 0 100000 piece9Health
+string piece9AttachBone
+
+string piece10
+int	 200 0 100000 piece10Health
+string piece10AttachBone
+
+string piece11
+int	 200 0 100000 piece11Health
+string piece11AttachBone
+
+string piece12
+int	 200 0 100000 piece12Health
+string piece12AttachBone
+
+string piece13
+int	 200 0 100000 piece13Health
+string piece13AttachBone
+
+string piece14
+int	 200 0 100000 piece14Health
+string piece14AttachBone
+
+string piece15
+int	 200 0 100000 piece15Health
+string piece15AttachBone
+
+string piece16
+int	 200 0 100000 piece16Health
+string piece16AttachBone
+
+string piece17
+int	 200 0 100000 piece17Health
+string piece17AttachBone
+
+string piece18
+int	 200 0 100000 piece18Health
+string piece18AttachBone
+
+string piece19
+int	 200 0 100000 piece19Health
+string piece19AttachBone
+
+string piece20
+int	 200 0 100000 piece20Health
+string piece20AttachBone
+
+string piece21
+int	 200 0 100000 piece21Health
+string piece21AttachBone
+
+string piece22
+int	 200 0 100000 piece22Health
+string piece22AttachBone
+
+string piece23
+int	 200 0 100000 piece23Health
+string piece23AttachBone
+
+string piece24
+int	 200 0 100000 piece24Health
+string piece24AttachBone
+
+string piece25
+int	 200 0 100000 piece25Health
+string piece25AttachBone
+
+string piece26
+int	 200 0 100000 piece26Health
+string piece26AttachBone
+
+string piece27
+int	 200 0 100000 piece27Health
+string piece27AttachBone
+
+string piece28
+int	 200 0 100000 piece28Health
+string piece28AttachBone
+
+string piece29
+int	 200 0 100000 piece29Health
+string piece29AttachBone
+
+string piece30
+int	 200 0 100000 piece30Health
+string piece30AttachBone
+
+string piece31
+int	 200 0 100000 piece31Health
+string piece31AttachBone
+
+int -1 -1 32 parentPiece0
+int -1 -1 32 parentPiece1
+int -1 -1 32 parentPiece2
+int -1 -1 32 parentPiece3
+int -1 -1 32 parentPiece4
+int -1 -1 32 parentPiece5
+int -1 -1 32 parentPiece6
+int -1 -1 32 parentPiece7
+int -1 -1 32 parentPiece8
+int -1 -1 32 parentPiece9
+int -1 -1 32 parentPiece10
+int -1 -1 32 parentPiece11
+int -1 -1 32 parentPiece12
+int -1 -1 32 parentPiece13
+int -1 -1 32 parentPiece14
+int -1 -1 32 parentPiece15
+int -1 -1 32 parentPiece16
+int -1 -1 32 parentPiece17
+int -1 -1 32 parentPiece18
+int -1 -1 32 parentPiece19
+int -1 -1 32 parentPiece20
+int -1 -1 32 parentPiece21
+int -1 -1 32 parentPiece22
+int -1 -1 32 parentPiece23
+int -1 -1 32 parentPiece24
+int -1 -1 32 parentPiece25
+int -1 -1 32 parentPiece26
+int -1 -1 32 parentPiece27
+int -1 -1 32 parentPiece28
+int -1 -1 32 parentPiece29
+int -1 -1 32 parentPiece30
+int -1 -1 32 parentPiece31
+
+int 0 0 100 parentDamage0
+int 0 0 100 parentDamage1
+int 0 0 100 parentDamage2
+int 0 0 100 parentDamage3
+int 0 0 100 parentDamage4
+int 0 0 100 parentDamage5
+int 0 0 100 parentDamage6
+int 0 0 100 parentDamage7
+int 0 0 100 parentDamage8
+int 0 0 100 parentDamage9
+int 0 0 100 parentDamage10
+int 0 0 100 parentDamage11
+int 0 0 100 parentDamage12
+int 0 0 100 parentDamage13
+int 0 0 100 parentDamage14
+int 0 0 100 parentDamage15
+int 0 0 100 parentDamage16
+int 0 0 100 parentDamage17
+int 0 0 100 parentDamage18
+int 0 0 100 parentDamage19
+int 0 0 100 parentDamage20
+int 0 0 100 parentDamage21
+int 0 0 100 parentDamage22
+int 0 0 100 parentDamage23
+int 0 0 100 parentDamage24
+int 0 0 100 parentDamage25
+int 0 0 100 parentDamage26
+int 0 0 100 parentDamage27
+int 0 0 100 parentDamage28
+int 0 0 100 parentDamage29
+int 0 0 100 parentDamage30
+int 0 0 100 parentDamage31
+
+float 1 0 10 bulletDamageScale0
+float 1 0 10 bulletDamageScale1
+float 1 0 10 bulletDamageScale2
+float 1 0 10 bulletDamageScale3
+float 1 0 10 bulletDamageScale4
+float 1 0 10 bulletDamageScale5
+float 1 0 10 bulletDamageScale6
+float 1 0 10 bulletDamageScale7
+float 1 0 10 bulletDamageScale8
+float 1 0 10 bulletDamageScale9
+float 1 0 10 bulletDamageScale10
+float 1 0 10 bulletDamageScale11
+float 1 0 10 bulletDamageScale12
+float 1 0 10 bulletDamageScale13
+float 1 0 10 bulletDamageScale14
+float 1 0 10 bulletDamageScale15
+float 1 0 10 bulletDamageScale16
+float 1 0 10 bulletDamageScale17
+float 1 0 10 bulletDamageScale18
+float 1 0 10 bulletDamageScale19
+float 1 0 10 bulletDamageScale20
+float 1 0 10 bulletDamageScale21
+float 1 0 10 bulletDamageScale22
+float 1 0 10 bulletDamageScale23
+float 1 0 10 bulletDamageScale24
+float 1 0 10 bulletDamageScale25
+float 1 0 10 bulletDamageScale26
+float 1 0 10 bulletDamageScale27
+float 1 0 10 bulletDamageScale28
+float 1 0 10 bulletDamageScale29
+float 1 0 10 bulletDamageScale30
+float 1 0 10 bulletDamageScale31
+
+float 1 0 10 explosiveDamageScale0
+float 1 0 10 explosiveDamageScale1
+float 1 0 10 explosiveDamageScale2
+float 1 0 10 explosiveDamageScale3
+float 1 0 10 explosiveDamageScale4
+float 1 0 10 explosiveDamageScale5
+float 1 0 10 explosiveDamageScale6
+float 1 0 10 explosiveDamageScale7
+float 1 0 10 explosiveDamageScale8
+float 1 0 10 explosiveDamageScale9
+float 1 0 10 explosiveDamageScale10
+float 1 0 10 explosiveDamageScale11
+float 1 0 10 explosiveDamageScale12
+float 1 0 10 explosiveDamageScale13
+float 1 0 10 explosiveDamageScale14
+float 1 0 10 explosiveDamageScale15
+float 1 0 10 explosiveDamageScale16
+float 1 0 10 explosiveDamageScale17
+float 1 0 10 explosiveDamageScale18
+float 1 0 10 explosiveDamageScale19
+float 1 0 10 explosiveDamageScale20
+float 1 0 10 explosiveDamageScale21
+float 1 0 10 explosiveDamageScale22
+float 1 0 10 explosiveDamageScale23
+float 1 0 10 explosiveDamageScale24
+float 1 0 10 explosiveDamageScale25
+float 1 0 10 explosiveDamageScale26
+float 1 0 10 explosiveDamageScale27
+float 1 0 10 explosiveDamageScale28
+float 1 0 10 explosiveDamageScale29
+float 1 0 10 explosiveDamageScale30
+float 1 0 10 explosiveDamageScale31
+
+int 1 0 100 damageEntity0
+int 1 0 100 damageEntity1
+int 1 0 100 damageEntity2
+int 1 0 100 damageEntity3
+int 1 0 100 damageEntity4
+int 1 0 100 damageEntity5
+int 1 0 100 damageEntity6
+int 1 0 100 damageEntity7
+int 1 0 100 damageEntity8
+int 1 0 100 damageEntity9
+int 1 0 100 damageEntity10
+int 1 0 100 damageEntity11
+int 1 0 100 damageEntity12
+int 1 0 100 damageEntity13
+int 1 0 100 damageEntity14
+int 1 0 100 damageEntity15
+int 1 0 100 damageEntity16
+int 1 0 100 damageEntity17
+int 1 0 100 damageEntity18
+int 1 0 100 damageEntity19
+int 1 0 100 damageEntity20
+int 1 0 100 damageEntity21
+int 1 0 100 damageEntity22
+int 1 0 100 damageEntity23
+int 1 0 100 damageEntity24
+int 1 0 100 damageEntity25
+int 1 0 100 damageEntity26
+int 1 0 100 damageEntity27
+int 1 0 100 damageEntity28
+int 1 0 100 damageEntity29
+int 1 0 100 damageEntity30
+int 1 0 100 damageEntity31
+
+string physConstraint0
+string physConstraint1
+string physConstraint2
+string physConstraint3
+string physConstraint4
+string physConstraint5
+string physConstraint6
+string physConstraint7
+string physConstraint8
+string physConstraint9
+string physConstraint10
+string physConstraint11
+string physConstraint12
+string physConstraint13
+string physConstraint14
+string physConstraint15
+string physConstraint16
+string physConstraint17
+string physConstraint18
+string physConstraint19
+string physConstraint20
+string physConstraint21
+string physConstraint22
+string physConstraint23
+string physConstraint24
+string physConstraint25
+string physConstraint26
+string physConstraint27
+string physConstraint28
+string physConstraint29
+string physConstraint30
+string physConstraint31
+
+string damageSound0
+string damageSound1
+string damageSound2
+string damageSound3
+string damageSound4
+string damageSound5
+string damageSound6
+string damageSound7
+string damageSound8
+string damageSound9
+string damageSound10
+string damageSound11
+string damageSound12
+string damageSound13
+string damageSound14
+string damageSound15
+string damageSound16
+string damageSound17
+string damageSound18
+string damageSound19
+string damageSound20
+string damageSound21
+string damageSound22
+string damageSound23
+string damageSound24
+string damageSound25
+string damageSound26
+string damageSound27
+string damageSound28
+string damageSound29
+string damageSound30
+string damageSound31
+string burnEffect0
+string burnEffect1
+string burnEffect2
+string burnEffect3
+string burnEffect4
+string burnEffect5
+string burnEffect6
+string burnEffect7
+string burnEffect8
+string burnEffect9
+string burnEffect10
+string burnEffect11
+string burnEffect12
+string burnEffect13
+string burnEffect14
+string burnEffect15
+string burnEffect16
+string burnEffect17
+string burnEffect18
+string burnEffect19
+string burnEffect20
+string burnEffect21
+string burnEffect22
+string burnEffect23
+string burnEffect24
+string burnEffect25
+string burnEffect26
+string burnEffect27
+string burnEffect28
+string burnEffect29
+string burnEffect30
+string burnEffect31
+string burnSound0
+string burnSound1
+string burnSound2
+string burnSound3
+string burnSound4
+string burnSound5
+string burnSound6
+string burnSound7
+string burnSound8
+string burnSound9
+string burnSound10
+string burnSound11
+string burnSound12
+string burnSound13
+string burnSound14
+string burnSound15
+string burnSound16
+string burnSound17
+string burnSound18
+string burnSound19
+string burnSound20
+string burnSound21
+string burnSound22
+string burnSound23
+string burnSound24
+string burnSound25
+string burnSound26
+string burnSound27
+string burnSound28
+string burnSound29
+string burnSound30
+string burnSound31
+string pieceLabel0
+string pieceLabel1
+string pieceLabel2
+string pieceLabel3
+string pieceLabel4
+string pieceLabel5
+string pieceLabel6
+string pieceLabel7
+string pieceLabel8
+string pieceLabel9
+string pieceLabel10
+string pieceLabel11
+string pieceLabel12
+string pieceLabel13
+string pieceLabel14
+string pieceLabel15
+string pieceLabel16
+string pieceLabel17
+string pieceLabel18
+string pieceLabel19
+string pieceLabel20
+string pieceLabel21
+string pieceLabel22
+string pieceLabel23
+string pieceLabel24
+string pieceLabel25
+string pieceLabel26
+string pieceLabel27
+string pieceLabel28
+string pieceLabel29
+string pieceLabel30
+string pieceLabel31
+
+
+vcontainer
+{
+	fileedit(piece0)
+	[
+		exec
+		{
+			label("Base Piece")
+			width(600)
+		}
+	]
+	hcontainer
+	{
+		spinedit(piece0Health, 10, 100)
+		[
+			exec
+			{
+				label("Base Health")
+			}
+		]
+		spinedit(parentPiece0, 1, 5)
+		[
+			exec
+			{
+				label("Parent Piece")
+				tooltip("If parent piece takes damage then this piece will take damage")
+			}
+		]
+		spinedit(parentDamage0, 2, 10)
+		[
+			exec
+			{
+				label("Percent Damage %")
+				tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+			}
+		]
+	}
+	hcontainer
+	{
+		floatedit(bulletDamageScale0, .1, .4)
+		[
+			exec
+			{
+				label("Damage Scale Bullet")
+				labelwidth(150)
+			}
+		]
+		floatedit(explosiveDamageScale0, .1, .4)
+		[
+			exec
+			{
+				label("Explosive")
+				labelwidth(100)
+				width(175)
+			}
+		]
+		spinedit(damageEntity0, 2, 10)
+		[
+			exec
+			{
+				label("Ent Dmg Transfr %")
+				tooltip("Damage done to this piece will damage the entity the specified %")
+			}
+		]
+	}
+	fileedit(radiantModel)
+	[
+		exec
+		{
+			label("Radiant Model")
+			width(600)
+		}
+	]
+	fileedit(pristineModel)
+	[
+		exec
+		{
+			label("Pristine Model")
+			width(600)
+		}
+	]
+	edit(piece0AttachBone)
+	[
+		exec
+		{
+			label("Attach Bone")
+			tooltip("This is only used for placing effects")
+			width(600)
+		}
+	]
+	edit(physConstraint0)
+	[
+		exec
+		{
+			label("Physics Action")
+			width(600)
+		}
+	]
+	edit(damageSound0)
+	[
+		exec
+		{
+			label("Damage Sound")
+			width(600)
+			tooltip("Sound to play when damage occurs")	
+		}
+	]
+	fileedit(burnEffect0)
+	[
+		exec
+		{
+			label("Burn Effect")
+			reldir("share/raw/fx/")
+			width(600)
+			tooltip("Effect to play when on fire")	
+		}
+	]
+	edit(burnSound0)
+	[
+		exec
+		{
+			label("Burn Sound")
+			width(600)
+			tooltip("Sound to play when on fire")	
+		}
+	]
+	checkbox(clientOnly)
+	[
+		exec
+		{
+			label("Client Only")
+			tooltip("This should only be checked if nothing on the server needs access to this destructible and collision can be baked into the BSP")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece1)
+		[
+			exec
+			{
+				label("Piece")
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece1Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece1, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage1, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale1, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale1, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity1, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece1AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint1)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound1)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect1)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound1)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel1)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece1")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece2)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece2Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece2, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage2, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale2, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale2, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity2, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece2AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint2)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound2)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect2)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound2)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel2)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece2")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece3)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece3Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece3, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage3, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale3, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale3, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity3, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece3AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint3)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound3)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect3)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound3)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel3)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece3")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece4)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece4Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece4, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage4, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale4, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale4, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity4, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece4AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint4)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound4)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect4)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound4)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel4)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece4")
+		}
+	]
+
+	vcontainer
+	{
+		fileedit(piece5)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece5Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece5, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage5, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale5, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale5, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity5, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece5AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint5)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound5)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect5)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound5)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel5)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece5")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece6)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece6Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece6, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage6, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale6, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale6, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity6, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece6AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint6)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound6)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect6)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound6)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel6)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece6")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece7)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece7Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece7, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage7, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale7, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale7, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity7, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece7AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint7)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound7)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect7)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound7)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel7)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece7")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece8)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece8Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece8, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage8, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale8, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale8, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity8, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece8AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint8)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound8)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect8)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound8)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel8)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece8")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece9)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece9Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece9, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage9, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale9, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale9, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity9, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece9AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint9)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound9)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect9)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound9)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel9)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece9")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece10)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece10Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece10, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage10, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale10, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale10, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity10, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece10AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint10)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound10)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect10)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound10)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel10)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece10")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece11)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece11Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece11, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage11, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale11, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale11, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity11, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece11AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint11)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound11)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect11)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound11)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel11)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece11")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece12)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece12Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece12, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage12, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale12, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale12, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity12, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece12AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint12)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound12)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect12)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound12)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel12)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece12")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece13)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece13Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece13, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage13, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale13, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale13, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity13, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece13AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint13)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound13)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect13)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound13)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel13)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece13")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece14)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece14Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece14, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage14, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale14, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale14, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity14, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece14AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint14)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound14)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect14)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound14)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel14)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece14")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece15)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece15Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece15, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage15, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale15, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale15, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity15, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece15AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint15)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound15)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect15)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound15)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel15)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece15")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece16)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece16Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece16, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage16, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale16, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale16, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity16, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece16AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint16)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound16)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect16)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound16)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel16)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece16")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece17)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece17Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece17, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage17, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale17, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale17, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity17, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece17AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint17)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound17)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect17)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound17)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel17)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece17")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece18)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece18Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece18, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage18, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale18, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale18, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity18, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece18AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint18)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound18)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect18)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound18)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel18)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece18")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece19)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece19Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece19, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage19, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale19, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale19, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity19, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece19AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint19)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound19)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect19)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound19)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel19)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece19")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece20)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece20Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece20, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage20, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale20, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale20, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity20, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece20AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint20)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound20)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect20)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound20)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel20)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece20")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece21)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece21Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece21, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage21, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale21, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale21, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity21, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece21AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint21)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound21)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect21)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound21)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel21)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece21")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece22)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece22Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece22, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage22, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale22, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale22, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity22, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece22AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(damageSound22)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		edit(physConstraint22)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		fileedit(burnEffect22)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound22)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel22)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece22")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece23)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece23Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece23, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage23, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale23, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale23, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity23, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece23AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint23)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound23)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect23)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound23)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel23)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece23")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece24)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece24Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece24, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage24, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale24, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale24, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity24, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece24AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint24)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound24)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect24)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound24)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel24)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece24")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece25)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece25Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece25, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage25, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale25, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale25, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity25, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece25AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint25)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound25)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect25)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound25)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel25)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece25")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece26)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece26Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece26, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage26, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale26, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale26, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity26, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece26AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint26)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound26)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect26)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound26)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel26)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece26")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece27)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece27Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece27, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage27, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale27, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale27, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity27, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece27AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint27)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound27)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect27)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound27)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel27)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece27")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece28)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece28Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece28, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage28, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale28, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale28, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity28, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece28AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint28)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound28)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect28)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound28)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel28)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece28")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece29)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece29Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece29, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage29, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale29, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale29, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity29, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece29AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint29)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound29)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect29)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound29)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel29)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece29")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece30)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece30Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece30, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage30, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale30, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale30, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity30, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece30AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint30)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound30)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect30)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound30)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel30)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece30")
+		}
+	]
+	
+	vcontainer
+	{
+		fileedit(piece31)
+		[
+			exec
+			{
+				label("Piece")
+		
+				width(600)
+			}
+		]
+		hcontainer
+		{
+			spinedit(piece31Health, 10, 100)
+			[
+				exec
+				{
+					label("Health")
+				}
+			]
+			spinedit(parentPiece31, 1, 5)
+			[
+				exec
+				{
+					label("Parent Piece")
+					tooltip("If parent piece takes damage then this piece will take damage")
+				}
+			]
+			spinedit(parentDamage31, 2, 10)
+			[
+				exec
+				{
+					label("Percent Damage %")
+					tooltip("If parent piece takes damage then this piece will take this percentage of damage also")
+				}
+			]
+		}
+		hcontainer
+		{
+			floatedit(bulletDamageScale31, .1, .4)
+			[
+				exec
+				{
+					label("Damage Scale Bullet")
+					labelwidth(150)
+				}
+			]
+			floatedit(explosiveDamageScale31, .1, .4)
+			[
+				exec
+				{
+					label("Explosive")
+					labelwidth(100)
+					width(175)
+				}
+			]
+			spinedit(damageEntity31, 2, 10)
+			[
+				exec
+				{
+					label("Ent Dmg Transfr %")
+					tooltip("Damage done to this piece will damage the entity the specified %")
+				}
+			]
+		}
+		edit(piece31AttachBone)
+		[
+			exec
+			{
+				label("Attach Bone")
+				width(600)
+			}
+		]
+		edit(physConstraint31)
+		[
+			exec
+			{
+				label("Physics Action")
+				width(600)
+			}
+		]
+		edit(damageSound31)
+		[
+			exec
+			{
+				label("Damage Sound")
+				width(600)
+				tooltip("Sound to play when damage occurs")	
+			}
+		]
+		fileedit(burnEffect31)
+		[
+			exec
+			{
+				label("Burn Effect")
+				reldir("share/raw/fx/")
+				width(600)
+				tooltip("Effect to play when on fire")	
+			}
+		]
+		edit(burnSound31)
+		[
+			exec
+			{
+				label("Burn Sound")
+				width(600)
+				tooltip("Sound to play when on fire")	
+			}
+		]
+		edit(pieceLabel31)
+		[
+			exec
+			{
+				label("Label")
+				width(600)
+				tooltip("Scripts can disable pieces by setting this label")	
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Piece31")
+		}
+	]
+}

@@ -1,0 +1,14 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"angles" "0 180 0"
+"classname" "misc_model"
+"model" "static_holland_shutter_white"
+"origin" "-1.0 0.0 -1.0"
+}

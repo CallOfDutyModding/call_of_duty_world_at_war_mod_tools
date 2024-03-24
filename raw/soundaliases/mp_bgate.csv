@@ -1,0 +1,36 @@
+name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,dist_reverb_max,limit_count,limit_type,entity_limit_count,entity_limit_type,bus,priority,spatialized,type,probability,loop,masterslave,loadspec,reverb_falloff_curve,subtitle,compression,randomize_type,secondaryaliasname,chainaliasname,volumefalloffcurve,probability,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage,occlusion_level,move_type,move_time,real_delay,distance_lpf,min_priority,max_priority,min_priority_threshold,max_priority_threshold
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# Ambient SFX - Static,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# WIND,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+partial_wind,,Stream\Backgrounds\Room_Tones\ber3b_partial_high_00.wav,0.25,0.25,1,1,,,,,,,,ambience,,2d,streamed,,looping,,,,,,,,,,,,,,,,,,,,,,,,,40,80,0.25,1
+indoor_wind,,Stream\Backgrounds\Room_Tones\ber3b_closed_00.wav,0.55,0.55,1,1,,,,,,,,ambience,,2d,streamed,,looping,,,,,,,,,,,,,,,,,,,,,,,,,40,80,0.25,1
+outdoor_wind,,Stream\Backgrounds\Wind\ext_wind\ext_wind_00.wav,0.55,0.55,1,1,,,,,,,,ambience,,2d,streamed,,looping,,,,,,,,,,,,,,,,,,,,,,,,,40,80,0.25,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# FIRE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+fire_large,,SFX\Levels\Makin\hut_fire_##,0.4,0.5,0.8,1.05,100,1500,2000,,,,,ambience,,3d,,,looping,,,curve3,,,pitch,,,curve3,,,,0.8,,,,,,,0.3,,,,,20,40,0.15,0.85
+fire_small,,SFX\Levels\nazi_zombie_factory\fire_small.wav,0.6,0.9,0.8,1.05,100,1000,1500,,,,,ambience,,3d,,,looping,,,curve3,,,pitch,,,curve3,,,,0.8,,,,,,,0.3,,,,,20,40,0.15,0.85
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#wood_creak,,SFX\Amb\wood_creak_v3_##,0.6,0.8,0.8,1.05,100,800,1200,8,reject,,,ambience,,3d,,,,,,curve3,,,pitch,,,curve3,,,,0.8,,,,,,,,,,,,20,60,0.25,0.8
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+air_raid_1,,sfx\levels\nazi_zombie_factory\air_raid\air_raid_loop_01.wav,0.5,0.5,,,3000,10000,10500,,,,,ambience,,3d,,,looping,,,,,,,,,curve1,,,,,,,,,,,0.65,,,,,20,90,0.25,1
+#air_raid_b,,sfx\levels\nazi_zombie_factory\air_raid\air_raid_loop_02.wav,0.95,0.95,,,3000,10000,10500,,,,,ambience,,3d,,,looping,,,,,,,,,curve1,,,,,,,,,,,0.65,,,,,20,90,0.25,1
+#air_raid_c,,sfx\levels\nazi_zombie_factory\air_raid\air_raid_loop_03.wav,0.95,0.95,,,3000,10000,10500,,,,,ambience,,3d,streamed,,looping,,,,,,,,,curve1,,,,,,,,,,,0.65,,,,,20,90,0.25,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#metal_creak,,SFX\Amb\metal\scrape_##,0.85,0.95,0.95,1.05,100,800,1500,,,,,ambience,,3d,,,,,,curve4,,,,,,curve3,,,,0.8,,,,,,,0.25,,,,,40,60,0.25,1
+#metal_groan,,SFX\Amb\metal\wronk_##,0.85,0.95,0.95,1.05,100,800,1500,,,,,ambience,,3d,,,,,,curve4,,,,,,curve3,,,,0.8,,,,,,,0.25,,,,,40,60,0.25,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lantern_close,,SFX\Levels\nazi_zombie_sumpf\lantern\lantern_loop.wav,0.25,0.25,0.85,1.05,50,100,100,5,priority,,,full_vol,,3d,,,looping,,,curve2,,,pitch,,,curve1,,,,,,,,50,150,0.5,0.25,,,no,no,5,10,0.1,1
+lantern,,SFX\Levels\nazi_zombie_sumpf\lantern\lantern_loop_far.wav,0.25,0.25,0.85,1.05,50,300,500,5,priority,,,full_vol,,3d,,,looping,,,curve2,,,pitch,lantern_close,,curve2,,,,,,,,50,200,0.8,0.25,,,no,no,5,10,0.1,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+wind_howl,,SFX\Levels\mp_subway\wind\wind_howl_##,0.85,0.85,0.95,1.05,200,800,1300,,,1,reject,ambience,,3d,,,,,,curve3,,,pitch,,,curve3,,,,0.6,,,,50,250,0.5,0.35,,,,no,30,50,0.1,0.9
+bomb_4rth,,SFX\levels\mp_bgate\explo_dist_4rth_##,1,1,0.8,1.05,1000,8000,6000,8,reject,,,ambience,,3d,,,,,,curve3,,,pitch,,,curve3,,,,0.8,,,,,,,0.7,,,,,20,60,0.25,0.8
+bomb_far,,SFX\Amb\bomb_far_##,1,1,0.8,1.05,1000,8000,6000,8,reject,,,ambience,,3d,,,,,,curve3,,,pitch,,,curve3,,,,0.8,,,,,,,0.7,,,,,20,60,0.25,0.8
+artillery,,SFX\Amb\distant_fire\artillery_##,1,1,0.8,1.05,1000,8000,6000,8,reject,,,ambience,,3d,,,,,,curve3,,,pitch,,,curve3,,,,0.8,,,,,,,0.7,,,,,20,60,0.25,0.8
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+amb_flies,,SFX\Amb\spc_flies_##,0.5,0.8,0.9,1.2,50,700,800,3,priority,,,ambience,60,3d,,,,,,curve3,,,,,,curve3,,,,0.8,,,,,,,0.7,,,,,20,60,0.25,1
+amb_crickets,,SFX\Amb\animals\crickets_##,0.1,0.3,0.9,1.2,50,700,800,5,priority,,,ambience,60,3d,,,,,,curve3,,,,,,curve3,,,,0.8,,,,,,,0.7,,,,,20,60,0.25,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lightbulb_loop,,SFX\Amb\lightbulbs\light_humming_00.wav,0.25,0.3,0.95,1.05,50,700,800,5,priority,,,ambience,60,3d,,,,,,curve3,,,,,,curve3,,,,0.8,,,,,,,0.7,,,,,20,60,0.25,1
+rock_dust,,sfx/amb/debris/rock_dust_##,0.2,0.6,0.9,1.1,50,700,800,5,priority,,,ambience,60,3d,,,,,,curve3,,,,,,curve3,,,,0.8,,,,,,,0.7,,,,,20,60,0.25,1

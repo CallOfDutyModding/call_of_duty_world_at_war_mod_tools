@@ -1,0 +1,11 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_roundhouse_main_style.d3dbsp
+sound,common,mp_roundhouse_main_style,all_mp
+sound,generic,mp_roundhouse_main_style,all_mp
+sound,voiceovers,mp_roundhouse_main_style,all_mp
+sound,multiplayer,mp_roundhouse_main_style,all_mp
+
+xmodel,skybox_ber3
+
+rawfile,maps/mp/createart/mp_roundhouse_main_style_art.gsc

@@ -1,0 +1,202 @@
+iwfx 2
+
+{
+	name "0_smoke_trans_near_ 16001";
+	editorFlags looping useRandAlpha useRandRotDelta useRandVel0 useRandVel1;
+	flags spawnRelative spawnFrustumCull spawnOffsetNone runRelToSpawn;
+	spawnRange 0 3000;
+	fadeInRange 0 0;
+	fadeOutRange 0 0;
+	spawnFrustumCullRadius 1000;
+	spawnLooping 200 52;
+	spawnOneShot 0 0;
+	spawnDelayMsec 0 101;
+	lifeSpanMsec 1500 2500;
+	spawnOrgX 0 0;
+	spawnOrgY -50 100;
+	spawnOrgZ -40 80;
+	spawnOffsetRadius 7.3 0;
+	spawnOffsetHeight 0 20;
+	spawnAnglePitch 0 0;
+	spawnAngleYaw 0 0;
+	spawnAngleRoll 0 0;
+	angleVelPitch 0 0;
+	angleVelYaw 0 0;
+	angleVelRoll 0 0;
+	initialRot -360 720;
+	gravity 0 0;
+	elasticity 0 0;
+	windinfluence 0.4;
+	atlasBehavior startRandom;
+	atlasIndex 0;
+	atlasFps 0;
+	atlasLoopCount 0;
+	atlasColIndexBits 0;
+	atlasRowIndexBits 0;
+	atlasEntryCount 0;
+	velGraph0X 100
+	{
+		{
+			0 0.5
+			0.156977 0.284689
+			1 0
+		}
+		{
+			0 0.5
+			0.139535 0.260766
+			0.456395 0.0789474
+			1 0
+		}
+	};
+	velGraph0Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph0Z 35
+	{
+		{
+			0 -0.5
+			1 -0.5
+		}
+		{
+			0 -0.5
+			1 -0.5
+		}
+	};
+	velGraph1X 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Y 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	velGraph1Z 0
+	{
+		{
+			0 0
+			1 0
+		}
+		{
+			0 0
+			1 0
+		}
+	};
+	rotGraph 70
+	{
+		{
+			0 -0.5
+			0.497093 -0.5
+			1 -0.263889
+		}
+		{
+			0 0.5
+			0.494186 0.5
+			1 0.273148
+		}
+	};
+	sizeGraph0 150
+	{
+		{
+			0 0.376623
+			0.585294 0.474026
+			0.817647 0.584416
+			1 0.779221
+		}
+		{
+			0 0.474026
+			0.597059 0.649351
+			0.797059 0.74026
+			1 1
+		}
+	};
+	sizeGraph1 0
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	scaleGraph 0
+	{
+		{
+			0 1
+			1 0
+		}
+		{
+			0 1
+			1 0
+		}
+	};
+	colorGraph 1
+	{
+		{
+			0 1 1 1
+			1 0.878431 0.878431 0.878431
+		}
+		{
+			0 0.00784314 0.00784314 0.00784314
+			1 0.145098 0.141176 0.137255
+		}
+	};
+	alphaGraph 1
+	{
+		{
+			0 0
+			0.287791 0.186603
+			0.415698 0.392344
+			0.56686 0.392344
+			0.747093 0.157895
+			1 0
+		}
+		{
+			0 0
+			0.322674 0.114833
+			0.479651 0.272727
+			0.671512 0.110048
+			1 0
+		}
+	};
+	lightingFrac 0.2;
+	collOffset 0 0 0;
+	collRadius 0;
+	fxOnImpact "";
+	fxOnDeath "";
+	sortOrder 2;
+	efPriority 115;
+	emission "";
+	emitDist 0 0;
+	emitDistVariance 0 0;
+	trailSplitDist 100;
+	trailScrollTime 0;
+	trailRepeatDist 10;
+	billboardSprite
+	{
+		"gfx_fxt_smk_gen"
+	};
+}

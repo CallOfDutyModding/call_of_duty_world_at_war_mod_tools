@@ -1,0 +1,7 @@
+ignore,code_post_gfx,,
+ignore,common,,
+
+sound,character,nazi_zombie_factory,all_sp
+
+// strings
+localize,zombie

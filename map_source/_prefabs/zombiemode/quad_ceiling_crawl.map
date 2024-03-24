@@ -1,0 +1,33 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_ber3"
+"sunradiosity" "1"
+"sundirection" "242 136 0"
+"_color" "0.831373 0.913725 1"
+"ambient" "0.15"
+"diffusefraction" "0.2"
+"suncolor" "0.909804 0.921569 0.87451"
+"sundiffusecolor" "0.164706 0.329412 0.501961"
+"sunlight" "1.4"
+"classname" "worldspawn"
+}
+// entity 1
+{
+"angles" "0 0 0"
+"animscript" "zombie_wall_crawl_drop"
+"target" "auto2"
+"targetname" "auto1"
+"script_noteworthy" "start_node"
+"origin" "176.0 -128.0 -216.0"
+"classname" "node_negotiation_begin"
+}
+// entity 2
+{
+"targetname" "auto2"
+"script_noteworthy" "start_node"
+"origin" "24.0 -128.0 -568.0"
+"classname" "node_negotiation_end"
+}

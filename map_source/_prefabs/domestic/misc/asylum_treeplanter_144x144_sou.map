@@ -1,0 +1,312 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents detail;
+ ( 92 73 52 ) ( 44 73 52 ) ( 44 -63 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -63 54 ) ( 48 73 54 ) ( 96 73 54 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 55 24 ) ( 96 55 24 ) ( 96 55 16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -63 96 ) ( 72 73 96 ) ( 72 73 88 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 92 73 8 ) ( 44 73 8 ) ( 44 73 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 54 73 -32 ) ( 54 -63 -32 ) ( 54 -63 -40 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 92 -53 52 ) ( 44 -53 52 ) ( 44 -189 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -189 54 ) ( 48 -53 54 ) ( 96 -53 54 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -73 24 ) ( 96 -73 24 ) ( 96 -73 16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -189 96 ) ( 72 -53 96 ) ( 72 -53 88 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 92 -53 8 ) ( 44 -53 8 ) ( 44 -53 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 54 -53 -32 ) ( 54 -189 -32 ) ( 54 -189 -40 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( -34 -53 52 ) ( -82 -53 52 ) ( -82 -189 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -78 -189 54 ) ( -78 -53 54 ) ( -30 -53 54 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -78 -73 24 ) ( -30 -73 24 ) ( -30 -73 16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -54 -189 96 ) ( -54 -53 96 ) ( -54 -53 88 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -34 -53 8 ) ( -82 -53 8 ) ( -82 -53 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -72 -53 -32 ) ( -72 -189 -32 ) ( -72 -189 -40 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( -32 73 52 ) ( -80 73 52 ) ( -80 -63 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -76 -63 54 ) ( -76 73 54 ) ( -28 73 54 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -76 55 24 ) ( -28 55 24 ) ( -28 55 16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -54 -63 96 ) ( -54 73 96 ) ( -54 73 88 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 73 8 ) ( -80 73 8 ) ( -80 73 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -72 73 -32 ) ( -72 -63 -32 ) ( -72 -63 -40 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+  contents detail;
+ ( 92 -55 0 ) ( 44 -55 0 ) ( 44 -191 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 44 -191 14 ) ( 44 -55 14 ) ( 92 -55 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 44 -71 -12 ) ( 92 -71 -12 ) ( 92 -71 -20 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 70 -191 80 ) ( 70 -55 80 ) ( 70 -55 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 92 -55 -8 ) ( 44 -55 -8 ) ( 44 -55 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 54 -55 -48 ) ( 54 -191 -48 ) ( 54 -191 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+  contents detail;
+ ( 92 -53 14 ) ( 44 -53 14 ) ( 44 -189 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -189 52 ) ( 48 -53 52 ) ( 96 -53 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -69 22 ) ( 96 -69 22 ) ( 96 -69 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 68 -189 94 ) ( 68 -53 94 ) ( 68 -53 86 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 92 -55 6 ) ( 44 -55 6 ) ( 44 -55 -2 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 -53 -34 ) ( 56 -189 -34 ) ( 56 -189 -42 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+  contents detail;
+ ( -32 -53 14 ) ( -80 -53 14 ) ( -80 -189 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -76 -189 52 ) ( -76 -53 52 ) ( -28 -53 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -76 -69 22 ) ( -28 -69 22 ) ( -28 -69 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -189 94 ) ( -56 -53 94 ) ( -56 -53 86 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 -55 6 ) ( -80 -55 6 ) ( -80 -55 -2 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -68 -53 -34 ) ( -68 -189 -34 ) ( -68 -189 -42 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 7
+{
+  contents detail;
+ ( -32 -55 0 ) ( -80 -55 0 ) ( -80 -191 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 -191 14 ) ( -80 -55 14 ) ( -32 -55 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 -71 -12 ) ( -32 -71 -12 ) ( -32 -71 -20 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -54 -191 80 ) ( -54 -55 80 ) ( -54 -55 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 -55 -8 ) ( -80 -55 -8 ) ( -80 -55 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -70 -55 -48 ) ( -70 -191 -48 ) ( -70 -191 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 8
+{
+  contents detail;
+ ( 72 -85 48 ) ( 72 -37 48 ) ( -64 -37 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -63 52 ) ( -56 -63 52 ) ( -56 -57 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -37 40 ) ( -56 -85 40 ) ( -56 -85 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -42 -63 52 ) ( 86 -63 52 ) ( 86 -63 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 -87 40 ) ( 56 -39 40 ) ( 56 -39 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -57 0 ) ( -64 -57 0 ) ( -64 -57 -8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 9
+{
+  contents detail;
+ ( 56 -91 8 ) ( 56 -43 8 ) ( -80 -43 8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -43 48 ) ( 72 -43 48 ) ( 72 -91 48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -43 0 ) ( -56 -91 0 ) ( -56 -91 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -67 88 ) ( 72 -67 88 ) ( 72 -67 80 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 -91 0 ) ( 56 -43 0 ) ( 56 -43 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -59 -40 ) ( -64 -59 -40 ) ( -64 -59 -48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 10
+{
+  contents detail;
+ ( 72 -91 0 ) ( 72 -43 0 ) ( -64 -43 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 -43 8 ) ( 56 -43 8 ) ( 56 -91 8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -43 -8 ) ( -56 -91 -8 ) ( -56 -91 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -69 80 ) ( 72 -69 80 ) ( 72 -69 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 -91 -8 ) ( 56 -43 -8 ) ( 56 -43 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 -57 -48 ) ( -64 -57 -48 ) ( -64 -57 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 11
+{
+  contents detail;
+ ( 72 -91 48 ) ( 72 -43 48 ) ( -64 -43 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -63 52 ) ( 72 -63 52 ) ( 72 -69 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -43 40 ) ( -56 -91 40 ) ( -56 -91 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -78 -69 128 ) ( 58 -69 128 ) ( 58 -69 120 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 -91 40 ) ( 56 -43 40 ) ( 56 -43 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 86 -63 52 ) ( -42 -63 52 ) ( -42 -63 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 12
+ {
+  mesh
+  {
+  contents detail;
+   okinawa_terrain_dirt_crumbly
+   lightmap_gray
+   3 3 16 8
+   (
+	v -58 -59 38 t 0 -0 -3.5 4.25
+	v -58 0 38 t 0 -236 -3.5 0.5625
+	v -58 59 38 t 0 -472 -3.5 -3.125
+   )
+   (
+	v 0 -59 38 t 232 -0 0.125 4.25
+	v 0 0 38 t 232 -236 0.125 0.5625
+	v 0 59 38 t 232 -472 0.125 -3.125
+   )
+   (
+	v 58 -59 38 t 464 -0 3.75 4.25
+	v 58 0 38 t 464 -236 3.75 0.5625
+	v 58 59 38 t 464 -472 3.75 -3.125
+   )
+  }
+ }
+// brush 13
+{
+  contents detail;
+ ( 56 35 8 ) ( 56 83 8 ) ( -80 83 8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 83 48 ) ( 72 83 48 ) ( 72 35 48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 83 0 ) ( -56 35 0 ) ( -56 35 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 59 88 ) ( 72 59 88 ) ( 72 59 80 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 35 0 ) ( 56 83 0 ) ( 56 83 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 67 -40 ) ( -64 67 -40 ) ( -64 67 -48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 14
+{
+  contents detail;
+ ( 34 -55 8 ) ( 82 -55 8 ) ( 82 81 8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 65 48 ) ( 82 -71 48 ) ( 34 -71 48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 57 0 ) ( 34 57 0 ) ( 34 57 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 58 65 88 ) ( 58 -71 88 ) ( 58 -71 80 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 34 -55 0 ) ( 82 -55 0 ) ( 82 -55 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -71 -40 ) ( 66 65 -40 ) ( 66 65 -48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 15
+{
+  contents detail;
+ ( 34 -71 0 ) ( 82 -71 0 ) ( 82 65 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 81 8 ) ( 82 -55 8 ) ( 34 -55 8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 57 -8 ) ( 34 57 -8 ) ( 34 57 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 65 80 ) ( 56 -71 80 ) ( 56 -71 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 34 -55 -8 ) ( 82 -55 -8 ) ( 82 -55 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 68 -71 -48 ) ( 68 65 -48 ) ( 68 65 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 16
+{
+  contents detail;
+ ( 40 -71 48 ) ( 88 -71 48 ) ( 88 65 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 62 -71 52 ) ( 62 57 52 ) ( 68 57 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 88 57 40 ) ( 40 57 40 ) ( 40 57 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 62 43 52 ) ( 62 -85 52 ) ( 62 -85 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 38 -55 40 ) ( 86 -55 40 ) ( 86 -55 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 68 -71 0 ) ( 68 65 0 ) ( 68 65 -8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 17
+{
+  contents detail;
+ ( 34 -71 48 ) ( 82 -71 48 ) ( 82 65 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 62 57 52 ) ( 62 -71 52 ) ( 56 -71 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 57 40 ) ( 34 57 40 ) ( 34 57 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 79 128 ) ( 56 -57 128 ) ( 56 -57 120 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 34 -55 40 ) ( 82 -55 40 ) ( 82 -55 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 62 -85 52 ) ( 62 43 52 ) ( 62 43 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 18
+{
+  contents detail;
+ ( 72 35 0 ) ( 72 83 0 ) ( -64 83 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 83 8 ) ( 56 83 8 ) ( 56 35 8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 83 -8 ) ( -56 35 -8 ) ( -56 35 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 57 80 ) ( 72 57 80 ) ( 72 57 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 35 -8 ) ( 56 83 -8 ) ( 56 83 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 69 -48 ) ( -64 69 -48 ) ( -64 69 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 19
+{
+  contents detail;
+ ( 72 41 48 ) ( 72 89 48 ) ( -64 89 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 63 52 ) ( -56 63 52 ) ( -56 69 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 89 40 ) ( -56 41 40 ) ( -56 41 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -42 63 52 ) ( 86 63 52 ) ( 86 63 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 39 40 ) ( 56 87 40 ) ( 56 87 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 72 69 0 ) ( -64 69 0 ) ( -64 69 -8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 20
+{
+  contents detail;
+ ( 72 35 48 ) ( 72 83 48 ) ( -64 83 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 63 52 ) ( 72 63 52 ) ( 72 57 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 83 40 ) ( -56 35 40 ) ( -56 35 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -78 57 128 ) ( 58 57 128 ) ( 58 57 120 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 35 40 ) ( 56 83 40 ) ( 56 83 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 86 63 52 ) ( -42 63 52 ) ( -42 63 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 21
+{
+  contents detail;
+ ( 92 73 0 ) ( 44 73 0 ) ( 44 -63 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 44 -63 14 ) ( 44 73 14 ) ( 92 73 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 44 57 -12 ) ( 92 57 -12 ) ( 92 57 -20 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 70 -63 80 ) ( 70 73 80 ) ( 70 73 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 92 73 -8 ) ( 44 73 -8 ) ( 44 73 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 54 73 -48 ) ( 54 -63 -48 ) ( 54 -63 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 22
+{
+  contents detail;
+ ( 92 73 14 ) ( 44 73 14 ) ( 44 -63 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -63 52 ) ( 48 73 52 ) ( 96 73 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 57 22 ) ( 96 57 22 ) ( 96 57 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 68 -63 94 ) ( 68 73 94 ) ( 68 73 86 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 92 71 6 ) ( 44 71 6 ) ( 44 71 -2 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 56 73 -34 ) ( 56 -63 -34 ) ( 56 -63 -42 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 23
+{
+  contents detail;
+ ( -32 73 0 ) ( -80 73 0 ) ( -80 -63 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 -63 14 ) ( -80 73 14 ) ( -32 73 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -80 57 -12 ) ( -32 57 -12 ) ( -32 57 -20 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -54 -63 80 ) ( -54 73 80 ) ( -54 73 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 73 -8 ) ( -80 73 -8 ) ( -80 73 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -70 73 -48 ) ( -70 -63 -48 ) ( -70 -63 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 24
+{
+  contents detail;
+ ( -32 73 14 ) ( -80 73 14 ) ( -80 -63 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -76 -63 52 ) ( -76 73 52 ) ( -28 73 52 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -76 57 22 ) ( -28 57 22 ) ( -28 57 14 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -63 94 ) ( -56 73 94 ) ( -56 73 86 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -32 71 6 ) ( -80 71 6 ) ( -80 71 -2 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -68 73 -34 ) ( -68 -63 -34 ) ( -68 -63 -42 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 25
+{
+  contents detail;
+ ( -40 73 48 ) ( -88 73 48 ) ( -88 -63 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -62 73 52 ) ( -62 -55 52 ) ( -68 -55 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -88 -55 40 ) ( -40 -55 40 ) ( -40 -55 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -62 -41 52 ) ( -62 87 52 ) ( -62 87 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -38 57 40 ) ( -86 57 40 ) ( -86 57 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -68 73 0 ) ( -68 -63 0 ) ( -68 -63 -8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 26
+{
+  contents detail;
+ ( -34 57 8 ) ( -82 57 8 ) ( -82 -79 8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -82 -63 48 ) ( -82 73 48 ) ( -34 73 48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -82 -55 0 ) ( -34 -55 0 ) ( -34 -55 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -58 -63 88 ) ( -58 73 88 ) ( -58 73 80 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -34 57 0 ) ( -82 57 0 ) ( -82 57 -8 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -66 73 -40 ) ( -66 -63 -40 ) ( -66 -63 -48 ) berlin_wall_brick_colorful 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 27
+{
+  contents detail;
+ ( -34 73 0 ) ( -82 73 0 ) ( -82 -63 0 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -82 -79 8 ) ( -82 57 8 ) ( -34 57 8 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -82 -55 -8 ) ( -34 -55 -8 ) ( -34 -55 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -63 80 ) ( -56 73 80 ) ( -56 73 72 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -34 57 -8 ) ( -82 57 -8 ) ( -82 57 -16 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -68 73 -48 ) ( -68 -63 -48 ) ( -68 -63 -56 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 28
+{
+  contents detail;
+ ( -34 73 48 ) ( -82 73 48 ) ( -82 -63 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -62 -55 52 ) ( -62 73 52 ) ( -56 73 50 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -82 -55 40 ) ( -34 -55 40 ) ( -34 -55 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -56 -77 128 ) ( -56 59 128 ) ( -56 59 120 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -34 57 40 ) ( -82 57 40 ) ( -82 57 32 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -62 87 52 ) ( -62 -41 52 ) ( -62 -41 48 ) berlin_wall_brick_brown_grungy_dark 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

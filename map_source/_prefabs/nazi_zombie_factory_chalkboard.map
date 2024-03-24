@@ -1,0 +1,24 @@
+iwmap 4
+// entity 0
+{
+"origin" "0 0 0"
+"spawnflags" "512"
+"skyboxmodel" "skybox_mak1"
+"sunisprimarylight" "1"
+"_color" "0.556863 0.54902 0.72549"
+"ambient" "0.30"
+"sundiffusecolor" "0.3098 0.2745 0.3058"
+"diffusefraction" "0.45"
+"classname" "worldspawn"
+"sundirection" "-153 -54 0"
+"suncolor" "0.6352 0.7137 0.8"
+"sunlight" "0.6"
+}
+// entity 1
+// entity 2
+{
+"origin" "0.0 0.0 1024.0"
+"angles" "0 180 0"
+"model" "zombie_chalkboard"
+"classname" "misc_model"
+}

@@ -1,0 +1,260 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"targetname" "wall_break_01"
+"spawnflags" "0"
+"classname" "worldspawn"
+}
+// entity 1
+{
+"target" "auto3"
+"targetname" "exterior_goal"
+"origin" "-30.0 0.0 0.0"
+"angles" "0 360 0"
+"classname" "script_struct"
+}
+// entity 2
+{
+"height" "64"
+"radius" "36"
+"targetname" "auto3"
+"origin" "20.0 0.0 0.0"
+"angles" "0 360 0"
+"classname" "script_struct"
+}
+// entity 3
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 -8 25 ) ( 32 8 25 ) ( 32 8 13 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 516.00464 270 0 0
+ ( 32 20 13 ) ( 16 20 13 ) ( 16 10 11 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 8 25 ) ( 16 -8 25 ) ( 16 -8 13 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 -721.99683 219 0 0
+ ( 32 6 33 ) ( 32 16 27 ) ( 64 6 33 ) berlin_trim_rock_rough_edged 128 16 0 15.985596 90 0 lightmap_gray 16384.125 16384 16 0 0 0
+ ( 32 16 27 ) ( 32 20 13 ) ( 64 16 27 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16383.625 16384 16 25 0 0
+ ( 32 10 11 ) ( 32 6 33 ) ( 64 6 33 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16383.625 16384 16 25 0 0
+}
+}
+// entity 4
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 32 23 ) ( 16 32 23 ) ( 16 20 13 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 34 33 ) ( 32 34 33 ) ( 32 16 27 ) berlin_trim_rock_rough_edged 128 16 0 16.005981 90 0 lightmap_gray 16383.75 16384 16 0 0 0
+ ( 32 20 13 ) ( 16 20 13 ) ( 16 16 27 ) berlin_trim_rock_rough_edged 128 16 -25 15.959717 90 0 lightmap_gray 16384 16384 16 25 0 0
+ ( 32 38 19 ) ( 32 20 13 ) ( 32 16 27 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 515.99634 269.99854 0 0
+ ( 16 32 23 ) ( 32 32 23 ) ( 32 34 33 ) berlin_trim_rock_rough_edged 128 16 -25 15.998657 90 0 lightmap_gray 16384 16384.432 16.001465 25 0 0
+ ( 16 20 13 ) ( 16 38 19 ) ( 16 34 33 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384.225 16383.287 -721.98071 219.05458 0 0
+}
+}
+// entity 5
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 22 49 ) ( 16 22 49 ) ( 16 32 49 ) berlin_trim_rock_rough_edged 128 16 0 16.016602 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 32 10 43 ) ( 32 36 43 ) ( 32 36 29 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384.23 16383.785 516.0072 270 0 0
+ ( 16 36 43 ) ( 16 10 43 ) ( 16 10 29 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 -721.99854 219 0 0
+ ( 713 34 33 ) ( 713 16 27 ) ( 745 16 27 ) berlin_trim_rock_rough_edged 128 16 0 15.996094 90 0 lightmap_gray 16384.25 16384 15.992172 0 0 0
+ ( 713 42 39 ) ( 713 34 33 ) ( 745 34 33 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384.125 16384 16 0 0 0
+ ( 713 32 49 ) ( 713 42 39 ) ( 745 42 39 ) berlin_trim_rock_rough_edged 128 16 0 16.028442 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 22 49 ) ( 32 22 49 ) ( 32 16 27 ) berlin_trim_rock_rough_edged 128 16 -25 16.001465 90 0 lightmap_gray 16384 16384 16 25 0 0
+}
+}
+// entity 6
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 22 49 ) ( 16 22 49 ) ( 16 12 57 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384.219 16 0 0 0
+ ( 16 30 63 ) ( 32 30 63 ) ( 32 14 71 ) berlin_trim_rock_rough_edged 128 16 0 15.991455 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 32 12 57 ) ( 16 12 57 ) ( 16 14 71 ) berlin_trim_rock_rough_edged 128 16 -25 15.964355 90 0 lightmap_gray 16384 16384 16 25 0 0
+ ( 32 30 63 ) ( 32 28 49 ) ( 32 12 57 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384.533 516 269.88779 0 0
+ ( 16 32 49 ) ( 32 32 49 ) ( 32 30 63 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16384.75 16384 16.002808 25 0 0
+ ( 16 28 49 ) ( 16 30 63 ) ( 16 14 71 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16381.625 16383.5 -721.45496 219.06125 0 0.00028227898
+ ( 16 22 49 ) ( 32 22 49 ) ( 32 32 49 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16 0 0 0
+}
+}
+// entity 7
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 16 -10 55 ) ( 32 -10 55 ) ( 32 2 53 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16383.875 16 0 0 0
+ ( 16 14 71 ) ( 32 14 71 ) ( 32 -8 67 ) berlin_trim_rock_rough_edged 128 16 0 16.005249 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 -10 55 ) ( 16 -8 67 ) ( 32 -8 67 ) berlin_trim_rock_rough_edged 128 16 -25 16.001465 90 0 lightmap_gray 16384 16384 16 25 0 0
+ ( 32 2 53 ) ( 32 -10 55 ) ( 32 -8 67 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384.291 515.97681 269.9209 0 0
+ ( 16 12 57 ) ( 16 14 71 ) ( 16 -8 67 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16382.873 16384 -721.97064 219 0 0
+ ( 16 12 57 ) ( 32 12 57 ) ( 32 14 71 ) berlin_trim_rock_rough_edged 128 16 -25 15.983765 90 0 lightmap_gray 16384 16384 16 25 0 0
+ ( 16 2 53 ) ( 32 2 53 ) ( 32 12 57 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16383.75 16384 16 0 0 0
+}
+}
+// entity 8
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 16 -8 67 ) ( 32 -8 67 ) ( 32 14 71 ) berlin_trim_rock_rough_edged 128 16 0 15.997437 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 6 77 ) ( 32 6 77 ) ( 32 -14 79 ) berlin_trim_rock_rough_edged 128 16 0 15.988647 90 0 lightmap_gray 16384.25 16384 16 0 0 0
+ ( 16 -8 67 ) ( 16 -14 79 ) ( 32 -14 79 ) berlin_trim_rock_rough_edged 128 16 -25 15.959351 90 0 lightmap_gray 16384 16384.188 16 25 0 0
+ ( 32 14 71 ) ( 32 -8 67 ) ( 32 -14 79 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384.5 16384 515.93854 270.00159 0 0
+ ( 32 14 71 ) ( 32 6 77 ) ( 16 6 77 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 6 77 ) ( 16 -14 79 ) ( 16 -8 67 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16383.754 16383.5 -722.08392 219.06079 0 0
+}
+}
+// entity 9
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 16 -8 67 ) ( 32 -8 67 ) ( 32 -14 79 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16384.75 -16204.978 16 -61.818111 0 0
+ ( 32 -32 59 ) ( 16 -32 59 ) ( 16 -28 71 ) berlin_trim_rock_rough_edged 128 16 -25 15.953735 90 0 lightmap_gray 16384 19795.273 16 -13.005321 0 0
+ ( 32 -3.5 61.75 ) ( 32 -6.25 56.5 ) ( 32 -15 51.75 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16383.543 16382.092 514.11694 269.93707 0 0.00015454247
+ ( 16 -6.25 56.5 ) ( 16 -3.5 61.75 ) ( 16 -13.75 77.75 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16382.582 16384.176 -724.04413 219 0 -5.7486584e-005
+ ( 16 -14 79 ) ( 32 -14 79 ) ( 32 -28 71 ) berlin_trim_rock_rough_edged 128 16 -2 16.011353 90 0 lightmap_gray 16384 19298.453 16 143.43184 0 0
+ ( 32 -8 67 ) ( 32 -32 59 ) ( 64 -32 59 ) berlin_trim_rock_rough_edged 128 16 -2 16.001465 90 0 lightmap_gray 16383.875 16384 16 2 0 0
+}
+}
+// entity 10
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 -16 41 ) ( 16 -16 41 ) ( 16 -22 35 ) berlin_trim_rock_rough_edged 128 16 -2 15.967529 90 0 lightmap_gray 16384 16384 16 -8 0 0
+ ( 16 -32 59 ) ( 16 -16 49 ) ( 32 -16 49 ) berlin_trim_rock_rough_edged 128 16 -2 16.025757 90 0 lightmap_gray 16384.25 16384 16 16 0 0
+ ( 32 -32 33 ) ( 16 -32 33 ) ( 16 -42 47 ) berlin_trim_rock_rough_edged 128 16 -25 15.957397 90 0 lightmap_gray 16384 16383.928 16 81 0 0
+ ( 32 -22 35 ) ( 32 -32 33 ) ( 32 -42 47 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16387 16384 514.11572 270.00244 0 0
+ ( 32 -16 41 ) ( 32 -16 49 ) ( 16 -16 49 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16384 16384 16.002075 1 0 0
+ ( 16 -16 41 ) ( 16 -16 49 ) ( 16 -32 59 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 -724.00269 219.00464 0 0
+ ( 16 -32 59 ) ( 32 -32 59 ) ( 32 -42 47 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16384 16384 16 51 0 0
+ ( 16 -22 35 ) ( 16 -32 33 ) ( 32 -32 33 ) berlin_trim_rock_rough_edged 128 16 -2 16.002441 90 0 lightmap_gray 16384 16384 16 28 0 0
+}
+}
+// entity 11
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 16 -6 15 ) ( 32 -6 15 ) ( 32 -8 25 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16384 16384 16 1 0 0
+ ( 16 -22 35 ) ( 32 -22 35 ) ( 32 -32 33 ) berlin_trim_rock_rough_edged 128 16 -2 16.004028 90 0 lightmap_gray 16384 16384 16 2 0 0
+ ( 32 -20 11 ) ( 16 -20 11 ) ( 16 -28 17 ) berlin_trim_rock_rough_edged 128 16 -2 16 90 0 lightmap_gray 16383.75 16384 16 8 0 0
+ ( 32 -6 16 ) ( 32 -20 11 ) ( 32 -28 17 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384.5 16383.678 513.91852 270.04205 0 0
+ ( 32 -22 35 ) ( 16 -22 35 ) ( 16 -8 25 ) berlin_trim_rock_rough_edged 128 16 -2 16.00647 90 0 lightmap_gray 16384 16384 16 8 0 0
+ ( 16 -8 25 ) ( 16 -20 35 ) ( 16 -32 33 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16383.695 16384 -723.98596 219 0 -1.0172526e-005
+ ( 16 -32 33 ) ( 32 -32 33 ) ( 32 -28 17 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16384.25 16384 16 81 0 0
+ ( 32 -6 15 ) ( 16 -6 15 ) ( 16 -20 11 ) berlin_trim_rock_rough_edged 128 16 -2 16 90 0 lightmap_gray 16384 16384 16 14 0 0
+}
+}
+// entity 12
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 -8 25 ) ( 32 8 25 ) ( 32 8 13 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 516.00464 270 0 0
+ ( 16 8 25 ) ( 16 -8 25 ) ( 16 -8 13 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 -721.99683 219 0 0
+ ( 32 -6 15 ) ( 32 -8 25 ) ( 64 -8 25 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16383.625 16384 16 25 0 0
+ ( 32 10 11 ) ( 32 -6 15 ) ( 64 -6 15 ) berlin_trim_rock_rough_edged 128 16 0 16.00354 90 0 lightmap_gray 16383.875 16384 16 0 0 0
+ ( 32 -8 25 ) ( 32 6 33 ) ( 64 -8 25 ) berlin_trim_rock_rough_edged 128 16 0 15.990234 90 0 lightmap_gray 16384.125 16384 16 0 0 0
+ ( 32 6 33 ) ( 32 10 11 ) ( 64 6 33 ) berlin_trim_rock_rough_edged 128 16 -25 16 90 0 lightmap_gray 16383.625 16384 16 25 0 0
+}
+}
+// entity 13
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 10 43 ) ( 32 36 43 ) ( 32 36 29 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384.23 16383.785 516.0072 270 0 0
+ ( 16 36 43 ) ( 16 10 43 ) ( 16 10 29 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 -721.99854 219 0 0
+ ( 713 6 33 ) ( 713 10 43 ) ( 745 10 43 ) berlin_trim_rock_rough_edged 128 16 -25 16.005615 90 0 lightmap_gray 16384 16384 15.997314 25 0 0
+ ( 713 16 27 ) ( 713 6 33 ) ( 745 6 33 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16.006836 0 0 0
+ ( 16 22 49 ) ( 32 22 49 ) ( 32 10 43 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384.25 16384 16 0 0 0
+ ( 32 22 49 ) ( 16 22 49 ) ( 16 16 27 ) berlin_trim_rock_rough_edged 128 16 -25 15.952148 90 0 lightmap_gray 16384 16384.125 16 25 0 0
+}
+}
+// entity 14
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 22 49 ) ( 16 22 49 ) ( 16 10 43 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 12 57 ) ( 32 12 57 ) ( 32 2 53 ) berlin_trim_rock_rough_edged 128 16 0 16.008911 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 32 10 43 ) ( 16 10 43 ) ( 16 2 53 ) berlin_trim_rock_rough_edged 128 16 -25 15.954712 90 0 lightmap_gray 16384 16384 16 25 0 0
+ ( 32 20 47 ) ( 32 10 43 ) ( 32 2 53 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16383.697 16384.213 516.00269 269.92596 0 0.00016923607
+ ( 16 22 49 ) ( 32 22 49 ) ( 32 12 57 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384.219 16 0 0 0
+ ( 16 12 55 ) ( 16 12 57 ) ( 16 2 53 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384.201 16384 -722.0058 218.99786 0 -6.1035156e-005
+}
+}
+// entity 15
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 -10 55 ) ( 16 -10 55 ) ( 16 -16 49 ) berlin_trim_rock_rough_edged 128 16 -2 15.965088 90 0 lightmap_gray 16384 21773.238 16 -24.92218 0 0
+ ( 32 -3.5 61.75 ) ( 32 -6.25 56.5 ) ( 32 -15 51.75 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16383.543 16382.092 514.11694 269.93707 0 0.00015454247
+ ( 16 -10 55 ) ( 32 -10 55 ) ( 32 -8 67 ) berlin_trim_rock_rough_edged 128 16 -25 16.002563 90 0 lightmap_gray 16384 14848.736 16 -16.50919 0 0
+ ( 16 -6.25 56.5 ) ( 16 -3.5 61.75 ) ( 16 -13.75 77.75 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16382.582 16384.176 -724.04413 219 0 -5.7486584e-005
+ ( 32 -16 49 ) ( 16 -16 49 ) ( 16 -32 59 ) berlin_trim_rock_rough_edged 128 16 -2 16.001221 90 0 lightmap_gray 16383.75 16233.888 16 20.889601 0 0
+ ( 32 -32 59 ) ( 32 -8 67 ) ( 64 -32 59 ) berlin_trim_rock_rough_edged 128 16 -2 16.001465 90 0 lightmap_gray 16383.875 16384 16 2 0 0
+}
+}
+// entity 16
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 10 43 ) ( 16 10 43 ) ( 16 6 33 ) berlin_trim_rock_rough_edged 128 16 -25 15.994385 90 0 lightmap_gray 16384.25 16384 16 13 0 0
+ ( 16 -10 55 ) ( 16 2 53 ) ( 32 2 53 ) berlin_trim_rock_rough_edged 128 16 0 15.998535 90 0 lightmap_gray 16384 16384.125 16 -12 0 0
+ ( 32 -16 41 ) ( 16 -16 41 ) ( 16 -16 49 ) berlin_trim_rock_rough_edged 128 16 -25 15.97644 90 0 lightmap_gray 16384.25 16384.5 16 -1 0 0
+ ( 32 6 33 ) ( 32 -16 42 ) ( 32 -16 49 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16383.818 16383.428 515.99701 269.9866 0 0
+ ( 32 10 43 ) ( 32 2 53 ) ( 16 2 53 ) berlin_trim_rock_rough_edged 128 16 -25 16.002563 90 0 lightmap_gray 16384.75 16384 16 -1 0 0
+ ( 16 10 43 ) ( 16 2 53 ) ( 16 -10 55 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16385 16384 -721.97595 218.99744 0 0
+ ( 16 -10 55 ) ( 32 -10 55 ) ( 32 -16 49 ) berlin_trim_rock_rough_edged 128 16 0 16.001587 90 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 16 -16 41 ) ( 32 -16 41 ) ( 32 6 33 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16 0 0 0
+}
+}
+// entity 17
+{
+"targetname" "auto3"
+"script_sound" "break_stone"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( 32 -8 25 ) ( 16 -8 25 ) ( 16 -22 35 ) berlin_trim_rock_rough_edged 128 16 0 15.998657 90 0 lightmap_gray 16384 16384.143 16 -6 0 0
+ ( 32 -16 41 ) ( 16 -16 41 ) ( 16 6 33 ) berlin_trim_rock_rough_edged 128 16 0 15.995239 90 0 lightmap_gray 16384 16384 16 -6 0 0
+ ( 16 -16 41 ) ( 32 -16 41 ) ( 32 -22 35 ) berlin_trim_rock_rough_edged 128 16 0 15.95813 90 0 lightmap_gray 16384 16384 16 -6 0 0
+ ( 32 -9 24 ) ( 32 -22 35 ) ( 32 -15 42 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 515.99023 270 0 0
+ ( 16 -8 25 ) ( 32 -8 25 ) ( 32 6 33 ) berlin_trim_rock_rough_edged 128 16 0 16 90 0 lightmap_gray 16384 16384 16 -6 0 0
+ ( 16 6 33 ) ( 16 -15 42 ) ( 16 -22 35 ) berlin_wall_brick_plain 128 128 -39 153 0 0 lightmap_gray 16384 16384 -721.99829 218.96307 0 0
+}
+}

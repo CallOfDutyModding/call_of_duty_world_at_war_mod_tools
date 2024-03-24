@@ -1,0 +1,105 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_ber1"
+"_color" ".6 .55.5"
+"sundirection" "-45 185 0"
+"spawnflags" "512"
+"intensity" "100"
+"suncolor" "1 0.537255 0.129412"
+"ambient" ".5"
+"sunlight" "2"
+"classname" "worldspawn"
+// brush 0
+{
+  contents detail;
+ ( 52 2 0 ) ( 21 2 0 ) ( 21 0 0 ) berlin_door_metal_reinforced_glass 64.003906 128 476.07034 205.95784 90 0 lightmap_gray 16384 16384.25 -884 -262.00378 0 -0.00012207218
+ ( 21 0 61 ) ( 52 0 61 ) ( 52 0 0 ) berlin_door_metal_reinforced_glass 52 -98 883.98553 -196 180 0 lightmap_gray 16383.826 16384 -883.99316 194 0 0
+ ( 52 2 61 ) ( 21 2 61 ) ( 21 2 0 ) berlin_door_metal_reinforced_glass 52 -98 883.99744 -196 180 0 lightmap_gray 16384.078 16384 -884.0033 194 0 0
+ ( 52 0.25 94.25 ) ( 52 0.25 98 ) ( 52 32.25 98 ) berlin_door_metal_reinforced_glass 52 -98 -261.98914 -196 -180 1.0724928e-005 lightmap_gray 16383.969 16384.049 262.00479 194 0 0
+ ( 0 0.25 93.5 ) ( 0 0.25 90.25 ) ( 0 32.25 93.5 ) berlin_door_metal_reinforced_glass 52 -98 -261.98914 -196 -180 1.0724928e-005 lightmap_gray 16384 16384.348 262 194.0051 0 0
+ ( 45.5 2 57.5 ) ( 41 2 57.5 ) ( 45.5 34 57.5 ) berlin_door_metal_reinforced_glass 56.002514 94 -415.96533 246.00211 0 0 lightmap_gray 16383.27 16383.955 -883.95789 -262 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 9 0 98 ) ( 9 2 98 ) ( 40 2 98 ) berlin_door_metal_reinforced_glass 64 128 476.09308 205.96753 90 -3.9815051e-005 lightmap_gray 16384 16384 -884.0025 -262.00101 0 -3.0517578e-005
+ ( 21 0 61 ) ( 52 0 61 ) ( 52 0 0 ) berlin_door_metal_reinforced_glass 52 -98 883.98553 -196 180 0 lightmap_gray 16383.826 16384 -883.99316 194 0 0
+ ( 52 2 61 ) ( 21 2 61 ) ( 21 2 0 ) berlin_door_metal_reinforced_glass 52 -98 883.99744 -196 180 0 lightmap_gray 16384.078 16384 -884.0033 194 0 0
+ ( 52 0.25 93.75 ) ( 52 0.25 97.5 ) ( 52 32.25 97.5 ) berlin_door_metal_reinforced_glass 52 -98 -261.98914 -196 -180 1.0724928e-005 lightmap_gray 16383.969 16384.049 262.00479 194 0 0
+ ( 0 0.25 95 ) ( 0 0.25 91.75 ) ( 0 32.25 95 ) berlin_door_metal_reinforced_glass 52 -98 -261.98914 -196 -180 1.0724928e-005 lightmap_gray 16384 16384.348 262 194.0051 0 0
+ ( 33.75 2 92.75 ) ( 42.5 2 92.75 ) ( 42.5 34 92.75 ) berlin_door_metal_reinforced_glass 56 94 -415.90787 245.99615 0 0 lightmap_gray 16384.314 16384 -884.0163 -262 0 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( 0 -0.5 16.5 ) ( 56 -0.5 16.5 ) ( 56 0 16.5 ) berlin_door_metal_reinforced_glass 56 93.992111 -269.94739 340.47559 0 -0.00080674078 lightmap_gray 16384 16386.352 0.004070282 -2 0 -4.1729243e-005
+ ( 52 -0.5 28.75 ) ( -4 -0.5 28.75 ) ( -4 0 28.75 ) berlin_door_metal_reinforced_glass 56 93.996323 -269.93369 340.49103 0 -8.9641879e-005 lightmap_gray 16384 16386.383 0.0019971302 -2 0 0
+ ( 0 -0.5 30.25 ) ( 56 -0.5 30.25 ) ( 56 -0.5 25.75 ) berlin_door_metal_reinforced_glass 52 -98 883.99701 -196.01649 180 8.0329599e-005 lightmap_gray 16384 16384.166 0 32.25 0 0
+ ( 52 0 30.25 ) ( 52 2 30.25 ) ( 52 2 26.75 ) berlin_door_metal_reinforced_glass 52 -98 -261.99719 -196.04257 180 -2.6261618e-005 lightmap_gray 16384.096 16383.963 2.0080378 32.247417 0 0
+ ( 56 0 30.5 ) ( 51.75 0 30.5 ) ( 51.75 0 27 ) caulk 55.991589 94.001778 -279.82895 314.25641 0 0 lightmap_gray 16383.799 16383.875 0.0012512055 32.25906 0 0
+ ( 0 2 28.75 ) ( 0 0 28.75 ) ( 0 0 25.25 ) berlin_door_metal_reinforced_glass 52 -98 -262 -195.97075 -180 -7.9483965e-005 lightmap_gray 16387.014 16384.293 2 32.248508 0 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( 56 2 16.5 ) ( 56 2.5 16.5 ) ( 0 2.5 16.5 ) berlin_door_metal_reinforced_glass 56 -93.987061 -269.93228 -342.45328 0 0.00069913774 lightmap_gray 16383.986 -16385.75 0.0033760045 0 0 0.0001273292
+ ( -4 2 28.75 ) ( -4 2.5 28.75 ) ( 52 2.5 28.75 ) berlin_door_metal_reinforced_glass 56 -93.970215 -269.93436 -342.39212 0 -0.00017923396 lightmap_gray 16384 -16385.234 0.0060712271 0 0 0
+ ( 56 2.5 25.75 ) ( 56 2.5 30.25 ) ( 0 2.5 30.25 ) berlin_door_metal_reinforced_glass 52 -98 884.0011 -196.01649 180 -4.32544e-005 lightmap_gray 16384.064 16384.166 0 32.25 0 -1.8649822e-005
+ ( 52 0 26.75 ) ( 52 0 30.25 ) ( 52 2 30.25 ) berlin_door_metal_reinforced_glass 52 -98 -261.9935 -196.03676 180 0 lightmap_gray 16384.125 -16383.965 0 -32.25 180 0
+ ( 51.75 2 27 ) ( 51.75 2 30.5 ) ( 56 2 30.5 ) caulk 56 94 -279.80826 314.25 0 0 lightmap_gray 16383.203 16383.893 0 32.259205 0 0
+ ( 0 2 25.25 ) ( 0 2 28.75 ) ( 0 0 28.75 ) berlin_door_metal_reinforced_glass 52 -98 -261.97852 -195.9557 180 2.6006386e-005 lightmap_gray 16384.633 -16384 0 -32.247112 180 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 56 2 52.5 ) ( 56 2.5 52.5 ) ( 0 2.5 52.5 ) berlin_door_metal_reinforced_glass 56 -93.987061 -269.93228 -342.45328 0 0.00069913774 lightmap_gray 16383.986 -16385.75 0.0033760045 0 0 0.0001273292
+ ( 0 2 57.5 ) ( 0 2.5 57.5 ) ( 56 2.5 57.5 ) berlin_door_metal_reinforced_glass 56 -93.977371 -269.93387 -342.41797 0 0.00011202975 lightmap_gray 16384.029 -16386.352 0.0044255336 0 0 0
+ ( 56 2.5 53 ) ( 56 2.5 57.5 ) ( 0 2.5 57.5 ) berlin_door_metal_reinforced_glass 52 -98 884.00226 -203.97862 180 -8.1269456e-005 lightmap_gray 16384.086 16384 0 5 0 0
+ ( 52 0 54 ) ( 52 0 57.5 ) ( 52 2 57.5 ) berlin_door_metal_reinforced_glass 52 -98 -262 -203.95743 180 4.4999244e-005 lightmap_gray 16384.266 -16383.811 0 -4.997581 180 0
+ ( 51.75 2 53.75 ) ( 51.75 2 57.25 ) ( 56 2 57.25 ) caulk 56.002777 94 -279.8071 286.97891 0 0 lightmap_gray 16382.381 16384.072 0.0036545356 4.9901571 0 -4.3945882e-005
+ ( 0 2 52.5 ) ( 0 2 56 ) ( 0 0 56 ) berlin_door_metal_reinforced_glass 52 -98 -261.98929 -203.9585 180 -1.3351492e-005 lightmap_gray 16384.641 -16384.037 0 -5 180 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 0 -0.5 52.5 ) ( 56 -0.5 52.5 ) ( 56 0 52.5 ) berlin_door_metal_reinforced_glass 56 94.008965 -269.93695 340.5318 0 0.00044826968 lightmap_gray 16384 16386.352 0.004070282 -2 0 -4.1729243e-005
+ ( 56 -0.5 57.5 ) ( 0 -0.5 57.5 ) ( 0 0 57.5 ) berlin_door_metal_reinforced_glass 56 94.013176 -269.93399 340.54718 0 0.0013448694 lightmap_gray 16384 16386.352 0 -2 0 0
+ ( 0 -0.5 57.5 ) ( 56 -0.5 57.5 ) ( 56 -0.5 53 ) berlin_door_metal_reinforced_glass 52 -98 883.99615 -203.97862 180 0 lightmap_gray 16384 16384 0 5 0 0
+ ( 52 0 57.5 ) ( 52 2 57.5 ) ( 52 2 54 ) berlin_door_metal_reinforced_glass 52 -98 -262.00345 -203.95738 -180 1.3815797e-005 lightmap_gray 16384 16384 2 5 0 0
+ ( 56 0 57.25 ) ( 51.75 0 57.25 ) ( 51.75 0 53.75 ) caulk 56 94 -279.7572 286.98431 0 9.2282979e-005 lightmap_gray 16384.152 16383.678 0 5.0068593 0 0
+ ( 0 2 56 ) ( 0 0 56 ) ( 0 0 52.5 ) berlin_door_metal_reinforced_glass 52 -98 -261.98944 -203.95963 -180 0 lightmap_gray 16387.014 16384.08 2 4.998136 0 0
+}
+// brush 6
+{
+  contents detail;
+ ( 55.25 1.25 93 ) ( 3.25 1.25 93 ) ( 3.25 1.25 3 ) berlin_window_glass 64 64 -0.75 -3 0 0 lightmap_gray 16383.865 -16384 -537.25513 -29 180 0
+ ( 3.25 0.75 93 ) ( 55.25 0.75 93 ) ( 55.25 0.75 3 ) berlin_window_glass 64 64 -0.75 -3 0 0 lightmap_gray 16384.779 -16384 -537.25 -29 -180 0
+ ( 48 -710 89.5 ) ( 48 -710 94.5 ) ( 48 -678 94.5 ) caulk 64 64 1.9850578 -3 0 0 lightmap_gray 16384.066 16384.176 2.0160718 -3 0 0
+ ( 3.5 -710 97 ) ( 3.5 -710 91 ) ( 3.5 -678 97 ) caulk 64 64 2 -3 0 0 lightmap_gray 16383.9 16384.041 1.9979125 -3 0 0
+ ( 11.5 2 92.75 ) ( 3.5 2 92.75 ) ( 3.5 34 92.75 ) caulk 64 64 -0.75202459 -1.9985065 0 0 lightmap_gray 16384 16384 -0.75 -1.9985065 0 0
+ ( 6.5 2 57.5 ) ( 12.5 2 57.5 ) ( 6.5 34 57.5 ) caulk 64 64 -0.75334936 -1.9976473 0 0 lightmap_gray 16383.982 16383.984 -0.75 -1.9979745 0 0
+}
+// brush 7
+{
+  contents detail;
+ ( 21 0 61 ) ( 52 0 61 ) ( 52 0 0 ) berlin_door_metal_reinforced_glass 52 -65.99987 877.98602 -146 180 0 lightmap_gray 16383.826 16384 -883.99316 194 0 0
+ ( 52 2 61 ) ( 21 2 61 ) ( 21 2 0 ) berlin_door_metal_reinforced_glass 52 -65.99987 877.98602 -146 180 0 lightmap_gray 16384.078 16384 -884.0033 194 0 0
+ ( 0 2 62 ) ( 0 0 62 ) ( 0 0 1 ) berlin_door_metal_reinforced_glass 52 -65.99987 877.98602 -146 180 0 lightmap_gray 16384.5 16384 262.00717 194 0 0
+ ( 3.5 0.25 91.75 ) ( 3.5 0.25 95 ) ( 3.5 32.25 95 ) berlin_door_metal_reinforced_glass 56 94 -493.93909 250.75 90 0 lightmap_gray 16384 16384.348 262 194.0051 0 0
+ ( 4 2 92.75 ) ( 0.75 2 92.75 ) ( 4 34 92.75 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1.75 2 57.5 ) ( 5 2 57.5 ) ( 5 34 57.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 8
+{
+  contents detail;
+ ( 21 0 61 ) ( 52 0 61 ) ( 52 0 0 ) berlin_door_metal_reinforced_glass 52 -65.99987 883.98602 -208 180 0 lightmap_gray 16383.826 16384 -883.99316 194 0 0
+ ( 52 0 61 ) ( 52 2 61 ) ( 52 2 0 ) berlin_door_metal_reinforced_glass 52 -65.99987 883.98602 -208 180 0 lightmap_gray 16384 16384 262 194 0 0
+ ( 52 2 61 ) ( 21 2 61 ) ( 21 2 0 ) berlin_door_metal_reinforced_glass 52 -65.99987 883.98602 -208 180 0 lightmap_gray 16384.078 16384 -884.0033 194 0 0
+ ( 48 0.25 97.5 ) ( 48 0.25 93.75 ) ( 48 32.25 97.5 ) berlin_door_metal_reinforced_glass 56 94 -493.8465 250.75 90 0 lightmap_gray 16383.969 16384.049 262.00479 194 0 0
+ ( 4 2 92.75 ) ( 0.75 2 92.75 ) ( 4 34 92.75 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1.75 2 57.5 ) ( 5 2 57.5 ) ( 5 34 57.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

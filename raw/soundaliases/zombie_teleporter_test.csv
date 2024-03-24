@@ -1,0 +1,6 @@
+name,platform,mature,file,sequence,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,dist_reverb_max,limit_count,limit_type,entity_limit_count,entity_limit_type,bus,volume_min_falloff_curve,volumefalloffcurve,reverb_send,reverb_min_falloff_curve,reverb_falloff_curve,randomize_type,spatialized,type,probability,loop,masterslave,loadspec,compression,secondaryaliasname,chainaliasname,startdelay,speakermap,lfe percentage,center percentage,envelop_min,envelop_max,envelop percentage,occlusion_level,move_type,move_time,real_delay,distance_lpf,min_priority,max_priority,min_priority_threshold,max_priority_threshold,subtitle,isbig
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+tele_countdown,,,SFX\Levels\nazi_zombie_factory\tele\countdown.wav,,0.8,0.8,1,1,,,,1,reject,,,full_vol,,,,,,,2d,,,,,,,,,,,,,,,,,,,,,1,1,0.1,1,,
+#tele_link,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+tele_start,,,SFX\Levels\nazi_zombie_factory\tele\tele_start.wav,,1,1,1,1,100,800,1200,,,,,full_vol,,curve3,1,,curve3,,2d,,,,,,,tele_end,,,,,,150,300,0.8,0,,,,,1,1,0.1,1,,
+tele_end,,,SFX\Levels\nazi_zombie_factory\tele\tele_end.wav,,1,1,1,1,100,800,1200,,,,,full_vol,,curve3,1,,curve3,,2d,,,,,,,,,,,,,150,300,0.8,0,,,,,1,1,0.1,1,,

@@ -1,0 +1,952 @@
+#name "character"
+#dll "all" "character"
+#target_dir "character/"
+#file_ext "*"
+#version 13
+
+// Variables for Models
+string body
+keyenum("xmodelalias.gdf") bodyAlias
+string head
+keyenum("xmodelalias.gdf") headAlias
+string hat
+keyenum("xmodelalias.gdf") hatAlias
+string gear
+keyenum("xmodelalias.gdf") gearAlias
+string viewmodel
+
+// START GIB SECTION /////////////////////////////////////////////////////////
+
+// Variables for the damaged torso models-------------------------------------
+// Clean version
+string torsoDmg1
+keyenum("xmodelalias.gdf") torsoDmg1_Alias
+
+// Right arm gone version
+string torsoDmg2
+keyenum("xmodelalias.gdf") torsoDmg2_Alias
+
+// Left arm gone version
+string torsoDmg3
+keyenum("xmodelalias.gdf") torsoDmg3_Alias
+
+// Guts gone version
+string torsoDmg4
+keyenum("xmodelalias.gdf") torsoDmg4_Alias
+
+// Head gone version
+string torsoDmg5
+keyenum("xmodelalias.gdf") torsoDmg5_Alias
+
+// Variables for the damaged leg models---------------------------------------
+// Clean version
+string legDmg1
+keyenum("xmodelalias.gdf") legDmg1_Alias
+
+// Right leg gone version
+string legDmg2
+keyenum("xmodelalias.gdf") legDmg2_Alias
+
+// Left leg gone version
+string legDmg3
+keyenum("xmodelalias.gdf") legDmg3_Alias
+
+// No legs
+string legDmg4
+keyenum("xmodelalias.gdf") legDmg4_Alias
+
+// Spawned Gib models---------------------------------------------------------
+// Right Arm
+string gibSpawn1
+keyenum("xmodelalias.gdf") gibSpawn1_Alias
+
+// Left Arm
+string gibSpawn2
+keyenum("xmodelalias.gdf") gibSpawn2_Alias
+
+// Right Leg
+string gibSpawn3
+keyenum("xmodelalias.gdf") gibSpawn3_Alias
+
+// Left Leg
+string gibSpawn4
+keyenum("xmodelalias.gdf") gibSpawn4_Alias
+
+// Head
+string gibSpawn5
+keyenum("xmodelalias.gdf") gibSpawn5_Alias
+
+// Spawned Gib TagNames---------------------------------------------------------
+// Right Arm
+string gibSpawnTag1
+
+// Left Arm
+string gibSpawnTag2
+
+// Right Leg
+string gibSpawnTag3
+
+// Left Leg
+string gibSpawnTag4
+
+// Head
+string gibSpawnTag5
+
+// END GIB SECTION ////////////////////////////////////////////////////////////
+
+string J_ChestGear_RI
+int 0 0 1 J_ChestGear_RI_required
+string J_ChestGear_LE
+int 0 0 1 J_ChestGear_LE_required
+string J_FrontPack
+int 0 0 1 J_FrontPack_required
+string J_FrontPackLow
+int 0 0 1 J_FrontPackLow_required
+string J_Backpack
+int 0 0 1 J_Backpack_required
+string J_GearRear_LE
+int 0 0 1 J_GearRear_LE_required
+string J_GearRear_RI
+int 0 0 1 J_GearRear_RI_required
+string J_GearSideRear_LE
+int 0 0 1 J_GearSideRear_LE_required
+string J_GearSideRear_RI
+int 0 0 1 J_GearSideRear_RI_required
+string J_GearSide_LE
+int 0 0 1 J_GearSide_LE_required
+string J_GearSide_RI
+int 0 0 1 J_GearSide_RI_required
+string J_GearFront_LE
+int 0 0 1 J_GearFront_LE_required
+string J_GearFront_RI
+int 0 0 1 J_GearFront_RI_required
+string J_Helmet
+int 0 0 1 J_Helmet_required
+
+string misc1
+int 0 0 1 misc1_required
+string misc2
+int 0 0 1 misc2_required
+string misc3
+int 0 0 1 misc3_required
+
+enum { "american", "british", "german", "russian", "japanese", "mp" } voice
+
+vcontainer
+{
+
+	//
+	// Voice
+	//
+	scrollbox(voice)
+	[
+		exec
+		{
+			label("Voice")
+			tooltip("Determines nationality 'voice' to use")
+		}
+	]
+
+	//
+	// Models that make up the character
+	//
+	vcontainer
+	{
+		fileedit(body)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Body Model:")
+			}
+		]
+
+		scrollbox(bodyAlias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Body Model Alias:")
+			}
+		]
+
+		fileedit(head)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Head Model:")
+			}
+		]
+
+		scrollbox(headAlias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Head Model Alias:")
+			}
+		]
+
+		fileedit(hat)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Hat Model:")
+			}
+		]
+		
+		scrollbox(hatAlias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Hat Model Alias:")
+			}
+		]
+		
+		fileedit(gear)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Gear Model:")
+			}
+		]
+
+		scrollbox(gearAlias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Gear Model Alias:")
+			}
+		]
+
+		fileedit(viewmodel)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("ViewModel:")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Models")
+		}
+	]
+	
+	//
+	// Torso Damage Models
+	// 
+	vcontainer
+	{
+		fileedit(torsoDmg1)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Clean:")
+			}
+		]
+		
+		scrollbox(torsoDmg1_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Clean (Model Alias):")
+			}
+		]
+		
+		fileedit(torsoDmg2)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Right Arm Gone:")
+			}
+		]
+		
+		scrollbox(torsoDmg2_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Right Arm Gone (Model Alias):")
+			}
+		]
+		
+		fileedit(torsoDmg3)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Left Arm Gone:")
+			}
+		]
+		
+		scrollbox(torsoDmg3_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Left Arm Gone (Model Alias):")
+			}
+		]
+		
+		fileedit(torsoDmg4)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Guts Gone:")
+			}
+		]
+		
+		scrollbox(torsoDmg4_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Guts Gone (Model Alias) :")
+			}
+		]
+		
+		fileedit(torsoDmg5)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Head Gone:")
+			}
+		]
+		
+		scrollbox(torsoDmg5_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Head Gone (Model Alias) :")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Damaged Torso Models")
+		}
+	]
+	
+	
+	//
+	// Lower Body Damage Models
+	// 
+	vcontainer
+	{
+		fileedit(legDmg1)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Clean:")
+			}
+		]
+		
+		scrollbox(legDmg1_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Clean (Model Alias):")
+			}
+		]
+		
+		fileedit(legDmg2)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Right leg Gone:")
+			}
+		]
+		
+		scrollbox(legDmg2_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Right leg Gone (Model Alias):")
+			}
+		]
+		
+		fileedit(legDmg3)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Left leg Gone:")
+			}
+		]
+		
+		scrollbox(legDmg3_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("Left leg Gone (Model Alias):")
+			}
+		]
+		
+		fileedit(legDmg4)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("No legs:")
+			}
+		]
+
+		scrollbox(legDmg4_Alias)
+		[
+			exec
+			{
+				labelwidth(200)
+				width(640)
+				label("No legs (Model Alias) :")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Damaged Legs Models")
+		}
+	]
+	
+	
+	//
+	// Spawned Gib Models
+	// 
+	vcontainer
+	{
+		fileedit(gibSpawn1)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Right Arm:")
+			}
+		]
+
+		edit(gibSpawnTag1)
+		[
+			exec
+			{
+				label("Right Arm Spawn Tag:")
+				labelwidth(200)
+				tooltip("Specifies the tag to spawn the Gib from")
+			}
+		]
+
+// MikeD (10/26/06): We don't want model aliases, maybe later?				
+//		scrollbox(gibSpawn1_Alias)
+//		[
+//			exec
+//			{
+//				labelwidth(200)
+//				width(640)
+//				label("Right Arm (Model Alias):")
+//			}
+//		]
+		
+		fileedit(gibSpawn2)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Left Arm:")
+			}
+		]
+
+		edit(gibSpawnTag2)
+		[
+			exec
+			{
+				label("Left Arm Spawn Tag:")
+				labelwidth(200)
+				tooltip("Specifies the tag to spawn the Gib from")
+			}
+		]
+
+// MikeD (10/26/06): We don't want model aliases, maybe later?				
+//		scrollbox(gibSpawn2_Alias)
+//		[
+//			exec
+//			{
+//				labelwidth(200)
+//				width(640)
+//				label("Left Arm (Model Alias):")
+//			}
+//		]
+		
+		fileedit(gibSpawn3)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Right Leg:")
+			}
+		]
+
+		edit(gibSpawnTag3)
+		[
+			exec
+			{
+				label("Right Leg Spawn Tag:")
+				labelwidth(200)
+				tooltip("Specifies the tag to spawn the Gib from")
+			}
+		]
+	
+// MikeD (10/26/06): We don't want model aliases, maybe later?		
+//		scrollbox(gibSpawn3_Alias)
+//		[
+//			exec
+//			{
+//				labelwidth(200)
+//				width(640)
+//				label("Right Leg (Model Alias):")
+//			}
+//		]
+		
+		fileedit(gibSpawn4)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Left Leg:")
+			}
+		]
+
+		edit(gibSpawnTag4)
+		[
+			exec
+			{
+				label("Left Leg Spawn Tag:")
+				labelwidth(200)
+				tooltip("Specifies the tag to spawn the Gib from")
+			}
+		]
+
+// MikeD (10/26/06): We don't want model aliases, maybe later?		
+//		scrollbox(gibSpawn4_Alias)
+//		[
+//			exec
+//			{
+//				labelwidth(200)
+//				width(640)
+//				label("Left Leg (Model Alias) :")
+//			}
+//		]
+
+		fileedit(gibSpawn5)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+				label("Head:")
+			}
+		]
+
+		edit(gibSpawnTag5)
+		[
+			exec
+			{
+				label("Head Spawn Tag:")
+				labelwidth(200)
+				tooltip("Specifies the tag to spawn the Gib from")
+			}
+		]
+
+// MikeD (10/26/06): We don't want model aliases, maybe later?		
+//		scrollbox(gibSpawn5_Alias)
+//		[
+//			exec
+//			{
+//				labelwidth(200)
+//				width(640)
+//				label("Head (Model Alias) :")
+//			}
+//		]
+	}
+	[
+		exec
+		{
+			groupBox("Spawned Gib Models")
+		}
+	]
+	
+
+	//
+	// Attached Models (to bones)
+	//
+	vcontainer
+	{
+		fileedit(J_ChestGear_RI)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Chest Gear Right")
+			}
+		]
+
+		checkbox(J_ChestGear_RI_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Chest Gear Right required")
+			}
+		]
+		fileedit(J_ChestGear_LE)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Chest Gear Left")
+			}
+		]
+
+		checkbox(J_ChestGear_LE_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Chest Gear Left required")
+			}
+		]
+		fileedit(J_FrontPack)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Front Pack")
+			}
+		]
+
+		checkbox(J_FrontPack_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Front Pack required")
+			}
+		]
+		fileedit(J_FrontPackLow)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Front Pack Low")
+			}
+		]
+
+		checkbox(J_FrontPackLow_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Front Pack Low required")
+			}
+		]
+		fileedit(J_Backpack)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Backpack")
+			}
+		]
+
+		checkbox(J_Backpack_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Backpack required")
+			}
+		]
+		fileedit(J_GearRear_LE)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Rear Gear Left")
+			}
+		]
+
+		checkbox(J_GearRear_LE_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Rear Gear Left required")
+			}
+		]
+		fileedit(J_GearRear_RI)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Rear Gear Right")
+			}
+		]
+
+		checkbox(J_GearRear_RI_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Rear Gear Right required")
+			}
+		]
+		fileedit(J_GearSideRear_LE)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Rear Gear Side Left")
+			}
+		]
+
+		checkbox(J_GearSideRear_LE_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Rear Gear Side Left required")
+			}
+		]
+		fileedit(J_GearSideRear_RI)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Rear Gear Side Right")
+			}
+		]
+
+		checkbox(J_GearSideRear_RI_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Rear Gear Side Right required")
+			}
+		]
+		fileedit(J_GearSide_LE)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Side Gear Left")
+			}
+		]
+
+		checkbox(J_GearSide_LE_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Side Gear Left required")
+			}
+		]
+		fileedit(J_GearSide_RI)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Side Gear Right")
+			}
+		]
+
+		checkbox(J_GearSide_RI_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Side Gear Right required")
+			}
+		]
+		fileedit(J_GearFront_LE)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Front Gear Left")
+			}
+		]
+
+		checkbox(J_GearFront_LE_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Front Gear Left required")
+			}
+		]
+		fileedit(J_GearFront_RI)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Front Gear Right")
+			}
+		]
+
+		checkbox(J_GearFront_RI_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Front Gear Right required")
+			}
+		]
+		fileedit(J_Helmet)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel")
+				labelwidth(200)
+				label("Helmet")
+			}
+		]
+
+		checkbox(J_Helmet_required)
+		[
+			exec
+			{
+				labelwidth(256)
+				label("Helmet required")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Attached Models (to the listed bones)")
+		}		
+	]
+	
+	//
+	// Misc Attached Models
+	//
+	vcontainer
+	{
+		fileedit(misc1)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+			}
+		]
+		checkbox(misc1_required)
+		[
+			exec
+			{
+				labelwidth(256)
+			}
+		]
+
+		fileedit(misc2)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+			}
+		]
+		checkbox(misc2_required)
+		[
+			exec
+			{
+				labelwidth(256)
+			}
+		]
+
+		fileedit(misc3)
+		[
+			exec
+			{
+				reldir("pc/main/xmodel/")
+				labelwidth(200)
+			}
+		]
+		checkbox(misc3_required)
+		[
+			exec
+			{
+				labelwidth(256)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Misc. Attached Models (not linked to any bones, just to the origin)")
+		}		
+	]
+}
+
+

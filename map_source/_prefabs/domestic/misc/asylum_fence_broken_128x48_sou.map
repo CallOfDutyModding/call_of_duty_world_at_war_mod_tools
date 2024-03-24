@@ -1,0 +1,127 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents detail;
+ ( 39 16 0 ) ( -89 16 0 ) ( -89 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 23 4 8 ) ( 23 -4 8 ) ( 16 -4 3 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -89 -4 16 ) ( 39 -4 16 ) ( 39 -4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 23 -4 8 ) ( 23 4 8 ) ( 23 4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 39 4 16 ) ( -89 4 16 ) ( -89 4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 4 3 ) ( 16 -4 3 ) ( 15 -4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 47 16 0 ) ( -81 16 0 ) ( -81 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 23 -4 8 ) ( 23 4 8 ) ( 31 4 18 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -81 -4 16 ) ( 47 -4 16 ) ( 47 -4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 31 -4 18.5 ) ( 31 4 18.5 ) ( 31 4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 47 4 16 ) ( -81 4 16 ) ( -81 4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 23 4 8 ) ( 23 -4 8 ) ( 23 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( 52 16 0 ) ( -76 16 0 ) ( -76 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 36 4 30 ) ( 36 -4 30 ) ( 31 -4 18 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -76 -4 16 ) ( 52 -4 16 ) ( 52 -4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 36 -4 34 ) ( 36 4 34 ) ( 36 4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 52 4 16 ) ( -76 4 16 ) ( -76 4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 31 4 18 ) ( 31 -4 18 ) ( 31 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( 43.5 -4 0 ) ( 43.5 4 0 ) ( 36 4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 4 40 ) ( 48 -4 40 ) ( 36 -4 30 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -68.5 -4 16 ) ( 59.5 -4 16 ) ( 59.5 -4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -4 40 ) ( 48 4 40 ) ( 48 4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 59.5 4 16 ) ( -68.5 4 16 ) ( -68.5 4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 36 16 16 ) ( 36 -4 16 ) ( 36 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+  contents detail;
+ ( 64 16 0 ) ( -64 16 0 ) ( -64 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -60 -4 56 ) ( -60 16 56 ) ( 68 16 56 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -8 16 ) ( 64 -8 16 ) ( 64 -8 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 -4 16 ) ( 64 16 16 ) ( 64 16 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 8 16 ) ( -64 8 16 ) ( -64 8 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 12 16 ) ( 48 -8 16 ) ( 48 -8 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+  contents detail;
+ ( -28 20 0 ) ( -156 20 0 ) ( -156 0 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 -4 46 ) ( -48 4 46 ) ( -44 4 44 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -156 -4 36 ) ( -28 -4 36 ) ( -28 -4 20 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -44 0 44 ) ( -44 8 44 ) ( -44 8 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -28 4 36 ) ( -156 4 36 ) ( -156 4 20 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 4 46 ) ( -48 -4 46 ) ( -48 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+  contents detail;
+ ( -24 20 0 ) ( -152 20 0 ) ( -152 0 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -36 8 28 ) ( -36 0 28 ) ( -44 0 44 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -4 36 ) ( -24 -4 36 ) ( -24 -4 20 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -36 0 28 ) ( -36 8 28 ) ( -36 8 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 4 36 ) ( -152 4 36 ) ( -152 4 20 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -44 20 48 ) ( -44 0 48 ) ( -44 0 32 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 7
+{
+  contents detail;
+ ( 0 20 0 ) ( -128 20 0 ) ( -128 0 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -36 -4 28 ) ( -36 4 28 ) ( -24 4 16 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -128 -4 16 ) ( 0 -4 16 ) ( 0 -4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 -4 16 ) ( -24 4 16 ) ( -24 4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 4 16 ) ( -128 4 16 ) ( -128 4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -36 4 28 ) ( -36 -4 28 ) ( -36 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 8
+{
+  contents detail;
+ ( 4 20 0 ) ( -124 20 0 ) ( -124 0 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -18 4 9 ) ( -18 -4 9 ) ( -24 -4 16 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -124 -4 16 ) ( 4 -4 16 ) ( 4 -4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -18 -4 9 ) ( -18 4 9 ) ( -16 4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 4 16 ) ( -124 4 16 ) ( -124 4 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 16 20 ) ( -24 -4 20 ) ( -24 -4 4 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 9
+{
+  contents detail;
+ ( -48 16 0 ) ( -176 16 0 ) ( -176 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -172 -4 56 ) ( -172 16 56 ) ( -44 16 56 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -176 -8 16 ) ( -48 -8 16 ) ( -48 -8 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 -4 16 ) ( -48 16 16 ) ( -48 16 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 8 16 ) ( -176 8 16 ) ( -176 8 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 12 16 ) ( -64 -8 16 ) ( -64 -8 0 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 10
+{
+  contents detail;
+ ( 64 16 56 ) ( -64 16 56 ) ( -64 -4 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -60 -4 58 ) ( -60 16 58 ) ( 68 16 58 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -10 72 ) ( 64 -10 72 ) ( 64 -10 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -4 72 ) ( 66 16 72 ) ( 66 16 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 10 72 ) ( -64 10 72 ) ( -64 10 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 46 12 72 ) ( 46 -8 72 ) ( 46 -8 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 11
+{
+  contents detail;
+ ( -48 16 56 ) ( -176 16 56 ) ( -176 -4 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -172 -4 58 ) ( -172 16 58 ) ( -44 16 58 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -176 -10 72 ) ( -48 -10 72 ) ( -48 -10 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -46 -4 72 ) ( -46 16 72 ) ( -46 16 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 10 72 ) ( -176 10 72 ) ( -176 10 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -66 12 72 ) ( -66 -8 72 ) ( -66 -8 56 ) berlin_wall_concrete_holes_splats2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

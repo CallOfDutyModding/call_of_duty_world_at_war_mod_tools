@@ -1,0 +1,66 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 9.5 23 -9 ) ( -20.5 23 -9 ) ( -20.5 -10 -9 ) clip_player 64 64 -0.5 -4 0 0 lightmap_gray 16384 16384 -0.5 -4 0 0
+ ( -23.5 -10 78.5 ) ( -23.5 23 78.5 ) ( 6.5 23 78.5 ) clip_player 64 64 -0.5 -4 0 0 lightmap_gray 16384 16384 -0.5 -4 0 0
+ ( -20.5 -14 94 ) ( 9.5 -14 94 ) ( 9.5 -14 -9 ) clip_player 64 64 -0.5 -0.5 0 0 lightmap_gray 16384 16384 -0.5 -0.5 0 0
+ ( 22.5 -10 94 ) ( 22.5 23 94 ) ( 22.5 23 -9 ) clip_player 64 64 4 -0.5 0 0 lightmap_gray 16384 16384 4 -0.5 0 0
+ ( 9 17.5 94 ) ( -21 17.5 94 ) ( -21 17.5 -9 ) clip_player 64 64 -0.5 -0.5 0 0 lightmap_gray 16384 16384 -0.5 -0.5 0 0
+ ( -32.5 23 93 ) ( -32.5 -10 93 ) ( -32.5 -10 -10 ) clip_player 64 64 4 -0.5 0 0 lightmap_gray 16384 16384 4 -0.5 0 0
+}
+}
+// entity 1
+{
+"script_string" "tap_perk"
+"target" "vending_doubletap"
+"targetname" "zombie_vending"
+"script_noteworthy" "specialty_rof"
+"classname" "trigger_use"
+// brush 0
+{
+ ( 9 31 -9.5 ) ( -19.5 31 -9.5 ) ( -19.5 -12.5 -9.5 ) trigger 64 64 0.5 -4.5 0 0 lightmap_gray 16384 16384 0.5 -4.5 0 0
+ ( -20 -12.5 78 ) ( -20 31 78 ) ( 8.5 31 78 ) trigger 64 64 0.5 -4.5 0 0 lightmap_gray 16384 16384 0.5 -4.5 0 0
+ ( -19 -14 93.5 ) ( 9.5 -14 93.5 ) ( 9.5 -14 -9.5 ) trigger 64 64 0.5 0 0 0 lightmap_gray 16384 16384 0.5 0 0 0
+ ( 17.5 -12.5 93.5 ) ( 17.5 31 93.5 ) ( 17.5 31 -9.5 ) trigger 64 64 4.5 0 0 0 lightmap_gray 16384 16384 4.5 0 0 0
+ ( 9 17.5 93.5 ) ( -19.5 17.5 93.5 ) ( -19.5 17.5 -9.5 ) trigger 64 64 0.5 0 0 0 lightmap_gray 16384 16384 0.5 0 0 0
+ ( -19.5 31 93.5 ) ( -19.5 -12.5 93.5 ) ( -19.5 -12.5 -9.5 ) trigger 64 64 4.5 0 0 0 lightmap_gray 16384 16384 4.5 0 0 0
+}
+}
+// entity 2
+{
+"script_string" "tap_perk"
+"classname" "script_model"
+"model" "zombie_vending_doubletap"
+"origin" "-4.5 4.0 -5.0"
+"targetname" "vending_doubletap"
+}
+// entity 3
+{
+"script_string" "tap_perk"
+"origin" "-3.0 -5.0 48.0"
+"targetname" "perksacola"
+"script_sound" "mx_doubletap_jingle"
+"classname" "script_struct"
+}
+// entity 4
+{
+"script_string" "tap_perk"
+"script_sound" "perks_rattle"
+"targetname" "audio_bump_trigger"
+"script_activated" "1"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( -26 21 -35 ) ( -34 21 -35 ) ( -34 13 -35 ) trigger 64 64 3 21 0 0 lightmap_gray 16384 16384 3 21 0 0
+ ( -34 13 93 ) ( -34 21 93 ) ( -26 21 93 ) trigger 64 64 3 21 0 0 lightmap_gray 16383.979 16384 3 21 0 0
+ ( 20 -15 93 ) ( 28 -15 93 ) ( 28 -15 -35 ) trigger 64 64 3 -650 0 0 lightmap_gray 16384 16384 3 -650 0 0
+ ( 22 -16 93 ) ( 22 -8 93 ) ( 22 -8 -35 ) trigger 64 64 -21 -650 0 0 lightmap_gray 16384 16384 -21 -650 0 0
+ ( -26 15 93 ) ( -34 15 93 ) ( -34 15 -35 ) trigger 64 64 3 -650 0 0 lightmap_gray 16384 16384 3 -650 0 0
+ ( -32 21 93 ) ( -32 13 93 ) ( -32 13 -35 ) trigger 64 64 -21 -650 0 0 lightmap_gray 16384 16384 -21 -650 0 0
+}
+}

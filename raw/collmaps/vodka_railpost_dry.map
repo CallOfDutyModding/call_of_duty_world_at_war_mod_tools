@@ -1,0 +1,22 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 8 74 0 ) ( -6 74 0 ) ( -6 -66 0 ) clip_nosight_wood 64 64 1152 756 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -12 -66 480 ) ( -12 74 480 ) ( 2 74 480 ) clip_nosight_wood 64 64 1152 756 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -6 -6 12 ) ( 8 -6 12 ) ( 8 -6 0 ) clip_nosight_wood 64 64 1152 756 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -66 12 ) ( 4 74 12 ) ( 4 74 0 ) clip_nosight_wood 64 64 1152 756 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 4 8 ) ( -6 4 8 ) ( -6 4 -4 ) clip_nosight_wood 64 64 1152 756 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 74 12 ) ( -4 -66 12 ) ( -4 -66 0 ) clip_nosight_wood 64 64 1152 756 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0.0 0.0 0.0"
+"model" "vodka_railpost_dry"
+"classname" "misc_model"
+}

@@ -1,0 +1,24 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_hol3"
+"_color" "0.5 0.5 .62 1"
+"ambient" ".2"
+"sundiffusecolor" "0.75 0.82 0.85"
+"diffusefraction" ".2"
+"classname" "worldspawn"
+"sundirection" "-40 60 0"
+"suncolor" "0.9 0.95 1"
+"sunlight" "1.5"
+// brush 0
+{
+  contents weaponClip;
+ ( 2 0 -12 ) ( -2 0 -12 ) ( -2 0 24 ) caulk 64 64 -2986 -152 0 0 lightmap_gray 16384 16384 -2986 -152 0 0
+ ( 2 0 24 ) ( 2 8 24 ) ( 2 8 -12 ) seelow_wall_plaster_white03 128 -153.83685 2 -163.45166 123.69006 0 lightmap_gray 16384 16384 1524 -152 0 0
+ ( -2 8 24 ) ( -2 0 24 ) ( -2 0 -12 ) seelow_wall_plaster_white03 128 153.83685 6 163.45166 -56.309929 0 lightmap_gray 16384 16384 1524 -152 0 0
+ ( 2 36 24 ) ( -2 36 24 ) ( -2 0 0 ) seelow_wall_plaster_white03 128 128 4 136 0 0 lightmap_gray 16384 16384 -2902 -1520 0 0
+ ( 2 0 24 ) ( 2 24 16 ) ( 34 24 16 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}

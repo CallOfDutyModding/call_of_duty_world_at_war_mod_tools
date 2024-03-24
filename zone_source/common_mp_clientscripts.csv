@@ -1,0 +1,16 @@
+rawfile,clientscripts/mp/_ambient.csc
+rawfile,clientscripts/mp/_ambientpackage.csc
+rawfile,clientscripts/mp/_audio.csc
+rawfile,clientscripts/mp/_busing.csc
+rawfile,clientscripts/mp/_callbacks.csc
+rawfile,clientscripts/mp/_dogs.csc
+rawfile,clientscripts/mp/_footsteps.csc
+rawfile,clientscripts/mp/_fx.csc
+rawfile,clientscripts/mp/_global_fx.csc
+rawfile,clientscripts/mp/_lights.csc
+rawfile,clientscripts/mp/_load.csc
+rawfile,clientscripts/mp/_music.csc
+rawfile,clientscripts/mp/_treadfx.csc
+rawfile,clientscripts/mp/_utility.csc
+rawfile,clientscripts/mp/_utility_code.csc
+rawfile,clientscripts/mp/_vehicle.csc

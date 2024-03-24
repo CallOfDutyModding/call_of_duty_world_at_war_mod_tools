@@ -1,0 +1,80 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"targetname" "southeast_outside_spawners"
+"treescatteramount" "0.8"
+"treescatterintensity" "0.8"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"spawnflags" "1024"
+"skyboxmodel" "skybox_pel2"
+"_color" "1.000000 1.000000 0.501961"
+"ambient" "0.15"
+"sundiffusecolor" "0.917647 0.945098 1"
+"diffusefraction" "0.25"
+"classname" "worldspawn"
+"sundirection" "-30 -340 0"
+"suncolor" "1 0.976471 0.882353"
+"sunlight" "1.3"
+}
+// entity 1
+{
+"origin" "0 0 0"
+"angles" "0 0 0"
+"targetname" "m1garand_gl_zombie_chalk"
+"classname" "script_brushmodel"
+// brush 0
+ {
+  curve
+  {
+   rifle_grenade_chalk
+   lightmap_gray
+   3 3 16 8
+   (
+	v 33.000008 0 7.0000029 t 0 -1024 1.5 -0.1875
+	v 33.000008 0 -0.74999964 t 0 -512 1.5 0.125
+	v 33.000008 0 -8.5 t 0 -0 1.5 0.4375
+   )
+   (
+	v 4.0000019 0 7.0000029 t 512 -1024 0 -0.1875
+	v 4.0000019 0 -0.74999964 t 512 -512 0 0.125
+	v 4.0000019 0 -8.5 t 512 -0 0 0.4375
+   )
+   (
+	v -25.000004 0 7.0000029 t 1024 -1024 -1.5 -0.1875
+	v -25.000004 0 -0.74999964 t 1024 -512 -1.5 0.125
+	v -25.000004 0 -8.5 t 1024 -0 -1.5 0.4375
+   )
+  }
+ }
+}
+// entity 2
+{
+"classname" "script_model"
+"model" "weapon_usa_m1garand_rifle_grenade"
+"origin" "0.0 0.0 0.0"
+"targetname" "m1garand_gl_zombie"
+"angles" "0 0 0"
+"target" "m1garand_gl_zombie_chalk"
+}
+// entity 3
+{
+"classname" "trigger_use"
+"target" "m1garand_gl_zombie"
+"targetname" "weapon_upgrade"
+"zombie_weapon_upgrade" "m1garand_gl_zombie"
+"origin" "0 0 0"
+"angles" "0 0 0"
+"script_noteworthy" "m1garand_gl_zombie"
+// brush 0
+{
+ ( 24 0 -7 ) ( -24 0 -7 ) ( -24 -4 -7 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 -4 5 ) ( -24 0 5 ) ( 24 0 5 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -24 -3 1 ) ( 24 -3 1 ) ( 24 -3 -3 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+ ( 32 -4 0 ) ( 32 0 0 ) ( 32 0 -4 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+ ( 24 0 1 ) ( -24 0 1 ) ( -24 0 -3 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+ ( -24 0 1 ) ( -24 -4 1 ) ( -24 -4 -3 ) trigger 64 64 0 -1 0 0 lightmap_gray 16384 16384 0 -1 0 0
+}
+}

@@ -1,0 +1,55 @@
+// Each line is a separate usage.
+// Blank lines are allowed.
+// Usages may have spaces in their names.
+// Leading and trailing spaces on a line get ignored.
+// The order is the order in which things appear in Radiant.
+// <separator> is used to add a separator line in Radiant.
+
+case
+tools
+
+<separator>
+
+interior wall
+interior trim
+exterior wall
+exterior trim
+
+<separator>
+
+ceiling
+roof
+ground
+floor
+road
+
+<separator>
+
+door
+window
+furniture
+trench
+
+<separator>
+
+damage
+grunge
+decorative
+fence
+poster
+sign
+flag
+
+<separator>
+
+background
+foliage
+rock
+liquid
+sky
+
+<separator>
+
+barrel
+crate
+box

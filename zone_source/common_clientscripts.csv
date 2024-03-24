@@ -1,0 +1,17 @@
+rawfile,clientscripts/_audio.csc
+rawfile,clientscripts/_utility.csc
+rawfile,clientscripts/_utility_code.csc
+rawfile,clientscripts/_load.csc
+rawfile,clientscripts/_callbacks.csc
+rawfile,clientscripts/_fx.csc
+rawfile,clientscripts/_global_fx.csc
+rawfile,clientscripts/_ambientpackage.csc
+rawfile,clientscripts/_mortar.csc
+rawfile,clientscripts/_footsteps.csc
+rawfile,clientscripts/_music.csc
+rawfile,clientscripts/_busing.csc
+rawfile,clientscripts/_treadfx.csc
+rawfile,clientscripts/_vehicle.csc
+rawfile,clientscripts/_lights.csc
+rawfile,clientscripts/_collectibles.csc
+rawfile,clientscripts/_russian_diary.csc

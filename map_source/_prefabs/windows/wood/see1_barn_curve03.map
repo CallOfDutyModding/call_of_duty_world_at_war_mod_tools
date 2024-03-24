@@ -1,0 +1,381 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents detail;
+ ( -46 3 46 ) ( -46 -3 46 ) ( -48 -3 48 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 1992 1356 0 0
+ ( -96 -3 32 ) ( -72 -3 32 ) ( -72 -3 -96 ) berlin_floors_wood_dirty_white1 128 128 -2 -1 -90 0 lightmap_gray 16384 16384 1992 256 0 0
+ ( -72 3 32 ) ( -96 3 32 ) ( -96 3 -96 ) berlin_floors_wood_dirty_white1 128 128 -2 -1 -90 0 lightmap_gray 16384 16384 1992 256 0 0
+ ( -48 -3 0 ) ( -48 3 0 ) ( -48 3 48 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1356 256 0 0
+ ( -46 -3 46 ) ( -46 3 46 ) ( -46 3 1 ) berlin_floors_wood_dirty_white1 128 128 -2 -1 -90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 3 0 ) ( -48 -3 0 ) ( -46 -3 1 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( -72 4 0 ) ( -96 4 0 ) ( -96 -4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 1992 1356 0 0
+ ( -96 -3 32 ) ( -72 -3 32 ) ( -72 -3 -96 ) berlin_floors_wood_dirty_white1 128 128 -2 3 180 0 lightmap_gray 16384 16384 1992 256 0 0
+ ( -72 3 32 ) ( -96 3 32 ) ( -96 3 -96 ) berlin_floors_wood_dirty_white1 128 -128 -2 5 180 0 lightmap_gray 16384 16384 1992 256 0 0
+ ( -46 3 1 ) ( -46 -3 1 ) ( -48 -3 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2 3 1 ) ( -2 -3 1 ) ( -46 -3 1 ) berlin_floors_wood_dirty_white1 128 128 -2 -1 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2 -3 1 ) ( -2 3 1 ) ( 0 3 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( -96 -3 32 ) ( -72 -3 32 ) ( -72 -3 -96 ) berlin_floors_wood_dirty_white1 128 128 -2 -1 -90 0 lightmap_gray 16384 16384 1992 256 0 0
+ ( 0 -4 128 ) ( 0 4 128 ) ( 0 4 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1356 256 0 0
+ ( -72 3 32 ) ( -96 3 32 ) ( -96 3 -96 ) berlin_floors_wood_dirty_white1 128 128 -2 -1 -90 0 lightmap_gray 16384 16384 1992 256 0 0
+ ( -2 3 1 ) ( -2 -3 1 ) ( 0 -3 0 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2 -3 46 ) ( -2 3 46 ) ( 0 3 48 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 1992 1356 0 0
+ ( -2 3 46 ) ( -2 -3 46 ) ( -2 -3 1 ) berlin_floors_wood_dirty_white1 128 128 -2 -1 -90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+ {
+  curve
+  {
+  contents nonColliding;
+  toolFlags splitGeo;
+   berlin_floors_wood_dirty_white1
+   lightmap_gray
+   7 3 16 1
+   (
+	v -48 -3 48 t 18.432003 -61.440002 1 1
+	v -24 -3 64 t -199.19148 -61.440002 1 9
+	v 0 -3 48 t -416.81519 -61.440002 1 17
+   )
+   (
+	v -47 -3 47 t 18.432003 -69.439995 3 1
+	v -24 -3 63 t -199.1915 -69.439995 3 9
+	v -1 -3 47 t -416.81519 -69.440002 3 17
+   )
+   (
+	v -46 -3 46 t 18.432003 -77.439995 3 1
+	v -24 -3 62 t -199.19148 -77.439995 3 9
+	v -2 -3 46 t -416.81522 -77.439995 3 17
+   )
+   (
+	v -46 0 46 t 18.432003 -101.43999 5 1
+	v -24 0 62 t -199.19148 -101.43999 5 9
+	v -2 0 46 t -416.81519 -101.43999 5 17
+   )
+   (
+	v -46 3 46 t 18.432003 -125.43998 5 1
+	v -24 3 62 t -199.1915 -125.43998 5 9
+	v -2 3 46 t -416.81522 -125.43998 5 17
+   )
+   (
+	v -47 3 47 t 18.432003 -133.43997 7 1
+	v -24 3 63 t -199.1915 -133.43997 7 9
+	v -1 3 47 t -416.81519 -133.43997 7 17
+   )
+   (
+	v -48 3 48 t 18.432003 -141.43999 7 1
+	v -24 3 64 t -199.1915 -141.43999 7 9
+	v 0 3 48 t -416.81519 -141.43999 7 17
+   )
+  }
+ }
+// brush 4
+ {
+  curve
+  {
+  contents nonColliding;
+  toolFlags splitGeo;
+   berlin_floors_wood_dirty_white1
+   lightmap_gray
+   7 3 16 1
+   (
+	v -46 -0.5 46 t 24.576002 -77.824005 1 1
+	v -24 -0.5 62 t -180.32402 -77.824005 1 9
+	v -2 -0.5 46 t -385.22391 -77.824005 1 17
+   )
+   (
+	v -45 -0.5 45 t 24.576002 -85.824005 3 1
+	v -24 -0.5 61 t -180.32402 -85.824005 3 9
+	v -3 -0.5 45 t -385.22391 -85.82399 3 17
+   )
+   (
+	v -44 -0.5 44 t 24.576002 -93.824005 3 1
+	v -24 -0.5 60 t -180.32402 -93.824005 3 9
+	v -4 -0.5 44 t -385.22391 -93.824005 3 17
+   )
+   (
+	v -44 0 44 t 24.576002 -97.824005 5 1
+	v -24 0 60 t -180.32402 -97.82399 5 9
+	v -4 0 44 t -385.22391 -97.824005 5 17
+   )
+   (
+	v -44 0.5 44 t 24.576002 -101.82401 5 1
+	v -24 0.5 60 t -180.32401 -101.82401 5 9
+	v -4 0.5 44 t -385.22391 -101.82401 5 17
+   )
+   (
+	v -45 0.5 45 t 24.576002 -109.82401 7 1
+	v -24 0.5 61 t -180.32402 -109.82401 7 9
+	v -3 0.5 45 t -385.22391 -109.82403 7 17
+   )
+   (
+	v -46 0.5 46 t 24.576002 -117.82403 7 1
+	v -24 0.5 62 t -180.32401 -117.82403 7 9
+	v -2 0.5 46 t -385.22391 -117.82401 7 17
+   )
+  }
+ }
+// brush 5
+{
+  contents detail;
+ ( -2 -0.5 46 ) ( -2 -0.5 1 ) ( -4 -0.5 3 ) berlin_floors_wood_dirty_white1 128 128 -36 13 -90 0 lightmap_gray 16384 16384 1990 258 0 0
+ ( -2 -3 1 ) ( -2 -3 46 ) ( -2 3 46 ) caulk 64 64 -36 14 0 0 lightmap_gray 16384 16384 -1356 258 0 0
+ ( -74 0.5 29.5 ) ( -98 0.5 29.5 ) ( -98 0.5 -98.5 ) berlin_floors_wood_dirty_white1 128 128 -36 13 -90 0 lightmap_gray 16384 16384 1990 258 0 0
+ ( -4 3 3 ) ( -4 -3 3 ) ( -2 -3 1 ) caulk 64 64 -38 12 0 0 lightmap_gray 16384 16384 -2 0 0 0
+ ( -4 -3 44 ) ( -4 3 44 ) ( -2 3 46 ) caulk 64 64 -38 12 0 0 lightmap_gray 16384 16384 1990 1356 0 0
+ ( -4 -3 3 ) ( -4 3 3 ) ( -4 3 44 ) berlin_floors_wood_dirty_white1 128 128 -36 11 -90 0 lightmap_gray 16384 16384 0 2 0 0
+}
+// brush 6
+{
+  contents detail;
+ ( -46 0.5 46 ) ( -46 0.5 1 ) ( -44 0.5 3 ) berlin_floors_wood_dirty_white1 128 -128 44 51 -90 0 lightmap_gray 16384 -16384 2038 -258 180 0
+ ( -46 3 1 ) ( -46 3 46 ) ( -46 -3 46 ) caulk 64 -64 44 2 180 0 lightmap_gray 16384 -16384 -1356 -258 180 0
+ ( 26 -0.5 29.5 ) ( 50 -0.5 29.5 ) ( 50 -0.5 -98.5 ) berlin_floors_wood_dirty_white1 128 -128 44 51 -90 0 lightmap_gray 16384 -16384 2038 -258 180 0
+ ( -44 -3 3 ) ( -44 3 3 ) ( -46 3 1 ) caulk 64 64 90 4 180 0 lightmap_gray 16384 16384 46 0 180 0
+ ( -44 3 44 ) ( -44 -3 44 ) ( -46 -3 46 ) caulk 64 64 90 4 180 0 lightmap_gray 16384 16384 2038 1356 180 0
+ ( -44 3 3 ) ( -44 -3 3 ) ( -44 -3 44 ) berlin_floors_wood_dirty_white1 128 -128 44 5 -90 0 lightmap_gray 16384 -16384 0 -2 180 0
+}
+// brush 7
+{
+  contents detail;
+ ( -1 -0.5 1 ) ( -46 -0.5 1 ) ( -44 -0.5 3 ) berlin_floors_wood_dirty_white1 128 128 95 -18 180 0 lightmap_gray 16384 16384 1991 305 -90 0
+ ( -46 -3 1 ) ( -1 -3 1 ) ( -1 3 1 ) caulk 64 -64 48 -59 90 0 lightmap_gray 16384 -16384 -1356 -305 90 0
+ ( -17.5 0.5 73 ) ( -17.5 0.5 97 ) ( -145.5 0.5 97 ) berlin_floors_wood_dirty_white1 128 128 95 -18 180 0 lightmap_gray 16384 16384 1991 305 -90 0
+ ( -44 3 3 ) ( -44 -3 3 ) ( -46 -3 1 ) caulk 64 -64 94 -18 180 0 lightmap_gray 16384 -16384 46 0 -180 0
+ ( -4 -3 3 ) ( -4 3 3 ) ( -2 3 1 ) caulk 64 64 47 -10 0 0 lightmap_gray 16384 16384 1991 1356 0 0
+ ( -44 -3 3 ) ( -44 3 3 ) ( -3 3 3 ) berlin_floors_wood_dirty_white1 128 -128 95 -9 180 0 lightmap_gray 16384 -16384 0 -49 90 0
+}
+// brush 8
+ {
+  mesh
+  {
+   seelow_wall_plaster_white03
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -48 -4 0 t -408.57596 -213.76003 -3 0.25
+	v -48 4 -0 t -408.57596 -277.76004 -3 -0.25
+   )
+   (
+	v -0 -4 -0 t -24.576 -213.76003 -0 0.25
+	v -0 4 -0 t -24.576 -277.76004 0 -0.25
+   )
+  }
+ }
+// brush 9
+ {
+  mesh
+  {
+   seelow_wall_plaster_white03
+   lightmap_gray
+   smoothing smoothing_hard
+   9 2 0 8
+   (
+	v -48 4 48 t -449.53589 -294.1441 -3 -0.25
+	v -48 -4 48 t -449.53589 -230.14404 -3 0.25
+   )
+   (
+	v -42 4 51.5 t -401.53589 -294.1441 -2.625 -0.25
+	v -42 -4 51.5 t -401.53589 -230.14404 -2.625 0.25
+   )
+   (
+	v -36 4 54 t -353.53589 -294.1441 -2.25 -0.25
+	v -36 -4 54 t -353.53589 -230.14404 -2.25 0.25
+   )
+   (
+	v -30 4 55.5 t -305.53592 -294.1441 -1.875 -0.25
+	v -30 -4 55.5 t -305.53592 -230.14404 -1.875 0.25
+   )
+   (
+	v -24 4 56 t -257.53601 -294.1441 -1.5 -0.25
+	v -24 -4 56 t -257.53601 -230.14404 -1.5 0.25
+   )
+   (
+	v -18 4 55.5 t -209.53601 -294.1441 -1.125 -0.25
+	v -18 -4 55.5 t -209.53601 -230.14404 -1.125 0.25
+   )
+   (
+	v -12 4 54 t -161.53601 -294.1441 -0.75 -0.25
+	v -12 -4 54 t -161.53601 -230.14404 -0.75 0.25
+   )
+   (
+	v -6 4 51.5 t -113.53601 -294.1441 -0.375 -0.25
+	v -6 -4 51.5 t -113.53601 -230.14404 -0.375 0.25
+   )
+   (
+	v 0 4 48 t -65.536003 -294.1441 0 -0.25
+	v 0 -4 48 t -65.536003 -230.14404 0 0.25
+   )
+  }
+ }
+// brush 10
+ {
+  mesh
+  {
+   seelow_wall_plaster_white03
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -0 4 -0 t 23.807999 -106.49601 0.25 -15.5
+	v 0 4 48 t 23.807999 -490.49588 0.25 -19
+   )
+   (
+	v -0 -4 -0 t -40.192001 -106.49601 -0.25 -15.5
+	v 0 -4 48 t -40.192001 -490.49588 -0.25 -19
+   )
+  }
+ }
+// brush 11
+ {
+  mesh
+  {
+   seelow_wall_plaster_white03
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -48 4 48 t 23.807999 -490.49588 0.25 -19
+	v -48 4 -0 t 23.807999 -106.49601 0.25 -15.5
+   )
+   (
+	v -48 -4 48 t -40.192001 -490.49588 -0.25 -19
+	v -48 -4 0 t -40.192001 -106.49601 -0.25 -15.5
+   )
+  }
+ }
+// brush 12
+{
+  contents weaponClip;
+ ( -4 3.25 19.5 ) ( -4.25 -4.25 19.5 ) ( -44.25 -2.25 26.75 ) seelow_trim_wood_old_worn 128 32 1410.6223 -733.76532 -177.19997 0 lightmap_gray 16383.893 16383.963 965.22345 1282.0085 -91.600174 -4.3608547e-005
+ ( -44.25 -2.25 26.75 ) ( -44.25 -2.25 24 ) ( -43.75 5.25 24 ) seelow_trim_wood_old_worn 128.36662 -32 964.27716 -242.25 180 0.0045609907 lightmap_gray 16352.564 -16384 962.32434 -235.25 180 -0.0060147373
+ ( -4.25 -4.25 19.5 ) ( -4.25 -4.25 16.5 ) ( -44.25 -2.25 24 ) seelow_trim_wood_old_worn 128.32843 32 -1265.7511 242.25 0 -0.00044389206 lightmap_gray 16348.595 16384 -1279.4611 235.25 0 -0.0015092329
+ ( -4 3.25 19.5 ) ( -4 3.25 16.5 ) ( -4.25 -4.25 16.5 ) seelow_trim_wood_old_worn 128.35312 -32 969.89545 -242.25 180 0.0045623779 lightmap_gray 16350.635 -16384 963.12732 -235.25 180 -0.0059407554
+ ( -43.75 5.25 26.75 ) ( -43.75 5.25 24 ) ( -4 3.25 16.5 ) seelow_trim_wood_old_worn 128.34341 32 -1264.6971 242.25 0 -0.00043279474 lightmap_gray 16349.604 16384 -1279.1189 235.25 0 -0.001731179
+ ( -43.75 5.25 24 ) ( -44.25 -2.25 24 ) ( -4.25 -4.25 16.5 ) seelow_trim_wood_old_worn 128 32 1410.6226 -733.75 -177.19958 0 lightmap_gray 16384.02 16383.908 965.20636 1260.0055 -91.600021 0
+}
+}
+// entity 1
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "2.37018 86.8561 8.85704"
+"origin" "-15.7 -0.3 21.6"
+"modelscale" ".75"
+}
+// entity 2
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "358.15 93.4759 179.867"
+"origin" "-32.9 -0.3 30.9"
+"modelscale" ".75"
+}
+// entity 3
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "3.47422 271.853 89.9799"
+"origin" "-3.4 -0.2 34.5"
+"modelscale" ".75"
+}
+// entity 4
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "10.8636 355.902 3.68996"
+"origin" "-16.1 -3.3 26.6"
+"modelscale" ".75"
+}
+// entity 5
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "348.696 82.6852 -11.1572"
+"origin" "-19.7 0.4 32.4"
+"modelscale" ".75"
+}
+// entity 6
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "357.497 355.972 4.63967"
+"origin" "-35.7 1.2 29.8"
+"modelscale" ".75"
+}
+// entity 7
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "349.945 81.0389 -2.29211"
+"origin" "-33.2 0.4 36.8"
+"modelscale" ".75"
+}
+// entity 8
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "8.24486 100.648 -171.714"
+"origin" "-16.7 0.4 45.6"
+"modelscale" ".75"
+}
+// entity 9
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "1.79466 86.4958 -1.03287"
+"origin" "-14.1 -0.3 2.6"
+"modelscale" ".75"
+}
+// entity 10
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "3.65714 86.773 -134.154"
+"origin" "-35.7 0.6 17.5"
+"modelscale" ".65"
+}
+// entity 11
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "1.68509 18.371 4.34633"
+"origin" "-31.3 0.4 2.8"
+"modelscale" ".75"
+}
+// entity 12
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "4.76739 180.57 -177.802"
+"origin" "-24.9 0.1 13.5"
+"modelscale" ".75"
+}
+// entity 13
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "2.79898 87.2309 17.1544"
+"origin" "-14.7 -0.3 10.5"
+"modelscale" ".75"
+}
+// entity 14
+{
+"classname" "misc_model"
+"model" "static_seelow_sandbag"
+"angles" "305.234 359.015 2.95466"
+"origin" "-38.1 0.1 6.1"
+"modelscale" ".6"
+}

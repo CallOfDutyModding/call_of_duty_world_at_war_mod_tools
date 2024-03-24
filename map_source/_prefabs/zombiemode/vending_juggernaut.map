@@ -1,0 +1,66 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 9.5 23 -9 ) ( -20.5 23 -9 ) ( -20.5 -10 -9 ) clip_player 64 64 -0.5 -4 0 0 lightmap_gray 16384 16384 -0.5 -4 0 0
+ ( -21 -10 96 ) ( -21 23 96 ) ( 9 23 96 ) clip_player 64 64 -0.5 -4 0 0 lightmap_gray 16384 16384 -0.5 -4 0 0
+ ( -20.5 -14 94 ) ( 9.5 -14 94 ) ( 9.5 -14 -9 ) clip_player 64 64 -0.5 -0.5 0 0 lightmap_gray 16384 16384 -0.5 -0.5 0 0
+ ( 11.5 -10 94 ) ( 11.5 23 94 ) ( 11.5 23 -9 ) clip_player 64 64 4 -0.5 0 0 lightmap_gray 16384 16384 4 -0.5 0 0
+ ( 9.5 23 94 ) ( -20.5 23 94 ) ( -20.5 23 -9 ) clip_player 64 64 -0.5 -0.5 0 0 lightmap_gray 16384 16384 -0.5 -0.5 0 0
+ ( -20.5 23 93.5 ) ( -20.5 -10 93.5 ) ( -20.5 -10 -9.5 ) clip_player 64 64 4 -0.5 0 0 lightmap_gray 16384 16384 4 -0.5 0 0
+}
+}
+// entity 1
+{
+"script_string" "jugg_perk"
+"target" "vending_jugg"
+"targetname" "zombie_vending"
+"script_noteworthy" "specialty_armorvest"
+"classname" "trigger_use"
+// brush 0
+{
+ ( 9 31 -9.5 ) ( -19.5 31 -9.5 ) ( -19.5 -12.5 -9.5 ) trigger 64 64 0.5 -4.5 0 0 lightmap_gray 16384 16384 0.5 -4.5 0 0
+ ( -19.5 -12.5 93.5 ) ( -19.5 31 93.5 ) ( 9 31 93.5 ) trigger 64 64 0.5 -4.5 0 0 lightmap_gray 16384 16384 0.5 -4.5 0 0
+ ( -19 -14 93.5 ) ( 9.5 -14 93.5 ) ( 9.5 -14 -9.5 ) trigger 64 64 0.5 0 0 0 lightmap_gray 16384 16384 0.5 0 0 0
+ ( 10 -12.5 93.5 ) ( 10 31 93.5 ) ( 10 31 -9.5 ) trigger 64 64 4.5 0 0 0 lightmap_gray 16384 16384 4.5 0 0 0
+ ( 9 17.5 93.5 ) ( -19.5 17.5 93.5 ) ( -19.5 17.5 -9.5 ) trigger 64 64 0.5 0 0 0 lightmap_gray 16384 16384 0.5 0 0 0
+ ( -19.5 31 93.5 ) ( -19.5 -12.5 93.5 ) ( -19.5 -12.5 -9.5 ) trigger 64 64 4.5 0 0 0 lightmap_gray 16384 16384 4.5 0 0 0
+}
+}
+// entity 2
+{
+"script_string" "jugg_perk"
+"classname" "script_model"
+"model" "zombie_vending_jugg"
+"origin" "-4.5 4.0 -5.0"
+"targetname" "vending_jugg"
+}
+// entity 3
+{
+"script_string" "jugg_perk"
+"origin" "-4.0 0.0 81.0"
+"targetname" "perksacola"
+"script_sound" "mx_jugger_jingle"
+"classname" "script_struct"
+}
+// entity 4
+{
+"script_string" "jugg_perk"
+"script_sound" "perks_rattle"
+"targetname" "audio_bump_trigger"
+"script_activated" "1"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( -24 29 -7 ) ( -32 29 -7 ) ( -32 21 -7 ) trigger 64 64 4 13 0 0 lightmap_gray 16384 16384 4 13 0 0
+ ( -33 21 80 ) ( -33 29 80 ) ( -25 29 80 ) trigger 64 64 4 13 0 0 lightmap_gray 16383.934 16384 4 13 0 0
+ ( 20 -16 93 ) ( 28 -16 93 ) ( 28 -16 -35 ) trigger 64 64 4 -650 0 0 lightmap_gray 16384 16384 4 -650 0 0
+ ( 12 -8 93 ) ( 12 0 93 ) ( 12 0 -35 ) trigger 64 64 -13 -650 0 1.0172526e-005 lightmap_gray 16384 16384 -13 -650 0 1.0172526e-005
+ ( -25 23 93 ) ( -33 23 93 ) ( -33 23 -35 ) trigger 64 64 4 -650 0 0 lightmap_gray 16384 16384 4 -650 0 0
+ ( -21 29 93 ) ( -21 21 93 ) ( -21 21 -35 ) trigger 64 64 -13 -650 0 0 lightmap_gray 16384 16384 -13 -650 0 0
+}
+}

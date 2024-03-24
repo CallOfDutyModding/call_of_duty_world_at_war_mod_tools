@@ -1,0 +1,8 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/MP_Arena_Test.d3dbsp
+gfx_map,maps/MP_Arena_Test.d3dbsp
+sound,common,MP_Arena_Test,all_sp
+sound,generic,MP_Arena_Test,all_sp
+sound,voiceovers,MP_Arena_Test,all_sp
+sound,requests,MP_Arena_Test,all_sp

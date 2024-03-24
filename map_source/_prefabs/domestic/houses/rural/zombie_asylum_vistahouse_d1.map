@@ -1,0 +1,1030 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents nonColliding;
+ ( 48 -216 136 ) ( -160 -216 136 ) ( -160 -224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 136 ) ( -160 -224 136 ) ( 0 -224 320 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -216 320 ) ( -160 -216 136 ) ( 48 -216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -224 320 ) ( -160 -224 136 ) ( -160 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -216 320 ) ( 48 -216 264 ) ( 48 -224 264 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 264 ) ( 48 -216 136 ) ( 48 -224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents nonColliding;
+ ( 48 -216 238 ) ( 48 -224 238 ) ( 60 -224 238 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 58 -216 250 ) ( 58 -224 250 ) ( 48 -224 264 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 264 ) ( 64 -224 264 ) ( 64 -224 216 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 60 -216 238 ) ( 60 -224 238 ) ( 58 -224 250 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 -216 264 ) ( 48 -216 264 ) ( 48 -216 216 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 238 ) ( 48 -216 238 ) ( 48 -216 264 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( 48 -224 226 ) ( 70 -224 226 ) ( 70 -216 226 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 60 -224 238 ) ( 48 -224 238 ) ( 48 -216 238 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 70 -224 226 ) ( 48 -224 226 ) ( 48 -224 238 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -216 234 ) ( 66 -224 234 ) ( 60 -224 238 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 226 ) ( 70 -216 226 ) ( 64 -216 234 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 226 ) ( 48 -216 226 ) ( 48 -216 238 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -224 234 ) ( 66 -216 234 ) ( 70 -216 226 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( 68 -224 212 ) ( 68 -216 212 ) ( 62 -216 208 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 60 -216 226 ) ( 70 -216 226 ) ( 70 -224 226 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -224 216 ) ( 62 -224 212 ) ( 60 -224 212 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 68 -216 212 ) ( 68 -224 212 ) ( 70 -224 226 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 62 -216 212 ) ( 66 -216 216 ) ( 70 -216 226 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 212 ) ( 48 -216 226 ) ( 48 -224 226 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 60 -224 208 ) ( 62 -224 208 ) ( 62 -216 208 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 58 -224 194 ) ( 58 -216 194 ) ( 48 -216 194 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 208 ) ( 48 -216 208 ) ( 62 -216 208 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 208 ) ( 62 -224 208 ) ( 62 -224 194 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 58 -216 194 ) ( 58 -224 194 ) ( 62 -224 208 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 62 -216 208 ) ( 48 -216 208 ) ( 48 -216 194 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 208 ) ( 48 -224 208 ) ( 48 -224 194 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 64 -224 186 ) ( 64 -216 186 ) ( 48 -216 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 194 ) ( 48 -216 194 ) ( 58 -216 194 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 194 ) ( 58 -224 194 ) ( 58 -224 186 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 -216 186 ) ( 64 -224 186 ) ( 58 -224 194 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 58 -216 194 ) ( 48 -216 194 ) ( 48 -216 186 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 194 ) ( 48 -224 194 ) ( 48 -224 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 6
+{
+  contents nonColliding;
+ ( 48 -216 168 ) ( 48 -224 168 ) ( 82 -224 168 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 -224 186 ) ( 48 -224 186 ) ( 48 -216 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 74 -224 180 ) ( 48 -224 180 ) ( 48 -224 186 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 -224 186 ) ( 64 -216 186 ) ( 74 -216 182 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 180 ) ( 74 -216 180 ) ( 74 -216 182 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 168 ) ( 48 -216 168 ) ( 48 -216 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 -216 168 ) ( 82 -224 168 ) ( 74 -224 182 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 7
+{
+  contents nonColliding;
+ ( 48 -216 150 ) ( 48 -224 150 ) ( 102 -224 150 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 -224 168 ) ( 48 -224 168 ) ( 48 -216 168 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 -224 156 ) ( 48 -224 156 ) ( 48 -224 168 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 82 -224 168 ) ( 82 -216 168 ) ( 96 -216 160 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 156 ) ( 96 -216 156 ) ( 96 -216 160 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 150 ) ( 48 -216 150 ) ( 48 -216 168 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 102 -216 150 ) ( 102 -224 150 ) ( 96 -224 160 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 8
+{
+  contents nonColliding;
+ ( 96 -224 136 ) ( 96 -216 136 ) ( 48 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 150 ) ( 48 -216 150 ) ( 102 -216 150 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -224 150 ) ( 102 -224 150 ) ( 102 -224 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 -216 136 ) ( 96 -224 136 ) ( 102 -224 150 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 102 -216 150 ) ( 48 -216 150 ) ( 48 -216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 -216 150 ) ( 48 -224 150 ) ( 48 -224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 9
+{
+  contents nonColliding;
+ ( 160 248 0 ) ( 152 248 0 ) ( 152 -200 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -176 136 ) ( 152 272 136 ) ( 160 272 136 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -224 288 ) ( 160 224 288 ) ( 160 224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 136 ) ( 152 216 0 ) ( 160 224 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 0 ) ( 152 216 136 ) ( 152 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 160 26 ) ( 32 160 36 ) ( 64 160 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 10
+{
+  contents nonColliding;
+ ( 160 -82 0 ) ( 152 -82 0 ) ( 152 -96 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -82 122 ) ( 160 -82 122 ) ( 160 -96 128 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -224 288 ) ( 160 224 288 ) ( 160 224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 0 ) ( 152 216 136 ) ( 152 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -96 20 ) ( 32 -96 26 ) ( 64 -96 26 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -82 0 ) ( 160 -82 0 ) ( 160 -82 122 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 11
+{
+  contents nonColliding;
+ ( 160 248 0 ) ( 152 248 0 ) ( 152 -200 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -176 136 ) ( 152 272 136 ) ( 160 272 136 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -224 288 ) ( 160 224 288 ) ( 160 224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 0 ) ( 152 216 136 ) ( 152 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 24 28 ) ( 32 24 32 ) ( 64 24 32 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 88 36 ) ( 32 88 28 ) ( 64 88 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 12
+{
+  contents nonColliding;
+ ( 152 -176 136 ) ( 152 272 136 ) ( 160 272 136 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -224 288 ) ( 160 224 288 ) ( 160 224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 0 ) ( 152 216 136 ) ( 152 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 88 116 ) ( 32 88 124 ) ( 64 88 124 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 160 36 ) ( 32 160 26 ) ( 64 160 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -104 112 ) ( 32 -112 112 ) ( 64 -112 112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 13
+{
+  contents nonColliding;
+ ( 152 -176 136 ) ( 152 272 136 ) ( 160 272 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -224 288 ) ( 160 224 288 ) ( 160 224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 0 ) ( 152 216 136 ) ( 152 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -30 118 ) ( 32 -30 122 ) ( 64 -30 122 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 24 32 ) ( 32 24 28 ) ( 64 24 32 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -100 120 ) ( 32 -108 120 ) ( 64 -108 120 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 14
+{
+  contents nonColliding;
+ ( 208 -224 0 ) ( 208 -216 0 ) ( -240 -216 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -216 -216 136 ) ( 232 -216 136 ) ( 232 -224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 0 ) ( -152 -216 136 ) ( -160 -224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -264 -224 288 ) ( 184 -224 288 ) ( 184 -224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 176 -216 0 ) ( 176 -216 136 ) ( -256 -216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -96 56 ) ( 32 -96 62 ) ( 32 -64 62 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 15
+{
+  contents nonColliding;
+ ( -216 -216 136 ) ( 232 -216 136 ) ( 232 -224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -264 -224 288 ) ( 184 -224 288 ) ( 184 -224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 176 -216 0 ) ( 176 -216 136 ) ( -256 -216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -96 62 ) ( 32 -96 56 ) ( 32 -64 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 -96 36 ) ( 96 -96 40 ) ( 96 -64 40 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 54 -96 120 ) ( 64 -96 120 ) ( 54 -64 120 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 16
+{
+  contents nonColliding;
+ ( 208 -224 0 ) ( 208 -216 0 ) ( -240 -216 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -264 -224 288 ) ( 184 -224 288 ) ( 184 -224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 176 -216 0 ) ( 176 -216 136 ) ( -256 -216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -96 62 ) ( 32 -96 56 ) ( 32 -64 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 80 -96 36 ) ( 80 -96 40 ) ( 80 -64 40 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 70 -96 36 ) ( 60 -96 36 ) ( 60 -64 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 17
+{
+  contents nonColliding;
+ ( 232 224 136 ) ( 232 216 136 ) ( -216 216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 64 62 ) ( 32 96 56 ) ( 32 96 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 64 40 ) ( 96 96 40 ) ( 96 96 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 54 64 128 ) ( 64 96 128 ) ( 54 96 128 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 18
+{
+  contents nonColliding;
+ ( -240 216 0 ) ( 208 216 0 ) ( 208 224 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 232 224 136 ) ( 232 216 136 ) ( -216 216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 224 0 ) ( 152 216 0 ) ( 152 216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 64 40 ) ( 96 96 36 ) ( 96 96 40 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 19
+{
+  contents nonColliding;
+ ( -240 216 0 ) ( 208 216 0 ) ( 208 224 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 64 62 ) ( 32 96 56 ) ( 32 96 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 64 40 ) ( 96 96 40 ) ( 96 96 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 60 64 36 ) ( 60 96 36 ) ( 70 96 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 20
+{
+  contents nonColliding;
+ ( -152 -200 0 ) ( -152 248 0 ) ( -160 248 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -32 34 ) ( -32 -32 34 ) ( -32 -32 30 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 16 32 ) ( -32 16 28 ) ( -32 16 32 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -108 36 ) ( -32 -100 36 ) ( -32 -108 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 21
+{
+  contents nonColliding;
+ ( -160 272 136 ) ( -152 272 136 ) ( -152 -176 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -32 122 ) ( -32 -32 122 ) ( -32 -32 118 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -8 32 ) ( -32 -8 28 ) ( -32 -8 32 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -108 120 ) ( -32 -108 120 ) ( -32 -100 120 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 22
+{
+  contents nonColliding;
+ ( -160 272 136 ) ( -152 272 136 ) ( -152 -176 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 128 124 ) ( -32 128 124 ) ( -32 128 116 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 160 36 ) ( -32 160 26 ) ( -32 160 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -108 120 ) ( -32 -108 120 ) ( -32 -100 120 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 23
+{
+  contents nonColliding;
+ ( -152 -200 0 ) ( -152 248 0 ) ( -160 248 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 272 136 ) ( -152 272 136 ) ( -152 -176 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 0 ) ( -152 216 0 ) ( -152 216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 160 36 ) ( -32 160 36 ) ( -32 160 26 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 24
+{
+  contents nonColliding;
+ ( -152 -200 0 ) ( -152 248 0 ) ( -160 248 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 128 40 ) ( -32 128 40 ) ( -32 128 32 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 160 36 ) ( -32 160 26 ) ( -32 160 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -108 36 ) ( -32 -100 36 ) ( -32 -108 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 25
+{
+  contents nonColliding;
+ ( 160 -74 102 ) ( 152 -74 102 ) ( 152 -82 98 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -70 112 ) ( 160 -70 112 ) ( 160 -82 122 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -82 122 ) ( 160 -82 122 ) ( 160 -82 98 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -82 122 ) ( 160 -72 122 ) ( 160 -72 98 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -74 102 ) ( 160 -74 102 ) ( 160 -70 112 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -72 122 ) ( 152 -82 122 ) ( 152 -82 98 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 26
+{
+  contents nonColliding;
+ ( 152 -82 78 ) ( 160 -82 78 ) ( 160 -72 78 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -74 90 ) ( 160 -74 90 ) ( 160 -82 98 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -82 78 ) ( 152 -82 78 ) ( 152 -82 98 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -82 98 ) ( 160 -76 98 ) ( 160 -76 64 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -72 78 ) ( 160 -72 78 ) ( 160 -74 90 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -76 98 ) ( 152 -82 98 ) ( 152 -82 64 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 27
+{
+  contents nonColliding;
+ ( 160 -66 72 ) ( 152 -66 72 ) ( 152 -82 72 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -72 78 ) ( 160 -72 78 ) ( 160 -82 78 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -82 78 ) ( 160 -82 78 ) ( 160 -82 72 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -82 78 ) ( 160 -70 78 ) ( 160 -70 72 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -66 72 ) ( 160 -66 72 ) ( 160 -72 78 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -70 78 ) ( 152 -82 78 ) ( 152 -82 72 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 28
+{
+  contents nonColliding;
+ ( 160 -52 62 ) ( 152 -52 62 ) ( 152 -82 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -66 72 ) ( 160 -66 72 ) ( 160 -82 72 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -82 72 ) ( 160 -82 72 ) ( 160 -82 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -82 72 ) ( 160 -60 72 ) ( 160 -60 62 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -52 62 ) ( 160 -52 62 ) ( 160 -66 72 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -60 72 ) ( 152 -82 72 ) ( 152 -82 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 29
+{
+  contents nonColliding;
+ ( 152 -34 62 ) ( 162 -34 62 ) ( 162 -24 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -28 94 ) ( 160 -28 94 ) ( 160 -32 84 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -32 84 ) ( 160 -32 84 ) ( 160 -32 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -24 62 ) ( 160 -34 62 ) ( 160 -34 80 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 150 -24 62 ) ( 160 -24 62 ) ( 160 -24 94 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -26 94 ) ( 152 -34 80 ) ( 152 -34 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -28 94 ) ( 152 -28 94 ) ( 152 -24 94 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 30
+{
+  contents nonColliding;
+ ( 160 -24 94 ) ( 150 -24 94 ) ( 150 -28 94 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -30 120 ) ( 152 -30 120 ) ( 152 -24 120 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -30 120 ) ( 160 -30 120 ) ( 160 -28 94 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -28 120 ) ( 160 -24 120 ) ( 160 -24 94 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -24 120 ) ( 150 -24 120 ) ( 150 -24 94 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -24 120 ) ( 152 -28 120 ) ( 152 -28 94 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 31
+{
+  contents nonColliding;
+ ( 152 -52 62 ) ( 162 -52 62 ) ( 162 -42 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 150 -42 76 ) ( 160 -42 76 ) ( 160 -50 74 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -52 62 ) ( 150 -52 62 ) ( 150 -50 74 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -42 62 ) ( 160 -52 62 ) ( 160 -50 74 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -52 62 ) ( 152 -42 62 ) ( 152 -42 78 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -42 62 ) ( 162 -42 62 ) ( 162 -42 78 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 32
+{
+  contents nonColliding;
+ ( 162 -42 62 ) ( 162 -32 62 ) ( 152 -32 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -42 76 ) ( 150 -42 76 ) ( 150 -32 84 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -32 62 ) ( 160 -42 62 ) ( 160 -42 78 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 150 -32 62 ) ( 160 -32 62 ) ( 160 -32 84 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -42 62 ) ( 152 -32 62 ) ( 152 -32 84 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 162 -42 62 ) ( 152 -42 62 ) ( 152 -42 78 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 33
+{
+  contents nonColliding;
+ ( 152 -34 124 ) ( 160 -34 124 ) ( 160 -30 120 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -36 132 ) ( 152 -36 132 ) ( 152 -30 136 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -36 132 ) ( 160 -36 132 ) ( 160 -34 124 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -38 136 ) ( 160 -30 136 ) ( 160 -30 120 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -30 136 ) ( 152 -30 136 ) ( 152 -30 120 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -30 136 ) ( 152 -38 136 ) ( 152 -38 120 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 34
+{
+  contents nonColliding;
+ ( 160 24 136 ) ( 152 24 136 ) ( 152 -30 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -20 142 ) ( 152 -20 142 ) ( 152 16 140 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -20 142 ) ( 160 -20 142 ) ( 160 -30 136 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -30 144 ) ( 160 24 144 ) ( 160 24 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 16 140 ) ( 152 16 140 ) ( 152 24 136 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 24 144 ) ( 152 -30 144 ) ( 152 -30 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 35
+{
+  contents nonColliding;
+ ( 160 -34 0 ) ( 148 -34 0 ) ( 148 -84 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 148 -82 62 ) ( 148 -32 62 ) ( 160 -32 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 148 -82 62 ) ( 160 -82 62 ) ( 160 -82 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -82 62 ) ( 160 -32 62 ) ( 160 -32 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -24 62 ) ( 148 -24 62 ) ( 148 -24 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 -32 62 ) ( 152 -82 62 ) ( 152 -82 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 36
+{
+  contents nonColliding;
+ ( 4 -162 292 ) ( -4 -162 292 ) ( -4 -216 300 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -160 300 ) ( 4 -160 300 ) ( 4 -216 308 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -216 308 ) ( 4 -216 308 ) ( 4 -216 300 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -160 300 ) ( 4 -160 292 ) ( 4 -216 300 ) berlin_wall_wood_slats 128 128 -4 -3 -8 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -160 292 ) ( -4 -160 300 ) ( -4 -216 308 ) caulk 128 128 -4 -3 -8 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -162 292 ) ( 4 -162 292 ) ( 4 -160 300 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 37
+{
+  contents nonColliding;
+ ( 4 -61 262 ) ( -4 -61 262 ) ( -4 -162 292 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -59 270 ) ( 4 -59 270 ) ( 4 -160 300 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -59 270 ) ( 4 -59 262 ) ( 4 -160 292 ) berlin_wall_wood_slats 128 128 0 -3 -16 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -59 262 ) ( -4 -59 270 ) ( -4 -160 300 ) caulk 128 128 0 -3 -16 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -162 292 ) ( -4 -162 292 ) ( -4 -160 300 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -61 262 ) ( 4 -61 262 ) ( 4 -59 270 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 38
+{
+  contents nonColliding;
+ ( -4 -61 262 ) ( 4 -61 262 ) ( 4 23 257 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 23 265 ) ( 4 23 265 ) ( 4 -59 270 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 23 265 ) ( 4 23 257 ) ( 4 -59 262 ) berlin_wall_wood_slats 128 128 -3 -2 -4 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 23 257 ) ( -4 23 265 ) ( -4 -59 270 ) caulk 128 128 -3 -2 -4 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -61 262 ) ( -4 -61 262 ) ( -4 -59 270 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 23 264 ) ( 32 23 258 ) ( 64 23 264 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 39
+{
+  contents nonColliding;
+ ( 4 135 276 ) ( -4 135 276 ) ( -4 64 259 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 135 284 ) ( 4 135 284 ) ( 4 64 267 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 135 284 ) ( 4 135 276 ) ( 4 64 259 ) berlin_wall_wood_slats 128 128 -2 -3 14 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 135 276 ) ( -4 135 284 ) ( -4 64 267 ) caulk 128 128 -2 -3 14 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 64 262 ) ( 32 64 266 ) ( 64 64 266 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 135 284 ) ( 32 135 280 ) ( 64 135 284 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 40
+{
+  contents nonColliding;
+ ( -4 135 276 ) ( 4 135 276 ) ( 4 216 300 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 135 284 ) ( -4 135 284 ) ( -4 216 308 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 135 276 ) ( 4 135 284 ) ( 4 216 308 ) berlin_wall_wood_slats 128 128 -8 2 16 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 216 308 ) ( -8 216 308 ) ( -8 216 300 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 135 284 ) ( -4 135 276 ) ( -4 216 300 ) caulk 128 128 -8 2 16 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 135 280 ) ( 32 135 284 ) ( 64 135 284 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 41
+{
+  contents nonColliding;
+ ( 4 64 259 ) ( -4 64 259 ) ( -4 23 257 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 64 267 ) ( 4 64 267 ) ( 4 23 265 ) berlin_wall_wood_slats 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 64 267 ) ( 4 64 259 ) ( 4 23 257 ) berlin_wall_wood_slats 128 128 -2 1 4 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 64 259 ) ( -4 64 267 ) ( -4 23 265 ) caulk 128 128 -2 1 4 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 23 258 ) ( 32 23 264 ) ( 64 23 264 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 64 266 ) ( 32 64 262 ) ( 64 64 266 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 42
+{
+  contents nonColliding;
+ ( -144 162 134 ) ( -144 156 134 ) ( -4 156 284 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 156 140 ) ( -144 162 140 ) ( -4 162 290 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 156 134 ) ( -144 156 140 ) ( -4 156 290 ) berlin_wall_wood_slats 128 128 -15 -4 46 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 156 296 ) ( -4 164 296 ) ( -4 164 260 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 162 140 ) ( -144 162 134 ) ( -4 162 284 ) berlin_wall_wood_slats 128 128 -15 -4 46 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 152 146 ) ( -144 144 146 ) ( -144 144 110 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 43
+{
+  contents nonColliding;
+ ( -4 -36 262 ) ( -4 -30 262 ) ( -144 -30 134 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -30 268 ) ( -4 -36 268 ) ( -144 -36 140 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -36 268 ) ( -4 -36 262 ) ( -144 -36 134 ) berlin_wall_wood_slats 128 128 -15 -4 42 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -36 274 ) ( -4 -28 274 ) ( -4 -28 238 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -30 262 ) ( -4 -30 268 ) ( -144 -30 140 ) berlin_wall_wood_slats 128 128 -15 -4 42 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 -40 146 ) ( -144 -48 146 ) ( -144 -48 110 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 44
+{
+  contents nonColliding;
+ ( -4 -100 274 ) ( -4 -94 274 ) ( -144 -94 134 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -94 280 ) ( -4 -100 280 ) ( -144 -100 140 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -100 280 ) ( -4 -100 274 ) ( -144 -100 134 ) berlin_wall_wood_slats 128 128 -15 -4 44 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -100 286 ) ( -4 -92 286 ) ( -4 -92 250 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 -94 274 ) ( -4 -94 280 ) ( -144 -94 140 ) berlin_wall_wood_slats 128 128 -15 -4 44 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 -104 146 ) ( -144 -112 146 ) ( -144 -112 110 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 45
+{
+  contents nonColliding;
+ ( -4 -164 293 ) ( -4 -158 293 ) ( -144 -158 133 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 1 0 0
+ ( -4 -158 299 ) ( -4 -164 299 ) ( -144 -164 139 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 1 0 0
+ ( -4 -164 299 ) ( -4 -164 293 ) ( -144 -164 133 ) berlin_wall_wood_slats 128 128 -15 -4 48 0 lightmap_gray 16384 16383.977 0 1 0 0
+ ( -4 -164 305 ) ( -4 -156 305 ) ( -4 -156 269 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 1 0 0
+ ( -4 -158 293 ) ( -4 -158 299 ) ( -144 -158 139 ) berlin_wall_wood_slats 128 128 -15 -4 48 0 lightmap_gray 16384 16384.029 0 1 0 0
+ ( -144 -168 145 ) ( -144 -176 145 ) ( -144 -176 109 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 1 0 0
+}
+// brush 46
+{
+  contents nonColliding;
+ ( 144 34 133 ) ( 4 34 259 ) ( 4 28 259 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 28 139 ) ( 4 28 265 ) ( 4 34 265 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 28 133 ) ( 4 28 259 ) ( 4 28 265 ) berlin_wall_wood_slats 128 128 -21 2 138 0 lightmap_gray 16384 16384.041 0 1 0 0
+ ( 4 36 235 ) ( 4 36 271 ) ( 4 28 271 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 1 0 0
+ ( 144 34 139 ) ( 4 34 265 ) ( 4 34 259 ) berlin_wall_wood_slats 128 128 -21 2 138 0 lightmap_gray 16384 16384 0 1 0 0
+ ( 144 16 109 ) ( 144 16 145 ) ( 144 24 145 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 1 0 0
+}
+// brush 47
+{
+  contents nonColliding;
+ ( 144 98 134 ) ( 4 98 268 ) ( 4 92 268 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 92 140 ) ( 4 92 274 ) ( 4 98 274 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 92 134 ) ( 4 92 268 ) ( 4 92 274 ) berlin_wall_wood_slats 128 128 -15 -4 -44 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 100 244 ) ( 4 100 280 ) ( 4 92 280 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 98 140 ) ( 4 98 274 ) ( 4 98 268 ) berlin_wall_wood_slats 128 128 -15 -4 -44 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 80 110 ) ( 144 80 146 ) ( 144 88 146 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 48
+{
+  contents nonColliding;
+ ( 4 156 284 ) ( 144 156 134 ) ( 144 162 134 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 162 290 ) ( 144 162 140 ) ( 144 156 140 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 156 290 ) ( 144 156 140 ) ( 144 156 134 ) berlin_wall_wood_slats 128 128 -15 -4 134 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 164 260 ) ( 4 164 296 ) ( 4 156 296 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 162 284 ) ( 144 162 134 ) ( 144 162 140 ) berlin_wall_wood_slats 128 128 -15 -4 134 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 144 110 ) ( 144 144 146 ) ( 144 152 146 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 49
+{
+  contents nonColliding;
+ ( 52 -164 237 ) ( 52 -158 237 ) ( 4 -158 293 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 1 0 0
+ ( 144 -164 139 ) ( 4 -164 299 ) ( 4 -158 299 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 1 0 0
+ ( 144 -164 133 ) ( 4 -164 293 ) ( 4 -164 299 ) berlin_wall_wood_slats 128 128 -13 -3 130 0 lightmap_gray 16384 16383.977 0 1 0 0
+ ( 4 -156 269 ) ( 4 -156 305 ) ( 4 -164 305 ) caulk 128 128 -13 -3 90 0 lightmap_gray 16384 16384 0 1 0 0
+ ( 144 -158 139 ) ( 4 -158 299 ) ( 4 -158 293 ) berlin_wall_wood_slats 128 128 -13 -3 130 0 lightmap_gray 16384 16384.029 0 1 0 0
+ ( 52 -158 237 ) ( 52 -164 237 ) ( 54 -164 242 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 1 0 0
+}
+// brush 50
+{
+  contents nonColliding;
+ ( 144 -94 134 ) ( 4 -94 274 ) ( 4 -100 274 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 -100 140 ) ( 4 -100 280 ) ( 4 -94 280 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 -100 134 ) ( 4 -100 274 ) ( 4 -100 280 ) berlin_wall_wood_slats 128 128 -15 -4 136 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -92 250 ) ( 4 -92 286 ) ( 4 -100 286 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 -94 140 ) ( 4 -94 280 ) ( 4 -94 274 ) berlin_wall_wood_slats 128 128 -15 -4 136 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 76 -112 188 ) ( 76 -112 224 ) ( 76 -104 224 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 51
+{
+  contents nonColliding;
+ ( 66 -30 188 ) ( 66 -36 188 ) ( 144 -36 133 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -36 194 ) ( 66 -30 194 ) ( 144 -30 139 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -36 188 ) ( 66 -36 194 ) ( 144 -36 139 ) berlin_wall_wood_slats 128 128 -18 0 -34 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -30 194 ) ( 66 -30 188 ) ( 144 -30 133 ) berlin_wall_wood_slats 128 128 -18 0 -34 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 144 -30 133 ) ( 144 -36 133 ) ( 144 -36 139 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -36 188 ) ( 66 -30 188 ) ( 66 -30 194 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 52
+{
+  contents nonColliding;
+ ( 66 -36 188 ) ( 66 -30 188 ) ( 4 -30 262 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -30 194 ) ( 66 -36 194 ) ( 4 -36 268 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -36 194 ) ( 66 -36 188 ) ( 4 -36 262 ) berlin_wall_wood_slats 128 128 -15 -4 130 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 -36 262 ) ( 4 -30 262 ) ( 4 -30 268 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -30 188 ) ( 66 -30 194 ) ( 4 -30 268 ) berlin_wall_wood_slats 128 128 -15 -4 130 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 66 -30 188 ) ( 66 -36 188 ) ( 66 -36 194 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 53
+{
+  contents nonColliding;
+ ( -48 98 208 ) ( -48 92 208 ) ( -4 92 268 ) berlin_wall_wood_slats 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 92 214 ) ( -48 98 214 ) ( -4 98 274 ) caulk 128 128 -15 -4 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 92 208 ) ( -48 92 214 ) ( -4 92 274 ) berlin_wall_wood_slats 128 128 -14 0 54 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 98 268 ) ( -4 92 268 ) ( -4 92 274 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 98 214 ) ( -48 98 208 ) ( -4 98 268 ) berlin_wall_wood_slats 128 128 -14 0 54 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 92 208 ) ( -48 98 208 ) ( -48 98 214 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 54
+{
+  contents nonColliding;
+ ( 146 -48 -48 ) ( -14 -48 -48 ) ( -14 -208 -48 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -14 -208 0 ) ( -14 -48 0 ) ( 146 -48 0 ) berlin_floors_wood_hardwood2 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -14 -224 0 ) ( 146 -224 0 ) ( 146 -224 -16 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -208 0 ) ( 160 -48 0 ) ( 160 -48 -16 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 124 224 0 ) ( -36 224 0 ) ( -36 224 -16 ) berlin_wall_brick_bulletholes 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 -48 0 ) ( -160 -208 0 ) ( -160 -208 -16 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 55
+{
+  contents nonColliding;
+ ( 160 248 0 ) ( 152 248 0 ) ( 152 -200 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -224 288 ) ( 160 224 288 ) ( 160 224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 0 ) ( 152 216 136 ) ( 152 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -24 30 ) ( 32 -24 34 ) ( 64 -24 34 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 24 32 ) ( 32 24 28 ) ( 64 24 32 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -108 36 ) ( 32 -100 36 ) ( 64 -108 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 56
+{
+  contents nonColliding;
+ ( -152 -196 112 ) ( -152 252 112 ) ( -160 252 112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 272 136 ) ( -152 272 136 ) ( -152 -176 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -160 32 ) ( 0 -160 36 ) ( 32 -160 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -96 28 ) ( 0 -96 20 ) ( 32 -96 28 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 57
+{
+  contents nonColliding;
+ ( -152 -200 0 ) ( -152 248 0 ) ( -160 248 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 272 136 ) ( -152 272 136 ) ( -152 -176 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -64 -32 48 ) ( -32 -32 38 ) ( -32 -32 48 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -96 20 ) ( 0 -96 28 ) ( 32 -96 28 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 58
+{
+  contents nonColliding;
+ ( -152 -200 0 ) ( -152 248 0 ) ( -160 248 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 272 136 ) ( -152 272 136 ) ( -152 -176 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 -224 136 ) ( -152 -216 136 ) ( -152 -216 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -112 ) ( -160 224 288 ) ( -160 -224 288 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -216 136 ) ( -152 216 136 ) ( -152 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -160 36 ) ( 0 -160 32 ) ( 32 -160 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 59
+{
+  contents nonColliding;
+ ( 160 248 0 ) ( 152 248 0 ) ( 152 -200 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 160 -224 288 ) ( 160 224 288 ) ( 160 224 -112 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 152 216 0 ) ( 152 216 136 ) ( 152 -216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 24 -128 38 ) ( 24 -128 48 ) ( 56 -128 48 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -96 38 ) ( 32 -96 32 ) ( 64 -96 38 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 -108 36 ) ( 32 -100 36 ) ( 64 -108 36 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 60
+{
+  contents nonColliding;
+ ( -152 -188 0 ) ( -152 260 0 ) ( -160 260 0 ) caulk 64 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 272 112 ) ( -152 272 112 ) ( -152 -176 112 ) caulk 64 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 -136 ) ( -160 224 264 ) ( -160 -224 264 ) caulk 64 -112 32 -112 180 0 lightmap_gray 16384 16384 0 24 0 0
+ ( -156 -216 112 ) ( -156 216 112 ) ( -156 216 -24 ) okinawa_door_wood_metal_trim 64 -112 32 -112 180 0 lightmap_gray 16384 16384 0 24 0 0
+ ( 0 -160 8 ) ( 0 -160 12 ) ( 32 -160 12 ) caulk 64 128 0 8 0 0 lightmap_gray 16384 16384 0 24 0 0
+ ( 0 -96 4 ) ( 0 -96 -4 ) ( 32 -96 4 ) caulk 64 128 0 8 0 0 lightmap_gray 16384 16384 0 24 0 0
+}
+// brush 61
+{
+  contents nonColliding;
+ ( -48 216 150 ) ( -48 224 150 ) ( -102 224 150 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -82 224 168 ) ( -48 224 168 ) ( -48 216 168 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -96 224 156 ) ( -48 224 156 ) ( -48 224 168 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -82 224 168 ) ( -82 216 168 ) ( -96 216 160 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -48 216 156 ) ( -96 216 156 ) ( -96 216 160 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 224 150 ) ( -48 216 150 ) ( -48 216 168 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -102 216 150 ) ( -102 224 150 ) ( -96 224 160 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 62
+{
+  contents nonColliding;
+ ( -48 216 136 ) ( 160 216 136 ) ( 160 224 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -48 224 136 ) ( 160 224 136 ) ( 0 224 320 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( 0 216 320 ) ( 160 216 136 ) ( -48 216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( 0 224 320 ) ( 160 224 136 ) ( 160 216 136 ) berlin_trim_rock_rough_edged 128 16 0 0 90 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( 0 216 320 ) ( -48 216 264 ) ( -48 224 264 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 216 264 ) ( -48 216 136 ) ( -48 224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 63
+{
+  contents nonColliding;
+ ( -152 224 136 ) ( -152 216 136 ) ( -48 216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -48 224 150 ) ( -48 216 150 ) ( -102 216 150 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -48 224 150 ) ( -102 224 150 ) ( -102 224 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -152 216 136 ) ( -152 224 136 ) ( -102 224 150 ) berlin_trim_rock_rough_edged 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -102 216 150 ) ( -48 216 150 ) ( -48 216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 216 150 ) ( -48 224 150 ) ( -48 224 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 64
+{
+  contents nonColliding;
+ ( -48 216 168 ) ( -48 224 168 ) ( -82 224 168 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -64 224 186 ) ( -48 224 186 ) ( -48 216 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -74 224 180 ) ( -48 224 180 ) ( -48 224 186 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -64 224 186 ) ( -64 216 186 ) ( -74 216 182 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -48 216 180 ) ( -74 216 180 ) ( -74 216 182 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 224 168 ) ( -48 216 168 ) ( -48 216 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -82 216 168 ) ( -82 224 168 ) ( -74 224 182 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 65
+{
+  contents nonColliding;
+ ( -64 224 186 ) ( -64 216 186 ) ( -48 216 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -48 224 194 ) ( -48 216 194 ) ( -58 216 194 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 -180 0
+ ( -48 224 194 ) ( -58 224 194 ) ( -58 224 186 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -64 216 186 ) ( -64 224 186 ) ( -58 224 194 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -58 216 194 ) ( -48 216 194 ) ( -48 216 186 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 216 194 ) ( -48 224 194 ) ( -48 224 186 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 66
+{
+  contents nonColliding;
+ ( -58 224 194 ) ( -58 216 194 ) ( -48 216 194 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 -180 0
+ ( -48 224 208 ) ( -48 216 208 ) ( -62 216 208 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 -180 0
+ ( -48 224 208 ) ( -62 224 208 ) ( -62 224 194 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -58 216 194 ) ( -58 224 194 ) ( -62 224 208 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -62 216 208 ) ( -48 216 208 ) ( -48 216 194 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 216 208 ) ( -48 224 208 ) ( -48 224 194 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 67
+{
+  contents nonColliding;
+ ( -68 224 212 ) ( -68 216 212 ) ( -62 216 208 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -60 216 226 ) ( -70 216 226 ) ( -70 224 226 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -66 224 216 ) ( -62 224 212 ) ( -60 224 212 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -68 216 212 ) ( -68 224 212 ) ( -70 224 226 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -62 216 212 ) ( -66 216 216 ) ( -70 216 226 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 216 212 ) ( -48 216 226 ) ( -48 224 226 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -60 224 208 ) ( -62 224 208 ) ( -62 216 208 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+}
+// brush 68
+{
+  contents nonColliding;
+ ( -48 224 226 ) ( -70 224 226 ) ( -70 216 226 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -60 224 238 ) ( -48 224 238 ) ( -48 216 238 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -70 224 226 ) ( -48 224 226 ) ( -48 224 238 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -66 216 234 ) ( -66 224 234 ) ( -60 224 238 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -48 216 226 ) ( -70 216 226 ) ( -64 216 234 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 224 226 ) ( -48 216 226 ) ( -48 216 238 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -66 224 234 ) ( -66 216 234 ) ( -70 216 226 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 69
+{
+  contents nonColliding;
+ ( -48 216 238 ) ( -48 224 238 ) ( -60 224 238 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 180 0
+ ( -58 216 250 ) ( -58 224 250 ) ( -48 224 264 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 224 264 ) ( -64 224 264 ) ( -64 224 216 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -60 216 238 ) ( -60 224 238 ) ( -58 224 250 ) caulk 128 16 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -64 216 264 ) ( -48 216 264 ) ( -48 216 216 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+ ( -48 224 238 ) ( -48 216 238 ) ( -48 216 264 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 -16384 0 0 180 0
+}
+// brush 70
+{
+  contents nonColliding;
+ ( -148 32 132 ) ( -152 32 132 ) ( -152 -32 132 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -32 140 ) ( -152 32 140 ) ( -148 32 140 ) berlin_wall_wood_slats 128 128 -26 -7 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 -216 140 ) ( -140 -216 140 ) ( -140 -216 136 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 -32 144 ) ( -144 32 144 ) ( -144 32 140 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 32 140 ) ( -152 -32 140 ) ( -152 -32 136 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 8 136 ) ( -152 8 128 ) ( -120 8 136 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 71
+{
+  contents nonColliding;
+ ( -148 32 132 ) ( -152 32 132 ) ( -152 -32 132 ) berlin_wall_wood_slats 128 128 -26 -7 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 -32 140 ) ( -152 32 140 ) ( -148 32 140 ) berlin_wall_wood_slats 128 128 -26 -7 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -144 -32 144 ) ( -144 32 144 ) ( -144 32 140 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -136 216 140 ) ( -140 216 140 ) ( -140 216 136 ) berlin_wall_wood_slats 128 128 -26 -7 90 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 32 140 ) ( -152 -32 140 ) ( -152 -32 136 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -152 112 128 ) ( -152 112 136 ) ( -120 112 136 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 72
+{
+  contents nonColliding;
+ ( -4 28 259 ) ( -4 34 259 ) ( -144 34 133 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -110 28 170 ) ( -110 34 170 ) ( -4 34 265 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -4 28 265 ) ( -4 28 259 ) ( -144 28 133 ) berlin_wall_wood_slats 128 128 -21 -2 42 0 lightmap_gray 16384 16384.041 0 1 0 0
+ ( -4 28 271 ) ( -4 36 271 ) ( -4 36 235 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 1 0 0
+ ( -4 34 259 ) ( -4 34 265 ) ( -144 34 139 ) berlin_wall_wood_slats 128 128 -21 -2 42 0 lightmap_gray 16384 16384 0 1 0 0
+ ( -88 34 184 ) ( -88 28 184 ) ( -84 28 181 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 73
+{
+  contents nonColliding;
+ ( -48 92 208 ) ( -48 98 208 ) ( -144 98 134 ) berlin_wall_wood_slats 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 98 214 ) ( -48 92 214 ) ( -144 92 140 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 92 214 ) ( -48 92 208 ) ( -144 92 134 ) berlin_wall_wood_slats 128 128 -15 -2 38 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 98 208 ) ( -48 98 214 ) ( -144 98 140 ) berlin_wall_wood_slats 128 128 -15 -2 38 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -48 98 208 ) ( -48 92 208 ) ( -48 92 214 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -118 216 160 ) ( -114 216 156 ) ( -118 248 160 ) caulk 128 128 -15 -4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 74
+{
+  contents nonColliding;
+ ( -240 216 0 ) ( 208 216 0 ) ( 208 224 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 224 224 56 ) ( 224 216 56 ) ( -224 216 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 32 64 62 ) ( 32 96 62 ) ( 32 96 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 128 ) ( -8 -2715.25 104 ) ( -8 -2683.25 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 75
+{
+  contents nonColliding;
+ ( -240 216 0 ) ( 208 216 0 ) ( 208 224 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 232 224 136 ) ( 232 216 136 ) ( -216 216 136 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -160 224 136 ) ( -152 216 136 ) ( -152 216 0 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 104 ) ( -8 -2715.25 128 ) ( -8 -2683.25 128 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 76
+{
+  contents nonColliding;
+ ( -244 216 56 ) ( 204 216 56 ) ( 204 224 56 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 224 224 68 ) ( 224 216 68 ) ( -224 216 68 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 24 64 62 ) ( 24 96 62 ) ( 24 96 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 128 ) ( -8 -2715.25 104 ) ( -8 -2683.25 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 77
+{
+  contents nonColliding;
+ ( -244 216 68 ) ( 204 216 68 ) ( 204 224 68 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 220 224 76 ) ( 220 216 76 ) ( -228 216 76 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 16 64 62 ) ( 16 96 62 ) ( 16 96 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 128 ) ( -8 -2715.25 104 ) ( -8 -2683.25 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 78
+{
+  contents nonColliding;
+ ( -244 216 76 ) ( 204 216 76 ) ( 204 224 76 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 220 224 88 ) ( 220 216 88 ) ( -228 216 88 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 64 62 ) ( 20 96 62 ) ( 20 96 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 128 ) ( -8 -2715.25 104 ) ( -8 -2683.25 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 79
+{
+  contents nonColliding;
+ ( -244 216 88 ) ( 204 216 88 ) ( 204 224 88 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 220 224 96 ) ( 220 216 96 ) ( -228 216 96 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 12 64 62 ) ( 12 96 62 ) ( 12 96 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 128 ) ( -8 -2715.25 104 ) ( -8 -2683.25 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 80
+{
+  contents nonColliding;
+ ( -248 216 128 ) ( 200 216 128 ) ( 200 224 128 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 216 224 136 ) ( 216 216 136 ) ( -232 216 136 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 20 64 62 ) ( 20 96 62 ) ( 20 96 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 128 ) ( -8 -2715.25 104 ) ( -8 -2683.25 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 81
+{
+  contents nonColliding;
+ ( -252 216 116 ) ( 196 216 116 ) ( 196 224 116 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 216 224 128 ) ( 216 216 128 ) ( -232 216 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 4 64 62 ) ( 4 96 62 ) ( 4 96 56 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -2715.25 128 ) ( -8 -2715.25 104 ) ( -8 -2683.25 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 82
+{
+  contents nonColliding;
+ ( 232 224 128 ) ( 232 216 128 ) ( -216 216 128 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 184 224 -112 ) ( 184 224 288 ) ( -264 224 288 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -256 216 136 ) ( 176 216 136 ) ( 176 216 0 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 48 64 62 ) ( 48 96 56 ) ( 48 96 62 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 96 64 40 ) ( 96 96 40 ) ( 96 96 36 ) caulk 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 54 64 120 ) ( 64 96 120 ) ( 54 96 120 ) seelow_wall_rock_stones04 128 128 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 83
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_roof_wood_burnt
+   lightmap_gray
+   2 2 16 8
+   (
+	v 76 162 209 t 67.584 1972.2246 10.125 -13.0625
+	v 4 162 287 t 67.584 1522.7848 10.125 -17.9375
+   )
+   (
+	v 76 216 225 t 190.46756 1972.2246 13.5 -14.0625
+	v 4 216 303 t 190.46756 1522.7848 13.5 -18.9375
+   )
+  }
+ }
+// brush 84
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_roof_wood_burnt
+   lightmap_gray
+   2 2 16 8
+   (
+	v 43 98 229 t 239.61603 1529.8557 6.125 -14.3125
+	v 4 98 271 t 239.61603 1317.9844 6.125 -16.9375
+   )
+   (
+	v 43 156 245 t 362.49939 1529.8557 9.75 -15.3125
+	v 4 156 287 t 362.49939 1317.9844 9.75 -17.9375
+   )
+  }
+ }
+// brush 85
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_roof_wood_burnt
+   lightmap_gray
+   2 2 16 8
+   (
+	v 139 34 141 t 587.77576 1996.8007 8.6875 -2.125
+	v 4 34 262 t 587.77576 1358.9438 0.25 -2.125
+   )
+   (
+	v 139 92 142 t 698.37152 1996.8007 8.6875 -5.75
+	v 4 92 270 t 698.37152 1358.9438 0.25 -5.75
+   )
+  }
+ }
+// brush 86
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_roof_wood_burnt
+   lightmap_gray
+   2 2 16 8
+   (
+	v 43 -30 219 t -268.28763 -2971.6255 -1.875 -13.6875
+	v 4 -30 265 t -268.28763 -3441.5415 -1.875 -16.5625
+   )
+   (
+	v 43 28 227 t -153.5966 -2971.6255 1.75 -14.1875
+	v 4 28 261 t -153.5966 -3441.5415 1.75 -16.3125
+   )
+  }
+ }
+// brush 87
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_roof_wood_burnt
+   lightmap_gray
+   2 2 16 8
+   (
+	v 75 -94 207 t 71.68055 -1089.5189 -5.875 -12.9375
+	v 4 -94 277 t 71.68055 -1749.8892 -5.875 -17.3125
+   )
+   (
+	v 75 -36 183 t 186.37137 -1089.5189 -2.25 -11.4375
+	v 4 -36 263 t 186.37137 -1749.8892 -2.25 -16.4375
+   )
+  }
+ }
+// brush 88
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_roof_wood_burnt
+   lightmap_gray
+   2 2 16 8
+   (
+	v 43 -158 250 t -436.22397 -3145.7136 -9.875 -15.625
+	v 4 -158 296 t -436.22397 -3410.8201 -9.875 -18.5
+   )
+   (
+	v 43 -100 238 t -325.62894 -3145.7136 -6.25 -14.875
+	v 4 -100 277 t -325.62894 -3410.8201 -6.25 -17.3125
+   )
+  }
+ }
+// brush 89
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_roof_wood_burnt
+   lightmap_gray
+   2 2 16 8
+   (
+	v 18 -216 291 t -786.42859 -5638.062 -13.5 -18.1875
+	v 4 -216 305 t -786.42859 -5720.8784 -13.5 -19.0625
+   )
+   (
+	v 18 -164 278 t -663.54736 -5638.062 -10.25 -17.375
+	v 4 -164 295 t -663.54736 -5720.8784 -10.25 -18.4375
+   )
+  }
+ }
+// brush 90
+ {
+  mesh
+  {
+  contents nonColliding;
+   okinawa_terrain_rubble_shuri_outwl
+   lightmap_gray
+   6 6 16 8
+   (
+	v -17 -378 -48 t -136 3024 0.3125 24.8125
+	v -118 -299 -48 t -944 2392 -6 19.875
+	v -142 -224 -48 t -1136 1792 -7.5 15.1875
+	v -108 -145 -13 t -864 1160 -5.375 10.25
+	v -86 -69 -13 t -688 552 -4 5.5
+	v -86 -69 -13 t -688 552 -4 5.5
+   )
+   (
+	v -17 -378 -48 t -136 3024 0.3125 24.8125
+	v -17 -299 -13 t -136 2392 0.3125 19.875
+	v -17 -224 -4 t -136 1792 0.3125 15.1875
+	v -17 -145 9 t -136 1160 0.3125 10.25
+	v -17 -69 0 t -136 552 0.3125 5.5
+	v -17 10 -13 t -136 -80 0.3125 0.5625
+   )
+   (
+	v 72 -394 -48 t 576 3152 5.875 25.8125
+	v 72 -299 0 t 576 2392 5.875 19.875
+	v 72 -224 21 t 576 1792 5.875 15.1875
+	v 72 -145 19 t 576 1160 5.875 10.25
+	v 72 -69 15 t 576 552 5.875 5.5
+	v 72 13 -13 t 576 -104 5.875 0.375
+   )
+   (
+	v 160 -394 -48 t 1280 3152 11.375 25.8125
+	v 160 -299 -13 t 1280 2392 11.375 19.875
+	v 160 -224 6 t 1280 1792 11.375 15.1875
+	v 160 -145 25 t 1280 1160 11.375 10.25
+	v 160 -69 2 t 1280 552 11.375 5.5
+	v 160 48 -48 t 1280 -384 11.375 -1.8125
+   )
+   (
+	v 249 -378 -48 t 1992 3024 16.9375 24.8125
+	v 249 -299 -32 t 1992 2392 16.9375 19.875
+	v 249 -224 -13 t 1992 1792 16.9375 15.1875
+	v 249 -145 -13 t 1992 1160 16.9375 10.25
+	v 249 -69 -32 t 1992 552 16.9375 5.5
+	v 249 10 -48 t 1992 -80 16.9375 0.5625
+   )
+   (
+	v 337 -299 -48 t 2696 2392 22.4375 19.875
+	v 337 -299 -48 t 2696 2392 22.4375 19.875
+	v 350 -224 -48 t 2800 1792 23.25 15.1875
+	v 346 -141 -48 t 2768 1128 23 10
+	v 337 -69 -48 t 2696 552 22.4375 5.5
+	v 337 -69 -48 t 2696 552 22.4375 5.5
+   )
+  }
+ }
+}

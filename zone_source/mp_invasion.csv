@@ -1,0 +1,16 @@
+ignore,code_post_gfx_mp,,,
+ignore,common_mp,,,
+col_map_mp,maps/mp/mp_invasion.d3dbsp,,,
+gfx_map,maps/mp/mp_invasion.d3dbsp,,,
+rawfile,maps/invasion.gsc,,,
+sound,common,mp_invasion,all_sp,
+sound,generic,mp_invasion,all_sp,
+sound,voiceovers,mp_invasion,all_sp,
+sound,multiplayer,mp_invasion,all_sp,
+include,mptypes_desert,,,
+
+sound,character,mp_invasion,all_sp,
+sound,weapons,mp_invasion,all_sp,`
+sound,projectiles,mp_invasion,all_sp,
+
+xmodel,skybox_pel2

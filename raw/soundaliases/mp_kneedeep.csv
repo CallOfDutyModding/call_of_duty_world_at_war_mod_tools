@@ -1,0 +1,51 @@
+name,platform,mature,file,sequence,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,dist_reverb_max,limit_count,limit_type,entity_limit_count,entity_limit_type,bus,volume_min_falloff_curve,volumefalloffcurve,reverb_send,reverb_min_falloff_curve,reverb_falloff_curve,randomize_type,spatialized,type,probability,loop,masterslave,loadspec,compression,secondaryaliasname,chainaliasname,startdelay,speakermap,lfe percentage,center percentage,envelop_min,envelop_max,envelop percentage,occlusion_level,move_type,move_time,real_delay,distance_lpf,min_priority,max_priority,min_priority_threshold,max_priority_threshold,subtitle,isbig
+
+# Background Tracks,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#bgt_bunker,,,Stream/Level/Pel2/bunker/BG_Bunker.wav,,0.5,,,,,,,,,,,ambience,,,,,,,2d,streamed,,looping,,all_mp,,,,500,,,,,,,0,,,,,100,100,0.25,1,,
+bg_steady,,,Stream/backgrounds/training/bg_steady_c.wav,,0.45,0.45,1,1,,,,,,,,ambience,,,,,curve2,,2d,streamed,,looping,,all_mp,,,,,music,,,,,,,,,,,100,100,0.25,1,,
+
+# Ambient SFX - Static,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+amb_tree,,,SFX/Amb/Wind/leaves_##,,0.75,1,0.7,1.1,400,1500,2000,8,reject,,,ambience,,curve1,,,curve2,pitch,3d,,,,,all_mp,,amb_raven_chain,,,,,,,,,0.15,,,,,5,10,0.1,1,,
+amb_grass,,,SFX/Amb/Wind/gusts/thrugrass_##,,0.5,0.85,0.6,1.1,300,1200,1500,8,reject,,,ambience,,curve1,,,curve2,pitch,3d,,,,,all_mp,,,,,,,,,,,0.15,,,,,5,10,0.1,1,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# Ambient SFX - Spawned,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# Day Package,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+cicada,,,SFX/Amb/animals/cicada_##,,0.1,0.15,0.9,1.1,100,800,,,,,,ambience,,,,,,,3d,,0.8,,,all_mp,,,,,,,,,,,0.2,,,,,5,10,0.1,1,,
+amb_raven_chain,,,SFX/Amb/animals/raven_##,,0.2,0.5,0.9,1.1,10,800,2500,,,,,ambience,,,,,curve2,,3d,,0.25,,,all_mp,,,,,,,,,,,0.2,,,,,5,10,0.1,1,,
+
+amb_insects,,,SFX/Amb/animals/misc_bug_##,,0.45,0.55,0.85,1.2,250,1000,1800,,,,,ambience,,,,,,,3d,,,,,all_mp,,,,,,,,,,,,,,,,5,10,0.1,1,,
+amb_frogs,,,SFX/Amb/animals/frogs_##,,0.25,0.35,0.9,1.1,30,600,1000,,,,,ambience,,,,,,,3d,,,,,all_mp,,,,,,,,,,,,,,,,5,10,0.1,1
+
+wall_of_bugs_01,,,SFX\Amb\animals\wall_of_bugs\pel2_bugs\Pel2_bugs_1.wav,,0.4,0.4,1,1,10,1600,2000,,,1,reject,ambience,,,,,,,3d,,,looping,,all_mp,,,,,,,,,,,0.2,,,,,50,80,0.1,1
+wall_of_bugs_02,,,SFX\Amb\animals\wall_of_bugs\pel2_bugs\Pel2_bugs_2.wav,,0.4,0.4,1,1,10,1600,2000,,,1,reject,ambience,,,,,,,3d,,,looping,,all_mp,,,,,,,,,,,0.2,,,,,50,80,0.1,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+wind_in_valley_L,,,Stream\Level\mak\line_wind\wind_on_hill_L.wav,,0.7,0.7,,,250,1400,1800,,,,,ambience,,,,,curve2,,3d,streamed,,looping,,all_mp,,,,,,,,250,400,0.5,0,,,,,20,50,0.25,1
+wind_in_valley_R,,,Stream\Level\mak\line_wind\wind_on_hill_R.wav,,0.7,0.7,,,250,1400,1800,,,,,ambience,,,,,curve2,,3d,streamed,,looping,,all_mp,,,,,,,,250,400,0.5,0,,,,,20,50,0.25,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+creek_calm,,,SFX\Levels\Makin\creek\creek_calm_00.wav,,0.4,0.4,1,1,400,1500,2000,,,,,ambience,,curve3,,,curve3,pitch,3d,,,looping,,all_mp,,,,,,,,250,800,0.5,0.25,,,,no,30,50,0.1,1
+
+water_vs_pier,,,SFX/Amb/Pacific/ocean/water_vs_pier_calm_00.wav,1,0.3,0.35,0.8,1.1,200,800,1300,,,6,reject,ambience,,curve3,,,curve2,pitch,3d,,,looping,,all_mp,,,,,,,,,,,0.25,,,,no,30,50,0.1,1
+water_vs_pier,,,SFX/Amb/Pacific/ocean/water_vs_pier_calm_01.wav,2,0.3,0.35,0.8,1.1,200,800,1300,,,6,reject,ambience,,curve3,,,curve2,pitch,3d,,,looping,,all_mp,,,,,,,,,,,0.25,,,,no,30,50,0.1,1
+water_vs_boat,,,SFX/Amb/Pacific/ocean/water_vs_pier_calm_00.wav,1,0.3,0.35,0.8,1.1,200,800,1300,,,6,reject,ambience,,curve3,,,curve2,pitch,3d,,,looping,,all_mp,,,,,,,,,,,0.25,,,,no,30,50,0.1,1
+water_vs_boat,,,SFX/Amb/Pacific/ocean/water_vs_pier_calm_01.wav,2,0.3,0.35,0.8,1.1,200,800,1300,,,6,reject,ambience,,curve3,,,curve2,pitch,3d,,,looping,,all_mp,,,,,,,,,,,0.25,,,,no,30,50,0.1,1
+
+anml_chatter,,,sfx/levels/mp_castle/anml_chatter_##,,0.5,0.8,0.9,1.1,50,1200,2000,,,,,ambience,,curve3,,,curve2,pitch,3d,,0.15,,,all_mp,,,,,,,,,,,0.35,,,,no,30,50,0.1,0.9
+bird_chatter,,,sfx/levels/mp_castle/bird_chatter_##,,0.5,0.7,0.9,1.1,50,1200,2000,,,,,ambience,,curve3,,,curve2,pitch,3d,,0.15,,,all_mp,,,,,,,,,,,0.35,,,,no,30,50,0.1,0.9,
+
+amb_jpb,,,sfx/levels/mp_hangar/jpb/jpb_00.wav,1,0.7,0.7,1,1,500,5000,7000,,,,,ambience,,curve3,0.75,,curve2,,3d,streamed,0.4,,,all_mp,,,,,,,,,,,0.3,,,,,30,60,0.25,0.6,
+amb_jpb,,,sfx/levels/mp_hangar/jpb/jpb_01.wav,2,0.7,0.7,1,1,500,5000,7000,,,,,ambience,,curve3,0.75,,curve2,,3d,streamed,0.4,,,all_mp,,,,,,,,,,,0.3,,,,,30,60,0.25,0.6,
+amb_jpb,,,sfx/levels/mp_hangar/jpb/jpb_02.wav,3,0.7,0.7,1,1,500,5000,7000,,,,,ambience,,curve3,0.75,,curve2,,3d,streamed,0.4,,,all_mp,,,,,,,,,,,0.3,,,,,30,60,0.25,0.6,
+amb_jpb,,,sfx/levels/mp_hangar/jpb/jpb_03.wav,4,0.7,0.7,1,1,500,5000,7000,,,,,ambience,,curve3,0.75,,curve2,,3d,streamed,0.4,,,all_mp,,,,,,,,,,,0.3,,,,,30,60,0.25,0.6,
+
+thunder,,,Stream\Level\ber2\thunder\thunder_farL_00.wav,,0.6,0.7,0.7,1,3000,18000,50000,1,reject,,,ambience,,curve4,1,,curve3,,3d,streamed,0.5,,,all_mp,,thunder_farR,,,,0.5,,,,,,left_player,40,no,no,80,90,0.25,1,
+thunder_farR,,,Stream\Level\ber2\thunder\thunder_farR_00.wav,,0.6,0.7,0.7,1,3000,18000,50000,1,reject,,,ambience,,curve4,1,,curve3,,3d,streamed,0.5,,,all_mp,,,,,,0.5,,,,,,right_player,40,no,no,80,90,0.25,1,1
+
+fire_small,,,SFX\Destruction\fires\med_##,,0.45,0.45,0.95,1.05,100,800,1200,,,,,ambience,,curve3,,,curve3,,3d,,,looping,,all_mp,,,,,,,,,,,0.1,,,no,no,30,60,0.25,1,
+
+seagull,,,SFX\Amb\animals\seagull_##,,0.45,0.6,0.95,1.2,50,4500,5000,,,,,ambience,,curve3,,,curve3,pitch,3d,,0.4,,,all_mp,,,,,,,,,,,0.2,,,no,no,30,50,0.1,1,
+explo_dist,,,SFX\Destruction\explosion_occluded_##,,0.75,0.85,0.9,1,50,1200,1500,,,,,ambience,,curve3,,,curve3,,3d,,,,,all_mp,,,,,,,,,,,0.2,,,no,no,30,50,0.25,1,
+
+static,,,sfx/levels/mp_airfield/static_##,,0.2,0.4,1,1,50,800,1400,,,,,ambience,,curve3,0.75,,curve3,,3d,,,,,all_mp,,,,,,,,,,,0.4,,,,,30,60,0.1,0.9,
+
+#amb_flies,,,SFX/Amb/animals/flies_##,,0.3,0.5,0.9,1.05,10,100,,,,,,ambience,,,,,,,3d,,,,,all_mp,,,,,,,,,,,,,,,,5,10,0.1,1
+#amb_bugs_other,,,SFX/Amb/animals/misc_bug_##,,0.15,0.25,0.9,1.1,250,1000,1200,,,,,ambience,,,,,,,3d,,,,,all_mp,,,,,,,,,,,,,,,,5,10,0.1,1

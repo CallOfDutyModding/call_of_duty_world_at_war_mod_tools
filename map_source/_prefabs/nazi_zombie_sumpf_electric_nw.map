@@ -1,0 +1,151 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"radiosityscale" "1.5"
+"sunradiosity" "1.2"
+"skyboxmodel" "skybox_pel2"
+"_color" "0.792157 0.901961 0.901961"
+"ambient" "0.25"
+"sundiffusecolor" "0.835294 0.890196 0.901961"
+"diffusefraction" "0.20"
+"classname" "worldspawn"
+"sundirection" "-30 -340 0"
+"suncolor" "0.878431 0.878431 0.772549"
+"sunlight" "1.0"
+}
+// entity 1
+{
+"spawnflags" "1"
+"targetname" "north_west_tgt"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( 8346.75 2965 -666 ) ( 8279 3032.75 -666 ) ( 8273.25 3027 -666 ) trigger 64 64 0 0 0 0 lightmap_gray 16384.15 16382.514 -4552.4277 -5000.2378 -45 -8.4295476e-005
+ ( 8275.25 3027 -576 ) ( 8281 3032.75 -576 ) ( 8348.75 2965 -576 ) trigger 64 64 0 0 0 0 lightmap_gray 16384.15 16382.514 -4552.4277 -5000.2378 -45 -8.4295476e-005
+ ( 8275.25 3027 -584 ) ( 8343 2959.25 -584 ) ( 8343 2959.25 -608 ) trigger 64 64 0 0 0 0 lightmap_gray 11585.38 16384 2431.6279 0 0 0
+ ( 8345 2957.25 -584 ) ( 8350.75 2963 -584 ) ( 8350.75 2963 -608 ) trigger 64 64 0 0 0 0 lightmap_gray 11585.439 16384 843.52985 0 0 0
+ ( 8348.75 2965 -584 ) ( 8281 3032.75 -584 ) ( 8281 3032.75 -608 ) trigger 64 64 0 0 0 0 lightmap_gray 11585.38 16384 2437.2842 0 0 0
+ ( 8255 3066.75 -584 ) ( 8249.25 3061 -584 ) ( 8249.25 3061 -608 ) trigger 64 64 0 0 0 0 lightmap_gray 11585.13 16384 911.46875 0 0 0
+}
+}
+// entity 2
+{
+"origin" "8254.0 3054.0 -565.5"
+"angles" "0 180 180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 3
+{
+"origin" "8274.0 3034.0 -565.5"
+"angles" "0 180 180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 4
+{
+"origin" "8292.0 3016.0 -565.5"
+"angles" "0 180 180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 5
+{
+"origin" "8314.0 2994.0 -565.5"
+"angles" "0 180 180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 6
+{
+"origin" "8338.0 2970.0 -565.5"
+"angles" "0 180 180"
+"model" "zombie_zapper_tesla_coil"
+"classname" "misc_model"
+}
+// entity 7
+{
+"targetname" "north_west_tgt"
+"origin" "8254.0 3054.0 -664.0"
+"angles" "270 180 180"
+"classname" "script_struct"
+}
+// entity 8
+{
+"targetname" "north_west_tgt"
+"origin" "8274.0 3034.0 -664.0"
+"angles" "270 180 180"
+"classname" "script_struct"
+}
+// entity 9
+{
+"targetname" "north_west_tgt"
+"origin" "8292.0 3016.0 -664.0"
+"angles" "270 180 180"
+"classname" "script_struct"
+}
+// entity 10
+{
+"targetname" "north_west_tgt"
+"origin" "8314.0 2994.0 -664.0"
+"angles" "270 180 180"
+"classname" "script_struct"
+}
+// entity 11
+{
+"targetname" "north_west_tgt"
+"origin" "8338.0 2970.0 -664.0"
+"angles" "270 180 180"
+"classname" "script_struct"
+}
+// entity 12
+{
+"origin" "8245.3 3186.2 -595.2"
+"targetname" "auto2"
+"model" "tag_origin"
+"classname" "script_model"
+}
+// entity 13
+{
+"classname" "script_model"
+"model" "zombie_zapper_handle"
+"angles" "0 315 -180"
+"origin" "8248.8 3192.5 -611.2"
+"script_linkname" "113"
+}
+// entity 14
+{
+"classname" "misc_model"
+"origin" "8244.8 3181.6 -620.0"
+"model" "zombie_sumpf_power_switch"
+"angles" "0 315 0"
+}
+// entity 15
+{
+"script_linkto" "113"
+"classname" "trigger_use"
+"target" "north_west_tgt"
+"script_string" "north_west_elec_light"
+"targetname" "elec_trap_trig"
+// brush 0
+{
+ ( 8244.25 3176 -622 ) ( 8252 3183.75 -622 ) ( 8251.25 3184.5 -622 ) trigger 64.031822 63.748821 -16309.511 -473.03799 -135 -0.0014052301 lightmap_gray 16387.299 16337.125 -16304.987 -469.17365 -135 -0.0021607084
+ ( 8251.25 3184.5 -601 ) ( 8252 3183.75 -601 ) ( 8244.25 3176 -601 ) trigger 64.031822 63.748821 -16309.511 -473.03799 -135 -0.0014052301 lightmap_gray 16387.299 16337.125 -16304.987 -469.17365 -135 -0.0021607084
+ ( 8251.25 3186.5 -589 ) ( 8243.5 3178.75 -589 ) ( 8243.5 3178.75 -611 ) trigger 45.265259 -64 -9004.5371 0 180 0 lightmap_gray 11587.906 -16384 -9004.5371 0 180 0
+ ( 8243.5 3174.75 -589 ) ( 8244.25 3174 -589 ) ( 8244.25 3174 -611 ) trigger 45.237373 -64 -5381.479 0 180 0 lightmap_gray 11564.797 -16384 -5378.4321 0 -180 0
+ ( 8244.25 3174 -589 ) ( 8252 3181.75 -589 ) ( 8252 3181.75 -611 ) trigger 45.272499 -64 -14070.973 0 -180 0 lightmap_gray 11587.634 -16384 -14069.86 0 -180 0
+ ( 8252 3185.75 -589 ) ( 8251.25 3186.5 -589 ) ( 8251.25 3186.5 -611 ) trigger 45.259132 -64 -5394.2471 0 180 0 lightmap_gray 11586.379 -16384 -5394.2661 0 180 0
+}
+}
+// entity 16
+{
+"origin" "8245.5 3186.0 -600.8"
+"target" "auto2"
+"targetname" "north_west_elec_light"
+"angles" "6.41708e-006 180 -179.6"
+"model" "zombie_zapper_cagelight_red"
+"classname" "script_model"
+}
+

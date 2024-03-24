@@ -1,0 +1,31 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"spawnflags" "1"
+"targetname" "auto1"
+"classname" "script_brushmodel"
+// brush 0
+{
+ ( -16.5 -10.5 0 ) ( 13.5 -10.5 0 ) ( 13.5 11.5 0 ) clip 64 64 181 -521 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -17 11.5 17 ) ( 13 11.5 17 ) ( 13 -10.5 17 ) clip 64 64 181 -521 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -16.5 -11 0 ) ( -16.5 -11 18 ) ( 13.5 -11 18 ) clip 64 64 181 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 17 10.5 -0.5 ) ( 17 -11.5 -0.5 ) ( 17 -11.5 17.5 ) clip 64 64 521 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 13.5 11 -1 ) ( 13.5 11 17 ) ( -16.5 11 17 ) clip 64 64 181 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -17 10 17 ) ( -17 -12 17 ) ( -17 -12 -1 ) clip 64 64 521 -64 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 2
+{
+"script_selfisattacker" "1"
+"target" "auto1"
+"targetname" "flammable_crate"
+"model" "global_flammable_crate_jap_single"
+"origin" "0.0 0.0 0.0"
+"classname" "script_model"
+}

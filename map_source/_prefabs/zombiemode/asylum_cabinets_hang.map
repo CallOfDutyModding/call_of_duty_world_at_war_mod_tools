@@ -1,0 +1,387 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_ber1"
+"_color" ".6 .55.5"
+"sundirection" "-45 185 0"
+"spawnflags" "512"
+"intensity" "100"
+"suncolor" "0.294118 0.286275 0.392157"
+"ambient" ".5"
+"sunlight" "2"
+"classname" "worldspawn"
+// brush 0
+{
+  contents nonColliding;
+ ( -11 7 1 ) ( -11 6 1 ) ( -10 6 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16387.781 16393.184 -1312.3079 181.05775 180 -0.00080262596
+ ( -11 6 34 ) ( -11 7 34 ) ( -10 7 33 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16379.987 16390.824 -1311.6848 181.06599 180 -0.0012037656
+ ( 5 7 36 ) ( -15 7 36 ) ( -15 7 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16385.066 -16384 -1312.0886 -30 180 0
+ ( -11 7 34 ) ( -11 6 34 ) ( -11 6 5 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16385.5 -16384 -181.01596 -29.997505 180 0
+ ( -15 6 36 ) ( 5 6 36 ) ( 5 6 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16382.301 -16384 -1311.8639 -30 180 0
+ ( -10 6 35 ) ( -10 7 35 ) ( -10 7 1 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16383.893 -16384 -180.99809 -29.991901 -180 0
+}
+// brush 1
+{
+  contents nonColliding;
+ ( -11 7 1 ) ( -11 6 1 ) ( 13 6 1 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16384 16382.035 -1321.0138 180.97925 -180 -0.0015866389
+ ( 14 7 2 ) ( 14 6 2 ) ( -6 6 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16384.287 16384.125 -1321.0421 181.00179 180 -0.0024210799
+ ( 14 7 4 ) ( -6 7 4 ) ( -6 7 -30 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16385.43 -16384 -1321.118 -62 180 0
+ ( -11 6 1 ) ( -11 7 1 ) ( -10 7 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16386.199 16384.459 -1329.1626 186 -180 0.00073473097
+ ( -6 6 4 ) ( 14 6 4 ) ( 14 6 -30 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16382.334 -16384 -1320.8662 -62 180 0
+ ( 13 7 1 ) ( 13 6 1 ) ( 12 6 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16381.873 16385.822 -1328.8085 185.99556 180 -0.00012208389
+}
+// brush 2
+{
+  contents nonColliding;
+ ( 13 6 1 ) ( 13 7 1 ) ( 12 7 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16379.599 16387.125 -1319.6655 181.02837 180 -0.0025255578
+ ( 13 7 34 ) ( 13 6 34 ) ( 12 6 33 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16382.07 16383.465 -1319.848 180.99377 -180 0.00040186051
+ ( 13 7 36 ) ( -7 7 36 ) ( -7 7 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16385.514 -16384 -1320.1238 -30 180 0
+ ( 12 7 36 ) ( 12 6 36 ) ( 12 6 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16385.5 -16384 -181.01596 -29.973024 180 0
+ ( -7 6 36 ) ( 13 6 36 ) ( 13 6 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16382.309 -16384 -1319.8641 -30 180 0
+ ( 13 7 5 ) ( 13 6 5 ) ( 13 6 34 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16385.072 -16384 -181.01205 -30 180 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( -2 7 33 ) ( -2 6 33 ) ( 12 6 33 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16384.027 16382.035 -1320.0345 180.97925 -180 -0.00381846
+ ( 13 7 34 ) ( 13 6 34 ) ( -7 6 34 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16384.398 16384.209 -1320.0446 180.99841 -180 -0.0011595926
+ ( 13 7 36 ) ( -7 7 36 ) ( -7 7 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16385.514 -16384 -1320.1238 -30 180 0
+ ( -10 6 33 ) ( -10 7 33 ) ( -11 7 34 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16384.066 16384.107 -1327.9904 185.99831 180 0.00092425273
+ ( -7 6 36 ) ( 13 6 36 ) ( 13 6 2 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16382.309 -16384 -1319.8641 -30 180 0
+ ( 12 7 33 ) ( 12 6 33 ) ( 13 6 34 ) berlin_ceilings_metal 48 48 -21 18 90 0 lightmap_gray 16384.055 16385 -1327.9896 185.98695 -180 -1.677203e-005
+}
+// brush 4
+{
+  contents nonColliding;
+ ( 30 6 4 ) ( 30 7 4 ) ( 29 7 5 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16383.883 16386.209 -1337 181.01884 180 -0.00067147729
+ ( 30 7 33 ) ( 30 6 33 ) ( 29 6 32 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16378.129 16383.572 -1336.537 180.99506 -180 -0.00045298744
+ ( 30 7 35 ) ( 10 7 35 ) ( 10 7 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16385.4 -16384 -1337.1136 -31 180 0
+ ( 29 7 35 ) ( 29 6 35 ) ( 29 6 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16385.5 -16384 -181.01596 -30.977127 180 0
+ ( 10 6 35 ) ( 30 6 35 ) ( 30 6 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16382.268 -16384 -1336.8611 -31 180 0
+ ( 30 7 4 ) ( 30 6 4 ) ( 30 6 33 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16385.037 -16384 -181.01169 -31 180 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 15 7 32 ) ( 15 6 32 ) ( 29 6 32 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384 16382.035 -1337.0145 180.97925 -180 -0.0016563517
+ ( 30 7 33 ) ( 30 6 33 ) ( 10 6 33 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384.201 16384.375 -1337.022 181 180 -0.0011596945
+ ( 30 7 35 ) ( 10 7 35 ) ( 10 7 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16385.4 -16384 -1337.1136 -31 180 0
+ ( 15 6 32 ) ( 15 7 32 ) ( 14 7 33 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384 16383.607 -1344.9844 185.99306 -180 0.0014996851
+ ( 10 6 35 ) ( 30 6 35 ) ( 30 6 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16382.268 -16384 -1336.8611 -31 180 0
+ ( 29 7 32 ) ( 29 6 32 ) ( 30 6 33 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384.18 16386.75 -1344.9954 186.00734 -180 -0.00040047063
+}
+// brush 6
+{
+  contents nonColliding;
+ ( 14 7 4 ) ( 14 6 4 ) ( 15 6 5 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16387.998 16391.324 -1337.3243 181.0446 180 -0.00036637465
+ ( 14 6 33 ) ( 14 7 33 ) ( 15 7 32 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16386.064 16387.322 -1337.1786 181.02849 180 -0.0019887479
+ ( 30 7 35 ) ( 10 7 35 ) ( 10 7 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16385.4 -16384 -1337.1136 -31 180 0
+ ( 14 7 33 ) ( 14 6 33 ) ( 14 6 4 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16385.5 -16384 -181.01596 -31 180 0
+ ( 10 6 35 ) ( 30 6 35 ) ( 30 6 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16382.268 -16384 -1336.8611 -31 180 0
+ ( 15 6 34 ) ( 15 7 34 ) ( 15 7 0 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384.037 -16384 -181 -30.985531 180 0
+}
+// brush 7
+{
+  contents nonColliding;
+ ( 11 6 5 ) ( 31 6 5 ) ( 31 7 5 ) okinawa_wood_shuri_int_furni 128 128 0 0 0 0 lightmap_gray 16384.1 16382 -1337.0244 180.97949 180 -0.0047398186
+ ( 30 7 32 ) ( 30 6 32 ) ( 10 6 32 ) okinawa_wood_shuri_int_furni 128 128 0 0 0 0 lightmap_gray 16384.201 16384.375 -1337.022 181 180 -0.0011596945
+ ( 30 6.5 35 ) ( 10 6.5 35 ) ( 10 6.5 1 ) okinawa_wood_shuri_int_furni 48 -48 -45 -89.4142 0 0 lightmap_gray 16385.4 -16384 -1337.1136 -31 180 0
+ ( 15 7 35 ) ( 15 6 35 ) ( 15 6 1 ) okinawa_wood_shuri_int_furni 128 128 0 0 0 0 lightmap_gray 16385.5 -16384 -181.01596 -30.977127 180 0
+ ( 10 6 35 ) ( 30 6 35 ) ( 30 6 1 ) caulk 64 64 0 0 0 0 lightmap_gray 16382.268 -16384 -1336.8611 -31 180 0
+ ( 29 6 35 ) ( 29 7 35 ) ( 29 7 1 ) okinawa_wood_shuri_int_furni 128 128 0 0 0 0 lightmap_gray 16384.287 -16384 -181.00127 -30.982237 180 0
+}
+// brush 8
+{
+  contents nonColliding;
+ ( 16.5 7 19.5 ) ( 16.5 6 19.5 ) ( 17.5 6 19.5 ) berlin_ceilings_metal 48 48 -15 23 90 0 lightmap_gray 16376.008 16386.572 -1338.3146 181.03964 180 -0.0022499347
+ ( 16.5 6 29 ) ( 16.5 7 29 ) ( 17.5 7 29 ) berlin_ceilings_metal 48 48 -15 23 90 0 lightmap_gray 16387.885 16383.607 -1339.2614 181.03531 180 0.00052314589
+ ( 32 7 35.5 ) ( 12 7 35.5 ) ( 12 7 1.5 ) berlin_ceilings_metal 48 48 -15 23 90 0 lightmap_gray 16383.066 -16384 -1338.9255 -30.5 180 0
+ ( 16.5 6 10.5 ) ( 16.5 7 10.5 ) ( 16.5 7 29 ) berlin_ceilings_metal 48 48 -15 23 90 0 lightmap_gray 16384.322 -16384 -181 -30.5 180 0
+ ( 12 6 35.5 ) ( 32 6 35.5 ) ( 32 6 1.5 ) berlin_ceilings_metal 48 48 -15 23 90 0 lightmap_gray 16385.188 -16384 -1339.0951 -30.5 180 0
+ ( 17.5 6 34.5 ) ( 17.5 7 34.5 ) ( 17.5 7 0.5 ) berlin_ceilings_metal 48 48 -15 23 90 0 lightmap_gray 16384.537 -16384 -181.00745 -30.517374 180 0
+}
+// brush 9
+{
+  contents nonColliding;
+ ( 10 6 4 ) ( 30 6 4 ) ( 30 7 4 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384 16381.916 -1336.9808 180.97737 -180 0.0019325342
+ ( 15 6 5 ) ( 15 7 5 ) ( 29 7 5 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384 16384.75 -1336.9889 181.00114 180 0.00078477361
+ ( 30 7 35 ) ( 10 7 35 ) ( 10 7 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16385.4 -16384 -1337.1136 -31 180 0
+ ( 15 7 5 ) ( 15 6 5 ) ( 14 6 4 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16382.043 16382.035 -1344.8384 185.97879 -180 0.0011186076
+ ( 10 6 35 ) ( 30 6 35 ) ( 30 6 1 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16382.268 -16384 -1336.8611 -31 180 0
+ ( 29 6 5 ) ( 29 7 5 ) ( 30 7 4 ) berlin_ceilings_metal 48 48 -7 -6 90 0 lightmap_gray 16384.051 16383.959 -1345.0139 185.99063 -180 -0.0075673005
+}
+// brush 10
+{
+  contents nonColliding;
+ ( 32 7 32 ) ( 32 6 32 ) ( 46 6 32 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384 16382.035 -1354.0077 180.97925 -180 -0.0011855811
+ ( 47 7 33 ) ( 47 6 33 ) ( 27 6 33 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384.301 16384.125 -1354.0265 181.00179 -180 -0.00056966575
+ ( 47 7 35 ) ( 27 7 35 ) ( 27 7 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384.889 -16384 -1354.0734 -31 180 0
+ ( 32 6 32 ) ( 32 7 32 ) ( 31 7 33 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16381.977 16383.893 -1361.8262 185.99619 180 0.00090680207
+ ( 27 6 35 ) ( 47 6 35 ) ( 47 6 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16383.361 -16384 -1353.9478 -31 -180 0
+ ( 46 7 32 ) ( 46 6 32 ) ( 47 6 33 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16383.955 16386.43 -1361.9799 186.00392 -180 0.00010498966
+}
+// brush 11
+{
+  contents nonColliding;
+ ( 47 6 4 ) ( 47 7 4 ) ( 46 7 5 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16388.01 16386.875 -1354.3284 181.02602 180 -0.00054941286
+ ( 47 7 33 ) ( 47 6 33 ) ( 46 6 32 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16380.144 16383.535 -1353.6978 180.99464 -180 -0.00031348152
+ ( 47 7 35 ) ( 27 7 35 ) ( 27 7 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384.889 -16384 -1354.0734 -31 180 0
+ ( 46 7 35 ) ( 46 6 35 ) ( 46 6 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16385.5 -16384 -181.01596 -30.997635 180 0
+ ( 27 6 35 ) ( 47 6 35 ) ( 47 6 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16383.361 -16384 -1353.9478 -31 -180 0
+ ( 47 7 4 ) ( 47 6 4 ) ( 47 6 33 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16385.037 -16384 -181.01169 -31 180 0
+}
+// brush 12
+{
+  contents nonColliding;
+ ( 33.5 7 19.5 ) ( 33.5 6 19.5 ) ( 34.5 6 19.5 ) berlin_ceilings_metal 48 48 -25 -31 90 0 lightmap_gray 16380.085 16386.572 -1355.6326 181.03867 -180 -0.00045314533
+ ( 33.5 6 29 ) ( 33.5 7 29 ) ( 34.5 7 29 ) berlin_ceilings_metal 48 48 -25 -31 90 0 lightmap_gray 16384.02 16384.25 -1355.9647 181.04187 -180 0.00041853319
+ ( 49 7 35.5 ) ( 29 7 35.5 ) ( 29 7 1.5 ) berlin_ceilings_metal 48 48 -25 -31 90 0 lightmap_gray 16385.021 -16384 -1356.0829 -30.5 180 0
+ ( 33.5 6 10.5 ) ( 33.5 7 10.5 ) ( 33.5 7 29 ) berlin_ceilings_metal 48 48 -25 -31 90 0 lightmap_gray 16384.322 -16384 -181 -30.5 180 0
+ ( 29 6 35.5 ) ( 49 6 35.5 ) ( 49 6 1.5 ) berlin_ceilings_metal 48 48 -25 -31 90 0 lightmap_gray 16384.205 -16384 -1356.0133 -30.5 180 0
+ ( 34.5 6 34.5 ) ( 34.5 7 34.5 ) ( 34.5 7 0.5 ) berlin_ceilings_metal 48 48 -25 -31 90 0 lightmap_gray 16384.537 -16384 -181.00745 -30.517374 180 0
+}
+// brush 13
+{
+  contents nonColliding;
+ ( 31 7 4 ) ( 31 6 4 ) ( 32 6 5 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16390.066 16392.076 -1354.5 181.05254 -180 -0.00074901554
+ ( 31 6 33 ) ( 31 7 33 ) ( 32 7 32 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384 16386.93 -1354.0103 181.02426 180 -0.0017790569
+ ( 47 7 35 ) ( 27 7 35 ) ( 27 7 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384.889 -16384 -1354.0734 -31 180 0
+ ( 31 7 33 ) ( 31 6 33 ) ( 31 6 4 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16385.5 -16384 -181.01596 -31 180 0
+ ( 27 6 35 ) ( 47 6 35 ) ( 47 6 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16383.361 -16384 -1353.9478 -31 -180 0
+ ( 32 6 34 ) ( 32 7 34 ) ( 32 7 0 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384.037 -16384 -181 -30.985531 180 0
+}
+// brush 14
+{
+  contents nonColliding;
+ ( 27 6 4 ) ( 47 6 4 ) ( 47 7 4 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384.4 16381.916 -1354.0051 180.97737 180 0.0037430134
+ ( 32 6 5 ) ( 32 7 5 ) ( 46 7 5 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384 16384.322 -1353.9855 181.00175 180 0.0010812153
+ ( 47 7 35 ) ( 27 7 35 ) ( 27 7 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16384.889 -16384 -1354.0734 -31 180 0
+ ( 32 7 5 ) ( 32 6 5 ) ( 31 6 4 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16379.942 16382.107 -1361.661 185.97945 180 0.0015692941
+ ( 27 6 35 ) ( 47 6 35 ) ( 47 6 1 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16383.361 -16384 -1353.9478 -31 -180 0
+ ( 46 6 5 ) ( 46 7 5 ) ( 47 7 4 ) berlin_ceilings_metal 48 48 0 0 90 0 lightmap_gray 16385.961 16384.459 -1362.1747 185.99629 -180 -0.0050446736
+}
+// brush 15
+{
+  contents nonColliding;
+ ( -32 6 5 ) ( -12 6 5 ) ( -12 7 5 ) okinawa_wood_shuri_int_furni 128 128 8 -64 0 0 lightmap_gray 16384 16381.965 -1294.0065 180.97913 180 -0.0033653227
+ ( -13 7 32 ) ( -13 6 32 ) ( -33 6 32 ) okinawa_wood_shuri_int_furni 128 128 8 -64 0 0 lightmap_gray 16384.213 16384.43 -1294.0225 181.00294 180 -0.0010114663
+ ( -13 6.5 35 ) ( -33 6.5 35 ) ( -33 6.5 1 ) okinawa_wood_shuri_int_furni 48 -48 -2 -98.414001 0 0 lightmap_gray 16384.971 -16384 -1294.0776 -31 180 0
+ ( -28 7 35 ) ( -28 6 35 ) ( -28 6 1 ) okinawa_wood_shuri_int_furni 128 128 8 -64 0 0 lightmap_gray 16385.5 -16384 -181.01596 -30.997635 180 0
+ ( -33 6 35 ) ( -13 6 35 ) ( -13 6 1 ) caulk 64 64 0 0 0 0 lightmap_gray 16382.977 -16384 -1293.9185 -31 180 0
+ ( -14 6 35 ) ( -14 7 35 ) ( -14 7 1 ) okinawa_wood_shuri_int_furni 128 128 8 -64 0 0 lightmap_gray 16384.287 -16384 -181.00127 -30.982237 180 0
+}
+// brush 16
+{
+  contents nonColliding;
+ ( -28 7 32 ) ( -28 6 32 ) ( -14 6 32 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384 16382.084 -1294.0082 180.97978 180 -0.00071199361
+ ( -13 7 33 ) ( -13 6 33 ) ( -33 6 33 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.213 16384.43 -1294.0225 181.00294 180 -0.0010114663
+ ( -13 7 35 ) ( -33 7 35 ) ( -33 7 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.971 -16384 -1294.0776 -31 180 0
+ ( -28 6 32 ) ( -28 7 32 ) ( -29 7 33 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384 16383.857 -1301.998 185.99568 180 0.0010288694
+ ( -33 6 35 ) ( -13 6 35 ) ( -13 6 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16382.977 -16384 -1293.9185 -31 180 0
+ ( -14 7 32 ) ( -14 6 32 ) ( -13 6 33 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384 16386.537 -1301.9818 186.00494 -180 0.00024486333
+}
+// brush 17
+{
+  contents nonColliding;
+ ( -13 6 4 ) ( -13 7 4 ) ( -14 7 5 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16386.133 16387.668 -1294.1771 181.03442 180 -0.00016279686
+ ( -13 7 33 ) ( -13 6 33 ) ( -14 6 32 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16381.998 16383.393 -1293.8414 180.99318 180 0.00034795018
+ ( -13 7 35 ) ( -33 7 35 ) ( -33 7 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.971 -16384 -1294.0776 -31 180 0
+ ( -14 7 35 ) ( -14 6 35 ) ( -14 6 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16385.5 -16384 -181.01596 -30.997635 180 0
+ ( -33 6 35 ) ( -13 6 35 ) ( -13 6 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16382.977 -16384 -1293.9185 -31 180 0
+ ( -13 7 4 ) ( -13 6 4 ) ( -13 6 33 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16385.037 -16384 -181.01169 -31 180 0
+}
+// brush 18
+{
+  contents nonColliding;
+ ( -26.5 7 19.5 ) ( -26.5 6 19.5 ) ( -25.5 6 19.5 ) berlin_ceilings_metal 48 48 -7 38 90 0 lightmap_gray 16381.986 16386.143 -1295.7963 181.03436 180 -0.0014824764
+ ( -26.5 6 29 ) ( -26.5 7 29 ) ( -25.5 7 29 ) berlin_ceilings_metal 48 48 -7 38 90 0 lightmap_gray 16382.014 16383.25 -1295.7964 181.03146 180 0.00040106982
+ ( -11 7 35.5 ) ( -31 7 35.5 ) ( -31 7 1.5 ) berlin_ceilings_metal 48 48 -7 38 90 0 lightmap_gray 16384.904 -16384 -1296.0715 -30.5 180 0
+ ( -26.5 6 10.5 ) ( -26.5 7 10.5 ) ( -26.5 7 29 ) berlin_ceilings_metal 48 48 -7 38 90 0 lightmap_gray 16384.322 -16384 -181 -30.5 180 0
+ ( -31 6 35.5 ) ( -11 6 35.5 ) ( -11 6 1.5 ) berlin_ceilings_metal 48 48 -7 38 90 0 lightmap_gray 16385.174 -16384 -1296.0911 -30.5 180 0
+ ( -25.5 6 34.5 ) ( -25.5 7 34.5 ) ( -25.5 7 0.5 ) berlin_ceilings_metal 48 48 -7 38 90 0 lightmap_gray 16384.537 -16384 -181.00745 -30.517374 180 0
+}
+// brush 19
+{
+  contents nonColliding;
+ ( -29 7 4 ) ( -29 6 4 ) ( -28 6 5 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16381.951 16391.182 -1293.8411 181.0439 -180 -0.0012200234
+ ( -29 6 33 ) ( -29 7 33 ) ( -28 7 32 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16380.007 16388.395 -1293.6777 181.04022 180 -0.00041863904
+ ( -13 7 35 ) ( -33 7 35 ) ( -33 7 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.971 -16384 -1294.0776 -31 180 0
+ ( -29 7 33 ) ( -29 6 33 ) ( -29 6 4 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16385.5 -16384 -181.01596 -31 180 0
+ ( -33 6 35 ) ( -13 6 35 ) ( -13 6 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16382.977 -16384 -1293.9185 -31 180 0
+ ( -28 6 34 ) ( -28 7 34 ) ( -28 7 0 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.037 -16384 -181 -30.985531 180 0
+}
+// brush 20
+{
+  contents nonColliding;
+ ( -33 6 4 ) ( -13 6 4 ) ( -13 7 4 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.408 16382.107 -1294.0072 180.97942 180 0.0031559379
+ ( -28 6 5 ) ( -28 7 5 ) ( -14 7 5 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.016 16383.928 -1293.986 180.9957 -180 0.0012032592
+ ( -13 7 35 ) ( -33 7 35 ) ( -33 7 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.971 -16384 -1294.0776 -31 180 0
+ ( -28 7 5 ) ( -28 6 5 ) ( -29 6 4 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16392.197 16382.285 -1302.6583 185.98146 180 0.0012380122
+ ( -33 6 35 ) ( -13 6 35 ) ( -13 6 1 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16382.977 -16384 -1293.9185 -31 180 0
+ ( -14 6 5 ) ( -14 7 5 ) ( -13 7 4 ) berlin_ceilings_metal 48 48 -7 1 90 0 lightmap_gray 16384.051 16383.791 -1302.0073 185.98857 180 -0.0018310314
+}
+// brush 21
+{
+  contents detail;
+ ( 67 -9 33 ) ( 101 -9 33 ) ( 101 25 33 ) okinawa_wood_shuri_int_furni 48 48 -5 70.914215 90 0 lightmap_gray 16383.945 16384 -1502.9935 1 180 0
+ ( 106 23 35 ) ( 106 -11 35 ) ( 72 -11 35 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.914 16383.971 -1502.9927 1 180 0
+ ( 103 6 -26 ) ( 69 6 -26 ) ( 69 6 -30 ) okinawa_wood_shuri_int_furni 48 -48 0 -57.414219 -90 0 lightmap_gray 16383.709 -16383.994 -1502.9768 -226 180 0
+ ( -10 27 -69 ) ( -10 -7 -69 ) ( -10 -7 -73 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.967 -16384.121 -1 -226 180 0
+ ( 71 -7 -72 ) ( 105 -7 -72 ) ( 105 -7 -76 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.172 -16383.871 -1503.0148 -226 180 0
+ ( 12 -4 -47 ) ( 12 30 -47 ) ( 12 30 -51 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.049 -16383.818 -1 -226 180 0
+}
+// brush 22
+{
+  contents detail;
+ ( 67 -13 2 ) ( 101 -13 2 ) ( 101 21 2 ) caulk 64 64 -1409.0035 -303 0 0 lightmap_gray 16384.078 16384 -1503.0067 -1 180 0
+ ( 106 21 35 ) ( 106 -13 35 ) ( 72 -13 35 ) caulk 64 64 -1409 -303 0 0 lightmap_gray 16384.049 16384 -1503.0031 -1 -180 0
+ ( 103 -7 -26 ) ( 69 -7 -26 ) ( 69 -7 -30 ) okinawa_wood_shuri_int_furni 48 -48 0 -70.914215 -90 0 lightmap_gray 16383.709 -16383.994 -1502.9768 -226 180 0
+ ( -10 25 -69 ) ( -10 -9 -69 ) ( -10 -9 -73 ) caulk 64 64 303 85 0 0 lightmap_gray 16383.967 -16383.963 1 -226 -180 0
+ ( 71 -9 -72 ) ( 105 -9 -72 ) ( 105 -9 -76 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.172 -16383.871 -1503.0148 -226 180 0
+ ( 12 -6 -47 ) ( 12 28 -47 ) ( 12 28 -51 ) caulk 64 64 303 85 0 0 lightmap_gray 16384.053 -16384.129 1 -226 -180 0
+}
+// brush 23
+{
+  contents nonColliding;
+ ( 69 -24 35 ) ( 103 -24 35 ) ( 103 10 35 ) okinawa_wood_shuri_int_furni 128 128 0 0 0 0 lightmap_gray 16383.879 16384 -1504.9904 -1 -180 0
+ ( 107 21 37 ) ( 107 -13 37 ) ( 73 -13 37 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.893 16384 -1504.9913 -1 -180 0
+ ( 105 7 -15 ) ( 71 7 -15 ) ( 71 7 -19 ) okinawa_wood_shuri_int_furni 48 -48 0 -48.8284 0 0 lightmap_gray 16384.363 -16384.063 -1505.0305 -215 -180 6.1874518e-005
+ ( -53 27 -61 ) ( -53 -7 -61 ) ( -53 -7 -65 ) okinawa_wood_shuri_int_furni 48 -48 60 -48.82843 0 0 lightmap_gray 16384.029 -16384.076 1 -215 180 0
+ ( 73 -9 -61 ) ( 107 -9 -61 ) ( 107 -9 -65 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 -16383.943 -1505 -215 180 0
+ ( 53 -7 -30 ) ( 53 27 -30 ) ( 53 27 -34 ) okinawa_wood_shuri_int_furni 48 48 -60 48.82843 180 0 lightmap_gray 16384.027 -16383.865 1 -215 -180 0
+}
+// brush 24
+{
+  contents nonColliding;
+ ( 69 -13 37 ) ( 103 -13 37 ) ( 103 21 37 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.961 16384.049 -1504.9977 -1 180 0
+ ( -5 19 39 ) ( 103 19 39 ) ( 103 -9 39 ) okinawa_wood_shuri_int_furni 48 48 0 0 0 0 lightmap_gray 16384 16384 -1505.0043 -1 -180 0
+ ( 103 8 38 ) ( -5 8 38 ) ( -3 6 36 ) okinawa_wood_shuri_int_furni 48 -33.941124 0 -15.36396 0 0 lightmap_gray 16383.846 16383.16 -1504.9711 120.99819 180 0.00045815663
+ ( -54 17 38 ) ( -54 -9 38 ) ( -52 -9 36 ) okinawa_wood_shuri_int_furni 35.777077 -45.53677 4.5712004 -41.1847 90 -0.28284264 lightmap_gray 16377.364 16383.982 -1504.3691 121 180 0
+ ( 73 -9 -59 ) ( 107 -9 -59 ) ( 107 -9 -63 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.195 -16383.877 -1505.0188 -213 180 -5.9969781e-005
+ ( 53 -9 37 ) ( 53 17 37 ) ( 51 17 35 ) okinawa_wood_shuri_int_furni 35.777077 -45.53677 3.4287996 -57.1847 90 0.28284264 lightmap_gray 16379.929 16384.039 -1504.6368 121.00628 180 0
+}
+// brush 25
+{
+  contents detail;
+ ( -33 -13 2 ) ( 1 -13 2 ) ( 1 21 2 ) okinawa_wood_shuri_int_furni 128 128 0 0 0 0 lightmap_gray 16384 16384 -1402.9979 -1 180 0
+ ( 5 21 35 ) ( 5 -13 35 ) ( -29 -13 35 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.676 16383.975 -1402.9708 -1 180 0
+ ( 3 6 -27 ) ( -31 6 -27 ) ( -31 6 -31 ) okinawa_wood_shuri_int_furni 48 -48 0 -57.414219 -90 0 lightmap_gray 16383.936 -16383.936 -1402.9967 -226 180 -9.4810224e-005
+ ( -52 27 -72 ) ( -52 -7 -72 ) ( -52 -7 -76 ) okinawa_wood_shuri_int_furni 48 -48 0 -115.03554 -90 0 lightmap_gray 16384 -16384.123 1 -226 180 0
+ ( -29 -9 -72 ) ( 5 -9 -72 ) ( 5 -9 -76 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.379 -16383.967 -1402.9625 -226 180 -0.00024097621
+ ( -10 -8 -42 ) ( -10 26 -42 ) ( -10 26 -46 ) okinawa_wood_shuri_int_furni 48 48 0 87.914215 -90 0 lightmap_gray 16384 -16383.994 1 -226 180 0
+ ( -53 4 35 ) ( -50 7 35 ) ( -53 4 67 ) okinawa_wood_shuri_int_furni 48 -33.941124 0 -82.806877 -90 0 lightmap_gray 16383.643 16384 302.9931 85 0 0
+}
+// brush 26
+{
+  contents detail;
+ ( 69 -13 2 ) ( 103 -13 2 ) ( 103 21 2 ) okinawa_wood_shuri_int_furni 48 48 0 0 0 0 lightmap_gray 16383.961 16384.049 -1504.9977 -1 180 0
+ ( 107 21 35 ) ( 107 -13 35 ) ( 73 -13 35 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.893 16384 -1504.9913 -1 -180 0
+ ( 105 6 -27 ) ( 71 6 -27 ) ( 71 6 -31 ) okinawa_wood_shuri_int_furni 48 -48 0 -57.414219 -90 0 lightmap_gray 16384.248 -16384 -1505.0197 -226 180 0
+ ( 12 25 -73 ) ( 12 -9 -73 ) ( 12 -9 -77 ) okinawa_wood_shuri_int_furni 48 -48 0 -51.914215 -90 0 lightmap_gray 16383.969 -16383.992 1 -226 -180 0
+ ( 73 -9 -72 ) ( 107 -9 -72 ) ( 107 -9 -76 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.16 -16384.873 -1505.0103 -226 -180 -2.751176e-005
+ ( 52 -8 -40 ) ( 52 26 -40 ) ( 52 26 -44 ) okinawa_wood_shuri_int_furni 48 48 0 0 270 0 lightmap_gray 16384 -16384.066 1 -226 180 0
+ ( 50 7 34 ) ( 53 4 34 ) ( 50 7 66 ) okinawa_wood_shuri_int_furni 48 33.941147 0 -1.46446 -90 0 lightmap_gray 16383.643 16384 302.99451 85 0 0
+}
+// brush 27
+{
+  contents nonColliding;
+ ( 28 6 5 ) ( 48 6 5 ) ( 48 7 5 ) okinawa_wood_shuri_int_furni 48 48 0 0 0 0 lightmap_gray 16384 16382 -1354.0074 180.97949 180 -0.0029700152
+ ( 47 7 32 ) ( 47 6 32 ) ( 27 6 32 ) okinawa_wood_shuri_int_furni 48 48 0 0 0 0 lightmap_gray 16384.301 16384.125 -1354.0265 181.00179 -180 -0.00056966575
+ ( 47 6.5 35 ) ( 27 6.5 35 ) ( 27 6.5 1 ) okinawa_wood_shuri_int_furni 48 -48 -117 -159.4142 0 0 lightmap_gray 16384.889 -16384 -1354.0734 -31 180 0
+ ( 32 7 35 ) ( 32 6 35 ) ( 32 6 1 ) okinawa_wood_shuri_int_furni 48 48 0 0 0 0 lightmap_gray 16385.5 -16384 -181.01596 -30.997635 180 0
+ ( 27 6 35 ) ( 47 6 35 ) ( 47 6 1 ) caulk 64 64 0 0 0 0 lightmap_gray 16383.361 -16384 -1353.9478 -31 -180 0
+ ( 46 6 35 ) ( 46 7 35 ) ( 46 7 1 ) okinawa_wood_shuri_int_furni 48 48 0 0 0 0 lightmap_gray 16384.287 -16384 -181.00127 -30.982237 180 0
+}
+// brush 28
+{
+  contents nonColliding;
+ ( 69 -13 0 ) ( 103 -13 0 ) ( 103 21 0 ) okinawa_wood_shuri_int_furni 48 48 0 -6 0 0 lightmap_gray 16383.961 16384.049 -1504.9977 -1 180 0
+ ( 107 10 2 ) ( 107 -24 2 ) ( 73 -24 2 ) okinawa_wood_shuri_int_furni 48 48 -5 70.9142 0 0 lightmap_gray 16383.875 16384 -1504.9891 -1 180 0
+ ( 105 6 -50 ) ( 71 6 -50 ) ( 71 6 -54 ) okinawa_wood_shuri_int_furni 48 48 56 16 0 0 lightmap_gray 16384.115 -16384.18 -1505.0106 -250 180 -3.3253011e-005
+ ( -52 27 -97 ) ( -52 -7 -97 ) ( -52 -7 -101 ) okinawa_wood_shuri_int_furni 48 48 114 16 0 0 lightmap_gray 16384 -16383.881 1 -249.99821 180 0
+ ( 73 -9 -96 ) ( 107 -9 -96 ) ( 107 -9 -100 ) caulk 64 64 0 0 0 0 lightmap_gray 16384.244 -16383.654 -1505.0266 -250 180 -2.286665e-005
+ ( 52 -7 -64 ) ( 52 27 -64 ) ( 52 27 -68 ) okinawa_wood_shuri_int_furni 48 -48 -2 -16 180 0 lightmap_gray 16384.045 -16383.873 1 -250 -180 0
+}
+// brush 29
+{
+  contents nonColliding;
+ ( -49 6 5 ) ( -29 6 5 ) ( -29 7 5 ) okinawa_wood_shuri_int_furni 128 128 24 -64 0 0 lightmap_gray 16384 16381.928 -1277.0013 180.97873 180 -0.0028072621
+ ( -30 7 32 ) ( -30 6 32 ) ( -50 6 32 ) okinawa_wood_shuri_int_furni 128 128 24 -64 0 0 lightmap_gray 16383.893 16383.965 -1276.9899 181 180 -0.00062778883
+ ( -30 6.5 35 ) ( -50 6.5 35 ) ( -50 6.5 1 ) okinawa_wood_shuri_int_furni 48 -48 24 -121.414 0 0 lightmap_gray 16385.121 -16384 -1277.0903 -31 180 0
+ ( -45 7 35 ) ( -45 6 35 ) ( -45 6 1 ) okinawa_wood_shuri_int_furni 128 128 24 -64 0 0 lightmap_gray 16385.5 -16384 -181.01596 -30.977127 180 0
+ ( -50 6 35 ) ( -30 6 35 ) ( -30 6 1 ) caulk 64 64 0 0 0 0 lightmap_gray 16382.801 -16384 -1276.9043 -31 -180 0
+ ( -31 6 35 ) ( -31 7 35 ) ( -31 7 1 ) okinawa_wood_shuri_int_furni 128 128 24 -64 0 0 lightmap_gray 16384.287 -16384 -181.00127 -30.982237 180 0
+}
+// brush 30
+{
+  contents nonColliding;
+ ( 6 4 22 ) ( 6 5 22 ) ( -10 5 22 ) berlin_ceilings_metal 48 -48 5 -10 90 0 lightmap_gray 16383.875 16381.5 -1313.0018 179.97354 180 -0.0014646203
+ ( 6 6 23 ) ( 6 5 23 ) ( -14 5 23 ) berlin_ceilings_metal 48 48 -6 10 -90 0 lightmap_gray 16384.395 16384.084 -1313.0334 180.00133 -180 -0.00014241607
+ ( 6 5 25 ) ( -14 5 25 ) ( -14 5 -9 ) berlin_ceilings_metal 48 -48 22 -10 90 0 lightmap_gray 16384.715 -16384 -1313.0596 -41 180 0
+ ( -10 5 22 ) ( -10 6 22 ) ( -10 6 23 ) berlin_ceilings_metal 48 48 -4 20.25 -90 0 lightmap_gray 16379.335 16383.752 -3030.5205 -200.98592 180 0.00073241093
+ ( -14 -7 25 ) ( 6 -7 25 ) ( 6 -7 -9 ) berlin_ceilings_metal 48 48 -4 20.25 -90 0 lightmap_gray 16382 -16384 -1312.8391 -41 180 0
+ ( 12 6 22 ) ( 12 5 22 ) ( 12 5 23 ) berlin_ceilings_metal 48 48 -4 20.25 -90 0 lightmap_gray 16336.141 16386.498 -3022.0466 -201.01128 180 -0.00047346586
+}
+// brush 31
+{
+  contents nonColliding;
+ ( 6 4 10 ) ( 6 5 10 ) ( -10 5 10 ) berlin_ceilings_metal 48 -48 -6 -18 90 0 lightmap_gray 16383.875 16381.5 -1313.0018 179.97354 180 -0.0014646203
+ ( 6 6 11 ) ( 6 5 11 ) ( -14 5 11 ) berlin_ceilings_metal 48 48 -17 18 -90 0 lightmap_gray 16384.395 16384.125 -1313.0334 180 -180 -0.00014241644
+ ( 6 5 13 ) ( -14 5 13 ) ( -14 5 -21 ) berlin_ceilings_metal 48 -48 -1 -18 90 0 lightmap_gray 16384.387 -16384 -1313.035 -53 180 0
+ ( -10 5 10 ) ( -10 6 10 ) ( -10 6 11 ) berlin_ceilings_metal 48 48 -4 20.25 -90 0 lightmap_gray 16305.71 16384.02 -3016.929 -212.98836 180 0.00072986766
+ ( -14 -7 13 ) ( 6 -7 13 ) ( 6 -7 -21 ) berlin_ceilings_metal 48 48 -4 20.25 -90 0 lightmap_gray 16382.715 -16384 -1312.8978 -53 180 0
+ ( 12 6 10 ) ( 12 5 10 ) ( 12 5 11 ) berlin_ceilings_metal 48 48 -4 20.25 -90 0 lightmap_gray 16362.693 16386.465 -3026.9368 -213.01157 180 0
+}
+// brush 32
+{
+  contents nonColliding;
+ ( -50 6 4 ) ( -30 6 4 ) ( -30 7 4 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16384.016 16382.072 -1276.9794 180.97903 180 0.0024236825
+ ( -45 6 5 ) ( -45 7 5 ) ( -31 7 5 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16384 16384.107 -1276.9829 180.99779 180 0.0012904659
+ ( -30 7 35 ) ( -50 7 35 ) ( -50 7 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16385.121 -16384 -1277.0903 -31 180 0
+ ( -45 7 5 ) ( -45 6 5 ) ( -46 6 4 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16382.043 16381.857 -1284.8358 185.97694 -180 0.0011883407
+ ( -50 6 35 ) ( -30 6 35 ) ( -30 6 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16382.801 -16384 -1276.9043 -31 -180 0
+ ( -31 6 5 ) ( -31 7 5 ) ( -30 7 4 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16384.051 16383.666 -1285.0184 185.98784 -180 -0.0047799498
+}
+// brush 33
+{
+  contents nonColliding;
+ ( -43.5 7 19.5 ) ( -43.5 6 19.5 ) ( -42.5 6 19.5 ) berlin_ceilings_metal 48 48 -9 107 90 0 lightmap_gray 16381.959 16386.607 -1278.7882 181.03941 -180 -0.0011854005
+ ( -43.5 6 29 ) ( -43.5 7 29 ) ( -42.5 7 29 ) berlin_ceilings_metal 48 48 -9 107 90 0 lightmap_gray 16384 16383.465 -1278.9523 181.03317 180 0.00045311949
+ ( -28 7 35.5 ) ( -48 7 35.5 ) ( -48 7 1.5 ) berlin_ceilings_metal 48 48 -9 107 90 0 lightmap_gray 16385.209 -16384 -1279.0964 -30.5 180 0
+ ( -43.5 6 10.5 ) ( -43.5 7 10.5 ) ( -43.5 7 29 ) berlin_ceilings_metal 48 48 -9 107 90 0 lightmap_gray 16384.322 -16384 -181 -30.5 180 0
+ ( -48 6 35.5 ) ( -28 6 35.5 ) ( -28 6 1.5 ) berlin_ceilings_metal 48 48 -9 107 90 0 lightmap_gray 16385.293 -16384 -1279.1027 -30.5 180 0
+ ( -42.5 6 34.5 ) ( -42.5 7 34.5 ) ( -42.5 7 0.5 ) berlin_ceilings_metal 48 48 -9 107 90 0 lightmap_gray 16384.537 -16384 -181.00745 -30.517374 180 0
+}
+// brush 34
+{
+  contents nonColliding;
+ ( -46 7 4 ) ( -46 6 4 ) ( -45 6 5 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16387.998 16391.146 -1277.3252 181.04359 180 -0.0006106178
+ ( -46 6 33 ) ( -46 7 33 ) ( -45 7 32 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16381.98 16386.287 -1276.8448 181.01727 180 -0.0012383146
+ ( -30 7 35 ) ( -50 7 35 ) ( -50 7 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16385.121 -16384 -1277.0903 -31 180 0
+ ( -46 7 33 ) ( -46 6 33 ) ( -46 6 4 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16385.5 -16384 -181.01596 -31 180 0
+ ( -50 6 35 ) ( -30 6 35 ) ( -30 6 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16382.801 -16384 -1276.9043 -31 -180 0
+ ( -45 6 34 ) ( -45 7 34 ) ( -45 7 0 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16384.037 -16384 -181 -30.985531 180 0
+}
+// brush 35
+{
+  contents nonColliding;
+ ( -30 6 4 ) ( -30 7 4 ) ( -31 7 5 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16382.008 16386.293 -1276.8473 181.01968 180 -0.00026452271
+ ( -30 7 33 ) ( -30 6 33 ) ( -31 6 32 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16380.144 16383.607 -1276.6952 180.9957 -180 -1.7033533e-005
+ ( -30 7 35 ) ( -50 7 35 ) ( -50 7 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16385.121 -16384 -1277.0903 -31 180 0
+ ( -31 7 35 ) ( -31 6 35 ) ( -31 6 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16385.5 -16384 -181.01596 -30.977127 180 0
+ ( -50 6 35 ) ( -30 6 35 ) ( -30 6 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16382.801 -16384 -1276.9043 -31 -180 0
+ ( -30 7 4 ) ( -30 6 4 ) ( -30 6 33 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16385.037 -16384 -181.01169 -31 180 0
+}
+// brush 36
+{
+  contents nonColliding;
+ ( -45 7 32 ) ( -45 6 32 ) ( -31 6 32 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16384 16382.084 -1277.0104 180.97978 180 -0.0011188471
+ ( -30 7 33 ) ( -30 6 33 ) ( -50 6 33 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16383.893 16383.965 -1276.9899 181 180 -0.00062778883
+ ( -30 7 35 ) ( -50 7 35 ) ( -50 7 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16385.121 -16384 -1277.0903 -31 180 0
+ ( -45 6 32 ) ( -45 7 32 ) ( -46 7 33 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16384 16383.822 -1284.9861 185.99529 180 0.0016043354
+ ( -50 6 35 ) ( -30 6 35 ) ( -30 6 1 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16382.801 -16384 -1276.9043 -31 -180 0
+ ( -31 7 32 ) ( -31 6 32 ) ( -30 6 33 ) berlin_ceilings_metal 48 48 -7 -17 90 0 lightmap_gray 16384.18 16386.215 -1284.9937 185.99886 -180 0.00061111891
+}
+}

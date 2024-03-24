@@ -1,0 +1,83 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+  contents nonColliding;
+ ( -28 16 69 ) ( -28 -4 69 ) ( -26 -4 67 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 862 662 0 0
+ ( 28 -12 69 ) ( 28 8 69 ) ( 26 6 67 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 862 662 0 0
+ ( 40 16 69 ) ( 40 -4 69 ) ( -40 -4 69 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 14 6 66 ) ( 14 8 69 ) ( -38 8 69 ) berlin_trim_concrete_decorative 128 32 -109 135 180 0 lightmap_gray 16384 16384 -1068 669 0 0
+ ( -38 -3 67 ) ( -38 -13 67 ) ( 14 -13 67 ) berlin_trim_concrete_decorative 128 -32 -44 -46 180 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -31 -4 69 ) ( -41 -4 69 ) ( -41 -4 101 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1537 477 0 0
+}
+// brush 1
+{
+  contents nonColliding;
+ ( 26 14 67 ) ( 26 2 67 ) ( 32 2 73 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -32 20 73 ) ( -32 8 73 ) ( -26 8 67 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( 20 12 73 ) ( -44 12 73 ) ( -38 12 67 ) berlin_trim_concrete_decorative 128 32 -109 126 180 0 lightmap_gray 16384 16384 -1068 671 0 0
+ ( -44 2 73 ) ( -44 14 73 ) ( 20 14 73 ) berlin_trim_concrete_decorative 128 32 -109 160 180 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -14 -10 69 ) ( 38 -10 69 ) ( 38 10 69 ) berlin_trim_concrete_decorative 128 32 -109 134 180 0 lightmap_gray 16384 16384 -1068 -862 0 0
+ ( -31 -4 67 ) ( -41 -4 67 ) ( -41 -4 99 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1537 479 0 0
+}
+// brush 2
+{
+  contents nonColliding;
+ ( 53 6 -31 ) ( 47 6 -31 ) ( 47 -10 -31 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1673 -494 0 0
+ ( 43 -10 67 ) ( 43 6 67 ) ( 49 6 67 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1673 -494 0 0
+ ( 49 -4 73 ) ( 55 -4 73 ) ( 55 -4 71 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1673 787 0 0
+ ( 26 -10 73 ) ( 26 6 73 ) ( 26 6 71 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 494 787 0 0
+ ( 55 0 73 ) ( 49 0 73 ) ( 49 0 71 ) berlin_door_metal_rusted -52 97.99987 -26 31 0 0 lightmap_gray 16384 16384 -1673 787 0 0
+ ( -26 2 73 ) ( -26 -14 73 ) ( -26 -14 71 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 494 787 0 0
+}
+// brush 3
+{
+  contents nonColliding;
+ ( 26 -12 -31 ) ( 26 6.5 -31 ) ( 26 6.5 67 ) berlin_trim_concrete_decorative 128 32 -137 46 270 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 28 8 -18 ) ( 28 8 98 ) ( 25 6 98 ) berlin_trim_concrete_decorative 128 32 -137 72 270 0 lightmap_gray 16384 16384 -1054 664 0 0
+ ( 28 8 -31 ) ( 28 -12 -31 ) ( 28 -12 69 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 28 8 69 ) ( 28 -12 69 ) ( 26 -12 67 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1054 -862 0 0
+ ( 28 -12 -31 ) ( 28 8 -31 ) ( 26 6.5 -31 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1054 -862 0 0
+ ( -17 -4 74 ) ( -27 -4 74 ) ( -27 -4 106 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1523 472 0 0
+}
+// brush 4
+{
+  contents nonColliding;
+ ( -28 8 -31 ) ( -28 -12 -31 ) ( -26 -12 -31 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1058 -862 0 0
+ ( -28 -4 69 ) ( -28 16 69 ) ( -26 14 67 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1058 -862 0 0
+ ( -28 -12 -31 ) ( -28 8 -31 ) ( -28 8 69 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -25 6 98 ) ( -28 8 98 ) ( -28 8 -18 ) berlin_trim_concrete_decorative 128 32 -137 62 270 0 lightmap_gray 16384 16384 -1058 664 0 0
+ ( -26 6 -39 ) ( -26 -7 -39 ) ( -26 -7 74 ) berlin_trim_concrete_decorative 128 32 -137 46 270 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -21 -4 74 ) ( -31 -4 74 ) ( -31 -4 106 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1527 472 0 0
+}
+// brush 5
+{
+  contents nonColliding;
+ ( 32 14 -31 ) ( 32 -12 -31 ) ( 32 -12 73 ) berlin_trim_concrete_decorative 144 -40 -111 -78 -90 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 32 12 104 ) ( 26 12 98 ) ( 26 12 -18 ) berlin_trim_concrete_decorative 128 -32 -95 107 270 0 lightmap_gray 16384 16384 -1056 664 0 0
+ ( 28 -7 76 ) ( 28 -7 -16 ) ( 28 13 -16 ) berlin_trim_concrete_decorative 128 -32 -137 -70 -90 0 lightmap_gray 16384 16384 862 664 0 0
+ ( 26 2 67 ) ( 26 14 67 ) ( 32 14 73 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1056 -862 0 0
+ ( 32 -12 -31 ) ( 32 14 -31 ) ( 28 14 -31 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1056 -862 0 0
+ ( -19 -4 74 ) ( -29 -4 74 ) ( -29 -4 106 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1525 472 0 0
+}
+// brush 6
+{
+  contents nonColliding;
+ ( -32.5 14 -31 ) ( -32.5 -12 -31 ) ( -28.5 -12 -31 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1056 -862 0 0
+ ( -26 12 -18 ) ( -26 12 98 ) ( -32 12 104 ) berlin_trim_concrete_decorative 128 32 -137 85 270 0 lightmap_gray 16384 16384 -1056 664 0 0
+ ( -28 -7 -39 ) ( -28 -7 53 ) ( -28 13 53 ) berlin_trim_concrete_decorative 128 -32 -137 -70 -90 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -32 -12 -36 ) ( -32 14 -36 ) ( -32 14 73 ) berlin_trim_concrete_decorative 144 -40 -111 -78 -90 0 lightmap_gray 16384 16384 862 664 0 0
+ ( -32 20 73 ) ( -26 20 67 ) ( -26 8 67 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1056 -862 0 0
+ ( -19 -4 74 ) ( -29 -4 74 ) ( -29 -4 106 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 -1525 472 0 0
+}
+}
+// entity 1
+{
+"origin" "0.0 60.0 -24.8"
+"model" "prefab_balcony"
+"classname" "misc_model"
+}

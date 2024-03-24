@@ -1,0 +1,10 @@
+ignore,code_post_gfx_mp
+ignore,localized_code_post_gfx_mp
+ignore,common_mp
+ignore,localized_common_mp
+
+sound,mp_drum,mp_drum,all_mp
+sound,jamp_battlechatter,mp_drum,all_mp
+sound,usmp_battlechatter,mp_drum,all_mp
+
+include,mptypes_pacific

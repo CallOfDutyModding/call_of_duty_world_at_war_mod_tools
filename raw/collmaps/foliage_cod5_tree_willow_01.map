@@ -1,0 +1,22 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( -20 -20 0 ) ( 36 -20 0 ) ( 36 34 0 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 64 -68 928 ) ( 64 4 928 ) ( 128 4 928 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 34 -18 0 ) ( -22 -18 0 ) ( 34 -40 550 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 88.25 -40 550 ) ( 88.25 4 550 ) ( 32.25 32 0 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -22 34 0 ) ( 34 34 0 ) ( 90 2 550 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 35.5 4 550 ) ( 35.5 -40 550 ) ( -20.5 -12 0 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0.0 0.0 0.0"
+"model" "foliage_cod5_tree_willow_01"
+"classname" "misc_model"
+}

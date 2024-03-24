@@ -1,0 +1,1498 @@
+
+{
+	"viewmodel_30cal_ADS_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_ADS_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_ADS_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_ADS_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_ADS_lastshot" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_ADS_lastshot.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_ADS_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_breakdown" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_breakdown.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\30cal\\viewmodel_30cal_breakdown.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_deploy" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_deploy.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\30cal\\viewmodel_30cal_deploy.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_empty_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_empty_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_first_raise" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_first_raise.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_lastshot" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_lastshot.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_melee" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_melee.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_partial_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_partial_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\30cal\\viewmodel_30cal_partial_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_pullout_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_pullout_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_pullout_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_pullout_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_putaway" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_putaway.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_putaway_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_putaway_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_putaway_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_putaway_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_30cal_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\30cal\\viewmodel_30cal_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\LMGs\\30cal\\viewmodel_usa_30cal_lmg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\30cal\\viewmodel_30cal_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_bayonet_swipe" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\bayonet\\viewmodel_bayonet_swipe.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_bayonet_thrust" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\bayonet\\viewmodel_bayonet_thrust.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_bayonet_thrust_a" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\bayonet\\viewmodel_bayonet_thrust_a.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_ADS_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_ads_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_ads_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_ads_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_ads_lastfire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_ads_last_shot.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_ads_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_first_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_first_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_lastfire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_lastshot.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_melee" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_melee.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_pullout_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_pullout_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_putaway" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_putaway.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_putaway_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\flamethrower\\viewmodel_flamethrower_putaway_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_flamethrower_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\american\\flamethrower\\viewmodel_flamethrower_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Flamethrower\\m2_flamethrower\\viewmodel_usa_flamethrower_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_knife_slash" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\american\\knife\\viewmodel_knife_slash.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Knife\\viewmodel_usa_kbar_knife_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_knife_stick" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\american\\knife\\viewmodel_knife_stick.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Knife\\viewmodel_usa_kbar_knife_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\american\\knife\\viewmodel_knife_stick.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_ADS_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_ADS_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_ads_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_ads_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_ads_lastfire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_ads_lastfire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_ADS_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_aperture_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_aperture_ADS_up_.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_bayonet_first_pull_out" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_bayonet_first_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\m1garand_bayonet_first_pullout.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_empty_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_empty_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_first_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_first_pullout_a.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\m1garand_first_pullout.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_ads_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_ADS_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_ads_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_ADS_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_alt_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_alt_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_alt_pullout.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_alt_putaway" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_alt_putaway.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_alt_putaway.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_first_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_first_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_first_raise.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_idle_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_idle_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_pullout_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_pullout_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_putaway" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_putaway.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_putaway_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_putaway_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_grenade_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\viewmodel_m1garand_grenade_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\grenade_launcher\\viewmodel_grenade_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_lastfire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_lastfire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_melee" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_melee.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_melee_bayonet" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_melee_bayonet.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\m1garand_melee_bayonet.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_melee_bayonet_hold" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_melee_bayonet_hold.XANIM_EXPORT"
+		"looping" "1"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_melee_bayonet_start" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_melee_bayonet_start.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_partial_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_partial_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\m1garand_partial_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_pullout_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_pullout_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_pullout_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_pullout_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_putaway" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_putaway.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_putaway_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_putaway_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_putaway_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_putaway_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\m1garand\\m1garand_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_scoped_ADS_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_scoped_ADS_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_scoped_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_scoped_ADS_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_sprint_in" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_sprint_in.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_sprint_loop" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_sprint_loop.XANIM_EXPORT"
+		"looping" "1"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_m1garand_sprint_out" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\m1garand\\m1garand_sprint_out.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\Rifles\\m1_garand\\viewmodel_usa_m1garand_rifle_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_ADS_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_ADS_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_ADS_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_ADS_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_ADS_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_first_raise" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_first_raise.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_pullout_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_pullout_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_putaway" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_putaway.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_putaway_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_putaway_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\sw357\\sw357_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_sprint_in" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_sprint_in.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_sprint_loop" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_sprint_loop.XANIM_EXPORT"
+		"looping" "1"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_sw357_sprint_out" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\sw357\\sw357_sprint_out.XANIM_EXPORT"
+		"looping" "1"
+		"model" "american\\weapons\\pistols\\SW_357\\viewmodel_usa_SW_357_pistol_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_ADS_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_ADS_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_ADS_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_aperture_ADS_down" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel/US/thompson/thompson_aperture_ads_down.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_aperture_ADS_up" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel/US/thompson/thompson_aperture_ads_up.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_drum_clip_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel/US/thompson/thompson_drum_clip_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\thompson\\thompson_drum_clip_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_drum_clip_reload_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel/US/thompson/thompson_drum_clip_reload_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\thompson\\thompson_drum_clip_reload_empty.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_fire" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_fire.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_fire_ads" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_fire_ads.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_idle" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_idle.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_idle_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_idle_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_lastshot" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_lastshot.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_melee" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_melee.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_pullout" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_pullout.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_pullout_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_pullout_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_pullout_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_pullout_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_putaway" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_putaway.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_putaway_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_putaway_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_putaway_fast" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_putaway_fast.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_reload" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_reload.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\thompson\\thompson_reload.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_reload_empty" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_reload_empty.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" "xanim_export\\viewmodel\\US\\thompson\\thompson_reload_empty.NT_EXPORT"
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+	"viewmodel_thompson_switch" ( "xanim.gdf" )
+	{
+		"angleError" "0.05"
+		"boneStabilizers" ""
+		"filename" "viewmodel\\US\\thompson\\thompson_switch.XANIM_EXPORT"
+		"looping" "0"
+		"model" "american\\weapons\\SMGs\\thompson\\viewmodel_usa_thompson_smg_animated.XMODEL_EXPORT"
+		"node" ""
+		"notetrackfile" ""
+		"translationError" "0.025"
+		"type" "relative"
+		"useBones" "0"
+	}
+}

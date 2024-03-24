@@ -1,0 +1,67 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"targetname" "asylum_panzer_wall"
+"spawnflags" "1"
+"classname" "script_brushmodel"
+// brush 0
+{
+  contents detail;
+ ( 8 8 0 ) ( -8 8 0 ) ( -8 -8 0 ) origin 64 64 -114 24 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -8 16 ) ( -8 8 16 ) ( 8 8 16 ) origin 64 64 -114 24 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 -8 12 ) ( 8 -8 12 ) ( 8 -8 0 ) origin 64 64 -114 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 -8 12 ) ( 8 8 12 ) ( 8 8 0 ) origin 64 64 -24 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 8 8 12 ) ( -8 8 12 ) ( -8 8 0 ) origin 64 64 -114 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -8 8 12 ) ( -8 -8 12 ) ( -8 -8 0 ) origin 64 64 -24 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( 105.5 23 0 ) ( -115.5 -10 0 ) ( -115.5 -26 0 ) berlin_wall_concrete_grungy_trim 128 128 -3046.5 1391 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 105.5 8 35 ) ( -115.5 -26 35 ) ( -115.5 -10 35 ) berlin_wall_concrete_grungy_trim 128 128 -3046.5 1391 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -113 -10 35 ) ( -113 -10 0 ) ( 105.5 23 0 ) berlin_wall_concrete_grungy_trim 128 128 -3046.5 -340 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -117.5 -26 35 ) ( -117.5 -26 0 ) ( -113 -10 0 ) berlin_wall_concrete_grungy_trim 128 128 -1391 -340 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 111.5 8.5 35 ) ( 111.5 8.5 0 ) ( -117.5 -26 0 ) berlin_wall_concrete_grungy_trim 128 128 -3046.5 -290 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 111.5 8.5 0 ) ( 111.5 8.5 35 ) ( 111.5 24 35 ) berlin_wall_concrete_grungy_trim 128 128 -1391 -340 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 2
+ {
+  mesh
+  {
+   seelow_door_metal_irongate01
+   lightmap_gray
+   2 2 16 8
+   (
+	v -115.57544 -17.626221 27.5 t 12667.396 3073.4395 147.83904 19.53125
+	v -115.57544 -17.626221 86.5 t 12667.396 2601.4395 147.83904 15.84375
+   )
+   (
+	v 111.57544 16.626221 27.5 t 14584.604 3073.4395 162.03596 19.53125
+	v 111.57544 16.626221 86.5 t 14584.604 2601.4395 162.03596 15.84375
+   )
+  }
+ }
+// brush 3
+ {
+  mesh
+  {
+   seelow_door_metal_irongate01
+   lightmap_gray
+   2 2 16 8
+   (
+	v 112.07544 17.626221 27.5 t 12667.396 3073.4395 82.632889 19.53125
+	v 112.07544 17.626221 86.5 t 12667.396 2601.4395 82.632889 15.84375
+   )
+   (
+	v -115.07544 -16.626221 27.5 t 14584.604 3073.4395 80.492111 19.53125
+	v -115.07544 -16.626221 86.5 t 14584.604 2601.4395 80.492111 15.84375
+   )
+  }
+ }
+}

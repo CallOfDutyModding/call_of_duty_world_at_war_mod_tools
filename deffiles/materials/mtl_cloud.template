@@ -1,0 +1,24 @@
+#include "commonsetup.template"
+
+techniqueSet( "cloud" );
+
+textureTable
+{
+	#if "$colorMap$" == ""
+		#error "colorMap may not be blank in cloud materials"
+	#endif
+	"colorMap" = streamable map( "@tileColor@", "@filterColor@", "$colorMap$", @nopicmipColor@ ) "@formatColor@" : "colorMap";
+	"detailMap" = map( "no tile", "nomip bilinear", "texture_assets/code/cloudfalloff.tga", 0 ) "Uncompressed" : "colorMap";
+}
+
+
+constantTable
+{
+	"cloudLightColor" = float4( @,cloudLightColor@ );
+	"cloudDarkColor" = float4( @,cloudDarkColor@ );
+	"cloudLiningColor" = float4( @,cloudLiningColor@ );
+	"cloudLiningSize" = float1( @cloudLiningSize@ );
+}
+
+
+refImage( "$colorMap$" );

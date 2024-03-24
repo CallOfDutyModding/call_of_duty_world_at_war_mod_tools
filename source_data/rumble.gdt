@@ -1,0 +1,423 @@
+
+{
+	"ac130_105mm_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "damage_heavy_h.rmb"
+		"lowRumbleFile" "damage_heavy_l.rmb"
+		"range" "1024"
+	}
+	"ac130_25mm_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.1"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "damage_light_h.rmb"
+		"lowRumbleFile" "damage_light_l.rmb"
+		"range" "1024"
+	}
+	"ac130_40mm_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "defaultweapon_melee_h.rmb"
+		"lowRumbleFile" "defaultweapon_melee_l.rmb"
+		"range" "1024"
+	}
+	"artillery_rumble" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "artillery_rumble_h.rmb"
+		"lowRumbleFile" "artillery_rumble_l.rmb"
+		"range" "800"
+	}
+	"assault_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "assault_fire_h.rmb"
+		"lowRumbleFile" "assault_fire_l.rmb"
+		"range" "1"
+	}
+	"barrel_explosion" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.3"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "barrel_explosion_h.rmb"
+		"lowRumbleFile" "barrel_explosion_l.rmb"
+		"range" "256"
+	}
+	"ber1_barrage" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "5.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "ber1_barrage_h.rmb"
+		"lowRumbleFile" "ber1_barrage_l.rmb"
+		"range" "4000"
+	}
+	"ber1_train" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "13"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "ber1_train_h.rmb"
+		"lowRumbleFile" "ber1_train_l.rmb"
+		"range" "10000"
+	}
+	"ber2_generic_heavy" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "ber2_generic_heavy_h.rmb"
+		"lowRumbleFile" "ber2_generic_heavy_l.rmb"
+		"range" "1000"
+	}
+	"ber2_generic_light" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "ber2_generic_light_h.rmb"
+		"lowRumbleFile" "ber2_generic_light_l.rmb"
+		"range" "1000"
+	}
+	"crash_heli_rumble" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "tank_rumble_h.rmb"
+		"lowRumbleFile" "tank_rumble_l.rmb"
+		"range" "2000"
+	}
+	"crash_heli_rumble_rest" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "tank_rumble_h.rmb"
+		"lowRumbleFile" "tank_rumble_l.rmb"
+		"range" "2000"
+	}
+	"damage_heavy" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.3"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "damage_heavy_h.rmb"
+		"lowRumbleFile" "damage_heavy_l.rmb"
+		"range" "1"
+	}
+	"damage_light" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.3"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "damage_light_h.rmb"
+		"lowRumbleFile" "damage_light_l.rmb"
+		"range" "1"
+	}
+	"defaultweapon_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "defaultweapon_fire_h.rmb"
+		"lowRumbleFile" "defaultweapon_fire_l.rmb"
+		"range" "1"
+	}
+	"defaultweapon_melee" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "defaultweapon_melee_h.rmb"
+		"lowRumbleFile" "defaultweapon_melee_l.rmb"
+		"range" "1"
+	}
+	"explosion_generic" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "explosion_generic_h.rmb"
+		"lowRumbleFile" "explosion_generic_l.rmb"
+		"range" "1000"
+	}
+	"explosion_generic_no_broadcast" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "explosion_generic_h.rmb"
+		"lowRumbleFile" "explosion_generic_l.rmb"
+		"range" "1000"
+	}
+	"flamethrower" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "flamethrower_h.rmb"
+		"lowRumbleFile" "flamethrower_l.rmb"
+		"range" "750"
+	}
+	"grenade_rumble" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "grenade_rumble_h.rmb"
+		"lowRumbleFile" "grenade_rumble_l.rmb"
+		"range" "400"
+	}
+	"heavygun_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "heavygun_fire_h.rmb"
+		"lowRumbleFile" "heavygun_fire_l.rmb"
+		"range" "1"
+	}
+	"jeepride_bridgesink" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "jeepride_bridgesink_h.rmb"
+		"lowRumbleFile" "jeepride_bridgesink_l.rmb"
+		"range" "400"
+	}
+	"jeepride_cliffblow" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "jeepride_cliffblow_h.rmb"
+		"lowRumbleFile" "jeepride_cliffblow_l.rmb"
+		"range" "400"
+	}
+	"jeepride_pillarblow" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "3"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "jeepride_pillarblow_h.rmb"
+		"lowRumbleFile" "jeepride_pillarblow_l.rmb"
+		"range" "400"
+	}
+	"mig_rumble" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "tank_rumble_h.rmb"
+		"lowRumbleFile" "tank_rumble_l.rmb"
+		"range" "10000"
+	}
+	"minigun_rumble" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.3"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "tank_rumble_h.rmb"
+		"lowRumbleFile" "tank_rumble_l.rmb"
+		"range" "750"
+	}
+	"oki3_castle_fall" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "oki3_castle_fall_h.rmb"
+		"lowRumbleFile" "oki3_castle_fall_l.rmb"
+		"range" "8000"
+	}
+	"pel2_bomber" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "13"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "pel2_bomber_h.rmb"
+		"lowRumbleFile" "pel2_bomber_l.rmb"
+		"range" "10000"
+	}
+	"pistol_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "pistol_fire_h.rmb"
+		"lowRumbleFile" "pistol_fire_l.rmb"
+		"range" "1"
+	}
+	"shotgun_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "shotgun_fire_h.rmb"
+		"lowRumbleFile" "shotgun_fire_l.rmb"
+		"range" "1"
+	}
+	"silencer_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "silencer_fire_h.rmb"
+		"lowRumbleFile" "silencer_fire_l.rmb"
+		"range" "1"
+	}
+	"smg_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "smg_fire_h.rmb"
+		"lowRumbleFile" "smg_fire_l.rmb"
+		"range" "1"
+	}
+	"sniper_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "shotgun_fire_h.rmb"
+		"lowRumbleFile" "shotgun_fire_l.rmb"
+		"range" "1"
+	}
+	"stinger_lock_rumble" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.3"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "stinger_lock_rumble_h.rmb"
+		"lowRumbleFile" "stinger_lock_rumble_l.rmb"
+		"range" "1"
+	}
+	"tank_damage_heavy_mp" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "tank_damage_heavy_h.rmb"
+		"lowRumbleFile" "tank_damage_heavy_l.rmb"
+		"range" "500"
+	}
+	"tank_damage_light_mp" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "tank_damage_light_h.rmb"
+		"lowRumbleFile" "tank_damage_light_l.rmb"
+		"range" "500"
+	}
+	"tank_damaged_rumble_mp" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "tank_damaged_rumble_h.rmb"
+		"lowRumbleFile" "tank_damaged_rumble_l.rmb"
+		"range" "500"
+	}
+	"tank_fire" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.3"
+		"fadeWithDistance" "1"
+		"highRumbleFile" "tank_fire_sp_h.rmb"
+		"lowRumbleFile" "tank_fire_sp_l.rmb"
+		"range" "500"
+	}
+	"tank_fire_mp" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.5"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "tank_fire_h.rmb"
+		"lowRumbleFile" "tank_fire_l.rmb"
+		"range" "500"
+	}
+	"tank_rumble" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "tank_rumble_h.rmb"
+		"lowRumbleFile" "tank_rumble_l.rmb"
+		"range" "750"
+	}
+	"tank_rumble_mp" ( "rumble.gdf" )
+	{
+		"broadcast" "1"
+		"configstringFileType" "RUMBLE"
+		"duration" "1"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "tank_rumble_h.rmb"
+		"lowRumbleFile" "tank_rumble_l.rmb"
+		"range" "500"
+	}
+	"wpn_mortar_prime" ( "rumble.gdf" )
+	{
+		"broadcast" "0"
+		"configstringFileType" "RUMBLE"
+		"duration" "0.25"
+		"fadeWithDistance" "0"
+		"highRumbleFile" "wpn_mortar_prime_h.rmb"
+		"lowRumbleFile" "wpn_mortar_prime_l.rmb"
+		"range" "750"
+	}
+}

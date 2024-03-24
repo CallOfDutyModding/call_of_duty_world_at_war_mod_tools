@@ -1,0 +1,445 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"_color" "0.5 0.5 .62 1"
+"ambient" ".15"
+"sundiffusecolor" "0.75 0.82 0.85"
+"diffusefraction" ".5"
+"classname" "worldspawn"
+"sundirection" "-130  40 0"
+"suncolor" "0.9 0.95 1"
+"sunlight" "1.5"
+// brush 0
+{
+  contents detail;
+ ( -490 1 28 ) ( 278 1 28 ) ( 278 1 -36 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -100 -180 0
+ ( 126 7 155.5 ) ( 142 7 155.5 ) ( 142 7 187.5 ) holland_trim_wood_window_grimy02 64 4 0 0 90 0 lightmap_gray 16384 -16384 -150.05191 -100 180 0
+ ( -44 4 48 ) ( -44 4 44 ) ( -44 36 48 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 332 100 0 0
+ ( -42 -1 63 ) ( -42 9 63 ) ( -42 9 6.5 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 7 0 0 0
+ ( -42 -1 2.5 ) ( -42 9 2.5 ) ( -44 9 0.5 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+ ( -42 9 63 ) ( -42 -1 63 ) ( -44 -1 65 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+}
+// brush 1
+{
+  contents detail;
+ ( -490 1 28 ) ( 278 1 28 ) ( 278 1 -36 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -100 -180 0
+ ( 126 7 156 ) ( 142 7 156 ) ( 142 7 188 ) holland_trim_wood_window_grimy02 64 4 0 0 90 0 lightmap_gray 16384 -16384 -150.05191 -100 180 0
+ ( -4 18.75 43 ) ( -4 18.75 55 ) ( -4 50.75 55 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 332 100 0 0
+ ( -6 -1 6.5 ) ( -6 9 6.5 ) ( -6 9 63 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 16384 7 0 0 0
+ ( -6 -1 63 ) ( -6 9 63 ) ( -4 9 65 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+ ( -6 9 2.5 ) ( -6 -1 2.5 ) ( -4 -1 0.5 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+}
+// brush 2
+{
+  contents detail;
+ ( -490 1 28 ) ( 278 1 28 ) ( 278 1 -36 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -100 -180 0
+ ( 126 7 156 ) ( 142 7 156 ) ( 142 7 188 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 -16384 -150.05191 -100 180 0
+ ( 76.25 4 65 ) ( 60.25 4 65 ) ( 76.25 36 65 ) caulk 64 64 332 150.0519 90 0 lightmap_gray 16384 16384 332 150.0519 90 0
+ ( -6 9 63 ) ( -6 -1 63 ) ( -4 -1 65 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+ ( -42 -3 63 ) ( -42 7 63 ) ( -44 7 65 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+ ( -6 -1 63 ) ( -6 9 63 ) ( -42 9 63 ) holland_window_glass_grimy02 48 -76 39 79 180 0 lightmap_gray 16384 16384 0.051906586 -7 0 0
+}
+// brush 3
+{
+  contents detail;
+ ( -490 1 24 ) ( 278 1 24 ) ( 278 1 -40 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -104 180 0
+ ( 126 7 152 ) ( 142 7 152 ) ( 142 7 184 ) holland_trim_wood_window_grimy02 64 4 0 0 0 0 lightmap_gray 16384 -16384 -150.05191 -104 180 0
+ ( 0 4 0.5 ) ( 10 4 0.5 ) ( 0 36 0.5 ) caulk 64 64 332 150.05191 90 0 lightmap_gray 16384 16384 332 150.05191 90 0
+ ( -6 1 2.5 ) ( -6 9 2.5 ) ( -4 9 0.5 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+ ( -42 7 2.5 ) ( -42 -1 2.5 ) ( -44 -1 0.5 ) caulk 64 64 8 1 0 0 lightmap_gray 16384 16384 8 1 0 0
+ ( -42 -1 2.5 ) ( -42 7 2.5 ) ( -6 7 2.5 ) holland_window_glass_grimy02 48 -76 55 79 180 0 lightmap_gray 16384 16384 0.051906586 -7 0 0
+}
+// brush 4
+{
+  contents detail;
+ ( -570 1 24 ) ( 198 1 24 ) ( 198 1 -40 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -104 180 0
+ ( 46 7 152 ) ( 62 7 152 ) ( 62 7 184 ) holland_trim_wood_window_grimy02 64 4 0 0 0 0 lightmap_gray 16384 -16384 -70.05191 -104 180 0
+ ( -80 4 0.5 ) ( -70 4 0.5 ) ( -80 36 0.5 ) caulk 64 64 332 70.05191 90 0 lightmap_gray 16384 16384 332 70.05191 90 0
+ ( -86 1 2.5 ) ( -86 9 2.5 ) ( -84 9 0.5 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+ ( -122 7 2.5 ) ( -122 -1 2.5 ) ( -124 -1 0.5 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+ ( -122 -1 2.5 ) ( -122 7 2.5 ) ( -86 7 2.5 ) holland_window_glass_grimy02 48 -76 55 79 180 0 lightmap_gray 16384 16384 -79.94809 -7 0 0
+}
+// brush 5
+{
+  contents detail;
+ ( -570 1 28 ) ( 198 1 28 ) ( 198 1 -36 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -100 180 0
+ ( 46 7 156 ) ( 62 7 156 ) ( 62 7 188 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.05191 -100 180 0
+ ( -3.75 4 65 ) ( -19.75 4 65 ) ( -3.75 36 65 ) caulk 64 64 332 70.051895 90 0 lightmap_gray 16384 16384 332 70.051895 90 0
+ ( -86 9 63 ) ( -86 -1 63 ) ( -84 -1 65 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+ ( -122 -3 63 ) ( -122 7 63 ) ( -124 7 65 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+ ( -86 -1 63 ) ( -86 9 63 ) ( -122 9 63 ) holland_window_glass_grimy02 48 -76 39 79 180 0 lightmap_gray 16384 16384 -79.94809 -7 0 0
+}
+// brush 6
+{
+  contents detail;
+ ( -570 1 28 ) ( 198 1 28 ) ( 198 1 -36 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -100 180 0
+ ( 46 7 156 ) ( 62 7 156 ) ( 62 7 188 ) holland_trim_wood_window_grimy02 64 4 0 0 90 0 lightmap_gray 16384 -16384 -70.05191 -100 180 0
+ ( -84 18.75 43 ) ( -84 18.75 55 ) ( -84 50.75 55 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 332 100 0 0
+ ( -86 -1 6.5 ) ( -86 9 6.5 ) ( -86 9 63 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 16384 7 0 0 0
+ ( -86 -1 63 ) ( -86 9 63 ) ( -84 9 65 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+ ( -86 9 2.5 ) ( -86 -1 2.5 ) ( -84 -1 0.5 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+}
+// brush 7
+{
+  contents detail;
+ ( -570 1 28 ) ( 198 1 28 ) ( 198 1 -36 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -100 180 0
+ ( 46 7 155.5 ) ( 62 7 155.5 ) ( 62 7 187.5 ) holland_trim_wood_window_grimy02 64 4 0 0 90 0 lightmap_gray 16384 -16384 -70.05191 -100 180 0
+ ( -124 4 48 ) ( -124 4 44 ) ( -124 36 48 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 332 100 0 0
+ ( -122 -1 63 ) ( -122 9 63 ) ( -122 9 6.5 ) holland_window_glass_grimy02 48 -76 -92 2 0 0 lightmap_gray 16384 16384 7 0 0 0
+ ( -122 -1 2.5 ) ( -122 9 2.5 ) ( -124 9 0.5 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+ ( -122 9 63 ) ( -122 -1 63 ) ( -124 -1 65 ) caulk 64 64 -72 1 0 0 lightmap_gray 16384 16384 -72 1 0 0
+}
+// brush 8
+{
+  contents detail;
+ ( -490 0 24 ) ( 278 0 24 ) ( 278 0 -40 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -104 180 0
+ ( 126 8 152 ) ( 142 8 152 ) ( 142 8 184 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 -16384 -150.05191 -104 180 0
+ ( 0 0 -4 ) ( 0 8 -4 ) ( -48 8 -4 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 150.05191 90 0
+ ( 0 8 -4 ) ( 0 0 -4 ) ( -4 0 0.5 ) caulk 64 64 8 4 0 0 lightmap_gray 16384 16384 8 4 0 0
+ ( -48 0 -4 ) ( -48 8 -4 ) ( -44 8 0.5 ) caulk 64 64 8 4 0 0 lightmap_gray 16384 16384 8 4 0 0
+ ( -26 2 0.5 ) ( -40 2 0.5 ) ( -40 34 0.5 ) holland_window_glass_grimy02 48 -76 39 79 0 0 lightmap_gray 16384 16384 0.051906586 -8 0 0
+}
+// brush 9
+{
+  contents detail;
+ ( -128 0 71 ) ( -79.25 0 71 ) ( -84 0 65 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -100 180 0
+ ( -79.25 8 71 ) ( -128 8 71 ) ( -124 8 65 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.05191 -100 180 0
+ ( -80 8 71 ) ( -80 0 71 ) ( -128 0 71 ) caulk 64 64 333 70.05191 90 0 lightmap_gray 16384 16384 333 70.051895 90 0
+ ( -80 0 71 ) ( -80 8 71 ) ( -84 8 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -128 8 71 ) ( -128 0 71 ) ( -124 0 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -106 2 65 ) ( -94 2 65 ) ( -94 34 65 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 16384 -79.94809 -8 0 0
+}
+// brush 10
+{
+  contents detail;
+ ( -570 0 24 ) ( 198 0 24 ) ( 198 0 -40 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -104 180 0
+ ( 46 8 152 ) ( 62 8 152 ) ( 62 8 184 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.05191 -104 180 0
+ ( -128 8 -4 ) ( -128 0 -4 ) ( -80 0 -4 ) caulk 64 64 333 70.05191 90 0 lightmap_gray 16384 16384 333 70.05191 90 0
+ ( -80 8 -4 ) ( -80 0 -4 ) ( -84 0 0.5 ) caulk 64 64 8 4 0 0 lightmap_gray 16384 16384 8 4 0 0
+ ( -128 0 -4 ) ( -128 8 -4 ) ( -124 8 0.5 ) caulk 64 64 8 4 0 0 lightmap_gray 16384 16384 8 4 0 0
+ ( -106 2 0.5 ) ( -120 2 0.5 ) ( -120 34 0.5 ) holland_window_glass_grimy02 48 -76 39 79 0 0 lightmap_gray 16384 16384 -79.94809 -8 0 0
+}
+// brush 11
+{
+  contents detail;
+ ( -570 0 28 ) ( 198 0 28 ) ( 198 0 -36 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -100 180 0
+ ( 46 8 156 ) ( 62 8 156 ) ( 62 8 188 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.05191 -100 180 0
+ ( -80 8 -4 ) ( -80 0 -4 ) ( -80 0 71 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 100 0 0
+ ( -84 8 47 ) ( -84 8 35 ) ( -84 40 47 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -80 2 71 ) ( -84 2 65 ) ( -84 34 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -80 0 -4 ) ( -80 8 -4 ) ( -84 8 0.5 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+// brush 12
+{
+  contents detail;
+ ( -490 0 28 ) ( 278 0 28 ) ( 278 0 -36 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -100 -180 0
+ ( 126 8 156 ) ( 142 8 156 ) ( 142 8 188 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 -16384 -150.05191 -100 180 0
+ ( -48 0 -4 ) ( -48 8 -4 ) ( -48 8 71 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 100 0 0
+ ( -44 2 27 ) ( -44 2 43 ) ( -44 34 43 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -48 8 -4 ) ( -48 0 -4 ) ( -44 0 0.5 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -44 2 65 ) ( -48 2 71 ) ( -44 34 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+// brush 13
+{
+  contents detail;
+ ( -522 0 28 ) ( 246 0 28 ) ( 246 0 -36 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05189 -100 180 0
+ ( 94 8 156 ) ( 110 8 156 ) ( 110 8 188 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05191 -100 180 0
+ ( -80 0 -4 ) ( -80 8 -4 ) ( -80 8 71 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 100 0 0
+ ( -76 2 27 ) ( -76 2 43 ) ( -76 34 43 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -80 8 -4 ) ( -80 0 -4 ) ( -76 0 0.5 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -76 2 65 ) ( -80 2 71 ) ( -76 34 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+// brush 14
+{
+  contents detail;
+ ( -522 1 28 ) ( 246 1 28 ) ( 246 1 -36 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05189 -100 180 0
+ ( 94 7 155.5 ) ( 110 7 155.5 ) ( 110 7 187.5 ) holland_trim_wood_window_grimy02 64 4 0 0 90 0 lightmap_gray 16384 -16384 -118.05191 -100 180 0
+ ( -76 4 48 ) ( -76 4 44 ) ( -76 36 48 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 332 100 0 0
+ ( -74 -1 64 ) ( -74 9 64 ) ( -74 9 7.5 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 7 0 0 0
+ ( -74 -1 2.5 ) ( -74 9 2.5 ) ( -76 9 0.5 ) caulk 64 64 -24 1 0 0 lightmap_gray 16384 16384 -24 1 0 0
+ ( -74 9 63 ) ( -74 -1 63 ) ( -76 -1 65 ) caulk 64 64 -24 1 0 0 lightmap_gray 16384 16384 -24 1 0 0
+}
+// brush 15
+{
+  contents detail;
+ ( -538 1 28 ) ( 230 1 28 ) ( 230 1 -36 ) holland_window_glass_grimy02 48 -76 48 -4 180 0 lightmap_gray 16384 -16384 -102.05189 -100 180 0
+ ( 78 7 156 ) ( 94 7 156 ) ( 94 7 188 ) holland_trim_wood_window_grimy02 64 4 0 0 90 0 lightmap_gray 16384 -16384 -102.05191 -100 180 0
+ ( -52 18.75 43 ) ( -52 18.75 55 ) ( -52 50.75 55 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 332 100 0 0
+ ( -54 -1 6.5 ) ( -54 9 6.5 ) ( -54 9 63 ) holland_window_glass_grimy02 48 -76 -92 2 0 0 lightmap_gray 16384 16384 7 0 0 0
+ ( -54 -1 63 ) ( -54 9 63 ) ( -52 9 65 ) caulk 64 64 -40 1 0 0 lightmap_gray 16384 16384 -40 1 0 0
+ ( -54 9 2.5 ) ( -54 -1 2.5 ) ( -52 -1 0.5 ) caulk 64 64 -40 1 0 0 lightmap_gray 16384 16384 -40 1 0 0
+}
+// brush 16
+{
+  contents detail;
+ ( -522 0 24 ) ( 246 0 24 ) ( 246 0 -40 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05189 -104 180 0
+ ( 94 8 152 ) ( 110 8 152 ) ( 110 8 184 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05191 -104 180 0
+ ( -48 0 -4 ) ( -48 8 -4 ) ( -80 8 -4 ) caulk 64 64 333 118.05191 90 0 lightmap_gray 16384 16384 333 118.05191 90 0
+ ( -48 8 -4 ) ( -48 0 -4 ) ( -52 0 0.5 ) caulk 64 64 8 4 0 0 lightmap_gray 16384 16384 8 4 0 0
+ ( -80 0 -4 ) ( -80 8 -4 ) ( -76 8 0.5 ) caulk 64 64 8 4 0 0 lightmap_gray 16384 16384 8 4 0 0
+ ( -74 2 0.5 ) ( -88 2 0.5 ) ( -88 34 0.5 ) holland_window_glass_grimy02 48 -76 39 79 0 0 lightmap_gray 16384 16384 -31.948093 -8 0 0
+}
+// brush 17
+{
+  contents detail;
+ ( -522 1 24 ) ( 246 1 24 ) ( 246 1 -40 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05189 -104 180 0
+ ( 94 7 152 ) ( 110 7 152 ) ( 110 7 184 ) holland_trim_wood_window_grimy02 64 4 0 0 0 0 lightmap_gray 16384 -16384 -118.05191 -104 180 0
+ ( -48 4 0.5 ) ( -38 4 0.5 ) ( -48 36 0.5 ) caulk 64 64 332 118.05191 90 0 lightmap_gray 16384 16384 332 118.05191 90 0
+ ( -54 1 2.5 ) ( -54 9 2.5 ) ( -52 9 0.5 ) caulk 64 64 -24 1 0 0 lightmap_gray 16384 16384 -24 1 0 0
+ ( -74 7 2.5 ) ( -74 -1 2.5 ) ( -76 -1 0.5 ) caulk 64 64 -24 1 0 0 lightmap_gray 16384 16384 -24 1 0 0
+ ( -74 -1 2.5 ) ( -74 7 2.5 ) ( -38 7 2.5 ) holland_window_glass_grimy02 48 -76 39 79 180 0 lightmap_gray 16384 16384 -31.948093 -7 0 0
+}
+// brush 18
+{
+  contents detail;
+ ( -522 1 28 ) ( 246 1 28 ) ( 246 1 -36 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05189 -100 180 0
+ ( 94 7 156 ) ( 110 7 156 ) ( 110 7 188 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05191 -100 180 0
+ ( 28.25 4 65 ) ( 12.25 4 65 ) ( 28.25 36 65 ) caulk 64 64 332 118.0519 90 0 lightmap_gray 16384 16384 332 118.0519 90 0
+ ( -54 9 63 ) ( -54 -1 63 ) ( -52 -1 65 ) caulk 64 64 -24 1 0 0 lightmap_gray 16384 16384 -24 1 0 0
+ ( -74 -3 63 ) ( -74 7 63 ) ( -76 7 65 ) caulk 64 64 -24 1 0 0 lightmap_gray 16384 16384 -24 1 0 0
+ ( -54 -1 63 ) ( -54 9 63 ) ( -90 9 63 ) holland_window_glass_grimy02 48 -76 39 79 180 0 lightmap_gray 16384 16384 -31.948093 -7 0 0
+}
+// brush 19
+ {
+  mesh
+  {
+  contents nonColliding;
+  toolFlags splitGeo;
+   berlin_decals_windows_broken4
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -122 3.9999993 43.834564 t 805.88953 639.33221 12.128244 -9.1146603
+	v -103.4375 4 43.834564 t 480.64075 635.10815 10.839182 -9.1146603
+   )
+   (
+	v -122 3.9999993 64 t 805.88953 887.8075 12.128244 -10.375
+	v -103.4375 4 64 t 480.64075 883.5835 10.839182 -10.375
+   )
+  }
+ }
+// brush 20
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_decals_windows_broken4
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -103.4375 4 43.834564 t 480.64075 635.10815 10.839182 -9.1146603
+	v -122 3.9999993 43.834564 t 805.88953 639.33221 12.128244 -9.1146603
+   )
+   (
+	v -103.4375 4 64 t 480.64075 883.5835 10.839182 -10.375
+	v -122 3.9999993 64 t 805.88953 887.8075 12.128244 -10.375
+   )
+  }
+ }
+// brush 21
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_decals_windows_broken4
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -86 4.000001 43.334564 t 175.10397 631.14014 9.6282444 -9.1146603
+	v -103.4375 4 43.334564 t 480.64075 635.10815 10.839182 -9.1146603
+   )
+   (
+	v -86 4.000001 63 t 175.10397 879.61548 9.6282444 -10.375
+	v -103.4375 4 63 t 480.64075 883.5835 10.839182 -10.375
+   )
+  }
+ }
+// brush 22
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_decals_windows_broken4
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -103.4375 4 43.334564 t 480.64075 635.10815 10.839182 -9.1146603
+	v -86 4.000001 43.334564 t 175.10397 631.14014 9.6282444 -9.1146603
+   )
+   (
+	v -103.4375 4 63 t 480.64075 883.5835 10.839182 -10.375
+	v -86 4.000001 63 t 175.10397 879.61548 9.6282444 -10.375
+   )
+  }
+ }
+// brush 23
+{
+  contents nonColliding;
+ ( -104 3 2.5 ) ( -103 4 2.5 ) ( -103 5 2.5 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -103 4 65 ) ( -104 3 65 ) ( -104 4 65 ) caulk 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -103.5 3.5 3.5 ) ( -103.5 3.5 64 ) ( -103 4 64 ) holland_window_glass_grimy02 48 -76 88 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -103.5 4.5 64 ) ( -103.5 4.5 3.5 ) ( -103 4 3.5 ) holland_window_glass_grimy02 48 76 95 4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -103.5 4.5 3.5 ) ( -103.5 4.5 64 ) ( -104 4 64 ) holland_window_glass_grimy02 48 -76 86 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -103.5 3.5 64 ) ( -103.5 3.5 3.5 ) ( -104 4 3.5 ) holland_window_glass_grimy02 48 76 95 4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 24
+{
+  contents nonColliding;
+ ( -86 3 23 ) ( -86 4 24 ) ( -86 5 24 ) caulk 64 -64 127 0 90 0 lightmap_gray 16384 -16384 127 0 90 0
+ ( -122 4 24 ) ( -122 3 23 ) ( -122 4 23 ) caulk 64 -64 127 0 90 0 lightmap_gray 16384 -16384 127 0 90 0
+ ( -61.5 3.5 23.5 ) ( -122 3.5 23.5 ) ( -122 4 24 ) holland_window_glass_grimy02 48 -76 88 54 -90 0 lightmap_gray 16384 16384 0 -58 90 0
+ ( -122 4.5 23.5 ) ( -61.5 4.5 23.5 ) ( -61.5 4 24 ) holland_window_glass_grimy02 48 76 95 -54 90 0 lightmap_gray 16384 16384 0 -58 90 0
+ ( -61.5 4.5 23.5 ) ( -122 4.5 23.5 ) ( -122 4 23 ) holland_window_glass_grimy02 48 -76 86 54 -90 0 lightmap_gray 16384 16384 0 -58 90 0
+ ( -122 3.5 23.5 ) ( -61.5 3.5 23.5 ) ( -61.5 4 23 ) holland_window_glass_grimy02 48 76 95 -54 90 0 lightmap_gray 16384 16384 0 -58 90 0
+}
+// brush 25
+{
+  contents nonColliding;
+ ( -86 3 42.5 ) ( -86 4 43.5 ) ( -86 5 43.5 ) caulk 64 -64 322.5 -288 90 0 lightmap_gray 16384 -16384 146.5 0 90 0
+ ( -122 4 43.5 ) ( -122 3 42.5 ) ( -122 4 42.5 ) caulk 64 -64 322.5 -288 90 0 lightmap_gray 16384 -16384 146.5 0 90 0
+ ( -61.5 3.5 43 ) ( -122 3.5 43 ) ( -122 4 43.5 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 16384 0 -58 90 0
+ ( -122 4.5 43 ) ( -61.5 4.5 43 ) ( -61.5 4 43.5 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 16384 0 -58 90 0
+ ( -61.5 4.5 43 ) ( -122 4.5 43 ) ( -122 4 42.5 ) holland_window_glass_grimy02 48 76 80 13 180 0 lightmap_gray 16384 16384 0 -58 90 0
+ ( -122 3.5 43 ) ( -61.5 3.5 43 ) ( -61.5 4 42.5 ) holland_window_glass_grimy02 48 76 0 11 180 0 lightmap_gray 16384 16384 0 -58 90 0
+}
+// brush 26
+{
+  contents nonColliding;
+ ( -54 3 42.5 ) ( -54 4 43.5 ) ( -54 5 43.5 ) caulk 64 -64 322.5 -288 90 0 lightmap_gray 16384 -16384 146.5 0 90 0
+ ( -74 4 43.5 ) ( -74 3 42.5 ) ( -74 4 42.5 ) caulk 64 -64 322.5 -288 90 0 lightmap_gray 16384 -16384 146.5 0 90 0
+ ( -29.5 3.5 43 ) ( -90 3.5 43 ) ( -90 4 43.5 ) holland_window_glass_grimy02 48 -76 -32 -4 180 0 lightmap_gray 16384 16384 0 -26 90 0
+ ( -90 4.5 43 ) ( -29.5 4.5 43 ) ( -29.5 4 43.5 ) holland_window_glass_grimy02 48 -76 48 -4 -180 0 lightmap_gray 16384 16384 0 -26 90 0
+ ( -29.5 4.5 43 ) ( -90 4.5 43 ) ( -90 4 42.5 ) holland_window_glass_grimy02 48 76 48 13 -180 0 lightmap_gray 16384 16384 0 -26 90 0
+ ( -90 3.5 43 ) ( -29.5 3.5 43 ) ( -29.5 4 42.5 ) holland_window_glass_grimy02 48 76 -32 11 -180 0 lightmap_gray 16384 16384 0 -26 90 0
+}
+// brush 27
+{
+  contents nonColliding;
+ ( -54 3 23 ) ( -54 4 24 ) ( -54 5 24 ) caulk 64 -64 127 0 90 0 lightmap_gray 16384 -16384 127 0 90 0
+ ( -74 4 24 ) ( -74 3 23 ) ( -74 4 23 ) caulk 64 -64 127 0 90 0 lightmap_gray 16384 -16384 127 0 90 0
+ ( -13.5 3.5 23.5 ) ( -74 3.5 23.5 ) ( -74 4 24 ) holland_window_glass_grimy02 48 -76 88 22 -90 0 lightmap_gray 16384 16384 0 -26 90 0
+ ( -74 4.5 23.5 ) ( -13.5 4.5 23.5 ) ( -13.5 4 24 ) holland_window_glass_grimy02 48 76 95 -22 90 0 lightmap_gray 16384 16384 0 -26 90 0
+ ( -29.5 4.5 23.5 ) ( -90 4.5 23.5 ) ( -90 4 23 ) holland_window_glass_grimy02 48 -76 86 22 -90 0 lightmap_gray 16384 16384 0 -26 90 0
+ ( -90 3.5 23.5 ) ( -29.5 3.5 23.5 ) ( -29.5 4 23 ) holland_window_glass_grimy02 48 76 95 -22 90 0 lightmap_gray 16384 16384 0 -26 90 0
+}
+// brush 28
+{
+  contents nonColliding;
+ ( -6 3 23 ) ( -6 4 24 ) ( -6 5 24 ) caulk 64 -64 127 0 90 0 lightmap_gray 16384 -16384 127 0 90 0
+ ( -42 4 24 ) ( -42 3 23 ) ( -42 4 23 ) caulk 64 -64 127 0 90 0 lightmap_gray 16384 -16384 127 0 90 0
+ ( 18.5 3.5 23.5 ) ( -42 3.5 23.5 ) ( -42 4 24 ) holland_window_glass_grimy02 48 -76 88 -26 -90 0 lightmap_gray 16384 16384 0 22 90 0
+ ( -42 4.5 23.5 ) ( 18.5 4.5 23.5 ) ( 18.5 4 24 ) holland_window_glass_grimy02 48 76 95 26 90 0 lightmap_gray 16384 16384 0 22 90 0
+ ( 18.5 4.5 23.5 ) ( -42 4.5 23.5 ) ( -42 4 23 ) holland_window_glass_grimy02 48 -76 86 -26 -90 0 lightmap_gray 16384 16384 0 22 90 0
+ ( -42 3.5 23.5 ) ( 18.5 3.5 23.5 ) ( 18.5 4 23 ) holland_window_glass_grimy02 48 76 95 26 90 0 lightmap_gray 16384 16384 0 22 90 0
+}
+// brush 29
+{
+  contents nonColliding;
+ ( -24 3 2.5 ) ( -23 4 2.5 ) ( -23 5 2.5 ) caulk 64 64 80 0 0 0 lightmap_gray 16384 16384 80 0 0 0
+ ( -23 4 65 ) ( -24 3 65 ) ( -24 4 65 ) caulk 64 64 80 0 0 0 lightmap_gray 16384 16384 80 0 0 0
+ ( -23.5 3.5 3.5 ) ( -23.5 3.5 64 ) ( -23 4 64 ) holland_window_glass_grimy02 48 -76 88 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -23.5 4.5 64 ) ( -23.5 4.5 3.5 ) ( -23 4 3.5 ) holland_window_glass_grimy02 48 76 95 4 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -23.5 4.5 3.5 ) ( -23.5 4.5 64 ) ( -24 4 64 ) holland_window_glass_grimy02 48 -76 86 -4 180 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -23.5 3.5 64 ) ( -23.5 3.5 3.5 ) ( -24 4 3.5 ) holland_window_glass_grimy02 48 76 95 4 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 30
+{
+  contents nonColliding;
+ ( -6 3 42.5 ) ( -6 4 43.5 ) ( -6 5 43.5 ) caulk 64 -64 322.5 -288 90 0 lightmap_gray 16384 -16384 146.5 0 90 0
+ ( -42 4 43.5 ) ( -42 3 42.5 ) ( -42 4 42.5 ) caulk 64 -64 322.5 -288 90 0 lightmap_gray 16384 -16384 146.5 0 90 0
+ ( 18.5 3.5 43 ) ( -42 3.5 43 ) ( -42 4 43.5 ) holland_window_glass_grimy02 48 -76 -80 -4 180 0 lightmap_gray 16384 16384 0 22 90 0
+ ( -42 4.5 43 ) ( 18.5 4.5 43 ) ( 18.5 4 43.5 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 0 22 90 0
+ ( 18.5 4.5 43 ) ( -42 4.5 43 ) ( -42 4 42.5 ) holland_window_glass_grimy02 48 76 0 13 180 0 lightmap_gray 16384 16384 0 22 90 0
+ ( -42 3.5 43 ) ( 18.5 3.5 43 ) ( 18.5 4 42.5 ) holland_window_glass_grimy02 48 76 -80 11 180 0 lightmap_gray 16384 16384 0 22 90 0
+}
+// brush 31
+{
+  contents detail;
+ ( -538 0 28 ) ( 230 0 28 ) ( 230 0 -36 ) holland_window_glass_grimy02 48 -76 48 -4 180 0 lightmap_gray 16384 -16384 -102.05189 -100 180 0
+ ( 78 8 156 ) ( 94 8 156 ) ( 94 8 188 ) holland_window_glass_grimy02 48 -76 48 -4 180 0 lightmap_gray 16384 -16384 -102.05191 -100 180 0
+ ( -48 0 71 ) ( -48 8 71 ) ( -48 8 -4 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 100 0 0
+ ( -52 8 47 ) ( -52 8 35 ) ( -52 40 47 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -48 8 71 ) ( -48 0 71 ) ( -52 0 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -48 0 -4 ) ( -48 8 -4 ) ( -52 8 0.5 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+// brush 32
+{
+  contents detail;
+ ( -80.75 0 71 ) ( -47.25 0 71 ) ( -52 0 65 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05189 -100 180 0
+ ( -47.25 8 71 ) ( -80.75 8 71 ) ( -76 8 65 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 -16384 -118.05191 -100 180 0
+ ( -80 0 71 ) ( -80 8 71 ) ( -48 8 71 ) caulk 64 64 333 118.05191 90 0 lightmap_gray 16384 16384 333 118.0519 90 0
+ ( -48 0 71 ) ( -48 8 71 ) ( -52 8 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -80 8 71 ) ( -80 0 71 ) ( -76 0 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -74 2 65 ) ( -62 2 65 ) ( -62 34 65 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 16384 -31.948093 -8 0 0
+}
+// brush 33
+{
+  contents detail;
+ ( -490 0 28 ) ( 278 0 28 ) ( 278 0 -36 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -100 -180 0
+ ( 126 8 156 ) ( 142 8 156 ) ( 142 8 188 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 -16384 -150.05191 -100 180 0
+ ( 0 0 71 ) ( 0 8 71 ) ( 0 8 -4 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 100 0 0
+ ( -4 8 47 ) ( -4 8 35 ) ( -4 40 47 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 8 0 0 0
+ ( 0 8 71 ) ( 0 0 71 ) ( -4 0 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( 0 0 -4 ) ( 0 8 -4 ) ( -4 8 0.5 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+// brush 34
+{
+  contents detail;
+ ( -49.25 0 71 ) ( 0.25 0 71 ) ( -4 0 65 ) holland_window_glass_grimy02 48 -76 0 -4 -180 0 lightmap_gray 16384 -16384 -150.0519 -100 -180 0
+ ( 0.25 8 71 ) ( -49.25 8 71 ) ( -44 8 65 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 -16384 -150.05191 -100 180 0
+ ( -48 0 71 ) ( -48 8 71 ) ( 0 8 71 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 150.0519 90 0
+ ( 0 0 71 ) ( 0 8 71 ) ( -4 8 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -48 8 71 ) ( -48 0 71 ) ( -44 0 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -26 2 65 ) ( -14 2 65 ) ( -14 34 65 ) holland_window_glass_grimy02 48 -76 32 -4 180 0 lightmap_gray 16384 16384 0.051906586 -8 0 0
+}
+// brush 35
+{
+  contents detail;
+ ( -570 0 28 ) ( 198 0 28 ) ( 198 0 -36 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.051888 -100 180 0
+ ( 46 8 156 ) ( 62 8 156 ) ( 62 8 188 ) holland_window_glass_grimy02 48 -76 80 -4 180 0 lightmap_gray 16384 -16384 -70.05191 -100 180 0
+ ( -128 8 71 ) ( -128 0 71 ) ( -128 0 -4 ) caulk 64 64 333 150.05191 90 0 lightmap_gray 16384 16384 333 100 0 0
+ ( -124 2 27 ) ( -124 2 43 ) ( -124 34 43 ) holland_window_glass_grimy02 48 -76 0 -4 180 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -128 8 -4 ) ( -128 0 -4 ) ( -124 0 0.5 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+ ( -128 0 71 ) ( -128 8 71 ) ( -124 8 65 ) caulk 64 64 8 0 0 0 lightmap_gray 16384 16384 8 0 0 0
+}
+}
+// entity 1
+{
+"type" "destruct"
+"destroyefx" "misc\\fx_glass_window_brk.efx"
+"health" "20"
+"physpreset" "glass_chunk"
+"classname" "dyn_brushmodel"
+// brush 0
+{
+ ( -67.25 4.25 23.75 ) ( -103.25 4.25 23.75 ) ( -103.25 -3.25 23.75 ) holland_decal_frost_sno_wndw_glass1 64 64 -134.75 2.25 0 0 lightmap_gray 16384 16384 -79.75 3.25 0 0
+ ( -121.25 -3.25 43 ) ( -121.25 4.25 43 ) ( -85.25 4.25 43 ) holland_decal_frost_sno_wndw_glass1 64 64 -134.75 2.25 0 0 lightmap_gray 16384 16384 -79.75 3.25 0 0
+ ( -121.75 3.75 59.75 ) ( -85.75 3.75 59.75 ) ( -85.75 3.75 3.75 ) holland_decal_frost_sno_wndw_glass1 64 64 -134.75 1.75 0 0 lightmap_gray 16384 16384 -79.75 2.75 0 0
+ ( -86 -3.25 60.75 ) ( -86 4.25 60.75 ) ( -86 4.25 4.75 ) holland_decal_frost_sno_wndw_glass1 64 64 -58.25 1.75 0 0 lightmap_gray 16384 16384 -3.25 2.75 0 0
+ ( -85.75 4.25 60.75 ) ( -121.75 4.25 60.75 ) ( -121.75 4.25 4.75 ) holland_decal_frost_sno_wndw_glass1 64 64 -134.75 1.75 0 0 lightmap_gray 16384 16384 -79.75 2.75 0 0
+ ( -103.5 4.25 97.75 ) ( -103.5 -3.25 97.75 ) ( -103.5 -3.25 41.75 ) holland_decal_frost_sno_wndw_glass1 64 64 -58.25 1.75 0 0 lightmap_gray 16384 16384 -3.25 2.75 0 0
+}
+}
+// entity 2
+{
+"type" "destruct"
+"destroyefx" "misc\\fx_glass_window_brk.efx"
+"health" "20"
+"physpreset" "glass_chunk"
+"classname" "dyn_brushmodel"
+// brush 0
+{
+ ( 12.5 4.25 43.5 ) ( -23.5 4.25 43.5 ) ( -23.5 -3.25 43.5 ) holland_decal_frost_sno_wndw_glass1 64 64 -55 2.25 0 0 lightmap_gray 16384 16384 0 3.25 0 0
+ ( -42 -3.25 63 ) ( -42 4.25 63 ) ( -6 4.25 63 ) holland_decal_frost_sno_wndw_glass1 64 64 -55 2.25 0 0 lightmap_gray 16384 16384 0 3.25 0 0
+ ( -42 3.75 61.5 ) ( -6 3.75 61.5 ) ( -6 3.75 5.5 ) holland_decal_frost_sno_wndw_glass1 64 64 -55 0 0 0 lightmap_gray 16384 16384 0 1 0 0
+ ( -6 -3.25 62.5 ) ( -6 4.25 62.5 ) ( -6 4.25 6.5 ) holland_decal_frost_sno_wndw_glass1 64 64 -58.25 0 0 0 lightmap_gray 16384 16384 -3.25 1 0 0
+ ( -6 4.25 62.5 ) ( -42 4.25 62.5 ) ( -42 4.25 6.5 ) holland_decal_frost_sno_wndw_glass1 64 64 -55 0 0 0 lightmap_gray 16384 16384 0 1 0 0
+ ( -23.5 4.25 99.5 ) ( -23.5 -3.25 99.5 ) ( -23.5 -3.25 43.5 ) holland_decal_frost_sno_wndw_glass1 64 64 -58.25 0 0 0 lightmap_gray 16384 16384 -3.25 1 0 0
+}
+}

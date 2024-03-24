@@ -1,0 +1,18 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+{
+"model" "veh_ger_panzer_mp_dpm_main"
+"targetname" "destructible"
+"destructibledef" "vehicle_ger_Panzer_mg_mp_ddef"
+"spawnflags" "1"
+"script_gameobjectname" "vehicle"
+"vehicletype" "panzer4_mp"
+"origin" "0.0 0.0 0.0"
+"classname" "script_vehicle"
+}

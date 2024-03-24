@@ -1,0 +1,37 @@
+By default, MODSound is going to produce only uncompressed sound.
+
+If you want to enable compressed sound, here is what you need to do:
+
+	1. Have the DirectX SDK installed. (March 2008 or later required)
+
+	2. Make sure that your DirectX SDK Utilities\bin\x86 folder is in the PATH environment variable. 
+	
+		To set it from the command line use this:
+		
+		set PATH=%DXKSDK_DIR%\Utilities\Bin\x86;%PATH%
+		
+		Two tools are used from that folder AdpcmEncode.exe and WMAEncode.exe
+		
+		As an alternative to adding PATH to your folder, you can copy these two tools to the same directory where MODSound.exe is.
+		
+	3. Download the open-sourced SOX tool (Sound-Exchange) and place it in the same directory where MODSound.exe.
+	
+		You can download prebuilt sox executable from here:
+		
+		http://prdownloads.sourceforge.net/sox/sox-14.0.1.zip?download
+		
+		You need only sox.exe from the archive.
+		
+		Take a look for more up to date version into http://sox.sourceforge.net/Main/HomePage 
+		
+	4. Even without sox.exe you can still use compression, but it won't always be able to use xWMA.
+	
+		xWMA has a strict requirments on what the sample rate of the wave files are, and sox is being used to resample these in case the requirment is not met.
+
+Dimiter "malkia" Stanev,
+malkia@treyarch.com
+
+
+P.S.
+
+Anytime you type MODSound -help it'll bring up help screen.

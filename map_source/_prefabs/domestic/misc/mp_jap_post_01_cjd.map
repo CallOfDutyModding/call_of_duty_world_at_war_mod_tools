@@ -1,0 +1,351 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"skyboxmodel" "skybox_oki3"
+"classname" "worldspawn"
+"northyaw" "90"
+"ambient" "0.15"
+"_color" "0.411765 0.34902 0.439216"
+"diffusefraction" "0.35"
+"sundiffusecolor" "0.3647 0.3686 0.3725"
+"suncolor" "0.9843 0.6980 0.6313"
+"sundirection" "-155 -182 0"
+"sunlight" "1.25"
+"radiosityscale" "1"
+"sunradiosity" "1.2"
+"contrastgain" "0.15"
+// brush 0
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -9.5 -10 148.25 t -80 80 -97.75 -134.5
+	v -6.5 -7 150.25 t -56 56 -97.9375 -134.3125
+   )
+   (
+	v 11.5 -10 148.25 t 88 80 -99.0625 -134.5
+	v 8.5 -7 150.25 t 64 56 -98.875 -134.3125
+   )
+  }
+ }
+// brush 1
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -9.5 11 148.25 t -80 -88 -97.75 -133.1875
+	v 11.5 11 148.25 t 88 -88 -99.0625 -133.1875
+   )
+   (
+	v -6.5 8 150.25 t -56 -64 -97.9375 -133.375
+	v 8.5 8 150.25 t 64 -64 -98.875 -133.375
+   )
+  }
+ }
+// brush 2
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -9.5 -10 148.25 t -80 80 -277.5 293.5625
+	v -9.5 11 148.25 t -80 -88 -276.1875 293.5625
+   )
+   (
+	v -6.5 -7 150.25 t -56 56 -277.3125 293.75
+	v -6.5 8 150.25 t -56 -64 -276.375 293.75
+   )
+  }
+ }
+// brush 3
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -9.5 11 147.25 t -80 -2006 -83.5 -9.5328465
+	v 11.5 11 147.25 t 88 -2006 -84.8125 -9.5328465
+   )
+   (
+	v -9.5 11 148.25 t -80 -2014 -83.5 -9.5953465
+	v 11.5 11 148.25 t 88 -2014 -84.8125 -9.5953465
+   )
+  }
+ }
+// brush 4
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -9.5 -10 147.25 t -80 -2006 -263.25 -9.5328445
+	v -9.5 11 147.25 t 88 -2006 -261.9375 -9.5328445
+   )
+   (
+	v -9.5 -10 148.25 t -80 -2014 -263.25 -9.5953445
+	v -9.5 11 148.25 t 88 -2014 -261.9375 -9.5953445
+   )
+  }
+ }
+// brush 5
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 11.5 11 148.25 t 88 -88 330.1875 44.125
+	v 11.5 -10 148.25 t 88 80 331.5 44.125
+   )
+   (
+	v 8.5 8 150.25 t 64 -64 330.375 44.3125
+	v 8.5 -7 150.25 t 64 56 331.3125 44.3125
+   )
+  }
+ }
+// brush 6
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 11.5 11 148.25 t 88 -2014 344.4375 -9.5953465
+	v 11.5 11 147.25 t 88 -2006 344.4375 -9.5328465
+   )
+   (
+	v 11.5 -10 148.25 t -80 -2014 345.75 -9.5953465
+	v 11.5 -10 147.25 t -80 -2006 345.75 -9.5328465
+   )
+  }
+ }
+// brush 7
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 11.5 -10 147.25 t 88 -2006 -84.8125 -9.5328465
+	v -9.5 -10 147.25 t -80 -2006 -83.5 -9.5328465
+   )
+   (
+	v 11.5 -10 148.25 t 88 -2014 -84.8125 -9.5953465
+	v -9.5 -10 148.25 t -80 -2014 -83.5 -9.5953465
+   )
+  }
+ }
+// brush 8
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -9.5 11 147.25 t -80 -88 -276.1875 293.5625
+	v -9.5 -10 147.25 t -80 80 -277.5 293.5625
+   )
+   (
+	v -6.5 8 147.25 t -56 -64 -276.375 293.75
+	v -6.5 -7 147.25 t -56 56 -277.3125 293.75
+   )
+  }
+ }
+// brush 9
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -6.5 -7 147.25 t -56 56 -97.9375 -134.3125
+	v -9.5 -10 147.25 t -80 80 -97.75 -134.5
+   )
+   (
+	v 8.5 -7 147.25 t 64 56 -98.875 -134.3125
+	v 11.5 -10 147.25 t 88 80 -99.0625 -134.5
+   )
+  }
+ }
+// brush 10
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 11.5 -10 147.25 t 88 80 331.5 44.125
+	v 11.5 11 147.25 t 88 -88 330.1875 44.125
+   )
+   (
+	v 8.5 -7 147.25 t 64 56 331.3125 44.3125
+	v 8.5 8 147.25 t 64 -64 330.375 44.3125
+   )
+  }
+ }
+// brush 11
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 11.5 11 147.25 t 88 -88 -99.0625 -133.1875
+	v -9.5 11 147.25 t -80 -88 -97.75 -133.1875
+   )
+   (
+	v 8.5 8 147.25 t 64 -64 -98.875 -133.375
+	v -6.5 8 147.25 t -56 -64 -97.9375 -133.375
+   )
+  }
+ }
+// brush 12
+ {
+  mesh
+  {
+  contents nonColliding;
+   berlin_wall_concrete_holes_splats2
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -6.5 -7 150.25 t -56 56 345.5625 45.0625
+	v -6.5 8 150.25 t -56 -64 344.625 45.0625
+   )
+   (
+	v 8.5 -7 150.25 t 64 56 345.5625 44.125
+	v 8.5 8 150.25 t 64 -64 344.625 44.125
+   )
+  }
+ }
+// brush 13
+{
+ ( -3.75 423 -0.25 ) ( 5.25 423 -0.25 ) ( -3.75 455 -0.25 ) clip_nosight_rock 64 64 0.5 0.5 0 0 lightmap_gray 16384 16384 -5293.5 -715.5 90 0
+ ( 9 34 149.25 ) ( 9 168 149.25 ) ( 28 168 149.25 ) clip_nosight_rock 64 64 0.5 0.5 0 0 lightmap_gray 16384 16384 -5521.5 -712.5 90 0
+ ( -6.5 9 51.25 ) ( -3.5 9 51.25 ) ( -6.5 9 83.25 ) clip_nosight_rock 64 64 0.5 96 0 0 lightmap_gray 16384 16384 1 96.25 0 0
+ ( 7 -9 51.25 ) ( 3 -9 51.25 ) ( 7 -9 83.25 ) clip_nosight_rock 64 64 0.5 96 0 0 lightmap_gray 16384 16384 1 96.25 0 0
+ ( -8 3.5 48.25 ) ( -8 7.5 48.25 ) ( -8 7.5 80.25 ) clip_nosight_rock 64 64 -0.5 96 0 0 lightmap_gray 16384 16384 0 96.25 0 0
+ ( 10 8 50.75 ) ( 10 4 50.75 ) ( 10 8 82.75 ) clip_nosight_rock 64 64 -0.5 96 0 0 lightmap_gray 16384 16384 0 96.25 0 0
+}
+// brush 14
+ {
+  mesh
+  {
+  contents nonColliding;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 10 9 -0.25 t 136 26 0.5625 0
+	v 10 -9 -0.25 t -8 26 -0.5625 0
+   )
+   (
+	v 10 9 147.25 t 136 -1154 0.5625 -9.21875
+	v 10 -9 147.25 t -8 -1154 -0.5625 -9.21875
+   )
+  }
+ }
+// brush 15
+ {
+  mesh
+  {
+  contents nonColliding;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 10 -9 147.25 t 1488 -1154 0.5625 -9.21875
+	v 10 -9 -0.25 t 1488 26 0.5625 0
+   )
+   (
+	v -8 -9 147.25 t 1344 -1154 -0.5625 -9.21875
+	v -8 -9 -0.25 t 1344 26 -0.5625 0
+   )
+  }
+ }
+// brush 16
+ {
+  mesh
+  {
+  contents nonColliding;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v -8 -9 -0.25 t 808 26 -0.5625 0
+	v -8 9 -0.25 t 952 26 0.5625 0
+   )
+   (
+	v -8 -9 147.25 t 808 -1154 -0.5625 -9.21875
+	v -8 9 147.25 t 952 -1154 0.5625 -9.21875
+   )
+  }
+ }
+// brush 17
+ {
+  mesh
+  {
+  contents nonColliding;
+   okinawa_wall_shuri_outerwall
+   lightmap_gray
+   smoothing smoothing_hard
+   2 2 0 8
+   (
+	v 10 9 -0.25 t 480 26 0.5625 0
+	v 10 9 147.25 t 480 -1154 0.5625 -9.21875
+   )
+   (
+	v -8 9 -0.25 t 336 26 -0.5625 0
+	v -8 9 147.25 t 336 -1154 -0.5625 -9.21875
+   )
+  }
+ }
+}

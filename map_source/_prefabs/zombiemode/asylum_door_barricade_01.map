@@ -1,0 +1,296 @@
+iwmap 4
+"000_Global" flags  active
+"000_Global/ZombieDoorwayBarricade01" flags 
+"The Map" flags 
+// entity 0
+{
+"sunradiosity" "2"
+"_color" ".717647 .776471 .9"
+"sundiffusecolor" ".717647 .776471 1.0"
+"diffusefraction" "0.1"
+"skyboxmodel" "skybox_ber1"
+"sundirection" "209 126 0"
+"spawnflags" "512"
+"suncolor" "1 1 0.8"
+"ambient" "0.12"
+"sunlight" "1.4"
+"classname" "worldspawn"
+// brush 0
+{
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents weaponClip;
+ ( 33 -7.25 -1.75 ) ( -18.75 -7.25 -30.5 ) ( -18.75 -8.5 -30.5 ) berlin_wall_wood_slats 113.24381 -128.05028 -493.97501 -159.26245 179.68729 0.0020769476 lightmap_gray 14481.542 16381.766 -487.29828 828.63361 180 -0.00038805214
+ ( 30.25 -8.5 3.25 ) ( -21.75 -8.5 -25.25 ) ( -21.75 -7.25 -25.25 ) berlin_wall_wood_slats 113.24421 127.99579 -490.625 151.63072 -179.68683 0.0013453059 lightmap_gray 14481.363 16385.648 -483.99069 828.8324 180 -5.0269304e-005
+ ( 30.25 -7.25 3.25 ) ( -21.75 -7.25 -25.25 ) ( -18.75 -7.25 -30.5 ) berlin_wall_wood_slats 128 -128 -548.98969 -170.10667 -152.39967 -0.00029677033 lightmap_gray 16384.371 -16385.076 -541.99432 -146.17747 -152.39978 0.00014214595
+ ( -18.75 -7.25 -30.5 ) ( -21.75 -7.25 -25.25 ) ( -21.75 -8.5 -25.25 ) berlin_wall_wood_slats 127.98714 -111.85606 -828.67029 -154.11633 180 0 lightmap_gray 16382 -14316.484 -828.64752 -154.09875 180 0
+ ( 33 -8.5 -1.75 ) ( -18.75 -8.5 -30.5 ) ( -21.75 -8.5 -25.25 ) berlin_wall_wood_slats 128 -128 -541.99799 -146.1378 -152.39981 -0.00032630478 lightmap_gray 16384.525 -16383.912 -541.99768 -146.18358 -152.39986 0.00045322886
+ ( 33 -8.5 -1.75 ) ( 30.25 -8.5 3.25 ) ( 30.25 -7.25 3.25 ) berlin_wall_wood_slats 128.05518 -111.85361 -829.11902 -108.55409 180 -0.00016166171 lightmap_gray 16384.824 -14317.168 -828.79242 -108.61224 180 0
+}
+// brush 1
+{
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents weaponClip;
+ ( 43.5 -0.5 -58 ) ( -49.5 -0.5 -48 ) ( -49.5 -2.5 -48 ) berlin_wall_wood_slats 127.20454 -128.05417 -550.41003 -152.55385 179.72093 -0.00020156248 lightmap_gray 16267.313 16381.101 -542.96893 835.34882 -180 -0.00015849255
+ ( 44.5 -2.5 -51 ) ( -49 -2.5 -40.5 ) ( -49 -0.5 -40.5 ) berlin_wall_wood_slats 127.21004 127.97818 -551.2179 158.36699 -179.72174 0.00049191149 lightmap_gray 16267.008 16384.4 -543.72339 835.51874 -180 0.00012817697
+ ( 44.5 -0.5 -51 ) ( -49 -0.5 -40.5 ) ( -49.5 -0.5 -48 ) berlin_wall_wood_slats 128 -128 -559.7818 -205.20923 173.59883 -0.00042438557 lightmap_gray 16384.641 -16384.541 -552.80609 -181.23508 173.60022 -0.00012847139
+ ( -49.5 -0.5 -48 ) ( -49 -0.5 -40.5 ) ( -49 -2.5 -40.5 ) berlin_wall_wood_slats 127.99063 -126.65294 -835.44403 -175.53218 180 0 lightmap_gray 16380.5 -16210.764 -835.31946 -175.51382 -180 0
+ ( 43.5 -2.5 -58 ) ( -49.5 -2.5 -48 ) ( -49 -2.5 -40.5 ) berlin_wall_wood_slats 128 -128 -552.78729 -181.24477 173.59909 -0.00029510888 lightmap_gray 16385.01 -16382.482 -552.79797 -181.31102 173.59921 2.9267905e-005
+ ( 43.5 -2.5 -58 ) ( 44.5 -2.5 -51 ) ( 44.5 -0.5 -51 ) berlin_wall_wood_slats 128.125 -126.65479 -836.33282 -183.58784 -180 -0.00016430643 lightmap_gray 16384.801 -16211.718 -835.54193 -183.65648 180 0
+}
+// brush 2
+{
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents weaponClip;
+ ( -46.25 -1 -64 ) ( -44.25 -1 -64 ) ( -44.25 0 -64 ) berlin_ceilings_metal_rust 128 128 -678.30621 748 0 -0.00012207031 lightmap_gray 16382.012 16384 685.67255 775.96631 0 -0.00012207031
+ ( -46.25 -1 29 ) ( -46.25 0 29 ) ( -44.25 0 27 ) berlin_ceilings_metal_rust 127.94506 128.00781 -677.94928 748.03662 0 0 lightmap_gray 16382.104 16384 685.65424 776.00256 0 0
+ ( -46.25 -1 -64 ) ( -46.25 -1 29 ) ( -44.25 -1 27 ) berlin_trim_metal 128 64 -607.01111 82.75 90 0 lightmap_gray 16384.043 16383.963 685.75616 316.01419 0 0
+ ( -44.25 0 -64 ) ( -44.25 -1 -64 ) ( -44.25 -1 27 ) berlin_trim_metal 128 64 -606.98547 123.22331 90 0 lightmap_gray 16385 16384 -696.03918 316.02985 0 0
+ ( -44.25 0 -64 ) ( -44.25 0 27 ) ( -46.25 0 29 ) berlin_ceilings_metal_rust 128.0173 128 -678.34119 94 0 0 lightmap_gray 16382.938 16384 685.70648 316 0 0
+ ( -46.25 0 29 ) ( -46.25 -1 29 ) ( -46.25 -1 -64 ) berlin_ceilings_metal_rust 128 128 -747.98865 94 0 0 lightmap_gray 16383 16384 -695.95685 316 0 0
+}
+// brush 3
+{
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents weaponClip;
+ ( -44.25 -1 27 ) ( 43.75 -1 27 ) ( 43.75 0 27 ) berlin_trim_metal 128 -64 -661.25 -123.02354 0 0 lightmap_gray 16383.932 16386 703.71124 776.09534 0 -0.00012208521
+ ( -46.25 0 29 ) ( 45.75 0 29 ) ( 45.75 -1 29 ) berlin_ceilings_metal_rust 128 128 -660.20251 747.98346 0 0 lightmap_gray 16384 16387 703.73285 776.14325 0 0
+ ( -44.25 -1 27 ) ( -46.25 -1 29 ) ( 45.75 -1 29 ) berlin_trim_metal 128 64 -661.25 100 0 0 lightmap_gray 16384.146 16384.914 703.75476 317.01913 0 -0.00019713122
+ ( 43.75 0 27 ) ( 43.75 -1 27 ) ( 45.75 -1 29 ) berlin_ceilings_metal_rust 128.05472 128 -660.55182 747.97687 0 0 lightmap_gray 16382 16386 703.70471 776.099 0 0.00012208521
+ ( 43.75 0 27 ) ( 45.75 0 29 ) ( -46.25 0 29 ) berlin_ceilings_metal_rust 128 128 -660.25562 95 0 1.4063675e-005 lightmap_gray 16384.252 16385.514 703.75739 317.03183 0 0.00013920575
+ ( -46.25 0 29 ) ( -46.25 -1 29 ) ( -44.25 -1 27 ) berlin_ceilings_metal_rust 128.00404 128.01563 -660.25934 748.0874 0 0.00024417043 lightmap_gray 16384 16379.002 703.71252 775.78033 0 -0.00024406613
+}
+// brush 4
+{
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents weaponClip;
+ ( 43.75 -1 -64 ) ( 45.75 -1 -64 ) ( 45.75 0 -64 ) berlin_ceilings_metal_rust 128.00786 128 -642.25812 744.99542 0 6.1035156e-005 lightmap_gray 16384 16384 721.75793 772.97192 0 0.00012207031
+ ( 43.75 0 27 ) ( 45.75 0 29 ) ( 45.75 -1 29 ) berlin_ceilings_metal_rust 127.96767 127.99219 -642.04352 744.94458 0 0.00030726209 lightmap_gray 16391.314 16385 722.06818 773.04675 0 0
+ ( 43.75 -1 -64 ) ( 43.75 -1 27 ) ( 45.75 -1 29 ) berlin_trim_metal 128 64 -714.99475 83.244942 -90 0 lightmap_gray 16381.736 16383.994 721.66217 316 0 0
+ ( 45.75 0 -64 ) ( 45.75 -1 -64 ) ( 45.75 -1 29 ) berlin_ceilings_metal_rust 127.99219 128 -744.9491 94 0 0 lightmap_gray 16386 16384 -693.08313 315.98651 0 0
+ ( 45.75 0 -64 ) ( 45.75 0 29 ) ( 43.75 0 27 ) berlin_ceilings_metal_rust 128.00102 128 -642.25385 94 0 0 lightmap_gray 16384.045 16383.984 721.75183 316 0 0
+ ( 43.75 0 27 ) ( 43.75 -1 27 ) ( 43.75 -1 -64 ) berlin_trim_metal 128 -64 -714.9834 -125.90439 -90 0 lightmap_gray 16382 16384 -692.91602 316.04434 0 0
+}
+// brush 5
+ {
+  mesh
+  {
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents nonColliding;
+   chainlink_fence
+   lightmap_gray
+   3 3 0 8
+   (
+	v 44 0 -21 t 74000.383 30404.629 0 -0
+	v 36 0 -29 t 71676.938 30508.07 0 -0.78125
+	v 20 0 -13 t 70781.352 27557.521 0 -1.6255785
+   )
+   (
+	v 44 0 -5 t 75185.828 28351.375 1.7198859 -0
+	v 36 0 -5 t 73613.813 27443.77 1.7198859 -0.78125
+	v 20 0 -5 t 71948.953 26406.523 1.7198859 -1.6255785
+   )
+   (
+	v 44 0 27 t 76832.281 25499.637 3.3424802 -0
+	v 28 0 27 t 74379.914 24083.762 3.3424802 -0.78125
+	v 12 0 11 t 71667.289 24570.883 3.3424802 -1.6255785
+   )
+  }
+ }
+// brush 6
+ {
+  mesh
+  {
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents nonColliding;
+   chainlink_fence
+   lightmap_gray
+   3 3 0 8
+   (
+	v 4 0 -37 t 67324.203 29188.98 0 -0
+	v -12 0 -61 t 64076.129 30748.779 0 -1.0019512
+	v -44 0 -69 t 59762.371 29507.348 0 -2.0961475
+   )
+   (
+	v -12 0 -21 t 67119.289 26494.367 2.4705293 -0
+	v -28 0 -21 t 65039.484 25449.729 2.4705293 -1.0019512
+	v -44 0 -21 t 62872.453 24120.527 2.4705293 -2.0961475
+   )
+   (
+	v -4 0 3 t 68887.313 24158.129 5.0360765 -0
+	v -28 0 19 t 67559.984 20503.215 5.0360765 -1.0019512
+	v -44 0 27 t 65982.539 18733.703 5.0360765 -2.0961475
+   )
+  }
+ }
+// brush 7
+{
+layer "000_Global/ZombieDoorwayBarricade01"
+  contents weaponClip;
+ ( 43 -2 -5 ) ( -50 -2 -17 ) ( -50 -3.75 -17 ) berlin_wall_wood_slats 126.91025 -128.03444 -548.73645 -154.02202 179.722 0.00059691188 lightmap_gray 16229.53 16380.534 -541.28729 833.82111 180 -0.00032545201
+ ( 42 -3.75 2 ) ( -51 -3.75 -10 ) ( -51 -2 -10 ) berlin_wall_wood_slats 126.91203 127.97974 -547.81616 156.875 -179.72174 -8.237594e-005 lightmap_gray 16229.034 16386.135 -540.3548 834.10767 -180 6.5112654e-005
+ ( 42 -2 2 ) ( -51 -2 -10 ) ( -50 -2 -17 ) berlin_wall_wood_slats 128 -128 -552.04785 -162.88356 -172.79854 -0.00042818501 lightmap_gray 16384.314 -16385.393 -545.05908 -138.94554 -172.79979 0
+ ( -50 -2 -17 ) ( -51 -2 -10 ) ( -51 -3.75 -10 ) berlin_wall_wood_slats 127.9875 -126.03455 -833.92352 -144.24232 180 0 lightmap_gray 16380.534 -16131.789 -833.82227 -144.22781 180 0
+ ( 43 -3.75 -5 ) ( -50 -3.75 -17 ) ( -51 -3.75 -10 ) berlin_wall_wood_slats 128 -128 -545.05652 -138.91606 -172.7984 -0.00030926548 lightmap_gray 16384.711 -16383.773 -545.07117 -138.97539 -172.79515 0.00027823419
+ ( 43 -3.75 -5 ) ( 42 -3.75 2 ) ( 42 -2 2 ) berlin_wall_wood_slats 128.06462 -126.03348 -834.43274 -130.10573 180 -0.0001373656 lightmap_gray 16385.6 -16132.285 -834.08215 -130.17323 180 0
+}
+}
+// entity 1
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "zombie_barricade_nails"
+"angles" "283.4 4.20508e-005 90"
+"origin" "43.5 -3.0 -29.3"
+}
+// entity 2
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "static_berlin_wood_single"
+"angles" "86.3 0 0"
+"origin" "-40.0 -2.0 -39.5"
+}
+// entity 3
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "zombie_barricade_nails"
+"angles" "346.6 180 -89.9999"
+"origin" "41.5 -4.0 -54.5"
+}
+// entity 4
+{
+"no_collmap" "1"
+"origin" "-37.5 -3.0 -38.5"
+"angles" "283.4 0 90"
+"model" "zombie_barricade_nails"
+"classname" "misc_model"
+}
+// entity 5
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "zombie_barricade_nails"
+"angles" "346.6 180 -89.9999"
+"origin" "-46.5 -3.0 -25.5"
+}
+// entity 6
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "zombie_barricade_nails"
+"angles" "0 0 90"
+"origin" "49.0 -2.5 -35.5"
+}
+// entity 7
+{
+"no_collmap" "1"
+"origin" "-46.5 -2.0 -45.5"
+"angles" "283.4 4.20508e-005 90"
+"model" "zombie_barricade_nails"
+"classname" "misc_model"
+}
+// entity 8
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "zombie_barricade_nails"
+"angles" "283.4 0 90"
+"origin" "43.0 -3.0 -1.0"
+}
+// entity 9
+{
+"no_collmap" "1"
+"origin" "-45.0 -2.5 9.5"
+"angles" "0 0 90"
+"model" "zombie_barricade_nails"
+"classname" "misc_model"
+}
+// entity 10
+{
+"no_collmap" "1"
+"origin" "-47.5 -3.5 -12.5"
+"angles" "13.4 360 90"
+"model" "zombie_barricade_nails"
+"classname" "misc_model"
+}
+// entity 11
+{
+"no_collmap" "1"
+"origin" "47.5 -2.0 0.0"
+"angles" "273.9 0.00014717 -0.000156846"
+"model" "static_berlin_wood_single"
+"classname" "misc_model"
+}
+// entity 12
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "static_berlin_wood_single"
+"angles" "89.4 180 -180"
+"origin" "-49.5 -2.0 -25.5"
+}
+// entity 13
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "static_peleliu_corrugated_metal5"
+"angles" "272.6 0 0"
+"origin" "3.5 -4.5 -0.5"
+}
+// entity 14
+{
+"no_collmap" "1"
+"origin" "12.5 -6.3 -60.5"
+"angles" "344.5 180 -6.01564e-005"
+"model" "static_berlin_wood_single"
+"classname" "misc_model"
+}
+// entity 15
+{
+"no_collmap" "1"
+"origin" "16.0 -6.5 -50.0"
+"angles" "76.6 180 -90"
+"model" "zombie_barricade_nails"
+"classname" "misc_model"
+}
+// entity 16
+{
+"no_collmap" "1"
+"origin" "-23.3 -6.3 34.0"
+"angles" "8.30005 180 -180"
+"model" "static_berlin_wood_single"
+"classname" "misc_model"
+}
+// entity 17
+{
+"no_collmap" "1"
+"origin" "2.5 -4.5 -38.0"
+"angles" "286.2 0 0"
+"model" "static_peleliu_corrugated_metal5"
+"classname" "misc_model"
+}
+// entity 18
+{
+"no_collmap" "1"
+"classname" "misc_model"
+"model" "zombie_barricade_nails"
+"angles" "76.6 180 -90"
+"origin" "-19.3 -7.0 9.0"
+}
+// entity 19
+{
+"no_collmap" "1"
+"origin" "-15.0 -8.3 -25.5"
+"angles" "76.6 180 -90"
+"model" "zombie_barricade_nails"
+"classname" "misc_model"
+}
+// entity 20
+{
+"no_collmap" "1"
+"origin" "28.0 -8.0 -2.3"
+"angles" "76.6 180 -90"
+"model" "zombie_barricade_nails"
+"classname" "misc_model"
+}

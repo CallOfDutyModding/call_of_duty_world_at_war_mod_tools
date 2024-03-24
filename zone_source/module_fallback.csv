@@ -1,0 +1,14 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/module_fallback.d3dbsp
+sound,common,module_fallback,all_sp
+sound,generic,module_fallback,all_sp
+sound,voiceovers,module_fallback,all_sp
+sound,requests,module_fallback,all_sp
+rawfile,maps/module_fallback.gsc
+weapon,sp/m1garand
+weapon,sp/thompson
+weapon,sp/type97_frag
+include_console,splitscreen
+
+include,default_weapons

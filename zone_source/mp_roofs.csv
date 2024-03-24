@@ -1,0 +1,12 @@
+ignore,code_post_gfx_mp,,
+ignore,common_mp,,
+col_map_mp,maps/mp/mp_roofs.d3dbsp,,
+gfx_map,maps/mp/mp_roofs.d3dbsp,,
+rawfile,maps/mp/mp_roofs.gsc,,
+sound,common,mp_roofs,all_mp
+sound,generic,mp_roofs,all_mp
+sound,voiceovers,mp_roofs,all_mp
+sound,multiplayer,mp_roofs,all_mp
+sound,projectile,mp_roofs,all_mp
+sound,weapons,mp_roofs,all_mp
+sound,character,mp_roofs,all_mp

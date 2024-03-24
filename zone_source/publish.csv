@@ -1,0 +1,4 @@
+// operation,params1, src, dst,params2
+xcopy,/F /Y /R /V /H /K /S, %IW_CORE_PATH%\..\cod\cod5modtools\*.*,\*.*,,-no_src_root
+d:\cod5\cod\cod5modtools\bin\CopyAssets.exe,,d:\cod5\cod\cod5,d:\cod_pc_modtools_daily\${CCNetBuildDate}_${CCNetLabel},d:\cod5\cod\cod5modtools\bin\CopyAssets.config,-no_src_root -no_dst_root
+

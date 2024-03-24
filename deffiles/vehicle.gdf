@@ -1,0 +1,1550 @@
+#name "vehicle"
+#dll "all" "configstringconvert"
+#target_dir "vehicles/"
+#file_ext "*"
+#version 8
+
+// This tells the configstring converter what the file type identifier should be
+string "VEHICLEFILE" configstringFileType
+
+enum { "4 wheel", "tank", "plane", "boat", "artillery", "helicopter" } type
+
+int 0 0 1 steerWheels
+int 0 0 1 texureScroll
+int 0 0 1 quadBarrel
+int 0 0 1 bulletDamage
+int 1 0 1 armorPiercingDamage
+int 0 0 1 grenadeDamage
+int 0 0 1 projectileDamage
+int 0 0 1 projectileSplashDamage
+int 1 0 1 heavyExplosiveDamage
+
+float 1 0 100 texureScrollScale
+float 0 0 100 wheelRotRate
+float 1 0 10 extraWheelRotScale
+float 1100 0 2000 maxSpeed
+float 300 0 1000 accel
+float 0 0 360 rotRate
+float 0 0 360 rotAccel
+
+float 0 0 360 maxBodyPitch
+float 0 0 360 maxBodyRoll
+
+float 0 0 1000 collisionDamage
+float 0 0 1000 collisionSpeed
+
+float 0 0 20 suspensionTravel
+
+string turretWeapon
+float 0 0 180 turretHorizSpanLeft
+float 0 0 180 turretHorizSpanRight
+float 0 0 180 turretVertSpanUp
+float 0 0 180 turretVertSpanDown
+float 0 0 360 turretRotRate
+int 0 0 1 turretClampPlayerView
+
+string gunnerWeapon
+string gunnerWeapon1
+string gunnerWeapon2
+string gunnerWeapon3
+float 0 0 360 gunnerRotRate
+
+string lowIdleSnd
+string highIdleSnd
+string lowEngineSnd
+string highEngineSnd
+string turretSpinSnd
+string turretStopSnd
+string engineModLoopSnd
+string engineModLoopSndPlyr
+string engineModLoopLoadSnd
+string engineModLoopLoadSndPlyr
+string tankBodyDmgLeftSnd
+string tankBodyDmgRightSnd
+float 2000 1 5000 engineModLoopNaturalRPMs
+float 1 0.1 4 engineModLoopModRate
+float 1 0 1 engineModLoopAttenuation
+float 4.0 0 100 engineModLoopCrossfadeLoadScale
+float 1.33 0 100 engineModLoopCrossfadeDamageScale
+float 1200 1 5000 idleRPMs
+float 1400 1 5000 gear1MinRPMs
+float 2000 1 5000 gear1MaxRPMs
+float 8 1 40 gearChangeMPH
+float 1500 1 5000 gear2MinRPMs
+float 2400 1 5000 gear2MaxRPMs
+string tankGrindLeftSnd
+string tankGrindRightSnd
+string tankGrindLeftDmgSnd
+string tankGrindRightDmgSnd
+float 0.5 0 1 treadGrindAttenuation
+float 0.5 0 1 treadDamageLoopHealthRatio
+float 0.5 0 1 clacksCurveDamageStart
+float 0.7 0 1 clacksCurveDamageEnd
+float 0.7 0 1 clacksCurveMaxOmitted
+int 14 1 120 trackLengthInches
+string wheelMtrlSndSoft
+int 0 0 32 numWheelMtrlSndSoft
+string wheelMtrlSndHard
+int 0 0 32 numWheelMtrlSndHard
+string tankBoostPerkSnd
+string tankBoostPerkSndPlyr
+
+float 10 0 100 engineSndSpeed
+
+int 0 0 1 isDrivable
+int 0 0 9 numberOfSeats
+int 0 0 4 numberOfGunners
+int 0 0 1 noSwitchToDriver
+int -1 -1 4 driverControlledGunPos
+
+enum { "default", "tank with turret" } animType
+string animSet
+
+float 0 0 360 mantleAngleFront
+float 90 0 360 mantleAngleBack
+float 90 0 360 mantleAngleLeft
+float 90 0 360 mantleAngleRight
+
+string extraWheelLeft1
+string extraWheelRight1
+string extraWheelLeft2
+string extraWheelRight2
+
+int 0 0 1 isNitrous
+float 0.6 0 100000 nitrous_steer_angle_max
+float 5 0 100000 nitrous_steer_speed
+float 1 0 100000 nitrous_body_mass
+float 15 0 100000 nitrous_wheel_radius
+float 10 0 100000 nitrous_susp_adj
+float 20 0 100000 nitrous_susp_spring_k
+float 1 0 100000 nitrous_susp_damp_k
+float 23 0 100000 nitrous_susp_hard_limit
+float 10000 0 100000 nitrous_tire_damp_hand
+float 100 0 100000 nitrous_tire_damp_brake
+float 10 0 100000 nitrous_tire_damp_coast
+float 2.3 0 100000 nitrous_tire_fric_brake
+float 0 0 100000 nitrous_tire_fric_hand_brake
+float 2.5 0 100000 nitrous_tire_fric_fwd
+float 2.3 0 100000 nitrous_tire_fric_side
+float 10 0 100000 nitrous_roll_stability
+float 100 0 100000 nitrous_roll_resistance
+float 50 0 100000 nitrous_upright_strength
+float 0.25 0 100000 nitrous_tilt_fakey
+enum { "TRACTION_TYPE_FRONT", "TRACTION_TYPE_BACK", "TRACTION_TYPE_ALL_WD" } nitrous_traction_type
+float 150 0 100000 nitrous_peel_out_max_speed
+float 1 0 100000 nitrous_inertia_scale_x
+float 0.8 0 100000 nitrous_reverse_scale
+float 0 -100000 100000 nitrous_bbox_min_x
+float 0 -100000 100000 nitrous_bbox_min_y
+float 0 -100000 100000 nitrous_bbox_min_z
+float 0 -100000 100000 nitrous_bbox_max_x
+float 0 -100000 100000 nitrous_bbox_max_y
+float 0 -100000 100000 nitrous_bbox_max_z
+float 0 -100000 100000 nitrous_mass_center_offset_x
+float 0 -100000 100000 nitrous_mass_center_offset_y
+float 20 -100000 100000 nitrous_mass_center_offset_z
+float 0 -100000 100000 nitrous_buoyancybox_min_x
+float 0 -100000 100000 nitrous_buoyancybox_min_y
+float 0 -100000 100000 nitrous_buoyancybox_min_z
+float 0 -100000 100000 nitrous_buoyancybox_max_x
+float 0 -100000 100000 nitrous_buoyancybox_max_y
+float 0 -100000 100000 nitrous_buoyancybox_max_z
+float 123 0 100000 nitrous_water_speed_max
+float 4 0 100000 nitrous_water_accel_max
+float 0.25 0 100000 nitrous_water_turn_accel
+float 0.25 0 100000 nitrous_water_turn_speed_max
+
+vcontainer
+{
+	scrollbox(type)
+	[
+		exec
+		{
+			width(200)
+			labelwidth(50)
+		}
+	]
+
+	checkbox(steerWheels)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+		
+	checkbox(texureScroll)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	checkbox(quadBarrel)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	checkbox(bulletDamage)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	checkbox(armorPiercingDamage)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	checkbox(grenadeDamage)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	checkbox(projectileDamage)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	checkbox(projectileSplashDamage)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	checkbox( heavyExplosiveDamage )
+	[
+		exec
+		{
+			width(280)
+			labelwidth(180)
+		}
+	]
+	
+	floatedit(texureScrollScale, 0.05, 1)
+	[
+		exec
+		{
+			tooltip("This is used to change the speed at which the tank treads scroll")
+			width(280)
+			labelwidth(150)
+		}
+	]
+	floatedit(wheelRotRate, 0.05, 1)
+	[
+		exec
+		{
+			tooltip("How fast the wheels rotate, set to the wheel radius or set to 0 if playing an animation in script.")
+			width(280)
+			labelwidth(150)
+		}
+	]
+	floatedit(extraWheelRotScale, 0.05, 1)
+	[
+		exec
+		{
+			tooltip("How fast the extra wheels rotate relative to the normal wheelRotRate.")
+			width(280)
+			labelwidth(150)
+		}
+	]
+	
+	hcontainer
+	{
+		floatedit(maxSpeed, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Max speed in MPH")
+				width(280)
+				labelwidth(150)
+			}
+		]
+		
+		floatedit(accel, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("For scripted helicopters this is used for determining orientation. Set it to high value for helicopter to fly leveled under regular accelerations")
+				width(280)
+				labelwidth(150)
+			}
+		]
+	}
+	
+	hcontainer
+	{
+		floatedit(rotRate, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Max rotational rate of this vehicle")
+				width(280)
+				labelwidth(150)
+			}
+		]
+		
+		floatedit(rotAccel, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("This is only used for vehicles using radiant paths")
+				width(280)
+				labelwidth(150)
+			}
+		]
+	}
+	
+	hcontainer
+	{
+		floatedit(maxBodyPitch, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Max jolt pitch. Should be 0 for helicopters")
+				width(280)
+				labelwidth(150)
+			}
+		]
+		
+		floatedit(maxBodyRoll, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Max jolt roll. Should be 0 for helicopters")
+				width(280)
+				labelwidth(150)
+			}
+		]
+	}
+	
+	floatedit(suspensionTravel, 0.05, 1)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(150)
+		}
+	]
+		
+	hcontainer
+	{
+		floatedit(collisionDamage, 0.05, 1)
+		[
+			exec
+			{
+				width(280)
+				labelwidth(150)
+			}
+		]
+		
+		floatedit(collisionSpeed, 0.05, 1)
+		[
+			exec
+			{
+				width(280)
+				labelwidth(150)
+			}
+		]
+	}
+
+	checkbox(isDrivable)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(150)
+		}
+	]
+
+	spinedit(numberOfSeats, 1, 1)
+	[
+		exec
+		{
+			label("Number of Player Positions")
+			width(280)
+			labelwidth(150)
+			tooltip("Total number of usable player positions in the vehicle (including gunners).")
+		}
+	]
+	spinedit(numberOfGunners, 1, 1)
+	[
+		exec
+		{
+			label("Number of Gunners")
+			width(280)
+			labelwidth(150)
+			tooltip("Total number of usable player seats with a mounted gun in the vehicle.")
+		}
+	]
+	
+	checkbox(noSwitchToDriver)
+	[
+		exec
+		{
+			label("No Switch to Driver")
+			width(280)
+			labelwidth(150)
+			tooltip("Don't allow changing seats to driver position.")
+		}
+	]
+	
+	spinedit(driverControlledGunPos, 1, 1)
+	[
+		exec
+		{
+			label("Driver 2nd Turret")
+			labelwidth(150)
+			tooltip("Driver can fire this gunner position with the grenade button, in addition to controlling the main gun. -1 for none.")
+			width(280)
+		}
+	]
+	
+	vcontainer
+	{
+		edit(turretWeapon)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(turretRotRate, 0.05, 1)
+		[
+			exec
+			{
+				width(280)
+				labelwidth(150)
+			}
+		]
+
+		hcontainer
+		{
+			floatedit(turretHorizSpanLeft, 0.05, 1)
+			[
+				exec
+				{
+					width(280)
+					labelwidth(150)
+				}
+			]
+			floatedit(turretHorizSpanRight, 0.05, 1)
+			[
+				exec
+				{
+					width(280)
+					labelwidth(150)
+				}
+			]
+		}
+		
+		hcontainer
+		{
+			floatedit(turretVertSpanUp, 0.05, 1)
+			[
+				exec
+				{
+					width(280)
+					labelwidth(150)
+				}
+			]
+			floatedit(turretVertSpanDown, 0.05, 1)
+			[
+				exec
+				{
+					width(280)
+					labelwidth(150)
+				}
+			]
+		}
+		checkbox(turretClampPlayerView)
+		[
+			exec
+			{
+				width(280)
+				labelwidth(180)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Turret Weapon")
+		}
+	]
+	
+	vcontainer
+	{
+		edit(gunnerWeapon)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+		edit(gunnerWeapon1)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+		edit(gunnerWeapon2)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+		edit(gunnerWeapon3)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(gunnerRotRate, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("This is only used for Script control of this gun and not the player, player uses maxHorTurnSpeed in the turret weapon gdt")
+				width(280)
+				labelwidth(150)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("gunner Weapon")
+		}
+	]
+	
+	edit(lowIdleSnd)
+	[
+		exec
+		{
+			width(350)
+			labelwidth(150)
+		}
+	]
+	
+	edit(highIdleSnd)
+	[
+		exec
+		{
+			width(350)
+			labelwidth(150)
+		}
+	]
+
+	edit(lowEngineSnd)
+	[
+		exec
+		{
+			width(350)
+			labelwidth(150)
+		}
+	]
+	
+	edit(highEngineSnd)
+	[
+		exec
+		{
+			width(350)
+			labelwidth(150)
+		}
+	]
+	
+	edit(turretSpinSnd)
+	[
+		exec
+		{
+			width(350)
+			labelwidth(150)
+		}
+	]
+	
+	edit(turretStopSnd)
+	[
+		exec
+		{
+			width(350)
+			labelwidth(150)
+		}
+	]
+	
+	floatedit(engineSndSpeed, 0.05, 1)
+	[
+		exec
+		{
+			width(280)
+			labelwidth(150)
+		}
+	]
+	
+	vcontainer
+	{
+		edit(engineModLoopSndPlyr)
+		[
+			exec
+			{
+				label("1P Engine Loop")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		edit(engineModLoopSnd)
+		[
+			exec
+			{
+				label("3P Engine Loop")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		edit(engineModLoopLoadSndPlyr)
+		[
+			exec
+			{
+				label("1P Engine Load Loop")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		edit(engineModLoopLoadSnd)
+		[
+			exec
+			{
+				label("3P Engine Load Loop")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(engineModLoopModRate, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("How quickly the engine loop modulation can change. CoD default is 4.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(engineModLoopCrossfadeLoadScale, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Amount by which to scale difference between throttle & speedPercentage to have engine load affect the engine loop load/no-load crossfade.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(engineModLoopCrossfadeDamageScale, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Amount by which to scale the damage as it applies to the engine loop load/no-load crossfade.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(engineModLoopAttenuation, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Max attenuation level of the modulated engine loop sound.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(engineModLoopNaturalRPMs, 0.05, 1)
+		[
+			exec
+			{
+				label("Engine Loop RPMs")
+				tooltip("The natural RPMs frequence for the engine loop when not modulated by the code (e.g. 2000RPMs).")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(idleRPMs, 0.05, 1)
+		[
+			exec
+			{
+				label("Engine Idle RPMs")
+				tooltip("The engine rev RPMs when the throttle is off.  Affects engine loop modulation.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(gear1MinRPMs, 0.05, 1)
+		[
+			exec
+			{
+				label("Gear 1 Min RPMs")
+				tooltip("The engine RPMs in gear 1 just as the vehicle starts to move.  Affects engine loop modulation.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(gear1MaxRPMs, 0.05, 1)
+		[
+			exec
+			{
+				label("Gear 1 Max RPMs")
+				tooltip("The engine RPMs in gear 1 at the gear 1-2 transition vehicle speed.  Affects engine loop modulation.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(gearChangeMPH, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("The vehicle speed at which the engine shifts from gear 1 to gear 2.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(gear2MinRPMs, 0.05, 1)
+		[
+			exec
+			{
+				label("Gear 2 Min RPMs")
+				tooltip("The engine RPMs in gear 2 at the gear 1-2 transition vehicle speed.  Affects engine loop modulation.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(gear2MaxRPMs, 0.05, 1)
+		[
+			exec
+			{
+				label("Gear 2 Max RPMs")
+				tooltip("The engine RPMs in gear 2 at the max vehicle speed, which is editable below.  Affects engine loop modulation.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		edit(tankBodyDmgLeftSnd)
+		[
+			exec
+			{
+				label("Body Dmg Loop Left")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		edit(tankBodyDmgRightSnd)
+		[
+			exec
+			{
+				label("Body Dmg Loop Right")
+				width(350)
+				labelwidth(150)
+			}
+		]
+	
+		edit(tankGrindLeftSnd)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+	
+		edit(tankGrindRightSnd)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+	
+		edit(tankGrindLeftDmgSnd)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+	
+		edit(tankGrindRightDmgSnd)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(treadGrindAttenuation, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Max attenuation level of the left and right tread grinding/squeaking sound.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		floatedit(treadDamageLoopHealthRatio, 0.05, 1)
+		[
+			exec
+			{
+				tooltip("Amount of health at which the tread squeak switches to the damaged squeak sfx.")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		spinedit(trackLengthInches, 1, 1)
+		[
+			exec
+			{
+				label("Single Track Length")
+				width(350)
+				labelwidth(150)
+				tooltip("The length in inches of a single link in the track of a tracked vehicle.  ( Controls clack rate. )")
+			}
+		]
+
+		floatedit(clacksCurveDamageStart, 0.05, 1)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+				tooltip("Min amount of damage at which clacks start dropping out.")
+			}
+		]
+
+		floatedit(clacksCurveDamageEnd, 0.05, 1)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+				tooltip("Amount of damage at which max # clacks are omitted.")
+			}
+		]
+
+		floatedit(clacksCurveMaxOmitted, 0.05, 1)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+				tooltip("Max percentage of clacks that drop out after clacksCurveDamageEnd.")
+			}
+		]
+	
+		edit(wheelMtrlSndSoft)
+		[
+			exec
+			{
+				label("Wheel-Soft Mtrl Snd")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		spinedit(numWheelMtrlSndSoft, 1, 1)
+		[
+			exec
+			{
+				label("Num Wheel-Soft SFX")
+				width(350)
+				labelwidth(150)
+				tooltip("Number of SFX for wheel/soft-material sound.  Must use %d format token in sound alias.")
+			}
+		]
+	
+		edit(wheelMtrlSndHard)
+		[
+			exec
+			{
+				label("Wheel-Hard Mtrl Snd")
+				width(350)
+				labelwidth(150)
+			}
+		]
+
+		spinedit(numWheelMtrlSndHard, 1, 1)
+		[
+			exec
+			{
+				label("Num Wheel-Hard SFX")
+				width(350)
+				labelwidth(150)
+				tooltip("Number of SFX for wheel/hard-material sound.  Must use %d format token in sound alias.")
+			}
+		]
+	
+		edit(tankBoostPerkSndPlyr)
+		[
+			exec
+			{
+				label("Boost perk SFX (1-P)")
+				width(350)
+				labelwidth(150)
+				tooltip("SFX the driver hears when speed boost is activated.")
+			}
+		]
+	
+		edit(tankBoostPerkSnd)
+		[
+			exec
+			{
+				label("Boost perk SFX (3-P)")
+				width(350)
+				labelwidth(150)
+				tooltip("SFX everyone else hears when speed boost is activated.")
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("New tank audio")
+		}
+	]
+	
+	scrollbox(animType)
+	[
+		exec
+		{
+			width(200)
+			labelwidth(150)
+		}
+	]
+	
+	edit(animSet)
+	[
+		exec
+		{
+			width(350)
+			labelwidth(150)
+		}
+	]
+	
+	vcontainer
+	{
+		hcontainer
+		{
+			floatedit(mantleAngleFront,1,10)
+			floatedit(mantleAngleBack,1,10)
+		}
+		hcontainer
+		{
+			floatedit(mantleAngleLeft,1,10)
+			floatedit(mantleAngleRight,1,10)
+		}
+	}
+	[
+		exec
+		{
+			groupBox("Tank Mantle Angles")
+		}
+	]
+	
+	vcontainer
+	{
+		edit(extraWheelLeft1)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+		edit(extraWheelRight1)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+		edit(extraWheelLeft2)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+		edit(extraWheelRight2)
+		[
+			exec
+			{
+				width(350)
+				labelwidth(150)
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Extra Wheel Tags")
+		}
+	]
+	
+	checkbox(isNitrous)
+	[
+		exec
+		{
+			label("Nitrous Vehicle")
+			width(350)
+			labelwidth(150)
+		}
+	]
+		
+	vcontainer
+	{
+		floatedit(nitrous_steer_angle_max,.05,1)
+		[
+			exec
+			{
+				label("max steer angle")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_steer_speed,.05,1)
+		[
+			exec
+			{
+				label("steer speed")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_body_mass,.05,1)
+		[
+			exec
+			{
+				label("body mass")
+				tooltip("Mass in pounds, this is a video game so tanks weight 1000, do not go higher or we may have floating point problems")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_wheel_radius,.05,1)
+		[
+			exec
+			{
+				label("wheel radius")
+				tooltip("How big are those rims?")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_susp_adj,.05,1)
+		[
+			exec
+			{
+				tooltip("Raise your ride")
+				label("susp adj")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_susp_spring_k,.05,1)
+		[
+			exec
+			{
+				tooltip("Loosen those springs to get a soft ride")
+				label("susp spring k")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_susp_damp_k,.05,1)
+		[
+			exec
+			{
+				tooltip("Lighten up the dampening to get some more rocking")
+				label("susp damp k")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_susp_hard_limit,.05,1)
+		[
+			exec
+			{
+				tooltip("Max height the wheels can move up")
+				label("susp hard limit")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tire_damp_hand,.05,1)
+		[
+			exec
+			{
+				label("tire damp hand")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tire_damp_brake,.05,1)
+		[
+			exec
+			{
+				tooltip("How fast do you want to brake? wheel friction has a lot to do with this also.")
+				label("tire damp brake")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tire_damp_coast,.05,1)
+		[
+			exec
+			{
+				tooltip("How quickly do you want to come to a stop when coasting?")
+				label("tire damp coast")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tire_fric_brake,.05,1)
+		[
+			exec
+			{
+				label("tire fric brake")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tire_fric_hand_brake,.05,1)
+		[
+			exec
+			{
+				label("tire fric hand brake")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tire_fric_fwd,.05,1)
+		[
+			exec
+			{
+				label("tire fric fwd")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tire_fric_side,.05,1)
+		[
+			exec
+			{
+				label("tire fric side")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_roll_stability,.05,1)
+		[
+			exec
+			{
+				tooltip("This raises/lowers the contact point with the ground to provide more stability")
+				label("roll stability")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_roll_resistance,.05,1)
+		[
+			exec
+			{
+				tooltip("This setting prevents large forces from flipping the vehicle, kind of like a torque resistance factor")
+				label("roll resistance")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_upright_strength,.05,1)
+		[
+			exec
+			{
+				tooltip("This setting applies a force to hold the vehicle upright, the more it rolls the stronger the force")
+				label("upright strength")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_tilt_fakey,.05,1)
+		[
+			exec
+			{
+				tooltip("Want a little more lean when you stop and start?  This scales the wheel springs based on accel/braking")
+				label("tilt fakey")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		scrollbox(nitrous_traction_type)
+		[
+			exec
+			{
+				label("traction type")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_peel_out_max_speed,.05,1)
+		[
+			exec
+			{
+				tooltip("If the vehicle is going below this speed then spin the tires")
+				label("peel out max speed")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_inertia_scale_x,.05,1)
+		[
+			exec
+			{
+				label("inertia scale x")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_reverse_scale,.05,1)
+		[
+			exec
+			{
+				tooltip("Scale the max speed by this number when driving backwards")
+				label("reverse scale")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		hcontainer
+		{
+			floatedit(nitrous_bbox_min_x,.05,1)
+			[
+				exec
+				{
+					tooltip("Min X dimension of the inertia box")
+					labelwidth(0)
+					width(150)
+					label("x")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_bbox_min_y,.05,1)
+			[
+				exec
+				{
+					tooltip("Min Y dimension of the inertia box")
+					labelwidth(0)
+					width(150)
+					label("y")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_bbox_min_z,.05,1)
+			[
+				exec
+				{
+					tooltip("Min Z dimension of the inertia box")
+					labelwidth(0)
+					width(150)
+					visible( isNitrous )
+				}
+			]
+		}
+		[
+			exec
+			{
+				groupBox("bbox_min")
+				visible( isNitrous )
+			}
+		]
+		hcontainer
+		{
+			floatedit(nitrous_bbox_max_x,.05,1)
+			[
+				exec
+				{
+					tooltip("Max X dimension of the inertia box")
+					labelwidth(0)
+					width(150)
+					label("x")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_bbox_max_y,.05,1)
+			[
+				exec
+				{
+					tooltip("Max Y dimension of the inertia box")
+					labelwidth(0)
+					width(150)
+					label("y")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_bbox_max_z,.05,1)
+			[
+				exec
+				{
+					tooltip("Max Z dimension of the inertia box")
+					labelwidth(0)
+					width(150)
+					label("z")
+					visible( isNitrous )
+				}
+			]
+		}
+		[
+			exec
+			{
+				groupBox("bbox_max")
+				visible( isNitrous )
+			}
+		]
+		hcontainer
+		{
+			floatedit(nitrous_mass_center_offset_x,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					label("x")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_mass_center_offset_y,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					label("y")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_mass_center_offset_z,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					visible( isNitrous )
+				}
+			]
+		}
+		[
+			exec
+			{
+				groupBox("mass_center_offset")
+				visible( isNitrous )
+			}
+		]
+		hcontainer
+		{
+			floatedit(nitrous_buoyancybox_min_x,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					label("x")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_buoyancybox_min_y,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					label("y")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_buoyancybox_min_z,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					visible( isNitrous )
+				}
+			]
+		}
+		[
+			exec
+			{
+				groupBox("buoyancybox_min")
+				visible( isNitrous )
+			}
+		]
+		hcontainer
+		{
+			floatedit(nitrous_buoyancybox_max_x,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					label("x")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_buoyancybox_max_y,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					label("y")
+					visible( isNitrous )
+				}
+			]
+			floatedit(nitrous_buoyancybox_max_z,.05,1)
+			[
+				exec
+				{
+					labelwidth(0)
+					width(150)
+					visible( isNitrous )
+				}
+			]
+		}
+		[
+			exec
+			{
+				groupBox("buoyancybox_max")
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_water_speed_max,.05,1)
+		[
+			exec
+			{
+				label("max water speed")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_water_accel_max,.05,1)
+		[
+			exec
+			{
+				label("max water accel")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_water_turn_accel,.05,1)
+		[
+			exec
+			{
+				label("water turn accel")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+		floatedit(nitrous_water_turn_speed_max,.05,1)
+		[
+			exec
+			{
+				label("water max turn speed")
+				width(350)
+				labelwidth(150)
+				visible( isNitrous )
+			}
+		]
+	}
+	[
+		exec
+		{
+			groupBox("Nitrous Vehicle Parameters")
+			visible( isNitrous )
+		}
+	]	
+}

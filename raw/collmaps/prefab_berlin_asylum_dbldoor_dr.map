@@ -1,0 +1,31 @@
+iwmap 4
+"000_Global" flags  active
+"The Map" flags 
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+ ( 0 0 0 ) ( -2 0 0 ) ( -2 -4 0 ) clip_ai 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2 -4 98 ) ( -2 0 98 ) ( 0 0 98 ) clip_ai 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3 -52 98 ) ( -1 -52 98 ) ( -1 -52 0 ) clip_ai 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 -4 98 ) ( 0 0 98 ) ( 0 0 0 ) clip_ai 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 0 0 98 ) ( -2 0 98 ) ( -2 0 0 ) clip_ai 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -1.75 -43 98 ) ( -1.75 -47 98 ) ( -1.75 -47 0 ) clip_ai 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+// brush 1
+{
+ ( 0 0 0 ) ( -2 0 0 ) ( -2 -4 0 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -2 -4 98 ) ( -2 0 98 ) ( 0 0 98 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3 -52 98 ) ( -1 -52 98 ) ( -1 -52 0 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1.25 0 98 ) ( 1.25 0 0 ) ( 3.25 -52 0 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1.25 0 0 ) ( 1.25 0 98 ) ( -3 0 98 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( -3 0 0 ) ( -3 0 98 ) ( -5 -52 98 ) clip 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 1
+{
+"origin" "0.0 0.0 0.0"
+"model" "prefab_berlin_asylum_dbldoor_dr"
+"classname" "misc_model"
+}

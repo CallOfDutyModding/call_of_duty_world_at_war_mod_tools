@@ -1,0 +1,150 @@
+iwmap 4
+// entity 0
+{
+"classname" "worldspawn"
+}
+// entity 1
+// entity 2
+{
+"script_landmark" "castle_area5"
+"targetname" "trigger_landmark"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( 1112 -2688 -232 ) ( 1072 -2688 -232 ) ( 1072 -2728 -232 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1112 -2728 32 ) ( 1112 -2688 32 ) ( 1152 -2688 32 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1112 -3152 1664 ) ( 1152 -3152 1664 ) ( 1152 -3152 -1608 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1888 -2752 2224 ) ( 1888 -2712 2224 ) ( 1888 -2712 -1048 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 1096 -2224 1488 ) ( 1056 -2224 1488 ) ( 1056 -2224 -1784 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+ ( 448 -2672 816 ) ( 448 -2712 816 ) ( 448 -2712 -2456 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 0 0 0 0
+}
+}
+// entity 3
+{
+"script_landmark" "castle_area3"
+"targetname" "trigger_landmark"
+"origin" "2632.0 -2272.0 -288.0"
+"height" "175"
+"radius" "200"
+"classname" "trigger_radius"
+}
+// entity 4
+{
+"script_landmark" "castle_area3"
+"targetname" "trigger_landmark"
+"origin" "2536.0 -2000.0 -328.0"
+"height" "175"
+"radius" "200"
+"classname" "trigger_radius"
+}
+// entity 5
+{
+"script_landmark" "castle_area3"
+"targetname" "trigger_landmark"
+"origin" "2264.0 -1664.0 -440.0"
+"height" "200"
+"radius" "250"
+"classname" "trigger_radius"
+}
+// entity 6
+{
+"script_landmark" "castle_area4"
+"targetname" "trigger_landmark"
+"origin" "3816.0 -936.0 -504.0"
+"height" "200"
+"radius" "550"
+"classname" "trigger_radius"
+}
+// entity 7
+{
+"script_landmark" "castle_area1"
+"targetname" "trigger_landmark"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( 3608 -2592 -216 ) ( 3568 -2592 -216 ) ( 3568 -2632 -216 ) trigger 64 64 16 0 0 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 3568 -2608 -16 ) ( 3568 -2568 -16 ) ( 3608 -2568 -16 ) trigger 64 64 16 0 0 0 lightmap_gray 16384 16384 16 0 0 0
+ ( 3576 -2928 -176 ) ( 3616 -2928 -176 ) ( 3616 -2928 -208 ) trigger 64 64 16 -288 0 0 lightmap_gray 16384 16384 16 -288 0 0
+ ( 3984 -2616 -40 ) ( 3984 -2576 -40 ) ( 3984 -2576 -72 ) trigger 64 64 0 -288 0 0 lightmap_gray 16384 16384 0 -288 0 0
+ ( 3616 -2448 -184 ) ( 3576 -2448 -184 ) ( 3576 -2448 -216 ) trigger 64 64 16 -288 0 0 lightmap_gray 16384 16384 16 -288 0 0
+ ( 2752 -2560 -200 ) ( 2752 -2600 -200 ) ( 2752 -2600 -232 ) trigger 64 64 0 -288 0 0 lightmap_gray 16384 16384 0 -288 0 0
+}
+}
+// entity 8
+{
+"targetname" "trigger_landmark"
+"script_landmark" "castle_area8"
+"classname" "trigger_multiple"
+// brush 0
+{
+ ( 4496 -1856 -264 ) ( 4464 -1856 -264 ) ( 4464 -1888 -264 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 840 -328 0 0
+ ( 4448 -1888 -88 ) ( 4448 -1856 -88 ) ( 4480 -1856 -88 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 840 -328 0 0
+ ( 4440 -2024 -64 ) ( 4472 -2024 -64 ) ( 4472 -2024 -264 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 840 48 0 0
+ ( 4872 -1616 16 ) ( 4872 -1584 16 ) ( 4872 -1584 -184 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 328 48 0 0
+ ( 4496 -1656 72 ) ( 4464 -1656 72 ) ( 4464 -1656 -128 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 840 48 0 0
+ ( 4056 -1840 -64 ) ( 4056 -1872 -64 ) ( 4056 -1872 -264 ) trigger 64 64 0 0 0 0 lightmap_gray 16384 16384 328 48 0 0
+}
+}
+// entity 9
+{
+"script_landmark" "castle_area7"
+"targetname" "trigger_landmark"
+"origin" "880.0 -1272.0 -424.0"
+"height" "128"
+"radius" "125"
+"classname" "trigger_radius"
+}
+// entity 10
+{
+"script_landmark" "castle_area7"
+"targetname" "trigger_landmark"
+"origin" "856.0 -1464.0 -376.0"
+"height" "128"
+"radius" "125"
+"classname" "trigger_radius"
+}
+// entity 11
+{
+"script_landmark" "castle_area7"
+"targetname" "trigger_landmark"
+"origin" "832.0 -1648.0 -304.0"
+"height" "128"
+"radius" "125"
+"classname" "trigger_radius"
+}
+// entity 12
+{
+"script_landmark" "castle_area7"
+"targetname" "trigger_landmark"
+"origin" "712.0 -1792.0 -256.0"
+"height" "128"
+"radius" "125"
+"classname" "trigger_radius"
+}
+// entity 13
+{
+"script_landmark" "castle_area2"
+"targetname" "trigger_landmark"
+"origin" "2600.0 -1104.0 -432.0"
+"height" "197.307602"
+"radius" "210"
+"classname" "trigger_radius"
+}
+// entity 14
+{
+"origin" "4808.0 -560.0 -248.0"
+"targetname" "trigger_landmark"
+"script_landmark" "castle_area6"
+"height" "170.368011"
+"radius" "256"
+"classname" "trigger_radius"
+}
+// entity 15
+{
+"origin" "4752.0 -1080.0 -248.0"
+"targetname" "trigger_landmark"
+"script_landmark" "castle_area6"
+"height" "170.368011"
+"radius" "325"
+"classname" "trigger_radius"
+}

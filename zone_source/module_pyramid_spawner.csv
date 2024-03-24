@@ -1,0 +1,11 @@
+ignore,code_post_gfx
+ignore,common
+col_map_sp,maps/module_pyramid_spawner.d3dbsp
+sound,common,module_pyramid_spawner,all_sp
+sound,generic,module_pyramid_spawner,all_sp
+sound,voiceovers,module_pyramid_spawner,all_sp
+sound,requests,module_pyramid_spawner,all_sp
+rawfile,maps/module_pyramid_spawner.gsc
+weapon,sp/m1garand
+
+include,default_weapons

@@ -1,0 +1,35 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+col_map_mp,maps/mp/mp_crossing.d3dbsp
+rawfile,maps/mp/mp_crossing.gsc
+
+
+rawfile,maps/mp/createart/mp_crossing_art.gsc
+
+
+//uncomment these when you actually have them to load,
+//rawfile,maps/mp/mp_crossing_fx.gsc
+//rawfile,maps/mp/mp_crossing_amb.gsc
+//rawfile,maps/mp/createfx/mp_crossing_fx.gsc
+
+//uncomment these when you actually have some,
+material,compass_map_mp_crossing
+material,compass_overlay_map_crossing
+
+include,mptypes_german
+
+include,water
+
+xmodel,skybox_ber3
+weapon,mp/sherman_turret_mp
+weapon,mp/lvt4_gunner_mp
+
+rawfile,vision/mp_crossing.vision
+
+//uncomment these when you get them set-up,
+//rawfile,clientscripts/mp/mp_crossing.csc
+//rawfile,clientscripts/mp/mp_crossing_amb.csc
+//rawfile,clientscripts/mp/mp_crossing_fx.csc
+//rawfile,clientscripts/mp/createfx/mp_crossing_fx.csc
+
+

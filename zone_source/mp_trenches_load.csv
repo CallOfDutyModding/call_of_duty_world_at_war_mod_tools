@@ -1,0 +1,8 @@
+ignore,code_post_gfx_mp
+ignore,common_mp
+ui_map,maps/mp_trenches.csv
+
+rawfile,clientscripts/mp/mp_trenches.csc
+rawfile,clientscripts/mp/mp_trenches_amb.csc
+rawfile,clientscripts/mp/mp_trenches_fx.csc
+rawfile,clientscripts/mp/createfx/mp_trenches_fx.csc

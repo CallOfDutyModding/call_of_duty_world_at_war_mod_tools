@@ -1,0 +1,22 @@
+// NOTE: If you add a comment, put a space after the double forward slash or you will get issues
+
+col_map_mp,maps/mp/mp_template.d3dbsp
+rawfile,maps/mp/mp_template.gsc
+impactfx,mp_template
+sound,common,mp_template,!all_mp
+sound,generic,mp_template,!all_mp
+sound,voiceovers,mp_template,!all_mp
+sound,multiplayer,mp_template,!all_mp
+
+character,char_usa_raider_player_rifle
+character,char_usa_raider_player_cqb
+character,char_usa_raider_player_assault
+character,char_usa_raider_player_lmg
+character,char_usa_raider_player_smg
+
+character,char_jap_impinf_player_smg
+character,char_jap_impinf_player_rifle
+character,char_jap_impinf_player_lmg
+character,char_jap_impinf_player_cqb
+character,char_jap_impinf_player_assault
+

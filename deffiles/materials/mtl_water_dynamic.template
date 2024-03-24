@@ -1,0 +1,50 @@
+#include "refblend.template"
+#include "sort.template"
+#include "clamp.template"
+#include "textureAtlas.template"
+#include "statebits.template"
+
+techniqueSet( "water_dynamic" );
+
+hasEditorMaterial( @hasEditorMaterial@ );
+allocLightmap( 0 );
+forModel( 1 );
+forWorld( 1 );
+tessSize( 10000 );
+
+#if TARGET_PLATFORM == "xenon"
+	#define NORMAL_MAP_FORMAT	"DXN"
+#else
+	#define NORMAL_MAP_FORMAT	"DXT5"
+#endif
+
+textureTable
+{
+	"colorMap" = map( "tile both", "@filterColor@", "$colorMap$", @nopicmipColor@ ) "@formatColor@" : "colorMap";
+	"normalMap" = streamable normalMap( "tile both", "@filterNormal@", "$normalMap$", @nopicmipNormal@ ) NORMAL_MAP_FORMAT : "normalMap";
+}
+
+
+constantTable
+{
+	"waterColor" = float4( @,waterColor@ );
+	"waterParams" = float4( @waterRoughness@, @waterRefract@, @waterFeather@, @waterOpacity@ );
+	"waterScroll0" = float4( @waterScrollX0@ / 64.0, @waterScrollY0@ / 64.0, 0.0, 0.0 );
+	"waterScroll1" = float4( @waterScrollX1@ / 64.0, @waterScrollY1@ / 64.0, 0.0, 0.0 );
+	"waterScroll2" = float4( @waterScrollX2@ / 64.0, @waterScrollY2@ / 64.0, 0.0, 0.0 );
+	"waterSkyColor" = float4( @,waterSkyColor@ );
+	"waterGroundColor" = float4( @,waterGroundColor@ );
+	"waterSunValues" = float4( @oceanSunBrightness@, @oceanSunSize@, 0.0, 0.0 );
+
+	"oceanFoamValues" = float4( @oceanFoamIntensity@, @oceanFoamOverbright@, @oceanFoamRepeat@, 0.0 );
+	"oceanShoreValues" = float4( @oceanShoreFeather@, @oceanShoreEdgeness@, @oceanShoreBrightness@, 0.0 );
+	"oceanBumpValues" = float4( @oceanBumpRepeat@, @oceanReflectFuzzyness@, 0.0, 0.0 );
+
+	#if  @envMapMin@ > @envMapMax@
+		#error "Minimum reflectance greater than maximum reflectance"
+	#endif
+	"envMapParms" = float4( @envMapMin@ * 4, (@envMapMax@ - @envMapMin@) * 4, @envMapExponent@ * -1.7, 0 );
+}
+
+allocReflectionProbe();
+refImage( "$colorMap$" );
